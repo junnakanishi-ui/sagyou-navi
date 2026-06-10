@@ -1,26 +1,171 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  /* Base */
+  --color-base: #ffffff;
+  --color-base-soft: #f7f7f5;
+  --color-ink: #0a0a0a;
+  --color-ink-soft: #404040;
+
+  /* Brand (safety yellow) */
+  --color-brand: #facc15;
+  --color-brand-strong: #eab308;
+  --color-brand-soft: #fefce8;
+
+  /* Semantic */
+  --color-danger: #dc2626;
+  --color-info: #0284c7;
+
+  /* Store buttons */
+  --color-store-gc: #047857;
+  --color-store-rakuten: #bf0000;
+  --color-store-yahoo: #ff0033;
+
+  /* Mapped semantic tokens */
+  --background: var(--color-base);
+  --foreground: var(--color-ink);
+  --card: var(--color-base);
+  --card-foreground: var(--color-ink);
+  --muted: var(--color-base-soft);
+  --muted-foreground: var(--color-ink-soft);
+  --border: #e5e5e5;
+
+  --primary: var(--color-brand);
+  --primary-foreground: var(--color-ink);
+  --primary-light: var(--color-brand-soft);
+  --primary-muted: #fef9c3;
+
+  --secondary: var(--color-ink);
+  --secondary-foreground: var(--color-base);
+  --secondary-light: #262626;
+
+  --accent-amber: var(--color-brand);
+  --accent-amber-foreground: var(--color-ink);
+  --accent-amber-light: var(--color-brand-soft);
+
+  --accent-red: var(--color-danger);
+  --accent-red-foreground: #ffffff;
+  --accent-red-light: #fef2f2;
+
+  --accent-sky: var(--color-info);
+  --accent-sky-foreground: #ffffff;
+  --accent-sky-light: #e0f2fe;
+
+  /* Category tokens */
+  --category-guide: var(--color-ink);
+  --category-guide-bg: var(--color-brand-soft);
+  --category-compare: var(--color-ink-soft);
+  --category-compare-bg: var(--color-base-soft);
+  --category-howto: var(--color-brand-strong);
+  --category-howto-bg: var(--color-brand-soft);
+
+  /* Conclusion / highlight boxes */
+  --conclusion-border: var(--color-ink);
+  --conclusion-bg: var(--color-brand-soft);
+
+  /* Store button colors */
+  --store-gc-select: var(--color-store-gc);
+  --store-gc-select-hover: #065f46;
+  --store-rakuten: var(--color-store-rakuten);
+  --store-rakuten-hover: #991b1b;
+  --store-yahoo: var(--color-store-yahoo);
+  --store-yahoo-hover: #cc0029;
+
+  /* Footer */
+  --footer-bg: var(--color-ink);
+  --footer-text: #f5f5f5;
+  --footer-muted: #a3a3a3;
+
+  --radius: 0.875rem;
 }
 
 @theme inline {
+  --font-sans: var(--font-noto-sans-jp), system-ui, sans-serif;
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-border: var(--border);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-primary-light: var(--primary-light);
+  --color-primary-muted: var(--primary-muted);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-secondary-light: var(--secondary-light);
+  --color-accent-amber: var(--accent-amber);
+  --color-accent-amber-foreground: var(--accent-amber-foreground);
+  --color-accent-amber-light: var(--accent-amber-light);
+  --color-accent-red: var(--accent-red);
+  --color-accent-red-foreground: var(--accent-red-foreground);
+  --color-accent-red-light: var(--accent-red-light);
+  --color-accent-sky: var(--accent-sky);
+  --color-accent-sky-foreground: var(--accent-sky-foreground);
+  --color-accent-sky-light: var(--accent-sky-light);
+  --color-category-guide: var(--category-guide);
+  --color-category-guide-bg: var(--category-guide-bg);
+  --color-category-compare: var(--category-compare);
+  --color-category-compare-bg: var(--category-compare-bg);
+  --color-category-howto: var(--category-howto);
+  --color-category-howto-bg: var(--category-howto-bg);
+  --color-conclusion-border: var(--conclusion-border);
+  --color-conclusion-bg: var(--conclusion-bg);
+  --color-store-gc-select: var(--store-gc-select);
+  --color-store-gc-select-hover: var(--store-gc-select-hover);
+  --color-store-rakuten: var(--store-rakuten);
+  --color-store-rakuten-hover: var(--store-rakuten-hover);
+  --color-store-yahoo: var(--store-yahoo);
+  --color-store-yahoo-hover: var(--store-yahoo-hover);
+  --color-footer-bg: var(--footer-bg);
+  --color-footer-text: var(--footer-text);
+  --color-footer-muted: var(--footer-muted);
+  --color-brand: var(--color-brand);
+  --color-brand-strong: var(--color-brand-strong);
+  --color-brand-soft: var(--color-brand-soft);
+  --color-ink: var(--color-ink);
+  --color-ink-soft: var(--color-ink-soft);
+  --color-base-soft: var(--color-base-soft);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings: "palt";
+  }
+  h1, h2, h3, h4 {
+    font-feature-settings: "palt";
+    letter-spacing: -0.01em;
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+.bg-stripe-caution {
+  background: repeating-linear-gradient(
+    -45deg,
+    var(--color-ink),
+    var(--color-ink) 8px,
+    var(--color-brand) 8px,
+    var(--color-brand) 16px
+  );
+}
+
+.marker-highlight {
+  background-color: var(--color-brand);
+  color: var(--color-ink);
+  padding: 0 0.15em;
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone;
+}
+
+.underline-marker {
+  background: linear-gradient(transparent 60%, var(--color-brand) 60%);
+  padding: 0 0.1em;
 }

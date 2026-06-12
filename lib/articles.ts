@@ -14,6 +14,21 @@ export type Article = {
 
 export const ARTICLES: Article[] = [
   {
+    slug: "trusco-hand-pallet-erabikata",
+    title:
+      "トラスコのハンドパレット（ハンドリフト）の選び方｜フォーク長・能力・低床の違い",
+    shortTitle: "ハンドパレットの選び方",
+    description:
+      "ハンドパレットの選び方を、パレット寸法→フォーク長→能力(1t/1.5t/2t/3t)→低床式→手動/電動→ハンドリフターとの違いの順で実務解説。現場別早見表・選定ミス防止・導入前チェックリスト付き。",
+    category: "guide",
+    categoryLabel: "選び方ガイド",
+    thumbnail: "/images/articles/trusco-hand-pallet-hero.jpg",
+    date: "2026-06-12",
+    readTime: "約11分",
+    available: true,
+    path: "/articles/trusco-hand-pallet-erabikata",
+  },
+  {
     slug: "safety-shoes-jis-jsaa",
     title:
       "安全靴・プロテクティブスニーカーの違い｜JIS T8101とJSAA規格の見方",

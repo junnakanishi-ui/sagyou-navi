@@ -14,6 +14,21 @@ export type Article = {
 
 export const ARTICLES: Article[] = [
   {
+    slug: "kartio-load-capacity",
+    title:
+      "カルティオは何kgまで載せられる？均等荷重200kgの正しい意味と過積載のリスク",
+    shortTitle: "カルティオの耐荷重",
+    description:
+      "カルティオの耐荷重は均等荷重200kg。その正しい読み方と、過積載だけでなく偏荷重・高積み・斜面使用といった見落としがちなリスクを実務解説。足りない場合のカルティオビッグ・weegoとの耐荷重比較、導入前チェックリスト付き。",
+    category: "howto",
+    categoryLabel: "使い方・コツ",
+    thumbnail: "/images/articles/kartio-load-capacity-hero.jpg",
+    date: "2026-06-12",
+    readTime: "約9分",
+    available: true,
+    path: "/articles/kartio-load-capacity",
+  },
+  {
     slug: "trusco-hand-pallet-erabikata",
     title:
       "トラスコのハンドパレット（ハンドリフト）の選び方｜フォーク長・能力・低床の違い",

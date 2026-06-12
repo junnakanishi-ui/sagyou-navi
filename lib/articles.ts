@@ -14,6 +14,21 @@ export type Article = {
 
 export const ARTICLES: Article[] = [
   {
+    slug: "caritio-720-780-compare",
+    title:
+      "カルティオ MPK-720とMPK-780の違いは？新旧サイズ早見表で選ぶ軽量台車",
+    shortTitle: "カルティオ MPK-720/780 の違い",
+    description:
+      "カルティオMPK-720とMPK-780の違いを新旧比較表で整理。サイズ・荷重は同じで本質は「軽さ」。用途別早見表・選び方表・導入前チェックリストで、現場に合う軽量台車の選定を支援します。",
+    category: "compare",
+    categoryLabel: "比較・違い",
+    thumbnail: "/images/articles/kartio-mpk720-mpk780-hero.jpg",
+    date: "2026-06-12",
+    readTime: "約8分",
+    available: true,
+    path: "/articles/caritio-720-780-compare",
+  },
+  {
     slug: "carutio-cart-guide",
     title:
       "軽量樹脂台車カルティオの選び方｜サイズ・耐荷重・静音・ストッパーの違い",

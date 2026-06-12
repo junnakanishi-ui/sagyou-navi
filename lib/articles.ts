@@ -14,6 +14,21 @@ export type Article = {
 
 export const ARTICLES: Article[] = [
   {
+    slug: "safety-shoes-jis-jsaa",
+    title:
+      "安全靴・プロテクティブスニーカーの違い｜JIS T8101とJSAA規格の見方",
+    shortTitle: "安全靴・プロスニーカーの違い",
+    description:
+      "安全靴(JIS T8101)とプロテクティブスニーカー(JSAA認定)の違いを、規格の見方・現場別早見表・法人導入チェックリストで整理。A種B種の違い、選定ミスの防ぎ方まで、現場で使える作業靴の選び方を解説します。",
+    category: "compare",
+    categoryLabel: "比較・違い",
+    thumbnail: "/images/articles/safety-shoes-jis-jsaa-hero.jpg",
+    date: "2026-06-12",
+    readTime: "約10分",
+    available: true,
+    path: "/articles/safety-shoes-jis-jsaa",
+  },
+  {
     slug: "caritio-720-780-compare",
     title:
       "カルティオ MPK-720とMPK-780の違いは？新旧サイズ早見表で選ぶ軽量台車",

@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Noto_Sans_JP } from "next/font/google";
 import { Analytics } from "@vercel/analytics/next";
+import { StickyShopBar } from "@/components/work/sticky-shop-bar";
 import "./globals.css";
 
 const notoSansJP = Noto_Sans_JP({
@@ -94,8 +95,9 @@ export default function RootLayout({
           }}
         />
       </head>
-      <body className="font-sans antialiased">
+      <body className="pb-[72px] font-sans antialiased sm:pb-[76px]">
         {children}
+        <StickyShopBar />
         {process.env.NODE_ENV === "production" && <Analytics />}
       </body>
     </html>

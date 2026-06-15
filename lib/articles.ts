@@ -14,6 +14,21 @@ export type Article = {
 
 export const ARTICLES: Article[] = [
   {
+    slug: "stepladder-height-law",
+    title:
+      "脚立は2mまで？高所作業の法律と現場で選ぶべき足場台・踏み台の違い",
+    shortTitle: "脚立・高所作業の法律",
+    description:
+      "脚立は2m以上だと法律で禁止？労働安全衛生規則518条の考え方をもとに、脚立・踏み台・作業用踏台・足場台・手すり付き踏台の違いと、法人現場での安全な選び方をわかりやすく解説します。",
+    category: "guide",
+    categoryLabel: "選び方ガイド",
+    thumbnail: "/images/articles/stepladder-height-law-hero.jpg",
+    date: "2026-06-12",
+    readTime: "約12分",
+    available: true,
+    path: "/articles/stepladder-height-law",
+  },
+  {
     slug: "steel-shelf-erabikata",
     title:
       "スチール棚の選び方｜軽量・中量・重量ラックの耐荷重区分と使い分け",

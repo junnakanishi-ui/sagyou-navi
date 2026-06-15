@@ -1,11 +1,23 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
-import { ChevronRight, Clock, ExternalLink } from "lucide-react";
-import { SiteHeader } from "@/components/work/site-header";
-import { SiteFooter } from "@/components/work/site-footer";
-import { ProductCard } from "@/components/work/product-card";
-import { buildUrl, STORE_LINKS } from "@/lib/product-links";
+import {
+  ArticleLayout,
+  ArticleContent,
+  Breadcrumb,
+  ArticleHeader,
+  HeroImage,
+  ConclusionBox,
+  ArticleTable,
+  ProductGrid,
+  ArticleCTA,
+  CategoryLinks,
+  RelatedArticles,
+  Disclaimer,
+  FaqSection,
+  type RelatedArticle,
+} from "@/components/article";
+import { STORE_LINKS } from "@/lib/product-links";
 
 const SLUG = "warehouse-heatstroke-taisaku";
 const YQ = STORE_LINKS.yahoo;
@@ -182,16 +194,6 @@ const FAQ = [
   },
 ];
 
-const faqJsonLd = {
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  mainEntity: FAQ.map((f) => ({
-    "@type": "Question",
-    name: f.q,
-    acceptedAnswer: { "@type": "Answer", text: f.a },
-  })),
-};
-
 const articleJsonLd = {
   "@context": "https://schema.org",
   "@type": "Article",
@@ -212,161 +214,26 @@ const articleJsonLd = {
   },
 };
 
-type ProductItem = {
-  id: string;
-  name: string;
-  note: string;
-};
-
-function yahooProductUrl(id: string) {
-  return `${YQ}${id}.html`;
-}
-
-function ConclusionBox({ children }: { children: React.ReactNode }) {
-  return (
-    <div className="my-6 border-2 border-conclusion-border bg-conclusion-bg px-5 py-4 text-base leading-relaxed text-foreground">
-      {children}
-    </div>
-  );
-}
-
-function ProductGrid({
-  items,
-  cols = 3,
-}: {
-  items: ProductItem[];
-  cols?: 2 | 3;
-}) {
-  const gridClass =
-    cols === 2 ? "sm:grid-cols-2" : "sm:grid-cols-2 lg:grid-cols-3";
-
-  return (
-    <div className={`mt-6 grid gap-4 ${gridClass}`}>
-      {items.map((p) => (
-        <ProductCard
-          key={p.id}
-          name={p.name}
-          imageId={p.id}
-          links={{ yahoo: yahooProductUrl(p.id) }}
-          utmContent={`${SLUG}_${p.id}`}
-          note={p.note}
-        />
-      ))}
-    </div>
-  );
-}
-
-function ComparisonTable({
-  head,
-  rows,
-  note,
-}: {
-  head: string[];
-  rows: string[][];
-  note?: string;
-}) {
-  return (
-    <>
-      <div className="mt-4 overflow-x-auto">
-        <table className="min-w-[640px] w-full border-collapse text-left text-base">
-          <thead>
-            <tr className="bg-foreground text-brand">
-              {head.map((h) => (
-                <th key={h} className="px-4 py-3 font-bold">
-                  {h}
-                </th>
-              ))}
-            </tr>
-          </thead>
-          <tbody className="text-muted-foreground">
-            {rows.map((r, i) => (
-              <tr key={i} className="border-b border-border bg-card">
-                {r.map((c, j) => (
-                  <td
-                    key={j}
-                    className={`px-4 py-3 ${j === 0 ? "font-bold text-foreground" : ""}`}
-                  >
-                    {c}
-                  </td>
-                ))}
-              </tr>
-            ))}
-          </tbody>
-        </table>
-      </div>
-      {note && (
-        <p className="mt-4 text-sm text-muted-foreground">{note}</p>
-      )}
-    </>
-  );
-}
+const RELATED: RelatedArticle[] = RELATED_ARTICLES.map((a) => ({
+  href: `/articles/${a.slug}`,
+  label: a.title,
+}));
 
 export default function WarehouseHeatstrokeTaisakuPage() {
   return (
-    <div className="flex min-h-screen flex-col bg-background">
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
+    <ArticleLayout faq={FAQ} articleJsonLd={articleJsonLd}>
+      <Breadcrumb current="倉庫作業の熱中症対策" />
+      <ArticleHeader
+        category="guide"
+        readingTime={13}
+        title="倉庫作業の熱中症対策"
+        subtitle="工場扇・スポットクーラー・冷却ベストで現場を守る方法"
       />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }}
+      <HeroImage
+        src="/images/articles/warehouse-heatstroke-prevention-hero.jpg"
+        alt="倉庫作業の熱中症対策として工場扇やWBGT計を確認する現場担当者"
       />
-      <SiteHeader />
-
-      <main className="flex-1">
-        <div className="border-b border-border bg-card py-3">
-          <div className="mx-auto max-w-6xl px-4 md:px-6">
-            <nav className="flex flex-wrap items-center gap-2 text-sm text-muted-foreground">
-              <Link href="/" className="hover:text-primary">
-                トップ
-              </Link>
-              <ChevronRight className="h-3 w-3" />
-              <Link href="/articles" className="hover:text-primary">
-                記事一覧
-              </Link>
-              <ChevronRight className="h-3 w-3" />
-              <span className="text-foreground">倉庫作業の熱中症対策</span>
-            </nav>
-          </div>
-        </div>
-
-        <section className="bg-card py-12">
-          <div className="mx-auto max-w-6xl px-4 md:px-6">
-            <div className="mb-4 flex items-center gap-3">
-              <span className="rounded-full bg-category-guide-bg px-3 py-1 text-sm font-bold text-category-guide">
-                選び方ガイド
-              </span>
-              <div className="flex items-center gap-1 text-sm text-muted-foreground">
-                <Clock className="h-3 w-3" />
-                <span>約13分で読める</span>
-              </div>
-            </div>
-            <h1 className="text-3xl font-black leading-tight text-foreground sm:text-4xl">
-              倉庫作業の熱中症対策
-            </h1>
-            <p className="mt-2 text-lg text-muted-foreground">
-              工場扇・スポットクーラー・冷却ベストで現場を守る方法
-            </p>
-          </div>
-        </section>
-
-        <section className="bg-card pb-10">
-          <div className="mx-auto max-w-6xl px-4 md:px-6">
-            <div className="relative aspect-[16/9] overflow-hidden rounded-2xl bg-primary-light">
-              <Image
-                src="/images/articles/warehouse-heatstroke-prevention-hero.jpg"
-                alt="倉庫作業の熱中症対策として工場扇やWBGT計を確認する現場担当者"
-                fill
-                className="object-cover"
-                priority
-                sizes="(max-width: 768px) 100vw, 1152px"
-              />
-            </div>
-          </div>
-        </section>
-
-        <article className="mx-auto max-w-6xl px-4 pb-16 md:px-6">
+      <ArticleContent>
           <p className="text-lg leading-relaxed text-muted-foreground">
             倉庫作業は屋外作業に比べて見落とされがちですが、夏場は熱中症リスクが高い現場のひとつです。大型シャッターから外気が入り、天井付近に熱がこもり、荷下ろし・ピッキング・梱包・出荷で身体を動かし続けるため、気温以上に作業者へ負担がかかることがあります。本記事では倉庫作業の熱中症対策を、WBGT測定・工場扇・スポットクーラー・冷却ベスト・休憩所整備・報告体制まで、法人担当者がそのまま社内共有しやすい形で整理しました。「この場所にはこの対策、この作業にはこの備品」という形で、現場課題から逆算してまとめています。
           </p>
@@ -434,7 +301,7 @@ export default function WarehouseHeatstrokeTaisakuPage() {
             <h3 className="mt-8 text-xl font-bold text-foreground">
               ローディングドック・高所・休憩所で測る
             </h3>
-            <ComparisonTable
+            <ArticleTable
               head={["測定場所", "理由", "対策の考え方"]}
               rows={[
                 [
@@ -475,7 +342,7 @@ export default function WarehouseHeatstrokeTaisakuPage() {
             <h3 className="mt-8 text-xl font-bold text-foreground">
               WBGT測定・見える化（まず現場を知る）
             </h3>
-            <ProductGrid items={WBGT} cols={2} />
+            <ProductGrid items={WBGT} cols={2} slug={SLUG} />
             <p className="mt-4 text-sm text-muted-foreground">
               ※測定方法・基準値の運用は公的資料・社内ルールをご確認ください。
             </p>
@@ -491,7 +358,7 @@ export default function WarehouseHeatstrokeTaisakuPage() {
             <p className="mt-4 text-lg leading-relaxed text-muted-foreground">
               対策をバラバラに考えると偏りが生まれます。次の3層で整理すると全体像がつかめます。
             </p>
-            <ComparisonTable
+            <ArticleTable
               head={["対策の層", "目的", "主な用品・施策"]}
               rows={[
                 [
@@ -532,7 +399,7 @@ export default function WarehouseHeatstrokeTaisakuPage() {
                 sizes="(max-width: 768px) 100vw, 1152px"
               />
             </figure>
-            <ComparisonTable
+            <ArticleTable
               head={["場所", "起きやすい課題", "優先したい対策"]}
               rows={[
                 [
@@ -597,7 +464,7 @@ export default function WarehouseHeatstrokeTaisakuPage() {
             <ConclusionBox>
               空気を動かして熱気を逃がすなら工場扇、作業点を局所的に冷やすならスポットクーラー、開放空間ならミスト。倉庫では「設置場所」と「風の流れ」が効果を左右します。
             </ConclusionBox>
-            <ComparisonTable
+            <ArticleTable
               head={["設備", "向く場所", "強み", "注意点"]}
               rows={[
                 [
@@ -665,11 +532,11 @@ export default function WarehouseHeatstrokeTaisakuPage() {
             <h3 className="mt-8 text-xl font-bold text-foreground">
               工場扇・ミスト（環境対策｜空気を動かす）
             </h3>
-            <ProductGrid items={FANS} cols={3} />
+            <ProductGrid items={FANS} cols={3} slug={SLUG} />
             <h3 className="mt-8 text-xl font-bold text-foreground">
               スポットクーラー・除湿（環境対策｜局所冷却）
             </h3>
-            <ProductGrid items={SPOT_COOLER} cols={3} />
+            <ProductGrid items={SPOT_COOLER} cols={3} slug={SLUG} />
             <p className="mt-4 text-sm text-muted-foreground">
               ※設置場所・電源・排熱・床濡れなどは商品仕様と現場環境をご確認ください。
             </p>
@@ -724,7 +591,7 @@ export default function WarehouseHeatstrokeTaisakuPage() {
             <h3 className="mt-8 text-xl font-bold text-foreground">
               冷却ベスト・空調服・インナー（個人対策｜体を冷やす）
             </h3>
-            <ProductGrid items={COOLING_WEAR} cols={3} />
+            <ProductGrid items={COOLING_WEAR} cols={3} slug={SLUG} />
             <p className="mt-4 text-sm text-muted-foreground">
               ※サイズ・適合・使用方法は商品ページでご確認ください。
             </p>
@@ -776,7 +643,7 @@ export default function WarehouseHeatstrokeTaisakuPage() {
             <h3 className="mt-8 text-xl font-bold text-foreground">
               休憩所・クールダウン（運用＋環境対策）
             </h3>
-            <ProductGrid items={REST_AREA} cols={2} />
+            <ProductGrid items={REST_AREA} cols={2} slug={SLUG} />
             <p className="mt-4 text-sm text-muted-foreground">
               ※設置スペース・電源など使用条件をご確認ください。
             </p>
@@ -802,7 +669,7 @@ export default function WarehouseHeatstrokeTaisakuPage() {
               </strong>
               とされ、倉庫作業も条件次第で対象になり得ます。
             </p>
-            <ComparisonTable
+            <ArticleTable
               head={["義務の柱", "内容"]}
               rows={[
                 [
@@ -962,19 +829,7 @@ export default function WarehouseHeatstrokeTaisakuPage() {
             </ul>
           </section>
 
-          <div className="mt-10 flex flex-wrap gap-2">
-            {CATEGORY_LINKS.map((c) => (
-              <a
-                key={c.uc}
-                href={buildUrl(c.url, `${SLUG}_${c.uc}`)}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="rounded-full border border-border bg-card px-4 py-2 text-sm font-bold text-foreground transition hover:border-primary/30 hover:bg-primary-light"
-              >
-                {c.label}
-              </a>
-            ))}
-          </div>
+          <CategoryLinks links={CATEGORY_LINKS} slug={SLUG} />
 
           <p className="mt-8 text-lg leading-relaxed text-muted-foreground">
             足元の安全もあわせて見直すなら、
@@ -987,29 +842,7 @@ export default function WarehouseHeatstrokeTaisakuPage() {
             も参考にしてください。
           </p>
 
-          <section className="mt-12">
-            <h2 className="text-3xl font-black text-foreground">
-              よくある質問（FAQ）
-            </h2>
-            <div className="mt-6 space-y-3">
-              {FAQ.map((f) => (
-                <details
-                  key={f.q}
-                  className="group rounded-2xl border border-border bg-card"
-                >
-                  <summary className="cursor-pointer list-none px-6 py-4 font-bold text-foreground marker:content-none [&::-webkit-details-marker]:hidden">
-                    <span className="flex items-center justify-between gap-4">
-                      {f.q}
-                      <ChevronRight className="h-5 w-5 shrink-0 text-muted-foreground transition group-open:rotate-90" />
-                    </span>
-                  </summary>
-                  <div className="border-t border-border px-6 py-4 text-base leading-relaxed text-muted-foreground">
-                    {f.a}
-                  </div>
-                </details>
-              ))}
-            </div>
-          </section>
+        <FaqSection faq={FAQ} />
 
           <section className="mt-12">
             <h2 className="text-3xl font-black text-foreground">まとめ</h2>
@@ -1060,67 +893,18 @@ export default function WarehouseHeatstrokeTaisakuPage() {
             </p>
           </section>
 
-          <section className="mt-12 rounded-2xl bg-secondary p-8 text-secondary-foreground md:p-10">
-            <h2 className="text-2xl font-black text-white">
-              倉庫作業の熱中症対策用品をまとめて確認する
-            </h2>
-            <p className="mt-3 text-footer-muted">
-              仕様・在庫・価格は商品ページでご確認ください。
-            </p>
-            <a
-              href={buildUrl(HEAT_LIST_URL, `${SLUG}_cta`)}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="mt-6 inline-flex items-center gap-2 rounded-xl bg-store-yahoo px-6 py-3 text-sm font-bold text-white transition hover:bg-store-yahoo-hover"
-            >
-              熱中症対策アイテム一覧を見る
-              <ExternalLink className="h-4 w-4" aria-hidden />
-            </a>
-          </section>
+        <ArticleCTA
+          title="倉庫作業の熱中症対策用品をまとめて確認する"
+          description="仕様・在庫・価格は商品ページでご確認ください。"
+          buttonLabel="熱中症対策アイテム一覧を見る"
+          url={HEAT_LIST_URL}
+          slug={SLUG}
+        />
 
-          <section className="mt-12">
-            <h2 className="text-2xl font-black text-foreground">関連記事</h2>
-            <ul className="mt-4 space-y-2">
-              {RELATED_ARTICLES.map((article) => (
-                <li key={article.slug}>
-                  <Link
-                    href={`/articles/${article.slug}`}
-                    className="inline-flex items-center gap-1 font-bold text-primary hover:underline"
-                  >
-                    {article.title}
-                    <ChevronRight className="h-4 w-4" />
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </section>
+        <RelatedArticles items={RELATED} />
 
-          <div className="mt-10 text-center">
-            <Link
-              href="/articles"
-              className="inline-flex items-center gap-2 rounded-xl border border-border bg-card px-6 py-3 text-sm font-bold text-foreground transition hover:border-primary/30"
-            >
-              記事一覧に戻る
-              <ChevronRight className="h-4 w-4" />
-            </Link>
-          </div>
-
-          <p className="mt-12 border-t border-border pt-8 text-sm leading-relaxed text-muted-foreground">
-            運営：
-            <a
-              href="https://trade-sign.jp/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="font-bold text-primary hover:underline"
-            >
-              株式会社トレード
-            </a>
-            （グリーンクロスグループ）｜本記事は一般的な情報提供を目的としたものです。法令・基準値・対象範囲は改正や運用により変わる場合があり、厚生労働省の公表資料・所轄の労働基準監督署の情報・社内の安全衛生ルールをご確認ください。商品の価格・在庫・仕様は変動する場合があり、最新情報は各商品ページでご確認ください。本記事は法的助言を目的とするものではありません。
-          </p>
-        </article>
-      </main>
-
-      <SiteFooter />
-    </div>
+        <Disclaimer extra="法令・基準値・対象範囲は改正や運用により変わる場合があり、厚生労働省の公表資料・所轄の労働基準監督署の情報・社内の安全衛生ルールをご確認ください。商品の価格・在庫・仕様は変動する場合があり、最新情報は各商品ページでご確認ください。本記事は法的助言を目的とするものではありません。" />
+      </ArticleContent>
+    </ArticleLayout>
   );
 }

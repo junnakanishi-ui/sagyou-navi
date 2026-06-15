@@ -1,12 +1,23 @@
 import type { Metadata } from "next";
 import Image from "next/image";
-import Link from "next/link";
-import { ChevronRight, Clock, ExternalLink } from "lucide-react";
-import { SiteHeader } from "@/components/work/site-header";
-import { SiteFooter } from "@/components/work/site-footer";
-import { ProductCard } from "@/components/work/product-card";
+import {
+  ArticleLayout,
+  ArticleContent,
+  Breadcrumb,
+  ArticleHeader,
+  HeroImage,
+  ConclusionBox,
+  ArticleTable,
+  ProductGrid,
+  ArticleCTA,
+  CategoryLinks,
+  RelatedArticles,
+  Disclaimer,
+  FaqSection,
+  type RelatedArticle,
+} from "@/components/article";
 import { ARTICLES } from "@/lib/articles";
-import { buildUrl, STORE_LINKS } from "@/lib/product-links";
+import { STORE_LINKS } from "@/lib/product-links";
 
 const SLUG = "safety-shoes-jis-jsaa";
 const YQ = STORE_LINKS.yahoo;
@@ -167,16 +178,6 @@ const FAQ = [
   },
 ];
 
-const faqJsonLd = {
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  mainEntity: FAQ.map((f) => ({
-    "@type": "Question",
-    name: f.q,
-    acceptedAnswer: { "@type": "Answer", text: f.a },
-  })),
-};
-
 const articleJsonLd = {
   "@context": "https://schema.org",
   "@type": "Article",
@@ -201,165 +202,26 @@ const relatedArticles = ARTICLES.filter(
   (a) => a.slug !== SLUG && a.available
 ).slice(0, 3);
 
-type ProductItem = {
-  id: string;
-  name: string;
-  note: string;
-};
-
-function yahooProductUrl(id: string) {
-  return `${YQ}${id}.html`;
-}
-
-function ConclusionBox({ children }: { children: React.ReactNode }) {
-  return (
-    <div className="my-6 border-2 border-conclusion-border bg-conclusion-bg px-5 py-4 text-base leading-relaxed text-foreground">
-      {children}
-    </div>
-  );
-}
-
-function ProductGrid({
-  items,
-  cols = 3,
-}: {
-  items: ProductItem[];
-  cols?: 2 | 3;
-}) {
-  const gridClass =
-    cols === 2
-      ? "sm:grid-cols-2"
-      : "sm:grid-cols-2 lg:grid-cols-3";
-
-  return (
-    <div className={`mt-6 grid gap-4 ${gridClass}`}>
-      {items.map((p) => (
-        <ProductCard
-          key={p.id}
-          name={p.name}
-          imageId={p.id}
-          links={{ yahoo: yahooProductUrl(p.id) }}
-          utmContent={`${SLUG}_${p.id}`}
-          note={p.note}
-        />
-      ))}
-    </div>
-  );
-}
-
-function ComparisonTable({
-  head,
-  rows,
-  note,
-}: {
-  head: string[];
-  rows: string[][];
-  note?: string;
-}) {
-  return (
-    <>
-      <div className="mt-4 overflow-x-auto">
-        <table className="min-w-[640px] w-full border-collapse text-left text-base">
-          <thead>
-            <tr className="bg-foreground text-brand">
-              {head.map((h) => (
-                <th key={h} className="px-4 py-3 font-bold">
-                  {h}
-                </th>
-              ))}
-            </tr>
-          </thead>
-          <tbody className="text-muted-foreground">
-            {rows.map((r, i) => (
-              <tr key={i} className="border-b border-border bg-card">
-                {r.map((c, j) => (
-                  <td
-                    key={j}
-                    className={`px-4 py-3 ${j === 0 ? "font-bold text-foreground" : ""}`}
-                  >
-                    {c}
-                  </td>
-                ))}
-              </tr>
-            ))}
-          </tbody>
-        </table>
-      </div>
-      {note && (
-        <p className="mt-4 text-sm text-muted-foreground">{note}</p>
-      )}
-    </>
-  );
-}
+const RELATED: RelatedArticle[] = relatedArticles.map((a) => ({
+  href: a.path,
+  label: a.shortTitle,
+}));
 
 export default function SafetyShoesJisJsaaPage() {
   return (
-    <div className="flex min-h-screen flex-col bg-background">
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
+    <ArticleLayout faq={FAQ} articleJsonLd={articleJsonLd}>
+      <Breadcrumb current="安全靴・プロスニーカーの違い" />
+      <ArticleHeader
+        category="compare"
+        readingTime={10}
+        title="安全靴・プロテクティブスニーカーの違い"
+        subtitle="JIS T8101とJSAA規格の見方"
       />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }}
+      <HeroImage
+        src="/images/articles/safety-shoes-jis-jsaa-hero.jpg"
+        alt="安全靴とプロテクティブスニーカーを比較する法人向け作業靴のイメージ"
       />
-      <SiteHeader />
-
-      <main className="flex-1">
-        <div className="border-b border-border bg-card py-3">
-          <div className="mx-auto max-w-6xl px-4 md:px-6">
-            <nav className="flex flex-wrap items-center gap-2 text-sm text-muted-foreground">
-              <Link href="/" className="hover:text-primary">
-                トップ
-              </Link>
-              <ChevronRight className="h-3 w-3" />
-              <Link href="/articles" className="hover:text-primary">
-                記事一覧
-              </Link>
-              <ChevronRight className="h-3 w-3" />
-              <span className="text-foreground">
-                安全靴・プロスニーカーの違い
-              </span>
-            </nav>
-          </div>
-        </div>
-
-        <section className="bg-card py-12">
-          <div className="mx-auto max-w-6xl px-4 md:px-6">
-            <div className="mb-4 flex items-center gap-3">
-              <span className="rounded-full bg-category-compare-bg px-3 py-1 text-sm font-bold text-category-compare">
-                比較・違い
-              </span>
-              <div className="flex items-center gap-1 text-sm text-muted-foreground">
-                <Clock className="h-3 w-3" />
-                <span>約10分で読める</span>
-              </div>
-            </div>
-            <h1 className="text-3xl font-black leading-tight text-foreground sm:text-4xl">
-              安全靴・プロテクティブスニーカーの違い
-            </h1>
-            <p className="mt-2 text-lg text-muted-foreground">
-              JIS T8101とJSAA規格の見方
-            </p>
-          </div>
-        </section>
-
-        <section className="bg-card pb-10">
-          <div className="mx-auto max-w-6xl px-4 md:px-6">
-            <div className="relative aspect-[16/9] overflow-hidden rounded-2xl bg-primary-light">
-              <Image
-                src="/images/articles/safety-shoes-jis-jsaa-hero.jpg"
-                alt="安全靴とプロテクティブスニーカーを比較する法人向け作業靴のイメージ"
-                fill
-                className="object-cover"
-                priority
-                sizes="(max-width: 768px) 100vw, 1152px"
-              />
-            </div>
-          </div>
-        </section>
-
-        <article className="mx-auto max-w-6xl px-4 pb-16 md:px-6">
+      <ArticleContent>
           <p className="text-lg leading-relaxed text-muted-foreground">
             「安全靴を支給したい」と商品を探すと、見た目はスニーカーなのに“安全靴”と書かれていたり、“プロスニーカー”という別の呼び方が出てきたりして混乱しがちです。これは商品名と規格名のズレが原因です。本記事ではJIS
             T8101とJSAAという2つの規格の見方を整理し、法人担当者・現場責任者・購買担当者が「自社の現場ならどれを選ぶべきか」を判断できるようにまとめました。
@@ -410,7 +272,7 @@ export default function SafetyShoesJisJsaaPage() {
             <h3 className="mt-8 text-xl font-bold text-foreground">
               安全靴・プロテクティブスニーカー・セーフティシューズの違い比較表
             </h3>
-            <ComparisonTable
+            <ArticleTable
               head={[
                 "項目",
                 "安全靴",
@@ -479,7 +341,7 @@ export default function SafetyShoesJisJsaaPage() {
             <h3 className="mt-8 text-xl font-bold text-foreground">
               JIS T8101の作業区分表
             </h3>
-            <ComparisonTable
+            <ArticleTable
               head={["区分", "記号", "イメージ", "想定する現場の例"]}
               rows={[
                 [
@@ -536,7 +398,7 @@ export default function SafetyShoesJisJsaaPage() {
             <h3 className="mt-8 text-xl font-bold text-foreground">
               JSAA A種・B種の違い表
             </h3>
-            <ComparisonTable
+            <ArticleTable
               head={["区分", "呼称", "試験の基準", "想定する作業"]}
               rows={[
                 [
@@ -617,7 +479,7 @@ export default function SafetyShoesJisJsaaPage() {
             <h3 className="mt-8 text-xl font-bold text-foreground">
               現場別選び方早見表
             </h3>
-            <ComparisonTable
+            <ArticleTable
               head={["現場・作業", "向きやすいタイプ", "重視する点"]}
               rows={[
                 [
@@ -720,7 +582,7 @@ export default function SafetyShoesJisJsaaPage() {
             <p className="mt-4 text-lg leading-relaxed text-muted-foreground">
               しっかり足を固定したい、見た目を重視したい現場向け。着脱に手間がかかるため頻繁な脱ぎ履きには不向きな場合あり。
             </p>
-            <ProductGrid items={NB_LACE} cols={2} />
+            <ProductGrid items={NB_LACE} cols={2} slug={SLUG} />
 
             <h3 className="mt-10 text-xl font-bold text-foreground">
               BOAタイプ（着脱・フィット調整重視）
@@ -728,7 +590,7 @@ export default function SafetyShoesJisJsaaPage() {
             <p className="mt-4 text-lg leading-relaxed text-muted-foreground">
               ダイヤルでフィット感を微調整でき素早く着脱可能。脱ぎ履きが多い現場に。
             </p>
-            <ProductGrid items={NB_BOA} cols={2} />
+            <ProductGrid items={NB_BOA} cols={2} slug={SLUG} />
 
             <h3 className="mt-10 text-xl font-bold text-foreground">
               面ファスナータイプ（手袋着用・着脱頻度が多い現場）
@@ -736,7 +598,7 @@ export default function SafetyShoesJisJsaaPage() {
             <p className="mt-4 text-lg leading-relaxed text-muted-foreground">
               ワンタッチ着脱で手袋着用時も扱いやすく、カラー展開も豊富。
             </p>
-            <ProductGrid items={NB_VELCRO} cols={3} />
+            <ProductGrid items={NB_VELCRO} cols={3} slug={SLUG} />
             <p className="mt-4 text-sm text-muted-foreground">
               ※サイズ・色・在庫は変動します。適合する規格区分（A種など）は各商品ページの表示でご確認ください。
             </p>
@@ -756,7 +618,7 @@ export default function SafetyShoesJisJsaaPage() {
             <p className="mt-4 text-lg leading-relaxed text-muted-foreground">
               標準的な防護性能を確保しつつコストを抑えたい現場に。必要な作業区分（S種など）を満たすか表示を確認。
             </p>
-            <ProductGrid items={TRUSCO_SHOES} cols={3} />
+            <ProductGrid items={TRUSCO_SHOES} cols={3} slug={SLUG} />
 
             <h3 className="mt-10 text-xl font-bold text-foreground">
               長靴・メッシュブーツ（水・油まわり）
@@ -764,7 +626,7 @@ export default function SafetyShoesJisJsaaPage() {
             <p className="mt-4 text-lg leading-relaxed text-muted-foreground">
               水場や油を扱う床では防水・耐油性のある長靴系が安心。耐油・防滑は商品仕様を確認。
             </p>
-            <ProductGrid items={TRUSCO_BOOTS} cols={3} />
+            <ProductGrid items={TRUSCO_BOOTS} cols={3} slug={SLUG} />
 
             <h3 className="mt-10 text-xl font-bold text-foreground">
               保護用品・インソール（足元の補助）
@@ -772,24 +634,12 @@ export default function SafetyShoesJisJsaaPage() {
             <p className="mt-4 text-lg leading-relaxed text-muted-foreground">
               つま先・甲まわりの追加保護や長時間作業の快適性を補助。靴との相性・サイズは要確認。
             </p>
-            <ProductGrid items={TRUSCO_ACC} cols={2} />
+            <ProductGrid items={TRUSCO_ACC} cols={2} slug={SLUG} />
 
             <p className="mt-8 text-lg leading-relaxed text-muted-foreground">
               足元まわりは保護具一覧からまとめて確認できます。
             </p>
-            <div className="mt-4 flex flex-wrap gap-2">
-              {CATEGORY_LINKS.map((c) => (
-                <a
-                  key={c.uc}
-                  href={buildUrl(c.url, `${SLUG}_${c.uc}`)}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="rounded-full border border-border bg-card px-4 py-2 text-sm font-bold text-foreground transition hover:border-primary/30 hover:bg-primary-light"
-                >
-                  {c.label}
-                </a>
-              ))}
-            </div>
+            <CategoryLinks links={CATEGORY_LINKS} slug={SLUG} />
           </section>
 
           <section className="mt-12">
@@ -826,29 +676,7 @@ export default function SafetyShoesJisJsaaPage() {
             </ul>
           </section>
 
-          <section className="mt-12">
-            <h2 className="text-3xl font-black text-foreground">
-              よくある質問（FAQ）
-            </h2>
-            <div className="mt-6 space-y-3">
-              {FAQ.map((f) => (
-                <details
-                  key={f.q}
-                  className="group rounded-2xl border border-border bg-card"
-                >
-                  <summary className="cursor-pointer list-none px-6 py-4 font-bold text-foreground marker:content-none [&::-webkit-details-marker]:hidden">
-                    <span className="flex items-center justify-between gap-4">
-                      {f.q}
-                      <ChevronRight className="h-5 w-5 shrink-0 text-muted-foreground transition group-open:rotate-90" />
-                    </span>
-                  </summary>
-                  <div className="border-t border-border px-6 py-4 text-base leading-relaxed text-muted-foreground">
-                    {f.a}
-                  </div>
-                </details>
-              ))}
-            </div>
-          </section>
+        <FaqSection faq={FAQ} />
 
           <section className="mt-12">
             <h2 className="text-3xl font-black text-foreground">まとめ</h2>
@@ -886,69 +714,18 @@ export default function SafetyShoesJisJsaaPage() {
             </p>
           </section>
 
-          <section className="mt-12 rounded-2xl bg-secondary p-8 text-secondary-foreground md:p-10">
-            <h2 className="text-2xl font-black text-white">
-              現場に合う作業靴を探す
-            </h2>
-            <p className="mt-3 text-footer-muted">
-              仕様・在庫・価格は商品ページでご確認ください。
-            </p>
-            <a
-              href={buildUrl(`${YQ}caddb8eeb6.html`, `${SLUG}_cta`)}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="mt-6 inline-flex items-center gap-2 rounded-xl bg-store-yahoo px-6 py-3 text-sm font-bold text-white transition hover:bg-store-yahoo-hover"
-            >
-              保護具一覧で仕様・在庫を確認する
-              <ExternalLink className="h-4 w-4" aria-hidden />
-            </a>
-          </section>
+        <ArticleCTA
+          title="現場に合う作業靴を探す"
+          description="仕様・在庫・価格は商品ページでご確認ください。"
+          buttonLabel="保護具一覧で仕様・在庫を確認する"
+          url={`${YQ}caddb8eeb6.html`}
+          slug={SLUG}
+        />
 
-          {relatedArticles.length > 0 && (
-            <section className="mt-12">
-              <h2 className="text-2xl font-black text-foreground">関連記事</h2>
-              <ul className="mt-4 space-y-2">
-                {relatedArticles.map((article) => (
-                  <li key={article.slug}>
-                    <Link
-                      href={article.path}
-                      className="inline-flex items-center gap-1 font-bold text-primary hover:underline"
-                    >
-                      {article.shortTitle}
-                      <ChevronRight className="h-4 w-4" />
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            </section>
-          )}
+        <RelatedArticles items={RELATED} />
 
-          <div className="mt-10 text-center">
-            <Link
-              href="/articles"
-              className="inline-flex items-center gap-2 rounded-xl border border-border bg-card px-6 py-3 text-sm font-bold text-foreground transition hover:border-primary/30"
-            >
-              記事一覧に戻る
-              <ChevronRight className="h-4 w-4" />
-            </Link>
-          </div>
-
-          <p className="mt-12 border-t border-border pt-8 text-sm leading-relaxed text-muted-foreground">
-            運営：
-            <a
-              href="https://trade-sign.jp/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="font-bold text-primary hover:underline"
-            >
-              株式会社トレード
-            </a>
-            （グリーンクロスグループ）｜本記事は一般的な情報提供を目的としたものです。規格・価格・在庫・仕様は変動する場合があり、最新情報は各商品ページおよびJIS・JSAA等の公式情報をご確認ください。安全な使用方法や現場で求められる規格については、社内ルール・元請けの指定・メーカー仕様に従ってください。
-          </p>
-        </article>
-      </main>
-
-      <SiteFooter />
-    </div>
+        <Disclaimer extra="規格・価格・在庫・仕様は変動する場合があり、最新情報は各商品ページおよびJIS・JSAA等の公式情報をご確認ください。安全な使用方法や現場で求められる規格については、社内ルール・元請けの指定・メーカー仕様に従ってください。" />
+      </ArticleContent>
+    </ArticleLayout>
   );
 }

@@ -1,12 +1,24 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
-import { ChevronRight, Clock, ExternalLink } from "lucide-react";
-import { SiteHeader } from "@/components/work/site-header";
-import { SiteFooter } from "@/components/work/site-footer";
-import { ProductCard } from "@/components/work/product-card";
+import {
+  ArticleLayout,
+  ArticleContent,
+  Breadcrumb,
+  ArticleHeader,
+  HeroImage,
+  ConclusionBox,
+  ArticleTable,
+  ProductGrid,
+  ArticleCTA,
+  CategoryLinks,
+  RelatedArticles,
+  Disclaimer,
+  FaqSection,
+  type RelatedArticle,
+} from "@/components/article";
 import { ARTICLES } from "@/lib/articles";
-import { buildUrl, STORE_LINKS } from "@/lib/product-links";
+import { STORE_LINKS } from "@/lib/product-links";
 
 const SLUG = "trusco-hand-pallet-erabikata";
 const YQ = STORE_LINKS.yahoo;
@@ -176,16 +188,6 @@ const FAQ = [
   },
 ];
 
-const faqJsonLd = {
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  mainEntity: FAQ.map((f) => ({
-    "@type": "Question",
-    name: f.q,
-    acceptedAnswer: { "@type": "Answer", text: f.a },
-  })),
-};
-
 const articleJsonLd = {
   "@context": "https://schema.org",
   "@type": "Article",
@@ -210,161 +212,26 @@ const relatedArticles = ARTICLES.filter(
   (a) => a.slug !== SLUG && a.available
 ).slice(0, 3);
 
-type ProductItem = {
-  id: string;
-  name: string;
-  note: string;
-};
-
-function yahooProductUrl(id: string) {
-  return `${YQ}${id}.html`;
-}
-
-function ConclusionBox({ children }: { children: React.ReactNode }) {
-  return (
-    <div className="my-6 border-2 border-conclusion-border bg-conclusion-bg px-5 py-4 text-base leading-relaxed text-foreground">
-      {children}
-    </div>
-  );
-}
-
-function ProductGrid({
-  items,
-  cols = 3,
-}: {
-  items: ProductItem[];
-  cols?: 2 | 3;
-}) {
-  const gridClass =
-    cols === 2 ? "sm:grid-cols-2" : "sm:grid-cols-2 lg:grid-cols-3";
-
-  return (
-    <div className={`mt-6 grid gap-4 ${gridClass}`}>
-      {items.map((p) => (
-        <ProductCard
-          key={p.id}
-          name={p.name}
-          imageId={p.id}
-          links={{ yahoo: yahooProductUrl(p.id) }}
-          utmContent={`${SLUG}_${p.id}`}
-          note={p.note}
-        />
-      ))}
-    </div>
-  );
-}
-
-function ComparisonTable({
-  head,
-  rows,
-  note,
-}: {
-  head: string[];
-  rows: string[][];
-  note?: string;
-}) {
-  return (
-    <>
-      <div className="mt-4 overflow-x-auto">
-        <table className="min-w-[640px] w-full border-collapse text-left text-base">
-          <thead>
-            <tr className="bg-foreground text-brand">
-              {head.map((h) => (
-                <th key={h} className="px-4 py-3 font-bold">
-                  {h}
-                </th>
-              ))}
-            </tr>
-          </thead>
-          <tbody className="text-muted-foreground">
-            {rows.map((r, i) => (
-              <tr key={i} className="border-b border-border bg-card">
-                {r.map((c, j) => (
-                  <td
-                    key={j}
-                    className={`px-4 py-3 ${j === 0 ? "font-bold text-foreground" : ""}`}
-                  >
-                    {c}
-                  </td>
-                ))}
-              </tr>
-            ))}
-          </tbody>
-        </table>
-      </div>
-      {note && (
-        <p className="mt-4 text-sm text-muted-foreground">{note}</p>
-      )}
-    </>
-  );
-}
+const RELATED: RelatedArticle[] = relatedArticles.map((a) => ({
+  href: a.path,
+  label: a.shortTitle,
+}));
 
 export default function TruscoHandPalletErabikataPage() {
   return (
-    <div className="flex min-h-screen flex-col bg-background">
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
+    <ArticleLayout faq={FAQ} articleJsonLd={articleJsonLd}>
+      <Breadcrumb current="ハンドパレットの選び方" />
+      <ArticleHeader
+        category="guide"
+        readingTime={11}
+        title="トラスコのハンドパレット（ハンドリフト）の選び方"
+        subtitle="フォーク長・能力・低床の違い"
       />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }}
+      <HeroImage
+        src="/images/articles/trusco-hand-pallet-hero.jpg"
+        alt="倉庫でハンドパレットを選定する法人担当者のイメージ"
       />
-      <SiteHeader />
-
-      <main className="flex-1">
-        <div className="border-b border-border bg-card py-3">
-          <div className="mx-auto max-w-6xl px-4 md:px-6">
-            <nav className="flex flex-wrap items-center gap-2 text-sm text-muted-foreground">
-              <Link href="/" className="hover:text-primary">
-                トップ
-              </Link>
-              <ChevronRight className="h-3 w-3" />
-              <Link href="/articles" className="hover:text-primary">
-                記事一覧
-              </Link>
-              <ChevronRight className="h-3 w-3" />
-              <span className="text-foreground">ハンドパレットの選び方</span>
-            </nav>
-          </div>
-        </div>
-
-        <section className="bg-card py-12">
-          <div className="mx-auto max-w-6xl px-4 md:px-6">
-            <div className="mb-4 flex items-center gap-3">
-              <span className="rounded-full bg-category-guide-bg px-3 py-1 text-sm font-bold text-category-guide">
-                選び方ガイド
-              </span>
-              <div className="flex items-center gap-1 text-sm text-muted-foreground">
-                <Clock className="h-3 w-3" />
-                <span>約11分で読める</span>
-              </div>
-            </div>
-            <h1 className="text-3xl font-black leading-tight text-foreground sm:text-4xl">
-              トラスコのハンドパレット（ハンドリフト）の選び方
-            </h1>
-            <p className="mt-2 text-lg text-muted-foreground">
-              フォーク長・能力・低床の違い
-            </p>
-          </div>
-        </section>
-
-        <section className="bg-card pb-10">
-          <div className="mx-auto max-w-6xl px-4 md:px-6">
-            <div className="relative aspect-[16/9] overflow-hidden rounded-2xl bg-primary-light">
-              <Image
-                src="/images/articles/trusco-hand-pallet-hero.jpg"
-                alt="倉庫でハンドパレットを選定する法人担当者のイメージ"
-                fill
-                className="object-cover"
-                priority
-                sizes="(max-width: 768px) 100vw, 1152px"
-              />
-            </div>
-          </div>
-        </section>
-
-        <article className="mx-auto max-w-6xl px-4 pb-16 md:px-6">
+      <ArticleContent>
           <p className="text-lg leading-relaxed text-muted-foreground">
             「ハンドリフトを買いたい」と検索すると商品が山ほど出てきて、1t・1.5t・2tの違いやフォーク長、低床式といった言葉に迷う方が多いはずです。さらに似た名前の「ハンドリフター」が混ざり、どれが自社の現場に合うのか分かりにくくなります。本記事ではパレット寸法→能力→低床→手動/電動→ハンドリフターとの違いの順で、選ぶための判断軸を一気通貫で整理します。
           </p>
@@ -387,7 +254,7 @@ export default function TruscoHandPalletErabikataPage() {
             <h3 className="mt-8 text-xl font-bold text-foreground">
               選び方3ステップ表
             </h3>
-            <ComparisonTable
+            <ArticleTable
               head={["ステップ", "確認すること", "ポイント"]}
               rows={[
                 [
@@ -450,7 +317,7 @@ export default function TruscoHandPalletErabikataPage() {
             <h3 className="mt-8 text-xl font-bold text-foreground">
               フォーク長早見表（考え方の目安）
             </h3>
-            <ComparisonTable
+            <ArticleTable
               head={["フォーク長のタイプ", "向くパレット", "主な現場"]}
               rows={[
                 [
@@ -477,7 +344,7 @@ export default function TruscoHandPalletErabikataPage() {
             <h3 className="mt-8 text-xl font-bold text-foreground">
               フォークサイズ違いで選ぶ（1.5t用の例）
             </h3>
-            <ProductGrid items={FORK_SIZE} cols={2} />
+            <ProductGrid items={FORK_SIZE} cols={2} slug={SLUG} />
             <p className="mt-4 text-sm text-muted-foreground">
               ※フォークサイズと運ぶパレットの相性を必ず確認してください。
             </p>
@@ -500,7 +367,7 @@ export default function TruscoHandPalletErabikataPage() {
             <h3 className="mt-8 text-xl font-bold text-foreground">
               能力早見表（目安）
             </h3>
-            <ComparisonTable
+            <ArticleTable
               head={["能力", "想定する荷物の目安", "主な用途"]}
               rows={[
                 ["1t", "軽め〜中程度の荷", "小ロット運搬、店舗・小規模倉庫"],
@@ -518,7 +385,7 @@ export default function TruscoHandPalletErabikataPage() {
             <h3 className="mt-8 text-xl font-bold text-foreground">
               能力で選ぶ
             </h3>
-            <ProductGrid items={CAPACITY} cols={2} />
+            <ProductGrid items={CAPACITY} cols={2} slug={SLUG} />
             <p className="mt-4 text-sm text-muted-foreground">
               ※適合・付属仕様は商品ページでご確認ください。
             </p>
@@ -568,7 +435,7 @@ export default function TruscoHandPalletErabikataPage() {
             <h3 className="mt-8 text-xl font-bold text-foreground">
               低床式で選ぶ
             </h3>
-            <ProductGrid items={LOW_PROFILE} cols={2} />
+            <ProductGrid items={LOW_PROFILE} cols={2} slug={SLUG} />
             <p className="mt-4 text-sm text-muted-foreground">
               ※お使いのパレットの差込口高さと適合するか、必ず仕様で確認してください。
             </p>
@@ -581,7 +448,7 @@ export default function TruscoHandPalletErabikataPage() {
             <ConclusionBox>
               運搬距離が短く頻度も中程度なら手動、長距離・高頻度・重量物で作業者の負担が大きいなら電動が向きます。人手不足や身体負担の軽減を重視するなら電動が選択肢になります。
             </ConclusionBox>
-            <ComparisonTable
+            <ArticleTable
               head={["観点", "手動ハンドパレット", "電動ハンドパレット"]}
               rows={[
                 ["運搬距離", "短〜中距離向き", "長距離でも負担が少ない"],
@@ -605,7 +472,7 @@ export default function TruscoHandPalletErabikataPage() {
             <h3 className="mt-8 text-xl font-bold text-foreground">
               電動で選ぶ（TRUSCO E-TRA）
             </h3>
-            <ProductGrid items={ELECTRIC} cols={2} />
+            <ProductGrid items={ELECTRIC} cols={2} slug={SLUG} />
             <p className="mt-4 text-sm text-muted-foreground">
               ※充電・運用条件や対応パレットは商品仕様でご確認ください。
             </p>
@@ -630,7 +497,7 @@ export default function TruscoHandPalletErabikataPage() {
             <h3 className="mt-8 text-xl font-bold text-foreground">
               ハンドパレット vs ハンドリフター比較表
             </h3>
-            <ComparisonTable
+            <ArticleTable
               head={["項目", "ハンドパレット", "ハンドリフター"]}
               rows={[
                 [
@@ -662,7 +529,7 @@ export default function TruscoHandPalletErabikataPage() {
             <h3 className="mt-8 text-xl font-bold text-foreground">
               ハンドリフター（昇降・高さ合わせ用）
             </h3>
-            <ProductGrid items={LIFTER} cols={2} />
+            <ProductGrid items={LIFTER} cols={2} slug={SLUG} />
             <p className="mt-4 text-sm text-muted-foreground">
               ※昇降高さ・テーブル寸法・能力は商品仕様でご確認ください。
             </p>
@@ -678,7 +545,7 @@ export default function TruscoHandPalletErabikataPage() {
             <h3 className="mt-8 text-xl font-bold text-foreground">
               現場別早見表
             </h3>
-            <ComparisonTable
+            <ArticleTable
               head={["現場・状況", "向きやすいタイプ", "重視する仕様"]}
               rows={[
                 [
@@ -799,27 +666,14 @@ export default function TruscoHandPalletErabikataPage() {
             <p className="mt-4 text-lg leading-relaxed text-muted-foreground">
               最終的な適合は、パレット寸法・差込口高さ・荷物重量の組み合わせで決まります。ラインナップ全体は一覧から見比べられます。
             </p>
-            <div className="mt-6 flex flex-wrap gap-2">
-              {CATEGORY_LINKS.map((c) => (
-                <a
-                  key={c.uc}
-                  href={buildUrl(c.url, `${SLUG}_${c.uc}`)}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-1 rounded-full border border-border bg-card px-4 py-2 text-sm font-bold text-foreground transition hover:border-primary/30"
-                >
-                  {c.label}
-                  <ExternalLink className="h-3 w-3" aria-hidden />
-                </a>
-              ))}
-            </div>
+            <CategoryLinks links={CATEGORY_LINKS} slug={SLUG} />
             <p className="mt-8 text-lg leading-relaxed text-muted-foreground">
               運搬作業では足元の安全も大切です。重いパレットを扱う現場では、つま先を守る安全靴・プロスニーカーもあわせて見直しておくと安心です。
             </p>
             <h3 className="mt-8 text-xl font-bold text-foreground">
               あわせて検討したい安全靴・プロスニーカー
             </h3>
-            <ProductGrid items={SAFETY_SHOES} cols={2} />
+            <ProductGrid items={SAFETY_SHOES} cols={2} slug={SLUG} />
             <p className="mt-4 text-sm text-muted-foreground">
               ※規格区分（JIS/JSAA）や適合は商品ページでご確認ください。
               <Link
@@ -856,29 +710,7 @@ export default function TruscoHandPalletErabikataPage() {
             </ul>
           </section>
 
-          <section className="mt-12">
-            <h2 className="text-3xl font-black text-foreground">
-              よくある質問（FAQ）
-            </h2>
-            <div className="mt-6 space-y-3">
-              {FAQ.map((f) => (
-                <details
-                  key={f.q}
-                  className="group rounded-2xl border border-border bg-card"
-                >
-                  <summary className="cursor-pointer list-none px-6 py-4 font-bold text-foreground marker:content-none [&::-webkit-details-marker]:hidden">
-                    <span className="flex items-center justify-between gap-4">
-                      {f.q}
-                      <ChevronRight className="h-5 w-5 shrink-0 text-muted-foreground transition group-open:rotate-90" />
-                    </span>
-                  </summary>
-                  <div className="border-t border-border px-6 py-4 text-base leading-relaxed text-muted-foreground">
-                    {f.a}
-                  </div>
-                </details>
-              ))}
-            </div>
-          </section>
+        <FaqSection faq={FAQ} />
 
           <section className="mt-12">
             <h2 className="text-3xl font-black text-foreground">まとめ</h2>
@@ -913,72 +745,18 @@ export default function TruscoHandPalletErabikataPage() {
             </p>
           </section>
 
-          <section className="mt-12 rounded-2xl bg-secondary p-8 text-secondary-foreground md:p-10">
-            <h2 className="text-2xl font-black text-white">
-              ハンドパレットを見比べる
-            </h2>
-            <p className="mt-3 text-footer-muted">
-              仕様・在庫・価格は商品ページでご確認ください。
-            </p>
-            <a
-              href={buildUrl(
-                `${YQ}search.html?p=%E3%83%8F%E3%83%B3%E3%83%89%E3%83%91%E3%83%AC%E3%83%83%E3%83%88&view=grid`,
-                `${SLUG}_cta`
-              )}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="mt-6 inline-flex items-center gap-2 rounded-xl bg-store-yahoo px-6 py-3 text-sm font-bold text-white transition hover:bg-store-yahoo-hover"
-            >
-              ハンドパレット一覧で仕様・在庫を確認する
-              <ExternalLink className="h-4 w-4" aria-hidden />
-            </a>
-          </section>
+        <ArticleCTA
+          title="ハンドパレットを見比べる"
+          description="仕様・在庫・価格は商品ページでご確認ください。"
+          buttonLabel="ハンドパレット一覧で仕様・在庫を確認する"
+          url={`${YQ}search.html?p=%E3%83%8F%E3%83%B3%E3%83%89%E3%83%91%E3%83%AC%E3%83%83%E3%83%88&view=grid`}
+          slug={SLUG}
+        />
 
-          {relatedArticles.length > 0 && (
-            <section className="mt-12">
-              <h2 className="text-2xl font-black text-foreground">関連記事</h2>
-              <ul className="mt-4 space-y-2">
-                {relatedArticles.map((article) => (
-                  <li key={article.slug}>
-                    <Link
-                      href={article.path}
-                      className="inline-flex items-center gap-1 font-bold text-primary hover:underline"
-                    >
-                      {article.shortTitle}
-                      <ChevronRight className="h-4 w-4" />
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            </section>
-          )}
+        <RelatedArticles items={RELATED} />
 
-          <div className="mt-10 text-center">
-            <Link
-              href="/articles"
-              className="inline-flex items-center gap-2 rounded-xl border border-border bg-card px-6 py-3 text-sm font-bold text-foreground transition hover:border-primary/30"
-            >
-              記事一覧に戻る
-              <ChevronRight className="h-4 w-4" />
-            </Link>
-          </div>
-
-          <p className="mt-12 border-t border-border pt-8 text-sm leading-relaxed text-muted-foreground">
-            運営：
-            <a
-              href="https://trade-sign.jp/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="font-bold text-primary hover:underline"
-            >
-              株式会社トレード
-            </a>
-            （グリーンクロスグループ）｜本記事は一般的な情報提供を目的としたものです。価格・在庫・仕様・適合は変動・個体差がある場合があり、最新情報は各商品ページでご確認ください。安全な使用方法や使用条件、現場で求められる仕様については、メーカー仕様・使用条件・現場ルールに従ってください。
-          </p>
-        </article>
-      </main>
-
-      <SiteFooter />
-    </div>
+        <Disclaimer extra="価格・在庫・仕様・適合は変動・個体差がある場合があり、最新情報は各商品ページでご確認ください。安全な使用方法や使用条件、現場で求められる仕様については、メーカー仕様・使用条件・現場ルールに従ってください。" />
+      </ArticleContent>
+    </ArticleLayout>
   );
 }

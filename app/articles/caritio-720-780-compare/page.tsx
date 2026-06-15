@@ -1,12 +1,22 @@
 import type { Metadata } from "next";
 import Image from "next/image";
-import Link from "next/link";
-import { ChevronRight, Clock, ExternalLink } from "lucide-react";
-import { SiteHeader } from "@/components/work/site-header";
-import { SiteFooter } from "@/components/work/site-footer";
 import { ProductCard } from "@/components/work/product-card";
+import {
+  ArticleLayout,
+  ArticleContent,
+  Breadcrumb,
+  ArticleHeader,
+  HeroImage,
+  ConclusionBox,
+  ArticleCTA,
+  CategoryLinks,
+  RelatedArticles,
+  Disclaimer,
+  FaqSection,
+  type RelatedArticle,
+} from "@/components/article";
 import { ARTICLES } from "@/lib/articles";
-import { buildUrl, STORE_LINKS } from "@/lib/product-links";
+import { STORE_LINKS } from "@/lib/product-links";
 
 const SLUG = "caritio-720-780-compare";
 const YQ = STORE_LINKS.yahoo;
@@ -148,16 +158,6 @@ const FAQ = [
   },
 ];
 
-const faqJsonLd = {
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  mainEntity: FAQ.map((f) => ({
-    "@type": "Question",
-    name: f.q,
-    acceptedAnswer: { "@type": "Answer", text: f.a },
-  })),
-};
-
 const articleJsonLd = {
   "@context": "https://schema.org",
   "@type": "Article",
@@ -182,86 +182,26 @@ const relatedArticles = ARTICLES.filter(
   (a) => a.slug !== SLUG && a.available
 ).slice(0, 3);
 
-function yahooProductUrl(id: string) {
-  return `${YQ}${id}.html`;
-}
-
-function ConclusionBox({ children }: { children: React.ReactNode }) {
-  return (
-    <div className="my-6 border-2 border-conclusion-border bg-conclusion-bg px-5 py-4 text-base leading-relaxed text-foreground">
-      {children}
-    </div>
-  );
-}
+const RELATED: RelatedArticle[] = relatedArticles.map((a) => ({
+  href: a.path,
+  label: a.shortTitle,
+}));
 
 export default function Caritio720780ComparePage() {
   return (
-    <div className="flex min-h-screen flex-col bg-background">
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
+    <ArticleLayout faq={FAQ} articleJsonLd={articleJsonLd}>
+      <Breadcrumb current="カルティオ MPK-720/780 の違い" />
+      <ArticleHeader
+        category="compare"
+        readingTime={8}
+        title="カルティオ MPK-720とMPK-780の違いは？"
+        subtitle="新旧サイズ早見表で選ぶ軽量台車"
       />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }}
+      <HeroImage
+        src="/images/articles/kartio-mpk720-mpk780-hero.jpg"
+        alt="カルティオの新旧モデルを比較する業務用台車のイメージ"
       />
-      <SiteHeader />
-
-      <main className="flex-1">
-        <div className="border-b border-border bg-card py-3">
-          <div className="mx-auto max-w-6xl px-4 md:px-6">
-            <nav className="flex flex-wrap items-center gap-2 text-sm text-muted-foreground">
-              <Link href="/" className="hover:text-primary">
-                トップ
-              </Link>
-              <ChevronRight className="h-3 w-3" />
-              <Link href="/articles" className="hover:text-primary">
-                記事一覧
-              </Link>
-              <ChevronRight className="h-3 w-3" />
-              <span className="text-foreground">
-                カルティオ MPK-720/780 の違い
-              </span>
-            </nav>
-          </div>
-        </div>
-
-        <section className="bg-card py-12">
-          <div className="mx-auto max-w-6xl px-4 md:px-6">
-            <div className="mb-4 flex items-center gap-3">
-              <span className="rounded-full bg-category-compare-bg px-3 py-1 text-sm font-bold text-category-compare">
-                比較・違い
-              </span>
-              <div className="flex items-center gap-1 text-sm text-muted-foreground">
-                <Clock className="h-3 w-3" />
-                <span>約8分で読める</span>
-              </div>
-            </div>
-            <h1 className="text-3xl font-black leading-tight text-foreground sm:text-4xl">
-              カルティオ MPK-720とMPK-780の違いは？
-            </h1>
-            <p className="mt-2 text-lg text-muted-foreground">
-              新旧サイズ早見表で選ぶ軽量台車
-            </p>
-          </div>
-        </section>
-
-        <section className="bg-card pb-10">
-          <div className="mx-auto max-w-6xl px-4 md:px-6">
-            <div className="relative aspect-[16/9] overflow-hidden rounded-2xl bg-primary-light">
-              <Image
-                src="/images/articles/kartio-mpk720-mpk780-hero.jpg"
-                alt="カルティオの新旧モデルを比較する業務用台車のイメージ"
-                fill
-                className="object-cover"
-                priority
-                sizes="(max-width: 768px) 100vw, 1152px"
-              />
-            </div>
-          </div>
-        </section>
-
-        <article className="mx-auto max-w-6xl px-4 pb-16 md:px-6">
+      <ArticleContent>
           <p className="text-lg leading-relaxed text-muted-foreground">
             カルティオの買い替えや増車を検討すると、必ずぶつかるのが「720と780、何が違うのか」という疑問です。型番が近く、見た目もほぼ同じ。スペック表を並べても数字の大半が一致するため、現場の購買担当者ほど判断に迷います。本記事では公式スペックを早見表で整理し、どんな現場ならどちらを選ぶべきかを実務目線でまとめました。
           </p>
@@ -567,7 +507,7 @@ export default function Caritio720780ComparePage() {
                   key={p.id}
                   name={p.name}
                   imageId={p.id}
-                  links={{ yahoo: yahooProductUrl(p.id) }}
+                  links={{ yahoo: `${YQ}${p.id}.html` }}
                   utmContent={`${SLUG}_${p.id}`}
                   note={p.note}
                 />
@@ -605,7 +545,7 @@ export default function Caritio720780ComparePage() {
                   key={p.id}
                   name={p.name}
                   imageId={p.id}
-                  links={{ yahoo: yahooProductUrl(p.id) }}
+                  links={{ yahoo: `${YQ}${p.id}.html` }}
                   utmContent={`${SLUG}_${p.id}`}
                   note={p.note}
                 />
@@ -624,7 +564,7 @@ export default function Caritio720780ComparePage() {
                   key={p.id}
                   name={p.name}
                   imageId={p.id}
-                  links={{ yahoo: yahooProductUrl(p.id) }}
+                  links={{ yahoo: `${YQ}${p.id}.html` }}
                   utmContent={`${SLUG}_${p.id}`}
                   note={p.note}
                 />
@@ -634,19 +574,7 @@ export default function Caritio720780ComparePage() {
             <p className="mt-8 text-lg leading-relaxed text-muted-foreground">
               運搬まわりをまとめて見直すなら、カテゴリ一覧もどうぞ。
             </p>
-            <div className="mt-4 flex flex-wrap gap-2">
-              {CATEGORY_LINKS.map((c) => (
-                <a
-                  key={c.uc}
-                  href={buildUrl(c.url, `${SLUG}_${c.uc}`)}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="rounded-full border border-border bg-card px-4 py-2 text-sm font-bold text-foreground transition hover:border-primary/30 hover:bg-primary-light"
-                >
-                  {c.label}
-                </a>
-              ))}
-            </div>
+            <CategoryLinks links={CATEGORY_LINKS} slug={SLUG} />
           </section>
 
           <section className="mt-12">
@@ -672,29 +600,7 @@ export default function Caritio720780ComparePage() {
             </ul>
           </section>
 
-          <section className="mt-12">
-            <h2 className="text-3xl font-black text-foreground">
-              よくある質問（FAQ）
-            </h2>
-            <div className="mt-6 space-y-3">
-              {FAQ.map((f) => (
-                <details
-                  key={f.q}
-                  className="group rounded-2xl border border-border bg-card"
-                >
-                  <summary className="cursor-pointer list-none px-6 py-4 font-bold text-foreground marker:content-none [&::-webkit-details-marker]:hidden">
-                    <span className="flex items-center justify-between gap-4">
-                      {f.q}
-                      <ChevronRight className="h-5 w-5 shrink-0 text-muted-foreground transition group-open:rotate-90" />
-                    </span>
-                  </summary>
-                  <div className="border-t border-border px-6 py-4 text-base leading-relaxed text-muted-foreground">
-                    {f.a}
-                  </div>
-                </details>
-              ))}
-            </div>
-          </section>
+        <FaqSection faq={FAQ} />
 
           <section className="mt-12">
             <h2 className="text-3xl font-black text-foreground">まとめ</h2>
@@ -719,69 +625,18 @@ export default function Caritio720780ComparePage() {
             </p>
           </section>
 
-          <section className="mt-12 rounded-2xl bg-secondary p-8 text-secondary-foreground md:p-10">
-            <h2 className="text-2xl font-black text-white">
-              軽量台車カルティオを見てみる
-            </h2>
-            <p className="mt-3 text-footer-muted">
-              仕様・在庫・価格は商品ページでご確認ください。
-            </p>
-            <a
-              href={buildUrl(yahooProductUrl("167468"), `${SLUG}_cta`)}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="mt-6 inline-flex items-center gap-2 rounded-xl bg-store-yahoo px-6 py-3 text-sm font-bold text-white transition hover:bg-store-yahoo-hover"
-            >
-              商品ページで仕様・在庫を確認する
-              <ExternalLink className="h-4 w-4" aria-hidden />
-            </a>
-          </section>
+        <ArticleCTA
+          title="軽量台車カルティオを見てみる"
+          description="仕様・在庫・価格は商品ページでご確認ください。"
+          buttonLabel="商品ページで仕様・在庫を確認する"
+          url={`${YQ}167468.html`}
+          slug={SLUG}
+        />
 
-          {relatedArticles.length > 0 && (
-            <section className="mt-12">
-              <h2 className="text-2xl font-black text-foreground">関連記事</h2>
-              <ul className="mt-4 space-y-2">
-                {relatedArticles.map((article) => (
-                  <li key={article.slug}>
-                    <Link
-                      href={article.path}
-                      className="inline-flex items-center gap-1 font-bold text-primary hover:underline"
-                    >
-                      {article.shortTitle}
-                      <ChevronRight className="h-4 w-4" />
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            </section>
-          )}
+        <RelatedArticles items={RELATED} />
 
-          <div className="mt-10 text-center">
-            <Link
-              href="/articles"
-              className="inline-flex items-center gap-2 rounded-xl border border-border bg-card px-6 py-3 text-sm font-bold text-foreground transition hover:border-primary/30"
-            >
-              記事一覧に戻る
-              <ChevronRight className="h-4 w-4" />
-            </Link>
-          </div>
-
-          <p className="mt-12 border-t border-border pt-8 text-sm leading-relaxed text-muted-foreground">
-            運営：
-            <a
-              href="https://trade-sign.jp/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="font-bold text-primary hover:underline"
-            >
-              株式会社トレード
-            </a>
-            （グリーンクロスグループ）｜本記事は一般的な情報提供を目的としたものです。価格・在庫・仕様は変動する場合があり、最新情報は各商品ページをご確認ください。安全な使用方法や使用条件については、メーカーの取扱説明書および仕様に従ってください。
-          </p>
-        </article>
-      </main>
-
-      <SiteFooter />
-    </div>
+        <Disclaimer extra="価格・在庫・仕様は変動する場合があり、最新情報は各商品ページをご確認ください。安全な使用方法や使用条件については、メーカーの取扱説明書および仕様に従ってください。" />
+      </ArticleContent>
+    </ArticleLayout>
   );
 }

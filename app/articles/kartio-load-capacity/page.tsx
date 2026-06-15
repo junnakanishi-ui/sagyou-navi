@@ -1,11 +1,23 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
-import { ChevronRight, Clock, ExternalLink } from "lucide-react";
-import { SiteHeader } from "@/components/work/site-header";
-import { SiteFooter } from "@/components/work/site-footer";
-import { ProductCard } from "@/components/work/product-card";
-import { buildUrl, STORE_LINKS } from "@/lib/product-links";
+import {
+  ArticleLayout,
+  ArticleContent,
+  Breadcrumb,
+  ArticleHeader,
+  HeroImage,
+  ConclusionBox,
+  ArticleTable,
+  ProductGrid,
+  ArticleCTA,
+  CategoryLinks,
+  RelatedArticles,
+  Disclaimer,
+  FaqSection,
+  type RelatedArticle,
+} from "@/components/article";
+import { STORE_LINKS } from "@/lib/product-links";
 
 const SLUG = "kartio-load-capacity";
 const YQ = STORE_LINKS.yahoo;
@@ -153,16 +165,6 @@ const FAQ = [
   },
 ];
 
-const faqJsonLd = {
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  mainEntity: FAQ.map((f) => ({
-    "@type": "Question",
-    name: f.q,
-    acceptedAnswer: { "@type": "Answer", text: f.a },
-  })),
-};
-
 const articleJsonLd = {
   "@context": "https://schema.org",
   "@type": "Article",
@@ -183,161 +185,26 @@ const articleJsonLd = {
   },
 };
 
-type ProductItem = {
-  id: string;
-  name: string;
-  note: string;
-};
-
-function yahooProductUrl(id: string) {
-  return `${YQ}${id}.html`;
-}
-
-function ConclusionBox({ children }: { children: React.ReactNode }) {
-  return (
-    <div className="my-6 border-2 border-conclusion-border bg-conclusion-bg px-5 py-4 text-base leading-relaxed text-foreground">
-      {children}
-    </div>
-  );
-}
-
-function ProductGrid({
-  items,
-  cols = 2,
-}: {
-  items: ProductItem[];
-  cols?: 2 | 3;
-}) {
-  const gridClass =
-    cols === 2 ? "sm:grid-cols-2" : "sm:grid-cols-2 lg:grid-cols-3";
-
-  return (
-    <div className={`mt-6 grid gap-4 ${gridClass}`}>
-      {items.map((p) => (
-        <ProductCard
-          key={p.id}
-          name={p.name}
-          imageId={p.id}
-          links={{ yahoo: yahooProductUrl(p.id) }}
-          utmContent={`${SLUG}_${p.id}`}
-          note={p.note}
-        />
-      ))}
-    </div>
-  );
-}
-
-function ComparisonTable({
-  head,
-  rows,
-  note,
-}: {
-  head: string[];
-  rows: string[][];
-  note?: string;
-}) {
-  return (
-    <>
-      <div className="mt-4 overflow-x-auto">
-        <table className="min-w-[640px] w-full border-collapse text-left text-base">
-          <thead>
-            <tr className="bg-foreground text-brand">
-              {head.map((h) => (
-                <th key={h} className="px-4 py-3 font-bold">
-                  {h}
-                </th>
-              ))}
-            </tr>
-          </thead>
-          <tbody className="text-muted-foreground">
-            {rows.map((r, i) => (
-              <tr key={i} className="border-b border-border bg-card">
-                {r.map((c, j) => (
-                  <td
-                    key={j}
-                    className={`px-4 py-3 ${j === 0 ? "font-bold text-foreground" : ""}`}
-                  >
-                    {c}
-                  </td>
-                ))}
-              </tr>
-            ))}
-          </tbody>
-        </table>
-      </div>
-      {note && (
-        <p className="mt-4 text-sm text-muted-foreground">{note}</p>
-      )}
-    </>
-  );
-}
+const RELATED: RelatedArticle[] = RELATED_ARTICLES.map((a) => ({
+  href: `/articles/${a.slug}`,
+  label: a.title,
+}));
 
 export default function KartioLoadCapacityPage() {
   return (
-    <div className="flex min-h-screen flex-col bg-background">
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
+    <ArticleLayout faq={FAQ} articleJsonLd={articleJsonLd}>
+      <Breadcrumb current="カルティオの耐荷重" />
+      <ArticleHeader
+        category="howto"
+        readingTime={9}
+        title="カルティオは何kgまで載せられる？"
+        subtitle="均等荷重200kgの正しい意味と過積載のリスク"
       />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }}
+      <HeroImage
+        src="/images/articles/kartio-load-capacity-hero.jpg"
+        alt="倉庫でカルティオ台車の積載イメージを確認する担当者"
       />
-      <SiteHeader />
-
-      <main className="flex-1">
-        <div className="border-b border-border bg-card py-3">
-          <div className="mx-auto max-w-6xl px-4 md:px-6">
-            <nav className="flex flex-wrap items-center gap-2 text-sm text-muted-foreground">
-              <Link href="/" className="hover:text-primary">
-                トップ
-              </Link>
-              <ChevronRight className="h-3 w-3" />
-              <Link href="/articles" className="hover:text-primary">
-                記事一覧
-              </Link>
-              <ChevronRight className="h-3 w-3" />
-              <span className="text-foreground">カルティオの耐荷重</span>
-            </nav>
-          </div>
-        </div>
-
-        <section className="bg-card py-12">
-          <div className="mx-auto max-w-6xl px-4 md:px-6">
-            <div className="mb-4 flex items-center gap-3">
-              <span className="rounded-full bg-category-howto-bg px-3 py-1 text-sm font-bold text-accent-amber-foreground">
-                使い方・コツ
-              </span>
-              <div className="flex items-center gap-1 text-sm text-muted-foreground">
-                <Clock className="h-3 w-3" />
-                <span>約9分で読める</span>
-              </div>
-            </div>
-            <h1 className="text-3xl font-black leading-tight text-foreground sm:text-4xl">
-              カルティオは何kgまで載せられる？
-            </h1>
-            <p className="mt-2 text-lg text-muted-foreground">
-              均等荷重200kgの正しい意味と過積載のリスク
-            </p>
-          </div>
-        </section>
-
-        <section className="bg-card pb-10">
-          <div className="mx-auto max-w-6xl px-4 md:px-6">
-            <div className="relative aspect-[16/9] overflow-hidden rounded-2xl bg-primary-light">
-              <Image
-                src="/images/articles/kartio-load-capacity-hero.jpg"
-                alt="倉庫でカルティオ台車の積載イメージを確認する担当者"
-                fill
-                className="object-cover"
-                priority
-                sizes="(max-width: 768px) 100vw, 1152px"
-              />
-            </div>
-          </div>
-        </section>
-
-        <article className="mx-auto max-w-6xl px-4 pb-16 md:px-6">
+      <ArticleContent>
           <p className="text-lg leading-relaxed text-muted-foreground">
             「カルティオって何kgまで載せていいの？」という質問はとても多いのですが、答えの「200kg」をどう読むかを知らないと、スペック内でも事故が起きます。本記事ではカルティオの耐荷重200kgの正しい意味を整理したうえで、過積載だけでなく偏荷重・高積み・斜面使用といった見落としがちなリスク、そして「自社の現場で200kgは足りるのか」までを実務目線でまとめました。
           </p>
@@ -361,7 +228,7 @@ export default function KartioLoadCapacityPage() {
             <h3 className="mt-8 text-xl font-bold text-foreground">
               カルティオ耐荷重の基本比較表
             </h3>
-            <ComparisonTable
+            <ArticleTable
               head={["項目", "新型カルティオ MPK-780"]}
               rows={[
                 ["耐荷重", "均等荷重 200kg"],
@@ -411,7 +278,7 @@ export default function KartioLoadCapacityPage() {
             <h3 className="mt-8 text-xl font-bold text-foreground">
               均等荷重200kgの読み方表
             </h3>
-            <ComparisonTable
+            <ArticleTable
               head={["載せ方", "イメージ", "注意点"]}
               rows={[
                 ["均等に平らに載せる", "◎ 想定された使い方", "200kg以内が目安"],
@@ -520,7 +387,7 @@ export default function KartioLoadCapacityPage() {
             <h3 className="mt-8 text-xl font-bold text-foreground">
               標準カルティオ（均等荷重200kg・汎用）
             </h3>
-            <ProductGrid items={STANDARD} cols={2} />
+            <ProductGrid items={STANDARD} cols={2} slug={SLUG} />
             <p className="mt-4 text-sm text-muted-foreground">
               ※平坦な屋内での標準的な運搬向け。使用条件は取扱説明書をご確認ください。
             </p>
@@ -536,7 +403,7 @@ export default function KartioLoadCapacityPage() {
             <h3 className="mt-6 text-xl font-bold text-foreground">
               用途別の選び方早見表
             </h3>
-            <ComparisonTable
+            <ArticleTable
               head={["現場・運ぶもの", "向きやすいモデル", "理由"]}
               rows={[
                 [
@@ -578,7 +445,7 @@ export default function KartioLoadCapacityPage() {
             <h3 className="mt-8 text-xl font-bold text-foreground">
               カルティオ ストッパー付き（停車を固定したい現場）
             </h3>
-            <ProductGrid items={STOPPER} cols={2} />
+            <ProductGrid items={STOPPER} cols={2} slug={SLUG} />
             <p className="mt-4 text-sm text-muted-foreground">
               ※傾斜のある場所での使用可否は取扱説明書・使用条件をご確認ください。
             </p>
@@ -600,7 +467,7 @@ export default function KartioLoadCapacityPage() {
                 sizes="(max-width: 768px) 100vw, 1152px"
               />
             </figure>
-            <ComparisonTable
+            <ArticleTable
               head={["モデル", "耐荷重クラス", "向く用途"]}
               rows={[
                 [
@@ -624,11 +491,11 @@ export default function KartioLoadCapacityPage() {
             <h3 className="mt-8 text-xl font-bold text-foreground">
               カルティオビッグ（均等荷重400kgクラス・重量物/大きい荷）
             </h3>
-            <ProductGrid items={BIG} cols={2} />
+            <ProductGrid items={BIG} cols={2} slug={SLUG} />
             <h3 className="mt-8 text-xl font-bold text-foreground">
               weego／カルティオミニ（均等荷重100kgクラス・軽作業/小型）
             </h3>
-            <ProductGrid items={WEEGO} cols={2} />
+            <ProductGrid items={WEEGO} cols={2} slug={SLUG} />
             <p className="mt-4 text-sm text-muted-foreground">
               ※耐荷重・サイズが用途に合うか商品ページでご確認ください。
             </p>
@@ -712,26 +579,14 @@ export default function KartioLoadCapacityPage() {
                 ：weego 100kgクラス（159715 / 159718）
               </li>
             </ul>
-            <div className="mt-6 flex flex-wrap gap-2">
-              {CATEGORY_LINKS.map((c) => (
-                <a
-                  key={c.uc}
-                  href={buildUrl(c.url, `${SLUG}_${c.uc}`)}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="rounded-full border border-border bg-card px-4 py-2 text-sm font-bold text-foreground transition hover:border-primary/30 hover:bg-primary-light"
-                >
-                  {c.label}
-                </a>
-              ))}
-            </div>
+            <CategoryLinks links={CATEGORY_LINKS} slug={SLUG} />
             <p className="mt-8 text-lg leading-relaxed text-muted-foreground">
               運搬作業では足元の安全も大切です。重い荷を扱う現場では、つま先を守る安全靴・プロスニーカーもあわせて見直しておくと安心です。
             </p>
             <h3 className="mt-6 text-xl font-bold text-foreground">
               あわせて検討したい安全靴・プロスニーカー
             </h3>
-            <ProductGrid items={SAFETY_SHOES} cols={2} />
+            <ProductGrid items={SAFETY_SHOES} cols={2} slug={SLUG} />
             <p className="mt-4 text-sm text-muted-foreground">
               ※規格区分（JIS/JSAA）や適合は商品ページでご確認ください。
               <Link
@@ -767,29 +622,7 @@ export default function KartioLoadCapacityPage() {
             </ul>
           </section>
 
-          <section className="mt-12">
-            <h2 className="text-3xl font-black text-foreground">
-              よくある質問（FAQ）
-            </h2>
-            <div className="mt-6 space-y-3">
-              {FAQ.map((f) => (
-                <details
-                  key={f.q}
-                  className="group rounded-2xl border border-border bg-card"
-                >
-                  <summary className="cursor-pointer list-none px-6 py-4 font-bold text-foreground marker:content-none [&::-webkit-details-marker]:hidden">
-                    <span className="flex items-center justify-between gap-4">
-                      {f.q}
-                      <ChevronRight className="h-5 w-5 shrink-0 text-muted-foreground transition group-open:rotate-90" />
-                    </span>
-                  </summary>
-                  <div className="border-t border-border px-6 py-4 text-base leading-relaxed text-muted-foreground">
-                    {f.a}
-                  </div>
-                </details>
-              ))}
-            </div>
-          </section>
+        <FaqSection faq={FAQ} />
 
           <section className="mt-12">
             <h2 className="text-3xl font-black text-foreground">まとめ</h2>
@@ -822,67 +655,18 @@ export default function KartioLoadCapacityPage() {
             </p>
           </section>
 
-          <section className="mt-12 rounded-2xl bg-secondary p-8 text-secondary-foreground md:p-10">
-            <h2 className="text-2xl font-black text-white">
-              カルティオシリーズを見比べる
-            </h2>
-            <p className="mt-3 text-footer-muted">
-              仕様・在庫・価格は商品ページでご確認ください。
-            </p>
-            <a
-              href={buildUrl(yahooProductUrl("167468"), `${SLUG}_cta`)}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="mt-6 inline-flex items-center gap-2 rounded-xl bg-store-yahoo px-6 py-3 text-sm font-bold text-white transition hover:bg-store-yahoo-hover"
-            >
-              商品ページで仕様・在庫を確認する
-              <ExternalLink className="h-4 w-4" aria-hidden />
-            </a>
-          </section>
+        <ArticleCTA
+          title="カルティオシリーズを見比べる"
+          description="仕様・在庫・価格は商品ページでご確認ください。"
+          buttonLabel="商品ページで仕様・在庫を確認する"
+          url={`${YQ}167468.html`}
+          slug={SLUG}
+        />
 
-          <section className="mt-12">
-            <h2 className="text-2xl font-black text-foreground">関連記事</h2>
-            <ul className="mt-4 space-y-2">
-              {RELATED_ARTICLES.map((article) => (
-                <li key={article.slug}>
-                  <Link
-                    href={`/articles/${article.slug}`}
-                    className="inline-flex items-center gap-1 font-bold text-primary hover:underline"
-                  >
-                    {article.title}
-                    <ChevronRight className="h-4 w-4" />
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </section>
+        <RelatedArticles items={RELATED} />
 
-          <div className="mt-10 text-center">
-            <Link
-              href="/articles"
-              className="inline-flex items-center gap-2 rounded-xl border border-border bg-card px-6 py-3 text-sm font-bold text-foreground transition hover:border-primary/30"
-            >
-              記事一覧に戻る
-              <ChevronRight className="h-4 w-4" />
-            </Link>
-          </div>
-
-          <p className="mt-12 border-t border-border pt-8 text-sm leading-relaxed text-muted-foreground">
-            運営：
-            <a
-              href="https://trade-sign.jp/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="font-bold text-primary hover:underline"
-            >
-              株式会社トレード
-            </a>
-            （グリーンクロスグループ）｜本記事は一般的な情報提供を目的としたものです。耐荷重・価格・在庫・仕様は変動する場合があり、最新情報は各商品ページでご確認ください。安全な使用方法・使用条件については、メーカーの取扱説明書および仕様、社内の運用ルールに従ってください。
-          </p>
-        </article>
-      </main>
-
-      <SiteFooter />
-    </div>
+        <Disclaimer extra="耐荷重・価格・在庫・仕様は変動する場合があり、最新情報は各商品ページでご確認ください。安全な使用方法・使用条件については、メーカーの取扱説明書および仕様、社内の運用ルールに従ってください。" />
+      </ArticleContent>
+    </ArticleLayout>
   );
 }

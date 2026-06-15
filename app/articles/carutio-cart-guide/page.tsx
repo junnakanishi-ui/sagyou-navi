@@ -1,12 +1,22 @@
 import type { Metadata } from "next";
-import Image from "next/image";
-import Link from "next/link";
-import { ChevronRight, Clock, ExternalLink } from "lucide-react";
-import { SiteHeader } from "@/components/work/site-header";
-import { SiteFooter } from "@/components/work/site-footer";
 import { ProductCard } from "@/components/work/product-card";
+import {
+  ArticleLayout,
+  ArticleContent,
+  Breadcrumb,
+  ArticleHeader,
+  HeroImage,
+  ConclusionBox,
+  ArticleCTA,
+  RelatedArticles,
+  Disclaimer,
+  FaqSection,
+  type RelatedArticle,
+} from "@/components/article";
 import { ARTICLES } from "@/lib/articles";
-import { buildUrl, STORE_LINKS } from "@/lib/product-links";
+import { STORE_LINKS } from "@/lib/product-links";
+
+const SLUG = "carutio-cart-guide";
 
 export const metadata: Metadata = {
   title:
@@ -45,16 +55,6 @@ const faqItems = [
   },
 ];
 
-const faqJsonLd = {
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  mainEntity: faqItems.map((item) => ({
-    "@type": "Question",
-    name: item.q,
-    acceptedAnswer: { "@type": "Answer", text: item.a },
-  })),
-};
-
 const articleJsonLd = {
   "@context": "https://schema.org",
   "@type": "Article",
@@ -79,88 +79,29 @@ const relatedArticles = ARTICLES.filter(
   (a) => a.slug !== "carutio-cart-guide" && a.available
 ).slice(0, 3);
 
-function ConclusionBox({ children }: { children: React.ReactNode }) {
-  return (
-    <div className="my-6 border-2 border-conclusion-border bg-conclusion-bg px-5 py-4 text-base leading-relaxed text-foreground">
-      {children}
-    </div>
-  );
-}
+const RELATED: RelatedArticle[] = relatedArticles.map((a) => ({
+  href: a.path,
+  label: a.shortTitle,
+}));
 
 export default function CarutioCartGuidePage() {
   return (
-    <div className="flex min-h-screen flex-col bg-background">
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
+    <ArticleLayout faq={faqItems} articleJsonLd={articleJsonLd}>
+      <Breadcrumb current="カルティオ台車の選び方" />
+      <ArticleHeader
+        category="guide"
+        readingTime={10}
+        title="軽量樹脂台車カルティオの選び方"
+        subtitle="｜サイズ・耐荷重・静音・ストッパーの違い"
       />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }}
+      <HeroImage
+        src="/images/articles/carutio-cart-guide-hero.jpg"
+        alt="軽量樹脂台車カルティオの選び方"
       />
-      <SiteHeader />
-
-      <main className="flex-1">
-        {/* Breadcrumb */}
-        <div className="border-b border-border bg-card py-3">
-          <div className="mx-auto max-w-6xl px-4 md:px-6">
-            <nav className="flex flex-wrap items-center gap-2 text-sm text-muted-foreground">
-              <Link href="/" className="hover:text-primary">
-                トップ
-              </Link>
-              <ChevronRight className="h-3 w-3" />
-              <Link href="/articles" className="hover:text-primary">
-                記事一覧
-              </Link>
-              <ChevronRight className="h-3 w-3" />
-              <span className="text-foreground">カルティオ台車の選び方</span>
-            </nav>
-          </div>
-        </div>
-
-        {/* Article header */}
-        <section className="bg-card py-12">
-          <div className="mx-auto max-w-6xl px-4 md:px-6">
-            <div className="mb-4 flex items-center gap-3">
-              <span className="rounded-full bg-category-guide-bg px-3 py-1 text-sm font-bold text-category-guide">
-                選び方ガイド
-              </span>
-              <div className="flex items-center gap-1 text-sm text-muted-foreground">
-                <Clock className="h-3 w-3" />
-                <span>約10分で読める</span>
-              </div>
-            </div>
-            <h1 className="text-3xl font-black leading-tight text-foreground sm:text-4xl">
-              軽量樹脂台車カルティオの選び方
-              <br className="hidden sm:block" />
-              <span className="text-2xl sm:text-3xl">
-                ｜サイズ・耐荷重・静音・ストッパーの違い
-              </span>
-            </h1>
-          </div>
-        </section>
-
-        {/* Main visual */}
-        <section className="bg-card pb-10">
-          <div className="mx-auto max-w-6xl px-4 md:px-6">
-            <div className="relative aspect-[16/9] overflow-hidden rounded-2xl bg-primary-light">
-              <Image
-                src="/images/articles/carutio-cart-guide-hero.jpg"
-                alt="軽量樹脂台車カルティオの選び方"
-                fill
-                className="object-cover"
-                priority
-                sizes="(max-width: 768px) 100vw, 1152px"
-              />
-            </div>
-            <p className="mt-3 text-center text-sm text-muted-foreground">
-              トラスコ中山の軽量樹脂台車「カルティオ」シリーズ（イメージ）
-            </p>
-          </div>
-        </section>
-
-        {/* Body */}
-        <article className="mx-auto max-w-6xl px-4 pb-16 md:px-6">
+      <ArticleContent>
+        <p className="mt-3 text-center text-sm text-muted-foreground">
+          トラスコ中山の軽量樹脂台車「カルティオ」シリーズ（イメージ）
+        </p>
           <p className="text-lg leading-relaxed text-muted-foreground">
             工場・倉庫・店舗の現場では、段ボールや資材、機材の運搬に台車が欠かせません。トラスコ中山の軽量樹脂台車「カルティオ」は、樹脂製で軽量・錆びにくいという特徴から、多くの現場で採用されています。しかし、シリーズ内にもサイズ・耐荷重・キャスター・ストッパーなど複数のバリエーションがあり、「どれを選べばよいか分からない」と感じる方も少なくありません。
           </p>
@@ -368,30 +309,7 @@ export default function CarutioCartGuidePage() {
             </div>
           </section>
 
-          {/* FAQ */}
-          <section className="mt-12">
-            <h2 className="text-3xl font-black text-foreground">
-              よくあるご質問
-            </h2>
-            <div className="mt-6 space-y-3">
-              {faqItems.map((item) => (
-                <details
-                  key={item.q}
-                  className="group rounded-2xl border border-border bg-card"
-                >
-                  <summary className="cursor-pointer list-none px-6 py-4 font-bold text-foreground marker:content-none [&::-webkit-details-marker]:hidden">
-                    <span className="flex items-center justify-between gap-4">
-                      {item.q}
-                      <ChevronRight className="h-5 w-5 shrink-0 text-muted-foreground transition group-open:rotate-90" />
-                    </span>
-                  </summary>
-                  <div className="border-t border-border px-6 py-4 text-base leading-relaxed text-muted-foreground">
-                    {item.a}
-                  </div>
-                </details>
-              ))}
-            </div>
-          </section>
+        <FaqSection faq={faqItems} />
 
           {/* Summary */}
           <section className="mt-12">
@@ -401,92 +319,19 @@ export default function CarutioCartGuidePage() {
             </p>
           </section>
 
-          {/* Article CTA */}
-          <section className="mt-12 rounded-2xl bg-secondary p-8 text-secondary-foreground md:p-10">
-            <h2 className="text-2xl font-black text-white">作業用品を探す</h2>
-            <p className="mt-3 text-footer-muted">
-              台車・運搬具は各ストアで取り扱いがあります。在庫・価格は商品ページでご確認ください。
-            </p>
-            <div className="mt-6 flex flex-wrap gap-3">
-              <a
-                href={buildUrl(STORE_LINKS.gcSelect, "carutio_cart_guide_cta_gc")}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 rounded-xl bg-store-gc-select px-5 py-3 text-sm font-bold text-white transition hover:bg-store-gc-select-hover"
-              >
-                GCセレクト
-                <ExternalLink className="h-4 w-4" aria-hidden />
-              </a>
-              <a
-                href={buildUrl(
-                  STORE_LINKS.rakuten,
-                  "carutio_cart_guide_cta_rakuten"
-                )}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 rounded-xl bg-store-rakuten px-5 py-3 text-sm font-bold text-white transition hover:bg-store-rakuten-hover"
-              >
-                楽天市場
-                <ExternalLink className="h-4 w-4" aria-hidden />
-              </a>
-              <a
-                href={buildUrl(STORE_LINKS.yahoo, "carutio_cart_guide_cta_yahoo")}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 rounded-xl bg-store-yahoo px-5 py-3 text-sm font-bold text-white transition hover:bg-store-yahoo-hover"
-              >
-                Yahoo!ショッピング
-                <ExternalLink className="h-4 w-4" aria-hidden />
-              </a>
-            </div>
-          </section>
+        <ArticleCTA
+          title="作業用品を探す"
+          description="台車・運搬具は各ストアで取り扱いがあります。在庫・価格は商品ページでご確認ください。"
+          buttonLabel="Yahoo!ショッピング"
+          url={STORE_LINKS.yahoo}
+          slug={SLUG}
+          utcSuffix="cta_yahoo"
+        />
 
-          {/* Related articles */}
-          {relatedArticles.length > 0 && (
-            <section className="mt-12">
-              <h2 className="text-2xl font-black text-foreground">関連記事</h2>
-              <ul className="mt-4 space-y-2">
-                {relatedArticles.map((article) => (
-                  <li key={article.slug}>
-                    <Link
-                      href={article.path}
-                      className="inline-flex items-center gap-1 font-bold text-primary hover:underline"
-                    >
-                      {article.shortTitle}
-                      <ChevronRight className="h-4 w-4" />
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            </section>
-          )}
+        <RelatedArticles items={RELATED} />
 
-          <div className="mt-10 text-center">
-            <Link
-              href="/articles"
-              className="inline-flex items-center gap-2 rounded-xl border border-border bg-card px-6 py-3 text-sm font-bold text-foreground transition hover:border-primary/30"
-            >
-              記事一覧に戻る
-              <ChevronRight className="h-4 w-4" />
-            </Link>
-          </div>
-
-          <p className="mt-12 border-t border-border pt-8 text-sm leading-relaxed text-muted-foreground">
-            運営：
-            <a
-              href="https://trade-sign.jp/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="font-bold text-primary hover:underline"
-            >
-              株式会社トレード
-            </a>
-            ｜掲載内容は一般的な選定基準の整理を目的としています。耐荷重・サイズ・在庫などの具体仕様は、各商品ページでご確認ください。
-          </p>
-        </article>
-      </main>
-
-      <SiteFooter />
-    </div>
+        <Disclaimer extra="耐荷重・サイズ・在庫などの具体仕様は、各商品ページでご確認ください。" />
+      </ArticleContent>
+    </ArticleLayout>
   );
 }

@@ -14,6 +14,21 @@ export type Article = {
 
 export const ARTICLES: Article[] = [
   {
+    slug: "workbench-erabikata",
+    title:
+      "軽量作業台と重量作業台の違い｜耐荷重と天板素材で選ぶ用途別ガイド",
+    shortTitle: "作業台の選び方",
+    description:
+      "軽量・中量・重荷重作業台の違いを、耐荷重・天板素材（ポリ化粧/ダップ化粧）・作業内容から整理。現場別早見表・導入失敗例・チェックリストで、自社に合う業務用作業台の選び方を解説します。",
+    category: "compare",
+    categoryLabel: "比較・違い",
+    thumbnail: "/images/articles/workbench-load-capacity-hero.jpg",
+    date: "2026-06-12",
+    readTime: "約11分",
+    available: true,
+    path: "/articles/workbench-erabikata",
+  },
+  {
     slug: "warehouse-heatstroke-taisaku",
     title:
       "倉庫作業の熱中症対策｜工場扇・スポットクーラー・冷却ベストで現場を守る方法",

@@ -95,7 +95,7 @@ export default function RootLayout({
           }}
         />
       </head>
-      <body className="pb-[72px] font-sans antialiased sm:pb-[76px]">
+      <body className="pb-[96px] font-sans antialiased sm:pb-[112px]">
         {children}
         <StickyShopBar />
         {process.env.NODE_ENV === "production" && <Analytics />}

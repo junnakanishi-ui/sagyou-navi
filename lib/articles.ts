@@ -14,6 +14,21 @@ export type Article = {
 
 export const ARTICLES: Article[] = [
   {
+    slug: "kartio-big-offroad",
+    title:
+      "カルティオビッグ・オフロードとは？悪路・段差に強い大型樹脂台車の使いどころ",
+    shortTitle: "カルティオビッグ オフロード",
+    description:
+      "カルティオビッグ オフロードは悪路・段差に強い大型樹脂台車。ただし均等荷重100kgで、通常のカルティオビッグ400kgとは役割が違います。標準カルティオとの違い、路面別・シチュエーション別の選び方、選定ミス防止まで実務解説。",
+    category: "compare",
+    categoryLabel: "比較・違い",
+    thumbnail: "/images/articles/kartio-big-offroad-hero.jpg",
+    date: "2026-06-12",
+    readTime: "約10分",
+    available: true,
+    path: "/articles/kartio-big-offroad",
+  },
+  {
     slug: "kartio-load-capacity",
     title:
       "カルティオは何kgまで載せられる？均等荷重200kgの正しい意味と過積載のリスク",

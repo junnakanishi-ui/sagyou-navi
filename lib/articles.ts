@@ -14,6 +14,21 @@ export type Article = {
 
 export const ARTICLES: Article[] = [
   {
+    slug: "steel-shelf-erabikata",
+    title:
+      "スチール棚の選び方｜軽量・中量・重量ラックの耐荷重区分と使い分け",
+    shortTitle: "スチール棚の選び方",
+    description:
+      "スチール棚の選び方を軽量・軽中量・中量・重量棚の耐荷重区分から解説。80〜1000kg/段の違い、1段あたり耐荷重と最大積載量の違い、集中荷重の注意、単体型・連結型、現場別の使い分けまで法人向けに整理します。",
+    category: "guide",
+    categoryLabel: "選び方ガイド",
+    thumbnail: "/images/articles/steel-shelf-selection-hero.jpg",
+    date: "2026-06-12",
+    readTime: "約12分",
+    available: true,
+    path: "/articles/steel-shelf-erabikata",
+  },
+  {
     slug: "workbench-erabikata",
     title:
       "軽量作業台と重量作業台の違い｜耐荷重と天板素材で選ぶ用途別ガイド",

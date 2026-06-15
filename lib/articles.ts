@@ -14,6 +14,21 @@ export type Article = {
 
 export const ARTICLES: Article[] = [
   {
+    slug: "warehouse-heatstroke-taisaku",
+    title:
+      "倉庫作業の熱中症対策｜工場扇・スポットクーラー・冷却ベストで現場を守る方法",
+    shortTitle: "倉庫作業の熱中症対策",
+    description:
+      "倉庫作業の熱中症対策を、WBGT測定・工場扇・スポットクーラー・冷却ベスト・休憩所整備・2025年義務化対応の観点で解説。ローディングドック・ピッキング・梱包・出荷などエリア別に、法人が準備すべき暑さ対策用品と運用チェックリストを整理します。",
+    category: "guide",
+    categoryLabel: "選び方ガイド",
+    thumbnail: "/images/articles/warehouse-heatstroke-prevention-hero.jpg",
+    date: "2026-06-12",
+    readTime: "約13分",
+    available: true,
+    path: "/articles/warehouse-heatstroke-taisaku",
+  },
+  {
     slug: "kartio-big-offroad",
     title:
       "カルティオビッグ・オフロードとは？悪路・段差に強い大型樹脂台車の使いどころ",

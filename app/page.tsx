@@ -146,7 +146,13 @@ function formatDate(date: string): string {
 
 export default function HomePage() {
   const availableArticles = ARTICLES.filter((a) => a.available);
-  const featuredArticles = availableArticles.slice(0, 4);
+  const featuredArticles = [...availableArticles]
+    .sort((a, b) => {
+      const da = a.date ? Date.parse(a.date) : 0;
+      const db = b.date ? Date.parse(b.date) : 0;
+      return db - da;
+    })
+    .slice(0, 9);
   const showPlaceholders = availableArticles.length < 3;
 
   return (

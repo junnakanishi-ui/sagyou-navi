@@ -16,7 +16,11 @@ export function ProductGrid({ items, cols = 2, slug }: ProductGridProps) {
           links={{
             gcSelect: p.links?.gcSelect,
             rakuten: p.links?.rakuten,
-            yahoo: p.links?.yahoo ?? `${STORE_LINKS.yahoo}${p.id}.html`,
+            yahoo:
+              p.links?.yahoo ??
+              (p.links?.gcSelect
+                ? undefined
+                : `${STORE_LINKS.yahoo}${p.id}.html`),
           }}
           utmContent={`${slug}_${p.id}`}
           note={p.note}

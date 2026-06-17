@@ -155,6 +155,11 @@ const CATEGORY_LINKS = [
 
 const RELATED_ARTICLES = [
   {
+    slug: "outdoor-work-heatstroke-measures",
+    title:
+      "外仕事の熱中症対策｜現場・イベント・屋外倉庫で使える暑さ対策グッズと実務チェックリスト",
+  },
+  {
     slug: "safety-shoes-jis-jsaa",
     title:
       "安全靴・プロテクティブスニーカーの違い｜JIS T8101とJSAA規格の見方",

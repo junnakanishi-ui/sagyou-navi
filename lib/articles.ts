@@ -14,6 +14,21 @@ export type Article = {
 
 export const ARTICLES: Article[] = [
   {
+    slug: "outdoor-work-heatstroke-measures",
+    title:
+      "外仕事の熱中症対策｜現場・イベント・屋外倉庫で使える暑さ対策グッズと実務チェックリスト",
+    shortTitle: "外仕事の熱中症対策",
+    description:
+      "外仕事・屋外作業の熱中症対策を、現場・イベント・屋外倉庫向けに解説。WBGT測定、日陰・休憩所づくり、水分・塩分補給、腕時計型アラート、応急セットまで、法人現場で使えるチェックリスト付きで整理します。",
+    category: "guide",
+    categoryLabel: "選び方ガイド",
+    thumbnail: "/images/articles/outdoor-work-heatstroke-measures-hero.jpg",
+    date: "2026-06-17",
+    readTime: "約12分",
+    available: true,
+    path: "/articles/outdoor-work-heatstroke-measures",
+  },
+  {
     slug: "stepladder-height-law",
     title:
       "脚立は2mまで？高所作業の法律と現場で選ぶべき足場台・踏み台の違い",

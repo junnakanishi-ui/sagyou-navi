@@ -14,6 +14,21 @@ export type Article = {
 
 export const ARTICLES: Article[] = [
   {
+    slug: "warehouse-summer-workwear",
+    title:
+      "倉庫作業の夏服装はどう選ぶ？動きやすい作業着・冷却ベスト・空調服と効率化用品の選び方",
+    shortTitle: "倉庫作業の夏服装",
+    description:
+      "夏の倉庫作業では、涼しさだけでなく動きやすさ・安全性・汗処理・作業効率を考えた服装選びが重要です。冷感インナー、空調服、冷却ベスト、空調つなぎの使い分けから、台車・ハンドパレット・作業台による負担軽減まで、法人担当者向けに実務チェックリスト付きで解説します。",
+    category: "compare",
+    categoryLabel: "比較・選び方",
+    thumbnail: "/images/articles/warehouse-summer-workwear-hero.jpg",
+    date: "2026-06-17",
+    readTime: "12分",
+    available: true,
+    path: "/articles/warehouse-summer-workwear",
+  },
+  {
     slug: "outdoor-work-heatstroke-measures",
     title:
       "外仕事の熱中症対策｜現場・イベント・屋外倉庫で使える暑さ対策グッズと実務チェックリスト",

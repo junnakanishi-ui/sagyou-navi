@@ -22,7 +22,7 @@ export const ARTICLES: Article[] = [
       "作業台まわりに工具が散らかる、必要な工具を探す時間が長い、使った工具が戻らない。そんな工場・倉庫・メンテナンス現場向けに、工具整理の考え方、ツールワゴン・パーツケース・工具箱の使い分け、法人導入時のチェックポイントを解説します。",
     category: "guide",
     categoryLabel: "現場ガイド",
-    thumbnail: "/workbench-tool-organization-hero.jpg",
+    thumbnail: "/images/articles/workbench-tool-organization-hero.jpg",
     date: "2026-06-18",
     readTime: "14分",
     available: true,

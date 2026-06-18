@@ -53,7 +53,7 @@ export const metadata: Metadata = {
     description:
       "作業台まわりに工具が散らかる、必要な工具を探す時間が長い、使った工具が戻らない。そんな工場・倉庫・メンテナンス現場向けに、工具整理の考え方、ツールワゴン・パーツケース・工具箱の使い分け、法人導入時のチェックポイントを解説します。",
     type: "article",
-    images: ["/workbench-tool-organization-hero.jpg"],
+    images: ["/images/articles/workbench-tool-organization-hero.jpg"],
   },
 };
 
@@ -218,7 +218,7 @@ const articleJsonLd = {
   description:
     "作業台まわりに工具が散らかる、必要な工具を探す時間が長い、使った工具が戻らない。そんな工場・倉庫・メンテナンス現場向けに、工具整理の考え方、ツールワゴン・パーツケース・工具箱の使い分け、法人導入時のチェックポイントを解説します。",
   image:
-    "https://sagyou-navi.com/workbench-tool-organization-hero.jpg",
+    "https://sagyou-navi.com/images/articles/workbench-tool-organization-hero.jpg",
   datePublished: "2026-06-18",
   author: {
     "@type": "Organization",
@@ -243,7 +243,7 @@ export default function WorkbenchToolOrganizationPage() {
         subtitle="工具を探す時間を減らすツールワゴン・収納用品の選び方"
       />
       <HeroImage
-        src="/workbench-tool-organization-hero.jpg"
+        src="/images/articles/workbench-tool-organization-hero.jpg"
         alt="作業台まわりの工具整理を見直す工場担当者とツールワゴン"
       />
 
@@ -303,7 +303,7 @@ export default function WorkbenchToolOrganizationPage() {
             散らかる・探す時間が出る・戻らない・人によって置き方が違う、の4つが代表的な悩みです。
           </ConclusionBox>
           <ArticleFigure
-            src="/cluttered-workbench-tool-problem.jpg"
+            src="/images/articles/cluttered-workbench-tool-problem.jpg"
             alt="工具や小物部品が散らかった作業台で工具を探す現場担当者"
           />
           <H3>工具が作業台の上に散らかる</H3>
@@ -367,7 +367,7 @@ export default function WorkbenchToolOrganizationPage() {
             整頓の基本は3定（定品・定位置・定量）。さらに姿置き（形跡整頓）を使うと、誰でも一目で戻せて紛失にも気づけます。
           </ConclusionBox>
           <ArticleFigure
-            src="/tool-fixed-position-management.jpg"
+            src="/images/articles/tool-fixed-position-management.jpg"
             alt="工具の定位置を決めて作業台まわりを整理するイメージ"
           />
           <H3>整頓の基本は「3定」</H3>
@@ -409,7 +409,7 @@ export default function WorkbenchToolOrganizationPage() {
             作業台横に置けるサイズ・段数と深さ・キャスター/ストッパー・引き出し・材質の5点を確認します。
           </ConclusionBox>
           <ArticleFigure
-            src="/tool-wagon-next-to-workbench.jpg"
+            src="/images/articles/tool-wagon-next-to-workbench.jpg"
             alt="作業台横にツールワゴンを置いて工具を整理する現場"
           />
           <H3>作業台横に置くならサイズと高さを確認する</H3>
@@ -466,7 +466,7 @@ export default function WorkbenchToolOrganizationPage() {
             ネジ・端子・消耗品は工具と分け、透明引き出し・見出しカードで見える化すると取り違えと探す時間が減ります。
           </ConclusionBox>
           <ArticleFigure
-            src="/parts-case-small-parts-organization.jpg"
+            src="/images/articles/parts-case-small-parts-organization.jpg"
             alt="ネジや小物部品をパーツケースで整理する作業台まわり"
           />
           <H3>ネジ・ナット・端子・小物部品は工具と分ける</H3>
@@ -509,7 +509,7 @@ export default function WorkbenchToolOrganizationPage() {
             作業台に置く工具と現場へ持ち出す工具を分けると、持ち出し忘れや紛失を防げます。
           </ConclusionBox>
           <ArticleFigure
-            src="/toolbox-field-carry-organization.jpg"
+            src="/images/articles/toolbox-field-carry-organization.jpg"
             alt="現場持ち出し用の工具箱に工具を整理するメンテナンス担当者"
           />
           <H3>現場へ持ち出す工具は工具箱にまとめる</H3>
@@ -574,7 +574,7 @@ export default function WorkbenchToolOrganizationPage() {
             作業台の上・使用頻度・定位置・共有・小物分離・通路・キャスター・棚卸しを点検します。
           </ConclusionBox>
           <ArticleFigure
-            src="/workbench-tool-organization-checklist.jpg"
+            src="/images/articles/workbench-tool-organization-checklist.jpg"
             alt="作業台まわりの工具整理チェックリストを確認する購買担当者"
           />
           <ul className="mt-6 space-y-2 text-lg leading-relaxed text-muted-foreground">

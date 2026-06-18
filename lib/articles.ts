@@ -14,6 +14,21 @@ export type Article = {
 
 export const ARTICLES: Article[] = [
   {
+    slug: "ladder-stepladder-difference",
+    title:
+      "はしごと脚立の違いとは？JIS・SG規格と「天板に乗ってはいけない」理由",
+    shortTitle: "はしごと脚立の違い",
+    description:
+      "はしごと脚立の違い、脚立の天板に乗ってはいけない理由、JIS・SG・Aマークの見方を法人現場向けに解説。脚立・はしご・作業用踏台・足場台・手すり付き踏台の使い分けや、倉庫・工場・店舗での選定チェックリストも紹介します。",
+    category: "compare",
+    categoryLabel: "比較・選び方",
+    thumbnail: "/ladder-stepladder-difference-hero.jpg",
+    date: "2026-06-18",
+    readTime: "13分",
+    available: true,
+    path: "/articles/ladder-stepladder-difference",
+  },
+  {
     slug: "warehouse-summer-workwear",
     title:
       "倉庫作業の夏服装はどう選ぶ？動きやすい作業着・冷却ベスト・空調服と効率化用品の選び方",

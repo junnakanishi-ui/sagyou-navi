@@ -14,6 +14,21 @@ export type Article = {
 
 export const ARTICLES: Article[] = [
   {
+    slug: "parts-case-selection",
+    title:
+      "パーツケースの選び方｜小物・ネジの整理に効く仕切り・引き出し・連結タイプの使い分け",
+    shortTitle: "パーツケースの選び方",
+    description:
+      "パーツケースの選び方を、ネジ・ビス・ナット・端子・小物部品の整理に悩む現場担当者向けに解説。仕切り付き、引き出し式、卓上タイプ、連結・スタンドタイプ、工具箱型の違いから、屋外現場・イベント・倉庫・車載作業で探し物を減らす収納チェックリストまで紹介します。",
+    category: "compare",
+    categoryLabel: "比較・選び方",
+    thumbnail: "/images/articles/parts-case-selection-hero.jpg",
+    date: "2026-06-18",
+    readTime: "13分",
+    available: true,
+    path: "/articles/parts-case-selection",
+  },
+  {
     slug: "ladder-stepladder-difference",
     title:
       "はしごと脚立の違いとは？JIS・SG規格と「天板に乗ってはいけない」理由",

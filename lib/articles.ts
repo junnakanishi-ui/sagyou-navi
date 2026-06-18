@@ -14,6 +14,21 @@ export type Article = {
 
 export const ARTICLES: Article[] = [
   {
+    slug: "aluminum-composite-panel-cut",
+    title:
+      "アルミ複合板のカット販売とは？指定寸法・角R・穴あけ加工を依頼する前のチェックポイント",
+    shortTitle: "アルミ複合板のカット販売",
+    description:
+      "アルミ複合板を指定寸法でカット販売してほしい方向けに、依頼前に決めるべきサイズ・厚み・色・角R・穴あけ位置・取付方法・枚数・屋内外用途・図面データの有無を解説。看板板材やプレート看板用のアルミ複合板を失敗なく注文するためのチェックリスト付き。",
+    category: "guide",
+    categoryLabel: "看板資材ガイド",
+    thumbnail: "/images/articles/aluminum-composite-panel-cut-hero.jpg",
+    date: "2026-06-18",
+    readTime: "14分",
+    available: true,
+    path: "/articles/aluminum-composite-panel-cut",
+  },
+  {
     slug: "workbench-tool-organization",
     title:
       "作業台まわりの工具整理術｜工具を探す時間を減らすツールワゴン・収納用品の選び方",

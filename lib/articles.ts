@@ -14,6 +14,21 @@ export type Article = {
 
 export const ARTICLES: Article[] = [
   {
+    slug: "toolbag-backpack-selection",
+    title:
+      "ツールバッグとバックパックどっちが良い？工具の持ち運びを軽くする選び方",
+    shortTitle: "ツールバッグの選び方",
+    description:
+      "ツールバッグと工具用バックパックの違いを、電工・設備点検・屋外作業・イベント設営・出張作業向けに解説。工具の重量、移動距離、両手を空けたいか、出し入れのしやすさ、防水性、キャスター付きの必要性まで、法人現場向けの選び方チェックリスト付きで紹介します。",
+    category: "compare",
+    categoryLabel: "比較・選び方",
+    thumbnail: "/toolbag-backpack-selection-hero.jpg",
+    date: "2026-06-18",
+    readTime: "13分",
+    available: true,
+    path: "/articles/toolbag-backpack-selection",
+  },
+  {
     slug: "parts-case-selection",
     title:
       "パーツケースの選び方｜小物・ネジの整理に効く仕切り・引き出し・連結タイプの使い分け",

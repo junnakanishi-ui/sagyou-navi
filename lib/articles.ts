@@ -14,6 +14,21 @@ export type Article = {
 
 export const ARTICLES: Article[] = [
   {
+    slug: "workbench-tool-organization",
+    title:
+      "作業台まわりの工具整理術｜工具を探す時間を減らすツールワゴン・収納用品の選び方",
+    shortTitle: "作業台まわりの工具整理術",
+    description:
+      "作業台まわりに工具が散らかる、必要な工具を探す時間が長い、使った工具が戻らない。そんな工場・倉庫・メンテナンス現場向けに、工具整理の考え方、ツールワゴン・パーツケース・工具箱の使い分け、法人導入時のチェックポイントを解説します。",
+    category: "guide",
+    categoryLabel: "現場ガイド",
+    thumbnail: "/workbench-tool-organization-hero.jpg",
+    date: "2026-06-18",
+    readTime: "14分",
+    available: true,
+    path: "/articles/workbench-tool-organization",
+  },
+  {
     slug: "toolbag-backpack-selection",
     title:
       "ツールバッグとバックパックどっちが良い？工具の持ち運びを軽くする選び方",

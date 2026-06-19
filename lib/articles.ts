@@ -14,6 +14,21 @@ export type Article = {
 
 export const ARTICLES: Article[] = [
   {
+    slug: "color-cone-selection",
+    title:
+      "カラーコーンの選び方｜駐車場・工事現場・イベントで使うコーン・バー・チェーンの使い分け",
+    shortTitle: "カラーコーンの選び方",
+    description:
+      "カラーコーンの選び方を駐車場・工事現場・イベント会場別に解説。カラーコーン単体でよいケース、コーンバーが必要なケース、プラチェーンが向くケース、表示カバー・重石・反射テープ付きコーンの使い分けを、法人担当者向けにわかりやすく紹介します。",
+    category: "compare",
+    categoryLabel: "比較・選び方",
+    thumbnail: "/images/articles/color-cone-selection-hero.jpg",
+    date: "2026-06-18",
+    readTime: "14分",
+    available: true,
+    path: "/articles/color-cone-selection",
+  },
+  {
     slug: "aluminum-composite-panel-cut",
     title:
       "アルミ複合板のカット販売とは？指定寸法・角R・穴あけ加工を依頼する前のチェックポイント",

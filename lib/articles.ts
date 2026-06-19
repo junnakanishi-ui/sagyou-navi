@@ -14,6 +14,21 @@ export type Article = {
 
 export const ARTICLES: Article[] = [
   {
+    slug: "construction-work-platform",
+    title:
+      "建築現場の作業台はどう選ぶ？足場台・踏台・ペケ台・工具置き台の使い分け",
+    shortTitle: "建築現場の作業台の選び方",
+    description:
+      "建築現場で使う作業台の選び方を、足場台・作業用踏台・ペケ台・工具置き台・台車まで整理。人が乗る作業台と材料を置く作業台の違い、高さ・天板寸法・段差対応・収納性のチェックポイントを法人・現場向けに解説します。",
+    category: "compare",
+    categoryLabel: "比較・選び方",
+    thumbnail: "/images/articles/construction-site-work-platform-hero.jpg",
+    date: "2026-06-18",
+    readTime: "13分",
+    available: true,
+    path: "/articles/construction-work-platform",
+  },
+  {
     slug: "color-cone-selection",
     title:
       "カラーコーンの選び方｜駐車場・工事現場・イベントで使うコーン・バー・チェーンの使い分け",

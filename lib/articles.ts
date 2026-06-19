@@ -14,6 +14,21 @@ export type Article = {
 
 export const ARTICLES: Article[] = [
   {
+    slug: "plastic-chain-vs-cone-bar",
+    title:
+      "プラチェーンとコーンバーの違い｜駐車場・通路・立入禁止エリアの区画用品はどっちが良い？",
+    shortTitle: "プラチェーンとコーンバーの違い",
+    description:
+      "プラチェーンとコーンバーの違いを、駐車場・通路・工事現場・イベント・立入禁止エリアの用途別に解説。直線区画に向くコーンバー、長距離や曲線導線に向くプラチェーンの選び方、色・長さ・ジョイント・コーンリングの注意点まで法人向けに整理します。",
+    category: "compare",
+    categoryLabel: "比較・選び方",
+    thumbnail: "/images/articles/plastic-chain-cone-bar-selection-hero.jpg",
+    date: "2026-06-18",
+    readTime: "13分",
+    available: true,
+    path: "/articles/plastic-chain-vs-cone-bar",
+  },
+  {
     slug: "construction-work-platform",
     title:
       "建築現場の作業台はどう選ぶ？足場台・踏台・ペケ台・工具置き台の使い分け",

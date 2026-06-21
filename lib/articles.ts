@@ -14,6 +14,21 @@ export type Article = {
 
 export const ARTICLES: Article[] = [
   {
+    slug: "safety-shoes-replacement",
+    title:
+      "安全靴の交換時期はいつ？靴底・先芯・破れの見分け方と買い替え目安",
+    shortTitle: "安全靴の交換時期",
+    description:
+      "安全靴の交換時期を、靴底の摩耗・先芯の露出・破れ・靴底の剥がれ・強い衝撃などのチェックポイントから解説。現場責任者・購買担当者向けに、点検チェックリスト、交換ルール、買い替え候補、台車活用による負担軽減まで整理します。",
+    category: "guide",
+    categoryLabel: "安全靴・作業靴",
+    thumbnail: "/images/articles/safety-shoes-replacement-hero.jpg",
+    date: "2026-06-18",
+    readTime: "15分",
+    available: true,
+    path: "/articles/safety-shoes-replacement",
+  },
+  {
     slug: "plastic-chain-vs-cone-bar",
     title:
       "プラチェーンとコーンバーの違い｜駐車場・通路・立入禁止エリアの区画用品はどっちが良い？",

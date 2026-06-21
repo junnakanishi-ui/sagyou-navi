@@ -5,8 +5,17 @@ import {
   Breadcrumb,
   ArticleHeader,
   HeroImage,
+  ProductGrid,
+  RelatedArticles,
+  Disclaimer,
+  FaqSection,
+  type ArticleProduct,
   type FaqItem,
+  type RelatedArticle,
 } from '@/components/article';
+import { buildUrl } from '@/lib/product-links';
+
+const SLUG = 'hand-lift-precautions';
 
 export const metadata = {
   title:
@@ -15,16 +24,7 @@ export const metadata = {
     'ハンドリフト使用時の注意点を、荷崩れ・過積載・足元事故・坂道・段差・急操作など現場目線で解説。ハンドパレットとハンドリフターの違い、台車との使い分け、法人導入時のチェックリストまで整理します。',
 };
 
-// ── UTMヘルパー：baseに ? が含まれていれば & で、なければ ? で連結。
-//    baseは絶対に再エンコードしない（%25混入防止）。utmContentはASCIIのみ。
-const buildUrl = (base: string, utmContent: string) => {
-  const sep = base.includes('?') ? '&' : '?';
-  return `${base}${sep}utm_source=sagyou_navi&utm_medium=article&utm_campaign=hand_lift_precautions&utm_content=${utmContent}`;
-};
-
-// ── Yahoo! signcity-yshop 商品ページ（.htmlまで。?sc_i= やアンカーは付けない）
-const yahooItem = (id: string) =>
-  `https://store.shopping.yahoo.co.jp/signcity-yshop/${id}.html`;
+// ── UTMヘルパー：一覧リンクは buildUrl（lib/product-links）経由。商品カードは ProductGrid が付与。
 
 // ── 日本語クエリ／カテゴリ一覧URL（エンコード済み定数・再エンコード禁止・#アンカーと sc_i は除去済み）
 const LIST = {
@@ -44,90 +44,63 @@ const LIST = {
 };
 
 // ── 商品データ（全てstore=yahoo。IDは記事内で各1回のみ）
-type Product = { id: string; name: string; note: string };
+const yahooProduct = (id: string, name: string, note: string): ArticleProduct => ({
+  id,
+  name,
+  note,
+  links: { yahoo: `https://store.shopping.yahoo.co.jp/signcity-yshop/${id}.html` },
+});
 
-const lifters: Product[] = [
-  { id: '168565', name: 'TRUSCO ハンドリフター 手動 80kg 400×720 高揚程型 HLFA-S80W', note: '軽量物中心で、作業台への高さ合わせが多い場合' },
-  { id: '168566', name: 'TRUSCO ハンドリフター 手動 200kg 500×600 高揚程型 HLFA-S200SW', note: '200kgクラスまでの荷物を高めに上げたい場合' },
-  { id: '168568', name: 'TRUSCO ハンドリフター 手動 350kg 600×900 高揚程型 HLFA-E350W', note: 'テーブル寸法・耐荷重に余裕を持たせたい場合' },
-  { id: '168575', name: 'TRUSCO ハンドリフター 手動 400kg 900×600 低床式 HLF-S400-85L', note: '網パレットや低いすき間への差し込みが必要な場合' },
+const lifters: ArticleProduct[] = [
+  yahooProduct('168565', 'TRUSCO ハンドリフター 手動 80kg 400×720 高揚程型 HLFA-S80W', '軽量物中心で、作業台への高さ合わせが多い場合'),
+  yahooProduct('168566', 'TRUSCO ハンドリフター 手動 200kg 500×600 高揚程型 HLFA-S200SW', '200kgクラスまでの荷物を高めに上げたい場合'),
+  yahooProduct('168568', 'TRUSCO ハンドリフター 手動 350kg 600×900 高揚程型 HLFA-E350W', 'テーブル寸法・耐荷重に余裕を持たせたい場合'),
+  yahooProduct('168575', 'TRUSCO ハンドリフター 手動 400kg 900×600 低床式 HLF-S400-85L', '網パレットや低いすき間への差し込みが必要な場合'),
 ];
 
-const pallets: Product[] = [
-  { id: '168791', name: 'TRUSCO ハンドパレットトラック 1.5t用 L1050×W550mm', note: '標準的なパレット荷役' },
-  { id: '168792', name: 'TRUSCO ハンドパレットトラック 1.5t用 L1220×W685mm', note: '大きめパレット・余裕ある通路' },
-  { id: '168793', name: 'TRUSCO ハンドパレットトラック 1t用 L850×W460mm', note: '小回り重視・狭い現場' },
-  { id: '168790', name: 'TRUSCO ハンドパレットトラック 1.5t用 L850×W520mm', note: '短めフォークで使いたい現場' },
-  { id: '168819', name: 'TRUSCO ハンドパレットトラック 1t用 L1050×W550mm', note: '標準サイズで1tまで' },
-  { id: '168806', name: 'TRUSCO ハンドパレットトラック 3t用 L1220×W680mm', note: '重量物対応' },
-  { id: '168809', name: 'TRUSCO ハンドパレットトラック PK付 2t L1150×W540mm', note: 'ブレーキ・補助機能を重視' },
-  { id: '213521', name: 'TRUSCO 電動ハンドパレットトラック E-TRA 1.2t用 1150×540', note: '多頻度・省力化したい場合' },
-  { id: '213524', name: 'TRUSCO 電動ハンドパレットトラック E-TRA 2t用 1220×685', note: '重量物・多頻度の現場' },
+const pallets: ArticleProduct[] = [
+  yahooProduct('168791', 'TRUSCO ハンドパレットトラック 1.5t用 L1050×W550mm', '標準的なパレット荷役'),
+  yahooProduct('168792', 'TRUSCO ハンドパレットトラック 1.5t用 L1220×W685mm', '大きめパレット・余裕ある通路'),
+  yahooProduct('168793', 'TRUSCO ハンドパレットトラック 1t用 L850×W460mm', '小回り重視・狭い現場'),
+  yahooProduct('168790', 'TRUSCO ハンドパレットトラック 1.5t用 L850×W520mm', '短めフォークで使いたい現場'),
+  yahooProduct('168819', 'TRUSCO ハンドパレットトラック 1t用 L1050×W550mm', '標準サイズで1tまで'),
+  yahooProduct('168806', 'TRUSCO ハンドパレットトラック 3t用 L1220×W680mm', '重量物対応'),
+  yahooProduct('168809', 'TRUSCO ハンドパレットトラック PK付 2t L1150×W540mm', 'ブレーキ・補助機能を重視'),
+  yahooProduct('213521', 'TRUSCO 電動ハンドパレットトラック E-TRA 1.2t用 1150×540', '多頻度・省力化したい場合'),
+  yahooProduct('213524', 'TRUSCO 電動ハンドパレットトラック E-TRA 2t用 1220×685', '重量物・多頻度の現場'),
 ];
 
-const shoes: Product[] = [
-  { id: '155406', name: 'ニューバランス 安全靴', note: '倉庫・物流・軽作業で動きやすさも重視' },
-  { id: '155335', name: 'ニューバランス 安全靴', note: '現場支給・まとめ買い候補' },
-  { id: '155361', name: 'ニューバランス 安全靴', note: '男女・サイズ展開を確認したい場合' },
-  { id: '155329', name: 'ニューバランス 安全靴', note: '長時間歩行が多い現場向け' },
+const shoes: ArticleProduct[] = [
+  yahooProduct('155406', 'ニューバランス 安全靴', '倉庫・物流・軽作業で動きやすさも重視'),
+  yahooProduct('155335', 'ニューバランス 安全靴', '現場支給・まとめ買い候補'),
+  yahooProduct('155361', 'ニューバランス 安全靴', '男女・サイズ展開を確認したい場合'),
+  yahooProduct('155329', 'ニューバランス 安全靴', '長時間歩行が多い現場向け'),
 ];
 
-const carts: Product[] = [
-  { id: '167468', name: 'TRUSCO カルティオ 新型 ブラック MPK-780-BK', note: '倉庫・店舗バックヤードの小口運搬' },
-  { id: '190475', name: 'TRUSCO カルティオ 新型 ブラック ストッパー付 MPK780BKSS', note: '停止時の安定性を重視' },
-  { id: '216713', name: 'TRUSCO カルティオビッグ 折畳 900×600 ストッパー付 オリーブ MPK-906-OG-S', note: '大きめ荷物・屋外寄りの運搬' },
-  { id: '159750', name: 'TRUSCO カルティオビッグ 固定ハンドル ブルー MPK-900-B', note: '頻繁な運搬・大きめ荷物' },
+const carts: ArticleProduct[] = [
+  yahooProduct('167468', 'TRUSCO カルティオ 新型 ブラック MPK-780-BK', '倉庫・店舗バックヤードの小口運搬'),
+  yahooProduct('190475', 'TRUSCO カルティオ 新型 ブラック ストッパー付 MPK780BKSS', '停止時の安定性を重視'),
+  yahooProduct('216713', 'TRUSCO カルティオビッグ 折畳 900×600 ストッパー付 オリーブ MPK-906-OG-S', '大きめ荷物・屋外寄りの運搬'),
+  yahooProduct('159750', 'TRUSCO カルティオビッグ 固定ハンドル ブルー MPK-900-B', '頻繁な運搬・大きめ荷物'),
 ];
 
-function ProductCard({ p }: { p: Product }) {
-  return (
-    <a
-      href={buildUrl(yahooItem(p.id), `product_${p.id}`)}
-      target="_blank"
-      rel="noopener noreferrer sponsored"
-      className="group flex flex-col rounded-xl border border-gray-200 bg-white p-4 transition hover:shadow-md"
-    >
-      <div className="mb-3 aspect-square overflow-hidden rounded-lg bg-gray-50">
-        <img
-          src={`/products/${p.id}.jpg`}
-          alt={p.name}
-          loading="lazy"
-          className="h-full w-full object-contain"
-        />
-      </div>
-      <div className="text-sm font-semibold leading-snug text-gray-900 group-hover:text-blue-700">
-        {p.name}
-      </div>
-      <div className="mt-1 text-xs text-gray-500">{p.note}</div>
-      <span className="mt-3 inline-block text-sm font-medium text-blue-700">
-        商品ページを見る →
-      </span>
-    </a>
-  );
-}
+const LIST_CTA_CLASS =
+  'inline-flex items-center gap-2 rounded-xl bg-store-yahoo px-6 py-3 text-sm font-bold text-white transition hover:bg-store-yahoo-hover';
 
-function ProductGrid({ items }: { items: Product[] }) {
-  return (
-    <div className="my-6 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
-      {items.map((p) => (
-        <ProductCard key={p.id} p={p} />
-      ))}
-    </div>
-  );
-}
-
-function ListCta({ href, label, content }: { href: string; label: string; content: string }) {
-  return (
-    <a
-      href={buildUrl(href, content)}
-      target="_blank"
-      rel="noopener noreferrer sponsored"
-      className="inline-flex items-center justify-center rounded-lg bg-blue-700 px-5 py-3 text-sm font-semibold text-white transition hover:bg-blue-800"
-    >
-      {label} →
-    </a>
-  );
-}
+const RELATED: RelatedArticle[] = [
+  {
+    href: '/articles/trusco-hand-pallet-erabikata',
+    label: 'トラスコのハンドパレット（ハンドリフト）の選び方｜フォーク長・能力・低床の違い',
+  },
+  {
+    href: '/articles/safety-shoes-replacement',
+    label: '安全靴の交換時期はいつ？靴底・先芯・破れの見分け方と買い替え目安',
+  },
+  {
+    href: '/articles/construction-work-platform',
+    label: '建築現場の作業台はどう選ぶ？足場台・踏台・ペケ台・工具置き台の使い分け',
+  },
+];
 
 const FAQ: FaqItem[] = [
   { q: 'ハンドリフトは押すのと引くの、どちらが安全ですか？', a: '現場状況によります。一般には進行方向の視界を確保しやすい向きで動かすこととされていますが、通路幅・荷重・床面・周囲の作業者によって最適な向きは変わります。急な力で動かさず、社内ルールと取扱説明書に従ってください。' },
@@ -399,9 +372,16 @@ export default function Page() {
       </p>
 
       <p className="mb-2 text-sm font-semibold text-gray-700">高さ合わせ・昇降作業に向くハンドリフター</p>
-      <ProductGrid items={lifters} />
-      <div className="mb-8">
-        <ListCta href={LIST.handlifter} label="ハンドリフター一覧はこちら" content="cta_handlifter" />
+      <ProductGrid items={lifters} cols={2} slug={SLUG} />
+      <div className="mb-8 mt-6">
+        <a
+          href={buildUrl(LIST.handlifter, `${SLUG}_cta_handlifter`)}
+          target="_blank"
+          rel="noopener noreferrer"
+          className={LIST_CTA_CLASS}
+        >
+          ハンドリフター一覧はこちら
+        </a>
       </div>
 
       <h2 className="mt-10 mb-3 text-xl font-bold text-gray-900">現場別｜ハンドリフトの注意点と選び方</h2>
@@ -472,9 +452,16 @@ export default function Page() {
       <p className="mb-2 text-sm leading-relaxed">
         能力・フォーク長・フォーク幅に違いがあります。<strong>フォーク長とパレット寸法の確認</strong>が選定の要です。ハンドリフター（昇降用）と間違えないよう、まず「横移動なのか」を確認してください。
       </p>
-      <ProductGrid items={pallets} />
-      <div className="mb-8">
-        <ListCta href={LIST.handpallet} label="ハンドパレット一覧はこちら" content="cta_handpallet" />
+      <ProductGrid items={pallets} cols={3} slug={SLUG} />
+      <div className="mb-8 mt-6">
+        <a
+          href={buildUrl(LIST.handpallet, `${SLUG}_cta_handpallet`)}
+          target="_blank"
+          rel="noopener noreferrer"
+          className={LIST_CTA_CLASS}
+        >
+          ハンドパレット一覧はこちら
+        </a>
       </div>
 
       <h3 className="mt-6 mb-2 text-lg font-semibold text-gray-900">足元事故対策に安全靴・プロテクティブスニーカー</h3>
@@ -488,18 +475,32 @@ export default function Page() {
       <p className="mb-2 text-sm leading-relaxed">
         ハンドリフトや台車作業では、キャスター・フォーク・荷物が足元に近づきやすく、足の挟まれや乗り上げによる労働災害事例も報告されています。足元保護もセットで考えると安心です（ただし保護具は事故を完全に防ぐものではありません）。
       </p>
-      <ProductGrid items={shoes} />
-      <div className="mb-8">
-        <ListCta href={LIST.safetyShoes} label="ニューバランス安全靴一覧へ" content="cta_safetyshoes" />
+      <ProductGrid items={shoes} cols={2} slug={SLUG} />
+      <div className="mb-8 mt-6">
+        <a
+          href={buildUrl(LIST.safetyShoes, `${SLUG}_cta_safetyshoes`)}
+          target="_blank"
+          rel="noopener noreferrer"
+          className={LIST_CTA_CLASS}
+        >
+          ニューバランス安全靴一覧へ
+        </a>
       </div>
 
       <h3 className="mt-6 mb-2 text-lg font-semibold text-gray-900">小口荷物・段ボール中心なら運搬台車</h3>
       <p className="mb-2 text-sm leading-relaxed">
         すべての荷物にハンドパレットやハンドリフターが必要なわけではありません。段ボール・備品・工具・イベント資材などは、運搬台車の方が使いやすいケースもあります。
       </p>
-      <ProductGrid items={carts} />
-      <div className="mb-8">
-        <ListCta href={LIST.cart} label="運搬台車一覧へ" content="cta_cart" />
+      <ProductGrid items={carts} cols={2} slug={SLUG} />
+      <div className="mb-8 mt-6">
+        <a
+          href={buildUrl(LIST.cart, `${SLUG}_cta_cart`)}
+          target="_blank"
+          rel="noopener noreferrer"
+          className={LIST_CTA_CLASS}
+        >
+          運搬台車一覧へ
+        </a>
       </div>
 
       <h2 className="mt-10 mb-3 text-xl font-bold text-gray-900">ハンドパレット・ハンドリフター・台車の使い分け早見表</h2>
@@ -526,60 +527,54 @@ export default function Page() {
         </table>
       </div>
 
-      <h2 className="mt-10 mb-3 text-xl font-bold text-gray-900">ハンドリフト使用時のFAQ</h2>
-      <div className="mb-8 space-y-2">
-        {FAQ.map((item) => (
-          <details key={item.q} className="rounded-lg border border-gray-200 bg-white p-4">
-            <summary className="cursor-pointer font-semibold text-gray-900">{item.q}</summary>
-            <p className="mt-2 text-sm leading-relaxed text-gray-700">{item.a}</p>
-          </details>
-        ))}
-      </div>
+      <FaqSection faq={FAQ} />
 
       <h2 className="mt-10 mb-3 text-xl font-bold text-gray-900">まとめ</h2>
       <p className="mb-4 leading-relaxed">
         ハンドリフトを安全に使うには、「正しい使い方」だけでなく「用途に合った道具選び」が同じくらい重要です。過積載・偏荷重・高積み・急操作・坂道・段差・足元接触に注意しつつ、パレットの横移動はハンドパレット、高さ合わせはハンドリフター、小口荷物は運搬台車、という基本の使い分けを押さえれば、事故と選定ミスの両方を減らせます。耐荷重・適合パレット・点検方法は製品ごとに異なるため、必ず取扱説明書・商品ページ・現場ルールをご確認ください。
       </p>
 
-      <div className="my-8 rounded-xl border border-gray-200 bg-gray-50 p-6">
-        <p className="mb-4 font-bold text-gray-900">用途から探す</p>
-        <div className="flex flex-wrap gap-3">
-          <ListCta href={LIST.handlifter} label="ハンドリフター一覧" content="cta_handlifter_footer" />
-          <ListCta href={LIST.handpallet} label="ハンドパレット一覧" content="cta_handpallet_footer" />
-          <ListCta href={LIST.cart} label="運搬台車一覧" content="cta_cart_footer" />
-          <ListCta href={LIST.trusco} label="トラスコ中山一覧" content="cta_trusco_footer" />
+      <section className="mt-12 rounded-2xl bg-secondary p-8 text-secondary-foreground md:p-10">
+        <h2 className="text-2xl font-black text-white">用途から探す</h2>
+        <div className="mt-6 flex flex-wrap gap-3">
+          <a
+            href={buildUrl(LIST.handlifter, `${SLUG}_footer_handlifter`)}
+            target="_blank"
+            rel="noopener noreferrer"
+            className={LIST_CTA_CLASS}
+          >
+            ハンドリフター一覧
+          </a>
+          <a
+            href={buildUrl(LIST.handpallet, `${SLUG}_footer_handpallet`)}
+            target="_blank"
+            rel="noopener noreferrer"
+            className={LIST_CTA_CLASS}
+          >
+            ハンドパレット一覧
+          </a>
+          <a
+            href={buildUrl(LIST.cart, `${SLUG}_footer_cart`)}
+            target="_blank"
+            rel="noopener noreferrer"
+            className={LIST_CTA_CLASS}
+          >
+            運搬台車一覧
+          </a>
+          <a
+            href={buildUrl(LIST.trusco, `${SLUG}_footer_trusco`)}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 rounded-xl border border-white/30 px-6 py-3 text-sm font-bold text-white transition hover:bg-white/10"
+          >
+            トラスコ中山一覧
+          </a>
         </div>
-      </div>
+      </section>
 
-      <h2 className="mt-10 mb-3 text-xl font-bold text-gray-900">関連記事</h2>
-      <ul className="mb-8 space-y-2 text-sm">
-        <li>
-          <Link href="/articles/trusco-hand-pallet-erabikata" className="text-blue-700 underline">
-            トラスコのハンドパレット（ハンドリフト）の選び方｜フォーク長・能力・低床の違い
-          </Link>
-        </li>
-        <li>
-          <Link href="/articles/safety-shoes-replacement" className="text-blue-700 underline">
-            安全靴の交換時期はいつ？靴底・先芯・破れの見分け方と買い替え目安
-          </Link>
-        </li>
-        <li>
-          <Link href="/articles/construction-work-platform" className="text-blue-700 underline">
-            建築現場の作業台はどう選ぶ？足場台・踏台・ペケ台・工具置き台の使い分け
-          </Link>
-        </li>
-      </ul>
+      <RelatedArticles items={RELATED} />
 
-      <div className="mb-8">
-        <Link href="/" className="text-sm text-blue-700 underline">← 記事一覧に戻る</Link>
-      </div>
-
-      <p className="border-t border-gray-200 pt-4 text-xs text-gray-500">
-        運営：株式会社トレード／
-        <a href="https://trade-sign.jp/" target="_blank" rel="noopener noreferrer" className="underline">
-          https://trade-sign.jp/
-        </a>
-      </p>
+      <Disclaimer extra="耐荷重・使用条件・適合パレット・点検方法は製品ごとに異なるため、必ず取扱説明書・商品ページ・現場の安全ルール・関係法令を確認してください。安全靴などの保護具は事故を完全に防ぐものではありません。" />
       </ArticleContent>
     </ArticleLayout>
   );

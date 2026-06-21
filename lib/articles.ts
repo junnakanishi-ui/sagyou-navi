@@ -14,6 +14,21 @@ export type Article = {
 
 export const ARTICLES: Article[] = [
   {
+    slug: "hand-lift-precautions",
+    title:
+      "ハンドリフトの注意点｜事故を防ぐ使い方とハンドパレット・ハンドリフターの選び分け",
+    shortTitle: "ハンドリフトの注意点",
+    description:
+      "ハンドリフト使用時の注意点を、荷崩れ・過積載・足元事故・坂道・段差・急操作など現場目線で解説。ハンドパレットとハンドリフターの違い、台車との使い分け、法人導入時のチェックリストまで整理します。",
+    category: "guide",
+    categoryLabel: "倉庫・物流",
+    thumbnail: "/記事画像/hand-lift-safety-hero.jpg",
+    date: "2026-06-21",
+    readTime: "約12分",
+    available: true,
+    path: "/articles/hand-lift-precautions",
+  },
+  {
     slug: "safety-shoes-replacement",
     title:
       "安全靴の交換時期はいつ？靴底・先芯・破れの見分け方と買い替え目安",

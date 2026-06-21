@@ -1,4 +1,12 @@
 import Link from 'next/link';
+import {
+  ArticleLayout,
+  ArticleContent,
+  Breadcrumb,
+  ArticleHeader,
+  HeroImage,
+  type FaqItem,
+} from '@/components/article';
 
 export const metadata = {
   title:
@@ -121,60 +129,14 @@ function ListCta({ href, label, content }: { href: string; label: string; conten
   );
 }
 
-const faqJsonLd = {
-  '@context': 'https://schema.org',
-  '@type': 'FAQPage',
-  mainEntity: [
-    {
-      '@type': 'Question',
-      name: 'ハンドリフトは押すのと引くの、どちらが安全ですか？',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: '現場状況によります。一般には進行方向の視界を確保しやすい向きで動かすこととされていますが、通路幅・荷重・床面・周囲の作業者によって最適な向きは変わります。急な力で動かさず、社内ルールと取扱説明書に従ってください。',
-      },
-    },
-    {
-      '@type': 'Question',
-      name: 'ハンドリフトで坂道を移動してもよいですか？',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: '重量物は傾斜で止めにくく、逸走や転倒の危険があるとされています。坂道・スロープ・濡れた床・段差では使用可否を現場ルールや取扱説明書で確認し、必要に応じて別の搬送方法を検討してください。',
-      },
-    },
-    {
-      '@type': 'Question',
-      name: 'ハンドパレットとハンドリフターの違いは何ですか？',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'ハンドパレットトラックはパレット荷物を水平移動する用品、ハンドリフターはテーブルを昇降させて作業台や棚の高さに荷物を合わせる用品です。「横移動したいのか」「高さを合わせたいのか」で選ぶ機器が変わります。',
-      },
-    },
-    {
-      '@type': 'Question',
-      name: 'ハンドリフターは荷物を上げたまま移動できますか？',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: '基本的におすすめされません。荷物を上げた状態は重心が高くなり不安定になりやすいためです。製品情報でも、荷物を載せたテーブルを上昇したまま移動しないよう注意されている製品があります。',
-      },
-    },
-    {
-      '@type': 'Question',
-      name: 'ハンドリフト使用時に安全靴は必要ですか？',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: '現場ルールによりますが、ハンドリフトや台車作業では足元の接触・挟まれリスクがあります。足の挟まれや乗り上げによる労働災害事例も報告されているため、安全靴やプロテクティブスニーカーの着用を検討する価値があります。ただし完全に事故を防ぐものではありません。',
-      },
-    },
-    {
-      '@type': 'Question',
-      name: '手動と電動ハンドパレットはどう選べばよいですか？',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: '使用頻度が少なく移動距離も短い場合は手動で足りることがあります。重量物の移動回数が多い、長距離移動が多い、作業者の負担を下げたい場合は電動タイプも選択肢になります。',
-      },
-    },
-  ],
-};
+const FAQ: FaqItem[] = [
+  { q: 'ハンドリフトは押すのと引くの、どちらが安全ですか？', a: '現場状況によります。一般には進行方向の視界を確保しやすい向きで動かすこととされていますが、通路幅・荷重・床面・周囲の作業者によって最適な向きは変わります。急な力で動かさず、社内ルールと取扱説明書に従ってください。' },
+  { q: 'ハンドリフトで坂道を移動してもよいですか？', a: '重量物は傾斜で止めにくく、逸走や転倒の危険があるとされています。坂道・スロープ・濡れた床・段差では使用可否を現場ルールや取扱説明書で確認し、必要に応じて別の搬送方法を検討してください。' },
+  { q: 'ハンドパレットとハンドリフターの違いは何ですか？', a: 'ハンドパレットトラックはパレット荷物を水平移動する用品、ハンドリフターはテーブルを昇降させて作業台や棚の高さに荷物を合わせる用品です。「横移動したいのか」「高さを合わせたいのか」で選ぶ機器が変わります。' },
+  { q: 'ハンドリフターは荷物を上げたまま移動できますか？', a: '基本的におすすめされません。荷物を上げた状態は重心が高くなり不安定になりやすいためです。製品情報でも、荷物を載せたテーブルを上昇したまま移動しないよう注意されている製品があります。' },
+  { q: 'ハンドリフト使用時に安全靴は必要ですか？', a: '現場ルールによりますが、ハンドリフトや台車作業では足元の接触・挟まれリスクがあります。足の挟まれや乗り上げによる労働災害事例も報告されているため、安全靴やプロテクティブスニーカーの着用を検討する価値があります。ただし完全に事故を防ぐものではありません。' },
+  { q: '手動と電動ハンドパレットはどう選べばよいですか？', a: '使用頻度が少なく移動距離も短い場合は手動で足りることがあります。重量物の移動回数が多い、長距離移動が多い、作業者の負担を下げたい場合は電動タイプも選択肢になります。' },
+];
 
 const breadcrumbJsonLd = {
   '@context': 'https://schema.org',
@@ -188,35 +150,21 @@ const breadcrumbJsonLd = {
 
 export default function Page() {
   return (
-    <article className="mx-auto max-w-3xl px-4 py-8 text-gray-800">
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
+    <ArticleLayout faq={FAQ}>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
+      <Breadcrumb current="ハンドリフトの注意点" />
+      <ArticleHeader
+        category="guide"
+        readingTime={12}
+        title="ハンドリフトの注意点"
+        subtitle="事故を防ぐ使い方とハンドパレット・ハンドリフターの選び分け"
+      />
+      <HeroImage
+        src="/記事画像/hand-lift-safety-hero.jpg"
+        alt="倉庫でハンドリフトの注意点を確認する現場責任者"
+      />
 
-      <nav className="mb-4 text-xs text-gray-500" aria-label="パンくず">
-        <Link href="/" className="hover:underline">ホーム</Link>
-        <span className="mx-1">/</span>
-        <span>倉庫・物流</span>
-        <span className="mx-1">/</span>
-        <span className="text-gray-700">ハンドリフトの注意点</span>
-      </nav>
-
-      <div className="mb-3 flex items-center gap-3">
-        <span className="rounded-full bg-blue-50 px-3 py-1 text-xs font-semibold text-blue-700">倉庫・物流</span>
-        <span className="text-xs text-gray-500">読了時間：約12分</span>
-      </div>
-
-      <h1 className="mb-4 text-2xl font-bold leading-tight text-gray-900 sm:text-3xl">
-        ハンドリフトの注意点｜事故を防ぐ使い方とハンドパレット・ハンドリフターの選び分け
-      </h1>
-
-      <figure className="mb-6">
-        <img
-          src="/記事画像/hand-lift-safety-hero.jpg"
-          alt="倉庫でハンドリフトの注意点を確認する現場責任者"
-          className="w-full rounded-xl object-cover"
-        />
-      </figure>
-
+      <ArticleContent>
       <p className="mb-4 leading-relaxed">
         倉庫や工場、店舗バックヤードで重量物を動かすときに便利なハンドリフト。手作業での持ち上げを減らせる一方で、使い方を誤ると荷崩れ、足元の接触、パレット破損、腰への負担、周囲との衝突につながることがあります。
       </p>
@@ -580,14 +528,7 @@ export default function Page() {
 
       <h2 className="mt-10 mb-3 text-xl font-bold text-gray-900">ハンドリフト使用時のFAQ</h2>
       <div className="mb-8 space-y-2">
-        {[
-          { q: 'ハンドリフトは押すのと引くの、どちらが安全ですか？', a: '現場状況によります。一般には進行方向の視界を確保しやすい向きで動かすこととされていますが、通路幅・荷重・床面・周囲の作業者によって最適な向きは変わります。急な力で動かさず、社内ルールと取扱説明書に従ってください。' },
-          { q: 'ハンドリフトで坂道を移動してもよいですか？', a: '重量物は傾斜で止めにくく、逸走や転倒の危険があるとされています。坂道・スロープ・濡れた床・段差では使用可否を現場ルールや取扱説明書で確認し、必要に応じて別の搬送方法を検討してください。' },
-          { q: 'ハンドパレットとハンドリフターの違いは何ですか？', a: 'ハンドパレットトラックはパレット荷物を水平移動する用品、ハンドリフターはテーブルを昇降させて作業台や棚の高さに荷物を合わせる用品です。「横移動したいのか」「高さを合わせたいのか」で選ぶ機器が変わります。' },
-          { q: 'ハンドリフターは荷物を上げたまま移動できますか？', a: '基本的におすすめされません。荷物を上げた状態は重心が高くなり不安定になりやすいためです。製品情報でも、荷物を載せたテーブルを上昇したまま移動しないよう注意されている製品があります。' },
-          { q: 'ハンドリフト使用時に安全靴は必要ですか？', a: '現場ルールによりますが、ハンドリフトや台車作業では足元の接触・挟まれリスクがあります。足の挟まれや乗り上げによる労働災害事例も報告されているため、安全靴やプロテクティブスニーカーの着用を検討する価値があります。ただし完全に事故を防ぐものではありません。' },
-          { q: '手動と電動ハンドパレットはどう選べばよいですか？', a: '使用頻度が少なく移動距離も短い場合は手動で足りることがあります。重量物の移動回数が多い、長距離移動が多い、作業者の負担を下げたい場合は電動タイプも選択肢になります。' },
-        ].map((item) => (
+        {FAQ.map((item) => (
           <details key={item.q} className="rounded-lg border border-gray-200 bg-white p-4">
             <summary className="cursor-pointer font-semibold text-gray-900">{item.q}</summary>
             <p className="mt-2 text-sm leading-relaxed text-gray-700">{item.a}</p>
@@ -639,6 +580,7 @@ export default function Page() {
           https://trade-sign.jp/
         </a>
       </p>
-    </article>
+      </ArticleContent>
+    </ArticleLayout>
   );
 }

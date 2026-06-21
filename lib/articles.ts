@@ -14,6 +14,21 @@ export type Article = {
 
 export const ARTICLES: Article[] = [
   {
+    slug: "antistatic-agent-hishicoat-coatron",
+    title:
+      "ヒシコート・コートロンとは？静電防止剤でホコリ付着・油脂汚れを抑える使い方と選び方",
+    shortTitle: "ヒシコート・コートロンと静電防止剤",
+    description:
+      "ヒシコートA・コートロンなどの静電防止剤の用途・使い方・注意点を看板製作・樹脂板加工の現場向けに解説。ホコリ付着や油脂汚れによる仕上がり不良を防ぐ前処理、まとめ買い、導電マット・リストストラップなど関連する静電気対策用品も紹介します。",
+    category: "compare",
+    categoryLabel: "看板資材ガイド",
+    thumbnail: "/images/articles/antistatic-agent-hishicoat-coatron-hero.jpg",
+    date: "2026-06-21",
+    readTime: "約13分",
+    available: true,
+    path: "/articles/antistatic-agent-hishicoat-coatron",
+  },
+  {
     slug: "hand-lift-precautions",
     title:
       "ハンドリフトの注意点｜事故を防ぐ使い方とハンドパレット・ハンドリフターの選び分け",

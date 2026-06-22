@@ -14,6 +14,21 @@ export type Article = {
 
 export const ARTICLES: Article[] = [
   {
+    slug: "helmet-heatstroke-risk",
+    title:
+      "ヘルメットの熱中症リスクとは？屋外作業・工事現場で外せない保護具の暑さ対策と選び方",
+    shortTitle: "ヘルメットの熱中症リスク",
+    description:
+      "ヘルメットは屋外作業や工事現場で欠かせない保護具ですが、夏場は頭部のムレや熱こもりによる熱中症リスクに注意が必要です。通気孔付き・遮熱・軽量ヘルメットの選び方、防暑タレやインナー、保護メガネ、手袋、冷却ベスト、工場扇との組み合わせまで現場目線で解説します。",
+    category: "guide",
+    categoryLabel: "保護具・安全衛生",
+    thumbnail: "/記事画像/helmet-heatstroke-risk-hero.jpg",
+    date: "2026-06-21",
+    readTime: "約13分",
+    available: true,
+    path: "/articles/helmet-heatstroke-risk",
+  },
+  {
     slug: "outdoor-work-heat-countermeasure-goods",
     title:
       "建設現場の暑さ対策グッズとは？空調服だけでは足りない酷暑現場の冷却設備と休憩所づくり",

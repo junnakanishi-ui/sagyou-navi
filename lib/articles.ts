@@ -14,6 +14,21 @@ export type Article = {
 
 export const ARTICLES: Article[] = [
   {
+    slug: "heavy-duty-workbench-guide",
+    title:
+      "頑丈な作業台の選び方｜業務用で失敗しない耐荷重・天板・用途別の比較ガイド",
+    shortTitle: "頑丈な作業台の選び方",
+    description:
+      "頑丈な作業台を選ぶなら、耐荷重だけでなく軽量・中量・重量の違い、天板材質、バイス作業への対応、固定式・移動式、搬入や運搬動線まで確認することが大切です。工場・倉庫・整備場向けに業務用作業台の選び方と、TRUSCO作業台・ハンドパレット・台車の活用を解説します。",
+    category: "guide",
+    categoryLabel: "作業台・什器",
+    thumbnail: "/記事画像/heavy-duty-workbench-hero.jpg",
+    date: "2026-06-21",
+    readTime: "約13分",
+    available: true,
+    path: "/articles/heavy-duty-workbench-guide",
+  },
+  {
     slug: "helmet-heatstroke-risk",
     title:
       "ヘルメットの熱中症リスクとは？屋外作業・工事現場で外せない保護具の暑さ対策と選び方",

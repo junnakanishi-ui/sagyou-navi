@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Script from "next/script";
 import { Noto_Sans_JP } from "next/font/google";
 import { Analytics } from "@vercel/analytics/next";
 import { StickyShopBar } from "@/components/work/sticky-shop-bar";
@@ -98,6 +99,10 @@ export default function RootLayout({
       <body className="pb-[96px] font-sans antialiased sm:pb-[112px]">
         {children}
         <StickyShopBar />
+        <Script
+          src="https://www.instagram.com/embed.js"
+          strategy="lazyOnload"
+        />
         {process.env.NODE_ENV === "production" && <Analytics />}
       </body>
     </html>

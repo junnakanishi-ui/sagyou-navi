@@ -14,6 +14,21 @@ export type Article = {
 
 export const ARTICLES: Article[] = [
   {
+    slug: "outdoor-work-heat-countermeasure-goods",
+    title:
+      "建設現場の暑さ対策グッズとは？空調服だけでは足りない酷暑現場の冷却設備と休憩所づくり",
+    shortTitle: "建設現場の暑さ対策グッズ",
+    description:
+      "建設現場や屋外イベントの暑さ対策では、空調服や工場扇だけでなく休憩所を涼しくする設備づくりも重要です。作業中・休憩中・万が一の備えに分けて、空調ウェア・冷却ベスト・工場扇・スポットクーラー・1人用クールダウン設備・応急セットの選び方を解説します。",
+    category: "guide",
+    categoryLabel: "熱中症・暑さ対策",
+    thumbnail: "/記事画像/dohiemon-box-hero.jpg",
+    date: "2026-06-21",
+    readTime: "約13分",
+    available: true,
+    path: "/articles/outdoor-work-heat-countermeasure-goods",
+  },
+  {
     slug: "antistatic-agent-hishicoat-coatron",
     title:
       "ヒシコート・コートロンとは？静電防止剤でホコリ付着・油脂汚れを抑える使い方と選び方",

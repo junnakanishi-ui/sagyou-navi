@@ -44,6 +44,21 @@ export const ARTICLES: Article[] = [
     path: "/articles/helmet-heatstroke-risk",
   },
   {
+    slug: "warehouse-safety-shoes",
+    title:
+      "倉庫作業に向く安全靴の選び方｜疲れにくい・滑りにくい・台車作業で安心な靴を解説",
+    shortTitle: "倉庫作業の安全靴の選び方",
+    description:
+      "倉庫作業に安全靴は必要？ピッキング・検品・梱包・入出荷・台車作業など作業内容別に、安全靴・プロテクティブスニーカーの選び方を解説。疲れにくさ・滑りにくさ・先芯・軽量性・法人導入のポイントと、ニューバランス安全靴・TRUSCO製品も紹介します。",
+    category: "guide",
+    categoryLabel: "保護具・安全衛生",
+    thumbnail: "/記事画像/warehouse-safety-shoes-hero.jpg",
+    date: "2026-06-21",
+    readTime: "約13分",
+    available: true,
+    path: "/articles/warehouse-safety-shoes",
+  },
+  {
     slug: "outdoor-work-heat-countermeasure-goods",
     title:
       "建設現場の暑さ対策グッズとは？空調服だけでは足りない酷暑現場の冷却設備と休憩所づくり",

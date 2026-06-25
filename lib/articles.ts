@@ -14,6 +14,20 @@ export type Article = {
 
 export const ARTICLES: Article[] = [
   {
+    slug: "led-floodlight-selection",
+    title: "LED投光器の選び方｜現場・倉庫の作業灯から看板照明まで",
+    shortTitle: "LED投光器の選び方",
+    description:
+      "現場・倉庫・夜間作業のLED投光器（作業灯）の選び方を、明るさ（W・ルーメン）・配光角・設置タイプ（スタンド/三脚/バイス）・防水IP・電源で解説。TRUSCO DELKUROから外照式看板照明ビューフラッドまで、用途別に紹介します。",
+    category: "compare",
+    categoryLabel: "比較",
+    thumbnail: "/images/articles/night-work-lighting-hero.jpg",
+    date: "2026-06-25",
+    readTime: "約10分",
+    available: true,
+    path: "/articles/led-floodlight-selection",
+  },
+  {
     slug: "board-material-transport-cart",
     title: "板物の運搬に便利な台車とは？アルミ複合板・長尺材を安全に運ぶ選び方",
     shortTitle: "板物の運搬に便利な台車",

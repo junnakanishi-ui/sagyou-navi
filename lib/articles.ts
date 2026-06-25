@@ -14,6 +14,21 @@ export type Article = {
 
 export const ARTICLES: Article[] = [
   {
+    slug: "floodlight-lumen-guide",
+    title:
+      "投光器のルーメン目安は？屋外作業・駐車場・工事現場で必要な明るさを解説",
+    shortTitle: "投光器のルーメン目安",
+    description:
+      "投光器のルーメン目安を、手元作業・倉庫・屋外作業・駐車場・看板照明など用途別に解説。20W・50Wの違い、ルーメンとワット・ルクスの考え方、照射角度・設置高さ・防水・まぶしさ対策まで、明るさ選びで失敗しないポイントを紹介します。",
+    category: "compare",
+    categoryLabel: "比較",
+    thumbnail: "/images/articles/floodlight-lumen-guide-hero.jpg",
+    date: "2026-06-25",
+    readTime: "約10分",
+    available: true,
+    path: "/articles/floodlight-lumen-guide",
+  },
+  {
     slug: "led-floodlight-selection",
     title: "LED投光器の選び方｜現場・倉庫の作業灯から看板照明まで",
     shortTitle: "LED投光器の選び方",

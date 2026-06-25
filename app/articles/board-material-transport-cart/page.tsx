@@ -289,7 +289,7 @@ export default function Page() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
       />
 
-      <main className="mx-auto max-w-3xl px-4 py-8 text-gray-900">
+      <main className="mx-auto max-w-6xl px-4 py-8 md:px-6 text-gray-900">
         <nav className="mb-4 text-xs text-gray-500" aria-label="パンくず">
           <Link href="/" className="hover:underline">ホーム</Link>
           <span className="mx-1">/</span>

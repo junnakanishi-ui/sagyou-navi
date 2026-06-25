@@ -14,6 +14,20 @@ export type Article = {
 
 export const ARTICLES: Article[] = [
   {
+    slug: "board-material-transport-cart",
+    title: "板物の運搬に便利な台車とは？アルミ複合板・長尺材を安全に運ぶ選び方",
+    shortTitle: "板物の運搬に便利な台車",
+    description:
+      "アルミ複合板・看板板材・合板・パネル・アルミパイプなどの板物・長尺材を安全に運ぶ方法を解説。板物搬送台車イタチとグランカート サイドハンドルの使い分け、選び方、傷・転倒・腰痛対策、関連するアルミ建材・安全靴まで紹介します。",
+    category: "compare",
+    categoryLabel: "比較",
+    thumbnail: "/images/articles/board-material-transport-cart-hero.jpg",
+    date: "2026-06-25",
+    readTime: "約9分",
+    available: true,
+    path: "/articles/board-material-transport-cart",
+  },
+  {
     slug: "heavy-duty-workbench-guide",
     title:
       "頑丈な作業台の選び方｜業務用で失敗しない耐荷重・天板・用途別の比較ガイド",

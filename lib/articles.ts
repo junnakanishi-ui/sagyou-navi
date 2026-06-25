@@ -14,6 +14,21 @@ export type Article = {
 
 export const ARTICLES: Article[] = [
   {
+    slug: "sign-lighting-retrofit",
+    title:
+      "看板照明を後付けしたいときの選び方｜屋外用LEDライト・投光器の注意点",
+    shortTitle: "看板照明の後付け",
+    description:
+      "看板照明を後付けしたい方向けに、屋外用LEDライト・LED投光器・外照式看板灯の選び方を解説。看板サイズ、明るさ、色温度、広角・狭角、出幅、防水性能、設置場所、越境リスク、ビューフラッド・ビュートロン・アドビュー・ポラックスの使い分けまで紹介します。",
+    category: "guide",
+    categoryLabel: "看板照明ガイド",
+    thumbnail: "/images/articles/sign-lighting-retrofit-hero.jpg",
+    date: "2026-06-25",
+    readTime: "約13分",
+    available: true,
+    path: "/articles/sign-lighting-retrofit",
+  },
+  {
     slug: "floodlight-lumen-guide",
     title:
       "投光器のルーメン目安は？屋外作業・駐車場・工事現場で必要な明るさを解説",

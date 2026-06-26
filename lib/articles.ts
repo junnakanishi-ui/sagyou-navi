@@ -14,6 +14,21 @@ export type Article = {
 
 export const ARTICLES: Article[] = [
   {
+    slug: "outdoor-work-heat-clothing",
+    title:
+      "屋外作業の暑さ対策は服装から｜冷感インナー・UVカット・遮熱ウェアの選び方",
+    shortTitle: "屋外作業の暑さ対策は服装から",
+    description:
+      "屋外作業の暑さ対策は、冷感インナー・UVカット・遮熱ウェア・冷却ベスト・ヘルメット・インソールなど、身につける用品を作業環境に合わせて選ぶことが大切です。工事現場・倉庫・警備・イベント設営などで使いやすい服装選びと法人導入のポイントを解説します。",
+    category: "compare",
+    categoryLabel: "比較",
+    thumbnail: "/images/articles/outdoor-work-heat-clothing-hero.jpg",
+    date: "2026-06-25",
+    readTime: "約14分",
+    available: true,
+    path: "/articles/outdoor-work-heat-clothing",
+  },
+  {
     slug: "sign-lighting-retrofit",
     title:
       "看板照明を後付けしたいときの選び方｜屋外用LEDライト・投光器の注意点",

@@ -14,6 +14,21 @@ export type Article = {
 
 export const ARTICLES: Article[] = [
   {
+    slug: "spot-cooler-rest-area",
+    title:
+      "スポットクーラーで休憩所を涼しくするには？クーラーテント・工場扇・空調服の使い分け",
+    shortTitle: "スポットクーラーで休憩所を涼しく",
+    description:
+      "スポットクーラーで休憩所を涼しくするには、冷風を逃がさない空間づくりが重要です。クーラーテント、工場扇、冷却ベスト、空調服、らくらくテントの使い分けを、工場・倉庫・現場休憩所向けに解説します。",
+    category: "compare",
+    categoryLabel: "比較",
+    thumbnail: "/images/articles/cooler-tent-spot-cooler-rest-area.jpg",
+    date: "2026-06-25",
+    readTime: "約13分",
+    available: true,
+    path: "/articles/spot-cooler-rest-area",
+  },
+  {
     slug: "outdoor-work-heat-clothing",
     title:
       "屋外作業の暑さ対策は服装から｜冷感インナー・UVカット・遮熱ウェアの選び方",

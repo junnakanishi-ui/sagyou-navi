@@ -14,6 +14,21 @@ export type Article = {
 
 export const ARTICLES: Article[] = [
   {
+    slug: "flexible-container-bag-selection",
+    title:
+      "フレコンバッグの選び方｜排出口あり・なし、耐候性、用途別の使い分けを解説",
+    shortTitle: "フレコンバッグの選び方",
+    description:
+      "フレコンバッグの選び方を、排出口あり・なし、耐候性、用途別に解説します。大型土のう、ガラ袋、屋外保管、工場・倉庫の資材保管で失敗しないための確認ポイントと、ハンドパレット・運搬台車・作業台など関連用品の選び方も紹介します。",
+    category: "compare",
+    categoryLabel: "比較",
+    thumbnail: "/images/articles/flexible-container-bag-worksite-hero.jpg",
+    date: "2026-06-27",
+    readTime: "約13分",
+    available: true,
+    path: "/articles/flexible-container-bag-selection",
+  },
+  {
     slug: "spot-cooler-rest-area",
     title:
       "スポットクーラーで休憩所を涼しくするには？クーラーテント・工場扇・空調服の使い分け",

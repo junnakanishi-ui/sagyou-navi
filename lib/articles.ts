@@ -14,6 +14,21 @@ export type Article = {
 
 export const ARTICLES: Article[] = [
   {
+    slug: "steel-composite-board-whiteboard",
+    title:
+      "ホワイトボードに使える板材の選び方｜スチール複合板とアルミ複合板の違いを解説",
+    shortTitle: "ホワイトボード板材の選び方",
+    description:
+      "ホワイトボードや黒板を作る板材を探している方へ、スチール複合板の特徴と選び方を解説します。マグネットが使える理由、CKホワイトボード・ブラックボード・グリーンボードの違い、アルミ複合板との使い分け、オリジナルホワイトボード制作の相談先まで紹介します。",
+    category: "compare",
+    categoryLabel: "比較",
+    thumbnail: "/images/articles/steel-composite-board-whiteboard-hero.jpg",
+    date: "2026-06-27",
+    readTime: "約13分",
+    available: true,
+    path: "/articles/steel-composite-board-whiteboard",
+  },
+  {
     slug: "flexible-container-bag-selection",
     title:
       "フレコンバッグの選び方｜排出口あり・なし、耐候性、用途別の使い分けを解説",

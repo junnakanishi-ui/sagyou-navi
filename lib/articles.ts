@@ -14,6 +14,21 @@ export type Article = {
 
 export const ARTICLES: Article[] = [
   {
+    slug: "magnet-sheet-selection",
+    title:
+      "マグネットシートの選び方｜強力・車両用・印刷用・粘着付き・掲示板用の用途別比較",
+    shortTitle: "マグネットシートの選び方",
+    description:
+      "マグネットシートは、車両表示、店舗POP、工場・倉庫の棚表示、掲示板、ホワイトボード、黒板、反射表示など用途によって選ぶ種類が変わります。強力タイプ、等方性・異方性、印刷用、粘着付き、スチールペーパーの違いと選び方をわかりやすく解説します。",
+    category: "compare",
+    categoryLabel: "比較",
+    thumbnail: "/images/articles/magnet-sheet-selection-hero.jpg",
+    date: "2026-06-27",
+    readTime: "約13分",
+    available: true,
+    path: "/articles/magnet-sheet-selection",
+  },
+  {
     slug: "steel-composite-board-whiteboard",
     title:
       "ホワイトボードに使える板材の選び方｜スチール複合板とアルミ複合板の違いを解説",

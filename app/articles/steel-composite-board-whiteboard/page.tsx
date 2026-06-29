@@ -720,6 +720,11 @@ export default function Page() {
         </h2>
         <ul className="my-4 list-disc space-y-2 pl-6 text-gray-800">
           <li>
+            <Link href="/articles/magnet-sheet-selection" className="text-gray-900 underline hover:no-underline">
+              マグネットシートの選び方｜強力・車両用・印刷用・粘着付き・掲示板用の用途別比較
+            </Link>
+          </li>
+          <li>
             <Link href="/articles/sign-lighting-retrofit" className="text-gray-900 underline hover:no-underline">
               看板照明の後付け・選び方
             </Link>

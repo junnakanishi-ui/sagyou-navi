@@ -14,6 +14,21 @@ export type Article = {
 
 export const ARTICLES: Article[] = [
   {
+    slug: "office-disaster-prevention-supplies",
+    title:
+      "会社の防災用品リスト｜オフィス・店舗・現場で備えたい備蓄品と選び方",
+    shortTitle: "会社の防災用品リスト",
+    description:
+      "会社や店舗、現場で備える防災用品は、水・食料だけでなく、停電対策、照明、非常用電源、災害用トイレ、持ち出しリュック、備蓄品箱、工具、誘導灯、防犯用品まで用途別に整理することが大切です。総務・購買担当者向けに、職場で必要な防災用品リストと選び方を解説します。",
+    category: "compare",
+    categoryLabel: "比較",
+    thumbnail: "/images/articles/office-disaster-prevention-supplies-hero.jpg",
+    date: "2026-06-27",
+    readTime: "約14分",
+    available: true,
+    path: "/articles/office-disaster-prevention-supplies",
+  },
+  {
     slug: "magnet-sheet-selection",
     title:
       "マグネットシートの選び方｜強力・車両用・印刷用・粘着付き・掲示板用の用途別比較",

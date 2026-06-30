@@ -14,6 +14,22 @@ export type Article = {
 
 export const ARTICLES: Article[] = [
   {
+    slug: "line-work-tool-wagon-selection",
+    title:
+      "ライン作業の工具置き台に使えるワゴンの選び方｜部品の仮置き・移動作業を効率化",
+    shortTitle: "ライン作業の工具置き台ワゴンの選び方",
+    description:
+      "ライン作業やピッキング作業では、工具・部品・測定具・商品を作業場所の近くに仮置きできるワゴンがあると、移動時間や作業台上の散らかりを減らしやすくなります。工場内運搬や工具置き台に使えるツールワゴンの選び方と、TRUSCOバーディワゴンのサイズ・高さ・段数の選び方を解説します。",
+    category: "guide",
+    categoryLabel: "選び方ガイド",
+    thumbnail:
+      "/images/articles/line-work-tool-wagon-selection/line-work-tool-wagon-hero.jpg",
+    date: "2026-06-30",
+    readTime: "約14分",
+    available: true,
+    path: "/articles/line-work-tool-wagon-selection",
+  },
+  {
     slug: "tool-cabinet-moisture-control",
     title:
       "工具箱・保管庫の湿気対策｜繰り返し使える除湿石HYPERCUBEと除湿機の使い分け",

@@ -14,6 +14,22 @@ export type Article = {
 
 export const ARTICLES: Article[] = [
   {
+    slug: "high-precision-platform-scale-selection",
+    title:
+      "高精度電子台はかりの選び方｜0.1g計量・防水・工場用途に向くVIBRA FMA33K0.1Tを解説",
+    shortTitle: "高精度電子台はかりの選び方",
+    description:
+      "高精度電子台はかりを選ぶときは、ひょう量、最小表示、防塵・防水、清掃性、振動への強さ、風袋引き、外部出力を確認することが重要です。食品工場・化学・粉体・品質管理向けに、VIBRA FMA33K0.1Tの特徴や用途、選び方を解説します。",
+    category: "guide",
+    categoryLabel: "選び方ガイド",
+    thumbnail:
+      "/images/articles/high-precision-platform-scale-factory-hero.jpg",
+    date: "2026-06-30",
+    readTime: "約14分",
+    available: true,
+    path: "/articles/high-precision-platform-scale-selection",
+  },
+  {
     slug: "standing-work-anti-fatigue-mat",
     title:
       "立ち仕事の疲労軽減マットの選び方｜工場・レジ・作業場で足腰の負担を減らすには",

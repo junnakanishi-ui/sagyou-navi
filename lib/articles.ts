@@ -14,6 +14,21 @@ export type Article = {
 
 export const ARTICLES: Article[] = [
   {
+    slug: "tool-cabinet-moisture-control",
+    title:
+      "工具箱・保管庫の湿気対策｜繰り返し使える除湿石HYPERCUBEと除湿機の使い分け",
+    shortTitle: "工具箱・保管庫の湿気対策",
+    description:
+      "工具箱や保管庫、工具キャビネットの湿気対策には、電源不要で繰り返し使える除湿剤が役立つ場合があります。SILENTDRY除湿石HYPERCUBE 800g・1000gの特徴、使い分け、除湿機やスポットエアコンとの違いを、工場・倉庫・精密機器保管向けに解説します。",
+    category: "guide",
+    categoryLabel: "選び方ガイド",
+    thumbnail: "/images/articles/tool-cabinet-moisture-control-hero.jpg",
+    date: "2026-06-30",
+    readTime: "約12分",
+    available: true,
+    path: "/articles/tool-cabinet-moisture-control",
+  },
+  {
     slug: "high-precision-platform-scale-selection",
     title:
       "高精度電子台はかりの選び方｜0.1g計量・防水・工場用途に向くVIBRA FMA33K0.1Tを解説",

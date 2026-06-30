@@ -1,0 +1,41 @@
+---
+description: 作業用品ナビ自己完結型記事のタイトル・見出し・本文タイポグラフィ
+globs: app/articles/**/page.tsx
+alwaysApply: false
+---
+
+# 記事タイポグラフィ（自己完結型 page.tsx）
+
+`SiteHeader` / `SiteFooter` + `<main className="mx-auto max-w-4xl px-4 py-8">` 方式の記事は、見出し・本文にインライン Tailwind を直書きせず `@/lib/article-typography` の `articleCls` を使う。
+
+```tsx
+import { articleCls as cls } from "@/lib/article-typography";
+
+<h1 className={cls.h1}>…</h1>
+<h2 className={cls.h2}>…</h2>
+<h3 className={cls.h3}>…</h3>
+<p className={cls.body}>…</p>
+<table className={cls.table}>…</table>
+<ul className={cls.list}>…</ul>
+```
+
+## サイズ基準（参照: workwear-heat-protection-clothing）
+
+| 要素 | クラス | サイズ |
+|------|--------|--------|
+| H1 | `cls.h1` | `text-3xl sm:text-4xl` |
+| H2 | `cls.h2` | `text-2xl sm:text-3xl` + 黒左ボーダー |
+| H3 | `cls.h3` | `text-xl sm:text-2xl` |
+| 本文 | `cls.body` | `leading-[1.95] tracking-[0.04em]` |
+| 注意・FAQ回答 | `cls.bodySm` | 本文より小さめ |
+| FAQ質問 | `cls.faqQ` | `text-lg` |
+| CTA見出し | `cls.ctaH3` | `text-xl` |
+
+## 禁止・非推奨
+
+- H1 に `text-2xl sm:text-3xl`（旧スタイル）
+- H2 に `text-xl`（旧スタイル）
+- H3 に `text-lg`（旧スタイル）
+- 本文に `leading-relaxed` のみ（tracking なし）
+
+新規記事・既存記事の typography 修正時は必ず `lib/article-typography.ts` を参照・更新する。

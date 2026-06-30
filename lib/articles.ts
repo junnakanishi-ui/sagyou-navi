@@ -14,6 +14,21 @@ export type Article = {
 
 export const ARTICLES: Article[] = [
   {
+    slug: "workwear-heat-protection-clothing",
+    title:
+      "現場の暑さ対策は服装から｜冷感インナー・空調服・冷却ベストの選び方",
+    shortTitle: "現場の暑さ対策は服装から",
+    description:
+      "現場の暑さ対策は、空調服や冷却ベストだけでなく、作業着の下に着る冷感インナー、アームカバー、ロングタイツ、クールインソールまで組み合わせて考えることが大切です。工事現場・工場・倉庫・屋外作業向けに、熱中症対策衣服の選び方を解説します。",
+    category: "compare",
+    categoryLabel: "比較",
+    thumbnail: "/images/articles/workwear-heat-protection-clothing-hero.jpg",
+    date: "2026-06-27",
+    readTime: "約14分",
+    available: true,
+    path: "/articles/workwear-heat-protection-clothing",
+  },
+  {
     slug: "office-disaster-prevention-supplies",
     title:
       "会社の防災用品リスト｜オフィス・店舗・現場で備えたい備蓄品と選び方",

@@ -6,6 +6,18 @@ import { SiteFooter } from "@/components/work/site-footer";
 const SLUG = "workwear-heat-protection-clothing";
 const SITE_URL = "https://sagyou-navi.com";
 
+const cls = {
+  h1: "mb-5 text-3xl font-bold leading-tight tracking-wide text-gray-900 sm:text-4xl",
+  h2: "mb-4 mt-10 border-l-4 border-gray-900 pl-4 text-2xl font-bold tracking-wide text-gray-900 sm:text-3xl",
+  h3: "mb-3 mt-6 text-xl font-bold tracking-wide text-gray-900 sm:text-2xl",
+  body: "mb-4 leading-[1.95] tracking-[0.04em] text-gray-800",
+  bodySm: "text-sm leading-[1.95] tracking-[0.04em] text-gray-700",
+  list: "my-4 list-disc space-y-2 pl-6 leading-[1.95] tracking-[0.04em] text-gray-800",
+  table: "w-full border-collapse text-sm tracking-wide",
+  faqQ: "mb-2 text-lg font-bold tracking-wide text-gray-900",
+  ctaH3: "mb-2 text-xl font-bold tracking-wide text-gray-900",
+};
+
 export const metadata: Metadata = {
   title: "現場の暑さ対策は服装から｜冷感インナー・空調服・冷却ベストの選び方",
   description:
@@ -134,8 +146,8 @@ function ProductGrid({ items }: { items: Product[] }) {
 function ListCTA({ href, utm, heading, text, label, strong = false }: { href: string; utm: string; heading: string; text: string; label: string; strong?: boolean }) {
   return (
     <div className={"my-6 rounded-lg border p-5 " + (strong ? "border-gray-900 bg-gray-50" : "border-gray-200 bg-gray-50")}>
-      <h3 className="mb-2 text-lg font-bold text-gray-900">{heading}</h3>
-      <p className="mb-4 text-sm leading-relaxed text-gray-700">{text}</p>
+      <h3 className={cls.ctaH3}>{heading}</h3>
+      <p className={cls.bodySm + " mb-4"}>{text}</p>
       <a href={buildUrl(href, utm)} target="_blank" rel="nofollow noopener" className="inline-block rounded-md bg-gray-900 px-5 py-2.5 font-semibold text-white transition hover:bg-gray-700">{label} →</a>
     </div>
   );
@@ -199,7 +211,7 @@ export default function Page() {
 
         <span className="mb-3 inline-block rounded bg-gray-200 px-3 py-1 text-sm font-semibold text-gray-800">比較</span>
 
-        <h1 className="mb-4 text-2xl font-bold leading-snug text-gray-900 sm:text-3xl">
+        <h1 className={cls.h1}>
           現場の暑さ対策は服装から｜冷感インナー・空調服・冷却ベストの選び方
         </h1>
 
@@ -207,44 +219,44 @@ export default function Page() {
 
         <img src="/images/articles/workwear-heat-protection-clothing-hero.jpg" alt="現場の暑さ対策衣服を確認する作業者と管理者のイメージ" className="mb-6 w-full rounded-lg object-cover" />
 
-        <p className="mb-4 leading-relaxed text-gray-800">
+        <p className={cls.body}>
           夏の現場では、休憩や水分補給だけでなく、服装選びも暑さ対策の重要な要素です。「作業着が汗で張り付く」「空調服がいまひとつ涼しく感じない」「安全靴の中が蒸れる」「腕の日差しがつらい」——こうした悩みは、服装をインナー・腕・脚・足元・上半身のレイヤー（層）で考えると整理しやすくなります。この記事では、現場責任者・購買担当者・作業者に向けて、現場に合う暑さ対策衣服の選び方を解説します。
         </p>
 
         {/* AEO回答ブロック（結論＝青） */}
         <div className="my-6 rounded-lg border-l-4 border-blue-500 bg-blue-50 p-5">
-          <p className="leading-relaxed text-gray-800">
+          <p className={cls.body.replace("mb-4 ", "")}>
             現場の暑さ対策で服装を選ぶときは、まず「作業環境」「屋外・屋内」「汗の量」「日差し」「安全靴の蒸れ」「ハーネス使用の有無」を確認します。作業着の下には吸汗速乾・接触冷感インナー、腕にはアームカバー、足元にはクールインソール、上半身の冷却には空調服や冷却ベストを組み合わせると、現場に合わせた暑さ対策を考えやすくなります。
           </p>
         </div>
 
         {/* 健康注意（amber・YMYL） */}
         <div className="my-6 rounded-lg border-l-4 border-amber-500 bg-amber-50 p-5">
-          <p className="text-sm leading-relaxed text-gray-800">
+          <p className={cls.bodySm}>
             <strong className="text-amber-700">ご注意：</strong>
             冷却ベスト・空調服・冷感インナーなどの冷却用品は熱中症対策の<strong>補助</strong>であり、着用していれば熱中症にならないという意味ではありません。WBGT（暑さ指数）の確認・こまめな休憩・水分塩分補給・作業時間管理・体調確認と必ず併用してください。めまい・頭痛・吐き気・大量の発汗・けいれんなどの症状が出たら、すぐに涼しい場所へ移動し身体を冷やし、水分・塩分を補給します。自力で水分が摂れない、意識がおかしい場合は迷わず119番、判断に迷うときは#7119へ。持病・服薬中・水分塩分制限がある方は主治医・産業医の指示を優先してください。ハーネスや安全靴などの安全装備は暑くても外さず、ハーネス対応タイプなどで両立を図りましょう。職場の暑さ対策は、厚生労働省・環境省などの公的情報もあわせて確認してください。
           </p>
         </div>
 
         {/* ===== H2：服装の組み合わせ ===== */}
-        <h2 className="mb-4 mt-10 border-l-4 border-gray-900 pl-4 text-xl font-bold text-gray-900">
+        <h2 className={cls.h2}>
           現場の暑さ対策は「服装の組み合わせ」で考える
         </h2>
-        <h3 className="mb-3 mt-6 text-lg font-bold text-gray-900">空調服や冷却ベストだけでなく、インナー・足元まで見る</h3>
-        <p className="mb-4 leading-relaxed text-gray-800">
+        <h3 className={cls.h3}>空調服や冷却ベストだけでなく、インナー・足元まで見る</h3>
+        <p className={cls.body}>
           暑さ対策というと空調服や冷却ベストに目が向きがちですが、その効果は下に着るインナーや、足元・腕・脚の状態にも左右されます。作業着の下の冷感インナー、腕のアームカバー、脚のロングタイツ、足元のクールインソール、上半身の冷却ベスト・空調服——これらをレイヤーで組み合わせると、現場の悩みに合わせて対策を選びやすくなります。
         </p>
-        <h3 className="mb-3 mt-6 text-lg font-bold text-gray-900">冷却用品は休憩・水分補給・作業管理と併用する</h3>
-        <p className="mb-4 leading-relaxed text-gray-800">
+        <h3 className={cls.h3}>冷却用品は休憩・水分補給・作業管理と併用する</h3>
+        <p className={cls.body}>
           服装の工夫は大切ですが、それだけで熱中症を防げるわけではありません。WBGTの確認、こまめな休憩、水分・塩分補給、作業時間の管理、体調確認とあわせて運用することが前提です。職場の熱中症対策については、厚生労働省や環境省などの公的情報もあわせて確認しましょう。
         </p>
 
         {/* ===== H2：早見表 ===== */}
-        <h2 className="mb-4 mt-10 border-l-4 border-gray-900 pl-4 text-xl font-bold text-gray-900">
+        <h2 className={cls.h2}>
           まず確認したい暑さ対策衣服の早見表
         </h2>
         <div className="my-6 overflow-x-auto">
-          <table className="w-full border-collapse text-sm">
+          <table className={cls.table}>
             <thead>
               <tr className="bg-gray-100 text-left">
                 <th className="border border-gray-200 px-3 py-2">悩み</th>
@@ -266,20 +278,20 @@ export default function Page() {
         </div>
 
         {/* ===== H2：インナー ===== */}
-        <h2 className="mb-4 mt-10 border-l-4 border-gray-900 pl-4 text-xl font-bold text-gray-900">
+        <h2 className={cls.h2}>
           作業着の下には冷感インナー・吸汗速乾インナーを選ぶ
         </h2>
         <img src="/images/articles/cooling-innerwear-workwear-summer.jpg" alt="作業着の下に着る冷感インナーを選ぶイメージ" className="my-6 w-full rounded-lg object-cover" />
-        <h3 className="mb-3 mt-6 text-lg font-bold text-gray-900">夏の現場では「普通のTシャツ」より専用インナーが向く場合がある</h3>
-        <p className="mb-4 leading-relaxed text-gray-800">
+        <h3 className={cls.h3}>夏の現場では「普通のTシャツ」より専用インナーが向く場合がある</h3>
+        <p className={cls.body}>
           綿のTシャツは汗を含むと乾きにくく、肌に張り付いて不快になりがちです。吸汗速乾・接触冷感・ストレッチ性のある専用インナーは、汗処理や肌離れ、作業着・空調服との相性の面で向くことがあります。とくに空調服は、汗を素早く乾かすインナーと組み合わせると衣服内の換気を活かしやすくなります。
         </p>
         <ProductGrid items={INNER} />
         <ListCTA href={LIST_URLS.inner} utm={`${SLUG}_innerlist`} heading="作業着の下に着る熱中症対策インナーを確認する" text="吸汗速乾・接触冷感・ストレッチ性など、汗の量や作業に合わせて選びましょう。" label="熱中症対策インナー一覧へ" strong />
 
-        <h3 className="mb-3 mt-6 text-lg font-bold text-gray-900">長袖インナーと半袖インナーの使い分け</h3>
+        <h3 className={cls.h3}>長袖インナーと半袖インナーの使い分け</h3>
         <div className="my-6 overflow-x-auto">
-          <table className="w-full border-collapse text-sm">
+          <table className={cls.table}>
             <thead>
               <tr className="bg-gray-100 text-left">
                 <th className="border border-gray-200 px-3 py-2">タイプ</th>
@@ -297,69 +309,69 @@ export default function Page() {
         </div>
 
         {/* ===== H2：アームカバー ===== */}
-        <h2 className="mb-4 mt-10 border-l-4 border-gray-900 pl-4 text-xl font-bold text-gray-900">
+        <h2 className={cls.h2}>
           腕の暑さ・日差し対策にはアームカバーを使う
         </h2>
         <img src="/images/articles/arm-cover-long-tights-summer-work.jpg" alt="屋外作業でアームカバーとロングタイツを使うイメージ" className="my-6 w-full rounded-lg object-cover" />
-        <h3 className="mb-3 mt-6 text-lg font-bold text-gray-900">半袖作業服でも腕を守りたい現場に向く</h3>
-        <p className="mb-4 leading-relaxed text-gray-800">
+        <h3 className={cls.h3}>半袖作業服でも腕を守りたい現場に向く</h3>
+        <p className={cls.body}>
           半袖作業服で動きやすさを確保しつつ、腕の日差しや汗が気になる現場では、アームカバーが役立ちます。屋外作業、倉庫、工場、農作業、イベント設営など、着脱しやすく腕を保護したい場面で使いやすいアイテムです。
         </p>
         <ProductGrid items={ARM} />
 
         {/* ===== H2：脚 ===== */}
-        <h2 className="mb-4 mt-10 border-l-4 border-gray-900 pl-4 text-xl font-bold text-gray-900">
+        <h2 className={cls.h2}>
           脚まわりの不快感にはロングタイツ・冷感プロテクションを検討する
         </h2>
-        <h3 className="mb-3 mt-6 text-lg font-bold text-gray-900">ロングタイツはズボン内の汗・肌当たり対策に使える</h3>
-        <p className="mb-4 leading-relaxed text-gray-800">
+        <h3 className={cls.h3}>ロングタイツはズボン内の汗・肌当たり対策に使える</h3>
+        <p className={cls.body}>
           作業ズボンの中が汗でまとわりつく、膝を曲げる作業が多い、脚の日差しが気になる——こうした現場では、接触冷感のロングタイツがズボン内の汗や肌当たりの対策に使えます。サイズ展開を確認し、作業の動きに合うものを選びましょう。
         </p>
         <ProductGrid items={TIGHTS} />
-        <h3 className="mb-3 mt-6 text-lg font-bold text-gray-900">肘・膝をつく作業には冷感プロテクションも選択肢</h3>
-        <p className="mb-4 leading-relaxed text-gray-800">
+        <h3 className={cls.h3}>肘・膝をつく作業には冷感プロテクションも選択肢</h3>
+        <p className={cls.body}>
           設備工事、床作業、配管、整備、物流、内装、現場点検など、肘や膝をつく作業が多い現場では、冷感プロテクションも選択肢です。保護とひんやり感を両立したい場面で検討できます。
         </p>
         <ProductGrid items={PROTECTION} />
 
         {/* ===== H2：足元 ===== */}
-        <h2 className="mb-4 mt-10 border-l-4 border-gray-900 pl-4 text-xl font-bold text-gray-900">
+        <h2 className={cls.h2}>
           安全靴の蒸れ・足裏の不快感にはクールインソール
         </h2>
         <img src="/images/articles/cool-insole-safety-shoes-heat.jpg" alt="安全靴にクールインソールを入れるイメージ" className="my-6 w-full rounded-lg object-cover" />
-        <h3 className="mb-3 mt-6 text-lg font-bold text-gray-900">足元の暑さ対策は見落とされやすい</h3>
-        <p className="mb-4 leading-relaxed text-gray-800">
+        <h3 className={cls.h3}>足元の暑さ対策は見落とされやすい</h3>
+        <p className={cls.body}>
           安全靴は構造上蒸れやすく、足裏の不快感が作業ストレスにつながることがあります。インソール（中敷き）を見直すと、靴内環境の改善に役立ちます。踏み抜き防止タイプは、現場条件に合えば足裏の安全対策にもつながります。サイズを合わせて選びましょう。
         </p>
         <ProductGrid items={INSOLE} />
         <ListCTA href={LIST_URLS.insole} utm={`${SLUG}_insolelist`} heading="安全靴の蒸れ対策に使えるインソールを確認する" text="サイズや踏み抜き防止の要否を確認して、足元の不快感対策に役立てましょう。" label="インソール一覧へ" />
 
         {/* ===== H2：上半身 ===== */}
-        <h2 className="mb-4 mt-10 border-l-4 border-gray-900 pl-4 text-xl font-bold text-gray-900">
+        <h2 className={cls.h2}>
           上半身を冷やしたい場合は冷却ベスト・冷蔵服・空調服を選ぶ
         </h2>
         <img src="/images/articles/cooling-vest-worksite-heat-prevention.jpg" alt="現場で冷却ベストを着用する作業者のイメージ" className="my-6 w-full rounded-lg object-cover" />
-        <h3 className="mb-3 mt-6 text-lg font-bold text-gray-900">冷却ベストは上半身を集中的に冷やしたい現場に向く</h3>
-        <p className="mb-4 leading-relaxed text-gray-800">
+        <h3 className={cls.h3}>冷却ベストは上半身を集中的に冷やしたい現場に向く</h3>
+        <p className={cls.body}>
           冷却ベストは、屋外作業・倉庫・工場・警備・イベント・設備点検など、上半身を集中的に冷やしたい場面で使われます。仕組みにはファンタイプ、冷却ユニットタイプ、注水式、保冷材タイプなどがあり、それぞれ連続使用時間・重量・充電・保冷材交換・ハーネス対応の有無が異なります。現場の作業時間や装備に合わせて確認しましょう。
         </p>
         <ProductGrid items={VEST} />
         <ListCTA href={LIST_URLS.coolVest} utm={`${SLUG}_vestlist`} heading="上半身を冷やす冷却ベストを確認する" text="ファン式・保冷材式・注水式など仕組みの違いと、稼働時間・重量・ハーネス対応を確認して選びましょう。" label="冷却ベスト一覧へ" strong />
 
-        <h3 className="mb-3 mt-6 text-lg font-bold text-gray-900">空調服は風を通す服装設計とインナー選びが重要</h3>
+        <h3 className={cls.h3}>空調服は風を通す服装設計とインナー選びが重要</h3>
         <img src="/images/articles/fan-workwear-blouson-vest-summer-site.jpg" alt="空調服ベストとブルゾンを比較するイメージ" className="my-6 w-full rounded-lg object-cover" />
-        <p className="mb-4 leading-relaxed text-gray-800">
+        <p className={cls.body}>
           空調服は、ファンで衣服内に風を通す作業服です（温度を下げる冷房ではありません）。効果を活かすには、汗を乾かしやすいインナー選びが重要です。ベストタイプは腕まわりが動かしやすく、ブルゾンタイプは腕まで覆いたい現場に向きます。高所作業で使う場合は、ハーネス対応タイプかどうかを確認しましょう。
         </p>
         <ProductGrid items={JACKET} />
         <ListCTA href={LIST_URLS.airCon} utm={`${SLUG}_airconlist`} heading="現場別に空調服を確認する" text="ベスト/ブルゾン、ハーネス対応の有無、インナーとの組み合わせを確認して選びましょう。" label="空調服一覧へ" strong />
 
         {/* ===== H2：ベストvsブルゾン ===== */}
-        <h2 className="mb-4 mt-10 border-l-4 border-gray-900 pl-4 text-xl font-bold text-gray-900">
+        <h2 className={cls.h2}>
           ベストタイプとブルゾンタイプの違い
         </h2>
         <div className="my-6 overflow-x-auto">
-          <table className="w-full border-collapse text-sm">
+          <table className={cls.table}>
             <thead>
               <tr className="bg-gray-100 text-left">
                 <th className="border border-gray-200 px-3 py-2">種類</th>
@@ -378,24 +390,24 @@ export default function Page() {
         </div>
 
         {/* ===== H2：現場別 ===== */}
-        <h2 className="mb-4 mt-10 border-l-4 border-gray-900 pl-4 text-xl font-bold text-gray-900">
+        <h2 className={cls.h2}>
           現場別に選ぶ暑さ対策衣服
         </h2>
-        <h3 className="mb-3 mt-6 text-lg font-bold text-gray-900">建設・土木現場</h3>
-        <p className="mb-4 leading-relaxed text-gray-800">長袖冷感インナー＋アームカバー、上半身は空調服または冷却ベスト、足元はクールインソール。高所作業がある場合はハーネス対応タイプを確認します。</p>
-        <h3 className="mb-3 mt-6 text-lg font-bold text-gray-900">工場・倉庫</h3>
-        <p className="mb-4 leading-relaxed text-gray-800">半袖または長袖インナー、クールインソール、空調服ベストや冷却ベスト、必要に応じてロングタイツ。屋内でも通気と汗処理を意識します。</p>
-        <h3 className="mb-3 mt-6 text-lg font-bold text-gray-900">屋外イベント・警備・誘導</h3>
-        <p className="mb-4 leading-relaxed text-gray-800">冷感インナー＋アームカバー、上半身は冷却ベストや空調服ベスト、足元はクールインソール。長時間の立哨・誘導を想定して選びます。</p>
-        <h3 className="mb-3 mt-6 text-lg font-bold text-gray-900">整備・設備点検</h3>
-        <p className="mb-4 leading-relaxed text-gray-800">ストレッチインナー、冷感エルボー/ニープロテクション、クールインソール、上半身は空調服または冷却ベスト。屈む・膝をつく作業に合わせます。</p>
+        <h3 className={cls.h3}>建設・土木現場</h3>
+        <p className={cls.body}>長袖冷感インナー＋アームカバー、上半身は空調服または冷却ベスト、足元はクールインソール。高所作業がある場合はハーネス対応タイプを確認します。</p>
+        <h3 className={cls.h3}>工場・倉庫</h3>
+        <p className={cls.body}>半袖または長袖インナー、クールインソール、空調服ベストや冷却ベスト、必要に応じてロングタイツ。屋内でも通気と汗処理を意識します。</p>
+        <h3 className={cls.h3}>屋外イベント・警備・誘導</h3>
+        <p className={cls.body}>冷感インナー＋アームカバー、上半身は冷却ベストや空調服ベスト、足元はクールインソール。長時間の立哨・誘導を想定して選びます。</p>
+        <h3 className={cls.h3}>整備・設備点検</h3>
+        <p className={cls.body}>ストレッチインナー、冷感エルボー/ニープロテクション、クールインソール、上半身は空調服または冷却ベスト。屈む・膝をつく作業に合わせます。</p>
 
         {/* ===== H2：法人チェックリスト ===== */}
-        <h2 className="mb-4 mt-10 border-l-4 border-gray-900 pl-4 text-xl font-bold text-gray-900">
+        <h2 className={cls.h2}>
           法人で支給する前に確認したいチェックリスト
         </h2>
         <img src="/images/articles/corporate-heat-workwear-supply-checklist.jpg" alt="法人担当者が熱中症対策衣服の支給品を確認するイメージ" className="my-6 w-full rounded-lg object-cover" />
-        <ul className="my-4 list-disc space-y-2 pl-6 text-gray-800">
+        <ul className={cls.list}>
           <li>屋外作業か屋内作業か</li>
           <li>日差しの強さ</li>
           <li>汗の量</li>
@@ -410,7 +422,7 @@ export default function Page() {
         </ul>
 
         {/* ===== H2：まとめて確認 ===== */}
-        <h2 className="mb-4 mt-10 border-l-4 border-gray-900 pl-4 text-xl font-bold text-gray-900">
+        <h2 className={cls.h2}>
           現場の暑さ対策衣服をまとめて確認する
         </h2>
         <div className="my-6 grid grid-cols-1 gap-4 sm:grid-cols-3">
@@ -418,32 +430,32 @@ export default function Page() {
           <a href={buildUrl(LIST_URLS.heatClothes, `${SLUG}_cta_clothes`)} target="_blank" rel="nofollow noopener" className="block rounded-lg border border-gray-900 bg-gray-50 p-5 text-center font-semibold text-gray-900 transition hover:bg-gray-100">熱中症対策衣服一覧へ →</a>
           <a href={buildUrl(LIST_URLS.heatItems, `${SLUG}_cta_items`)} target="_blank" rel="nofollow noopener" className="block rounded-lg bg-gray-900 p-5 text-center font-semibold text-white transition hover:bg-gray-700">熱中症対策アイテム一覧へ →</a>
         </div>
-        <p className="mb-4 text-sm leading-relaxed text-gray-600">
+        <p className="mb-4 text-sm leading-[1.95] tracking-[0.04em] text-gray-600">
           そのほか、現場や倉庫で必要な作業用品は<a href={buildUrl(LIST_URLS.trusco, `${SLUG}_cta_trusco`)} target="_blank" rel="nofollow noopener" className="text-gray-900 underline hover:no-underline">トラスコ中山一覧</a>からまとめて確認できます。
         </p>
 
         {/* ===== H2：まとめ ===== */}
-        <h2 className="mb-4 mt-10 border-l-4 border-gray-900 pl-4 text-xl font-bold text-gray-900">
+        <h2 className={cls.h2}>
           まとめ｜現場の暑さ対策は服装をレイヤーで整える
         </h2>
-        <p className="mb-4 leading-relaxed text-gray-800">
+        <p className={cls.body}>
           現場の暑さ対策は、服装をレイヤーで整えると考えやすくなります。作業着の下は冷感インナー、腕はアームカバー、脚はロングタイツや冷感プロテクション、足元はクールインソール、上半身は冷却ベストや空調服。高所作業ではハーネス対応を確認します。そして、これらの冷却用品はあくまで補助です。WBGT確認・休憩・水分塩分補給・作業時間管理・体調確認と必ず併用し、現場環境に合わせて選びましょう。
         </p>
 
         {/* ===== FAQ ===== */}
-        <h2 className="mb-4 mt-10 border-l-4 border-gray-900 pl-4 text-xl font-bold text-gray-900">よくある質問（FAQ）</h2>
+        <h2 className={cls.h2}>よくある質問（FAQ）</h2>
         <div className="my-4 space-y-4">
           {faqs.map((f, i) => (
             <div key={i} className="rounded-lg border border-gray-200 p-4">
-              <p className="mb-2 font-bold text-gray-900">Q{i + 1}. {f.q}</p>
-              <p className="text-sm leading-relaxed text-gray-700">{f.a}</p>
+              <p className={cls.faqQ}>Q{i + 1}. {f.q}</p>
+              <p className={cls.bodySm}>{f.a}</p>
             </div>
           ))}
         </div>
 
         {/* ===== 関連記事 ===== */}
-        <h2 className="mb-4 mt-10 border-l-4 border-gray-900 pl-4 text-xl font-bold text-gray-900">関連記事</h2>
-        <ul className="my-4 list-disc space-y-2 pl-6 text-gray-800">
+        <h2 className={cls.h2}>関連記事</h2>
+        <ul className={cls.list}>
           <li><Link href="/articles/office-disaster-prevention-supplies" className="text-gray-900 underline hover:no-underline">会社の防災用品リスト｜オフィス・店舗・現場で備えたい備蓄品と選び方</Link></li>
           <li><Link href="/articles/flexible-container-bag-selection" className="text-gray-900 underline hover:no-underline">フレコンバッグの選び方｜排出口あり・なし、耐候性、用途別の使い分け</Link></li>
         </ul>

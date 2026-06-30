@@ -14,6 +14,21 @@ export type Article = {
 
 export const ARTICLES: Article[] = [
   {
+    slug: "standing-work-anti-fatigue-mat",
+    title:
+      "立ち仕事の疲労軽減マットの選び方｜工場・レジ・作業場で足腰の負担を減らすには",
+    shortTitle: "立ち仕事の疲労軽減マットの選び方",
+    description:
+      "立ち仕事で足腰が疲れやすい工場、レジ、作業台、製造ラインでは、足元に疲労軽減マットを敷くことで体重負担の分散や底冷え対策に役立つ場合があります。TRUSCO足腰マット、帯電防止タイプ、エラストマットESD-II・STD-IIの違いと選び方を解説します。",
+    category: "compare",
+    categoryLabel: "比較",
+    thumbnail: "/images/standing-work-anti-fatigue-mat-hero.jpg",
+    date: "2026-06-27",
+    readTime: "約14分",
+    available: true,
+    path: "/articles/standing-work-anti-fatigue-mat",
+  },
+  {
     slug: "workwear-heat-protection-clothing",
     title:
       "現場の暑さ対策は服装から｜冷感インナー・空調服・冷却ベストの選び方",

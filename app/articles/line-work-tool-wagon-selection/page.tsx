@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import type { ReactNode } from "react";
 import { SiteHeader } from "@/components/work/site-header";
 import { SiteFooter } from "@/components/work/site-footer";
+import { articleCls as cls } from "@/lib/article-typography";
 
 const SLUG = "line-work-tool-wagon-selection";
 const SITE_URL = "https://sagyou-navi.com";
@@ -26,11 +27,11 @@ export const metadata: Metadata = {
 };
 
 const ARTICLE_IMG = "/images/articles/line-work-tool-wagon-selection";
+const productImage = (id: string) => `/products/${id}.jpg`;
 
 const UTM =
   "utm_source=sagyou-navi&utm_medium=referral&utm_campaign=line-work-tool-wagon";
 
-// UTM は # の前にのみ付与。既存URL（%E8等のエンコード含む）は再エンコードしない（%25 を生まない）
 function buildUrl(url: string, utm: string): string {
   if (!url) return url;
   const hashIndex = url.indexOf("#");
@@ -40,30 +41,28 @@ function buildUrl(url: string, utm: string): string {
   return `${append(url.slice(0, hashIndex))}${url.slice(hashIndex)}`;
 }
 
-// 全幅CTA（主要コンバージョン用）
 function CTA({ url, label }: { url: string; label: string }) {
   if (!url) return null;
   return (
     <a
       href={buildUrl(url, UTM)}
       target="_blank"
-      rel="noopener noreferrer"
-      className="block w-full text-center bg-gray-900 text-white font-bold rounded-lg px-6 py-4 my-4 hover:bg-gray-700 transition-colors"
+      rel="nofollow noopener noreferrer"
+      className="my-4 block w-full rounded-lg bg-gray-900 px-6 py-4 text-center font-bold text-white transition-colors hover:bg-gray-700"
     >
       {label}
     </a>
   );
 }
 
-// 小型リンクボタン（カタログ・比較表用）
 function ProductLink({ url, label }: { url: string; label: string }) {
   if (!url) return null;
   return (
     <a
       href={buildUrl(url, UTM)}
       target="_blank"
-      rel="noopener noreferrer"
-      className="inline-block bg-gray-900 text-white text-sm font-bold rounded-md px-4 py-2 m-1 hover:bg-gray-700 transition-colors"
+      rel="nofollow noopener noreferrer"
+      className="m-1 inline-block rounded-md bg-gray-900 px-4 py-2 text-sm font-bold text-white transition-colors hover:bg-gray-700"
     >
       {label}
     </a>
@@ -71,18 +70,51 @@ function ProductLink({ url, label }: { url: string; label: string }) {
 }
 
 function H2({ children }: { children: ReactNode }) {
-  return (
-    <h2 className="text-2xl font-bold border-l-4 border-gray-900 pl-4 mt-14 mb-5">
-      {children}
-    </h2>
-  );
+  return <h2 className={cls.h2}>{children}</h2>;
 }
 
 function H3({ children }: { children: ReactNode }) {
-  return <h3 className="text-xl font-bold mt-8 mb-3">{children}</h3>;
+  return <h3 className={cls.h3}>{children}</h3>;
 }
 
-// ===== バーディワゴン 商品データ（URLが確実な16型番） =====
+type YahooProduct = { id: string; name: string; url: string };
+
+function YahooProductCard({ id, name, url }: YahooProduct) {
+  return (
+    <a
+      href={buildUrl(url, UTM)}
+      target="_blank"
+      rel="nofollow noopener noreferrer"
+      className="group flex flex-col overflow-hidden rounded-lg border border-gray-200 bg-white transition hover:shadow-md"
+    >
+      <div className="aspect-square w-full overflow-hidden bg-gray-50">
+        <img
+          src={productImage(id)}
+          alt={name}
+          loading="lazy"
+          className="h-full w-full object-contain p-2 transition group-hover:scale-105"
+        />
+      </div>
+      <div className="flex flex-1 flex-col p-3">
+        <p className="flex-1 text-sm leading-snug text-gray-800">{name}</p>
+        <span className="mt-2 inline-block rounded bg-gray-900 px-3 py-1 text-center text-sm font-semibold text-white">
+          商品を見る
+        </span>
+      </div>
+    </a>
+  );
+}
+
+function YahooProductGrid({ items }: { items: YahooProduct[] }) {
+  return (
+    <div className="my-6 grid grid-cols-2 gap-4 sm:grid-cols-3">
+      {items.map((p) => (
+        <YahooProductCard key={p.id} {...p} />
+      ))}
+    </div>
+  );
+}
+
 type Wagon = {
   model: string;
   size: string;
@@ -91,58 +123,59 @@ type Wagon = {
   color: string;
   use: string;
   url: string;
+  imgId: string;
   group: "space" | "standard" | "large" | "h740" | "h880" | "color";
 };
 
+// 配置済み商品画像（/products/{imgId}.jpg）へのマッピング
 const WAGONS: Wagon[] = [
-  { model: "BDW-662-W", size: "600×400", height: "H600", tier: "2段", color: "ホワイト", use: "省スペースの工具置き台", group: "space", url: "https://item.rakuten.co.jp/crecote-shop/ta005287-bdw662w/" },
-  { model: "BDW-662-YG", size: "600×400", height: "H600", tier: "2段", color: "ヤンググリーン", use: "省スペースの工具置き台", group: "space", url: "https://item.rakuten.co.jp/crecote-shop/ta005288-bdw662yg/" },
-  { model: "BDW-672-W", size: "750×500", height: "H600", tier: "2段", color: "ホワイト", use: "標準的な部品仮置き", group: "standard", url: "https://item.rakuten.co.jp/crecote-shop/ta005289-bdw672w/" },
-  { model: "BDW-672-YG", size: "750×500", height: "H600", tier: "2段", color: "ヤンググリーン", use: "標準的な部品仮置き", group: "standard", url: "https://item.rakuten.co.jp/crecote-shop/ta005290-bdw672yg/" },
-  { model: "BDW-692-W", size: "900×600", height: "H600", tier: "2段", color: "ホワイト", use: "大型部品・箱物の仮置き", group: "large", url: "https://item.rakuten.co.jp/crecote-shop/ta005291-bdw692w/" },
-  { model: "BDW-692-YG", size: "900×600", height: "H600", tier: "2段", color: "ヤンググリーン", use: "大型部品・箱物の仮置き", group: "large", url: "https://item.rakuten.co.jp/crecote-shop/ta005292-bdw692yg/" },
-  { model: "BDW-763-W", size: "600×400", height: "H740", tier: "3段", color: "ホワイト", use: "一般作業台横の3段ワゴン", group: "h740", url: "https://item.rakuten.co.jp/crecote-shop/ta005293-bdw763w/" },
-  { model: "BDW-773-W", size: "750×500", height: "H740", tier: "3段", color: "ホワイト", use: "一般作業台横の3段ワゴン", group: "h740", url: "https://item.rakuten.co.jp/crecote-shop/ta005295-bdw773w/" },
-  { model: "BDW-793-W", size: "900×600", height: "H740", tier: "3段", color: "ホワイト", use: "作業台横で大きめ部品も", group: "h740", url: "https://item.rakuten.co.jp/crecote-shop/ta005297-bdw793w/" },
-  { model: "BDW-963-W", size: "600×400", height: "H880", tier: "3段", color: "ホワイト", use: "立ち作業・ラインサイド", group: "h880", url: "https://item.rakuten.co.jp/crecote-shop/ta005306-bdw963w/" },
-  { model: "BDW-973-W", size: "750×500", height: "H880", tier: "3段", color: "ホワイト", use: "立ち作業・ラインサイド", group: "h880", url: "https://item.rakuten.co.jp/crecote-shop/ta005310-bdw973w/" },
-  { model: "BDW-993-W", size: "900×600", height: "H880", tier: "3段", color: "ホワイト", use: "立ち作業・ラインサイド", group: "h880", url: "https://item.rakuten.co.jp/crecote-shop/ta005312-bdw993w/" },
-  { model: "BDW-963-BKOR", size: "600×400", height: "H880", tier: "3段", color: "ブラック×オレンジ", use: "工程・部署別の色分け", group: "color", url: "https://item.rakuten.co.jp/crecote-shop/ta005300-bdw963bkor/" },
-  { model: "BDW-963-RR", size: "600×400", height: "H880", tier: "3段", color: "レッド", use: "工程・部署別の色分け", group: "color", url: "https://item.rakuten.co.jp/crecote-shop/ta005305-bdw963rr/" },
-  { model: "BDW-963-OROR", size: "600×400", height: "H880", tier: "3段", color: "オレンジ", use: "工程・部署別の色分け", group: "color", url: "https://item.rakuten.co.jp/crecote-shop/ta005303-bdw963oror/" },
-  { model: "BDW-963-WYG", size: "600×400", height: "H880", tier: "3段", color: "ホワイト×ヤンググリーン", use: "工程・部署別の色分け", group: "color", url: "https://item.rakuten.co.jp/crecote-shop/ta005308-bdw963wyg/" },
+  { model: "BDW-662-W", size: "600×400", height: "H600", tier: "2段", color: "ホワイト", use: "省スペースの工具置き台", group: "space", url: "https://item.rakuten.co.jp/crecote-shop/ta005287-bdw662w/", imgId: "bdw672yg" },
+  { model: "BDW-662-YG", size: "600×400", height: "H600", tier: "2段", color: "ヤンググリーン", use: "省スペースの工具置き台", group: "space", url: "https://item.rakuten.co.jp/crecote-shop/ta005288-bdw662yg/", imgId: "bdw672yg" },
+  { model: "BDW-672-W", size: "750×500", height: "H600", tier: "2段", color: "ホワイト", use: "標準的な部品仮置き", group: "standard", url: "https://item.rakuten.co.jp/crecote-shop/ta005289-bdw672w/", imgId: "bdw672yg" },
+  { model: "BDW-672-YG", size: "750×500", height: "H600", tier: "2段", color: "ヤンググリーン", use: "標準的な部品仮置き", group: "standard", url: "https://item.rakuten.co.jp/crecote-shop/ta005290-bdw672yg/", imgId: "bdw672yg" },
+  { model: "BDW-692-W", size: "900×600", height: "H600", tier: "2段", color: "ホワイト", use: "大型部品・箱物の仮置き", group: "large", url: "https://item.rakuten.co.jp/crecote-shop/ta005291-bdw692w/", imgId: "bdw773w" },
+  { model: "BDW-692-YG", size: "900×600", height: "H600", tier: "2段", color: "ヤンググリーン", use: "大型部品・箱物の仮置き", group: "large", url: "https://item.rakuten.co.jp/crecote-shop/ta005292-bdw692yg/", imgId: "bdw773w" },
+  { model: "BDW-763-W", size: "600×400", height: "H740", tier: "3段", color: "ホワイト", use: "一般作業台横の3段ワゴン", group: "h740", url: "https://item.rakuten.co.jp/crecote-shop/ta005293-bdw763w/", imgId: "bdw763yg" },
+  { model: "BDW-773-W", size: "750×500", height: "H740", tier: "3段", color: "ホワイト", use: "一般作業台横の3段ワゴン", group: "h740", url: "https://item.rakuten.co.jp/crecote-shop/ta005295-bdw773w/", imgId: "bdw773w" },
+  { model: "BDW-793-W", size: "900×600", height: "H740", tier: "3段", color: "ホワイト", use: "作業台横で大きめ部品も", group: "h740", url: "https://item.rakuten.co.jp/crecote-shop/ta005297-bdw793w/", imgId: "bdw773w" },
+  { model: "BDW-963-W", size: "600×400", height: "H880", tier: "3段", color: "ホワイト", use: "立ち作業・ラインサイド", group: "h880", url: "https://item.rakuten.co.jp/crecote-shop/ta005306-bdw963w/", imgId: "bdw963w" },
+  { model: "BDW-973-W", size: "750×500", height: "H880", tier: "3段", color: "ホワイト", use: "立ち作業・ラインサイド", group: "h880", url: "https://item.rakuten.co.jp/crecote-shop/ta005310-bdw973w/", imgId: "bdw973yg" },
+  { model: "BDW-993-W", size: "900×600", height: "H880", tier: "3段", color: "ホワイト", use: "立ち作業・ラインサイド", group: "h880", url: "https://item.rakuten.co.jp/crecote-shop/ta005312-bdw993w/", imgId: "bdw993yg" },
+  { model: "BDW-963-BKOR", size: "600×400", height: "H880", tier: "3段", color: "ブラック×オレンジ", use: "工程・部署別の色分け", group: "color", url: "https://item.rakuten.co.jp/crecote-shop/ta005300-bdw963bkor/", imgId: "bdw963bkbk" },
+  { model: "BDW-963-RR", size: "600×400", height: "H880", tier: "3段", color: "レッド", use: "工程・部署別の色分け", group: "color", url: "https://item.rakuten.co.jp/crecote-shop/ta005305-bdw963rr/", imgId: "bdw963rbk" },
+  { model: "BDW-963-OROR", size: "600×400", height: "H880", tier: "3段", color: "オレンジ", use: "工程・部署別の色分け", group: "color", url: "https://item.rakuten.co.jp/crecote-shop/ta005303-bdw963oror/", imgId: "bdw963oror" },
+  { model: "BDW-963-WYG", size: "600×400", height: "H880", tier: "3段", color: "ホワイト×ヤンググリーン", use: "工程・部署別の色分け", group: "color", url: "https://item.rakuten.co.jp/crecote-shop/ta005308-bdw963wyg/", imgId: "bdw963wyg" },
 ];
 
-// ===== 関連商品（Yahoo! signcity-yshop） =====
-const KARTIO = [
-  { name: "カルティオ ブラック MPK-780-BK", url: "https://store.shopping.yahoo.co.jp/signcity-yshop/167468.html" },
-  { name: "カルティオ ブルー MPK-780-B", url: "https://store.shopping.yahoo.co.jp/signcity-yshop/190479.html" },
-  { name: "カルティオ ブラック ストッパー付 MPK780BKSS", url: "https://store.shopping.yahoo.co.jp/signcity-yshop/190475.html" },
-  { name: "カルティオ オリーブ ストッパー付 MPK780ODSS", url: "https://store.shopping.yahoo.co.jp/signcity-yshop/190476.html" },
+const KARTIO: YahooProduct[] = [
+  { id: "167468", name: "カルティオ ブラック MPK-780-BK", url: "https://store.shopping.yahoo.co.jp/signcity-yshop/167468.html" },
+  { id: "190479", name: "カルティオ ブルー MPK-780-B", url: "https://store.shopping.yahoo.co.jp/signcity-yshop/190479.html" },
+  { id: "190475", name: "カルティオ ブラック ストッパー付 MPK780BKSS", url: "https://store.shopping.yahoo.co.jp/signcity-yshop/190475.html" },
+  { id: "190476", name: "カルティオ オリーブ ストッパー付 MPK780ODSS", url: "https://store.shopping.yahoo.co.jp/signcity-yshop/190476.html" },
 ];
 const URL_DAISHA_LIST = "https://store.shopping.yahoo.co.jp/signcity-yshop/b1bfc8c2c2.html";
 
-const KEIRYO = [
-  { name: "軽量作業台 TFAEL-1260（1200×600×740）", url: "https://store.shopping.yahoo.co.jp/signcity-yshop/161973.html?sc_i=shopping-pc-web-category-storeitm-rsltlst-img&ea=" },
-  { name: "軽量作業台 BE-1275（1200×750×740）", url: "https://store.shopping.yahoo.co.jp/signcity-yshop/160785.html?sc_i=shopping-pc-web-category-storeitm-rsltlst-img&ea=" },
-  { name: "軽量立ち作業台 上棚付 HAE-0960YURB W", url: "https://store.shopping.yahoo.co.jp/signcity-yshop/161354.html?sc_i=shopping-pc-web-category-storeitm-rsltlst-img&ea=" },
-  { name: "軽量作業台 AE-1200 YG（1200×750×740）", url: "https://store.shopping.yahoo.co.jp/signcity-yshop/160909.html?sc_i=shopping-pc-web-category-storeitm-rsltlst-img&ea=" },
+const KEIRYO: YahooProduct[] = [
+  { id: "161973", name: "軽量作業台 TFAEL-1260（1200×600×740）", url: "https://store.shopping.yahoo.co.jp/signcity-yshop/161973.html?sc_i=shopping-pc-web-category-storeitm-rsltlst-img&ea=" },
+  { id: "160785", name: "軽量作業台 BE-1275（1200×750×740）", url: "https://store.shopping.yahoo.co.jp/signcity-yshop/160785.html?sc_i=shopping-pc-web-category-storeitm-rsltlst-img&ea=" },
+  { id: "161354", name: "軽量立ち作業台 上棚付 HAE-0960YURB W", url: "https://store.shopping.yahoo.co.jp/signcity-yshop/161354.html?sc_i=shopping-pc-web-category-storeitm-rsltlst-img&ea=" },
+  { id: "160909", name: "軽量作業台 AE-1200 YG（1200×750×740）", url: "https://store.shopping.yahoo.co.jp/signcity-yshop/160909.html?sc_i=shopping-pc-web-category-storeitm-rsltlst-img&ea=" },
 ];
 const URL_KEIRYO_LIST = "https://store.shopping.yahoo.co.jp/signcity-yshop/search.html?p=%E8%BB%BD%E9%87%8F%E4%BD%9C%E6%A5%AD%E5%8F%B0#CentSrchFilter1";
 
-const CHURYO = [
-  { name: "中量作業台 GWP-1275 YG（1200×750×740）", url: "https://store.shopping.yahoo.co.jp/signcity-yshop/161631.html?sc_i=shopping-pc-web-category-storeitm-rsltlst-img&ea=" },
-  { name: "中荷重作業台800kg GWR-0945（900×450×740）", url: "https://store.shopping.yahoo.co.jp/signcity-yshop/220888.html?sc_i=shopping-pc-web-category-storeitm-rsltlst-img&ea=" },
-  { name: "中荷重作業台1200kg HW-1209（1200×900×740）", url: "https://store.shopping.yahoo.co.jp/signcity-yshop/221217.html?sc_i=shopping-pc-web-category-storeitm-rsltlst-img&ea=" },
-  { name: "中量作業台 回転台・バイス付 HW-1800VRS", url: "https://store.shopping.yahoo.co.jp/signcity-yshop/161679.html?sc_i=shopping-pc-web-category-storeitm-rsltlst-img&ea=" },
+const CHURYO: YahooProduct[] = [
+  { id: "161631", name: "中量作業台 GWP-1275 YG（1200×750×740）", url: "https://store.shopping.yahoo.co.jp/signcity-yshop/161631.html?sc_i=shopping-pc-web-category-storeitm-rsltlst-img&ea=" },
+  { id: "220888", name: "中荷重作業台800kg GWR-0945（900×450×740）", url: "https://store.shopping.yahoo.co.jp/signcity-yshop/220888.html?sc_i=shopping-pc-web-category-storeitm-rsltlst-img&ea=" },
+  { id: "221217", name: "中荷重作業台1200kg HW-1209（1200×900×740）", url: "https://store.shopping.yahoo.co.jp/signcity-yshop/221217.html?sc_i=shopping-pc-web-category-storeitm-rsltlst-img&ea=" },
+  { id: "161679", name: "中量作業台 回転台・バイス付 HW-1800VRS", url: "https://store.shopping.yahoo.co.jp/signcity-yshop/161679.html?sc_i=shopping-pc-web-category-storeitm-rsltlst-img&ea=" },
 ];
 const URL_CHURYO_LIST = "https://store.shopping.yahoo.co.jp/signcity-yshop/search.html?aq=&oq=&p=%E4%B8%AD%E9%87%8F%E4%BD%9C%E6%A5%AD%E5%8F%B0&storeid=signcity-yshop&sc_i=shopping-pc-web-result-storesg-h_srch-srchbtn-sgstfrom-result-storesch-h_srch-srchbox";
 
-// 未提供のURL（確定後に設定するとCTAが自動表示される）
-const URL_BUPPINDANA = ""; // TODO: 物品棚一覧URL
-// 本ブリーフ未記載・過去記事からの暫定値（公開前に要確認）
+const URL_BUPPINDANA = "";
 const URL_TRUSCO_LIST =
   "https://store.shopping.yahoo.co.jp/signcity-yshop/a5c8a5e9a5.html#sideNaviItems";
+
+const FEATURED_WAGONS = ["BDW-672-W", "BDW-773-W", "BDW-963-W"] as const;
 
 const faqs = [
   {
@@ -196,6 +229,45 @@ const breadcrumbJsonLd = {
   ],
 };
 
+function WagonProductCard({ w }: { w: Wagon }) {
+  return (
+    <a
+      href={buildUrl(w.url, UTM)}
+      target="_blank"
+      rel="nofollow noopener noreferrer"
+      className="group flex flex-col overflow-hidden rounded-lg border border-gray-200 bg-white transition hover:shadow-md"
+    >
+      <div className="aspect-square w-full overflow-hidden bg-gray-50">
+        <img
+          src={productImage(w.imgId)}
+          alt={`TRUSCOバーディワゴン ${w.model}`}
+          loading="lazy"
+          className="h-full w-full object-contain p-2 transition group-hover:scale-105"
+        />
+      </div>
+      <div className="flex flex-1 flex-col p-3">
+        <p className="text-xs font-bold text-gray-500">{w.model}</p>
+        <p className="mt-1 flex-1 text-sm leading-snug text-gray-800">
+          {w.size}・{w.height}・{w.tier}・{w.color}
+        </p>
+        <span className="mt-2 inline-block rounded bg-gray-900 px-3 py-1 text-center text-sm font-semibold text-white">
+          楽天で見る
+        </span>
+      </div>
+    </a>
+  );
+}
+
+function WagonProductGrid({ items }: { items: Wagon[] }) {
+  return (
+    <div className="my-6 grid grid-cols-2 gap-4 sm:grid-cols-3">
+      {items.map((w) => (
+        <WagonProductCard key={w.model} w={w} />
+      ))}
+    </div>
+  );
+}
+
 function UseCaseCard({
   title,
   desc,
@@ -207,23 +279,23 @@ function UseCaseCard({
 }) {
   const items = WAGONS.filter((w) => w.group === group);
   return (
-    <div className="border border-gray-300 rounded-lg p-5 my-5">
-      <p className="font-bold text-lg mb-2">{title}</p>
-      <p className="leading-relaxed text-gray-800 mb-3">{desc}</p>
-      <div className="flex flex-wrap">
-        {items.map((w) => (
-          <ProductLink key={w.model} url={w.url} label={`${w.model} を見る`} />
-        ))}
-      </div>
+    <div className="my-5 rounded-lg border border-gray-300 p-5">
+      <p className="mb-2 text-lg font-bold tracking-wide text-gray-900">{title}</p>
+      <p className={`${cls.body} mb-4`}>{desc}</p>
+      <WagonProductGrid items={items} />
     </div>
   );
 }
 
 export default function Page() {
+  const featured = WAGONS.filter((w) =>
+    (FEATURED_WAGONS as readonly string[]).includes(w.model),
+  );
+
   return (
     <>
       <SiteHeader />
-      <main className="max-w-4xl mx-auto px-4 py-10">
+      <main className="mx-auto max-w-4xl px-4 py-10">
         <nav className="mb-4 text-sm text-gray-500">
           <Link href="/" className="hover:underline">
             ホーム
@@ -236,31 +308,37 @@ export default function Page() {
           </span>
         </nav>
 
-        <h1 className="text-3xl font-bold leading-snug mb-6">
+        <span className="mb-3 inline-block rounded bg-gray-200 px-3 py-1 text-sm font-semibold text-gray-800">
+          選び方ガイド
+        </span>
+
+        <h1 className={cls.h1}>
           ライン作業の工具置き台に使えるワゴンの選び方｜部品の仮置き・移動作業を効率化
         </h1>
+
+        <p className="mb-6 text-sm text-gray-500">
+          公開日：2026年6月30日／約14分で読めます
+        </p>
 
         <img
           src={`${ARTICLE_IMG}/line-work-tool-wagon-hero.jpg`}
           alt="ライン作業で工具置き台ワゴンを使うイメージ"
-          className="w-full rounded-lg my-6"
+          className="my-6 w-full rounded-lg"
         />
 
-        {/* AEO回答ブロック */}
-        <div className="bg-gray-100 border border-gray-300 rounded-lg p-5 my-8 leading-relaxed">
-          <p className="font-bold mb-2">
+        <div className="my-8 rounded-lg border border-gray-300 bg-gray-100 p-5">
+          <p className="mb-2 font-bold tracking-wide text-gray-900">
             ライン作業の工具置き台ワゴンの選び方（要点）
           </p>
-          <p>
+          <p className={cls.body.replace("mb-4 ", "")}>
             ライン作業の工具置き台に使うワゴンは、「置きたい工具・部品の量」「作業台との高さ」「移動頻度」「棚の段数」「キャスターの固定性」「部品の落下しにくさ」を確認して選びます。小物工具や部品を作業場所の近くに置きたい場合は、棚板を皿型・フラット型で使い分けられるキャスター付きツールワゴンが候補になります。
           </p>
         </div>
 
-        {/* 導入文 */}
-        <p className="leading-relaxed my-4">
+        <p className={cls.body}>
           ライン作業では、工具・部品・測定具・治具・消耗品を作業者の近くに置く必要があります。しかし、作業台の上に物を置きすぎると作業スペースが狭くなり、必要な物を探す時間も増えがちです。
         </p>
-        <p className="leading-relaxed my-4">
+        <p className={cls.body}>
           かといって床に置くと、5S（整理・整頓・清掃・清潔・しつけ）や安全面、取り間違いの観点から避けたい場面が多くなります。こうしたとき、キャスター付きの工具置き台ワゴンを使うと、作業場所の近くに「仮置きスペース」を作りやすくなります。本記事では、ライン作業・ピッキング作業で使えるツールワゴンの選び方を整理し、TRUSCOバーディワゴンのサイズ・高さ・段数の選び方まで解説します。
         </p>
 
@@ -269,11 +347,11 @@ export default function Page() {
         <img
           src={`${ARTICLE_IMG}/tool-wagon-beside-workbench.jpg`}
           alt="コンパクトワゴンを作業台横に置くイメージ"
-          className="w-full rounded-lg my-6"
+          className="my-6 w-full rounded-lg"
         />
 
         <H3>工具を取りに行く移動時間を減らしたい</H3>
-        <p className="leading-relaxed my-4">
+        <p className={cls.body}>
           よく使う工具が離れた工具棚にあると、取りに行く移動時間が積み重なります。工具や測定具をワゴンにまとめて作業者の近くに置けば、こうした移動を減らしやすくなります。
         </p>
 
@@ -281,9 +359,9 @@ export default function Page() {
         <img
           src={`${ARTICLE_IMG}/parts-temporary-storage-wagon.jpg`}
           alt="部品や商品の仮置きにワゴンを使うイメージ"
-          className="w-full rounded-lg my-6"
+          className="my-6 w-full rounded-lg"
         />
-        <p className="leading-relaxed my-4">
+        <p className={cls.body}>
           作業台に部品箱を直接置くと、作業スペースが圧迫されます。検品前・検品後、組立前・組立後の物を分けて置きたい現場では、段で分けられるワゴンが役立ちます。
         </p>
 
@@ -292,10 +370,10 @@ export default function Page() {
         <img
           src={`${ARTICLE_IMG}/picking-work-wagon.jpg`}
           alt="工場内ピッキングでワゴンを使うイメージ"
-          className="w-full rounded-lg my-6"
+          className="my-6 w-full rounded-lg"
         />
 
-        <p className="leading-relaxed my-4">
+        <p className={cls.body}>
           工場内の棚からラインまで部品を運ぶ用途にも使えます。小規模なピッキングや、ラインサイドへの部品供給に向いています。
         </p>
 
@@ -304,11 +382,11 @@ export default function Page() {
         <img
           src={`${ARTICLE_IMG}/wagon-cart-workbench-comparison.jpg`}
           alt="台車・ワゴン・作業台の違いを示すイメージ"
-          className="w-full rounded-lg my-6"
+          className="my-6 w-full rounded-lg"
         />
 
-        <div className="overflow-x-auto my-6">
-          <table className="w-full border-collapse text-sm">
+        <div className="my-6 overflow-x-auto">
+          <table className={cls.table}>
             <thead>
               <tr className="bg-gray-900 text-white">
                 <th className="p-3 text-left">種類</th>
@@ -325,7 +403,7 @@ export default function Page() {
                 ["物品棚", "工具・部品の長期保管", "移動・仮置き", "物品棚"],
               ].map((row) => (
                 <tr key={row[0]} className="border-b border-gray-300">
-                  <th className="text-left bg-gray-100 font-bold p-3 align-top">
+                  <th className="bg-gray-100 p-3 text-left align-top font-bold">
                     {row[0]}
                   </th>
                   <td className="p-3 align-top">{row[1]}</td>
@@ -338,19 +416,21 @@ export default function Page() {
         </div>
 
         <H3>まとまった荷物を運ぶならカルティオなどの台車</H3>
-        <p className="leading-relaxed my-4">
+        <p className={cls.body}>
           段で仕分けるより、箱物や重量物をまとめて運びたい場合は運搬台車が向いています。
         </p>
+        <YahooProductGrid items={KARTIO.slice(0, 2)} />
         <CTA url={URL_DAISHA_LIST} label="箱物や重量物の運搬にはカルティオ・運搬台車を確認する" />
 
         <H3>作業そのものを行うなら作業台</H3>
-        <p className="leading-relaxed my-4">
+        <p className={cls.body}>
           組立・検査・梱包など、作業そのものを行う場所には作業台が向いています。
         </p>
+        <YahooProductGrid items={KEIRYO.slice(0, 2)} />
         <CTA url={URL_KEIRYO_LIST} label="組立・検査・梱包作業には軽量作業台・中量作業台を確認する" />
 
         <H3>長期保管なら物品棚</H3>
-        <p className="leading-relaxed my-4">
+        <p className={cls.body}>
           作業中の仮置きではなく、工具・部品を長期で保管するなら物品棚が向いています。
         </p>
         <CTA url={URL_BUPPINDANA} label="工具・部品の保管には物品棚も確認する" />
@@ -360,12 +440,12 @@ export default function Page() {
         <img
           src={`${ARTICLE_IMG}/tool-wagon-size-comparison.jpg`}
           alt="工具ワゴンのサイズ・段数を比較するイメージ"
-          className="w-full rounded-lg my-6"
+          className="my-6 w-full rounded-lg"
         />
 
         <H3>1. 間口・奥行は作業台横のスペースで選ぶ</H3>
-        <div className="overflow-x-auto my-4">
-          <table className="w-full border-collapse text-sm">
+        <div className="my-4 overflow-x-auto">
+          <table className={cls.table}>
             <thead>
               <tr className="bg-gray-900 text-white">
                 <th className="p-3 text-left">サイズ（間口×奥行）</th>
@@ -379,7 +459,7 @@ export default function Page() {
                 ["900×600", "大きめの部品箱・箱物・コンテナの仮置き"],
               ].map((r) => (
                 <tr key={r[0]} className="border-b border-gray-300">
-                  <th className="text-left bg-gray-100 font-bold p-3 align-top">{r[0]}</th>
+                  <th className="bg-gray-100 p-3 text-left align-top font-bold">{r[0]}</th>
                   <td className="p-3 align-top">{r[1]}</td>
                 </tr>
               ))}
@@ -388,8 +468,8 @@ export default function Page() {
         </div>
 
         <H3>2. 高さは作業姿勢に合わせる</H3>
-        <div className="overflow-x-auto my-4">
-          <table className="w-full border-collapse text-sm">
+        <div className="my-4 overflow-x-auto">
+          <table className={cls.table}>
             <thead>
               <tr className="bg-gray-900 text-white">
                 <th className="p-3 text-left">高さ</th>
@@ -403,7 +483,7 @@ export default function Page() {
                 ["H880", "立ち作業・ラインサイドで手を伸ばしやすい高さ"],
               ].map((r) => (
                 <tr key={r[0]} className="border-b border-gray-300">
-                  <th className="text-left bg-gray-100 font-bold p-3 align-top">{r[0]}</th>
+                  <th className="bg-gray-100 p-3 text-left align-top font-bold">{r[0]}</th>
                   <td className="p-3 align-top">{r[1]}</td>
                 </tr>
               ))}
@@ -412,8 +492,8 @@ export default function Page() {
         </div>
 
         <H3>3. 段数は分けて置きたいものの数で選ぶ</H3>
-        <div className="overflow-x-auto my-4">
-          <table className="w-full border-collapse text-sm">
+        <div className="my-4 overflow-x-auto">
+          <table className={cls.table}>
             <thead>
               <tr className="bg-gray-900 text-white">
                 <th className="p-3 text-left">段数</th>
@@ -426,7 +506,7 @@ export default function Page() {
                 ["3段", "工具・部品・消耗品・検品前後品を分けたい場合"],
               ].map((r) => (
                 <tr key={r[0]} className="border-b border-gray-300">
-                  <th className="text-left bg-gray-100 font-bold p-3 align-top">{r[0]}</th>
+                  <th className="bg-gray-100 p-3 text-left align-top font-bold">{r[0]}</th>
                   <td className="p-3 align-top">{r[1]}</td>
                 </tr>
               ))}
@@ -435,17 +515,17 @@ export default function Page() {
         </div>
 
         <H3>4. 棚板は皿型とフラット型を使い分ける</H3>
-        <p className="leading-relaxed my-4">
+        <p className={cls.body}>
           バーディワゴンの棚板は、皿型・フラット型を表裏両面で使えます。皿型は縁があり、小物工具や部品の落下を抑えたい場合に。フラット型は平らで、箱物やケースを置きたい場合に向いています。
         </p>
 
         <H3>5. キャスターのロック性を確認する</H3>
-        <p className="leading-relaxed my-4">
+        <p className={cls.body}>
           作業中にワゴンが動くと困るため、キャスターの固定性は重要です。バーディワゴンは、車輪と車軸の両方をロックするダブルロック仕様のキャスターを採用しています。また、アングル支柱に突起を出して棚板を固定することで、縦横の揺れを軽減する構造です。
         </p>
 
         <H3>6. 色は工程・部署・用途で分ける</H3>
-        <p className="leading-relaxed my-4">
+        <p className={cls.body}>
           ホワイト、ヤンググリーン、ブラック、オレンジ、レッド系など複数色があります。工程別・部署別・用途別に色分けすると、管理や取り違い防止に役立ちます。
         </p>
 
@@ -481,18 +561,25 @@ export default function Page() {
           group="color"
         />
 
+        <H2>代表的なバーディワゴンを確認する</H2>
+        <p className={cls.body}>
+          ライン作業の工具置き台としてよく選ばれるサイズ・高さの組み合わせです。詳細仕様は各商品ページでご確認ください。
+        </p>
+        <WagonProductGrid items={featured} />
+
         <CTA url="https://item.rakuten.co.jp/crecote-shop/ta005289-bdw672w/" label="ライン作業の工具置き台に使えるバーディワゴンを確認する" />
         <CTA url="https://item.rakuten.co.jp/crecote-shop/ta005287-bdw662w/" label="作業台横に置きやすい600×400タイプを確認する" />
         <CTA url="https://item.rakuten.co.jp/crecote-shop/ta005291-bdw692w/" label="部品箱や治具を置きやすい750×500・900×600タイプを確認する" />
 
         <H2>TRUSCOバーディワゴン一覧比較表</H2>
-        <p className="leading-relaxed my-4 text-sm text-gray-600">
+        <p className={`${cls.bodySm} mb-4`}>
           ※サイズ・高さ・段数は型番からの整理です。最大積載量・均等積載量などの詳細は各商品ページでご確認ください（積載量は「棚1段あたりの均等積載」と「本体最大積載」で意味が異なります）。
         </p>
-        <div className="overflow-x-auto my-6">
-          <table className="w-full border-collapse text-sm">
+        <div className="my-6 overflow-x-auto">
+          <table className={cls.table}>
             <thead>
               <tr className="bg-gray-900 text-white">
+                <th className="p-3 text-left">画像</th>
                 <th className="p-3 text-left">型番</th>
                 <th className="p-3 text-left">サイズ</th>
                 <th className="p-3 text-left">高さ</th>
@@ -505,10 +592,18 @@ export default function Page() {
             <tbody>
               {WAGONS.map((w) => (
                 <tr key={w.model} className="border-b border-gray-300">
-                  <th className="text-left bg-gray-100 font-bold p-3 align-top whitespace-nowrap">
+                  <td className="p-2 align-top">
+                    <img
+                      src={productImage(w.imgId)}
+                      alt={w.model}
+                      loading="lazy"
+                      className="h-16 w-16 rounded border border-gray-200 bg-gray-50 object-contain p-1"
+                    />
+                  </td>
+                  <th className="whitespace-nowrap bg-gray-100 p-3 text-left align-top font-bold">
                     {w.model}
                   </th>
-                  <td className="p-3 align-top whitespace-nowrap">{w.size}</td>
+                  <td className="whitespace-nowrap p-3 align-top">{w.size}</td>
                   <td className="p-3 align-top">{w.height}</td>
                   <td className="p-3 align-top">{w.tier}</td>
                   <td className="p-3 align-top">{w.color}</td>
@@ -525,43 +620,31 @@ export default function Page() {
         <H2>あわせて確認したい関連商品</H2>
 
         <H3>箱物や重量物の運搬にはカルティオ・運搬台車</H3>
-        <p className="leading-relaxed my-4">
+        <p className={cls.body}>
           まとまった荷物の運搬には、静音タイプの台車「カルティオ」など運搬台車が向いています。
         </p>
-        <div className="flex flex-wrap">
-          {KARTIO.map((p) => (
-            <ProductLink key={p.url} url={p.url} label={p.name} />
-          ))}
-        </div>
+        <YahooProductGrid items={KARTIO} />
         <CTA url={URL_DAISHA_LIST} label="運搬台車の一覧を確認する" />
 
         <H3>組立・検査・梱包には軽量作業台・中量作業台</H3>
-        <p className="leading-relaxed my-4">
+        <p className={cls.body}>
           作業そのものを行う場所には作業台が向いています。荷重に応じて軽量・中量から選びます。
         </p>
-        <p className="font-bold mt-4 mb-1">軽量作業台</p>
-        <div className="flex flex-wrap">
-          {KEIRYO.map((p) => (
-            <ProductLink key={p.url} url={p.url} label={p.name} />
-          ))}
-        </div>
+        <p className="mb-2 mt-4 font-bold tracking-wide text-gray-900">軽量作業台</p>
+        <YahooProductGrid items={KEIRYO} />
         <CTA url={URL_KEIRYO_LIST} label="軽量作業台の一覧を確認する" />
-        <p className="font-bold mt-4 mb-1">中量作業台</p>
-        <div className="flex flex-wrap">
-          {CHURYO.map((p) => (
-            <ProductLink key={p.url} url={p.url} label={p.name} />
-          ))}
-        </div>
+        <p className="mb-2 mt-4 font-bold tracking-wide text-gray-900">中量作業台</p>
+        <YahooProductGrid items={CHURYO} />
         <CTA url={URL_CHURYO_LIST} label="中量作業台の一覧を確認する" />
 
         <H3>工具・部品の長期保管には物品棚</H3>
-        <p className="leading-relaxed my-4">
+        <p className={cls.body}>
           長期保管には物品棚や工具保管庫が向いています。保管用と作業用で役割を分けると、現場の整理がしやすくなります。
         </p>
         <CTA url={URL_BUPPINDANA} label="工具・部品の保管には物品棚も確認する" />
 
         <H2>法人で導入する前に確認したいチェックリスト</H2>
-        <ul className="my-6 space-y-2 leading-relaxed">
+        <ul className={`${cls.list} space-y-2`}>
           {[
             "置きたい工具や部品の量",
             "作業台横に置けるスペース",
@@ -582,7 +665,7 @@ export default function Page() {
         </ul>
 
         <H2>まとめ｜ライン作業の工具置き台ワゴンは用途・サイズ・高さで選ぶ</H2>
-        <ul className="list-disc pl-6 my-4 space-y-1 leading-relaxed">
+        <ul className={cls.list}>
           <li>工具置き台には省スペースの600×400</li>
           <li>部品仮置きには750×500や900×600</li>
           <li>一般作業台横にはH740</li>
@@ -598,11 +681,11 @@ export default function Page() {
         <CTA url={URL_TRUSCO_LIST} label="現場や倉庫で必要な作業用品をまとめて確認する" />
 
         <H2>よくある質問（FAQ）</H2>
-        <div className="space-y-6 my-6">
+        <div className="my-6 space-y-6">
           {faqs.map((item) => (
             <div key={item.q}>
-              <p className="font-bold mb-1">{item.q}</p>
-              <p className="leading-relaxed text-gray-800">{item.a}</p>
+              <p className={cls.faqQ}>{item.q}</p>
+              <p className={cls.body.replace("mb-4 ", "")}>{item.a}</p>
             </div>
           ))}
         </div>

@@ -27,6 +27,7 @@ export const metadata: Metadata = {
 };
 
 const ARTICLE_IMG = "/images/articles/construction-portable-power-selection";
+const productImage = (id: string) => `/products/${id}.jpg`;
 
 const UTM =
   "utm_source=sagyou-navi&utm_medium=referral&utm_campaign=construction-portable-power";
@@ -54,20 +55,6 @@ function CTA({ url, label }: { url: string; label: string }) {
   );
 }
 
-function ProductLink({ url, label }: { url: string; label: string }) {
-  if (!url) return null;
-  return (
-    <a
-      href={buildUrl(url, UTM)}
-      target="_blank"
-      rel="nofollow noopener noreferrer"
-      className="m-1 inline-block rounded-md bg-gray-900 px-4 py-2 text-sm font-bold text-white transition-colors hover:bg-gray-700"
-    >
-      {label}
-    </a>
-  );
-}
-
 function H2({ children }: { children: ReactNode }) {
   return <h2 className={cls.h2}>{children}</h2>;
 }
@@ -84,9 +71,54 @@ function Note({ children }: { children: ReactNode }) {
   );
 }
 
+type ProductItem = {
+  imgId: string;
+  name: string;
+  url: string;
+  store: "yahoo" | "rakuten";
+};
+
+function ProductCard({ imgId, name, url, store }: ProductItem) {
+  return (
+    <a
+      href={buildUrl(url, UTM)}
+      target="_blank"
+      rel="nofollow noopener noreferrer"
+      className="group flex flex-col overflow-hidden rounded-lg border border-gray-200 bg-white transition hover:shadow-md"
+    >
+      <div className="aspect-square w-full overflow-hidden bg-gray-50">
+        <img
+          src={productImage(imgId)}
+          alt={name}
+          loading="lazy"
+          className="h-full w-full object-contain p-2 transition group-hover:scale-105"
+        />
+      </div>
+      <div className="flex flex-1 flex-col p-3">
+        <p className="flex-1 text-sm leading-snug text-gray-800">{name}</p>
+        <span className="mt-2 inline-block rounded bg-gray-900 px-3 py-1 text-center text-sm font-semibold text-white">
+          {store === "yahoo" ? "商品を見る" : "楽天で見る"}
+        </span>
+      </div>
+    </a>
+  );
+}
+
+function ProductGrid({ items }: { items: ProductItem[] }) {
+  return (
+    <div className="my-6 grid grid-cols-2 gap-4 sm:grid-cols-3">
+      {items.map((p) => (
+        <ProductCard key={`${p.store}-${p.imgId}-${p.url}`} {...p} />
+      ))}
+    </div>
+  );
+}
+
 const MPS = [
   {
     model: "MPS1500",
+    id: "172196",
+    name: "MEIHO ポータブルパワーステーション MPS1500",
     wh: "1344Wh",
     w: "1500W",
     charge: "約3時間",
@@ -97,6 +129,8 @@ const MPS = [
   },
   {
     model: "MPS2000",
+    id: "172197",
+    name: "MEIHO ポータブルパワーステーション MPS2000",
     wh: "1536Wh",
     w: "2000W",
     charge: "約3時間",
@@ -107,6 +141,8 @@ const MPS = [
   },
   {
     model: "MPS3000",
+    id: "172198",
+    name: "MEIHO ポータブルパワーステーション MPS3000",
     wh: "1920Wh",
     w: "3000W",
     charge: "約4時間",
@@ -124,42 +160,65 @@ const URL_TRANS =
 const URL_CHIKUDENMARU =
   "https://item.rakuten.co.jp/crecote-shop/kps-0202/";
 
-const WAGONS = [
+const WAGONS: ProductItem[] = [
   {
+    imgId: "bdw672yg",
     name: "バーディワゴン 750×500×H600 2段 BDW-672-W",
     url: "https://item.rakuten.co.jp/crecote-shop/ta005289-bdw672w/",
+    store: "rakuten",
   },
   {
+    imgId: "bdw763yg",
     name: "バーディワゴン 600×400×H740 3段 BDW-763-W",
     url: "https://item.rakuten.co.jp/crecote-shop/ta005293-bdw763w/",
+    store: "rakuten",
   },
   {
+    imgId: "bdw773w",
     name: "バーディワゴン 900×600×H600 2段 BDW-692-W",
     url: "https://item.rakuten.co.jp/crecote-shop/ta005291-bdw692w/",
+    store: "rakuten",
   },
   {
+    imgId: "bdw963bkbk",
     name: "バーディワゴン 600×400×H880 3段 BDW-963-BKOR",
     url: "https://item.rakuten.co.jp/crecote-shop/ta005300-bdw963bkor/",
+    store: "rakuten",
   },
 ];
-const KARTIO = [
+const KARTIO: ProductItem[] = [
   {
+    imgId: "167468",
     name: "カルティオ ブラック MPK-780-BK",
     url: "https://store.shopping.yahoo.co.jp/signcity-yshop/167468.html",
+    store: "yahoo",
   },
   {
+    imgId: "190479",
     name: "カルティオ ブルー MPK-780-B",
     url: "https://store.shopping.yahoo.co.jp/signcity-yshop/190479.html",
+    store: "yahoo",
   },
   {
+    imgId: "190475",
     name: "カルティオ ブラック ストッパー付 MPK780BKSS",
     url: "https://store.shopping.yahoo.co.jp/signcity-yshop/190475.html",
+    store: "yahoo",
   },
   {
+    imgId: "190476",
     name: "カルティオ オリーブ ストッパー付 MPK780ODSS",
     url: "https://store.shopping.yahoo.co.jp/signcity-yshop/190476.html",
+    store: "yahoo",
   },
 ];
+
+const mpsProducts: ProductItem[] = MPS.map((m) => ({
+  imgId: m.id,
+  name: m.name,
+  url: m.url,
+  store: "yahoo" as const,
+}));
 const URL_TRUSCO_LIST =
   "https://store.shopping.yahoo.co.jp/signcity-yshop/a5c8a5e9a5.html#sideNaviItems";
 
@@ -371,15 +430,7 @@ export default function Page() {
           </table>
         </div>
 
-        <div className="my-4 flex flex-wrap justify-center">
-          {MPS.map((m) => (
-            <ProductLink
-              key={m.model}
-              url={m.url}
-              label={`${m.model} を確認する`}
-            />
-          ))}
-        </div>
+        <ProductGrid items={mpsProducts} />
 
         <H2>容量Whと定格出力Wの見方</H2>
 
@@ -433,27 +484,45 @@ export default function Page() {
         <p className={cls.body}>
           スマホ・タブレット・PCの充電、LEDライト・投光器、小型機器などが中心で、まず現場の電源確保を整えたい場合に向きます。19kgと3モデルの中で最も軽く、持ち運びの負担が比較的少ないモデルです。
         </p>
-        <ProductLink
-          url="https://store.shopping.yahoo.co.jp/signcity-yshop/172196.html?sc_i=shopping-pc-web-result-storesch-rsltlst-img&ea="
-          label="MPS1500 を確認する"
+        <ProductGrid
+          items={[
+            {
+              imgId: "172196",
+              name: "MEIHO ポータブルパワーステーション MPS1500",
+              url: "https://store.shopping.yahoo.co.jp/signcity-yshop/172196.html?sc_i=shopping-pc-web-result-storesch-rsltlst-img&ea=",
+              store: "yahoo",
+            },
+          ]}
         />
 
         <H3>現場の冷温庫・複数機器・非常用電源ならMPS2000</H3>
         <p className={cls.body}>
           容量1536Wh・定格出力2000Wで、冷温庫・照明・スマホ充電などを組み合わせて使いたい現場に向きます。メーカー案内では、スマートフォン18W充電で約78回、電気毛布55Wで約25時間、電子レンジ1100Wで約1.2時間の使用目安が示されています。容量・出力・重量のバランスがよく、今回の用途では中心的な候補になります。
         </p>
-        <ProductLink
-          url="https://store.shopping.yahoo.co.jp/signcity-yshop/172197.html?sc_i=shopping-pc-web-result-storesch-rsltlst-img&ea="
-          label="MPS2000 を確認する"
+        <ProductGrid
+          items={[
+            {
+              imgId: "172197",
+              name: "MEIHO ポータブルパワーステーション MPS2000",
+              url: "https://store.shopping.yahoo.co.jp/signcity-yshop/172197.html?sc_i=shopping-pc-web-result-storesch-rsltlst-img&ea=",
+              store: "yahoo",
+            },
+          ]}
         />
 
         <H3>高出力・長時間・防災備蓄ならMPS3000</H3>
         <p className={cls.body}>
           容量1920Wh・定格出力3000Wで、高出力機器や長時間使用、防災備蓄を考える現場に向きます。メーカー案内では、スマートフォン18W充電で約98回、電気毛布55Wで約32時間、電子レンジ1100Wで約1.6時間の使用目安が示されています。31kgあるため、運搬方法もあわせて検討しましょう。
         </p>
-        <ProductLink
-          url="https://store.shopping.yahoo.co.jp/signcity-yshop/172198.html?sc_i=shopping-pc-web-result-storesch-rsltlst-img&ea="
-          label="MPS3000 を確認する"
+        <ProductGrid
+          items={[
+            {
+              imgId: "172198",
+              name: "MEIHO ポータブルパワーステーション MPS3000",
+              url: "https://store.shopping.yahoo.co.jp/signcity-yshop/172198.html?sc_i=shopping-pc-web-result-storesch-rsltlst-img&ea=",
+              store: "yahoo",
+            },
+          ]}
         />
 
         <Note>
@@ -480,6 +549,16 @@ export default function Page() {
         <Note>
           冷温庫などの熱中症対策用品は補助であり、ポータブル電源も含めて、それ自体が熱中症を防ぐものではありません。休憩・水分塩分補給・WBGT確認・作業時間管理との併用が重要です。
         </Note>
+        <ProductGrid
+          items={[
+            {
+              imgId: "172101",
+              name: "ポータブル冷温庫 26L",
+              url: URL_REITOUKO,
+              store: "yahoo",
+            },
+          ]}
+        />
         <CTA
           url={URL_REITOUKO}
           label="冷たい飲み物や保冷材の管理に使えるポータブル冷温庫を確認する"
@@ -538,16 +617,22 @@ export default function Page() {
         <p className={cls.body}>
           整理すると、ポータブルトランスは電圧を変換する機器で蓄電池ではなく、冷温庫は冷やす（温める）機器であって電源を供給する機器ではありません。停電時や電源のない場所で機器を動かしたい場合は、電気をためて出力できるポータブル電源が候補になります。
         </p>
-        <div className="flex flex-wrap">
-          <ProductLink
-            url={URL_TRANS}
-            label="TRUSCO ポータブルトランス TPT-30BD を見る"
-          />
-          <ProductLink
-            url={URL_CHIKUDENMARU}
-            label="ポータブル電源 蓄電丸 を見る"
-          />
-        </div>
+        <ProductGrid
+          items={[
+            {
+              imgId: "224302",
+              name: "TRUSCO ポータブルトランス TPT-30BD",
+              url: URL_TRANS,
+              store: "yahoo",
+            },
+            {
+              imgId: "kps-0202",
+              name: "ポータブル電源 蓄電丸",
+              url: URL_CHIKUDENMARU,
+              store: "rakuten",
+            },
+          ]}
+        />
 
         <H2>現場で使うときの注意点</H2>
 
@@ -578,17 +663,9 @@ export default function Page() {
           MPS2000は22kg、MPS3000は31kgあり、手持ちだけで頻繁に運ぶには負担が大きくなります。現場内の移動には、台車やワゴンの併用が便利です。使う際は、段差、床面、積載荷重、固定方法を確認しましょう。工具やケーブルをまとめて運ぶならツールワゴン、まとまった荷物を運ぶなら台車が向いています。
         </p>
         <p className={`${cls.ctaH3} mt-4`}>ツールワゴン（バーディワゴン）</p>
-        <div className="flex flex-wrap">
-          {WAGONS.map((p) => (
-            <ProductLink key={p.url} url={p.url} label={p.name} />
-          ))}
-        </div>
+        <ProductGrid items={WAGONS} />
         <p className={`${cls.ctaH3} mt-4`}>運搬台車（カルティオ）</p>
-        <div className="flex flex-wrap">
-          {KARTIO.map((p) => (
-            <ProductLink key={p.url} url={p.url} label={p.name} />
-          ))}
-        </div>
+        <ProductGrid items={KARTIO} />
         <CTA
           url="https://item.rakuten.co.jp/crecote-shop/ta005289-bdw672w/"
           label="現場内の移動には台車・ワゴンもあわせて確認する"
@@ -628,15 +705,7 @@ export default function Page() {
           <li>重い機種はカルティオやバーディワゴンなど運搬用品も確認</li>
         </ul>
 
-        <div className="my-4 flex flex-wrap justify-center">
-          {MPS.map((m) => (
-            <ProductLink
-              key={m.model}
-              url={m.url}
-              label={`${m.model} を確認する`}
-            />
-          ))}
-        </div>
+        <ProductGrid items={mpsProducts} />
         <CTA
           url={URL_TRUSCO_LIST}
           label="現場や倉庫で必要な作業用品をまとめて確認する"

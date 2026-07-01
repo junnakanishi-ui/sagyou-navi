@@ -14,6 +14,22 @@ export type Article = {
 
 export const ARTICLES: Article[] = [
   {
+    slug: "construction-portable-power-selection",
+    title:
+      "工事現場のポータブル電源の選び方｜工具・照明・冷温庫・非常用電源に使える容量と出力の目安",
+    shortTitle: "工事現場のポータブル電源の選び方",
+    description:
+      "工事現場や屋外作業でポータブル電源を選ぶときは、使いたい機器の消費電力、起動電力、容量Wh、定格出力W、充電時間、重量、安全性を確認することが重要です。MEIHO MPS1500・MPS2000・MPS3000の違いや、冷温庫・工具・照明・非常用電源としての使い方を解説します。",
+    category: "guide",
+    categoryLabel: "選び方ガイド",
+    thumbnail:
+      "/images/articles/construction-portable-power-selection/portable-power-station-construction-site-hero.jpg",
+    date: "2026-07-01",
+    readTime: "約12分",
+    available: true,
+    path: "/articles/construction-portable-power-selection",
+  },
+  {
     slug: "line-work-tool-wagon-selection",
     title:
       "ライン作業の工具置き台に使えるワゴンの選び方｜部品の仮置き・移動作業を効率化",

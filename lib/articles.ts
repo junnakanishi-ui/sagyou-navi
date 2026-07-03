@@ -14,6 +14,22 @@ export type Article = {
 
 export const ARTICLES: Article[] = [
   {
+    slug: "outdoor-shade-net-selection",
+    title:
+      "屋外作業場の日よけに使う遮光ネットの選び方｜ハトメ付きネットの固定方法と遮光率を解説",
+    shortTitle: "屋外作業場の日よけ遮光ネット",
+    description:
+      "屋外作業場・資材置き場・仮設ヤードの日よけに使う遮光ネットの選び方を解説。遮光率約95％、85〜90％、80〜85％、65〜75％の違い、黒・シルバーの使い分け、ハトメ付き遮光ネットの固定方法、大判サイズの選び方を紹介します。",
+    category: "guide",
+    categoryLabel: "選び方ガイド",
+    thumbnail:
+      "/images/articles/outdoor-shade-net-selection/outdoor-shade-net-hero.jpg",
+    date: "2026-07-03",
+    readTime: "約14分",
+    available: true,
+    path: "/articles/outdoor-shade-net-selection",
+  },
+  {
     slug: "barn-floor-rubber-mat",
     title:
       "牛舎の床の底冷え・滑り対策に使うゴムマットの選び方｜酪農用マットの厚みを比較",

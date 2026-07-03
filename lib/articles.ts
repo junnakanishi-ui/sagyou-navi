@@ -14,6 +14,22 @@ export type Article = {
 
 export const ARTICLES: Article[] = [
   {
+    slug: "barn-floor-rubber-mat",
+    title:
+      "牛舎の床の底冷え・滑り対策に使うゴムマットの選び方｜酪農用マットの厚みを比較",
+    shortTitle: "牛舎の床の底冷え・滑り対策",
+    description:
+      "牛舎の床の底冷え・滑り対策に使う酪農用ゴムマットの選び方を解説。15mm・20mm・25mm・30mmの厚み別の違い、牛舎・馬房で確認したい床状態、重量・設置・清掃時の注意点、農作業用ゴムマットや足腰マットとの使い分けも紹介します。",
+    category: "guide",
+    categoryLabel: "選び方ガイド",
+    thumbnail:
+      "/images/articles/barn-floor-rubber-mat/barn-floor-rubber-mat-hero.jpg",
+    date: "2026-07-03",
+    readTime: "約14分",
+    available: true,
+    path: "/articles/barn-floor-rubber-mat",
+  },
+  {
     slug: "greenhouse-entrance-mud-control",
     title:
       "ビニールハウス入口のぬかるみ対策｜農作業用ゴムマットで歩きやすい通路を作る方法",

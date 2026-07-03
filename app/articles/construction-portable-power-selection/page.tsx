@@ -97,7 +97,7 @@ function ProductCard({ imgId, name, url, store }: ProductItem) {
       <div className="flex flex-1 flex-col p-3">
         <p className="flex-1 text-sm leading-snug text-gray-800">{name}</p>
         <span className="mt-2 inline-block rounded bg-gray-900 px-3 py-1 text-center text-sm font-semibold text-white">
-          {store === "yahoo" ? "商品を見る" : "楽天で見る"}
+          {store === "yahoo" ? "Yahoo!ショッピングで見る" : "楽天市場で見る"}
         </span>
       </div>
     </a>

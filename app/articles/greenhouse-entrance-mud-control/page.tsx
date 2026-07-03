@@ -27,6 +27,7 @@ export const metadata: Metadata = {
 };
 
 const ARTICLE_IMG = "/images/articles/greenhouse-entrance-mud-control";
+const productImage = (id: string) => `/products/${id}.jpg`;
 
 const UTM =
   "utm_source=sagyou_navi&utm_medium=referral&utm_campaign=greenhouse-entrance-mud";
@@ -68,6 +69,51 @@ function ProductLink({ url, label }: { url: string; label: string }) {
   );
 }
 
+type ProductItem = {
+  imgId: string;
+  name: string;
+  url: string;
+  store: "gc" | "yahoo";
+};
+
+function ProductCard({ imgId, name, url, store }: ProductItem) {
+  return (
+    <a
+      href={buildUrl(url, UTM)}
+      target="_blank"
+      rel="nofollow noopener noreferrer"
+      className="group flex flex-col overflow-hidden rounded-lg border border-gray-200 bg-white transition hover:shadow-md"
+    >
+      <div className="aspect-square w-full overflow-hidden bg-gray-50">
+        <img
+          src={productImage(imgId)}
+          alt={name}
+          loading="lazy"
+          className="h-full w-full object-contain p-2 transition group-hover:scale-105"
+        />
+      </div>
+      <div className="flex flex-1 flex-col p-3">
+        <p className="flex-1 text-sm leading-snug text-gray-800">{name}</p>
+        <span className="mt-2 inline-block rounded bg-gray-900 px-3 py-1 text-center text-sm font-semibold text-white">
+          {store === "gc"
+            ? "GREEN CROSS-selectで見る"
+            : "Yahoo!ショッピングで見る"}
+        </span>
+      </div>
+    </a>
+  );
+}
+
+function ProductGrid({ items }: { items: ProductItem[] }) {
+  return (
+    <div className="my-6 grid grid-cols-2 gap-4 sm:grid-cols-3">
+      {items.map((p) => (
+        <ProductCard key={`${p.store}-${p.imgId}-${p.url}`} {...p} />
+      ))}
+    </div>
+  );
+}
+
 function H2({ children }: { children: ReactNode }) {
   return <h2 className={cls.h2}>{children}</h2>;
 }
@@ -85,6 +131,7 @@ function Note({ children }: { children: ReactNode }) {
 }
 
 type Mat = {
+  imgId: string;
   name: string;
   size: string;
   place: string;
@@ -94,6 +141,7 @@ type Mat = {
 
 const NOKI: Mat[] = [
   {
+    imgId: "6300032870",
     name: "農作業用ゴムマット 5mm×350mm×2000mm",
     size: "厚5mm／幅350mm／長2000mm",
     place: "畝間・人が一人通る狭い通路",
@@ -101,6 +149,7 @@ const NOKI: Mat[] = [
     url: "https://www.gc-select.com/products/6300032870",
   },
   {
+    imgId: "6300032871",
     name: "農作業用ゴムマット 5mm×500mm×2000mm",
     size: "厚5mm／幅500mm／長2000mm",
     place: "ハウス入口・収穫かごを持った移動",
@@ -108,6 +157,7 @@ const NOKI: Mat[] = [
     url: "https://www.gc-select.com/products/6300032871",
   },
   {
+    imgId: "6300032873",
     name: "農作業用ゴムマット 7mm×350mm×2000mm",
     size: "厚7mm／幅350mm／長2000mm",
     place: "畝間・ハウス入口の簡易歩行路",
@@ -115,6 +165,7 @@ const NOKI: Mat[] = [
     url: "https://www.gc-select.com/products/6300032873",
   },
   {
+    imgId: "6300032874",
     name: "農作業用ゴムマット 7mm×500mm×2000mm",
     size: "厚7mm／幅500mm／長2000mm",
     place: "ハウス入口・軽い台車通路",
@@ -122,6 +173,7 @@ const NOKI: Mat[] = [
     url: "https://www.gc-select.com/products/6300032874",
   },
   {
+    imgId: "6300032875",
     name: "農作業用ゴムマット 7mm×700mm×2000mm",
     size: "厚7mm／幅700mm／長2000mm",
     place: "観光農園の歩行通路・台車/一輪車通路",
@@ -129,6 +181,7 @@ const NOKI: Mat[] = [
     url: "https://www.gc-select.com/products/6300032875",
   },
   {
+    imgId: "6300032876",
     name: "農作業用ゴムマット 10mm×350mm×2000mm",
     size: "厚10mm／幅350mm／長2000mm",
     place: "狭い通路で安定感を重視",
@@ -136,6 +189,7 @@ const NOKI: Mat[] = [
     url: "https://www.gc-select.com/products/6300032876",
   },
   {
+    imgId: "6300032877",
     name: "農作業用ゴムマット 10mm×500mm×2000mm",
     size: "厚10mm／幅500mm／長2000mm",
     place: "ハウス入口・台車通路で安定感を重視",
@@ -143,6 +197,7 @@ const NOKI: Mat[] = [
     url: "https://www.gc-select.com/products/6300032877",
   },
   {
+    imgId: "6300032878",
     name: "農作業用ゴムマット 10mm×700mm×2000mm",
     size: "厚10mm／幅700mm／長2000mm",
     place: "広いハウス前・観光農園・一輪車通路",
@@ -153,6 +208,7 @@ const NOKI: Mat[] = [
 
 const RAKUNO: Mat[] = [
   {
+    imgId: "6300032879",
     name: "酪農用ゴムマット 15mm×1400mm×2000mm",
     size: "厚15mm／幅1400mm／長2000mm",
     place: "牛舎・畜舎・馬房の床",
@@ -160,6 +216,7 @@ const RAKUNO: Mat[] = [
     url: "https://www.gc-select.com/products/6300032879",
   },
   {
+    imgId: "6300032880",
     name: "酪農用ゴムマット 20mm×1400mm×2000mm",
     size: "厚20mm／幅1400mm／長2000mm",
     place: "牛舎・畜舎・馬房の床",
@@ -167,6 +224,7 @@ const RAKUNO: Mat[] = [
     url: "https://www.gc-select.com/products/6300032880",
   },
   {
+    imgId: "6300032881",
     name: "酪農用ゴムマット 25mm×1400mm×2000mm",
     size: "厚25mm／幅1400mm／長2000mm",
     place: "牛舎・畜舎・馬房の床",
@@ -174,6 +232,7 @@ const RAKUNO: Mat[] = [
     url: "https://www.gc-select.com/products/6300032881",
   },
   {
+    imgId: "6300032882",
     name: "酪農用ゴムマット 30mm×1400mm×2000mm",
     size: "厚30mm／幅1400mm／長2000mm",
     place: "牛舎・畜舎・馬房の床",
@@ -185,6 +244,7 @@ const RAKUNO: Mat[] = [
 const YQ = "?sc_i=shopping-pc-web-result-storesch-rsltlst-img&ea=";
 const ASHIKOSHI = [
   {
+    imgId: "158667",
     name: "TRUSCO 足腰マット TAM-4515-17（黒）",
     spec: "450×1500mm／厚17mm／黒",
     place: "選果場・作業台前の長めの定位置通路",
@@ -192,6 +252,7 @@ const ASHIKOSHI = [
     url: `https://store.shopping.yahoo.co.jp/signcity-yshop/158667.html${YQ}`,
   },
   {
+    imgId: "158664",
     name: "TRUSCO 足腰マット TAM-4560-17（黒）",
     spec: "450×600mm／厚17mm／黒",
     place: "作業台1名分の足元",
@@ -199,6 +260,7 @@ const ASHIKOSHI = [
     url: `https://store.shopping.yahoo.co.jp/signcity-yshop/158664.html${YQ}`,
   },
   {
+    imgId: "158663",
     name: "TRUSCO 足腰マット TAM-4590-17-ESD-GR（帯電防止）",
     spec: "450×900mm／厚17mm／帯電防止・グリーン",
     place: "静電気を避けたい作業台前",
@@ -206,6 +268,13 @@ const ASHIKOSHI = [
     url: `https://store.shopping.yahoo.co.jp/signcity-yshop/158663.html${YQ}`,
   },
 ];
+
+function toProductItems(
+  items: { imgId: string; name: string; url: string }[],
+  store: ProductItem["store"]
+): ProductItem[] {
+  return items.map((m) => ({ ...m, store }));
+}
 
 const URL_NOKI_SEARCH =
   "https://www.gc-select.com/pages/search-results-page?q=%E8%BE%B2%E4%BD%9C%E6%A5%AD%E7%94%A8%E3%82%B4%E3%83%A0";
@@ -571,6 +640,7 @@ export default function Page() {
             </tbody>
           </table>
         </div>
+        <ProductGrid items={toProductItems(NOKI, "gc")} />
         <CTA
           url={URL_NOKI_SEARCH}
           label="ハウス入口・畝間・温室通路に使える農作業用ゴムマットを確認する"
@@ -680,6 +750,7 @@ export default function Page() {
             </tbody>
           </table>
         </div>
+        <ProductGrid items={toProductItems(RAKUNO, "gc")} />
         <Note>
           酪農用ゴムマットを導入する際は、現場の床状態、清掃性、排水、段差、設置作業のしやすさを必ず確認してください。滑りにくさや疲労軽減は環境により異なり、転倒や体調を保証するものではありません。
         </Note>
@@ -727,6 +798,7 @@ export default function Page() {
             </tbody>
           </table>
         </div>
+        <ProductGrid items={toProductItems(ASHIKOSHI, "yahoo")} />
         <CTA
           url={URL_ASHIKOSHI_LIST}
           label="選果場・作業台前の立ち仕事対策にTRUSCO足腰マットを確認する"

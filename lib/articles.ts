@@ -14,6 +14,22 @@ export type Article = {
 
 export const ARTICLES: Article[] = [
   {
+    slug: "greenhouse-entrance-mud-control",
+    title:
+      "ビニールハウス入口のぬかるみ対策｜農作業用ゴムマットで歩きやすい通路を作る方法",
+    shortTitle: "ビニールハウス入口のぬかるみ対策",
+    description:
+      "ビニールハウス入口のぬかるみ対策を解説。雨上がりや梅雨・霜の時期に歩きにくいハウス前通路へ、農作業用ゴムマットを敷くメリット、幅350mm・500mm・700mm、厚み5mm・7mm・10mmの選び方、敷き方の注意点を紹介します。",
+    category: "guide",
+    categoryLabel: "選び方ガイド",
+    thumbnail:
+      "/images/articles/greenhouse-entrance-mud-control/greenhouse-entrance-mud-rubber-mat-hero.jpg",
+    date: "2026-07-03",
+    readTime: "約14分",
+    available: true,
+    path: "/articles/greenhouse-entrance-mud-control",
+  },
+  {
     slug: "construction-portable-power-selection",
     title:
       "工事現場のポータブル電源の選び方｜工具・照明・冷温庫・非常用電源に使える容量と出力の目安",

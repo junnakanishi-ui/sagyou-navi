@@ -14,6 +14,21 @@ export type Article = {
 
 export const ARTICLES: Article[] = [
   {
+    slug: "kartio-folding-fixed-selection",
+    title:
+      "カルティオは折りたたみ・固定どっちを選ぶ？ストッパー付き・ビッグ・ミニの使い分け",
+    shortTitle: "カルティオ 折りたたみ・固定の選び方",
+    description:
+      "カルティオの折りたたみハンドル・固定ハンドル・ストッパー付きの違いを解説。通常カルティオ、カルティオビッグ、カルティオミニweego、オフロード仕様の使い分けを、倉庫・工場・店舗バックヤード・施設管理など現場別にわかりやすく紹介します。",
+    category: "guide",
+    categoryLabel: "倉庫・物流",
+    thumbnail: "/images/articles/kartio-folding-fixed-selection/hero.jpg",
+    date: "2026-07-04",
+    readTime: "約14分",
+    available: true,
+    path: "/articles/kartio-folding-fixed-selection",
+  },
+  {
     slug: "hand-lifter-vs-hand-pallet",
     title:
       "ハンドリフターとハンドパレットの違いは？手動・電動・高揚程タイプの種類と用途別の使い分け",

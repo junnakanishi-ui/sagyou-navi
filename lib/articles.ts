@@ -14,6 +14,21 @@ export type Article = {
 
 export const ARTICLES: Article[] = [
   {
+    slug: "large-bag-for-construction-waste",
+    title:
+      "廃材を入れる大きい袋の選び方｜ガラ袋・トン袋・大型土のう・フレコンバッグの使い分け",
+    shortTitle: "廃材を入れる大きい袋の選び方",
+    description:
+      "廃材や土砂を入れる大きい袋の名前は、現場ではフレコンバッグ・トン袋・大型土のう袋などと呼ばれます。ガラ袋との違い、排出口あり・なし、耐候性タイプ、ハンドパレット・台車・作業台との組み合わせまで、現場別にわかりやすく解説します。",
+    category: "guide",
+    categoryLabel: "選び方ガイド",
+    thumbnail: "/images/articles/large-bag-for-construction-waste/hero.jpg",
+    date: "2026-07-04",
+    readTime: "約14分",
+    available: true,
+    path: "/articles/large-bag-for-construction-waste",
+  },
+  {
     slug: "kartio-folding-fixed-selection",
     title:
       "カルティオは折りたたみ・固定どっちを選ぶ？ストッパー付き・ビッグ・ミニの使い分け",

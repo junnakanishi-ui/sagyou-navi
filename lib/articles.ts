@@ -14,6 +14,21 @@ export type Article = {
 
 export const ARTICLES: Article[] = [
   {
+    slug: "hand-lifter-vs-hand-pallet",
+    title:
+      "ハンドリフターとハンドパレットの違いは？手動・電動・高揚程タイプの種類と用途別の使い分け",
+    shortTitle: "ハンドリフターとハンドパレットの違い",
+    description:
+      "ハンドリフターとハンドパレットの違いを解説。パレットを水平運搬するハンドパレットトラックと、荷物を高く上げるハンドリフター（高揚程型）の違い、手動・電動の使い分け、積載重量や用途別の選び分けを、トラスコ（TRUSCO）製品とあわせて紹介します。",
+    category: "compare",
+    categoryLabel: "倉庫・物流",
+    thumbnail: "/images/articles/hand-lifter-vs-hand-pallet/hero.jpg",
+    date: "2026-07-04",
+    readTime: "約12分",
+    available: true,
+    path: "/articles/hand-lifter-vs-hand-pallet",
+  },
+  {
     slug: "outdoor-shade-net-selection",
     title:
       "屋外作業場の日よけに使う遮光ネットの選び方｜ハトメ付きネットの固定方法と遮光率を解説",

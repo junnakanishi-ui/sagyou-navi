@@ -14,6 +14,21 @@ export type Article = {
 
 export const ARTICLES: Article[] = [
   {
+    slug: "safety-walkway-setup",
+    title:
+      "安全通路の作り方｜工場・倉庫・工事現場で使うカラーコーン・コーンカバー・安全用品",
+    shortTitle: "安全通路の作り方",
+    description:
+      "安全通路の作り方を、工場・倉庫・工事現場・駐車場向けに解説。カラーコーン、コーンカバー、安全フェンス、コーンベッド、ゴムポール、合図灯を使い、歩行者通路・立入禁止・車両出入口をわかりやすく区画する方法を紹介します。",
+    category: "guide",
+    categoryLabel: "選び方ガイド",
+    thumbnail: "/images/articles/worksite-safety-walkway-cone-cover-hero.jpg",
+    date: "2026-07-06",
+    readTime: "約15分",
+    available: true,
+    path: "/articles/safety-walkway-setup",
+  },
+  {
     slug: "farm-forest-bear-safety",
     title:
       "農作業・山林作業の熊対策用品｜鈴・ホイッスル・スプレー・電気柵の備え",

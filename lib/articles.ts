@@ -14,6 +14,21 @@ export type Article = {
 
 export const ARTICLES: Article[] = [
   {
+    slug: "magnetic-wall-diy",
+    title:
+      "マグネットがつく壁を作るには？スチールペーパー・粘着付きマグネットシート・掲示板シートの使い分け",
+    shortTitle: "マグネットがつく壁の作り方",
+    description:
+      "壁にマグネットを付けたいときは、スチールペーパーや掲示板シートを使ってマグネット対応面を作る方法があります。スチールペーパー、粘着付きマグネットシート、強力マグネットシート、車両用・ホワイトボード用・掲示板用の使い分けを法人向けに解説します。",
+    category: "compare",
+    categoryLabel: "比較",
+    thumbnail: "/images/articles/magnetic-wall-steel-paper-installation-hero.jpg",
+    date: "2026-07-06",
+    readTime: "約14分",
+    available: true,
+    path: "/articles/magnetic-wall-diy",
+  },
+  {
     slug: "side-handle-cart-guide",
     title:
       "サイドハンドル台車とは？長尺物・箱物を運びやすいグランカート・板物搬送台車の選び方",

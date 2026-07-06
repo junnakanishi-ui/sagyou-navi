@@ -14,6 +14,21 @@ export type Article = {
 
 export const ARTICLES: Article[] = [
   {
+    slug: "worksite-rest-area-heat",
+    title:
+      "現場休憩所の暑さ対策｜屋外作業でそろえたい日よけ・工場扇・冷却用品",
+    shortTitle: "現場休憩所の暑さ対策",
+    description:
+      "現場休憩所の暑さ対策を、屋外作業向けに解説。日よけテント、工場扇、ポータブル電源、冷温庫、クーラーボックス、製氷機、アイススラリー、応急セットまで、建設現場・イベント・学校行事でそろえたい備品と運用ポイントを紹介します。",
+    category: "guide",
+    categoryLabel: "選び方ガイド",
+    thumbnail: "/images/articles/worksite-rest-area-heat-prevention-hero.jpg",
+    date: "2026-07-06",
+    readTime: "約14分",
+    available: true,
+    path: "/articles/worksite-rest-area-heat",
+  },
+  {
     slug: "magnetic-wall-diy",
     title:
       "マグネットがつく壁を作るには？スチールペーパー・粘着付きマグネットシート・掲示板シートの使い分け",

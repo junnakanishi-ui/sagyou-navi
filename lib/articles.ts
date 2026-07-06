@@ -14,6 +14,21 @@ export type Article = {
 
 export const ARTICLES: Article[] = [
   {
+    slug: "side-handle-cart-guide",
+    title:
+      "サイドハンドル台車とは？長尺物・箱物を運びやすいグランカート・板物搬送台車の選び方",
+    shortTitle: "サイドハンドル台車の選び方",
+    description:
+      "サイドハンドル台車とは、台車の横側にハンドルが付いた長尺物・箱物の運搬に便利な台車です。グランカートのサイレントタイプ・通常タイプ、板物搬送台車イタチ、カルティオやバーディワゴンとの使い分けを現場別に解説します。",
+    category: "guide",
+    categoryLabel: "倉庫・物流",
+    thumbnail: "/images/articles/side-handle-cart-guide/hero.jpg",
+    date: "2026-07-04",
+    readTime: "約13分",
+    available: true,
+    path: "/articles/side-handle-cart-guide",
+  },
+  {
     slug: "large-bag-for-construction-waste",
     title:
       "廃材を入れる大きい袋の選び方｜ガラ袋・トン袋・大型土のう・フレコンバッグの使い分け",

@@ -14,6 +14,21 @@ export type Article = {
 
 export const ARTICLES: Article[] = [
   {
+    slug: "farm-forest-bear-safety",
+    title:
+      "農作業・山林作業の熊対策用品｜鈴・ホイッスル・スプレー・電気柵の備え",
+    shortTitle: "農作業・山林作業の熊対策用品",
+    description:
+      "農作業・山林作業・現場巡回で備えたい熊対策用品を解説。熊よけ鈴、電子ホイッスル、強力ライト、熊よけスプレー、忌避剤、電気柵、防獣機器まで、遭遇リスクを下げる備品と現場ルールを法人向けに整理します。",
+    category: "guide",
+    categoryLabel: "選び方ガイド",
+    thumbnail: "/images/articles/farm-forest-work-bear-safety-supplies-hero.jpg",
+    date: "2026-07-06",
+    readTime: "約15分",
+    available: true,
+    path: "/articles/farm-forest-bear-safety",
+  },
+  {
     slug: "worksite-rest-area-heat",
     title:
       "現場休憩所の暑さ対策｜屋外作業でそろえたい日よけ・工場扇・冷却用品",

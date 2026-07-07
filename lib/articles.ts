@@ -59,6 +59,22 @@ export const ARTICLES: Article[] = [
     path: "/articles/worksite-rest-area-heat",
   },
   {
+    slug: "outdoor-worksite-portable-power",
+    title:
+      "屋外現場で使うポータブル電源の選び方｜工場扇・冷温庫・工具・災害時電源に使える業務用電源とは",
+    shortTitle: "屋外現場のポータブル電源の選び方",
+    description:
+      "屋外現場で使うポータブル電源の選び方を解説。工場扇・冷温庫・照明・工具・災害時電源に必要な容量、出力、防水・防塵性能を比較し、蓄電丸・MEIHOポータブルパワーステーション・冷温庫・ポータブルトランスの使い分けを紹介します。",
+    category: "guide",
+    categoryLabel: "選び方ガイド",
+    thumbnail:
+      "/images/articles/outdoor-worksite-portable-power-supply-hero.jpg",
+    date: "2026-07-07",
+    readTime: "約14分",
+    available: true,
+    path: "/articles/outdoor-worksite-portable-power",
+  },
+  {
     slug: "magnetic-wall-diy",
     title:
       "マグネットがつく壁を作るには？スチールペーパー・粘着付きマグネットシート・掲示板シートの使い分け",

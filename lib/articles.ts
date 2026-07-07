@@ -14,6 +14,21 @@ export type Article = {
 
 export const ARTICLES: Article[] = [
   {
+    slug: "worktable-antistatic-measures",
+    title:
+      "作業台の静電気対策に必要なもの｜静電防止剤・導電マット・リストストラップの選び方",
+    shortTitle: "作業台の静電気対策に必要なもの",
+    description:
+      "作業台の静電気対策に必要な用品を解説。静電防止剤、導電マット、リストストラップ、静電気除去シート、除電ブラシ、帯電防止バッグなど、工場・作業場・樹脂板加工・電子部品作業で使う静電気対策用品の選び方を紹介します。",
+    category: "guide",
+    categoryLabel: "選び方ガイド",
+    thumbnail: "/images/articles/workbench-static-control-supplies-hero.jpg",
+    date: "2026-07-07",
+    readTime: "約15分",
+    available: true,
+    path: "/articles/worktable-antistatic-measures",
+  },
+  {
     slug: "safety-walkway-setup",
     title:
       "安全通路の作り方｜工場・倉庫・工事現場で使うカラーコーン・コーンカバー・安全用品",

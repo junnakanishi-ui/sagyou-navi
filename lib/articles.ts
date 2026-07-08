@@ -90,6 +90,21 @@ export const ARTICLES: Article[] = [
     path: "/articles/outdoor-worksite-portable-power",
   },
   {
+    slug: "work-light-selection",
+    title:
+      "作業用ライトの選び方｜ヘッドライト・懐中電灯・ワークランタン・防爆ライトの使い分け",
+    shortTitle: "作業用ライトの選び方",
+    description:
+      "作業用ライトの選び方を、ヘッドライト・懐中電灯・ワークランタン・防爆ライトの違いから解説。夜間作業、設備点検、倉庫、工事現場、防災備蓄など現場別に、明るさ・点灯時間・防水防塵・充電方式の確認ポイントを紹介します。",
+    category: "guide",
+    categoryLabel: "選び方ガイド",
+    thumbnail: "/images/articles/work-lights-selection-hero.jpg",
+    date: "2026-07-08",
+    readTime: "約14分",
+    available: true,
+    path: "/articles/work-light-selection",
+  },
+  {
     slug: "magnetic-wall-diy",
     title:
       "マグネットがつく壁を作るには？スチールペーパー・粘着付きマグネットシート・掲示板シートの使い分け",

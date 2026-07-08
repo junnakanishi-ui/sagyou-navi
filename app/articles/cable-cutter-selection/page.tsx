@@ -215,6 +215,17 @@ function Td({ children }: { children: React.ReactNode }) {
   return <td className="border border-gray-300 px-3 py-2 text-sm align-top">{children}</td>;
 }
 
+function ArticleImg({ src, alt }: { src: string; alt: string }) {
+  return (
+    <img
+      src={src}
+      alt={alt}
+      loading="lazy"
+      className="my-6 w-full rounded-lg"
+    />
+  );
+}
+
 export default function Page() {
   return (
     <>
@@ -245,8 +256,10 @@ export default function Page() {
 
           <p className="mb-6 text-sm text-gray-500">公開日：2026年7月8日／約15分で読めます</p>
 
-          {/* 画像1：ヒーロー */}
-          {/* <img src={IMG.hero} alt="電設工事用のケーブルカッターや圧着工具を選ぶイメージ" loading="lazy" className="mb-6 w-full rounded-lg" /> */}
+          <ArticleImg
+            src={IMG.hero}
+            alt="電設工事用のケーブルカッターや圧着工具を選ぶイメージ"
+          />
 
           <section className="my-6 rounded-md border border-gray-300 bg-gray-50 p-5">
             <p className="mb-3 font-bold">この記事の要点（先に結論）</p>
@@ -293,8 +306,10 @@ export default function Page() {
           <h2 className="mt-12 mb-4 border-l-4 border-gray-900 pl-3 text-2xl font-bold">
             ケーブルカッターの種類と違い
           </h2>
-          {/* 画像2 */}
-          {/* <img src={IMG.types} alt="充電式・油圧式・ラチェット式ケーブルカッターの比較イメージ" loading="lazy" className="mb-6 w-full rounded-lg" /> */}
+          <ArticleImg
+            src={IMG.types}
+            alt="充電式・油圧式・ラチェット式ケーブルカッターの比較イメージ"
+          />
           <p className="mb-4">数値はメーカー公表値です。型番の末尾（KB・XB など）でキット内容・付属電池・仕様が異なる場合があるため、最終的な能力は各商品ページでご確認ください。</p>
 
           <h3 className="mt-8 mb-3 text-xl font-bold">充電式ケーブルカッター｜現場移動が多い電設工事向け</h3>
@@ -378,8 +393,10 @@ export default function Page() {
           <h2 className="mt-12 mb-4 border-l-4 border-gray-900 pl-3 text-2xl font-bold">
             用途別に見るケーブルカッターの選び方
           </h2>
-          {/* 画像3 */}
-          {/* <img src={IMG.thick} alt="太い電力ケーブルを専用カッターで切断するイメージ" loading="lazy" className="mb-6 w-full rounded-lg" /> */}
+          <ArticleImg
+            src={IMG.thick}
+            alt="太い電力ケーブルを専用カッターで切断するイメージ"
+          />
           <div className="my-6 overflow-x-auto">
             <table className="w-full border-collapse">
               <thead>
@@ -416,8 +433,10 @@ export default function Page() {
           <h2 className="mt-12 mb-4 border-l-4 border-gray-900 pl-3 text-2xl font-bold">
             レースウェイ・ダクター・ケーブルラックを切る工具
           </h2>
-          {/* 画像4 */}
-          {/* <img src={IMG.raceway} alt="レースウェイを専用カッターで加工するイメージ" loading="lazy" className="mb-6 w-full rounded-lg" /> */}
+          <ArticleImg
+            src={IMG.raceway}
+            alt="レースウェイを専用カッターで加工するイメージ"
+          />
           <h3 className="mt-8 mb-3 text-xl font-bold">レースウェイは専用カッターでバリを抑えて切断する</h3>
           <p className="mb-4">レースウェイやダクターは、バリを抑えた切断や穴あけに対応する専用カッターを使うのが基本です。</p>
           <ProductItem name="CACTUS レースウェイカッターD30 EVRP40D30" spec="ダイス交換式。標準仕様としてD30ダイス＋パンチャーP11付き（メーカー公表値・要確認）" href={URLS.evrp40d30} />
@@ -440,8 +459,10 @@ export default function Page() {
           <h2 className="mt-12 mb-4 border-l-4 border-gray-900 pl-3 text-2xl font-bold">
             切断後に必要になる圧着工具の選び方
           </h2>
-          {/* 画像5 */}
-          {/* <img src={IMG.crimping} alt="圧着工具で電線端末を処理するイメージ" loading="lazy" className="mb-6 w-full rounded-lg" /> */}
+          <ArticleImg
+            src={IMG.crimping}
+            alt="圧着工具で電線端末を処理するイメージ"
+          />
           <h3 className="mt-8 mb-3 text-xl font-bold">圧着工具は端子サイズ・sq・ダイスで選ぶ</h3>
           <p className="mb-4">扱う端子・ケーブルサイズと、対応する圧着範囲・ダイスで選びます。</p>
           <h3 className="mt-8 mb-3 text-xl font-bold">14〜250mm²なら250クラスを確認する</h3>
@@ -473,8 +494,10 @@ export default function Page() {
           <h2 className="mt-12 mb-4 border-l-4 border-gray-900 pl-3 text-2xl font-bold">
             電設工事の工具を法人でそろえるときの備品リスト
           </h2>
-          {/* 画像6 */}
-          {/* <img src={IMG.checklist} alt="法人担当者が電設工具の備品リストを確認するイメージ" loading="lazy" className="mb-6 w-full rounded-lg" /> */}
+          <ArticleImg
+            src={IMG.checklist}
+            alt="法人担当者が電設工具の備品リストを確認するイメージ"
+          />
           <h3 className="mt-8 mb-3 text-xl font-bold">切断工具</h3>
           <p className="mb-4">現場で切る線種・サイズに合わせて、充電式・AC100V・油圧式・手動式を組み合わせます。</p>
           <h3 className="mt-8 mb-3 text-xl font-bold">圧着工具</h3>

@@ -105,6 +105,21 @@ export const ARTICLES: Article[] = [
     path: "/articles/work-light-selection",
   },
   {
+    slug: "cable-cutter-selection",
+    title:
+      "ケーブルカッターの選び方｜充電式・油圧式・ラチェット式と圧着工具の使い分け",
+    shortTitle: "ケーブルカッターの選び方",
+    description:
+      "ケーブルカッターの選び方を、充電式・油圧式・AC100Vコード式・ラチェット式の違いから解説。CV線・CVT線・IV線などの切断能力、レースウェイカッター、ケーブルラックカッター、圧着工具の使い分け、法人購買時のチェックリストまで紹介します。",
+    category: "guide",
+    categoryLabel: "選び方ガイド",
+    thumbnail: "/images/articles/electrical-cable-cutter-tools-hero.jpg",
+    date: "2026-07-08",
+    readTime: "約15分",
+    available: true,
+    path: "/articles/cable-cutter-selection",
+  },
+  {
     slug: "magnetic-wall-diy",
     title:
       "マグネットがつく壁を作るには？スチールペーパー・粘着付きマグネットシート・掲示板シートの使い分け",

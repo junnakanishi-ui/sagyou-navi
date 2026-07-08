@@ -1,6 +1,6 @@
 import Link from "next/link";
 import type { Metadata } from "next";
-import React from "react";
+import type { ReactNode } from "react";
 import { SiteHeader } from "@/components/work/site-header";
 import { SiteFooter } from "@/components/work/site-footer";
 
@@ -76,6 +76,178 @@ const URLS = {
   list: R("c/0000000185/"),
 };
 
+const productImage = (id: string) => `/products/${id}.jpg`;
+
+type Prod = {
+  id: string;
+  imgId?: string;
+  name: string;
+  use: string;
+  url: string;
+};
+
+const CORDLESS_CUTTERS: Prod[] = [
+  {
+    id: "ta041267-ez45a6kb",
+    name: "Panasonic 充電ケーブルカッター EZ45A6KB",
+    use: "口径φ56クラス。CV線3心200mm²・CVT200mm²・VVR3心150mm²クラスの切断能力（メーカー公表値・要確認）",
+    url: URLS.ez45a6,
+  },
+  {
+    id: "ta036145-ez45a7xb",
+    name: "Panasonic デュアル 充電ケーブルカッター EZ45A7XB",
+    use: "CV250mm²・CVT60mm²・IV325mm²・VVR3心38mm²クラス（メーカー公表値・要確認）",
+    url: URLS.ez45a7,
+  },
+  {
+    id: "ta041399-hpc85brla",
+    name: "DAIA ケーブルカッター 充電式18V HPC85BRLA",
+    use: "18V充電式。6kV-CV1000mm²単芯・φ56クラス（メーカー公表値・要確認）",
+    url: URLS.hpc85brla,
+  },
+  {
+    id: "ta041397-hpc65brla",
+    name: "DAIA ケーブルカッター 充電式18V HPC65BRLA",
+    use: "6kV-CV500mm²単芯・φ53クラス（メーカー公表値・要確認）",
+    url: URLS.hpc65brla,
+  },
+  {
+    id: "ta039112-s7k50y",
+    name: "泉 充電式ケーブルカッター S7K50Y",
+    use: "充電式ケーブルカッター。対応線種・切断能力はメーカー仕様を確認",
+    url: URLS.s7k50y,
+  },
+];
+
+const AC100V_CUTTERS: Prod[] = [
+  {
+    id: "ta041398-hpc85b",
+    name: "DAIA ケーブルカッター AC100Vコード式 HPC85B",
+    use: "AC100Vコード式。対応線種・切断能力はメーカー仕様を確認",
+    url: URLS.hpc85b,
+  },
+  {
+    id: "ta041396-hpc65b",
+    name: "DAIA ケーブルカッター AC100Vコード式 HPC65B",
+    use: "AC100Vコード式。対応線種・切断能力はメーカー仕様を確認",
+    url: URLS.hpc65b,
+  },
+];
+
+const HYDRAULIC_CUTTERS: Prod[] = [
+  {
+    id: "ta041518-m18hcc75r0cjp",
+    name: "Milwaukee M18 75mm ワイヤレス油圧カッター M18HCC75R0CJP",
+    use: "最大φ75mmの銅・アルミケーブル切断、ワイヤレスリモート操作（メーカー公表値・要確認）",
+    url: URLS.m18_75,
+  },
+  {
+    id: "ta041517-m18hcc450cjp",
+    name: "Milwaukee M18 44mm 油圧カッター M18HCC450CJP",
+    use: "ACSR/ACSSケーブルφ44mmまで（メーカー公表値・要確認）",
+    url: URLS.m18_44,
+  },
+  {
+    id: "ta036054-es32l",
+    name: "Klauke 充電式油圧ケーブルカッター ES32L",
+    use: "充電式油圧ケーブルカッター。切断能力・対応線種はメーカー仕様を確認",
+    url: URLS.es32l,
+  },
+  {
+    id: "ta036090-esg25l",
+    name: "Klauke 充電式油圧カッター ESG25L",
+    use: "最大φ25mm、銅・アルミ・ACSR・鉄線対応、約2.1kg、マキタ製18V使用（メーカー公表値・要確認）",
+    url: URLS.esg25l,
+  },
+];
+
+const RATCHET_CUTTERS: Prod[] = [
+  {
+    id: "ta034023-9532100",
+    name: "KNIPEX ラチェット式ケーブルカッター 9532100",
+    use: "650〜860mmの伸縮ハンドル・ラチェット構造。銅・アルミケーブル向け（スチールワイヤー・ワイヤーロープは切断不可。対応材質・sqはメーカー仕様を確認）",
+    url: URLS.knipex9532100,
+  },
+];
+
+const RACEWAY_TOOLS: Prod[] = [
+  {
+    id: "ta036132-evrp40d30",
+    name: "CACTUS レースウェイカッターD30 EVRP40D30",
+    use: "ダイス交換式。標準仕様としてD30ダイス＋パンチャーP11付き（メーカー公表値・要確認）",
+    url: URLS.evrp40d30,
+  },
+  {
+    id: "ta041264-evr2dd",
+    name: "CACTUS レースウェイカッター ダブルダイス付 EVR2DD",
+    use: "複数サイズを扱う現場向けのダブルダイス付き。対応サイズはメーカー仕様を確認",
+    url: URLS.evr2dd,
+  },
+];
+
+const RACK_TOOLS: Prod[] = [
+  {
+    id: "ta041638-rac100",
+    name: "CACTUS ケーブルラックカッター RAC100",
+    use: "ケーブルラック切断用の専用カッター。対応サイズ・本体工具との適合はメーカー仕様を確認",
+    url: URLS.rac100,
+  },
+];
+
+const PIPE_TOOLS: Prod[] = [
+  {
+    id: "ta040971-74685",
+    name: "RIDGID 4枚刃ヒンジドパイプカッター 鋳鉄管用 466-CI（74685）",
+    use: "2〜12インチの鋼管・厚肉鋼管・鋳鉄管用。4枚刃で360度回転が不要とされる管材用工具（ケーブル用ではありません／メーカー公表値・要確認）",
+    url: URLS.ridgid74685,
+  },
+];
+
+const CRIMPING_250: Prod[] = [
+  {
+    id: "ta041261-ev250hi",
+    name: "CACTUS 電動油圧式圧着工具 EV250HI",
+    use: "AC100V電動油圧式。圧着範囲14〜250mm²（メーカー公表値・要確認）",
+    url: URLS.ev250hi,
+  },
+  {
+    id: "ta041259-ev250dl",
+    name: "CACTUS コードレス電動油圧式圧着工具 EV250DL",
+    use: "18V/14.4V兼用コードレス。圧着範囲14〜250mm²（メーカー公表値・要確認）",
+    url: URLS.ev250dl,
+  },
+  {
+    id: "ta041268-ez46a4kb",
+    name: "Panasonic 充電圧着器 EZ46A4KB",
+    use: "14.4V/18V両用デュアル。CV線250mm²まで圧着（メーカー公表値・要確認）",
+    url: URLS.ez46a4,
+  },
+];
+
+const CRIMPING_325: Prod[] = [
+  {
+    id: "ta041263-ev325hi",
+    name: "CACTUS 電動油圧式圧着工具 EV325HI",
+    use: "AC100V電動油圧式。圧着範囲150〜325mm²（メーカー公表値・要確認）",
+    url: URLS.ev325hi,
+  },
+  {
+    id: "ta041262-ev325dl",
+    name: "CACTUS コードレス電動油圧式圧着工具 EV325DL",
+    use: "コードレス電動油圧式。圧着範囲150〜325mm²（メーカー公表値・要確認）",
+    url: URLS.ev325dl,
+  },
+];
+
+const TOOL_SETS: Prod[] = [
+  {
+    id: "ta040487-002120",
+    name: "KNIPEX ツールケース 20点セット 002120",
+    use: "電設工具の持ち出しに使えるツールケースセット。セット内容はメーカー仕様を確認",
+    url: URLS.knipex002120,
+  },
+];
+
 const FAQ_ITEMS = [
   {
     q: "ケーブルカッターは何を基準に選べばいいですか？",
@@ -129,7 +301,7 @@ const faqJsonLd = {
   })),
 };
 
-function CTA({ href, children }: { href: string; children: React.ReactNode }) {
+function CTA({ href, children }: { href: string; children: ReactNode }) {
   return (
     <a
       href={href}
@@ -142,7 +314,7 @@ function CTA({ href, children }: { href: string; children: React.ReactNode }) {
   );
 }
 
-function FinalCTA({ href, children }: { href: string; children: React.ReactNode }) {
+function FinalCTA({ href, children }: { href: string; children: ReactNode }) {
   return (
     <a
       href={href}
@@ -155,7 +327,7 @@ function FinalCTA({ href, children }: { href: string; children: React.ReactNode 
   );
 }
 
-function ProductLink({ href, children }: { href: string; children?: React.ReactNode }) {
+function ProductLink({ href, children }: { href: string; children?: ReactNode }) {
   return (
     <a
       href={href}
@@ -168,22 +340,40 @@ function ProductLink({ href, children }: { href: string; children?: React.ReactN
   );
 }
 
-function ProductItem({
-  name,
-  spec,
-  href,
-}: {
-  name: string;
-  spec?: string;
-  href: string;
-}) {
+function ProductCard({ item }: { item: Prod }) {
+  const imgId = item.imgId ?? item.id;
   return (
-    <div className="my-3 rounded-md border border-gray-200 p-4">
-      <p className="font-bold">{name}</p>
-      {spec ? <p className="mt-1 text-sm text-gray-600">{spec}</p> : null}
-      <div className="mt-3">
-        <ProductLink href={href}>商品ページを見る</ProductLink>
+    <a
+      href={item.url}
+      target="_blank"
+      rel="nofollow noopener noreferrer"
+      className="group flex flex-col overflow-hidden rounded-xl border-2 border-gray-200 bg-white shadow-sm transition hover:border-gray-400 hover:shadow-lg"
+    >
+      <div className="aspect-square w-full overflow-hidden bg-gray-50">
+        <img
+          src={productImage(imgId)}
+          alt={item.name}
+          loading="lazy"
+          className="h-full w-full object-contain p-3 transition group-hover:scale-105"
+        />
       </div>
+      <div className="flex flex-1 flex-col p-4">
+        <p className="text-sm font-bold leading-snug text-gray-900">{item.name}</p>
+        <p className="mt-2 flex-1 text-xs leading-relaxed text-gray-600">{item.use}</p>
+        <span className="mt-3 inline-block rounded-lg bg-gray-900 px-4 py-2 text-center text-sm font-bold text-white">
+          商品ページを見る
+        </span>
+      </div>
+    </a>
+  );
+}
+
+function ProductGrid({ items }: { items: Prod[] }) {
+  return (
+    <div className="my-6 grid grid-cols-2 gap-4 sm:grid-cols-3">
+      {items.map((item) => (
+        <ProductCard key={`${item.id}-${item.name}`} item={item} />
+      ))}
     </div>
   );
 }
@@ -193,7 +383,7 @@ function Caution({
   children,
 }: {
   title?: string;
-  children: React.ReactNode;
+  children: ReactNode;
 }) {
   return (
     <aside className="my-6 rounded-md border border-red-300 bg-red-50 p-4">
@@ -203,7 +393,7 @@ function Caution({
   );
 }
 
-function Th({ children }: { children: React.ReactNode }) {
+function Th({ children }: { children: ReactNode }) {
   return (
     <th className="border border-gray-300 bg-gray-100 px-3 py-2 text-left text-sm font-bold">
       {children}
@@ -211,7 +401,7 @@ function Th({ children }: { children: React.ReactNode }) {
   );
 }
 
-function Td({ children }: { children: React.ReactNode }) {
+function Td({ children }: { children: ReactNode }) {
   return <td className="border border-gray-300 px-3 py-2 text-sm align-top">{children}</td>;
 }
 
@@ -313,24 +503,16 @@ export default function Page() {
           <p className="mb-4">数値はメーカー公表値です。型番の末尾（KB・XB など）でキット内容・付属電池・仕様が異なる場合があるため、最終的な能力は各商品ページでご確認ください。</p>
 
           <h3 className="mt-8 mb-3 text-xl font-bold">充電式ケーブルカッター｜現場移動が多い電設工事向け</h3>
-          <ProductItem name="Panasonic 充電ケーブルカッター EZ45A6KB" spec="口径φ56クラス。CV線3心200mm²・CVT200mm²・VVR3心150mm²クラスの切断能力（メーカー公表値・要確認）" href={URLS.ez45a6} />
-          <ProductItem name="Panasonic デュアル 充電ケーブルカッター EZ45A7XB" spec="CV250mm²・CVT60mm²・IV325mm²・VVR3心38mm²クラス（メーカー公表値・要確認）" href={URLS.ez45a7} />
-          <ProductItem name="DAIA ケーブルカッター 充電式18V HPC85BRLA" spec="18V充電式。6kV-CV1000mm²単芯・φ56クラス（メーカー公表値・要確認）" href={URLS.hpc85brla} />
-          <ProductItem name="DAIA ケーブルカッター 充電式18V HPC65BRLA" spec="6kV-CV500mm²単芯・φ53クラス（メーカー公表値・要確認）" href={URLS.hpc65brla} />
-          <ProductItem name="泉 充電式ケーブルカッター S7K50Y" spec="充電式ケーブルカッター。対応線種・切断能力はメーカー仕様を確認" href={URLS.s7k50y} />
+          <ProductGrid items={CORDLESS_CUTTERS} />
 
           <h3 className="mt-8 mb-3 text-xl font-bold">AC100Vコード式ケーブルカッター｜電源が取れる作業場・加工場向け</h3>
-          <ProductItem name="DAIA ケーブルカッター AC100Vコード式 HPC85B" spec="AC100Vコード式。対応線種・切断能力はメーカー仕様を確認" href={URLS.hpc85b} />
-          <ProductItem name="DAIA ケーブルカッター AC100Vコード式 HPC65B" spec="AC100Vコード式。対応線種・切断能力はメーカー仕様を確認" href={URLS.hpc65b} />
+          <ProductGrid items={AC100V_CUTTERS} />
 
           <h3 className="mt-8 mb-3 text-xl font-bold">ワイヤレス・油圧式ケーブルカッター｜大径ケーブル・電力系作業向け</h3>
-          <ProductItem name="Milwaukee M18 75mm ワイヤレス油圧カッター M18HCC75R0CJP" spec="最大φ75mmの銅・アルミケーブル切断、ワイヤレスリモート操作（メーカー公表値・要確認）" href={URLS.m18_75} />
-          <ProductItem name="Milwaukee M18 44mm 油圧カッター M18HCC450CJP" spec="ACSR/ACSSケーブルφ44mmまで（メーカー公表値・要確認）" href={URLS.m18_44} />
-          <ProductItem name="Klauke 充電式油圧ケーブルカッター ES32L" spec="充電式油圧ケーブルカッター。切断能力・対応線種はメーカー仕様を確認" href={URLS.es32l} />
-          <ProductItem name="Klauke 充電式油圧カッター ESG25L" spec="最大φ25mm、銅・アルミ・ACSR・鉄線対応、約2.1kg、マキタ製18V使用（メーカー公表値・要確認）" href={URLS.esg25l} />
+          <ProductGrid items={HYDRAULIC_CUTTERS} />
 
           <h3 className="mt-8 mb-3 text-xl font-bold">ラチェット式ケーブルカッター｜手動で使える持ち出し工具</h3>
-          <ProductItem name="KNIPEX ラチェット式ケーブルカッター 9532100" spec="650〜860mmの伸縮ハンドル・ラチェット構造。銅・アルミケーブル向け（スチールワイヤー・ワイヤーロープは切断不可。対応材質・sqはメーカー仕様を確認）" href={URLS.knipex9532100} />
+          <ProductGrid items={RATCHET_CUTTERS} />
 
           <div className="my-6 overflow-x-auto">
             <table className="w-full border-collapse">
@@ -439,15 +621,14 @@ export default function Page() {
           />
           <h3 className="mt-8 mb-3 text-xl font-bold">レースウェイは専用カッターでバリを抑えて切断する</h3>
           <p className="mb-4">レースウェイやダクターは、バリを抑えた切断や穴あけに対応する専用カッターを使うのが基本です。</p>
-          <ProductItem name="CACTUS レースウェイカッターD30 EVRP40D30" spec="ダイス交換式。標準仕様としてD30ダイス＋パンチャーP11付き（メーカー公表値・要確認）" href={URLS.evrp40d30} />
-          <ProductItem name="CACTUS レースウェイカッター ダブルダイス付 EVR2DD" spec="複数サイズを扱う現場向けのダブルダイス付き。対応サイズはメーカー仕様を確認" href={URLS.evr2dd} />
+          <ProductGrid items={RACEWAY_TOOLS} />
           <h3 className="mt-8 mb-3 text-xl font-bold">ダブルダイス付きは複数サイズを扱う現場に便利</h3>
           <p className="mb-4">複数サイズのレースウェイ・ダクターを扱う現場では、ダブルダイス付きが段取りを減らせる場合があります。</p>
           <h3 className="mt-8 mb-3 text-xl font-bold">ケーブルラックには専用カッターを検討する</h3>
-          <ProductItem name="CACTUS ケーブルラックカッター RAC100" spec="ケーブルラック切断用の専用カッター。対応サイズ・本体工具との適合はメーカー仕様を確認" href={URLS.rac100} />
+          <ProductGrid items={RACK_TOOLS} />
           <h3 className="mt-8 mb-3 text-xl font-bold">パイプ・鋳鉄管はケーブルカッターではなく専用管カッターへ</h3>
           <p className="mb-4">管材はケーブルカッターでは切断しません。鋼管・鋳鉄管には専用の管カッターを使います。</p>
-          <ProductItem name="RIDGID 4枚刃ヒンジドパイプカッター 鋳鉄管用 466-CI（74685）" spec="2〜12インチの鋼管・厚肉鋼管・鋳鉄管用。4枚刃で360度回転が不要とされる管材用工具（ケーブル用ではありません／メーカー公表値・要確認）" href={URLS.ridgid74685} />
+          <ProductGrid items={PIPE_TOOLS} />
 
           <Caution>
             <p>
@@ -466,12 +647,9 @@ export default function Page() {
           <h3 className="mt-8 mb-3 text-xl font-bold">圧着工具は端子サイズ・sq・ダイスで選ぶ</h3>
           <p className="mb-4">扱う端子・ケーブルサイズと、対応する圧着範囲・ダイスで選びます。</p>
           <h3 className="mt-8 mb-3 text-xl font-bold">14〜250mm²なら250クラスを確認する</h3>
-          <ProductItem name="CACTUS 電動油圧式圧着工具 EV250HI" spec="AC100V電動油圧式。圧着範囲14〜250mm²（メーカー公表値・要確認）" href={URLS.ev250hi} />
-          <ProductItem name="CACTUS コードレス電動油圧式圧着工具 EV250DL" spec="18V/14.4V兼用コードレス。圧着範囲14〜250mm²（メーカー公表値・要確認）" href={URLS.ev250dl} />
-          <ProductItem name="Panasonic 充電圧着器 EZ46A4KB" spec="14.4V/18V両用デュアル。CV線250mm²まで圧着（メーカー公表値・要確認）" href={URLS.ez46a4} />
+          <ProductGrid items={CRIMPING_250} />
           <h3 className="mt-8 mb-3 text-xl font-bold">150〜325mm²なら325クラスを確認する</h3>
-          <ProductItem name="CACTUS 電動油圧式圧着工具 EV325HI" spec="AC100V電動油圧式。圧着範囲150〜325mm²（メーカー公表値・要確認）" href={URLS.ev325hi} />
-          <ProductItem name="CACTUS コードレス電動油圧式圧着工具 EV325DL" spec="コードレス電動油圧式。圧着範囲150〜325mm²（メーカー公表値・要確認）" href={URLS.ev325dl} />
+          <ProductGrid items={CRIMPING_325} />
           <h3 className="mt-8 mb-3 text-xl font-bold">コードレス式とAC100V式は現場条件で選ぶ</h3>
           <div className="my-6 overflow-x-auto">
             <table className="w-full border-collapse">
@@ -506,7 +684,7 @@ export default function Page() {
           <p className="mb-4">レースウェイ・ダクター・ケーブルラック用の専用カッターを用意します。</p>
           <h3 className="mt-8 mb-3 text-xl font-bold">工具ケース・持ち出しセット</h3>
           <p className="mb-4">持ち出し作業では、工具ケースやセット品があると管理しやすくなります。</p>
-          <ProductItem name="KNIPEX ツールケース 20点セット 002120" spec="電設工具の持ち出しに使えるツールケースセット。セット内容はメーカー仕様を確認" href={URLS.knipex002120} />
+          <ProductGrid items={TOOL_SETS} />
           <h3 className="mt-8 mb-3 text-xl font-bold">替刃・ダイス・バッテリー・充電器</h3>
           <p className="mb-4">本体だけでなく、替刃・ダイス・バッテリー・充電器などの消耗品・付属品も、運用に合わせて確認します。</p>
 

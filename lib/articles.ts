@@ -90,6 +90,21 @@ export const ARTICLES: Article[] = [
     path: "/articles/outdoor-worksite-portable-power",
   },
   {
+    slug: "commercial-insect-control-selection",
+    title:
+      "業務用殺虫器・捕虫器の選び方｜屋内・屋外・食品工場・店舗の虫対策に使う機器を比較",
+    shortTitle: "業務用殺虫器・捕虫器の選び方",
+    description:
+      "業務用殺虫器・捕虫器の選び方を、電撃式・粘着式・薬剤蒸散タイプ・噴霧器の違いから解説。食品工場、店舗、倉庫、屋外作業場、現場休憩所など設置場所別に、虫対策用品の選定ポイントと注意点を紹介します。",
+    category: "guide",
+    categoryLabel: "選び方ガイド",
+    thumbnail: "/images/articles/commercial-insect-control-devices-hero.jpg",
+    date: "2026-07-08",
+    readTime: "約15分",
+    available: true,
+    path: "/articles/commercial-insect-control-selection",
+  },
+  {
     slug: "work-light-selection",
     title:
       "作業用ライトの選び方｜ヘッドライト・懐中電灯・ワークランタン・防爆ライトの使い分け",

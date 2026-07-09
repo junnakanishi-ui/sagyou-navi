@@ -135,6 +135,21 @@ export const ARTICLES: Article[] = [
     path: "/articles/cable-cutter-selection",
   },
   {
+    slug: "solar-pv-tool-set-selection",
+    title:
+      "太陽光発電用工具セットの選び方｜MC4コネクタ施工・PVケーブル加工に必要なKNIPEX工具",
+    shortTitle: "太陽光発電用工具セットの選び方",
+    description:
+      "太陽光発電用工具セットの選び方を、MC4コネクタ施工とPVケーブル加工の工程から解説。KNIPEX 979101・979104V01・979101LEの違い、圧着ダイス・ロケーター・絶縁工具・ツールケース、法人での工具準備チェックリストまで紹介します。",
+    category: "guide",
+    categoryLabel: "選び方ガイド",
+    thumbnail: "/images/articles/solar-pv-tool-set-hero.jpg",
+    date: "2026-07-09",
+    readTime: "約15分",
+    available: true,
+    path: "/articles/solar-pv-tool-set-selection",
+  },
+  {
     slug: "magnetic-wall-diy",
     title:
       "マグネットがつく壁を作るには？スチールペーパー・粘着付きマグネットシート・掲示板シートの使い分け",

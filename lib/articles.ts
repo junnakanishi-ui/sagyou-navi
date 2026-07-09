@@ -180,6 +180,21 @@ export const ARTICLES: Article[] = [
     path: "/articles/bicycle-maintenance-tool-set-selection",
   },
   {
+    slug: "insulated-tool-set-selection",
+    title:
+      "絶縁工具セットの選び方｜電気工事・制御盤作業・EV整備で必要な工具一覧",
+    shortTitle: "絶縁工具セットの選び方",
+    description:
+      "絶縁工具セットの選び方を、電気工事・制御盤作業・設備保全・EV整備などの現場別に解説。1000V対応、IEC60900、ドライバー・ペンチ・レンチ・圧着工具の使い分け、購入前の確認ポイント、法人向け備品チェックリストまで整理します。",
+    category: "guide",
+    categoryLabel: "選び方ガイド",
+    thumbnail: "/images/articles/insulated-tool-set-electrical-work-hero.jpg",
+    date: "2026-07-09",
+    readTime: "約15分",
+    available: true,
+    path: "/articles/insulated-tool-set-selection",
+  },
+  {
     slug: "magnetic-wall-diy",
     title:
       "マグネットがつく壁を作るには？スチールペーパー・粘着付きマグネットシート・掲示板シートの使い分け",

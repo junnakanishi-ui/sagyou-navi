@@ -165,6 +165,21 @@ export const ARTICLES: Article[] = [
     path: "/articles/grease-lubricator-selection",
   },
   {
+    slug: "bicycle-maintenance-tool-set-selection",
+    title:
+      "自転車メンテナンス工具セットの選び方｜携帯用・トルク管理・チェーン整備・空気入れまで解説",
+    shortTitle: "自転車メンテナンス工具セットの選び方",
+    description:
+      "自転車メンテナンス工具セットの選び方を、携帯用工具、作業場用工具、トルクレンチ、チェーンカッター、タイヤレバー、電動空気入れ、ネジ外し工具まで用途別に解説。自転車店・レンタサイクル・施設管理の法人備品にも使える工具リストを紹介します。",
+    category: "guide",
+    categoryLabel: "選び方ガイド",
+    thumbnail: "/images/articles/bicycle-maintenance-tool-set-hero.jpg",
+    date: "2026-07-09",
+    readTime: "約15分",
+    available: true,
+    path: "/articles/bicycle-maintenance-tool-set-selection",
+  },
+  {
     slug: "magnetic-wall-diy",
     title:
       "マグネットがつく壁を作るには？スチールペーパー・粘着付きマグネットシート・掲示板シートの使い分け",

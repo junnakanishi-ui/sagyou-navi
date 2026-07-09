@@ -150,6 +150,21 @@ export const ARTICLES: Article[] = [
     path: "/articles/solar-pv-tool-set-selection",
   },
   {
+    slug: "grease-lubricator-selection",
+    title:
+      "グリースルブリケーターの選び方｜手動式・エア式・電動式と容量・ホース長さの確認ポイント",
+    shortTitle: "グリースルブリケーターの選び方",
+    description:
+      "グリースルブリケーターの選び方を、手動式・エア式・電動式・ポータブル式の違いから解説。8L/20L、16kg缶、グリースちょう度、吐出圧力、ホース長さ、設備保全・建機整備・車両整備での使い分けまで紹介します。",
+    category: "guide",
+    categoryLabel: "選び方ガイド",
+    thumbnail: "/images/articles/grease-lubricator-maintenance-tools-hero.jpg",
+    date: "2026-07-09",
+    readTime: "約15分",
+    available: true,
+    path: "/articles/grease-lubricator-selection",
+  },
+  {
     slug: "magnetic-wall-diy",
     title:
       "マグネットがつく壁を作るには？スチールペーパー・粘着付きマグネットシート・掲示板シートの使い分け",

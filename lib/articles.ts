@@ -195,6 +195,21 @@ export const ARTICLES: Article[] = [
     path: "/articles/insulated-tool-set-selection",
   },
   {
+    slug: "insulated-tool-basics",
+    title:
+      "絶縁工具とは？普通の工具との違い・1000V表示の意味・使うべき作業を解説",
+    shortTitle: "絶縁工具とは？",
+    description:
+      "絶縁工具とは何かを、普通の工具やゴムグリップ付き工具との違い、1000V表示・VDE・IEC 60900の意味、必要になりやすい作業、単品工具とセットの使い分け、使用時の注意点まで基礎からわかりやすく解説します。",
+    category: "guide",
+    categoryLabel: "選び方ガイド",
+    thumbnail: "/images/articles/insulated-tools-basic-guide-hero.jpg",
+    date: "2026-07-10",
+    readTime: "約15分",
+    available: true,
+    path: "/articles/insulated-tool-basics",
+  },
+  {
     slug: "mechanic-heatstroke-prevention",
     title:
       "整備士の熱中症対策｜自動車整備工場で暑さを防ぐ作業環境・服装・冷却用品・工具選び",

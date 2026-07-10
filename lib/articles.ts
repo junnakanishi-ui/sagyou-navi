@@ -195,6 +195,21 @@ export const ARTICLES: Article[] = [
     path: "/articles/insulated-tool-set-selection",
   },
   {
+    slug: "mechanic-heatstroke-prevention",
+    title:
+      "整備士の熱中症対策｜自動車整備工場で暑さを防ぐ作業環境・服装・冷却用品・工具選び",
+    shortTitle: "整備士の熱中症対策",
+    description:
+      "整備士の熱中症対策を、自動車整備工場ならではの暑さ・作業内容に合わせて解説。冷感インナー、冷却ベスト、工場扇、スポットクーラー、アイススラリー、応急セットに加え、夏場の作業時間短縮につながる車輌整備用工具・整備用工具セットの選び方も紹介します。",
+    category: "guide",
+    categoryLabel: "選び方ガイド",
+    thumbnail: "/images/articles/mechanic-heatstroke-prevention-hero.jpg",
+    date: "2026-07-10",
+    readTime: "約18分",
+    available: true,
+    path: "/articles/mechanic-heatstroke-prevention",
+  },
+  {
     slug: "magnetic-wall-diy",
     title:
       "マグネットがつく壁を作るには？スチールペーパー・粘着付きマグネットシート・掲示板シートの使い分け",

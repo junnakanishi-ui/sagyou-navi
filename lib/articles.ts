@@ -210,6 +210,21 @@ export const ARTICLES: Article[] = [
     path: "/articles/insulated-tool-basics",
   },
   {
+    slug: "insulated-tool-service-life",
+    title:
+      "絶縁工具に使用期限はある？交換時期・点検基準・買い替え判断をわかりやすく解説",
+    shortTitle: "絶縁工具の使用期限・交換時期",
+    description:
+      "絶縁工具の使用期限は一律の年数だけで判断せず、メーカー情報・社内規定・使用頻度・保管環境・傷やひび割れ・被覆剥がれ・表示消えなどの点検結果で交換を判断します。点検基準、管理台帳、単品交換とセット更新の使い分けまで解説します。",
+    category: "guide",
+    categoryLabel: "選び方ガイド",
+    thumbnail: "/images/articles/insulated-tools-expiration-inspection-hero.jpg",
+    date: "2026-07-10",
+    readTime: "約15分",
+    available: true,
+    path: "/articles/insulated-tool-service-life",
+  },
+  {
     slug: "mechanic-heatstroke-prevention",
     title:
       "整備士の熱中症対策｜自動車整備工場で暑さを防ぐ作業環境・服装・冷却用品・工具選び",

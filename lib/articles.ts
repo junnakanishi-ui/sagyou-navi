@@ -14,6 +14,22 @@ export type Article = {
 
 export const ARTICLES: Article[] = [
   {
+    slug: "chemical-protective-clothing-selection",
+    title:
+      "化学防護服の選び方｜薬品・洗浄・消毒作業で確認したい防護服・手袋・マスクの組み合わせ",
+    shortTitle: "化学防護服の選び方",
+    description:
+      "化学防護服の選び方を、薬品作業・洗浄作業・消毒作業・廃棄物処理など現場別に解説。防護服だけでなく化学防護手袋・防じんマスク・防毒マスク・保護具の組み合わせ、選定時の注意点、法人向けチェックリストまで整理します。",
+    category: "guide",
+    categoryLabel: "選び方ガイド",
+    thumbnail:
+      "/images/articles/chemical-protective-clothing-worksite-hero.jpg",
+    date: "2026-07-13",
+    readTime: "約15分",
+    available: true,
+    path: "/articles/chemical-protective-clothing-selection",
+  },
+  {
     slug: "worktable-antistatic-measures",
     title:
       "作業台の静電気対策に必要なもの｜静電防止剤・導電マット・リストストラップの選び方",

@@ -14,6 +14,21 @@ export type Article = {
 
 export const ARTICLES: Article[] = [
   {
+    slug: "wet-towel-heatstroke-worksite",
+    title:
+      "熱中症対策に濡れタオルは使える？現場での正しい使い方と冷却タオル・瞬間冷却グッズの選び方",
+    shortTitle: "熱中症対策と濡れタオルの選び方",
+    description:
+      "熱中症対策に濡れタオルは使えるのか、正しい使い方・冷やす場所・現場での注意点を解説。冷却タオル、瞬間冷却パック、ネッククーラー、冷却ジェル、製氷機など、工場・倉庫・建設現場・農作業で備えたい冷却用品も比較します。",
+    category: "guide",
+    categoryLabel: "選び方ガイド",
+    thumbnail: "/images/articles/wet-towel-heatstroke-worksite-hero.jpg",
+    date: "2026-07-13",
+    readTime: "約16分",
+    available: true,
+    path: "/articles/wet-towel-heatstroke-worksite",
+  },
+  {
     slug: "chemical-protective-clothing-selection",
     title:
       "化学防護服の選び方｜薬品・洗浄・消毒作業で確認したい防護服・手袋・マスクの組み合わせ",

@@ -14,6 +14,21 @@ export type Article = {
 
 export const ARTICLES: Article[] = [
   {
+    slug: "container-bag-selection",
+    title:
+      "コンテナバッグの選び方｜容量・耐荷重・排出口あり/なし・水切り・漏れ防止タイプの違いを解説",
+    shortTitle: "コンテナバッグの選び方",
+    description:
+      "コンテナバッグの選び方を、容量・耐荷重・丸型/角型・排出口あり/なし・水切り・漏れ防止・耐候性・内袋入り・自立型・全開排出の違いから解説。土砂・粉体・廃棄物・枝葉など内容物別の最適タイプ、法人向け発注前チェックリスト、フレコン・ハンドパレット等の関連商品まで整理します。",
+    category: "guide",
+    categoryLabel: "選び方ガイド",
+    thumbnail: "/images/articles/container-bag-selection-hero.jpg",
+    date: "2026-07-13",
+    readTime: "約12分",
+    available: true,
+    path: "/articles/container-bag-selection",
+  },
+  {
     slug: "wet-towel-heatstroke-worksite",
     title:
       "熱中症対策に濡れタオルは使える？現場での正しい使い方と冷却タオル・瞬間冷却グッズの選び方",

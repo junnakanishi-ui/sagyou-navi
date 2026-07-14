@@ -14,6 +14,21 @@ export type Article = {
 
 export const ARTICLES: Article[] = [
   {
+    slug: "grand-cart-box-trolley-selection",
+    title:
+      "ボックス付き台車の選び方｜蓋付き・保冷・静音・折りたたみタイプの違いを解説",
+    shortTitle: "ボックス付き台車の選び方",
+    description:
+      "ボックス付き台車の選び方を、蓋付き・蓋なし・保冷・静音・サイドハンドル・折りたたみタイプ別に解説。工場、倉庫、清掃、施設管理、食品、イベント現場での小物運搬・荷崩れ防止・保冷品運搬に向くグランカートの選び方を紹介します。",
+    category: "guide",
+    categoryLabel: "選び方ガイド",
+    thumbnail: "/images/articles/grand-cart-box-trolley-selection-hero.jpg",
+    date: "2026-07-14",
+    readTime: "約14分",
+    available: true,
+    path: "/articles/grand-cart-box-trolley-selection",
+  },
+  {
     slug: "digital-manifold-selection",
     title:
       "デジタルマニホールドの選び方｜エアコン修理・冷媒充填・真空引きで確認したい機能を解説",

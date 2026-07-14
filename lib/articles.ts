@@ -14,6 +14,21 @@ export type Article = {
 
 export const ARTICLES: Article[] = [
   {
+    slug: "long-distance-measuring-tools-selection",
+    title:
+      "長い距離を測る道具の選び方｜ウォーキングメジャー・巻尺の使い分け",
+    shortTitle: "長い距離を測る道具の選び方",
+    description:
+      "現場で長い距離を測る道具の選び方を解説。ウォーキングメジャー、ロードメジャー、デジタルカウントメジャー、30m・50m巻尺、セッティングメジャーの違いを、道路・駐車場・工場・倉庫など用途別に比較します。",
+    category: "guide",
+    categoryLabel: "選び方ガイド",
+    thumbnail: "/images/articles/long-distance-measuring-tools-hero.jpg",
+    date: "2026-07-14",
+    readTime: "約16分",
+    available: true,
+    path: "/articles/long-distance-measuring-tools-selection",
+  },
+  {
     slug: "grand-cart-box-trolley-selection",
     title:
       "ボックス付き台車の選び方｜蓋付き・保冷・静音・折りたたみタイプの違いを解説",

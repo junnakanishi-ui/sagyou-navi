@@ -14,6 +14,21 @@ export type Article = {
 
 export const ARTICLES: Article[] = [
   {
+    slug: "digital-manifold-selection",
+    title:
+      "デジタルマニホールドの選び方｜エアコン修理・冷媒充填・真空引きで確認したい機能を解説",
+    shortTitle: "デジタルマニホールドの選び方",
+    description:
+      "デジタルマニホールドの選び方を、エアコン修理・空調設備点検・冷媒充填・真空引きの作業別に解説。アナログマニホールドとの違い、testo 550s・557s・560i自動充填セットの使い分け、整備用工具・運搬台車・安全靴など関連用品も紹介します。",
+    category: "guide",
+    categoryLabel: "選び方ガイド",
+    thumbnail: "/images/articles/digital-manifold-hvac-service-hero.jpg",
+    date: "2026-07-14",
+    readTime: "約14分",
+    available: true,
+    path: "/articles/digital-manifold-selection",
+  },
+  {
     slug: "container-bag-selection",
     title:
       "コンテナバッグの選び方｜容量・耐荷重・排出口あり/なし・水切り・漏れ防止タイプの違いを解説",

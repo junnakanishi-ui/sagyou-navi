@@ -14,6 +14,22 @@ export type Article = {
 
 export const ARTICLES: Article[] = [
   {
+    slug: "welding-shade-glass-number-selection",
+    title:
+      "溶接の遮光ガラスは何番？#7〜#13の選び方と電流別の目安",
+    shortTitle: "溶接の遮光ガラスは何番？",
+    description:
+      "溶接の遮光ガラスは何番を使えばよいかを冒頭で即答。#7〜#13を溶接方法・電流別に比較し、遮光ガラスと素ガラスの違い、溶接面のタイプ、交換の目安、周辺作業者の遮光まで解説します。",
+    category: "guide",
+    categoryLabel: "選び方ガイド",
+    thumbnail:
+      "/images/articles/welding-shade-glass-number-selection-hero.jpg",
+    date: "2026-07-17",
+    readTime: "約18分",
+    available: true,
+    path: "/articles/welding-shade-glass-number-selection",
+  },
+  {
     slug: "long-distance-measuring-tools-selection",
     title:
       "長い距離を測る道具の選び方｜ウォーキングメジャー・巻尺の使い分け",

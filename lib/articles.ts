@@ -14,6 +14,22 @@ export type Article = {
 
 export const ARTICLES: Article[] = [
   {
+    slug: "anchor-tensile-tester-selection",
+    title:
+      "アンカー引張試験機の選び方｜簡易型・非破壊型・付着力試験機の違い",
+    shortTitle: "アンカー引張試験機の選び方",
+    description:
+      "アンカー引張試験機を、簡易型KT-6、非破壊型AT-10DⅡ、付着力用RTシリーズ、吊りボルト向けAPC-10Bに分けて比較。最大荷重、対象、治具、校正、誤発注防止まで解説します。",
+    category: "guide",
+    categoryLabel: "選び方ガイド",
+    thumbnail:
+      "/images/anchor-tensile-tester-selection/anchor-tensile-tester-selection-hero.jpg",
+    date: "2026-07-20",
+    readTime: "約25分",
+    available: true,
+    path: "/articles/anchor-tensile-tester-selection",
+  },
+  {
     slug: "socket-12kaku-6kaku-sashikomikaku",
     title:
       "12角ソケットと6角の違い｜なめやすい？差込角6.35・9.5・12.7・19mmの選び方",

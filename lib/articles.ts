@@ -14,6 +14,22 @@ export type Article = {
 
 export const ARTICLES: Article[] = [
   {
+    slug: "whiteboard-size-1200-1800-2400",
+    title:
+      "脚付きホワイトボードのサイズ選び｜1200・1800・2400mmの違い",
+    shortTitle: "脚付きホワイトボードのサイズ選び",
+    description:
+      "脚付きホワイトボードは1200・1800・2400mmのどれを選ぶかを冒頭で即答。人数だけでなく筆記量で選ぶ考え方、板面サイズと本体外寸の違い、搬入経路、ホーローとスチール、片面と両面、無地・暗線・月予定表までを実務フローで解説します。",
+    category: "guide",
+    categoryLabel: "選び方ガイド",
+    thumbnail:
+      "/images/articles/mobile-whiteboard-size-selection-hero.jpg",
+    date: "2026-07-20",
+    readTime: "約20分",
+    available: true,
+    path: "/articles/whiteboard-size-1200-1800-2400",
+  },
+  {
     slug: "hose-reel-20m-30m-50m-chigai",
     title:
       "ホースリール20m・30m・50mの違い｜業務用の長さ・内径・材質の選び方",

@@ -14,6 +14,21 @@ export type Article = {
 
 export const ARTICLES: Article[] = [
   {
+    slug: "drainage-pipe-leak-test-method",
+    title:
+      "排水管の漏れ試験とは？満水試験・空圧試験の違いと記録方法を解説",
+    shortTitle: "排水管の漏れ試験の方法",
+    description:
+      "排水管の漏れ試験について、満水試験と空圧試験の違い、現場条件に応じた選び方、試験前の準備、測定値・周囲温度・写真の記録方法を解説。排水管試験を自動計測・グラフ化できる試験器も紹介します。",
+    category: "howto",
+    categoryLabel: "設備・測定機器",
+    thumbnail: "/images/articles/drainage-pipe-leak-test-hero.jpg",
+    date: "2026-07-20",
+    readTime: "約14分",
+    available: true,
+    path: "/articles/drainage-pipe-leak-test-method",
+  },
+  {
     slug: "welding-shade-glass-number-selection",
     title:
       "溶接の遮光ガラスは何番？#7〜#13の選び方と電流別の目安",

@@ -14,6 +14,22 @@ export type Article = {
 
 export const ARTICLES: Article[] = [
   {
+    slug: "socket-12kaku-6kaku-sashikomikaku",
+    title:
+      "12角ソケットと6角の違い｜なめやすい？差込角6.35・9.5・12.7・19mmの選び方",
+    shortTitle: "12角ソケットと6角の違い",
+    description:
+      "12角ソケットと6角の違い、12角はなめやすいのかに冒頭で即答。差込角6.35・9.5・12.7・19.0mmの選び方、手動用とインパクト用の区別、12角ソケットセット、大型単品、防爆・非磁性、総合工具セットと収納までを判断フローで解説します。",
+    category: "compare",
+    categoryLabel: "比較・違い",
+    thumbnail:
+      "/images/articles/six-point-twelve-point-socket-selection-hero.jpg",
+    date: "2026-07-20",
+    readTime: "約20分",
+    available: true,
+    path: "/articles/socket-12kaku-6kaku-sashikomikaku",
+  },
+  {
     slug: "whiteboard-size-1200-1800-2400",
     title:
       "脚付きホワイトボードのサイズ選び｜1200・1800・2400mmの違い",

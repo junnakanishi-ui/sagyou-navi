@@ -14,6 +14,22 @@ export type Article = {
 
 export const ARTICLES: Article[] = [
   {
+    slug: "hose-reel-20m-30m-50m-chigai",
+    title:
+      "ホースリール20m・30m・50mの違い｜業務用の長さ・内径・材質の選び方",
+    shortTitle: "ホースリール20m・30m・50mの違い",
+    description:
+      "ホースリールは20m・30m・50mのどれを選ぶかを冒頭で即答。必要長さの測り方、ホース内径と水量、長さと水圧の関係、樹脂・金属・ステンレス、フルカバーとオープンドラム、ホース付きと本体のみ、手巻き・自動巻きまでを実務フローで解説します。",
+    category: "guide",
+    categoryLabel: "選び方ガイド",
+    thumbnail:
+      "/images/articles/industrial-hose-reel-length-selection-hero.jpg",
+    date: "2026-07-20",
+    readTime: "約18分",
+    available: true,
+    path: "/articles/hose-reel-20m-30m-50m-chigai",
+  },
+  {
     slug: "shujinki-bojin-mask-heiyou",
     title:
       "集塵機があれば防じんマスクはいらない？工場の粉じん対策と併用方法",

@@ -14,6 +14,22 @@ export type Article = {
 
 export const ARTICLES: Article[] = [
   {
+    slug: "shujinki-bojin-mask-heiyou",
+    title:
+      "集塵機があれば防じんマスクはいらない？工場の粉じん対策と併用方法",
+    shortTitle: "集塵機と防じんマスクの併用",
+    description:
+      "集塵機があれば防じんマスクは不要かを冒頭で即答。集塵機・局所排気・空気清浄機の違い、集塵機で取り切れない理由、DS2・RL3・PAPRの選び方、P-PAPRとG-PAPR、作業別集塵機、フィット・保管までを実務フローで解説します。",
+    category: "guide",
+    categoryLabel: "選び方ガイド",
+    thumbnail:
+      "/images/articles/dust-collector-respirator-combined-control-hero.jpg",
+    date: "2026-07-20",
+    readTime: "約20分",
+    available: true,
+    path: "/articles/shujinki-bojin-mask-heiyou",
+  },
+  {
     slug: "drainage-pipe-leak-test-method",
     title:
       "排水管の漏れ試験とは？満水試験・空圧試験の違いと記録方法を解説",

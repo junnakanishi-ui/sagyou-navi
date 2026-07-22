@@ -14,6 +14,22 @@ export type Article = {
 
 export const ARTICLES: Article[] = [
   {
+    slug: "portable-refrigerator-vs-cooler-box-worksite",
+    title:
+      "ポータブル冷蔵庫とクーラーボックスの違い｜現場・車載・長時間保冷の選び方",
+    shortTitle: "ポータブル冷蔵庫とクーラーボックスの違い",
+    description:
+      "ポータブル冷蔵庫とクーラーボックスの違いを、冷却方式・電源・時間・容量・運搬性で比較。現場やサービスカーでの選び方、エンゲル14〜40L、真空断熱・折りたたみクーラー、保冷剤運用まで解説します。",
+    category: "compare",
+    categoryLabel: "比較・違い",
+    thumbnail:
+      "/images/portable-refrigerator-vs-cooler-box-worksite/portable-refrigerator-vs-cooler-box-hero.jpg",
+    date: "2026-07-22",
+    readTime: "約30分",
+    available: true,
+    path: "/articles/portable-refrigerator-vs-cooler-box-worksite",
+  },
+  {
     slug: "air-blow-automation-chip-mist-control",
     title:
       "エアブロー作業を自動化するには？切粉・切削油の飛散防止と後付けユニットの選び方",

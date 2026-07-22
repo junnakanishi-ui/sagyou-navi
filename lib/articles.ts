@@ -14,6 +14,22 @@ export type Article = {
 
 export const ARTICLES: Article[] = [
   {
+    slug: "air-blow-automation-chip-mist-control",
+    title:
+      "エアブロー作業を自動化するには？切粉・切削油の飛散防止と後付けユニットの選び方",
+    shortTitle: "エアブロー自動化と飛散防止",
+    description:
+      "エアブロー作業をセンサーで自動化し、切粉・切削油の飛散と無駄な圧縮空気を抑える方法を解説。20J-AU・40J-AUの違い、YMS本体への適合、圧力・時間・ノズル設定、導入前チェックまでまとめます。",
+    category: "guide",
+    categoryLabel: "選び方ガイド",
+    thumbnail:
+      "/images/air-blow-automation-chip-mist-control/air-blow-automation-chip-mist-control-hero.jpg",
+    date: "2026-07-22",
+    readTime: "約30分",
+    available: true,
+    path: "/articles/air-blow-automation-chip-mist-control",
+  },
+  {
     slug: "explosion-proof-tools-selection",
     title:
       "防爆工具はどう選ぶ？材質・種類・用途と現場別の使い分け",

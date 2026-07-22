@@ -14,6 +14,22 @@ export type Article = {
 
 export const ARTICLES: Article[] = [
   {
+    slug: "explosion-proof-tools-selection",
+    title:
+      "防爆工具はどう選ぶ？材質・種類・用途と現場別の使い分け",
+    shortTitle: "防爆工具の選び方",
+    description:
+      "防爆工具を材質、使用場所、作業内容から選ぶ方法を解説。スパナ、メガネレンチ、モンキー、パイプレンチ、ハンマー、タガネ、ショベルなどを比較し、誤使用を防ぐ点検・管理までまとめます。",
+    category: "guide",
+    categoryLabel: "選び方ガイド",
+    thumbnail:
+      "/images/explosion-proof-tools-selection/explosion-proof-tools-selection-hero.jpg",
+    date: "2026-07-22",
+    readTime: "約30分",
+    available: true,
+    path: "/articles/explosion-proof-tools-selection",
+  },
+  {
     slug: "commercial-hand-soap-bulk-selection",
     title:
       "業務用ハンドソープを箱買いする前に｜18L・20L・薬用・油汚れ用の選び方",

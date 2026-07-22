@@ -540,6 +540,13 @@ export default function Page() {
           <h2 className="mt-12 mb-4 border-l-4 border-gray-900 pl-3 text-2xl font-bold">
             切断能力の見方｜sq・φ・線種を間違えない
           </h2>
+          <p className="mb-4">
+            sq・φ・線種別の切断能力表の詳しい読み方、銅線専用と鋼線不可の区別、誤発注防止のチェックポイントは、
+            <Link href="/articles/cable-cutter-cutting-capacity" className="mx-1 font-bold underline">
+              ケーブルカッターの切断能力の見方
+            </Link>
+            で解説しています。
+          </p>
           <h3 className="mt-8 mb-3 text-xl font-bold">sqは導体断面積、φは外径・口径の確認に使う</h3>
           <p className="mb-4">sqは導体の断面積、φは口径・外径の目安です。両方を確認しないと、断面積は合っても外径が大きく工具に入らないことがあります。</p>
           <h3 className="mt-8 mb-3 text-xl font-bold">CV線・CVT線・IV線・VVR線で対応能力が変わる</h3>

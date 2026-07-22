@@ -14,6 +14,22 @@ export type Article = {
 
 export const ARTICLES: Article[] = [
   {
+    slug: "cable-cutter-cutting-capacity",
+    title:
+      "ケーブルカッターの切断能力の見方｜sq・φ・銅線専用・CVT対応を確認",
+    shortTitle: "ケーブルカッターの切断能力の見方",
+    description:
+      "ケーブルカッターの切断能力を、sq・仕上外径φ・線種・導体材質・単芯／多芯から読み解きます。銅線専用、ラチェット式、充電式、1000V絶縁、通信ケーブル用の違いと誤発注防止を解説。",
+    category: "guide",
+    categoryLabel: "選び方ガイド",
+    thumbnail:
+      "/images/cable-cutter-cutting-capacity/cable-cutter-capacity-guide-hero.jpg",
+    date: "2026-07-22",
+    readTime: "約25分",
+    available: true,
+    path: "/articles/cable-cutter-cutting-capacity",
+  },
+  {
     slug: "anchor-tensile-tester-selection",
     title:
       "アンカー引張試験機の選び方｜簡易型・非破壊型・付着力試験機の違い",

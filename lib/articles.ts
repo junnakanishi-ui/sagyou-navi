@@ -14,6 +14,22 @@ export type Article = {
 
 export const ARTICLES: Article[] = [
   {
+    slug: "commercial-hand-soap-bulk-selection",
+    title:
+      "業務用ハンドソープを箱買いする前に｜18L・20L・薬用・油汚れ用の選び方",
+    shortTitle: "業務用ハンドソープの箱買い選び方",
+    description:
+      "業務用ハンドソープを工場・法人で箱買いする際の選び方を解説。18L・20L・17kg BIB、泡・液体・スクラブ・固形、油・インキ・塗料汚れの違い、本体と詰替、使用量計算まで比較します。",
+    category: "guide",
+    categoryLabel: "選び方ガイド",
+    thumbnail:
+      "/images/commercial-hand-soap-bulk-selection/commercial-hand-soap-bulk-hero.jpg",
+    date: "2026-07-22",
+    readTime: "約25分",
+    available: true,
+    path: "/articles/commercial-hand-soap-bulk-selection",
+  },
+  {
     slug: "pipe-welding-rotator-weld-roller-selection",
     title:
       "パイプ溶接の回転治具の選び方｜ウェルドローラーとポジショナーの違い",

@@ -14,6 +14,22 @@ export type Article = {
 
 export const ARTICLES: Article[] = [
   {
+    slug: "pipe-welding-rotator-weld-roller-selection",
+    title:
+      "パイプ溶接の回転治具の選び方｜ウェルドローラーとポジショナーの違い",
+    shortTitle: "パイプ溶接の回転治具の選び方",
+    description:
+      "パイプの円周溶接で使う回転治具を、ウェルドローラー・ポジショナー・ターニングロールに分けて解説。管径・重量・周速・アース・長尺支持の確認手順と、育良ISK-WR125Eが向く現場、誤発注を防ぐチェック項目を紹介します。",
+    category: "guide",
+    categoryLabel: "選び方ガイド",
+    thumbnail:
+      "/images/pipe-welding-rotator-weld-roller-selection/pipe-welding-rotator-selection-hero.jpg",
+    date: "2026-07-22",
+    readTime: "約25分",
+    available: true,
+    path: "/articles/pipe-welding-rotator-weld-roller-selection",
+  },
+  {
     slug: "cable-cutter-cutting-capacity",
     title:
       "ケーブルカッターの切断能力の見方｜sq・φ・銅線専用・CVT対応を確認",

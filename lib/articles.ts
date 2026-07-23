@@ -14,6 +14,21 @@ export type Article = {
 
 export const ARTICLES: Article[] = [
   {
+    slug: "electric-wire-upper-selection-guide",
+    title:
+      "電動ワイヤーアッパーの選び方｜UE40CWを主軸に他リフトとの違いも解説【2026年版】",
+    shortTitle: "電動ワイヤーアッパーの選び方",
+    description:
+      "電動ワイヤーアッパー UE40CW を主役に、用途、選び方、ハンドリフター・コゾウリフター・テーブルリフトとの違い、関連商品まで分かりやすく解説。",
+    category: "guide",
+    categoryLabel: "選び方ガイド",
+    thumbnail: "/products/290230.jpg",
+    date: "2026-07-23",
+    readTime: "約25分",
+    available: true,
+    path: "/articles/electric-wire-upper-selection-guide",
+  },
+  {
     slug: "factory-breakroom-locker-room-odor-control",
     title:
       "工場の休憩室・更衣室・トイレの臭い対策｜汗・靴・衣類・便槽を原因別に改善",

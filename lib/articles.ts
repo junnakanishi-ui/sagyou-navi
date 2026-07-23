@@ -14,6 +14,22 @@ export type Article = {
 
 export const ARTICLES: Article[] = [
   {
+    slug: "factory-breakroom-locker-room-odor-control",
+    title:
+      "工場の休憩室・更衣室・トイレの臭い対策｜汗・靴・衣類・便槽を原因別に改善",
+    shortTitle: "工場の休憩室・更衣室・トイレの臭い対策",
+    description:
+      "工場の休憩室・更衣室・ロッカー・トイレの臭い対策を、汗、作業着、安全靴、飲食物、便槽、排水、空気のこもり別に解説。換気・乾燥・清掃の手順、脱臭機・消臭剤・気化式送風機・使い捨て保護服19商品を比較します。",
+    category: "guide",
+    categoryLabel: "選び方ガイド",
+    thumbnail:
+      "/images/factory-breakroom-locker-room-odor-control/factory-staff-space-odor-control-hero.jpg",
+    date: "2026-07-23",
+    readTime: "約30分",
+    available: true,
+    path: "/articles/factory-breakroom-locker-room-odor-control",
+  },
+  {
     slug: "magnetic-kitchen-panel-size-selection",
     title:
       "マグネットがつくキッチンパネルの選び方｜ホーロー・マグピタボードの違いとサイズ表",

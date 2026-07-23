@@ -14,6 +14,22 @@ export type Article = {
 
 export const ARTICLES: Article[] = [
   {
+    slug: "100v-commercial-pressure-washer-selection",
+    title:
+      "業務用高圧洗浄機は100Vで足りる？小型機の選び方と50Hz・60Hz・自吸の違い",
+    shortTitle: "100V業務用高圧洗浄機の選び方",
+    description:
+      "工場・車両・ビルメン向け100V業務用高圧洗浄機を比較。50Hz・60Hzの誤発注防止、自吸、水量、圧力、連続時間、排水、KARCHER HD 4/8 ClassicとTRUSCO HPWMの違いを解説します。",
+    category: "guide",
+    categoryLabel: "選び方ガイド",
+    thumbnail:
+      "/images/100v-commercial-pressure-washer-selection/commercial-pressure-washer-factory-hero.jpg",
+    date: "2026-07-23",
+    readTime: "約30分",
+    available: true,
+    path: "/articles/100v-commercial-pressure-washer-selection",
+  },
+  {
     slug: "hardened-weed-control-sand-bags-installation",
     title:
       "固まる防草砂は何袋必要？厚さ・施工方法・ひび割れ対策【工事現場・駐車場】",

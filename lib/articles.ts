@@ -14,6 +14,22 @@ export type Article = {
 
 export const ARTICLES: Article[] = [
   {
+    slug: "hardened-weed-control-sand-bags-installation",
+    title:
+      "固まる防草砂は何袋必要？厚さ・施工方法・ひび割れ対策【工事現場・駐車場】",
+    shortTitle: "固まる防草砂の必要袋数と施工方法",
+    description:
+      "固まる防草砂は1㎡に何袋必要かを商品別に計算。IRIS C15-BR 15kg、10Lイエロー・オレンジの違い、厚さ、施工方法、駐車場、ひび割れ、排水、工事現場周辺での使い方を解説します。",
+    category: "howto",
+    categoryLabel: "使い方・施工",
+    thumbnail:
+      "/images/hardened-weed-control-sand-bags-installation/hardened-weed-control-sand-hero.jpg",
+    date: "2026-07-23",
+    readTime: "約25分",
+    available: true,
+    path: "/articles/hardened-weed-control-sand-bags-installation",
+  },
+  {
     slug: "electric-wire-upper-selection-guide",
     title:
       "電動ワイヤーアッパーの選び方｜UE40CWを主軸に他リフトとの違いも解説【2026年版】",

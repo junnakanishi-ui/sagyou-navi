@@ -610,6 +610,40 @@ function ProductCard({ product }: { product: Product }) {
   );
 }
 
+function ProductTableCell({ product }: { product: Product }) {
+  const link = product.links[0];
+  return (
+    <a
+      href={buildUrl(link.url, UTM)}
+      target="_blank"
+      rel="nofollow sponsored"
+      className="group flex min-w-[16rem] items-start gap-3 rounded-lg p-1 transition hover:bg-sky-50"
+    >
+      <span className="relative h-20 w-20 shrink-0 overflow-hidden rounded-lg border border-sky-200 bg-white">
+        <Image
+          src={product.img}
+          alt={`${product.short}の商品画像`}
+          fill
+          sizes="80px"
+          className="object-contain p-1.5 transition group-hover:scale-105"
+        />
+      </span>
+      <span className="min-w-0 space-y-1">
+        <span className="block text-sm font-bold leading-snug text-gray-900 underline decoration-2 underline-offset-4 group-hover:text-sky-700">
+          {product.short}
+        </span>
+        <span className="block text-xs font-bold text-gray-500">
+          商品コード：{product.code}
+        </span>
+        <span className="block text-xs leading-5 text-gray-500">{product.formal}</span>
+        <span className="block text-xs font-bold text-sky-700 group-hover:underline">
+          {link.label} →
+        </span>
+      </span>
+    </a>
+  );
+}
+
 function TableWrap({ children }: { children: ReactNode }) {
   return <div className="my-5 overflow-x-auto rounded-xl border border-gray-200">{children}</div>;
 }
@@ -731,17 +765,28 @@ export default function Page() {
           <h2 className="mb-4 mt-10 border-l-4 border-sky-500 pl-3 text-xl font-bold text-gray-900">電動ワイヤーアッパー周辺の関連商品一覧</h2>
           <p className="leading-8 text-gray-700">メイン訴求は UE40CW ですが、比較検討層の離脱を減らすため、関連リフトも一覧で整理しています。商品名検索にも対応できるよう、正式名称をそのまま掲載しています。</p>
           <TableWrap>
-            <table className="w-full border-collapse"><thead><tr><Th>カテゴリ</Th><Th>商品名</Th><Th>用途</Th><Th>主な仕様</Th><Th>商品リンク</Th></tr></thead><tbody>
-            {products.map((product) => (
-              <tr key={product.code}>
-                <Td>{product.category}</Td>
-                <Td>{product.formal}</Td>
-                <Td>{product.use}</Td>
-                <Td>{product.spec}</Td>
-                <Td><a href={buildUrl(product.links[0].url, UTM)} target="_blank" rel="nofollow sponsored" className="font-bold text-gray-900 underline underline-offset-4 hover:text-sky-700">{product.links[0].label}</a></Td>
-              </tr>
-            ))}
-            </tbody></table>
+            <table className="w-full border-collapse">
+              <thead>
+                <tr>
+                  <Th>カテゴリ</Th>
+                  <Th>商品</Th>
+                  <Th>用途</Th>
+                  <Th>主な仕様</Th>
+                </tr>
+              </thead>
+              <tbody>
+                {products.map((product) => (
+                  <tr key={product.code}>
+                    <Td>{product.category}</Td>
+                    <Td>
+                      <ProductTableCell product={product} />
+                    </Td>
+                    <Td>{product.use}</Td>
+                    <Td>{product.spec}</Td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
           </TableWrap>
         </section>
 

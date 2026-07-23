@@ -14,6 +14,22 @@ export type Article = {
 
 export const ARTICLES: Article[] = [
   {
+    slug: "magnetic-kitchen-panel-size-selection",
+    title:
+      "マグネットがつくキッチンパネルの選び方｜ホーロー・マグピタボードの違いとサイズ表",
+    shortTitle: "マグネットがつくキッチンパネルの選び方",
+    description:
+      "マグネットがつくキッチン壁材をJFEホーローキッチンパネルとマグピタボードで比較。3×6・3×8・4×6・4×8の寸法、色、1枚・2枚の違い、必要枚数、施工・搬入の注意点を解説します。",
+    category: "guide",
+    categoryLabel: "選び方ガイド",
+    thumbnail:
+      "/images/magnetic-kitchen-panel-size-selection/magnetic-kitchen-panel-hero.jpg",
+    date: "2026-07-23",
+    readTime: "約30分",
+    available: true,
+    path: "/articles/magnetic-kitchen-panel-size-selection",
+  },
+  {
     slug: "portable-refrigerator-vs-cooler-box-worksite",
     title:
       "ポータブル冷蔵庫とクーラーボックスの違い｜現場・車載・長時間保冷の選び方",

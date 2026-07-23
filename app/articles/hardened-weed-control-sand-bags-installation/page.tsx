@@ -386,71 +386,168 @@ export const metadata: Metadata = {
   openGraph:{type:"article",url:ARTICLE_URL,title:"固まる防草砂は何袋必要？厚さ・施工方法・ひび割れ対策",description:"商品別必要袋数と施工失敗を、リンク付き比較表で確認できます。",images:[{url:`/images/${SLUG}/hardened-weed-control-sand-hero.jpg`,width:1200,height:675,alt:"固まる防草砂を施設外周へ施工するイメージ"}]}
 };
 
-function TableWrap({children}:{children:ReactNode}) { return <div className="my-5 overflow-x-auto rounded-xl border border-gray-200">{children}</div>; }
-function Th({children}:{children:ReactNode}) { return <th className="whitespace-nowrap border-b border-gray-300 bg-gray-100 px-4 py-3 text-left text-sm font-bold text-gray-900">{children}</th>; }
-function Td({children}:{children:ReactNode}) { return <td className="min-w-32 border-b border-gray-200 px-4 py-3 align-top text-sm leading-7 text-gray-700">{children}</td>; }
+function TableWrap({children}:{children:ReactNode}) { return <div className="my-5 overflow-x-auto rounded-xl border border-gray-300">{children}</div>; }
+function Th({children}:{children:ReactNode}) { return <th className="whitespace-nowrap border-b border-gray-400 bg-gray-100 px-4 py-3.5 text-left text-base font-bold text-gray-900">{children}</th>; }
+function Td({children}:{children:ReactNode}) { return <td className="min-w-32 border-b border-gray-200 px-4 py-3.5 align-top text-[15px] leading-7 text-gray-900">{children}</td>; }
 function ShopLink({url,label}:{url:string;label:string}) { return <a href={buildUrl(url,UTM)} target="_blank" rel="nofollow sponsored" className="inline-flex min-h-11 items-center justify-center rounded-md bg-gray-900 px-4 py-3 text-center text-sm font-bold text-white hover:bg-gray-700">{label}</a>; }
+function Mark({children}:{children:ReactNode}) { return <mark className="rounded-sm bg-amber-200 px-0.5 font-bold text-gray-900">{children}</mark>; }
+function SectionTitle({children, id}:{children:ReactNode; id?: string}) {
+  return <h2 id={id} className="mb-5 mt-12 border-l-4 border-gray-900 pl-3 text-2xl font-black leading-snug text-gray-900 sm:text-3xl">{children}</h2>;
+}
+function Body({children, className=""}:{children:ReactNode; className?: string}) {
+  return <p className={`leading-8 text-gray-900 ${className}`.trim()}>{children}</p>;
+}
 function ProductCard({product}:{product:Product}) {
-  return <article className="overflow-hidden rounded-2xl border border-gray-200 bg-white shadow-sm">
+  return <article className="overflow-hidden rounded-2xl border border-gray-300 bg-white shadow-sm">
     <div className="relative aspect-[4/3] bg-gray-50"><Image src={product.img} alt={`${product.short}の商品画像`} fill sizes="(max-width:768px) 100vw, 380px" className="object-contain p-4" /></div>
-    <div className="space-y-3 p-5"><span className="inline-flex rounded-full bg-gray-100 px-3 py-1 text-xs font-bold text-gray-700">{product.category}</span><h3 className="text-lg font-bold leading-snug text-gray-900">{product.short}</h3>
-      <dl className="grid grid-cols-[5.5rem_1fr] gap-x-3 gap-y-2 text-sm"><dt className="font-bold text-gray-600">容量</dt><dd>{product.size}</dd><dt className="font-bold text-gray-600">色</dt><dd>{product.color}</dd><dt className="font-bold text-gray-600">固化目安</dt><dd>{product.cure}</dd><dt className="font-bold text-gray-600">必要量</dt><dd>{product.coverage}</dd><dt className="font-bold text-gray-600">用途</dt><dd>{product.use}</dd></dl>
-      <p className="rounded-lg bg-gray-50 p-3 text-xs leading-6 text-gray-700"><strong>購入・施工前確認：</strong>{product.check}</p><ShopLink url={product.url} label={product.label} />
+    <div className="space-y-3 p-5"><span className="inline-flex rounded-full bg-amber-100 px-3 py-1 text-xs font-bold text-gray-900">{product.category}</span><h3 className="text-xl font-black leading-snug text-gray-900">{product.short}</h3>
+      <dl className="grid grid-cols-[5.5rem_1fr] gap-x-3 gap-y-2 text-[15px] text-gray-900"><dt className="font-bold text-gray-900">容量</dt><dd>{product.size}</dd><dt className="font-bold text-gray-900">色</dt><dd>{product.color}</dd><dt className="font-bold text-gray-900">固化目安</dt><dd><strong>{product.cure}</strong></dd><dt className="font-bold text-gray-900">必要量</dt><dd><Mark>{product.coverage}</Mark></dd><dt className="font-bold text-gray-900">用途</dt><dd>{product.use}</dd></dl>
+      <p className="rounded-lg border border-amber-200 bg-amber-50 p-3 text-sm leading-6 text-gray-900"><strong>購入・施工前確認：</strong>{product.check}</p><ShopLink url={product.url} label={product.label} />
     </div>
   </article>;
 }
 function RelatedCard({product}:{product:Related}) {
- return <article className="overflow-hidden rounded-xl border border-gray-200 bg-white"><div className="relative aspect-[4/3] bg-gray-50"><Image src={product.img} alt={`${product.short}の商品画像`} fill className="object-contain p-4" /></div><div className="space-y-3 p-4"><span className="rounded-full bg-gray-100 px-3 py-1 text-xs font-bold">{product.category}</span><h3 className="font-bold text-gray-900">{product.short}</h3><p className="text-sm leading-7 text-gray-700">{product.use}</p><p className="text-xs leading-6 text-gray-600">{product.check}</p><div className="grid gap-2">{product.links.map(link=><ShopLink key={link.url} url={link.url} label={link.label} />)}</div></div></article>
+ return <article className="overflow-hidden rounded-xl border border-gray-300 bg-white"><div className="relative aspect-[4/3] bg-gray-50"><Image src={product.img} alt={`${product.short}の商品画像`} fill className="object-contain p-4" /></div><div className="space-y-3 p-4"><span className="rounded-full bg-amber-100 px-3 py-1 text-xs font-bold text-gray-900">{product.category}</span><h3 className="text-lg font-black text-gray-900">{product.short}</h3><p className="text-[15px] leading-7 text-gray-900">{product.use}</p><p className="rounded-lg border border-amber-200 bg-amber-50 p-3 text-sm leading-6 text-gray-900"><strong>確認：</strong>{product.check}</p><div className="grid gap-2">{product.links.map(link=><ShopLink key={link.url} url={link.url} label={link.label} />)}</div></div></article>
 }
-function ArticleImage({file,alt}:{file:string;alt:string}) { return <figure className="my-7 overflow-hidden rounded-2xl border border-gray-200"><Image src={`/images/${SLUG}/${file}`} alt={alt} width={1200} height={675} className="h-auto w-full" /></figure>; }
+function ArticleImage({file,alt}:{file:string;alt:string}) { return <figure className="my-7 overflow-hidden rounded-2xl border border-gray-300"><Image src={`/images/${SLUG}/${file}`} alt={alt} width={1200} height={675} className="h-auto w-full" /></figure>; }
 
 export default function Page() {
   const main=products[0];
-  return <><SiteHeader /><main className="mx-auto max-w-4xl px-4 py-8 sm:px-6">
+  return <><SiteHeader /><main className="mx-auto max-w-4xl px-4 py-8 text-gray-900 sm:px-6">
     <script type="application/ld+json" dangerouslySetInnerHTML={{__html:JSON.stringify(articleSchema)}} />
     <script type="application/ld+json" dangerouslySetInnerHTML={{__html:JSON.stringify(breadcrumbSchema)}} />
-    <nav aria-label="パンくず" className="mb-5 text-sm text-gray-600"><ol className="flex flex-wrap gap-2"><li><Link href="/" className="underline underline-offset-4">作業用品ナビ</Link></li><li>/</li><li><Link href="/articles" className="underline underline-offset-4">記事一覧</Link></li><li>/</li><li aria-current="page">固まる防草砂</li></ol></nav>
-    <header><p className="text-sm font-bold tracking-wide text-gray-600">必要袋数・厚さ・施工・駐車場・工事現場周辺</p><h1 className="mt-3 text-3xl font-black leading-tight text-gray-900 sm:text-4xl">固まる防草砂は何袋必要？<span className="mt-2 block text-xl font-bold sm:text-2xl">厚さ・施工方法・ひび割れ対策【工事現場・駐車場】</span></h1><p className="mt-4 text-sm text-gray-600">公開日・最終更新日：2026年7月23日 ｜ 作業用品ナビ編集部</p></header>
+    <nav aria-label="パンくず" className="mb-5 text-sm text-gray-800"><ol className="flex flex-wrap gap-2"><li><Link href="/" className="font-bold underline underline-offset-4">作業用品ナビ</Link></li><li>/</li><li><Link href="/articles" className="font-bold underline underline-offset-4">記事一覧</Link></li><li>/</li><li aria-current="page" className="font-bold">固まる防草砂</li></ol></nav>
+    <header>
+      <p className="text-sm font-bold tracking-wide text-gray-900">必要袋数・厚さ・施工・駐車場・工事現場周辺</p>
+      <h1 className="mt-3 text-4xl font-black leading-tight text-gray-900 sm:text-5xl">固まる防草砂は何袋必要？<span className="mt-3 block text-2xl font-black sm:text-3xl">厚さ・施工方法・ひび割れ対策【工事現場・駐車場】</span></h1>
+      <p className="mt-4 text-sm font-medium text-gray-800">公開日・最終更新日：2026年7月23日 ｜ 作業用品ナビ編集部</p>
+    </header>
 
     <section className="mt-7 grid gap-6 lg:grid-cols-[1.05fr_0.95fr]">
-      <div className="space-y-4"><div className="relative aspect-[4/3] overflow-hidden rounded-2xl border border-gray-200 bg-gray-50"><Image src={main.img} alt="IRIS超固まる防草砂15kg C15-BRの商品画像" fill priority className="object-contain p-4" /></div><div className="grid gap-4 sm:grid-cols-2">{main.detailImgs.map((src,index)=><div key={src} className="relative aspect-[4/3] overflow-hidden rounded-xl border border-gray-200 bg-gray-50"><Image src={src} alt={`超固まる防草砂15kgの商品説明画像${index+1}`} fill className="object-contain p-3" /></div>)}</div></div>
-      <div className="rounded-2xl border-2 border-gray-900 bg-gray-50 p-5"><p className="text-sm font-bold text-gray-600">先に結論</p><div className="mt-2 space-y-3 leading-8 text-gray-800"><p><strong>C15-BRは厚さ5cmで1㎡あたり約5袋、10Lのオレンジ・イエローは1㎡あたり約3～4袋が目安です。</strong></p><p>10㎡ならC15-BRで約50袋となるため、広い資材置き場では防草シート＋砕石や舗装工事も比較してください。</p><p>商品は「車両が通るか」「歩行部か」「必要な色」「固化まで待てる時間」で選びます。</p></div><div className="mt-5 grid gap-3"><ShopLink url={main.url} label="超固まる防草砂15kgを見る" /><a href="#product-compare" className="inline-flex min-h-11 items-center justify-center rounded-md border-2 border-gray-900 bg-white px-4 py-3 text-center text-sm font-bold text-gray-900">3商品を比較する</a></div></div>
+      <div className="space-y-4"><div className="relative aspect-[4/3] overflow-hidden rounded-2xl border border-gray-300 bg-gray-50"><Image src={main.img} alt="IRIS超固まる防草砂15kg C15-BRの商品画像" fill priority className="object-contain p-4" /></div><div className="grid gap-4 sm:grid-cols-2">{main.detailImgs.map((src,index)=><div key={src} className="relative aspect-[4/3] overflow-hidden rounded-xl border border-gray-300 bg-gray-50"><Image src={src} alt={`超固まる防草砂15kgの商品説明画像${index+1}`} fill className="object-contain p-3" /></div>)}</div></div>
+      <div className="rounded-2xl border-2 border-gray-900 bg-amber-50 p-5">
+        <p className="text-base font-black text-gray-900">先に結論</p>
+        <div className="mt-2 space-y-3 leading-8 text-gray-900">
+          <p><Mark>C15-BRは厚さ5cmで1㎡あたり約5袋</Mark>、<Mark>10Lのオレンジ・イエローは1㎡あたり約3～4袋</Mark>が目安です。</p>
+          <p><strong>10㎡ならC15-BRで約50袋</strong>となるため、広い資材置き場では<strong>防草シート＋砕石</strong>や<strong>舗装工事</strong>も比較してください。</p>
+          <p>商品は「<strong>車両が通るか</strong>」「<strong>歩行部か</strong>」「必要な色」「固化まで待てる時間」で選びます。</p>
+        </div>
+        <div className="mt-5 grid gap-3"><ShopLink url={main.url} label="超固まる防草砂15kgを見る" /><a href="#product-compare" className="inline-flex min-h-11 items-center justify-center rounded-md border-2 border-gray-900 bg-white px-4 py-3 text-center text-sm font-bold text-gray-900">3商品を比較する</a></div>
+      </div>
     </section>
 
-    <p className="mt-7 text-lg leading-9 text-gray-800">施設外周、犬走り、駐車場、工事現場の仮設事務所周辺では、草刈りを繰り返すよりも地表を固めて維持管理を減らしたい場面があります。ただし、固まる防草砂は薄く撒くだけの商品ではありません。下地処理、厚さ、散水、養生、排水を誤ると、固まらない・ひび割れる・沈下する原因になります。</p>
+    <Body className="mt-7 text-lg">施設外周、犬走り、<strong>駐車場</strong>、工事現場の仮設事務所周辺では、草刈りを繰り返すよりも地表を固めて維持管理を減らしたい場面があります。ただし、固まる防草砂は薄く撒くだけの商品ではありません。<Mark>下地処理、厚さ、散水、養生、排水</Mark>を誤ると、固まらない・ひび割れる・沈下する原因になります。</Body>
 
-    <nav className="my-8 rounded-xl border border-gray-200 bg-gray-50 p-5"><p className="font-bold text-gray-900">この記事の判断順</p><ol className="mt-3 grid gap-2 text-sm leading-7 sm:grid-cols-2"><li><a href="#bags" className="underline underline-offset-4">必要袋数を計算</a></li><li><a href="#product-compare" className="underline underline-offset-4">3商品を比較</a></li><li><a href="#suitable" className="underline underline-offset-4">向く場所・向かない場所</a></li><li><a href="#steps" className="underline underline-offset-4">施工手順</a></li><li><a href="#cracks" className="underline underline-offset-4">ひび割れ対策</a></li><li><a href="#related" className="underline underline-offset-4">関連現場用品</a></li><li><a href="#mistakes" className="underline underline-offset-4">失敗例</a></li><li><a href="#faq" className="underline underline-offset-4">FAQ</a></li></ol></nav>
+    <nav className="my-8 rounded-xl border border-gray-300 bg-white p-5">
+      <p className="text-lg font-black text-gray-900">この記事の判断順</p>
+      <ol className="mt-3 grid gap-2 text-[15px] font-medium leading-7 text-gray-900 sm:grid-cols-2">
+        <li><a href="#bags" className="font-bold underline underline-offset-4">必要袋数を計算</a></li>
+        <li><a href="#product-compare" className="font-bold underline underline-offset-4">3商品を比較</a></li>
+        <li><a href="#suitable" className="font-bold underline underline-offset-4">向く場所・向かない場所</a></li>
+        <li><a href="#steps" className="font-bold underline underline-offset-4">施工手順</a></li>
+        <li><a href="#cracks" className="font-bold underline underline-offset-4">ひび割れ対策</a></li>
+        <li><a href="#related" className="font-bold underline underline-offset-4">関連現場用品</a></li>
+        <li><a href="#mistakes" className="font-bold underline underline-offset-4">失敗例</a></li>
+        <li><a href="#faq" className="font-bold underline underline-offset-4">FAQ</a></li>
+      </ol>
+    </nav>
 
-    <section id="bags"><h2 className="mb-4 mt-10 border-l-4 border-gray-900 pl-3 text-xl font-bold text-gray-900">固まる防草砂は何袋必要？面積別の早見表</h2><p className="leading-8 text-gray-700">必要袋数は、施工面積×メーカー目安で計算します。凹凸、端部、こぼれを考え、最終発注では5～10％程度の予備を見込むのが実務的です。</p>
-      <div className="my-5 rounded-xl bg-gray-100 p-5"><p className="font-bold text-gray-900">必要袋数 ＝ 施工面積（㎡）× 1㎡あたりの袋数</p><p className="mt-2 text-sm leading-7 text-gray-700">面積は「幅（m）×長さ（m）」で算出。排水桝や既存舗装を除外しつつ、端数は切り上げます。</p></div>
-      <TableWrap><table className="w-full border-collapse"><thead><tr><Th>施工面積</Th><Th>C15-BR 15kg<br/>5袋/㎡</Th><Th>10Lタイプ<br/>3～4袋/㎡</Th><Th>判断</Th></tr></thead><tbody>{[1,3,5,10,20].map(area=><tr key={area}><Td>{area}㎡</Td><Td>約{area*5}袋<br/><span className="text-xs">予備込み約{Math.ceil(area*5*1.1)}袋</span></Td><Td>約{area*3}～{area*4}袋<br/><span className="text-xs">予備込み約{Math.ceil(area*3*1.1)}～{Math.ceil(area*4*1.1)}袋</span></Td><Td>{area>=10?'他工法との費用・施工負担比較を推奨':'小面積施工で比較しやすい'}</Td></tr>)}</tbody></table></TableWrap>
-      <p className="text-sm leading-7 text-gray-600">※予備率は作業用品ナビ編集部による実務上の目安です。メーカー指定量ではありません。</p><ArticleImage file="weed-control-sand-area-measurement.jpg" alt="施設外周の施工面積を測り防草砂の袋数を計算するイメージ" />
+    <section id="bags">
+      <SectionTitle>固まる防草砂は何袋必要？面積別の早見表</SectionTitle>
+      <Body>必要袋数は、<strong>施工面積×メーカー目安</strong>で計算します。凹凸、端部、こぼれを考え、最終発注では<Mark>5～10％程度の予備</Mark>を見込むのが実務的です。</Body>
+      <div className="my-5 rounded-xl border border-amber-300 bg-amber-50 p-5">
+        <p className="text-lg font-black text-gray-900">必要袋数 ＝ 施工面積（㎡）× 1㎡あたりの袋数</p>
+        <p className="mt-2 text-[15px] leading-7 text-gray-900">面積は「<strong>幅（m）×長さ（m）</strong>」で算出。排水桝や既存舗装を除外しつつ、端数は切り上げます。</p>
+      </div>
+      <TableWrap><table className="w-full border-collapse"><thead><tr><Th>施工面積</Th><Th>C15-BR 15kg<br/><Mark>5袋/㎡</Mark></Th><Th>10Lタイプ<br/><Mark>3～4袋/㎡</Mark></Th><Th>判断</Th></tr></thead><tbody>{[1,3,5,10,20].map(area=><tr key={area}><Td><strong>{area}㎡</strong></Td><Td><strong>約{area*5}袋</strong><br/><span className="text-sm font-medium">予備込み約{Math.ceil(area*5*1.1)}袋</span></Td><Td><strong>約{area*3}～{area*4}袋</strong><br/><span className="text-sm font-medium">予備込み約{Math.ceil(area*3*1.1)}～{Math.ceil(area*4*1.1)}袋</span></Td><Td>{area>=10?<Mark>他工法との費用・施工負担比較を推奨</Mark>:'小面積施工で比較しやすい'}</Td></tr>)}</tbody></table></TableWrap>
+      <p className="text-sm font-medium leading-7 text-gray-800">※予備率は作業用品ナビ編集部による実務上の目安です。メーカー指定量ではありません。</p>
+      <ArticleImage file="weed-control-sand-area-measurement.jpg" alt="施設外周の施工面積を測り防草砂の袋数を計算するイメージ" />
     </section>
 
-    <section id="product-compare"><h2 className="mb-4 mt-10 border-l-4 border-gray-900 pl-3 text-xl font-bold text-gray-900">IRIS防草砂3商品の違いと商品リンク</h2><p className="leading-8 text-gray-700">駐車場・車両用途を重視するならC15-BR、歩行部や景観色を選びたい小面積では10Lのオレンジ・イエローが比較候補です。車両対応の明記がない商品を、同じ用途だと決めつけないことが重要です。</p><div className="mt-5 grid gap-5 md:grid-cols-2">{products.map(product=><ProductCard key={product.code} product={product} />)}</div>
-      <TableWrap><table className="w-full border-collapse"><thead><tr><Th>商品</Th><Th>固化目安</Th><Th>必要量</Th><Th>車両用途</Th><Th>選び方</Th></tr></thead><tbody>{products.map(product=><tr key={product.code}><Td>{product.short}</Td><Td>{product.cure}</Td><Td>{product.coverage}</Td><Td>{product.vehicle}</Td><Td>{product.use}</Td></tr>)}</tbody></table></TableWrap>
+    <section id="product-compare">
+      <SectionTitle>IRIS防草砂3商品の違いと商品リンク</SectionTitle>
+      <Body>駐車場・車両用途を重視するなら<Mark>C15-BR</Mark>、歩行部や景観色を選びたい小面積では<Mark>10Lのオレンジ・イエロー</Mark>が比較候補です。<strong>車両対応の明記がない商品を、同じ用途だと決めつけない</strong>ことが重要です。</Body>
+      <div className="mt-5 grid gap-5 md:grid-cols-2">{products.map(product=><ProductCard key={product.code} product={product} />)}</div>
+      <TableWrap><table className="w-full border-collapse"><thead><tr><Th>商品</Th><Th>固化目安</Th><Th>必要量</Th><Th>車両用途</Th><Th>選び方</Th></tr></thead><tbody>{products.map(product=><tr key={product.code}><Td><strong>{product.short}</strong></Td><Td><strong>{product.cure}</strong></Td><Td><Mark>{product.coverage}</Mark></Td><Td><strong>{product.vehicle}</strong></Td><Td>{product.use}</Td></tr>)}</tbody></table></TableWrap>
     </section>
 
-    <section id="suitable"><h2 className="mb-4 mt-10 border-l-4 border-gray-900 pl-3 text-xl font-bold text-gray-900">防草砂が向く場所・別工法を検討したい場所</h2><TableWrap><table className="w-full border-collapse"><thead><tr><Th>場所</Th><Th>適性</Th><Th>理由・注意</Th></tr></thead><tbody>
-      <tr><Td>犬走り・建物外周</Td><Td>向きやすい</Td><Td>細長い小面積で草刈りしにくい。排水と基礎際の納まりを確認。</Td></tr><tr><Td>フェンス・側溝際</Td><Td>向きやすい</Td><Td>刈払機が使いにくい場所。既存舗装との境界を丁寧に処理。</Td></tr><tr><Td>駐車場</Td><Td>C15-BRを条件付き検討</Td><Td>メーカーは4t車までを案内。厚さ5cm・下地・旋回荷重・養生を確認。</Td></tr><tr><Td>仮設事務所周辺</Td><Td>条件付き</Td><Td>小面積には使いやすいが、借地・仮設は原状回復と所有者承認が必要。</Td></tr><tr><Td>広い資材置き場</Td><Td>比較が必要</Td><Td>袋数・重量・工数が大きい。防草シート＋砕石や舗装を比較。</Td></tr><tr><Td>軟弱地盤・沈下箇所</Td><Td>向きにくい</Td><Td>材料だけでは地盤問題を解決できず、割れ・沈下が起きやすい。</Td></tr><tr><Td>頻繁に掘削する場所</Td><Td>向きにくい</Td><Td>配管・埋設物点検や仮設撤去に不向き。</Td></tr>
-    </tbody></table></TableWrap><ArticleImage file="weed-control-sand-site-selection.jpg" alt="犬走り・駐車場・資材置き場で防草砂の適性を比較するイメージ" /></section>
+    <section id="suitable">
+      <SectionTitle>防草砂が向く場所・別工法を検討したい場所</SectionTitle>
+      <TableWrap><table className="w-full border-collapse"><thead><tr><Th>場所</Th><Th>適性</Th><Th>理由・注意</Th></tr></thead><tbody>
+      <tr><Td><strong>犬走り・建物外周</strong></Td><Td><Mark>向きやすい</Mark></Td><Td>細長い小面積で草刈りしにくい。排水と基礎際の納まりを確認。</Td></tr>
+      <tr><Td><strong>フェンス・側溝際</strong></Td><Td><Mark>向きやすい</Mark></Td><Td>刈払機が使いにくい場所。既存舗装との境界を丁寧に処理。</Td></tr>
+      <tr><Td><strong>駐車場</strong></Td><Td><Mark>C15-BRを条件付き検討</Mark></Td><Td>メーカーは<strong>4t車まで</strong>を案内。<strong>厚さ5cm</strong>・下地・旋回荷重・養生を確認。</Td></tr>
+      <tr><Td><strong>仮設事務所周辺</strong></Td><Td><strong>条件付き</strong></Td><Td>小面積には使いやすいが、借地・仮設は<strong>原状回復</strong>と所有者承認が必要。</Td></tr>
+      <tr><Td><strong>広い資材置き場</strong></Td><Td><Mark>比較が必要</Mark></Td><Td>袋数・重量・工数が大きい。防草シート＋砕石や舗装を比較。</Td></tr>
+      <tr><Td><strong>軟弱地盤・沈下箇所</strong></Td><Td><strong>向きにくい</strong></Td><Td>材料だけでは地盤問題を解決できず、割れ・沈下が起きやすい。</Td></tr>
+      <tr><Td><strong>頻繁に掘削する場所</strong></Td><Td><strong>向きにくい</strong></Td><Td>配管・埋設物点検や仮設撤去に不向き。</Td></tr>
+    </tbody></table></TableWrap>
+      <ArticleImage file="weed-control-sand-site-selection.jpg" alt="犬走り・駐車場・資材置き場で防草砂の適性を比較するイメージ" />
+    </section>
 
-    <section id="steps"><h2 className="mb-4 mt-10 border-l-4 border-gray-900 pl-3 text-xl font-bold text-gray-900">固まる防草砂の施工方法</h2><ol className="space-y-4">{[
-      ['施工範囲を測る','境界、排水桝、基礎、舗装、埋設物を図面へ入れ、必要袋数を計算します。'],['雑草・根・石を除去','多年草の根や地下茎、石、ごみ、軟弱な表土を取り除きます。'],['下地を整正・転圧','水勾配を確保しながら平らにし、沈下しないよう締め固めます。'],['見切りと厚さを設定','C15-BRは5cmを基準に、高さガイドや型枠で均一厚を確保します。'],['材料を敷き均す','袋ごとの色差を抑えるため、必要量を確保して均一に広げます。'],['表面を締め固める','コテや適切な道具で平滑・均一にし、端部を丁寧に押さえます。'],['均一に散水する','一度に流さず、じょうろ等で複数回に分けて所定量を浸透させます。'],['立入を止めて養生','商品ごとの固化時間と天候を確認し、歩行・車両を入れません。'],['完成後に点検','ひび割れ、沈下、排水、境界部、雑草の発生を定期確認します。']].map(([title,text],i)=><li key={title} className="grid grid-cols-[2.5rem_1fr] gap-3"><span className="flex h-9 w-9 items-center justify-center rounded-full bg-gray-900 font-bold text-white">{i+1}</span><div><h3 className="font-bold text-gray-900">{title}</h3><p className="mt-1 leading-7 text-gray-700">{text}</p></div></li>)}</ol><ArticleImage file="hardened-weed-sand-installation-steps.jpg" alt="除草・転圧・敷き均し・散水を行う防草砂施工イメージ" /></section>
+    <section id="steps">
+      <SectionTitle>固まる防草砂の施工方法</SectionTitle>
+      <ol className="space-y-5">{([
+        {title:'施工範囲を測る', text:<>境界、排水桝、基礎、舗装、埋設物を図面へ入れ、<strong>必要袋数</strong>を計算します。</>},
+        {title:'雑草・根・石を除去', text:<>多年草の<strong>根や地下茎</strong>、石、ごみ、軟弱な表土を取り除きます。</>},
+        {title:'下地を整正・転圧', text:<>水勾配を確保しながら平らにし、沈下しないよう<strong>締め固め</strong>ます。</>},
+        {title:'見切りと厚さを設定', text:<>C15-BRは<Mark>厚さ5cm</Mark>を基準に、高さガイドや型枠で均一厚を確保します。</>},
+        {title:'材料を敷き均す', text:<>袋ごとの色差を抑えるため、必要量を確保して均一に広げます。</>},
+        {title:'表面を締め固める', text:<>コテや適切な道具で平滑・均一にし、端部を丁寧に押さえます。</>},
+        {title:'均一に散水する', text:<>一度に流さず、じょうろ等で<strong>複数回に分けて</strong>所定量を浸透させます。</>},
+        {title:'立入を止めて養生', text:<>商品ごとの固化時間と天候を確認し、<Mark>歩行・車両を入れません</Mark>。</>},
+        {title:'完成後に点検', text:<>ひび割れ、沈下、排水、境界部、雑草の発生を定期確認します。</>}
+      ] as const).map(({title,text},i)=><li key={title} className="grid grid-cols-[2.5rem_1fr] gap-3"><span className="flex h-10 w-10 items-center justify-center rounded-full bg-gray-900 text-base font-black text-white">{i+1}</span><div><h3 className="text-xl font-black text-gray-900">{title}</h3><p className="mt-1 leading-7 text-gray-900">{text}</p></div></li>)}</ol>
+      <ArticleImage file="hardened-weed-sand-installation-steps.jpg" alt="除草・転圧・敷き均し・散水を行う防草砂施工イメージ" />
+    </section>
 
-    <section id="cracks"><h2 className="mb-4 mt-10 border-l-4 border-gray-900 pl-3 text-xl font-bold text-gray-900">固まらない・ひび割れる主な原因</h2><div className="grid gap-4 md:grid-cols-2">{[
-      ['厚さ不足','袋数を節約して薄く延ばすと強度が不足します。'],['下地の沈下','柔らかい土や空洞が残ると、上面だけ固まって割れます。'],['散水不足・むら','表面だけ濡れて内部が固まらない原因になります。'],['散水が強すぎる','材料が流れ、表面荒れや色むらが起きます。'],['境界部の動き','舗装・レンガ・縁石と材料の動きが違うと割れやすくなります。'],['養生不足','硬化前の歩行・車両・雨で表面が損傷します。'],['排水不良','水たまりや凍結、地盤軟化で劣化が進みます。'],['用途違い','歩行向け商品を車両部へ使うなど、荷重条件が合っていません。']].map(([title,text])=><article key={title} className="rounded-xl border border-gray-200 p-5"><h3 className="font-bold text-gray-900">{title}</h3><p className="mt-2 leading-7 text-gray-700">{text}</p></article>)}</div></section>
+    <section id="cracks">
+      <SectionTitle>固まらない・ひび割れる主な原因</SectionTitle>
+      <div className="grid gap-4 md:grid-cols-2">{[
+        ['厚さ不足','袋数を節約して薄く延ばすと強度が不足します。'],
+        ['下地の沈下','柔らかい土や空洞が残ると、上面だけ固まって割れます。'],
+        ['散水不足・むら','表面だけ濡れて内部が固まらない原因になります。'],
+        ['散水が強すぎる','材料が流れ、表面荒れや色むらが起きます。'],
+        ['境界部の動き','舗装・レンガ・縁石と材料の動きが違うと割れやすくなります。'],
+        ['養生不足','硬化前の歩行・車両・雨で表面が損傷します。'],
+        ['排水不良','水たまりや凍結、地盤軟化で劣化が進みます。'],
+        ['用途違い','歩行向け商品を車両部へ使うなど、荷重条件が合っていません。']
+      ].map(([title,text])=><article key={title} className="rounded-xl border border-gray-300 bg-white p-5"><h3 className="text-lg font-black text-gray-900">{title}</h3><p className="mt-2 leading-7 text-gray-900">{text}</p></article>)}</div>
+    </section>
 
-    <section id="related"><h2 className="mb-4 mt-10 border-l-4 border-gray-900 pl-3 text-xl font-bold text-gray-900">工事現場の施工・休憩を支える関連商品</h2><p className="leading-8 text-gray-700">Excelの関連商品は28点ありましたが、記事テーマの専門性を守るため、本文では防草砂施工や夏季の屋外作業に関係する5SKUだけを掲載しています。冷却ウェア等の残りは別記事へ分離する方がSEO上も送客上も適切です。</p><div className="mt-5 grid gap-5 md:grid-cols-2">{relatedProducts.map(product=><RelatedCard key={product.code} product={product} />)}</div><ArticleImage file="outdoor-site-ground-maintenance-safety.jpg" alt="工事現場の外周整備と夏季休憩用品を準備するイメージ" /></section>
+    <section id="related">
+      <SectionTitle>工事現場の施工・休憩を支える関連商品</SectionTitle>
+      <Body>Excelの関連商品は28点ありましたが、記事テーマの専門性を守るため、本文では防草砂施工や夏季の屋外作業に関係する<Mark>5SKUだけ</Mark>を掲載しています。冷却ウェア等の残りは別記事へ分離する方がSEO上も送客上も適切です。</Body>
+      <div className="mt-5 grid gap-5 md:grid-cols-2">{relatedProducts.map(product=><RelatedCard key={product.code} product={product} />)}</div>
+      <ArticleImage file="outdoor-site-ground-maintenance-safety.jpg" alt="工事現場の外周整備と夏季休憩用品を準備するイメージ" />
+    </section>
 
-    <section id="mistakes"><h2 className="mb-4 mt-10 border-l-4 border-gray-900 pl-3 text-xl font-bold text-gray-900">防草砂施工でよくある失敗20項目</h2><ol className="mt-5 grid gap-3 md:grid-cols-2">{failures.map((item,index)=><li key={item} className="grid grid-cols-[2.5rem_1fr] gap-3 rounded-lg border border-gray-200 p-4"><span className="font-black text-gray-500">{String(index+1).padStart(2,'0')}</span><span className="leading-7 text-gray-700">{item}</span></li>)}</ol></section>
+    <section id="mistakes">
+      <SectionTitle>防草砂施工でよくある失敗20項目</SectionTitle>
+      <ol className="mt-5 grid gap-3 md:grid-cols-2">{failures.map((item,index)=><li key={item} className="grid grid-cols-[2.5rem_1fr] gap-3 rounded-lg border border-gray-300 bg-white p-4"><span className="text-lg font-black text-gray-900">{String(index+1).padStart(2,'0')}</span><span className="leading-7 font-medium text-gray-900">{item}</span></li>)}</ol>
+    </section>
 
-    <section id="checklist"><h2 className="mb-4 mt-10 border-l-4 border-gray-900 pl-3 text-xl font-bold text-gray-900">法人・現場担当者向け施工チェックリスト</h2><TableWrap><table className="w-full border-collapse"><thead><tr><Th>項目</Th><Th>確認内容</Th><Th>判断ポイント</Th></tr></thead><tbody>{checklist.map(([a,b,c])=><tr key={a}><Td>{a}</Td><Td>{b}</Td><Td>{c}</Td></tr>)}</tbody></table></TableWrap><ArticleImage file="weed-control-sand-procurement-checklist.jpg" alt="法人担当者が防草砂の袋数・施工範囲・安全用品を確認するイメージ" /></section>
+    <section id="checklist">
+      <SectionTitle>法人・現場担当者向け施工チェックリスト</SectionTitle>
+      <TableWrap><table className="w-full border-collapse"><thead><tr><Th>項目</Th><Th>確認内容</Th><Th>判断ポイント</Th></tr></thead><tbody>{checklist.map(([a,b,c])=><tr key={a}><Td><strong>{a}</strong></Td><Td>{b}</Td><Td><Mark>{c}</Mark></Td></tr>)}</tbody></table></TableWrap>
+      <ArticleImage file="weed-control-sand-procurement-checklist.jpg" alt="法人担当者が防草砂の袋数・施工範囲・安全用品を確認するイメージ" />
+    </section>
 
-    <section id="faq"><h2 className="mb-4 mt-10 border-l-4 border-gray-900 pl-3 text-xl font-bold text-gray-900">固まる防草砂のFAQ</h2><div className="divide-y divide-gray-200 rounded-xl border border-gray-200">{faqs.map(faq=><details key={faq.q} className="p-5"><summary className="cursor-pointer list-none font-bold leading-7 text-gray-900">{faq.q}</summary><p className="mt-3 leading-8 text-gray-700">{faq.a}</p></details>)}</div><p className="mt-4 text-xs leading-6 text-gray-500">FAQは可視本文として掲載し、FAQPage構造化データは実装していません。</p></section>
+    <section id="faq">
+      <SectionTitle>固まる防草砂のFAQ</SectionTitle>
+      <div className="divide-y divide-gray-300 rounded-xl border border-gray-300 bg-white">{faqs.map(faq=><details key={faq.q} className="p-5"><summary className="cursor-pointer list-none text-lg font-black leading-7 text-gray-900">{faq.q}</summary><p className="mt-3 leading-8 text-gray-900">{faq.a}</p></details>)}</div>
+      <p className="mt-4 text-sm font-medium leading-6 text-gray-800">FAQは可視本文として掲載し、FAQPage構造化データは実装していません。</p>
+    </section>
 
-    <section id="references"><h2 className="mb-4 mt-10 border-l-4 border-gray-900 pl-3 text-xl font-bold text-gray-900">参考にした公式情報</h2><ul className="space-y-3">{references.map(ref=><li key={ref.url} className="rounded-lg border border-gray-200 p-4"><a href={ref.url} target="_blank" rel="noopener noreferrer" className="font-bold text-gray-900 underline underline-offset-4">{ref.label}</a><p className="mt-1 text-sm leading-7 text-gray-600">{ref.note}</p></li>)}</ul></section>
+    <section id="references">
+      <SectionTitle>参考にした公式情報</SectionTitle>
+      <ul className="space-y-3">{references.map(ref=><li key={ref.url} className="rounded-lg border border-gray-300 bg-white p-4"><a href={ref.url} target="_blank" rel="noopener noreferrer" className="text-base font-black text-gray-900 underline underline-offset-4">{ref.label}</a><p className="mt-1 text-[15px] leading-7 text-gray-900">{ref.note}</p></li>)}</ul>
+    </section>
 
-    <section className="mt-10 rounded-2xl bg-gray-100 p-6"><h2 className="text-xl font-bold text-gray-900">まとめ：袋数より先に用途・厚さ・下地を決める</h2><p className="mt-3 leading-8 text-gray-700">C15-BRは1㎡あたり約5袋、10Lタイプは約3～4袋が目安です。ただし、必要量だけを計算しても、下地と厚さが不十分なら固まりません。車両用途、小面積外周、仮設現場の原状回復などを先に判断し、3商品から選んでください。</p><div className="mt-5 grid gap-3 sm:grid-cols-3">{products.map(product=><ShopLink key={product.code} url={product.url} label={product.label} />)}</div></section>
+    <section className="mt-12 rounded-2xl border border-amber-300 bg-amber-50 p-6">
+      <h2 className="text-2xl font-black text-gray-900 sm:text-3xl">まとめ：袋数より先に用途・厚さ・下地を決める</h2>
+      <p className="mt-3 leading-8 text-gray-900"><Mark>C15-BRは1㎡あたり約5袋</Mark>、<Mark>10Lタイプは約3～4袋</Mark>が目安です。ただし、必要量だけを計算しても、<strong>下地と厚さが不十分なら固まりません</strong>。車両用途、小面積外周、仮設現場の原状回復などを先に判断し、3商品から選んでください。</p>
+      <div className="mt-5 grid gap-3 sm:grid-cols-3">{products.map(product=><ShopLink key={product.code} url={product.url} label={product.label} />)}</div>
+    </section>
   </main><SiteFooter /></>;
 }

@@ -871,16 +871,43 @@ function ProductCard({ product }: { product: Product }) {
   );
 }
 
-function ProductTextLink({ product }: { product: Product }) {
+function ProductTableCell({
+  product,
+  showFormalName = true,
+}: {
+  product: Product;
+  showFormalName?: boolean;
+}) {
   const link = product.links[0];
   return (
     <a
       href={buildUrl(link.url, UTM)}
       target="_blank"
       rel="nofollow sponsored"
-      className="font-bold text-gray-900 underline decoration-2 underline-offset-4 hover:text-gray-600"
+      className="group flex min-w-[16rem] items-start gap-3 rounded-lg p-1 transition hover:bg-gray-50"
     >
-      {product.short}
+      <span className="relative h-20 w-20 shrink-0 overflow-hidden rounded-lg border border-gray-200 bg-white">
+        <Image
+          src={product.img}
+          alt={`${product.short}の商品画像`}
+          fill
+          sizes="80px"
+          className="object-contain p-1.5 transition group-hover:scale-105"
+        />
+      </span>
+      <span className="min-w-0 space-y-1">
+        <span className="block text-sm font-bold leading-snug text-gray-900 underline decoration-2 underline-offset-4 group-hover:text-gray-600">
+          {product.short}
+        </span>
+        <span className="block text-xs font-bold text-gray-500">
+          型番：{product.model || "商品名参照"}
+        </span>
+        {showFormalName ? (
+          <span className="block text-xs leading-5 text-gray-500">
+            {product.formalName}
+          </span>
+        ) : null}
+      </span>
     </a>
   );
 }
@@ -973,10 +1000,7 @@ function CategoryTable({ category }: { category: string }) {
             {items.map((product) => (
               <tr key={product.code}>
                 <Td>
-                  <ProductTextLink product={product} />
-                  <span className="mt-1 block text-xs text-gray-500">
-                    {product.formalName}
-                  </span>
+                  <ProductTableCell product={product} />
                 </Td>
                 <Td>{product.use}</Td>
                 <Td>{product.size}／{product.pack}</Td>
@@ -1224,7 +1248,9 @@ export default function Page() {
               <tbody>
                 {protectiveWear.map((product) => (
                   <tr key={product.code}>
-                    <Td><ProductTextLink product={product} /></Td>
+                    <Td>
+                      <ProductTableCell product={product} showFormalName={false} />
+                    </Td>
                     <Td>{product.formalName.includes("ズボン") ? "ズボン" : product.formalName.includes("フード付ジャンバー") ? "フード付きジャンバー" : "つなぎ型"}</Td>
                     <Td>{product.size}</Td>
                     <Td>{product.pack}</Td>

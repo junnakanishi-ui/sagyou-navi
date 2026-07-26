@@ -675,7 +675,7 @@ export default function Page() {
   return (
     <>
       <SiteHeader />
-      <main className="mx-auto max-w-6xl px-4 py-8 sm:px-6">
+      <main className="mx-auto max-w-[850px] px-4 py-8 sm:px-6">
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
@@ -834,7 +834,7 @@ export default function Page() {
         </nav>
 
         <SectionTitle id="point">比較で先に見るべき5つのポイント</SectionTitle>
-        <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-5">
+        <div className="grid gap-4 sm:grid-cols-2">
           {(
             [
               [
@@ -873,7 +873,7 @@ export default function Page() {
         <p className={cls.body}>
           比較の起点になるクーラーボックス本体と、現場で使いやすくするための補完設備を先にまとめました。
         </p>
-        <div className="mt-5 grid gap-5 md:grid-cols-2 xl:grid-cols-3">
+        <div className="mt-5 grid gap-5 sm:grid-cols-2">
           {featured.map((product) => (
             <ProductCard key={product.key} product={product} />
           ))}
@@ -1082,7 +1082,7 @@ export default function Page() {
           file="related-cooling-items-selection.jpg"
           alt="現場用クーラーボックスと一緒に検討したい関連商品を比較するイメージ"
         />
-        <div className="mt-5 grid gap-5 md:grid-cols-2 xl:grid-cols-4">
+        <div className="mt-5 grid gap-5 sm:grid-cols-2">
           {related.map((product) => (
             <ProductCard key={product.key} product={product} />
           ))}

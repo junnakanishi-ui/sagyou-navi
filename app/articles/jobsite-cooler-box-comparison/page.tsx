@@ -552,7 +552,7 @@ function Td({ children }: { children: ReactNode }) {
 
 function AnswerBox({ children }: { children: ReactNode }) {
   return (
-    <section className="my-6 rounded-2xl border-2 border-sky-600 bg-sky-50 p-5 shadow-sm">
+    <section className="my-6 rounded-2xl border-2 border-gray-900 bg-amber-50 p-5">
       {children}
     </section>
   );
@@ -566,9 +566,9 @@ function NoteBox({
   children: ReactNode;
 }) {
   return (
-    <aside className="my-6 rounded-2xl border border-amber-400 bg-amber-50 p-5">
-      <p className="font-black text-amber-950">{title}</p>
-      <div className="mt-2 space-y-2 text-[15px] leading-[1.95] text-gray-900">
+    <aside className="my-6 rounded-2xl border border-gray-900 bg-white p-5">
+      <p className="text-lg font-black text-gray-900">{title}</p>
+      <div className="mt-2 space-y-2 text-[15px] leading-7 text-gray-900">
         {children}
       </div>
     </aside>
@@ -598,7 +598,7 @@ function LinkButtons({ links }: { links: ProductLink[] }) {
           href={appendUtm(link.url, UTM)}
           target="_blank"
           rel="nofollow sponsored"
-          className="inline-flex min-h-11 items-center justify-center rounded-md bg-amber-500 px-4 py-3 text-center text-sm font-bold text-white transition hover:bg-amber-600"
+          className="inline-flex min-h-11 items-center justify-center rounded-md bg-gray-900 px-4 py-3 text-center text-sm font-bold text-white transition hover:bg-gray-700"
         >
           {link.label}
         </a>
@@ -609,8 +609,8 @@ function LinkButtons({ links }: { links: ProductLink[] }) {
 
 function ProductCard({ product }: { product: Product }) {
   return (
-    <article className="overflow-hidden rounded-2xl border border-sky-300 bg-white shadow-sm">
-      <div className="relative aspect-[4/3] bg-sky-50/40">
+    <article className="overflow-hidden rounded-2xl border border-gray-300 bg-white shadow-sm">
+      <div className="relative aspect-[4/3] bg-gray-50">
         <Image
           src={`/products/${product.imageCode}.jpg`}
           alt={`${product.displayName}の商品画像`}
@@ -620,18 +620,18 @@ function ProductCard({ product }: { product: Product }) {
         />
       </div>
       <div className="space-y-3 p-5">
-        <span className="inline-flex rounded-full bg-sky-100 px-3 py-1 text-xs font-bold text-sky-950">
+        <span className="inline-flex rounded-full bg-amber-100 px-3 py-1 text-xs font-bold text-gray-900">
           {product.category}
         </span>
-        <h3 className="text-lg font-black leading-snug text-gray-900">
+        <h3 className="text-xl font-black leading-snug text-gray-900">
           {product.displayName}
         </h3>
-        <p className={cls.bodySm}>{product.role}</p>
-        <p className="rounded-xl bg-gray-100 p-3 text-[13px] leading-6 text-gray-900">
+        <p className="text-[15px] leading-7 text-gray-900">{product.role}</p>
+        <p className="rounded-lg border border-amber-200 bg-amber-50 p-3 text-sm leading-6 text-gray-900">
           <strong>導入前確認：</strong>
           {product.selection}
         </p>
-        <p className="text-[13px] leading-6 text-gray-900">
+        <p className="text-[15px] leading-7 text-gray-900">
           <strong>サイズ・分類：</strong>
           {product.sizeInfo}
           <br />
@@ -657,8 +657,8 @@ function ImageTableCell({ product }: { product: Product }) {
         />
       </div>
       <div>
-        <div className="text-xs font-bold text-sky-800">{product.category}</div>
-        <div className="font-bold leading-6 text-gray-900">
+        <div className="text-xs font-bold text-gray-900">{product.category}</div>
+        <div className="font-black leading-6 text-gray-900">
           {product.displayName}
         </div>
       </div>
@@ -675,7 +675,7 @@ export default function Page() {
   return (
     <>
       <SiteHeader />
-      <main className="mx-auto max-w-[850px] px-4 py-8 sm:px-6">
+      <main className="mx-auto max-w-[850px] px-4 py-8 text-gray-900 sm:px-6">
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
@@ -690,32 +690,37 @@ export default function Page() {
         <nav aria-label="パンくず" className="mb-5 text-sm text-gray-800">
           <ol className="flex flex-wrap items-center gap-2">
             <li>
-              <Link href="/" className="underline underline-offset-4">
+              <Link href="/" className="font-bold underline underline-offset-4">
                 作業用品ナビ
               </Link>
             </li>
             <li aria-hidden="true">/</li>
             <li>
-              <Link href="/articles" className="underline underline-offset-4">
+              <Link
+                href="/articles"
+                className="font-bold underline underline-offset-4"
+              >
                 記事一覧
               </Link>
             </li>
             <li aria-hidden="true">/</li>
-            <li aria-current="page">現場用クーラーボックス比較</li>
+            <li aria-current="page" className="font-bold">
+              現場用クーラーボックス比較
+            </li>
           </ol>
         </nav>
 
         <header>
-          <p className="text-sm font-bold tracking-wide text-sky-800">
+          <p className="text-sm font-bold tracking-wide text-gray-900">
             工事・建設・倉庫・屋外作業向け｜容量・保冷方式・日陰・氷確保まで比較
           </p>
           <h1 className={cls.h1}>
             現場用クーラーボックス比較
-            <span className="mt-2 block text-xl font-bold sm:text-2xl">
+            <span className="mt-3 block text-2xl font-black sm:text-3xl">
               工事・倉庫・屋外作業で失敗しない容量・保冷方式の選び方【2026年】
             </span>
           </h1>
-          <p className={`mt-4 ${cls.meta}`}>
+          <p className="mt-4 text-sm font-medium text-gray-800">
             公開日・最終更新日：2026年7月26日 ｜ 作業用品ナビ編集部
           </p>
         </header>
@@ -725,7 +730,7 @@ export default function Page() {
           alt="現場休憩所にクーラーボックスを置いて比較検討するイメージ"
         />
 
-        <p className={cls.body}>
+        <p className="mb-4 leading-8 text-gray-900">
           現場用クーラーボックス選びで失敗しやすいのは、
           <strong>
             「容量だけで決める」「持ち運びやすさだけで決める」「設置場所や日陰を考えない」
@@ -734,13 +739,13 @@ export default function Page() {
           <Mark>容量、保冷方式、運搬性、電源の有無、設置場所、補充運用</Mark>
           です。
         </p>
-        <p className={cls.body}>
+        <p className="mb-4 leading-8 text-gray-900">
           このページでは「クーラーボックス 現場用
           比較」で探している人向けに、クーラーボックス本体の違いだけでなく、氷の確保方法、日陰づくり、送風設備、関連商品まで含めて、現場目線で分かりやすく比較します。
         </p>
 
         <AnswerBox>
-          <p className="text-sm font-black text-sky-950">先に結論</p>
+          <p className="text-base font-black text-gray-900">先に結論</p>
           <div className="mt-2 space-y-3 leading-8 text-gray-900">
             <p>
               <strong>
@@ -781,10 +786,10 @@ export default function Page() {
 
         <nav
           aria-label="目次"
-          className="my-8 rounded-xl border border-sky-300 bg-sky-50/50 p-5"
+          className="my-8 rounded-xl border border-gray-300 bg-white p-5"
         >
-          <p className="font-black text-gray-900">目次</p>
-          <ol className="mt-3 grid gap-2 text-sm leading-7 sm:grid-cols-2">
+          <p className="text-lg font-black text-gray-900">目次</p>
+          <ol className="mt-3 grid gap-2 text-[15px] font-medium leading-7 text-gray-900 sm:grid-cols-2">
             <li>
               <a href="#point" className="underline underline-offset-4">
                 1. 比較で先に見るべきポイント
@@ -861,16 +866,16 @@ export default function Page() {
           ).map(([title, text]) => (
             <article
               key={title}
-              className="rounded-xl border border-gray-300 p-5"
+              className="rounded-xl border border-gray-300 bg-white p-5"
             >
-              <h3 className="font-black text-gray-900">{title}</h3>
-              <p className={`mt-2 ${cls.bodySm}`}>{text}</p>
+              <h3 className="text-lg font-black text-gray-900">{title}</h3>
+              <p className="mt-2 leading-7 text-gray-900">{text}</p>
             </article>
           ))}
         </div>
 
         <SectionTitle id="featured">まず見たい商品6点</SectionTitle>
-        <p className={cls.body}>
+        <p className="mb-4 leading-8 text-gray-900">
           比較の起点になるクーラーボックス本体と、現場で使いやすくするための補完設備を先にまとめました。
         </p>
         <div className="mt-5 grid gap-5 sm:grid-cols-2">
@@ -880,7 +885,7 @@ export default function Page() {
         </div>
 
         <SectionTitle id="compare">現場用クーラーボックス比較表</SectionTitle>
-        <p className={cls.body}>
+        <p className="mb-4 leading-8 text-gray-900">
           今回の掲載商品の中で、クーラーボックスそのものとして比較の中心になるのは、
           <Mark>据え置き型の大容量クラス</Mark>と、
           <Mark>持ち運びやすい20Lクラス</Mark>
@@ -957,7 +962,7 @@ export default function Page() {
         </TableWrap>
 
         <SectionTitle id="size">容量と人数の目安</SectionTitle>
-        <p className={cls.body}>
+        <p className="mb-4 leading-8 text-gray-900">
           容量は商品スペックだけでなく、飲料本数、氷・保冷剤、開閉回数、補充回数まで含めて考える必要があります。
         </p>
         <TableWrap>
@@ -1021,10 +1026,10 @@ export default function Page() {
           ).map(([title, text]) => (
             <article
               key={title}
-              className="rounded-xl border border-gray-300 p-5"
+              className="rounded-xl border border-gray-300 bg-white p-5"
             >
-              <h3 className="font-black text-gray-900">{title}</h3>
-              <p className={`mt-2 ${cls.body}`}>{text}</p>
+              <h3 className="text-lg font-black text-gray-900">{title}</h3>
+              <p className="mt-2 leading-7 text-gray-900">{text}</p>
             </article>
           ))}
         </div>
@@ -1036,7 +1041,7 @@ export default function Page() {
         <SectionTitle id="station">
           日陰・送風との組み合わせで使いやすさが変わる
         </SectionTitle>
-        <p className={cls.body}>
+        <p className="mb-4 leading-8 text-gray-900">
           現場用クーラーボックスは、単体比較だけでは不十分です。設置場所が暑いと本来の使いやすさを発揮しにくいため、日陰や送風とあわせて考える方が失敗しにくくなります。
         </p>
         <TableWrap>
@@ -1075,7 +1080,7 @@ export default function Page() {
         <SectionTitle id="related">
           関連商品｜クーラーボックス比較と一緒に見たい商品
         </SectionTitle>
-        <p className={cls.body}>
+        <p className="mb-4 leading-8 text-gray-900">
           クーラーボックスが決まったら、現場全体の使いやすさを高める関連商品も絞って確認すると導入判断がしやすくなります。
         </p>
         <Figure
@@ -1093,12 +1098,12 @@ export default function Page() {
           {failures.map((item, index) => (
             <li
               key={item}
-              className="grid grid-cols-[2.5rem_1fr] gap-3 rounded-xl border border-gray-300 p-4"
+              className="grid grid-cols-[2.5rem_1fr] gap-3 rounded-lg border border-gray-300 bg-white p-4"
             >
-              <span className="font-black text-sky-800">
+              <span className="text-lg font-black text-gray-900">
                 {String(index + 1).padStart(2, "0")}
               </span>
-              <span className="leading-7 text-gray-900">{item}</span>
+              <span className="leading-7 font-medium text-gray-900">{item}</span>
             </li>
           ))}
         </ol>
@@ -1126,17 +1131,17 @@ export default function Page() {
         </TableWrap>
 
         <SectionTitle id="faq">FAQ</SectionTitle>
-        <div className="divide-y divide-gray-300 rounded-xl border border-gray-300">
+        <div className="divide-y divide-gray-300 rounded-xl border border-gray-300 bg-white">
           {faqs.map((faq) => (
             <details key={faq.question} className="p-5">
-              <summary className={`cursor-pointer list-none pr-8 ${cls.faqQ}`}>
+              <summary className="cursor-pointer list-none pr-8 text-lg font-black leading-7 text-gray-900">
                 {faq.question}
               </summary>
-              <p className={`mt-3 ${cls.body}`}>{faq.answer}</p>
+              <p className="mt-3 leading-8 text-gray-900">{faq.answer}</p>
             </details>
           ))}
         </div>
-        <p className={`mt-4 text-xs ${cls.meta}`}>
+        <p className="mt-4 text-sm font-medium leading-6 text-gray-800">
           FAQは本文理解を助けるために掲載しています。FAQPage構造化データは実装していません。
         </p>
 
@@ -1145,17 +1150,19 @@ export default function Page() {
           {references.map((ref) => (
             <li
               key={ref.url}
-              className="rounded-xl border border-gray-300 p-4"
+              className="rounded-lg border border-gray-300 bg-white p-4"
             >
               <a
                 href={ref.url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="font-bold text-gray-900 underline underline-offset-4"
+                className="text-base font-black text-gray-900 underline underline-offset-4"
               >
                 {ref.label}
               </a>
-              <p className={`mt-1 ${cls.bodySm}`}>{ref.note}</p>
+              <p className="mt-1 text-[15px] leading-7 text-gray-900">
+                {ref.note}
+              </p>
             </li>
           ))}
         </ul>
@@ -1163,14 +1170,14 @@ export default function Page() {
         <SectionTitle id="summary">
           まとめ｜現場用クーラーボックス比較は「容量」だけで終わらせない
         </SectionTitle>
-        <p className={cls.body}>
+        <p className="mb-4 leading-8 text-gray-900">
           現場用クーラーボックスを比較するときは、サイズや価格だけでなく、
           <strong>
             人数・運搬性・保冷方式・設置場所・氷の補充・日陰や送風との組み合わせ
           </strong>
           まで見た方が失敗しにくくなります。
         </p>
-        <p className={cls.body}>
+        <p className="mb-4 leading-8 text-gray-900">
           移動班なら
           <Mark>20Lクラス</Mark>
           、常設休憩所なら

@@ -14,6 +14,22 @@ export type Article = {
 
 export const ARTICLES: Article[] = [
   {
+    slug: "jobsite-cooler-box-comparison",
+    title:
+      "現場用クーラーボックス比較｜工事・倉庫・屋外作業で失敗しない容量・保冷方式の選び方【2026年】",
+    shortTitle: "現場用クーラーボックス比較",
+    description:
+      "現場用クーラーボックスを比較。工事・倉庫・屋外作業での容量選び、氷の確保方法、日陰・送風との組み合わせまで分かります。",
+    category: "compare",
+    categoryLabel: "比較・違い",
+    thumbnail:
+      "/images/jobsite-cooler-box-comparison/jobsite-cooler-box-hero.jpg",
+    date: "2026-07-26",
+    readTime: "約25分",
+    available: true,
+    path: "/articles/jobsite-cooler-box-comparison",
+  },
+  {
     slug: "100v-commercial-pressure-washer-selection",
     title:
       "業務用高圧洗浄機は100Vで足りる？小型機の選び方と50Hz・60Hz・自吸の違い",

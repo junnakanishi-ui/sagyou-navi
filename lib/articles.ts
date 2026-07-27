@@ -14,6 +14,22 @@ export type Article = {
 
 export const ARTICLES: Article[] = [
   {
+    slug: "laser-level-line-count-selection",
+    title:
+      "レーザー墨出器は何ライン必要？ライン数・色・受光器・三脚の選び方【2026年版】",
+    shortTitle: "レーザー墨出器のライン数の選び方",
+    description:
+      "レーザー墨出器は何ライン必要なのか、2ライン・矩十字・4〜5ライン・フルラインを工種別に比較。グリーンとレッド、電子整準とジンバル、受光器・三脚・自動追尾まで商品サムネ付きで解説します。",
+    category: "guide",
+    categoryLabel: "選び方ガイド",
+    thumbnail:
+      "/images/laser-level-line-count-selection/laser-level-line-count-hero.jpg",
+    date: "2026-07-27",
+    readTime: "約28分",
+    available: true,
+    path: "/articles/laser-level-line-count-selection",
+  },
+  {
     slug: "jobsite-cooler-box-comparison",
     title:
       "現場用クーラーボックス比較｜工事・倉庫・屋外作業で失敗しない容量・保冷方式の選び方【2026年】",

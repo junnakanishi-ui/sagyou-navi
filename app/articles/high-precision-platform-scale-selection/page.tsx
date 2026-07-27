@@ -19,6 +19,7 @@ import {
   FaqSection,
   ArticleCTA,
   Disclaimer,
+  RelatedArticles,
   type FaqItem,
 } from "@/components/article";
 import { buildUrl } from "@/lib/product-links";
@@ -559,6 +560,24 @@ export default function HighPrecisionPlatformScaleSelectionPage() {
         />
 
         <Disclaimer extra="計量精度・検定要否・接続機器の適合は用途・設置環境により異なります。FMA33K0.1Tは検定対象外です。取引証明用途では、購入前にメーカー・販売店・計量検定所等へご確認ください。価格・在庫・仕様は変動する場合があり、最新情報は各商品ページでご確認ください。" />
+
+        <RelatedArticles
+          items={[
+            {
+              href: "/articles/laser-level-line-count-selection",
+              label:
+                "レーザー墨出器は何ライン必要？ライン数・色・受光器・三脚の選び方【2026年版】",
+            },
+            {
+              href: "/articles/long-distance-measuring-tools-selection",
+              label: "長い距離を測る道具の選び方",
+            },
+            {
+              href: "/articles/digital-manifold-selection",
+              label: "デジタルマニホールドの選び方",
+            },
+          ]}
+        />
       </ArticleContent>
     </ArticleLayout>
   );

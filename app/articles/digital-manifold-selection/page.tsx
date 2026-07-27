@@ -990,6 +990,34 @@ export default function Page() {
           <ProductLink href={M_560I_SET.url} name="testo 560i 自動充填" />
           <ProductLink href={LIST_SEIBI} name="整備用工具一覧へ" />
         </div>
+
+        <H2>関連記事</H2>
+        <ul className={cls.list}>
+          <li>
+            <Link
+              href="/articles/laser-level-line-count-selection"
+              className="text-gray-900 underline hover:no-underline"
+            >
+              レーザー墨出器は何ライン必要？ライン数・色・受光器・三脚の選び方【2026年版】
+            </Link>
+          </li>
+          <li>
+            <Link
+              href="/articles/long-distance-measuring-tools-selection"
+              className="text-gray-900 underline hover:no-underline"
+            >
+              長い距離を測る道具の選び方
+            </Link>
+          </li>
+          <li>
+            <Link
+              href="/articles/drainage-pipe-leak-test-method"
+              className="text-gray-900 underline hover:no-underline"
+            >
+              排水管の漏れ試験の方法と試験器の選び方
+            </Link>
+          </li>
+        </ul>
       </main>
       <SiteFooter />
     </>

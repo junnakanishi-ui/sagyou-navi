@@ -1386,6 +1386,34 @@ export default function Page() {
           <ProductLink href={LIST_DAISHA} name="運搬台車一覧へ" />
           <ProductLink href={LIST_SEIBI} name="整備用工具一覧へ" />
         </div>
+
+        <H2>関連記事</H2>
+        <ul className={cls.list}>
+          <li>
+            <Link
+              href="/articles/laser-level-line-count-selection"
+              className="text-gray-900 underline hover:no-underline"
+            >
+              レーザー墨出器は何ライン必要？ライン数・色・受光器・三脚の選び方【2026年版】
+            </Link>
+          </li>
+          <li>
+            <Link
+              href="/articles/digital-manifold-selection"
+              className="text-gray-900 underline hover:no-underline"
+            >
+              デジタルマニホールドの選び方
+            </Link>
+          </li>
+          <li>
+            <Link
+              href="/articles/high-precision-platform-scale-selection"
+              className="text-gray-900 underline hover:no-underline"
+            >
+              高精度電子台はかりの選び方
+            </Link>
+          </li>
+        </ul>
       </main>
       <SiteFooter />
     </>

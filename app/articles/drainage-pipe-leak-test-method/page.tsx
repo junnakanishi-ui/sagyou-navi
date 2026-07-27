@@ -1120,6 +1120,34 @@ export default function Page() {
           <ProductLink href={KUATSU.url} name="空圧試験器 441342 を確認する" />
         </div>
 
+        <H2>関連記事</H2>
+        <ul className={cls.list}>
+          <li>
+            <Link
+              href="/articles/laser-level-line-count-selection"
+              className="text-gray-900 underline hover:no-underline"
+            >
+              レーザー墨出器は何ライン必要？ライン数・色・受光器・三脚の選び方【2026年版】
+            </Link>
+          </li>
+          <li>
+            <Link
+              href="/articles/digital-manifold-selection"
+              className="text-gray-900 underline hover:no-underline"
+            >
+              デジタルマニホールドの選び方
+            </Link>
+          </li>
+          <li>
+            <Link
+              href="/articles/long-distance-measuring-tools-selection"
+              className="text-gray-900 underline hover:no-underline"
+            >
+              長い距離を測る道具の選び方
+            </Link>
+          </li>
+        </ul>
+
         {/*
           構造化データ：VideoObject（任意）
           ※ 公開日・サムネイル・再生時間はYouTube上で確認してから設定してください（捏造しない）。

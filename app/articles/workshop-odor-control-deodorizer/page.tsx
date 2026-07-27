@@ -4,6 +4,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { SiteHeader } from '@/components/work/site-header';
 import { SiteFooter } from '@/components/work/site-footer';
+import { articleCls as cls } from '@/lib/article-typography';
 
 const siteUrl = 'https://www.sagyou-navi.com';
 const slug = 'workshop-odor-control-deodorizer';
@@ -13,8 +14,13 @@ const description =
   '作業場にこもる塗料・接着剤・シンナー・薬品などの臭い対策を、発生源対策、換気、業務用脱臭機の順で解説。中型可搬式Magic Box-Mと小型Cube PROの違い、必要風量、フィルター、設置場所、導入前チェックまで整理します。';
 const heroImage = `/images/${slug}/workshop-odor-control-hero.jpg`;
 
-const addUtm = (url: string) =>
-  `${url}${url.includes('?') ? '&' : '?'}utm_source=sagyou_navi`;
+function addUtm(url: string) {
+  return `${url}${url.includes('?') ? '&' : '?'}utm_source=sagyou_navi`;
+}
+
+const categoryUrl = addUtm(
+  'https://item.rakuten.co.jp/crecote-shop/c/0000000043/?l-id=shoptop_shopmenu_categorypage_16',
+);
 
 type Product = {
   name: string;
@@ -106,6 +112,8 @@ const products: Product[] = [
   },
 ];
 
+const heroProduct = products[0];
+
 const references = [
   {
     label: 'SHUMAN Magic Box-M MA04C 公式製品情報',
@@ -190,64 +198,214 @@ function ExternalButton({
   href,
   children,
   variant = 'primary',
+  size = 'md',
 }: {
   href: string;
   children: ReactNode;
   variant?: 'primary' | 'secondary';
+  size?: 'md' | 'lg';
 }) {
-  const className =
+  const sizeCls =
+    size === 'lg'
+      ? 'min-h-14 w-full px-6 py-4 text-base sm:text-lg'
+      : 'min-h-11 px-5 py-3 text-[15px]';
+  const variantCls =
     variant === 'primary'
-      ? 'inline-flex items-center justify-center rounded-xl bg-orange-600 px-5 py-3 text-sm font-bold text-white transition hover:bg-orange-700'
-      : 'inline-flex items-center justify-center rounded-xl border border-orange-200 bg-white px-5 py-3 text-sm font-bold text-orange-800 transition hover:bg-orange-50';
+      ? 'bg-orange-600 text-white hover:bg-orange-700'
+      : 'border border-gray-900 bg-white text-gray-900 hover:bg-amber-50';
 
   return (
-    <a href={href} target="_blank" rel="nofollow sponsored" className={className}>
+    <a
+      href={href}
+      target="_blank"
+      rel="nofollow sponsored"
+      className={`inline-flex items-center justify-center rounded-xl font-black transition ${sizeCls} ${variantCls}`}
+    >
       {children}
     </a>
   );
 }
 
-function ProductCard({ product, featured = false }: { product: Product; featured?: boolean }) {
+function ProductCard({ product }: { product: Product }) {
   return (
-    <article
-      className={`overflow-hidden rounded-3xl border bg-white shadow-sm ${
-        featured ? 'border-orange-300 ring-2 ring-orange-100' : 'border-slate-200'
-      }`}
-    >
-      <div className="relative aspect-[4/3] bg-slate-50">
-        <Image src={product.image} alt={product.name} fill className="object-contain p-5" />
+    <article className="overflow-hidden rounded-2xl border border-gray-300 bg-white shadow-sm">
+      <div className="relative aspect-[4/3] bg-gray-50">
+        <Image
+          src={product.image}
+          alt={product.name}
+          fill
+          sizes="(max-width: 768px) 100vw, 360px"
+          className="object-contain p-5"
+        />
       </div>
-      <div className="space-y-4 p-6">
-        <span className="inline-flex rounded-full bg-orange-100 px-3 py-1 text-xs font-bold text-orange-800">
+      <div className="space-y-3 p-5">
+        <ExternalButton href={product.url} size="lg">
+          楽天市場で商品を見る →
+        </ExternalButton>
+        <span className="inline-flex rounded-full bg-amber-100 px-3 py-1 text-xs font-bold text-gray-900">
           {product.badge}
         </span>
-        <h3 className="text-xl font-black text-slate-900">{product.shortName}</h3>
-        <p className="text-sm leading-7 text-slate-700">{product.name}</p>
-        <dl className="space-y-2 text-sm leading-7 text-slate-700">
-          <div>
-            <dt className="inline font-bold text-slate-900">向く規模：</dt>
-            <dd className="inline">{product.scale}</dd>
-          </div>
-          <div>
-            <dt className="inline font-bold text-slate-900">対象臭気：</dt>
-            <dd className="inline">{product.odors}</dd>
-          </div>
-          <div>
-            <dt className="inline font-bold text-slate-900">フィルター：</dt>
-            <dd className="inline">{product.filter}</dd>
-          </div>
-        </dl>
-        <p className="rounded-2xl bg-slate-50 p-4 text-sm leading-7 text-slate-700">
-          <strong className="text-slate-900">選ぶ理由：</strong>
+        <h3 className="text-xl font-black leading-snug text-gray-900">{product.shortName}</h3>
+        <p className={cls.bodySm}>{product.name}</p>
+        <ul className="space-y-2 text-[15px] leading-7 text-gray-900">
+          <li>
+            <strong>向く規模：</strong>
+            {product.scale}
+          </li>
+          <li>
+            <strong>対象臭気：</strong>
+            {product.odors}
+          </li>
+          <li>
+            <strong>フィルター：</strong>
+            {product.filter}
+          </li>
+        </ul>
+        <p className="rounded-xl bg-gray-50 p-4 text-[15px] leading-7 text-gray-900">
+          <strong>選ぶ理由：</strong>
           {product.suitedFor}
         </p>
-        <p className="text-xs leading-6 text-rose-700">
+        <p className="rounded-xl border border-rose-200 bg-rose-50 p-4 text-[15px] leading-7 text-gray-900">
           <strong>導入前確認：</strong>
           {product.check}
         </p>
-        <ExternalButton href={product.url}>楽天市場で商品を見る</ExternalButton>
       </div>
     </article>
+  );
+}
+
+function FeaturedHeroProduct({ product }: { product: Product }) {
+  return (
+    <section className="overflow-hidden rounded-3xl border-2 border-orange-500 bg-white shadow-md">
+      <div className="border-b border-orange-200 bg-orange-50 px-5 py-4 sm:px-8">
+        <p className="text-sm font-black tracking-wide text-orange-900">
+          この記事の主力候補
+        </p>
+        <h2 className="mt-1 text-2xl font-black text-gray-900 sm:text-3xl">
+          SHUMAN Magic Box-M MA04C
+        </h2>
+        <p className="mt-2 text-[15px] leading-7 text-gray-900">
+          家庭用では能力が足りず、固定式大型設備までは必要ない作業場向けの
+          <mark className={cls.mark}>中型可搬式脱臭機</mark>です。
+        </p>
+      </div>
+
+      <div className="grid gap-0 lg:grid-cols-[minmax(280px,0.9fr)_1.1fr]">
+        <div className="border-b border-gray-200 bg-gray-50 p-5 lg:border-b-0 lg:border-r lg:p-8">
+          <div className="relative mx-auto aspect-square max-w-md overflow-hidden rounded-2xl border border-gray-200 bg-white">
+            <Image
+              src={product.image}
+              alt={product.name}
+              fill
+              sizes="(max-width: 1024px) 100vw, 420px"
+              className="object-contain p-6"
+              priority
+            />
+          </div>
+          <div className="mt-5 space-y-3">
+            <ExternalButton href={product.url} size="lg">
+              楽天市場で Magic Box-M を見る →
+            </ExternalButton>
+            <p className="text-center text-sm font-bold text-gray-900">
+              AC100V ／ 消費電力58W ／ 風量60〜600m³/h ／ 重量8.6kg
+            </p>
+          </div>
+        </div>
+
+        <div className="space-y-5 p-5 sm:p-8">
+          <div>
+            <span className="inline-flex rounded-full bg-orange-100 px-3 py-1 text-xs font-bold text-orange-900">
+              {product.badge}
+            </span>
+            <p className="mt-3 text-[15px] leading-7 text-gray-900">{product.name}</p>
+          </div>
+
+          <div className="flex flex-wrap gap-2">
+            {[
+              'AC100V',
+              '消費電力58W',
+              '風量60〜600m³/h',
+              '重量8.6kg',
+              '金属製ボディ',
+              'ダクト仕様対応可',
+            ].map((spec) => (
+              <span
+                key={spec}
+                className="rounded-lg bg-amber-200 px-3 py-2 text-sm font-black text-gray-900"
+              >
+                {spec}
+              </span>
+            ))}
+          </div>
+
+          <div>
+            <h3 className="text-lg font-black text-gray-900">向く会社・現場</h3>
+            <ul className="mt-3 space-y-2 text-[15px] leading-7 text-gray-900">
+              <li>・臭いの発生場所が日によって変わる</li>
+              <li>・家庭用空気清浄機では能力が足りない</li>
+              <li>・資材保管庫、塗装台、接着工程へ移動して使いたい</li>
+              <li>・固定式の大型設備を入れる前に補助機器を検討したい</li>
+              <li>・臭いに合わせてフィルターを選びたい</li>
+            </ul>
+          </div>
+
+          <div className="rounded-2xl border-2 border-rose-300 bg-rose-50 p-5">
+            <h3 className="text-lg font-black text-rose-950">購入時の最重要確認</h3>
+            <p className="mt-2 text-[15px] leading-7 text-gray-900">
+              MA04Cはフィルター2枚仕様ですが、メーカー公式では
+              <strong>本体にフィルターは付属しない</strong>
+              と案内されています。対象臭気に合う純正フィルターと費用を確認してから導入してください。
+              交換目安は約3カ月〜1年です。局所排気・換気の代替としては扱いません。
+            </p>
+          </div>
+
+          <ExternalButton href={product.url} size="lg">
+            仕様を確認して楽天市場で購入する →
+          </ExternalButton>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+function SectionHeading({ children }: { children: ReactNode }) {
+  return (
+    <h2 className="mb-5 border-l-4 border-gray-900 pl-3 text-2xl font-black leading-snug tracking-wide text-gray-900 sm:text-3xl">
+      {children}
+    </h2>
+  );
+}
+
+function ProductTableCell({ product }: { product: Product }) {
+  return (
+    <div className="flex min-w-[15rem] flex-col gap-3">
+      <a
+        href={product.url}
+        target="_blank"
+        rel="nofollow sponsored"
+        className="group flex items-start gap-3 text-gray-900 no-underline"
+      >
+        <span className="relative h-20 w-20 shrink-0 overflow-hidden rounded-lg border border-gray-200 bg-white">
+          <Image
+            src={product.image}
+            alt={`${product.shortName}の商品画像`}
+            fill
+            sizes="80px"
+            className="object-contain p-1.5"
+          />
+        </span>
+        <span className="min-w-0 space-y-1">
+          <span className="inline-flex rounded-full bg-amber-100 px-2 py-0.5 text-xs font-bold text-gray-900">
+            {product.badge}
+          </span>
+          <span className="block font-black leading-6 group-hover:underline">
+            {product.shortName}
+          </span>
+          <span className="block text-xs leading-5 text-gray-900">{product.name}</span>
+        </span>
+      </a>
+      <ExternalButton href={product.url}>楽天で見る →</ExternalButton>
+    </div>
   );
 }
 
@@ -278,7 +436,7 @@ export default function ArticlePage() {
   return (
     <>
       <SiteHeader />
-      <main className="bg-slate-50 text-slate-900">
+      <main className="bg-gray-50 text-gray-900">
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }}
@@ -289,41 +447,39 @@ export default function ArticlePage() {
         />
 
         <div className="mx-auto max-w-6xl px-4 py-6 md:px-6">
-          <nav aria-label="Breadcrumb" className="mb-6 text-sm text-slate-600">
+          <nav aria-label="Breadcrumb" className="mb-6 text-sm text-gray-800">
             <ol className="flex flex-wrap items-center gap-2">
               <li>
-                <Link href="/" className="hover:text-orange-700">
+                <Link href="/" className="font-bold underline underline-offset-4">
                   ホーム
                 </Link>
               </li>
               <li>/</li>
               <li>
-                <Link href="/articles" className="hover:text-orange-700">
+                <Link href="/articles" className="font-bold underline underline-offset-4">
                   記事一覧
                 </Link>
               </li>
               <li>/</li>
-              <li className="text-slate-900">{title}</li>
+              <li className="font-bold text-gray-900">作業場の臭い対策</li>
             </ol>
           </nav>
 
           <article className="space-y-10">
             <header className="rounded-3xl bg-white p-6 shadow-sm md:p-10">
               <div className="mb-4 flex flex-wrap gap-2">
-                <span className="rounded-full bg-orange-100 px-3 py-1 text-xs font-bold text-orange-800">
+                <span className="rounded-full bg-orange-100 px-3 py-1 text-xs font-bold text-orange-900">
                   作業用品ナビ
                 </span>
-                <span className="rounded-full bg-slate-100 px-3 py-1 text-xs font-bold text-slate-700">
+                <span className="rounded-full bg-gray-100 px-3 py-1 text-xs font-bold text-gray-900">
                   作業環境改善
                 </span>
-                <span className="rounded-full bg-slate-100 px-3 py-1 text-xs font-bold text-slate-700">
+                <span className="rounded-full bg-gray-100 px-3 py-1 text-xs font-bold text-gray-800">
                   更新日：2026-07-27
                 </span>
               </div>
-              <h1 className="text-3xl font-black leading-tight text-slate-950 md:text-5xl">
-                {title}
-              </h1>
-              <p className="mt-6 max-w-4xl text-base leading-8 text-slate-700 md:text-lg">
+              <h1 className={cls.h1}>{title}</h1>
+              <p className="mt-6 max-w-4xl text-lg leading-9 text-gray-900">
                 看板製作、塗装、自動車補修、樹脂加工、試作工房、研究室などで問題になりやすい塗料・接着剤・シンナー・薬品の臭いを、発生源対策、換気、業務用脱臭機の順で整理します。家庭用では足りず、大型固定設備までは必要ない現場へ向く可搬式中型脱臭機も詳しく解説します。
               </p>
               <div className="relative mt-8 aspect-[16/9] overflow-hidden rounded-2xl">
@@ -337,59 +493,39 @@ export default function ArticlePage() {
               </div>
             </header>
 
-            <section className="rounded-3xl bg-slate-950 p-6 text-white shadow-sm md:p-8">
-              <h2 className="text-2xl font-black">
+            <section className="rounded-3xl bg-gray-950 p-6 text-white shadow-sm md:p-8">
+              <h2 className="text-2xl font-black sm:text-3xl">
                 結論｜作業場の臭い対策は「発生源・換気・残臭脱臭」の3段階
               </h2>
               <div className="mt-5 grid gap-4 md:grid-cols-2">
                 <div className="rounded-2xl bg-white/10 p-5">
-                  <h3 className="font-bold">対策の順番</h3>
-                  <ol className="mt-3 space-y-2 text-sm leading-7 text-slate-100">
+                  <h3 className="text-lg font-black">対策の順番</h3>
+                  <ol className="mt-3 space-y-2 text-[15px] leading-7 text-white">
                     <li>1. 臭いを発生させる材料と工程を特定する</li>
                     <li>2. 密閉、局所排気、全体換気で発散を抑える</li>
                     <li>3. 換気後の残臭を発生源近くで脱臭する</li>
                   </ol>
                 </div>
                 <div className="rounded-2xl bg-white/10 p-5">
-                  <h3 className="font-bold">機種の目安</h3>
-                  <ul className="mt-3 space-y-2 text-sm leading-7 text-slate-100">
+                  <h3 className="text-lg font-black">機種の目安</h3>
+                  <ul className="mt-3 space-y-2 text-[15px] leading-7 text-white">
                     <li>・広めの作業場・保管庫：中型可搬式</li>
                     <li>・小規模工房・作業台：有機溶剤臭特化の小型機</li>
                     <li>・受付・デスク：卓上型</li>
                   </ul>
                 </div>
               </div>
-              <div className="mt-5 rounded-2xl border border-amber-300/30 bg-amber-400/10 p-5 text-sm leading-7 text-amber-50">
+              <div className="mt-5 rounded-2xl border border-amber-300/40 bg-amber-400/15 p-5 text-[15px] leading-7 text-amber-50">
                 <strong>安全上の注意：</strong>
                 臭いが弱くなっても、有機溶剤などの有害物質濃度が安全になったとは限りません。SDS、法令、局所排気、作業環境測定、呼吸用保護具を優先し、脱臭機は補助設備として使用してください。
               </div>
             </section>
 
-            <section className="grid gap-6 lg:grid-cols-[1.4fr_1fr]">
-              <ProductCard product={products[0]} featured />
-              <div className="space-y-6">
-                <div className="rounded-3xl bg-white p-6 shadow-sm">
-                  <h2 className="text-2xl font-black text-slate-900">Magic Box-Mが向く会社</h2>
-                  <ul className="mt-4 space-y-3 text-sm leading-7 text-slate-700">
-                    <li>・臭いの発生場所が日によって変わる</li>
-                    <li>・家庭用空気清浄機では能力が足りない</li>
-                    <li>・資材保管庫、塗装台、接着工程へ移動して使いたい</li>
-                    <li>・固定式の大型設備を入れる前に補助機器を検討したい</li>
-                    <li>・臭いに合わせてフィルターを選びたい</li>
-                  </ul>
-                </div>
-                <div className="rounded-3xl border border-rose-200 bg-rose-50 p-6">
-                  <h3 className="text-lg font-black text-rose-900">購入時の最重要確認</h3>
-                  <p className="mt-3 text-sm leading-7 text-rose-800">
-                    MA04Cはフィルター2枚仕様ですが、メーカー公式では本体にフィルターは付属しないと案内されています。対象臭気に合う純正フィルターと費用を確認してから導入してください。
-                  </p>
-                </div>
-              </div>
-            </section>
+            <FeaturedHeroProduct product={heroProduct} />
 
             <section className="rounded-3xl bg-white p-6 shadow-sm md:p-8">
-              <h2 className="text-2xl font-black md:text-3xl">作業場の臭いは4タイプに分けて考える</h2>
-              <div className="relative mt-6 aspect-[16/9] overflow-hidden rounded-2xl">
+              <SectionHeading>作業場の臭いは4タイプに分けて考える</SectionHeading>
+              <div className="relative mt-2 aspect-[16/9] overflow-hidden rounded-2xl">
                 <Image
                   src={`/images/${slug}/workshop-odor-source-identification.jpg`}
                   alt="作業場で塗料・接着剤・樹脂・薬品の臭いの発生源を確認するイメージ"
@@ -416,19 +552,17 @@ export default function ArticlePage() {
                     '汚れたウエス、付着した材料、容器の閉め忘れを除去し、清掃・換気後に残る臭いを処理。',
                   ],
                 ].map(([heading, text]) => (
-                  <div key={heading} className="rounded-2xl border border-slate-200 p-5">
-                    <h3 className="text-lg font-bold text-slate-900">{heading}</h3>
-                    <p className="mt-3 text-sm leading-7 text-slate-700">{text}</p>
+                  <div key={heading} className="rounded-2xl border border-gray-300 p-5">
+                    <h3 className="text-lg font-black text-gray-900">{heading}</h3>
+                    <p className="mt-3 text-[15px] leading-7 text-gray-900">{text}</p>
                   </div>
                 ))}
               </div>
             </section>
 
             <section className="rounded-3xl bg-white p-6 shadow-sm md:p-8">
-              <h2 className="text-2xl font-black md:text-3xl">
-                換気設備・空気清浄機・業務用脱臭機の違い
-              </h2>
-              <div className="relative mt-6 aspect-[16/9] overflow-hidden rounded-2xl">
+              <SectionHeading>換気設備・空気清浄機・業務用脱臭機の違い</SectionHeading>
+              <div className="relative mt-2 aspect-[16/9] overflow-hidden rounded-2xl">
                 <Image
                   src={`/images/${slug}/workshop-airflow-ventilation-deodorization.jpg`}
                   alt="局所排気・全体換気・脱臭機の空気の流れを確認するイメージ"
@@ -436,30 +570,36 @@ export default function ArticlePage() {
                   className="object-cover"
                 />
               </div>
-              <div className="mt-6 overflow-x-auto">
-                <table className="min-w-[760px] w-full border-collapse text-sm">
+              <div className="mt-6 overflow-x-auto rounded-xl border border-gray-200">
+                <table className={cls.table}>
                   <thead>
-                    <tr className="bg-slate-100 text-left">
-                      <th className="p-4">設備</th>
-                      <th className="p-4">主な役割</th>
-                      <th className="p-4">作業場での位置づけ</th>
+                    <tr>
+                      <th className={cls.th}>設備</th>
+                      <th className={cls.th}>主な役割</th>
+                      <th className={cls.th}>作業場での位置づけ</th>
                     </tr>
                   </thead>
                   <tbody>
-                    <tr className="border-b border-slate-200">
-                      <td className="p-4 font-bold">局所排気・換気</td>
-                      <td className="p-4">蒸気・ガスを広がる前に捕集し、適切に排出</td>
-                      <td className="p-4">法令・SDSに応じて最優先</td>
-                    </tr>
-                    <tr className="border-b border-slate-200">
-                      <td className="p-4 font-bold">空気清浄機</td>
-                      <td className="p-4">ほこり・花粉・粒子状物質の除去が中心</td>
-                      <td className="p-4">強い工程臭には能力不足の場合がある</td>
+                    <tr>
+                      <td className={cls.td}>
+                        <strong>局所排気・換気</strong>
+                      </td>
+                      <td className={cls.td}>蒸気・ガスを広がる前に捕集し、適切に排出</td>
+                      <td className={cls.td}>法令・SDSに応じて最優先</td>
                     </tr>
                     <tr>
-                      <td className="p-4 font-bold">業務用脱臭機</td>
-                      <td className="p-4">臭い成分をフィルターへ吸着・反応させる</td>
-                      <td className="p-4">換気後の残臭、発生源周辺の補助対策</td>
+                      <td className={cls.td}>
+                        <strong>空気清浄機</strong>
+                      </td>
+                      <td className={cls.td}>ほこり・花粉・粒子状物質の除去が中心</td>
+                      <td className={cls.td}>強い工程臭には能力不足の場合がある</td>
+                    </tr>
+                    <tr>
+                      <td className={cls.td}>
+                        <strong>業務用脱臭機</strong>
+                      </td>
+                      <td className={cls.td}>臭い成分をフィルターへ吸着・反応させる</td>
+                      <td className={cls.td}>換気後の残臭、発生源周辺の補助対策</td>
                     </tr>
                   </tbody>
                 </table>
@@ -467,48 +607,41 @@ export default function ArticlePage() {
             </section>
 
             <section className="rounded-3xl bg-white p-6 shadow-sm md:p-8">
-              <h2 className="text-2xl font-black md:text-3xl">業務用脱臭機の選び方</h2>
-              <div className="mt-6 space-y-6 text-base leading-8 text-slate-700">
-                <div>
-                  <h3 className="text-xl font-bold text-slate-900">1. 臭いの種類</h3>
-                  <p className="mt-2">
-                    塗料、接着剤、シンナー、樹脂、薬品、資材臭など、何の臭いかを整理します。フィルター式は対象臭気との適合が最重要です。
-                  </p>
-                </div>
-                <div>
-                  <h3 className="text-xl font-bold text-slate-900">2. 風量と発生量</h3>
-                  <p className="mt-2">
-                    最大風量だけでなく、臭いが一時的か連続的か、発生源へ近づけられるかで判断します。強風で臭いを周囲へ広げないよう、低風量から調整します。
-                  </p>
-                </div>
-                <div>
-                  <h3 className="text-xl font-bold text-slate-900">3. 可搬性</h3>
-                  <p className="mt-2">
-                    工程が変わる現場では移動できる機種が便利です。Magic
-                    Box-Mは8.6kg、Cube PROは1.1kgで、必要な場所へ動かす運用に向きます。
-                  </p>
-                </div>
-                <div>
-                  <h3 className="text-xl font-bold text-slate-900">4. フィルターと保守</h3>
-                  <p className="mt-2">
-                    付属有無、交換周期、再生対応、廃棄方法を確認します。本体価格だけでなく、フィルター費用を年間予算へ含めます。
-                  </p>
-                </div>
-                <div>
-                  <h3 className="text-xl font-bold text-slate-900">5. ダクト接続</h3>
-                  <p className="mt-2">
-                    発生源へ本体を近づけられない場合はダクト対応が役立ちます。Magic
-                    Box-Mはオプションフランジでダクト仕様を検討できます。
-                  </p>
-                </div>
+              <SectionHeading>業務用脱臭機の選び方</SectionHeading>
+              <div className="mt-2 space-y-6">
+                {[
+                  [
+                    '1. 臭いの種類',
+                    '塗料、接着剤、シンナー、樹脂、薬品、資材臭など、何の臭いかを整理します。フィルター式は対象臭気との適合が最重要です。',
+                  ],
+                  [
+                    '2. 風量と発生量',
+                    '最大風量だけでなく、臭いが一時的か連続的か、発生源へ近づけられるかで判断します。強風で臭いを周囲へ広げないよう、低風量から調整します。',
+                  ],
+                  [
+                    '3. 可搬性',
+                    '工程が変わる現場では移動できる機種が便利です。Magic Box-Mは8.6kg、Cube PROは1.1kgで、必要な場所へ動かす運用に向きます。',
+                  ],
+                  [
+                    '4. フィルターと保守',
+                    '付属有無、交換周期、再生対応、廃棄方法を確認します。本体価格だけでなく、フィルター費用を年間予算へ含めます。',
+                  ],
+                  [
+                    '5. ダクト接続',
+                    '発生源へ本体を近づけられない場合はダクト対応が役立ちます。Magic Box-Mはオプションフランジでダクト仕様を検討できます。',
+                  ],
+                ].map(([heading, text]) => (
+                  <div key={heading}>
+                    <h3 className={cls.h3}>{heading}</h3>
+                    <p className={cls.body}>{text}</p>
+                  </div>
+                ))}
               </div>
             </section>
 
             <section className="rounded-3xl bg-white p-6 shadow-sm md:p-8">
-              <h2 className="text-2xl font-black md:text-3xl">
-                Cube PROは小規模な塗料・接着剤作業向け
-              </h2>
-              <div className="relative mt-4 aspect-[16/9] overflow-hidden rounded-2xl">
+              <SectionHeading>Cube PROは小規模な塗料・接着剤作業向け</SectionHeading>
+              <div className="relative mt-2 aspect-[16/9] overflow-hidden rounded-2xl">
                 <Image
                   src={`/images/${slug}/small-workbench-solvent-odor-control.jpg`}
                   alt="小規模な作業台で塗料や接着剤の臭いを局所脱臭するイメージ"
@@ -516,7 +649,7 @@ export default function ArticlePage() {
                   className="object-cover"
                 />
               </div>
-              <p className="mt-6 text-base leading-8 text-slate-700">
+              <p className={`${cls.body} mt-6`}>
                 Cube PROは、有機溶剤系の臭いに特化した小型業務用脱臭機です。シルバー、ストーン、ホワイトは色違いで、基本仕様は共通です。風量87m³/h、目安6畳まで、1.1kgで、作業台の近くに置きやすい機種です。広い作業場や資材保管庫にはMagic
                 Box-M、小さな発生源にはCube PROという分け方がわかりやすくなります。
               </p>
@@ -528,50 +661,35 @@ export default function ArticlePage() {
             </section>
 
             <section className="rounded-3xl bg-white p-6 shadow-sm md:p-8">
-              <h2 className="text-2xl font-black md:text-3xl">商品サムネ付き比較表</h2>
-              <div className="mt-6 overflow-x-auto">
-                <table className="min-w-[1200px] w-full border-collapse text-sm">
+              <SectionHeading>商品サムネ付き比較表</SectionHeading>
+              <p className={cls.body}>
+                リンクは商品サムネ直下に置いています。スマートフォンでも横スクロールせずに購入導線へ進めます。
+              </p>
+              <div className="mt-4 overflow-x-auto rounded-xl border border-gray-200">
+                <table className={`${cls.table} min-w-[880px]`}>
                   <thead>
-                    <tr className="bg-slate-100 text-left">
-                      <th className="p-4">商品</th>
-                      <th className="p-4">規模・用途</th>
-                      <th className="p-4">風量</th>
-                      <th className="p-4">重量</th>
-                      <th className="p-4">フィルター</th>
-                      <th className="p-4">購入前確認</th>
-                      <th className="p-4">商品ページ</th>
+                    <tr>
+                      <th className={cls.th}>商品</th>
+                      <th className={cls.th}>規模・用途</th>
+                      <th className={cls.th}>風量</th>
+                      <th className={cls.th}>重量</th>
+                      <th className={cls.th}>フィルター</th>
+                      <th className={cls.th}>購入前確認</th>
                     </tr>
                   </thead>
                   <tbody>
                     {products.map((product) => (
-                      <tr key={product.name} className="border-b border-slate-200 align-top">
-                        <td className="p-4">
-                          <div className="flex min-w-[260px] gap-4">
-                            <div className="relative h-20 w-20 flex-none overflow-hidden rounded-xl border border-slate-200 bg-white">
-                              <Image
-                                src={product.image}
-                                alt={product.name}
-                                fill
-                                className="object-contain p-2"
-                              />
-                            </div>
-                            <div>
-                              <span className="rounded-full bg-orange-100 px-2 py-1 text-xs font-bold text-orange-800">
-                                {product.badge}
-                              </span>
-                              <p className="mt-2 font-bold text-slate-900">{product.shortName}</p>
-                              <p className="mt-1 text-xs leading-6 text-slate-600">{product.name}</p>
-                            </div>
-                          </div>
+                      <tr key={product.name} className="align-top">
+                        <td className={cls.td}>
+                          <ProductTableCell product={product} />
                         </td>
-                        <td className="p-4 text-slate-700">{product.scale}</td>
-                        <td className="p-4 text-slate-700">{product.airflow}</td>
-                        <td className="p-4 text-slate-700">{product.weight}</td>
-                        <td className="p-4 text-slate-700">{product.filter}</td>
-                        <td className="p-4 text-slate-700">{product.check}</td>
-                        <td className="p-4">
-                          <ExternalButton href={product.url}>楽天で見る</ExternalButton>
+                        <td className={cls.td}>{product.scale}</td>
+                        <td className={cls.td}>
+                          <mark className={cls.mark}>{product.airflow}</mark>
                         </td>
+                        <td className={cls.td}>{product.weight}</td>
+                        <td className={cls.td}>{product.filter}</td>
+                        <td className={cls.td}>{product.check}</td>
                       </tr>
                     ))}
                   </tbody>
@@ -580,8 +698,8 @@ export default function ArticlePage() {
             </section>
 
             <section className="rounded-3xl bg-white p-6 shadow-sm md:p-8">
-              <h2 className="text-2xl font-black md:text-3xl">設置と運用のコツ</h2>
-              <div className="relative mt-6 aspect-[16/9] overflow-hidden rounded-2xl">
+              <SectionHeading>設置と運用のコツ</SectionHeading>
+              <div className="relative mt-2 aspect-[16/9] overflow-hidden rounded-2xl">
                 <Image
                   src={`/images/${slug}/portable-industrial-deodorizer-workshop.jpg`}
                   alt="可搬式の中型脱臭機を臭いの発生源近くへ設置するイメージ"
@@ -608,17 +726,17 @@ export default function ArticlePage() {
                     '設置日、対象臭気、運転時間、フィルター交換日、作業者の声を記録します。',
                   ],
                 ].map(([heading, text]) => (
-                  <div key={heading} className="rounded-2xl border border-slate-200 p-5">
-                    <h3 className="font-bold text-slate-900">{heading}</h3>
-                    <p className="mt-2 text-sm leading-7 text-slate-700">{text}</p>
+                  <div key={heading} className="rounded-2xl border border-gray-300 p-5">
+                    <h3 className="text-lg font-black text-gray-900">{heading}</h3>
+                    <p className="mt-2 text-[15px] leading-7 text-gray-900">{text}</p>
                   </div>
                 ))}
               </div>
             </section>
 
             <section className="rounded-3xl bg-white p-6 shadow-sm md:p-8">
-              <h2 className="text-2xl font-black md:text-3xl">よくある失敗</h2>
-              <ul className="mt-6 grid gap-3 text-sm leading-7 text-rose-900 md:grid-cols-2">
+              <SectionHeading>よくある失敗</SectionHeading>
+              <ul className="mt-2 grid gap-3 md:grid-cols-2">
                 {[
                   '芳香剤や消臭スプレーで臭いを上書きする',
                   '局所排気が必要な作業を脱臭機だけで行う',
@@ -627,7 +745,10 @@ export default function ArticlePage() {
                   'Magic Box-Mにフィルターが付属すると誤解する',
                   '交換・再生フィルター費用を予算化しない',
                 ].map((item) => (
-                  <li key={item} className="rounded-2xl border border-rose-200 bg-rose-50 px-5 py-4">
+                  <li
+                    key={item}
+                    className="rounded-2xl border border-rose-200 bg-rose-50 px-5 py-4 text-[15px] font-bold leading-7 text-gray-900"
+                  >
                     {item}
                   </li>
                 ))}
@@ -635,8 +756,8 @@ export default function ArticlePage() {
             </section>
 
             <section className="rounded-3xl bg-white p-6 shadow-sm md:p-8">
-              <h2 className="text-2xl font-black md:text-3xl">法人導入チェックリスト</h2>
-              <div className="relative mt-6 aspect-[16/9] overflow-hidden rounded-2xl">
+              <SectionHeading>法人導入チェックリスト</SectionHeading>
+              <div className="relative mt-2 aspect-[16/9] overflow-hidden rounded-2xl">
                 <Image
                   src={`/images/${slug}/industrial-deodorizer-procurement-meeting.jpg`}
                   alt="作業場の臭い対策として業務用脱臭機を選定するイメージ"
@@ -644,7 +765,7 @@ export default function ArticlePage() {
                   className="object-cover"
                 />
               </div>
-              <ul className="mt-6 grid gap-3 text-sm leading-7 text-slate-800">
+              <ul className="mt-6 grid gap-3">
                 {[
                   '臭いが発生する材料名と工程を整理した',
                   'SDSと必要な換気・保護具を確認した',
@@ -655,7 +776,10 @@ export default function ArticlePage() {
                   'フィルター交換・再生費用を予算化した',
                   '導入前後の臭い・作業者の声を記録する',
                 ].map((item) => (
-                  <li key={item} className="rounded-2xl border border-slate-200 bg-slate-50 px-5 py-4">
+                  <li
+                    key={item}
+                    className="rounded-2xl border border-gray-300 bg-gray-50 px-5 py-4 text-[15px] leading-7 text-gray-900"
+                  >
                     □ {item}
                   </li>
                 ))}
@@ -663,22 +787,20 @@ export default function ArticlePage() {
             </section>
 
             <section className="rounded-3xl bg-white p-6 shadow-sm md:p-8">
-              <h2 className="text-2xl font-black md:text-3xl">FAQ</h2>
-              <div className="mt-6 space-y-4">
+              <SectionHeading>FAQ</SectionHeading>
+              <div className="mt-2 space-y-4">
                 {faq.map((item) => (
-                  <div key={item.question} className="rounded-2xl border border-slate-200 p-5">
-                    <h3 className="text-lg font-bold text-slate-900">Q. {item.question}</h3>
-                    <p className="mt-3 text-base leading-8 text-slate-700">A. {item.answer}</p>
+                  <div key={item.question} className="rounded-2xl border border-gray-300 p-5">
+                    <h3 className={cls.faqQ}>Q. {item.question}</h3>
+                    <p className="text-[15px] leading-8 text-gray-900">A. {item.answer}</p>
                   </div>
                 ))}
               </div>
             </section>
 
             <section className="rounded-3xl bg-white p-6 shadow-sm md:p-8">
-              <h2 className="text-2xl font-black md:text-3xl">
-                フィルター交換と保守
-              </h2>
-              <div className="relative mt-6 aspect-[16/9] overflow-hidden rounded-2xl">
+              <SectionHeading>フィルター交換と保守</SectionHeading>
+              <div className="relative mt-2 aspect-[16/9] overflow-hidden rounded-2xl">
                 <Image
                   src={`/images/${slug}/industrial-deodorizer-filter-maintenance.jpg`}
                   alt="業務用脱臭機のフィルター交換と保守を行うイメージ"
@@ -686,16 +808,16 @@ export default function ArticlePage() {
                   className="object-cover"
                 />
               </div>
-              <p className="mt-6 text-base leading-8 text-slate-700">
+              <p className={`${cls.body} mt-6`}>
                 業務用脱臭機の運用では、本体購入価格だけでなく、フィルターの交換周期・費用・再生対応を事前に確認することが重要です。Magic
                 Box-Mはフィルター別売で交換目安約3カ月〜1年、Cube PROはフィルター2枚付属で交換目安約2〜6カ月です。
                 設置日、対象臭気、運転時間、フィルター交換日を記録すると、次回の予算化と能力判断に役立ちます。
               </p>
             </section>
 
-            <section className="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm md:p-8">
-              <h2 className="text-2xl font-black md:text-3xl">パーソナル空間向けの参考商品</h2>
-              <p className="mt-4 text-base leading-8 text-slate-700">
+            <section className="rounded-3xl border border-gray-300 bg-white p-6 shadow-sm md:p-8">
+              <SectionHeading>パーソナル空間向けの参考商品</SectionHeading>
+              <p className={cls.body}>
                 HotaluX AIR SP102Wは、受付、会議室、デスクなどパーソナル空間向けの卓上型です。強い工程臭の主力には向きません。メーカー公式では生産終了品のため、在庫、保守、代替品を確認してから選んでください。
               </p>
               <div className="mt-6 max-w-xl">
@@ -704,41 +826,38 @@ export default function ArticlePage() {
             </section>
 
             <section className="rounded-3xl bg-orange-50 p-6 shadow-sm md:p-8">
-              <h2 className="text-2xl font-black text-slate-900">
+              <h2 className="text-2xl font-black text-gray-900 sm:text-3xl">
                 まとめ｜高額な脱臭機ほど「何を吸わせるか」を先に決める
               </h2>
-              <p className="mt-4 text-base leading-8 text-slate-700">
+              <p className={`${cls.body} mt-4`}>
                 Magic Box-M MA04Cは、家庭用機器では能力が足りず、固定式大型設備までは必要ない作業場で、臭いの発生場所へ移動して使える点が魅力です。看板製作、塗装、接着、樹脂加工、研究、資材保管など、工程や場所が変わる会社ほど可搬性と風量調整を活かしやすくなります。
               </p>
-              <p className="mt-4 text-base leading-8 text-slate-700">
+              <p className={cls.body}>
                 ただし、脱臭機は局所排気や換気の代替ではありません。材料、SDS、臭いの発生量、設置位置、フィルター費用を整理し、必要設備の補助として導入してください。
               </p>
-              <p className="mt-4 text-base leading-8 text-slate-700">
+              <p className={cls.body}>
                 作業用品、測定用品、環境改善用品などをまとめて確認したい方は、CRECOTEの作業用品カテゴリーもあわせてご覧ください。
               </p>
-              <div className="mt-6 flex flex-wrap gap-3">
-                <ExternalButton href={products[0].url}>Magic Box-Mを楽天市場で見る</ExternalButton>
-                <ExternalButton
-                  href={addUtm(
-                    'https://item.rakuten.co.jp/crecote-shop/c/0000000043/?l-id=shoptop_shopmenu_categorypage_16',
-                  )}
-                  variant="secondary"
-                >
+              <div className="mt-6 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
+                <ExternalButton href={heroProduct.url} size="lg">
+                  Magic Box-Mを楽天市場で見る →
+                </ExternalButton>
+                <ExternalButton href={categoryUrl} variant="secondary" size="lg">
                   作業用品・環境改善用品をまとめて確認する
                 </ExternalButton>
               </div>
             </section>
 
             <section className="rounded-3xl bg-white p-6 shadow-sm md:p-8">
-              <h2 className="text-xl font-black text-slate-900">参考情報</h2>
-              <ul className="mt-4 space-y-3 text-sm leading-7">
+              <h2 className="text-xl font-black text-gray-900">参考情報</h2>
+              <ul className="mt-4 space-y-3 text-[15px] leading-7">
                 {references.map((reference) => (
                   <li key={reference.url}>
                     <a
                       href={reference.url}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="font-medium text-orange-700 underline decoration-orange-200 underline-offset-4 hover:text-orange-900"
+                      className="font-bold text-gray-900 underline decoration-orange-300 underline-offset-4 hover:text-orange-800"
                     >
                       {reference.label}
                     </a>
@@ -748,11 +867,11 @@ export default function ArticlePage() {
             </section>
 
             <section className="rounded-3xl bg-white p-6 shadow-sm md:p-8">
-              <h2 className="text-xl font-black text-slate-900">関連する記事</h2>
+              <h2 className="text-xl font-black text-gray-900">関連する記事</h2>
               <div className="mt-4 grid gap-3 md:grid-cols-2">
                 <Link
                   href="/articles/factory-breakroom-locker-room-odor-control"
-                  className="rounded-2xl border border-slate-200 p-5 text-sm font-bold text-orange-800 hover:border-orange-300 hover:bg-orange-50"
+                  className="rounded-2xl border border-gray-300 p-5 text-[15px] font-black text-gray-900 hover:border-orange-400 hover:bg-orange-50"
                 >
                   工場の休憩室・更衣室・トイレの臭い対策
                 </Link>

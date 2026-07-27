@@ -14,6 +14,22 @@ export type Article = {
 
 export const ARTICLES: Article[] = [
   {
+    slug: "workshop-odor-control-deodorizer",
+    title:
+      "作業場の臭い対策｜塗料・接着剤・薬品臭に業務用脱臭機を選ぶ方法【2026年版】",
+    shortTitle: "作業場の臭い対策・業務用脱臭機の選び方",
+    description:
+      "作業場にこもる塗料・接着剤・シンナー・薬品などの臭い対策を、発生源対策、換気、業務用脱臭機の順で解説。中型可搬式Magic Box-Mと小型Cube PROの違い、必要風量、フィルター、設置場所、導入前チェックまで整理します。",
+    category: "guide",
+    categoryLabel: "選び方ガイド",
+    thumbnail:
+      "/images/workshop-odor-control-deodorizer/workshop-odor-control-hero.jpg",
+    date: "2026-07-27",
+    readTime: "約20分",
+    available: true,
+    path: "/articles/workshop-odor-control-deodorizer",
+  },
+  {
     slug: "construction-site-safety-checklist",
     title:
       "建設現場の安全対策チェックリスト｜朝礼前・作業中・片付けまで確認すべき項目【2026年版】",

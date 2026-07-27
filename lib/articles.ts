@@ -14,6 +14,22 @@ export type Article = {
 
 export const ARTICLES: Article[] = [
   {
+    slug: "construction-site-safety-checklist",
+    title:
+      "建設現場の安全対策チェックリスト｜朝礼前・作業中・片付けまで確認すべき項目【2026年版】",
+    shortTitle: "建設現場の安全対策チェックリスト",
+    description:
+      "建設現場の安全対策チェックリストを、朝礼前・作業前・作業中・片付けまでの流れで整理。保護具、暑熱対策、荷役・搬送、仮置き、計量まで実務で確認したい項目と関連用品の比較を掲載しています。",
+    category: "guide",
+    categoryLabel: "選び方ガイド",
+    thumbnail:
+      "/images/construction-site-safety-checklist/construction-safety-checklist-hero.jpg",
+    date: "2026-07-27",
+    readTime: "約30分",
+    available: true,
+    path: "/articles/construction-site-safety-checklist",
+  },
+  {
     slug: "laser-level-line-count-selection",
     title:
       "レーザー墨出器は何ライン必要？ライン数・色・受光器・三脚の選び方【2026年版】",

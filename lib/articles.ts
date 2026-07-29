@@ -14,6 +14,22 @@ export type Article = {
 
 export const ARTICLES: Article[] = [
   {
+    slug: "office-air-purifier-room-size",
+    title:
+      "事務所の空気清浄機は何畳用？広さ・台数・置き場所・加湿機能の選び方【2026年版】",
+    shortTitle: "事務所の空気清浄機は何畳用？",
+    description:
+      "事務所用空気清浄機の適用床面積、台数、置き場所、加湿機能を10〜38畳の商品例で解説。",
+    category: "guide",
+    categoryLabel: "選び方ガイド",
+    thumbnail:
+      "/images/office-air-purifier-room-size/office-air-purifier-room-size-hero.webp",
+    date: "2026-07-29",
+    readTime: "約18分",
+    available: true,
+    path: "/articles/office-air-purifier-room-size",
+  },
+  {
     slug: "workshop-odor-control-deodorizer",
     title:
       "作業場の臭い対策｜塗料・接着剤・薬品臭に業務用脱臭機を選ぶ方法【2026年版】",

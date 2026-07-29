@@ -14,6 +14,22 @@ export type Article = {
 
 export const ARTICLES: Article[] = [
   {
+    slug: "pelican-case-size-selection",
+    title:
+      "ペリカンケースのサイズ選び｜内寸・フォームあり/なし・Airとの違いを比較【2026年版】",
+    shortTitle: "ペリカンケースのサイズ選び",
+    description:
+      "精密機器・工具・長尺物に合うペリカンケースを、内寸・フォーム・重量・シリーズで比較。",
+    category: "guide",
+    categoryLabel: "選び方ガイド",
+    thumbnail:
+      "/images/pelican-case-size-selection/pelican-case-equipment-selection-hero.webp",
+    date: "2026-07-29",
+    readTime: "約22分",
+    available: true,
+    path: "/articles/pelican-case-size-selection",
+  },
+  {
     slug: "office-air-purifier-room-size",
     title:
       "事務所の空気清浄機は何畳用？広さ・台数・置き場所・加湿機能の選び方【2026年版】",

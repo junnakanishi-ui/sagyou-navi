@@ -576,13 +576,19 @@ function ProductCard({ product }: { product: Product }) {
         <h3 className="text-lg font-black leading-snug text-gray-900">
           {product.name}
         </h3>
-        <dl className="grid grid-cols-[5.5rem_1fr] gap-x-3 gap-y-2 text-[15px] leading-7 text-gray-900">
-          <dt className="font-bold">外寸</dt>
-          <dd>{product.external}</dd>
-          <dt className="font-bold">内寸</dt>
-          <dd>{product.internal}</dd>
-          <dt className="font-bold">重量</dt>
-          <dd>{product.weight}</dd>
+        <dl className="space-y-2 text-[15px] leading-7 text-gray-900">
+          <div className="grid grid-cols-[4.5rem_1fr] gap-x-3">
+            <dt className="font-bold">外寸</dt>
+            <dd className="break-words">{product.external}</dd>
+          </div>
+          <div className="grid grid-cols-[4.5rem_1fr] gap-x-3">
+            <dt className="font-bold">内寸</dt>
+            <dd className="break-words">{product.internal}</dd>
+          </div>
+          <div className="grid grid-cols-[4.5rem_1fr] gap-x-3">
+            <dt className="font-bold">重量</dt>
+            <dd className="break-words">{product.weight}</dd>
+          </div>
         </dl>
         <p className={`${cls.bodySm} mb-0`}>
           <strong>向く用途：</strong>
@@ -922,7 +928,7 @@ export default function Page() {
                 </tbody>
               </table>
             </TableWrap>
-            <div className="my-8 grid gap-6 md:grid-cols-2 xl:grid-cols-4">
+            <div className="my-8 grid gap-6 md:grid-cols-2">
               {featured.map((product) => (
                 <ProductCard key={product.id} product={product} />
               ))}
@@ -1183,7 +1189,7 @@ export default function Page() {
             <P>
               本体に加えてプローブ、充電器、予備電池、書類を入れるなら、平面寸法や深さを一段ずつ増やします。1200は平面に余裕、1300は同じ外形クラスで深さ、1400は機材一式の区画を作りやすい点が選択軸です。
             </P>
-            <div className="my-8 grid gap-6 md:grid-cols-2 xl:grid-cols-3">
+            <div className="my-8 grid gap-6 md:grid-cols-2">
               {[byId("1060"), byId("1150"), byId("1200"), byId("1400")].map(
                 (product) => (
                   <ProductCard key={product.id} product={product} />
@@ -1198,7 +1204,7 @@ export default function Page() {
             <P>
               端子を挿したまま収納しない、液晶面へ付属品を押し付けない、電源ケーブルを強く折らないといった配置を徹底してください。
             </P>
-            <div className="my-8 grid gap-6 md:grid-cols-2 xl:grid-cols-3">
+            <div className="my-8 grid gap-6 md:grid-cols-2">
               <ProductCard product={byId("1490")} />
             </div>
 
@@ -1291,7 +1297,7 @@ export default function Page() {
             <P>
               1620は外寸630×492×352mmのラージケースです。重量のある測定器や現場装置一式を入れる候補ですが、内容物込みで重くなる場合は、階段、車両への積み上げ、二人持ち、台車への載せ替えまで先に決めます。
             </P>
-            <div className="my-8 grid gap-6 md:grid-cols-2 xl:grid-cols-3">
+            <div className="my-8 grid gap-6 md:grid-cols-2">
               {[byId("1605"), byId("1615"), byId("1637"), byId("1620")].map(
                 (product) => (
                   <ProductCard key={product.id} product={product} />
@@ -1367,7 +1373,7 @@ export default function Page() {
             <P>
               こうした場合は、機能単位で2ケースへ分け、各ケースの内容物リストを標準化する方が運用しやすくなります。
             </P>
-            <div className="my-8 grid gap-6 md:grid-cols-2 xl:grid-cols-3">
+            <div className="my-8 grid gap-6 md:grid-cols-2">
               <ProductCard product={byId("1780")} />
             </div>
 

@@ -14,6 +14,21 @@ export type Article = {
 
 export const ARTICLES: Article[] = [
   {
+    slug: "trusco-steel-cart-selection-guide",
+    title:
+      "トラスコ 鋼鉄製運搬車の選び方｜SH・OH・PH型の違い、天板サイズ・キャスター・Lストッパーで失敗しない【2026年】",
+    shortTitle: "トラスコ 鋼鉄製運搬車の選び方",
+    description:
+      "TRUSCO鋼鉄製運搬車を天板サイズ→均等荷重→キャスター→ハンドル/ストッパー→特殊タイプの5ステップで解説。品番記号（SS/R/E/AC/NU）の読み方も紹介。",
+    category: "guide",
+    categoryLabel: "選び方ガイド",
+    thumbnail: "/articles/trusco-cart/hero.jpg",
+    date: "2026-07-30",
+    readTime: "約25分",
+    available: true,
+    path: "/articles/trusco-steel-cart-selection-guide",
+  },
+  {
     slug: "milwaukee-packout-selection-guide",
     title:
       "Milwaukee PACKOUTの選び方｜どれから買う？組み合わせ・連結・おすすめ構成を徹底ガイド【2026年】",

@@ -14,6 +14,21 @@ export type Article = {
 
 export const ARTICLES: Article[] = [
   {
+    slug: "foglas-selection-guide",
+    title:
+      "フォグラスの選び方｜すりガラス調 目隠しフィルムの種類・見え方・貼り方・外貼りまで徹底解説【2026年】",
+    shortTitle: "フォグラスの選び方",
+    description:
+      "中川ケミカル「フォグラス」の見え方（C-16/C-718/C-714）、外貼りGタイプ、切売り/ロール、貼り方、セーフティコントロールまで解説。",
+    category: "guide",
+    categoryLabel: "選び方ガイド",
+    thumbnail: "/articles/foglas/hero.jpg",
+    date: "2026-07-30",
+    readTime: "約25分",
+    available: true,
+    path: "/articles/foglas-selection-guide",
+  },
+  {
     slug: "pelican-case-size-selection",
     title:
       "ペリカンケースのサイズ選び｜内寸・フォームあり/なし・Airとの違いを比較【2026年版】",

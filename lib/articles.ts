@@ -14,6 +14,21 @@ export type Article = {
 
 export const ARTICLES: Article[] = [
   {
+    slug: "milwaukee-packout-selection-guide",
+    title:
+      "Milwaukee PACKOUTの選び方｜どれから買う？組み合わせ・連結・おすすめ構成を徹底ガイド【2026年】",
+    shortTitle: "Milwaukee PACKOUTの選び方",
+    description:
+      "PACKOUTの選び方を土台→収納モジュール→固定/移動の3ステップで解説。ボックス・オーガナイザー・引き出し・バッグ・カートの組み合わせと連結方法を紹介。",
+    category: "guide",
+    categoryLabel: "選び方ガイド",
+    thumbnail: "/articles/packout/hero.jpg",
+    date: "2026-07-30",
+    readTime: "約22分",
+    available: true,
+    path: "/articles/milwaukee-packout-selection-guide",
+  },
+  {
     slug: "foglas-selection-guide",
     title:
       "フォグラスの選び方｜すりガラス調 目隠しフィルムの種類・見え方・貼り方・外貼りまで徹底解説【2026年】",

@@ -14,6 +14,22 @@ export type Article = {
 
 export const ARTICLES: Article[] = [
   {
+    slug: "fan-jacket-heatstroke-counterproductive",
+    title:
+      "空調服を着ていても熱中症になる？逆効果と誤解される条件・正しい対策【2026年版】",
+    shortTitle: "空調服を着ていても熱中症になる？",
+    description:
+      "空調服を着ていても熱中症になる可能性はあります。ただし35℃を超えたら一律に逆効果という断定は正確ではありません。2026年の厚生労働省ガイドラインをもとに、継続・併用・切替・作業中止の判断を解説します。",
+    category: "guide",
+    categoryLabel: "選び方ガイド",
+    thumbnail:
+      "/images/fan-jacket-heatstroke-counterproductive/fan-jacket-heatstroke-counterproductive-hero.webp",
+    date: "2026-07-31",
+    readTime: "約22分",
+    available: true,
+    path: "/articles/fan-jacket-heatstroke-counterproductive",
+  },
+  {
     slug: "black-globe-wbgt-meter-selection-guide",
     title:
       "黒球式熱中症指数計とは？選び方・使い方・義務化対応の完全ガイド【2026年版】",

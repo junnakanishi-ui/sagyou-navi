@@ -14,6 +14,21 @@ export type Article = {
 
 export const ARTICLES: Article[] = [
   {
+    slug: "black-globe-wbgt-meter-selection-guide",
+    title:
+      "黒球式熱中症指数計とは？選び方・使い方・義務化対応の完全ガイド【2026年版】",
+    shortTitle: "黒球式熱中症指数計の選び方",
+    description:
+      "黒球式熱中症指数計（WBGT計）の仕組み・温度計との違い・JIS B 7922:2023・義務化対応・現場での配備台数まで、現場担当者向けに解説します。",
+    category: "guide",
+    categoryLabel: "選び方ガイド",
+    thumbnail: "/articles/black-globe-wbgt/hero.jpg",
+    date: "2026-07-31",
+    readTime: "約25分",
+    available: true,
+    path: "/articles/black-globe-wbgt-meter-selection-guide",
+  },
+  {
     slug: "business-disaster-stockpile-checklist",
     title:
       "事業所の防災備蓄チェックリスト｜72時間・帰宅困難者対策・BCP対応の完全ガイド【2026年】",

@@ -14,6 +14,22 @@ export type Article = {
 
 export const ARTICLES: Article[] = [
   {
+    slug: "digital-clamp-meter-selection",
+    title:
+      "デジタルクランプメーターの選び方｜AC/DC・漏れ電流・真の実効値の違い【2026年版】",
+    shortTitle: "デジタルクランプメーターの選び方",
+    description:
+      "デジタルクランプメーターの選び方を、負荷電流用・漏れ電流用、AC専用・AC/DC両用、平均値・真の実効値、最大電流、クランプ径で比較。分電盤、空調設備、モーター、EV、漏電調査に合う代表機種を解説します。",
+    category: "guide",
+    categoryLabel: "選び方ガイド",
+    thumbnail:
+      "/images/digital-clamp-meter-selection/digital-clamp-meter-selection-hero.webp",
+    date: "2026-07-31",
+    readTime: "約20分",
+    available: true,
+    path: "/articles/digital-clamp-meter-selection",
+  },
+  {
     slug: "factory-window-insect-control",
     title:
       "工場の窓から虫が入る原因は？防虫フィルム・照明・開口部対策の選び方【2026年版】",

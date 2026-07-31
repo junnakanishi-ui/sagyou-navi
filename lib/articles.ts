@@ -14,6 +14,21 @@ export type Article = {
 
 export const ARTICLES: Article[] = [
   {
+    slug: "business-disaster-stockpile-checklist",
+    title:
+      "事業所の防災備蓄チェックリスト｜72時間・帰宅困難者対策・BCP対応の完全ガイド【2026年】",
+    shortTitle: "事業所の防災備蓄チェックリスト",
+    description:
+      "事業所の防災備蓄を3日分×8カテゴリで整理。食料・水・防災セット・トイレ・電源・テント・熱中症対策の必要量目安と選び方・保管・管理まで法人向けに解説します。",
+    category: "guide",
+    categoryLabel: "選び方ガイド",
+    thumbnail: "/articles/bosai/hero.jpg",
+    date: "2026-07-31",
+    readTime: "約28分",
+    available: true,
+    path: "/articles/business-disaster-stockpile-checklist",
+  },
+  {
     slug: "trusco-steel-cart-selection-guide",
     title:
       "トラスコ 鋼鉄製運搬車の選び方｜SH・OH・PH型の違い、天板サイズ・キャスター・Lストッパーで失敗しない【2026年】",

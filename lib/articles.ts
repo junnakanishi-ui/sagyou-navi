@@ -14,6 +14,21 @@ export type Article = {
 
 export const ARTICLES: Article[] = [
   {
+    slug: "sl-standing-sign-board-selection-guide",
+    title:
+      "SL立看板とは？種類・サイズ・選び方の完全ガイド｜工事現場の必需品【2026年版】",
+    shortTitle: "SL立看板とは？種類・サイズ・選び方",
+    description:
+      "SL立看板（工事用立看板）の意味・サイズ（通常550/ハーフ275）・反射と無反射の違い・表示種類の選び方を、道路工事の保安基準に沿って現場担当者向けに解説。全面通行止・片側交互通行・工事中などの定番表示から、無地の書き込み用鉄枠看板、KYボード、マンガ標識まで用途別に紹介します。",
+    category: "guide",
+    categoryLabel: "選び方ガイド",
+    thumbnail: "/articles/sl-sign-board/hero.jpg",
+    date: "2026-07-31",
+    readTime: "約22分",
+    available: true,
+    path: "/articles/sl-standing-sign-board-selection-guide",
+  },
+  {
     slug: "fan-jacket-heatstroke-counterproductive",
     title:
       "空調服を着ていても熱中症になる？逆効果と誤解される条件・正しい対策【2026年版】",

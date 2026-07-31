@@ -14,6 +14,22 @@ export type Article = {
 
 export const ARTICLES: Article[] = [
   {
+    slug: "factory-window-insect-control",
+    title:
+      "工場の窓から虫が入る原因は？防虫フィルム・照明・開口部対策の選び方【2026年版】",
+    shortTitle: "工場の窓から虫が入る原因と対策",
+    description:
+      "工場の窓から虫が入る原因を、光漏れ・隙間・開放・搬入口に分けて解説。オプトロンなど防虫ガラスフィルムの選び方、出入口用防虫ファン・間仕切りとの使い分け、点検チェックリストまで紹介します。",
+    category: "guide",
+    categoryLabel: "選び方ガイド",
+    thumbnail:
+      "/images/factory-window-insect-control/factory-window-insect-control-hero.webp",
+    date: "2026-07-31",
+    readTime: "約18分",
+    available: true,
+    path: "/articles/factory-window-insect-control",
+  },
+  {
     slug: "sl-standing-sign-board-selection-guide",
     title:
       "SL立看板とは？種類・サイズ・選び方の完全ガイド｜工事現場の必需品【2026年版】",

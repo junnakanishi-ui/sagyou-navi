@@ -487,7 +487,11 @@ export default function Page() {
           </p>
           <h3 className="mt-8 mb-3 text-xl font-bold">出入口・前室では侵入防止対策も重要</h3>
           <p className="mb-4">
-            扉の開閉が多い出入口・前室では、捕獲だけでなく侵入を抑える薬剤蒸散タイプや忌避用品を組み合わせる方法があります。
+            扉の開閉が多い出入口・前室では、捕獲だけでなく侵入を抑える薬剤蒸散タイプや忌避用品を組み合わせる方法があります。窓からの光漏れや搬入口など、侵入前の経路を見直す場合は、あわせて
+            <Link href="/articles/factory-window-insect-control" className="text-blue-700 underline">
+              工場の窓の虫対策（防虫フィルム・開口部）
+            </Link>
+            も参考にしてください。
           </p>
           <h3 className="mt-8 mb-3 text-xl font-bold">敷地まわり・植栽・資材置き場では殺虫剤や噴霧器も候補</h3>
           <p className="mb-4">

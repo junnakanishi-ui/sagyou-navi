@@ -14,6 +14,21 @@ export type Article = {
 
 export const ARTICLES: Article[] = [
   {
+    slug: "trusco-kozou-stacker-lifter-selection-guide",
+    title:
+      "コゾウスタッカーとは？コゾウリフターとの違い・選び方を徹底解説【トラスコ／2026年版】",
+    shortTitle: "コゾウスタッカーとは？選び方ガイド",
+    description:
+      "トラスコ中山のコゾウスタッカー（TPAH-L-1016）を徹底解説。コゾウリフターとの違い、フォーク式・テーブル式・手動・電動の選び方、荷重・揚高の見方を全バリエーション比較表つきで整理します。",
+    category: "guide",
+    categoryLabel: "選び方ガイド",
+    thumbnail: "/articles/kozou-stacker/hero.jpg",
+    date: "2026-07-31",
+    readTime: "約20分",
+    available: true,
+    path: "/articles/trusco-kozou-stacker-lifter-selection-guide",
+  },
+  {
     slug: "digital-clamp-meter-selection",
     title:
       "デジタルクランプメーターの選び方｜AC/DC・漏れ電流・真の実効値の違い【2026年版】",

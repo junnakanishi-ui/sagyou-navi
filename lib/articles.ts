@@ -14,6 +14,21 @@ export type Article = {
 
 export const ARTICLES: Article[] = [
   {
+    slug: "wbgt-work-rest-time-guideline",
+    title:
+      "WBGTと作業時間の目安｜暑さ指数別の休憩時間早見表と現場の熱中症対策【2026年版】",
+    shortTitle: "WBGTと作業時間の目安",
+    description:
+      "WBGT（暑さ指数）別の作業時間・休憩時間の目安を早見表で解説。作業強度別の基準値、義務化対応、現場を冷やす対策まで。",
+    category: "guide",
+    categoryLabel: "熱中症・暑さ対策",
+    thumbnail: "/articles/wbgt-work-time/hero.jpg",
+    date: "2026-07-31",
+    readTime: "約22分",
+    available: true,
+    path: "/articles/wbgt-work-rest-time-guideline",
+  },
+  {
     slug: "trusco-kozou-stacker-lifter-selection-guide",
     title:
       "コゾウスタッカーとは？コゾウリフターとの違い・選び方を徹底解説【トラスコ／2026年版】",

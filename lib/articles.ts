@@ -14,6 +14,21 @@ export type Article = {
 
 export const ARTICLES: Article[] = [
   {
+    slug: "pipe-protector-parking-column-guard",
+    title:
+      "パイププロテクターとは？駐車場の柱ガード・安全対策アイテムを徹底解説【サイズ選び・設置方法】",
+    shortTitle: "パイププロテクターとは？駐車場柱ガード",
+    description:
+      "パイププロテクター（柱ガード）の役割・サイズの選び方（Φ60.5〜Φ120）・設置方法を解説。駐車場の柱と車両を守る安全対策アイテムから、駐車禁止看板・車止めシール・EV充電案内まで必要なグッズを網羅しました。",
+    category: "guide",
+    categoryLabel: "選び方ガイド",
+    thumbnail: "/images/articles/pipe-protector-parking-column-guard/hero.jpg",
+    date: "2026-08-02",
+    readTime: "約18分",
+    available: true,
+    path: "/articles/pipe-protector-parking-column-guard",
+  },
+  {
     slug: "wbgt-work-rest-time-guideline",
     title:
       "WBGTと作業時間の目安｜暑さ指数別の休憩時間早見表と現場の熱中症対策【2026年版】",

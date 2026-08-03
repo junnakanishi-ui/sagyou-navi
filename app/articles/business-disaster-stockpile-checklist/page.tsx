@@ -762,7 +762,11 @@ export default function Page() {
         {/* ============ H2-5 トイレ・シェルター ============ */}
         <h2 className={cls.h2}>③トイレ・シェルター：断水時の生活インフラを確保</h2>
         <p className={cls.body}>
-          断水時の水洗トイレ使用は感染症・臭気の原因になります。簡易トイレ・折りたたみトイレスツール・囲い（パーテーション・ワンタッチルーム）で、プライバシーと衛生を確保しましょう。
+          断水時の水洗トイレ使用は感染症・臭気の原因になります。簡易トイレ・折りたたみトイレスツール・囲い（パーテーション・ワンタッチルーム）で、プライバシーと衛生を確保しましょう。必要回数の計算や3日・7日分の早見表は
+          <a href="/articles/simple-toilet-stock-quantity" className="font-bold underline underline-offset-4">
+            簡易トイレの備蓄必要数ガイド
+          </a>
+          もあわせて確認してください。
         </p>
         <CardGrid>
           <ProductCard

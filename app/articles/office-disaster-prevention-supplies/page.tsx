@@ -491,7 +491,14 @@ export default function Page() {
           断水・トイレ対策は人数分で考える
         </h2>
         <p className="mb-4 leading-relaxed text-gray-800">
-          断水・停電・排水トラブルが起きると、トイレが使えなくなる場合があります。会社では、従業員数・来訪者数・滞在時間を踏まえて必要数を考えます。簡易トイレは、衛生用品・消臭袋・使用済み汚物袋の保管場所までセットで準備しておくと運用しやすくなります。
+          断水・停電・排水トラブルが起きると、トイレが使えなくなる場合があります。会社では、従業員数・来訪者数・滞在時間を踏まえて必要数を考えます。簡易トイレは、衛生用品・消臭袋・使用済み汚物袋の保管場所までセットで準備しておくと運用しやすくなります。人数×日数からの必要回数の目安は
+          <Link
+            href="/articles/simple-toilet-stock-quantity"
+            className="font-bold text-gray-900 underline hover:no-underline"
+          >
+            簡易トイレの備蓄必要数ガイド
+          </Link>
+          もあわせて確認してください。
         </p>
         <ProductGrid items={TOILET} />
         <NoteAmber>
@@ -679,6 +686,14 @@ export default function Page() {
           関連記事
         </h2>
         <ul className="my-4 list-disc space-y-2 pl-6 text-gray-800">
+          <li>
+            <Link
+              href="/articles/simple-toilet-stock-quantity"
+              className="text-gray-900 underline hover:no-underline"
+            >
+              簡易トイレの備蓄必要数は？人数・日数別の目安と非常用トイレの選び方
+            </Link>
+          </li>
           <li>
             <Link href="/articles/led-floodlight-selection" className="text-gray-900 underline hover:no-underline">
               LED投光器の選び方｜設置タイプ別・明るさの目安

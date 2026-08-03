@@ -14,6 +14,22 @@ export type Article = {
 
 export const ARTICLES: Article[] = [
   {
+    slug: "simple-toilet-stock-quantity",
+    title:
+      "簡易トイレの備蓄必要数は？人数・日数別の目安と非常用トイレの選び方【2026年版】",
+    shortTitle: "簡易トイレの備蓄必要数は？",
+    description:
+      "簡易トイレの備蓄必要数を、人数×1日5回×日数で分かりやすく解説。3日・7日分の早見表、本体付きと回数セットの違い、家庭・オフィス・現場向けの選び方まで紹介します。",
+    category: "guide",
+    categoryLabel: "選び方ガイド",
+    thumbnail:
+      "/images/simple-toilet-stock-quantity/simple-toilet-stock-quantity-hero.webp",
+    date: "2026-08-03",
+    readTime: "約18分",
+    available: true,
+    path: "/articles/simple-toilet-stock-quantity",
+  },
+  {
     slug: "commercial-cart-selection-guide",
     title:
       "運搬台車の業務用の選び方｜用途別のおすすめタイプと失敗しないポイント",

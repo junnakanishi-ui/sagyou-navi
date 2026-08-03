@@ -14,6 +14,21 @@ export type Article = {
 
 export const ARTICLES: Article[] = [
   {
+    slug: "commercial-cart-selection-guide",
+    title:
+      "運搬台車の業務用の選び方｜用途別のおすすめタイプと失敗しないポイント",
+    shortTitle: "運搬台車の業務用の選び方",
+    description:
+      "業務用の運搬台車の選び方を用途別に解説。営業車への積み込みが多いなら折りたたみ、板ものなら平台車、静かに運ぶなら樹脂の静音タイプなど、運ぶ物・現場に合わせた最適な選び方と、耐荷重・キャスター・材質のチェックポイントを網羅しました。",
+    category: "guide",
+    categoryLabel: "選び方ガイド",
+    thumbnail: "/images/carts/eyecatch.webp",
+    date: "2026-08-03",
+    readTime: "約18分",
+    available: true,
+    path: "/articles/commercial-cart-selection-guide",
+  },
+  {
     slug: "deicer-parking-howto",
     title:
       "凍結防止剤の駐車場での使い方｜撒くタイミング・量・種類の選び方と注意点",

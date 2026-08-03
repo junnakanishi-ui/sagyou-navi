@@ -10,13 +10,12 @@ import { SiteFooter } from "@/components/work/site-footer";
 // ハウスルール: max-w-4xl / gray-900 / utm_source=sagyou_navi / 自己完結(共有libなし)
 // 送客先(自社): GREEN CROSS-select(gc-select) / 楽天 crecote-shop / サインシティ(trade-sign)
 // ----------------------------------------------------------------------------
-// ※商品画像は保存済みの {商品コード}.jpg を自社ホスティングする想定。
-//   IMG_BASE を設置先に合わせて変更してください（例: /images/winter/）。
+// ※商品画像は保存済みの {商品コード}.jpg を /products/ に配置。
 // ============================================================================
 
 const SLUG = "deicer-parking-howto";
 const SITE_URL = "https://www.sagyou-navi.com";
-const HERO = `/images/articles/${SLUG}/hero.jpg`;
+const HERO = `/products/1137100100.jpg`;
 
 export const metadata: Metadata = {
   title:
@@ -34,7 +33,7 @@ export const metadata: Metadata = {
 };
 
 const UTM = "utm_source=sagyou_navi";
-const IMG_BASE = "/images/winter/"; // 保存済み {code}.jpg の設置先に変更してください
+const IMG_BASE = "/products/";
 
 function withUtm(url: string): string {
   const sep = url.includes("?") ? "&" : "?";

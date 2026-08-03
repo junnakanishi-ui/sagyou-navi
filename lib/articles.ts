@@ -22,7 +22,7 @@ export const ARTICLES: Article[] = [
       "駐車場の凍結防止剤の正しい使い方を解説。最も効果的な事前散布のタイミング、1㎡あたりの散布量の目安、塩化カルシウム・非塩素系など種類の選び方、コンクリートや車への影響と注意点まで、冬の駐車場管理に必要な情報を網羅しました。",
     category: "howto",
     categoryLabel: "使い方ガイド",
-    thumbnail: "/images/articles/deicer-parking-howto/hero.jpg",
+    thumbnail: "/products/1137100100.jpg",
     date: "2026-08-03",
     readTime: "約15分",
     available: true,

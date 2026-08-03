@@ -155,24 +155,24 @@ const CATEGORY_LINKS = [
 
 const RELATED_ARTICLES = [
   {
+    slug: "warehouse-heat-countermeasures-large-fans",
+    title:
+      "倉庫の暑さ対策に大型扇風機は有効？工場扇・冷風機・スポットクーラーの選び方【2026年版】",
+  },
+  {
     slug: "outdoor-work-heatstroke-measures",
     title:
       "外仕事の熱中症対策｜現場・イベント・屋外倉庫で使える暑さ対策グッズと実務チェックリスト",
   },
   {
-    slug: "safety-shoes-jis-jsaa",
+    slug: "spot-cooler-rest-area",
     title:
-      "安全靴・プロテクティブスニーカーの違い｜JIS T8101とJSAA規格の見方",
+      "スポットクーラーで休憩所を涼しくするには？クーラーテント・工場扇・空調服の使い分け",
   },
   {
-    slug: "trusco-hand-pallet-erabikata",
+    slug: "workwear-heat-protection-clothing",
     title:
-      "トラスコのハンドパレットの選び方｜フォーク長・能力・低床の違い",
-  },
-  {
-    slug: "kartio-load-capacity",
-    title:
-      "カルティオは何kgまで載せられる？均等荷重200kgの正しい意味",
+      "現場の暑さ対策は服装から｜冷感インナー・空調服・冷却ベストの選び方",
   },
 ];
 
@@ -837,7 +837,14 @@ export default function WarehouseHeatstrokeTaisakuPage() {
           <CategoryLinks links={CATEGORY_LINKS} slug={SLUG} />
 
           <p className="mt-8 text-lg leading-relaxed text-muted-foreground">
-            足元の安全もあわせて見直すなら、
+            大型扇風機・工場扇を軸にした設備選びなら、
+            <Link
+              href="/articles/warehouse-heat-countermeasures-large-fans"
+              className="font-bold text-primary hover:underline"
+            >
+              倉庫の暑さ対策に大型扇風機は有効？
+            </Link>
+            もあわせてご覧ください。足元の安全もあわせて見直すなら、
             <Link
               href="/articles/safety-shoes-jis-jsaa"
               className="font-bold text-primary hover:underline"

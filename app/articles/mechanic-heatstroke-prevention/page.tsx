@@ -486,6 +486,11 @@ const FAQ_ITEMS = [
 
 const RELATED = [
   {
+    href: "/articles/warehouse-heat-countermeasures-large-fans",
+    label:
+      "倉庫の暑さ対策に大型扇風機は有効？工場扇・冷風機・スポットクーラーの選び方【2026年版】",
+  },
+  {
     href: "/articles/warehouse-heatstroke-taisaku",
     label:
       "倉庫作業の熱中症対策｜工場扇・スポットクーラー・冷却ベストで現場を守る方法",
@@ -494,11 +499,6 @@ const RELATED = [
     href: "/articles/worksite-rest-area-heat",
     label:
       "現場休憩所の暑さ対策｜屋外作業でそろえたい日よけ・工場扇・冷却用品",
-  },
-  {
-    href: "/articles/insulated-tool-set-selection",
-    label:
-      "絶縁工具セットの選び方｜電気工事・制御盤作業・EV整備で必要な工具一覧",
   },
   {
     href: "/articles/outdoor-work-heatstroke-measures",

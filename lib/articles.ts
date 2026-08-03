@@ -14,6 +14,22 @@ export type Article = {
 
 export const ARTICLES: Article[] = [
   {
+    slug: "warehouse-heat-countermeasures-large-fans",
+    title:
+      "倉庫の暑さ対策に大型扇風機は有効？工場扇・冷風機・スポットクーラーの選び方【2026年版】",
+    shortTitle: "倉庫の暑さ対策に大型扇風機は有効？",
+    description:
+      "倉庫の暑さ対策で大型扇風機を検討する方向けに、工場扇・冷風機・スポットクーラー・ミスト・空調服・計測器の違いと選び方を解説します。広さ・固定作業点・荷捌き場・電源条件で使い分けできます。",
+    category: "guide",
+    categoryLabel: "熱中症・暑さ対策",
+    thumbnail:
+      "/images/warehouse-heat-countermeasures-large-fans/warehouse-large-fan-heat-countermeasure-hero.webp",
+    date: "2026-08-03",
+    readTime: "約16分",
+    available: true,
+    path: "/articles/warehouse-heat-countermeasures-large-fans",
+  },
+  {
     slug: "summer-festival-heat-tent",
     title:
       "夏祭りの暑さ対策テントの選び方｜用途・サイズ別のおすすめと会場を涼しくするコツ",

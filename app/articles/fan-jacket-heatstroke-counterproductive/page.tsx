@@ -332,6 +332,10 @@ const relatedArticles = [
       "現場の暑さ対策は服装から｜冷感インナー・空調服・冷却ベストの選び方",
   },
   {
+    href: "/articles/warehouse-heat-countermeasures-large-fans",
+    label: "倉庫の暑さ対策に大型扇風機は有効？工場扇・冷風機の選び方",
+  },
+  {
     href: "/articles/outdoor-work-heat-countermeasure-goods",
     label: "建設現場の暑さ対策グッズ",
   },
@@ -342,10 +346,6 @@ const relatedArticles = [
   {
     href: "/articles/worksite-rest-area-heat",
     label: "現場休憩所の暑さ対策",
-  },
-  {
-    href: "/articles/construction-site-safety-checklist",
-    label: "建設現場の安全チェックリスト",
   },
   {
     href: "/articles/outdoor-work-heatstroke-measures",

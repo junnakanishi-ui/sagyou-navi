@@ -353,23 +353,24 @@ const breadcrumbJsonLd = {
 
 const RELATED: RelatedArticle[] = [
   {
+    href: "/articles/warehouse-heat-countermeasures-large-fans",
+    label:
+      "倉庫の暑さ対策に大型扇風機は有効？工場扇・冷風機・スポットクーラーの選び方【2026年版】",
+  },
+  {
+    href: "/articles/warehouse-heatstroke-taisaku",
+    label:
+      "倉庫作業の熱中症対策｜工場扇・スポットクーラー・冷却ベストで現場を守る方法",
+  },
+  {
     href: "/articles/outdoor-work-heat-clothing",
     label:
       "屋外作業の暑さ対策は服装から｜冷感インナー・UVカット・遮熱ウェアの選び方",
   },
   {
-    href: "/articles/board-material-transport-cart",
+    href: "/articles/worksite-rest-area-heat",
     label:
-      "板物の運搬に便利な台車とは？アルミ複合板・長尺材を安全に運ぶ選び方",
-  },
-  {
-    href: "/articles/led-floodlight-selection",
-    label: "LED投光器の選び方｜現場・倉庫の作業灯から看板照明まで",
-  },
-  {
-    href: "/articles/kartio-big-offroad",
-    label:
-      "カルティオビッグ・オフロードとは？悪路・段差に強い大型樹脂台車の使いどころ",
+      "現場休憩所の暑さ対策｜屋外作業でそろえたい日よけ・工場扇・冷却用品",
   },
 ];
 

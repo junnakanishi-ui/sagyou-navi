@@ -378,6 +378,34 @@ export default function DeicerParkingArticle() {
         </div>
 
         {/* まとめ */}
+        <SectionH2 id="related">関連記事</SectionH2>
+        <ul className="mt-4 list-disc space-y-2 pl-5 text-sm leading-relaxed text-gray-900 sm:text-base">
+          <li>
+            <Link
+              href="/articles/parking-lot-curve-mirror-installation-standards"
+              className="font-bold underline underline-offset-4"
+            >
+              駐車場カーブミラーの設置基準は？位置・高さ・サイズ・一面鏡/二面鏡の選び方
+            </Link>
+          </li>
+          <li>
+            <Link
+              href="/articles/pipe-protector-parking-column-guard"
+              className="font-bold underline underline-offset-4"
+            >
+              パイププロテクターとは？駐車場の柱ガード・安全対策アイテムを徹底解説
+            </Link>
+          </li>
+          <li>
+            <Link
+              href="/articles/safety-walkway-setup"
+              className="font-bold underline underline-offset-4"
+            >
+              安全通路の作り方
+            </Link>
+          </li>
+        </ul>
+
         <SectionH2 id="summary">まとめ</SectionH2>
         <p className="mt-4 text-sm leading-relaxed text-gray-700 sm:text-base">
           駐車場の凍結対策は、<strong className="font-bold">凍る前の事前散布</strong>が基本です。

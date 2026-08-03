@@ -208,6 +208,21 @@ const FAQ_ITEMS = [
 
 const RELATED = [
   {
+    href: "/articles/color-cone-types-sizes",
+    label:
+      "カラーコーンの種類とサイズを徹底解説｜700mm・反射・伸縮式・ヘビーの違いと選び方【2026年版】",
+  },
+  {
+    href: "/articles/parking-lot-curve-mirror-installation-standards",
+    label:
+      "駐車場カーブミラーの設置基準は？位置・高さ・サイズ・一面鏡/二面鏡の選び方【2026年版】",
+  },
+  {
+    href: "/articles/pipe-protector-parking-column-guard",
+    label:
+      "パイププロテクターとは？駐車場の柱ガード・安全対策アイテムを徹底解説【サイズ選び・設置方法】",
+  },
+  {
     href: "/articles/color-cone-selection",
     label:
       "カラーコーンの選び方｜駐車場・工事現場・イベントで使うコーン・バー・チェーンの使い分け",
@@ -216,11 +231,6 @@ const RELATED = [
     href: "/articles/plastic-chain-vs-cone-bar",
     label:
       "プラチェーンとコーンバーの違い｜駐車場・通路・立入禁止エリアの区画用品はどっちが良い？",
-  },
-  {
-    href: "/articles/outdoor-work-heatstroke-measures",
-    label:
-      "外仕事の熱中症対策｜現場・イベント・屋外倉庫で使える暑さ対策グッズと実務チェックリスト",
   },
 ];
 
@@ -395,6 +405,10 @@ export default function Page() {
         </p>
         <p className={cls.body}>
           なお、カラーコーン自体の色・種類・サイズの選び方は
+          <Link href="/articles/color-cone-types-sizes" className="text-gray-900 underline">
+            「カラーコーンの種類とサイズ」
+          </Link>
+          、用途別の使い分けは
           <Link href="/articles/color-cone-selection" className="text-gray-900 underline">
             「カラーコーンの選び方」
           </Link>

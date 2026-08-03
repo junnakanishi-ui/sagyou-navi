@@ -14,6 +14,38 @@ export type Article = {
 
 export const ARTICLES: Article[] = [
   {
+    slug: "color-cone-types-sizes",
+    title:
+      "カラーコーンの種類とサイズを徹底解説｜700mm・反射・伸縮式・ヘビーの違いと選び方【2026年版】",
+    shortTitle: "カラーコーンの種類とサイズを徹底解説",
+    description:
+      "カラーコーンの種類とサイズを、700mm標準、反射、ヘビー、伸縮式、LED、小型まで分かりやすく解説。用途別の選び方と関連資材まで紹介します。",
+    category: "guide",
+    categoryLabel: "選び方ガイド",
+    thumbnail:
+      "/images/color-cone-types-sizes/color-cone-types-hero.webp",
+    date: "2026-08-03",
+    readTime: "約18分",
+    available: true,
+    path: "/articles/color-cone-types-sizes",
+  },
+  {
+    slug: "parking-lot-curve-mirror-installation-standards",
+    title:
+      "駐車場カーブミラーの設置基準は？位置・高さ・サイズ・一面鏡/二面鏡の選び方【2026年版】",
+    shortTitle: "駐車場カーブミラーの設置基準は？",
+    description:
+      "駐車場カーブミラーの設置基準を、私有地と公道の違い、位置・高さ・角度、300〜1000mmのサイズ、一面鏡・二面鏡、素材、許可、点検まで解説します。",
+    category: "guide",
+    categoryLabel: "選び方ガイド",
+    thumbnail:
+      "/images/parking-lot-curve-mirror-installation-standards/parking-lot-curve-mirror-hero.webp",
+    date: "2026-08-03",
+    readTime: "約20分",
+    available: true,
+    path: "/articles/parking-lot-curve-mirror-installation-standards",
+  },
+  {
     slug: "simple-toilet-stock-quantity",
     title:
       "簡易トイレの備蓄必要数は？人数・日数別の目安と非常用トイレの選び方【2026年版】",

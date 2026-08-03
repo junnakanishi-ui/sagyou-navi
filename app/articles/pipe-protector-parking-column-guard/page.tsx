@@ -689,6 +689,34 @@ export default function Page() {
           ))}
         </div>
 
+        <SectionH2 id="related">関連記事</SectionH2>
+        <ul className="mt-4 list-disc space-y-2 pl-5 text-sm leading-relaxed text-gray-900 sm:text-base">
+          <li>
+            <Link
+              href="/articles/parking-lot-curve-mirror-installation-standards"
+              className="font-bold underline underline-offset-4"
+            >
+              駐車場カーブミラーの設置基準は？位置・高さ・サイズ・一面鏡/二面鏡の選び方
+            </Link>
+          </li>
+          <li>
+            <Link
+              href="/articles/deicer-parking-howto"
+              className="font-bold underline underline-offset-4"
+            >
+              凍結防止剤の駐車場での使い方｜撒くタイミング・量・種類の選び方
+            </Link>
+          </li>
+          <li>
+            <Link
+              href="/articles/safety-walkway-setup"
+              className="font-bold underline underline-offset-4"
+            >
+              安全通路の作り方
+            </Link>
+          </li>
+        </ul>
+
         {/* まとめ + 最終CTA */}
         <SectionH2 id="summary">まとめ</SectionH2>
         <p className="mt-4 text-sm leading-relaxed text-gray-700 sm:text-base">

@@ -176,24 +176,24 @@ const PROCUREMENT_CHECKLIST = [
 
 const RELATED: RelatedArticle[] = [
   {
+    href: "/articles/color-cone-types-sizes",
+    label:
+      "カラーコーンの種類とサイズを徹底解説｜700mm・反射・伸縮式・ヘビーの違いと選び方【2026年版】",
+  },
+  {
     href: "/articles/color-cone-selection",
     label:
       "カラーコーンの選び方｜駐車場・工事現場・イベントで使うコーン・バー・チェーンの使い分け",
   },
   {
+    href: "/articles/safety-walkway-setup",
+    label:
+      "安全通路の作り方｜工場・倉庫・工事現場で使うカラーコーン・コーンカバー・安全用品",
+  },
+  {
     href: "/articles/outdoor-work-heatstroke-measures",
     label:
       "外仕事の熱中症対策｜現場・イベント・屋外倉庫で使える暑さ対策グッズと実務チェックリスト",
-  },
-  {
-    href: "/articles/workbench-tool-organization",
-    label:
-      "作業台まわりの工具整理術｜工具を探す時間を減らすツールワゴン・収納用品の選び方",
-  },
-  {
-    href: "/articles/construction-work-platform",
-    label:
-      "建築現場の作業台はどう選ぶ？足場台・踏台・ペケ台・工具置き台の使い分け",
   },
 ];
 
@@ -439,6 +439,13 @@ export default function PlasticChainVsConeBarPage() {
               className="font-bold text-primary hover:underline"
             >
               カラーコーンの選び方
+            </Link>
+            や
+            <Link
+              href="/articles/color-cone-types-sizes"
+              className="font-bold text-primary hover:underline"
+            >
+              カラーコーンの種類とサイズ
             </Link>
             の記事も参考に、反射タイプや重石（コーンベッド）も合わせて検討します（本記事では深掘りせず関連記事へ誘導）。
           </Lead>

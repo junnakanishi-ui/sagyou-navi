@@ -146,24 +146,24 @@ const smallRelatedProducts = [
 
 const RELATED: RelatedArticle[] = [
   {
+    href: "/articles/color-cone-types-sizes",
+    label:
+      "カラーコーンの種類とサイズを徹底解説｜700mm・反射・伸縮式・ヘビーの違いと選び方【2026年版】",
+  },
+  {
+    href: "/articles/plastic-chain-vs-cone-bar",
+    label:
+      "プラチェーンとコーンバーの違い｜駐車場・通路・立入禁止エリアの区画用品はどっちが良い？",
+  },
+  {
+    href: "/articles/safety-walkway-setup",
+    label:
+      "安全通路の作り方｜工場・倉庫・工事現場で使うカラーコーン・コーンカバー・安全用品",
+  },
+  {
     href: "/articles/outdoor-work-heatstroke-measures",
     label:
       "外仕事の熱中症対策｜現場・イベント・屋外倉庫で使える暑さ対策グッズと実務チェックリスト",
-  },
-  {
-    href: "/articles/workbench-tool-organization",
-    label:
-      "作業台まわりの工具整理術｜工具を探す時間を減らすツールワゴン・収納用品の選び方",
-  },
-  {
-    href: "/articles/parts-case-selection",
-    label:
-      "パーツケースの選び方｜小物・ネジの整理に効く仕切り・引き出し・連結タイプの使い分け",
-  },
-  {
-    href: "/articles/ladder-stepladder-difference",
-    label:
-      "はしごと脚立の違いとは？JIS・SG規格と「天板に乗ってはいけない」理由",
   },
 ];
 
@@ -295,7 +295,14 @@ export default function ColorConeSelectionPage() {
           一方で、実際に選ぼうとすると、「カラーコーンだけでよいのか」「コーンバーとプラチェーンはどう使い分けるのか」「立入禁止や駐車禁止の表示はどう出せばよいのか」「風で倒れないようにするには何が必要か」「夜間や駐車場では反射タイプを選ぶべきか」と迷うこともあります。
         </LeadMuted>
         <p className="mt-4 text-lg leading-relaxed text-muted-foreground">
-          この記事では、カラーコーンの基本的な選び方から、コーンバー・プラチェーン・表示カバー・重石・反射テープ付きコーンの使い分けまで、駐車場・工事現場・イベント会場で使いやすい形に整理して解説します。
+          この記事では、カラーコーンの基本的な選び方から、コーンバー・プラチェーン・表示カバー・重石・反射テープ付きコーンの使い分けまで、駐車場・工事現場・イベント会場で使いやすい形に整理して解説します。700mm標準・反射・ヘビー・伸縮式などの種類・サイズ比較は
+          <Link
+            href="/articles/color-cone-types-sizes"
+            className="font-bold text-primary hover:underline"
+          >
+            カラーコーンの種類とサイズ
+          </Link>
+          もあわせてご覧ください。
         </p>
 
         <div className="my-8 rounded-lg border-2 border-primary/40 bg-primary-light px-5 py-4 text-base leading-relaxed">

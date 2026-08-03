@@ -14,6 +14,21 @@ export type Article = {
 
 export const ARTICLES: Article[] = [
   {
+    slug: "summer-festival-heat-tent",
+    title:
+      "夏祭りの暑さ対策テントの選び方｜用途・サイズ別のおすすめと会場を涼しくするコツ",
+    shortTitle: "夏祭りの暑さ対策テントの選び方",
+    description:
+      "夏祭り・地域イベントの暑さ対策の要となるテント（日除け）の選び方を、用途・サイズ別の比較表つきで解説。受付・屋台・休憩所・救護所に合うサイズの選び方、遮熱・風対策のポイント、さらに送風機・スポットクーラー・冷却ベスト・冷感グッズ・WBGT計まで、会場全体の熱中症対策を網羅しました。",
+    category: "guide",
+    categoryLabel: "選び方ガイド",
+    thumbnail: "/images/tent/eyecatch.webp",
+    date: "2026-08-03",
+    readTime: "約20分",
+    available: true,
+    path: "/articles/summer-festival-heat-tent",
+  },
+  {
     slug: "color-cone-types-sizes",
     title:
       "カラーコーンの種類とサイズを徹底解説｜700mm・反射・伸縮式・ヘビーの違いと選び方【2026年版】",

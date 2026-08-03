@@ -14,6 +14,21 @@ export type Article = {
 
 export const ARTICLES: Article[] = [
   {
+    slug: "deicer-parking-howto",
+    title:
+      "凍結防止剤の駐車場での使い方｜撒くタイミング・量・種類の選び方と注意点",
+    shortTitle: "凍結防止剤の駐車場での使い方",
+    description:
+      "駐車場の凍結防止剤の正しい使い方を解説。最も効果的な事前散布のタイミング、1㎡あたりの散布量の目安、塩化カルシウム・非塩素系など種類の選び方、コンクリートや車への影響と注意点まで、冬の駐車場管理に必要な情報を網羅しました。",
+    category: "howto",
+    categoryLabel: "使い方ガイド",
+    thumbnail: "/images/articles/deicer-parking-howto/hero.jpg",
+    date: "2026-08-03",
+    readTime: "約15分",
+    available: true,
+    path: "/articles/deicer-parking-howto",
+  },
+  {
     slug: "pipe-protector-parking-column-guard",
     title:
       "パイププロテクターとは？駐車場の柱ガード・安全対策アイテムを徹底解説【サイズ選び・設置方法】",

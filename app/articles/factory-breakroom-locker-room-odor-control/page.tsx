@@ -1312,6 +1312,9 @@ export default function Page() {
             関連記事
           </h2>
           <div className="grid gap-4 sm:grid-cols-2">
+            <Link href="/articles/food-factory-boots-drying-management" className="rounded-xl border border-gray-200 p-4 font-bold text-gray-900 hover:bg-gray-50">
+              食品工場の長靴乾燥を効率化｜業務用ドライヤー30・40・50足の選び方
+            </Link>
             <Link href="/articles/commercial-hand-soap-bulk-selection" className="rounded-xl border border-gray-200 p-4 font-bold text-gray-900 hover:bg-gray-50">
               業務用ハンドソープの箱買い・大容量選び
             </Link>

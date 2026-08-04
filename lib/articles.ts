@@ -14,6 +14,22 @@ export type Article = {
 
 export const ARTICLES: Article[] = [
   {
+    slug: "food-factory-boots-drying-management",
+    title:
+      "食品工場の長靴乾燥を効率化｜乾かない・臭う問題と業務用長靴ドライヤー30・40・50足の選び方【2026年版】",
+    shortTitle: "食品工場の長靴乾燥を効率化",
+    description:
+      "食品工場で洗った長靴が乾かない、生乾き臭や共用長靴の管理に困る担当者へ。TRUSCO業務用長靴ドライヤー30・40・50足用の違い、三相200V、寸法、容量の選び方を解説します。",
+    category: "guide",
+    categoryLabel: "選び方ガイド",
+    thumbnail:
+      "/images/food-factory-boots-drying-management/food-factory-boots-drying-hero.webp",
+    date: "2026-08-04",
+    readTime: "約18分",
+    available: true,
+    path: "/articles/food-factory-boots-drying-management",
+  },
+  {
     slug: "warehouse-heat-countermeasures-large-fans",
     title:
       "倉庫の暑さ対策に大型扇風機は有効？工場扇・冷風機・スポットクーラーの選び方【2026年版】",

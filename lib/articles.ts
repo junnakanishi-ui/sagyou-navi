@@ -14,6 +14,22 @@ export type Article = {
 
 export const ARTICLES: Article[] = [
   {
+    slug: "workwear-heat-measures-procurement-guide",
+    title:
+      "暑さ対策の作業服は“服だけ”で選ばない。法人が失敗しない支給設計と現場別の組み合わせ【2026年版】",
+    shortTitle: "暑さ対策の作業服は“服だけ”で選ばない",
+    description:
+      "暑さ対策の作業服を検討している法人向けに、水冷服・冷却ビブス・保冷剤・補給用品・休憩所設備・WBGT計まで含めた支給設計の考え方を解説します。",
+    category: "guide",
+    categoryLabel: "熱中症・暑さ対策",
+    thumbnail:
+      "/images/articles/workwear-heat-measures-procurement-guide/workwear-procurement-hero.jpg",
+    date: "2026-08-04",
+    readTime: "約20分",
+    available: true,
+    path: "/articles/workwear-heat-measures-procurement-guide",
+  },
+  {
     slug: "welding-spark-protection-sheet-selection",
     title:
       "溶接・グラインダーの火花養生方法｜床・壁・開口部・階下を守るスパッタシートの選び方【2026年版】",

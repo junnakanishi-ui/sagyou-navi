@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import type { ReactNode } from "react";
+import Link from "next/link";
 import { SiteHeader } from "@/components/work/site-header";
 import { SiteFooter } from "@/components/work/site-footer";
 
@@ -638,7 +639,17 @@ export default function Page() {
         <ProductGrid ids={["amcbst", "cbhx9s", "cbm450", "cbpw250", "cbkh05", "cbs240r"]} priorityFirst />
 
         <Caution title="防爆工具は、爆発を保証して防ぐ工具ではありません">
-          <p>防爆工具は機械火花による着火リスクを低減するための一要素です。可燃物、酸素、着火源がそろう条件をつくらないことが基本で、漏えい防止、換気、濃度測定、接地・ボンディング、静電気対策、電気機器の適合、火気管理などを別途行います。</p>
+          <p>
+            防爆工具は機械火花による着火リスクを低減するための一要素です。可燃物、酸素、着火源がそろう条件をつくらないことが基本で、漏えい防止、換気、濃度測定、接地・ボンディング、静電気対策、電気機器の適合、火気管理などを別途行います。
+            溶接・溶断・グラインダーの火気作業で床・壁・開口部・階下を守る養生は、
+            <Link
+              href="/articles/welding-spark-protection-sheet-selection"
+              className="mx-1 font-bold underline underline-offset-4"
+            >
+              溶接・グラインダーの火花養生方法
+            </Link>
+            も参考にしてください。
+          </p>
         </Caution>
 
         <nav className="my-9 rounded-xl border border-gray-200 bg-white p-5 shadow-sm" aria-label="目次">

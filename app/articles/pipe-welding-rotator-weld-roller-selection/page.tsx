@@ -737,6 +737,13 @@ export default function Page() {
             >
               溶接の遮光ガラスは何番？の選び方ガイド
             </Link>
+            、床・壁・開口部・階下への火花飛散対策は
+            <Link
+              href="/articles/welding-spark-protection-sheet-selection"
+              className="mx-1 font-bold underline underline-offset-4"
+            >
+              溶接・グラインダーの火花養生方法
+            </Link>
             もあわせて確認してください。
           </p>
         </Caution>

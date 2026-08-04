@@ -14,6 +14,22 @@ export type Article = {
 
 export const ARTICLES: Article[] = [
   {
+    slug: "welding-spark-protection-sheet-selection",
+    title:
+      "溶接・グラインダーの火花養生方法｜床・壁・開口部・階下を守るスパッタシートの選び方【2026年版】",
+    shortTitle: "溶接・グラインダーの火花養生方法",
+    description:
+      "溶接・溶断・グラインダーの火花養生を床・壁・開口部・階下・横方向に分けて解説。定尺・ロール・シリカクロス・フェルト・火花用衝立の選び方を整理します。",
+    category: "guide",
+    categoryLabel: "選び方ガイド",
+    thumbnail:
+      "/images/articles/welding-spark-protection-sheet-selection/welding-spark-protection-worksite-hero.webp",
+    date: "2026-08-04",
+    readTime: "約22分",
+    available: true,
+    path: "/articles/welding-spark-protection-sheet-selection",
+  },
+  {
     slug: "food-factory-boots-drying-management",
     title:
       "食品工場の長靴乾燥を効率化｜乾かない・臭う問題と業務用長靴ドライヤー30・40・50足の選び方【2026年版】",

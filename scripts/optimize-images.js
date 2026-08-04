@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-require-imports */
 const BRIGHTNESS = 1.08;
 
 const fs = require("fs");

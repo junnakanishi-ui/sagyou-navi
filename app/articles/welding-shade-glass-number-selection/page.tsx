@@ -702,6 +702,14 @@ export default function Page() {
         <h3 className={cls.h3}>遮光幕・衝立</h3>
         <p className={cls.body}>
           恒常的に溶接を行う場所では、遮光幕や衝立でアーク光を区画すると、周辺への側射光を大きく減らせます。人の動線とアークの向きを考えて配置します。
+          なお、遮光（光）と火花養生（飛散経路）は役割が異なります。床・壁・開口部・階下への火花対策やスパッタシート・火花用衝立の選び方は
+          <Link
+            href="/articles/welding-spark-protection-sheet-selection"
+            className="mx-1 font-bold underline underline-offset-4"
+          >
+            溶接・グラインダーの火花養生方法
+          </Link>
+          で別途整理しています。
         </p>
         <CardGrid>
           <ProductCard p={P_GS} />

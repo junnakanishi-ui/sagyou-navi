@@ -14,6 +14,22 @@ export type Article = {
 
 export const ARTICLES: Article[] = [
   {
+    slug: "machine-soundproof-box-acoustic-material-guide",
+    title:
+      "防音ボックスの吸音材はどう選ぶ？コンプレッサー・発電機・機械カバーの騒音対策とカームフレックス比較【2026年版】",
+    shortTitle: "防音ボックスの吸音材の選び方",
+    description:
+      "防音ボックスの内側に貼る吸音材を探している方向けに、吸音・遮音・制振の違い、コンプレッサー・発電機・機械カバーでの選び方、カームフレックスF-4LF・F-4・F-55・F-6の違いを解説します。",
+    category: "howto",
+    categoryLabel: "使い方ガイド",
+    thumbnail:
+      "/images/articles/machine-soundproof-box-acoustic-material-guide/machine-soundproof-box-acoustic-material-hero.jpg",
+    date: "2026-08-05",
+    readTime: "約22分",
+    available: true,
+    path: "/articles/machine-soundproof-box-acoustic-material-guide",
+  },
+  {
     slug: "foam-gap-filling-urethane-spray-guide",
     title:
       "発泡ウレタンで隙間埋めする方法｜配管・窓枠・貫通部の使い分けと失敗しない選び方【2026年版】",

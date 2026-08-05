@@ -14,6 +14,22 @@ export type Article = {
 
 export const ARTICLES: Article[] = [
   {
+    slug: "foam-gap-filling-urethane-spray-guide",
+    title:
+      "発泡ウレタンで隙間埋めする方法｜配管・窓枠・貫通部の使い分けと失敗しない選び方【2026年版】",
+    shortTitle: "発泡ウレタンで隙間埋めする方法",
+    description:
+      "発泡ウレタンで隙間埋めしたい方向けに、340ml・750ml・ハイスペック・ガンタイプの違い、配管・窓枠・貫通部での使い分け、専用ガンや洗浄剤の必要性まで解説します。",
+    category: "howto",
+    categoryLabel: "使い方ガイド",
+    thumbnail:
+      "/images/articles/foam-gap-filling-urethane-spray-guide/urethane-foam-gap-filling-hero.jpg",
+    date: "2026-08-05",
+    readTime: "約18分",
+    available: true,
+    path: "/articles/foam-gap-filling-urethane-spray-guide",
+  },
+  {
     slug: "one-person-leveling-rotary-laser-guide",
     title:
       "一人でレベル出しする方法｜ローテーティングレーザー・受光器の使い方と選び方【2026年版】",

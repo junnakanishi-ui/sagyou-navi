@@ -1,0 +1,109 @@
+{
+  "slug": "foam-gap-filling-urethane-spray-guide",
+  "sourceExcel": "取得結果(20260805-050525).xlsx",
+  "note": "Web search unavailable in this environment. Verify live SERP and latest primary sources before publication.",
+  "products": [
+    {
+      "id": 1,
+      "productId": "6300051938",
+      "name": "発泡ウレタン専用ガン 洗浄用クリーナー ５５０ＭＬ",
+      "url": "https://www.gc-select.com/products/6300051938",
+      "utmUrl": "https://www.gc-select.com/products/6300051938?utm_source=sagyou_navi&utm_medium=article&utm_campaign=foam-gap-filling-urethane-spray-guide",
+      "imageFile": "6300051938.jpg",
+      "featured": true,
+      "shortName": "発泡ウレタン専用ガン 洗浄用クリーナー 550ml",
+      "badge": "後処理・洗浄",
+      "useCase": "専用ガンの洗浄、作業後のメンテナンス",
+      "feature": "ガンタイプを継続運用するうえで欠かせない洗浄用クリーナー",
+      "check": "作業後すぐの洗浄、保管前のクリーニング手順を確認"
+    },
+    {
+      "id": 2,
+      "productId": "6300051937",
+      "name": "ガンタイプ ＢＤ発泡ウレタン ７５０ＭＬ １液型ガンシステム専用",
+      "url": "https://www.gc-select.com/products/6300051937",
+      "utmUrl": "https://www.gc-select.com/products/6300051937?utm_source=sagyou_navi&utm_medium=article&utm_campaign=foam-gap-filling-urethane-spray-guide",
+      "imageFile": "6300051937.jpg",
+      "featured": true,
+      "shortName": "ガンタイプ BD発泡ウレタン 750ml",
+      "badge": "広範囲・連続作業",
+      "useCase": "連続施工、施工量が多い隙間充填、作業精度を重視する現場",
+      "feature": "1液型ガンシステム専用で、施工量が多い現場でも扱いやすいガンタイプ",
+      "check": "専用ガンの有無、使用後の洗浄、保管ルールを確認"
+    },
+    {
+      "id": 3,
+      "productId": "6300051939",
+      "name": "ＢＤ発泡ウレタン 専用ガン ＨＴ－ＧＵＮ",
+      "url": "https://www.gc-select.com/products/6300051939",
+      "utmUrl": "https://www.gc-select.com/products/6300051939?utm_source=sagyou_navi&utm_medium=article&utm_campaign=foam-gap-filling-urethane-spray-guide",
+      "imageFile": "6300051939.jpg",
+      "featured": true,
+      "shortName": "BD発泡ウレタン専用ガン HT-GUN",
+      "badge": "専用工具",
+      "useCase": "ガンタイプ発泡ウレタンの施工",
+      "feature": "ガンタイプの吐出量調整や作業性向上に役立つ専用ガン",
+      "check": "対応品番、清掃手順、保管方法を確認"
+    },
+    {
+      "id": 4,
+      "productId": "6300003707",
+      "name": "発泡ウレタンスプレー ３４０ＭＬ",
+      "url": "https://www.gc-select.com/products/6300003707",
+      "utmUrl": "https://www.gc-select.com/products/6300003707?utm_source=sagyou_navi&utm_medium=article&utm_campaign=foam-gap-filling-urethane-spray-guide",
+      "imageFile": "6300003707.jpg",
+      "featured": true,
+      "shortName": "発泡ウレタンスプレー 340ml",
+      "badge": "小容量",
+      "useCase": "小さな隙間、補修、少量使い切り",
+      "feature": "少量施工向けで、DIY寄りの検索意図にも対応しやすい小容量タイプ",
+      "check": "使い切り前提か、保存性より少量性を重視するか確認"
+    },
+    {
+      "id": 5,
+      "productId": "6300003708",
+      "name": "発泡ウレタンスプレー ７５０ＭＬ",
+      "url": "https://www.gc-select.com/products/6300003708",
+      "utmUrl": "https://www.gc-select.com/products/6300003708?utm_source=sagyou_navi&utm_medium=article&utm_campaign=foam-gap-filling-urethane-spray-guide",
+      "imageFile": "6300003708.jpg",
+      "featured": true,
+      "shortName": "発泡ウレタンスプレー 750ml",
+      "badge": "標準容量",
+      "useCase": "一般的な隙間充填、窓枠・配管まわり・貫通部",
+      "feature": "記事全体の中心商品として使いやすい標準容量タイプ",
+      "check": "施工量、対象部位、発泡後のはみ出し処理を確認"
+    },
+    {
+      "id": 6,
+      "productId": "6300003709",
+      "name": "ハイスペック発泡ウレタンスプレー ５１５ＭＬ",
+      "url": "https://www.gc-select.com/products/6300003709",
+      "utmUrl": "https://www.gc-select.com/products/6300003709?utm_source=sagyou_navi&utm_medium=article&utm_campaign=foam-gap-filling-urethane-spray-guide",
+      "imageFile": "6300003709.jpg",
+      "featured": true,
+      "shortName": "ハイスペック発泡ウレタンスプレー 515ml",
+      "badge": "高機能タイプ",
+      "useCase": "性能を重視したい隙間埋め、断熱・気密補助",
+      "feature": "標準品との差別化訴求に使いやすい高機能タイプ",
+      "check": "性能重視かコスト重視か、施工部位との相性を確認"
+    }
+  ],
+  "featuredProductIds": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+  ],
+  "primaryCtas": [
+    {
+      "label": "発泡ウレタンスプレー一覧",
+      "url": "https://www.gc-select.com/pages/search-results-page?q=%E7%99%BA%E6%B3%A1%E3%82%A6%E3%83%AC%E3%82%BF%E3%83%B3&utm_source=sagyou_navi&utm_medium=article&utm_campaign=foam-gap-filling-urethane-spray-guide"
+    },
+    {
+      "label": "トラスコ中山掲載商品一覧",
+      "url": "https://item.rakuten.co.jp/crecote-shop/c/0000000043/?l-id=shoptop_shopmenu_categorypage_16&utm_source=sagyou_navi&utm_medium=article&utm_campaign=foam-gap-filling-urethane-spray-guide"
+    }
+  ]
+}

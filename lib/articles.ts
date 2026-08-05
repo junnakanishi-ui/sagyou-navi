@@ -14,6 +14,22 @@ export type Article = {
 
 export const ARTICLES: Article[] = [
   {
+    slug: "one-person-leveling-rotary-laser-guide",
+    title:
+      "一人でレベル出しする方法｜ローテーティングレーザー・受光器の使い方と選び方【2026年版】",
+    shortTitle: "一人でレベル出しする方法",
+    description:
+      "外構・基礎・造成・土間コンクリートの高さ出しを一人で行いたい方向けに、ローテーティングレーザーと受光器の使い方、自動整準、デジタル受光器、H/HVの選び方を解説します。",
+    category: "howto",
+    categoryLabel: "使い方ガイド",
+    thumbnail:
+      "/images/articles/one-person-leveling-rotary-laser-guide/one-person-leveling-rotary-laser-hero.jpg",
+    date: "2026-08-05",
+    readTime: "約25分",
+    available: true,
+    path: "/articles/one-person-leveling-rotary-laser-guide",
+  },
+  {
     slug: "workwear-heat-measures-procurement-guide",
     title:
       "暑さ対策の作業服は“服だけ”で選ばない。法人が失敗しない支給設計と現場別の組み合わせ【2026年版】",

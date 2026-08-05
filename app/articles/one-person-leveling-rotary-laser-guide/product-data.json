@@ -1,0 +1,1120 @@
+{
+  "slug": "one-person-leveling-rotary-laser-guide",
+  "generatedAt": "2026-08-05",
+  "sourceExcel": "取得結果(20260805-044826).xlsx",
+  "originalRowCount": 29,
+  "curatedProductCount": 21,
+  "coreProductCount": 15,
+  "accessoryCount": 6,
+  "mainKeyword": "一人でレベル出し",
+  "secondaryKeywords": [
+    "高さ出し 一人 レーザー",
+    "ローテーティングレーザー 使い方",
+    "自動整準 レーザーレベル",
+    "受光器 使い方",
+    "外構 高さ出し レーザー"
+  ],
+  "ctas": [
+    {
+      "label": "ローテーティングレーザー一覧",
+      "url": "https://search.rakuten.co.jp/search/mall/%E3%83%AD%E3%83%BC%E3%83%86%E3%83%BC%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0%E3%83%AC%E3%83%BC%E3%82%B6%E3%83%BC/?sid=426972&utm_source=sagyou_navi&utm_medium=article&utm_campaign=one-person-leveling-rotary-laser-guide",
+      "type": "primary"
+    },
+    {
+      "label": "自動整準一覧",
+      "url": "https://search.rakuten.co.jp/search/mall/%E8%87%AA%E5%8B%95%E6%95%B4%E6%BA%96/?sid=426972&utm_source=sagyou_navi&utm_medium=article&utm_campaign=one-person-leveling-rotary-laser-guide",
+      "type": "primary"
+    },
+    {
+      "label": "トラスコ中山掲載商品一覧",
+      "url": "https://item.rakuten.co.jp/crecote-shop/c/0000000043/?l-id=shoptop_shopmenu_categorypage_16&utm_source=sagyou_navi&utm_medium=article&utm_campaign=one-person-leveling-rotary-laser-guide",
+      "type": "secondary"
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "modelCode": "LP610JDBD",
+      "name": "オレンジブック トラスコ中山 ＳＯＫＫＩＡ ソキア自動整準レベルプレーナーＬＰ６１０ ＬＳ−１００Ｄ付 LP610JDBD",
+      "url": "https://item.rakuten.co.jp/crecote-shop/ta025726-lp610jdbd/",
+      "utmUrl": "https://item.rakuten.co.jp/crecote-shop/ta025726-lp610jdbd/?utm_source=sagyou_navi&utm_medium=article&utm_campaign=one-person-leveling-rotary-laser-guide",
+      "imageFile": "ta025726-lp610jdbd.jpg",
+      "included": true,
+      "duplicateModel": false,
+      "shortName": "SOKKIA LP610 LS-100Dデジタル受光器セット",
+      "group": "rotary_horizontal",
+      "badge": "デジタル受光器",
+      "priority": 1,
+      "useCase": "基礎天端・造成・土間・外構で、差分を数値確認しながら一人で高さ出ししたい現場",
+      "feature": "直径800m、水平精度±1.5mm/30m、1軸勾配設定、IP66。LS-100Dで基準との差を数値表示しやすい。",
+      "check": "高価でも測点数が多いか、数値差分表示が必要か、三脚・スタッフを含む構成か確認。",
+      "specs": {
+        "range": "直径800m",
+        "accuracy": "±1.5mm/30m",
+        "leveling": "自動整準±5°",
+        "slope": "1軸 ±8.7%",
+        "receiver": "LS-100D デジタル"
+      }
+    },
+    {
+      "id": 2,
+      "modelCode": "LP610JDB",
+      "name": "オレンジブック トラスコ中山 ＳＯＫＫＩＡ ソキア自動整準レベルプレーナーＬＰ６１０ ＬＲ３００付 LP610JDB",
+      "url": "https://item.rakuten.co.jp/crecote-shop/ta025725-lp610jdb/",
+      "utmUrl": "https://item.rakuten.co.jp/crecote-shop/ta025725-lp610jdb/?utm_source=sagyou_navi&utm_medium=article&utm_campaign=one-person-leveling-rotary-laser-guide",
+      "imageFile": "ta025725-lp610jdb.jpg",
+      "included": true,
+      "duplicateModel": false,
+      "shortName": "SOKKIA LP610 LR300受光器セット",
+      "group": "rotary_horizontal",
+      "badge": "標準受光器",
+      "priority": 2,
+      "useCase": "広い外構・造成・基礎工事で、矢印とブザー中心のシンプルな高さ出しを行う現場",
+      "feature": "本体性能はLP610共通。標準受光器で導入費と操作の分かりやすさを重視しやすい。",
+      "check": "数値差分表示が不要か、受光器を複数台運用するか、セット内容を確認。",
+      "specs": {
+        "range": "直径800m",
+        "accuracy": "±1.5mm/30m",
+        "leveling": "自動整準±5°",
+        "slope": "1軸 ±8.7%",
+        "receiver": "LR300系 標準"
+      }
+    },
+    {
+      "id": 3,
+      "modelCode": "LP610JDB",
+      "name": "オレンジブック トラスコ中山 ＳＯＫＫＩＡ ソキア自動整準レベルプレーナーＬＰ６１０ ＬＲ３００付 LP610J-DB",
+      "url": "https://item.rakuten.co.jp/crecote-shop/ta009888-lp610jdb/",
+      "utmUrl": "https://item.rakuten.co.jp/crecote-shop/ta009888-lp610jdb/?utm_source=sagyou_navi&utm_medium=article&utm_campaign=one-person-leveling-rotary-laser-guide",
+      "imageFile": "ta009888-lp610jdb.jpg",
+      "included": false,
+      "duplicateModel": true
+    },
+    {
+      "id": 4,
+      "modelCode": "224944",
+      "name": "オレンジブック トラスコ中山 ＭＹＺＯＸ 自動整準レーザーレベル デジタル受光器（Ｄ−ＲＥ２）セット＜ＭＪ−６００Ｓ／ＬＡＮ２−ＯＤ＞ 224944",
+      "url": "https://item.rakuten.co.jp/crecote-shop/ta021649-224944/",
+      "utmUrl": "https://item.rakuten.co.jp/crecote-shop/ta021649-224944/?utm_source=sagyou_navi&utm_medium=article&utm_campaign=one-person-leveling-rotary-laser-guide",
+      "imageFile": "ta021649-224944.jpg",
+      "included": true,
+      "duplicateModel": false,
+      "shortName": "MYZOX MJ-600S デジタル受光器D-RE2セット",
+      "group": "rotary_horizontal",
+      "badge": "デジタルセット",
+      "priority": 3,
+      "useCase": "造成・基礎天端・広範囲の水平出しで、受光位置を数値管理したい現場",
+      "feature": "測定範囲直径600m。デジタル受光器を使い、基準との差を判断しやすい構成。",
+      "check": "デジタル表示の必要性、三脚・ロッドクランプの付属、現場の最大距離を確認。",
+      "specs": {
+        "range": "直径600m",
+        "accuracy": "メーカー仕様確認",
+        "leveling": "自動整準",
+        "slope": "水平出し中心",
+        "receiver": "D-RE2 デジタル"
+      }
+    },
+    {
+      "id": 5,
+      "modelCode": "LP610JDBD",
+      "name": "オレンジブック トラスコ中山 ＳＯＫＫＩＡ ソキア自動整準レベルプレーナーＬＰ６１０ ＬＳ−１００Ｄ付 LP610J-DBD",
+      "url": "https://item.rakuten.co.jp/crecote-shop/ta009889-lp610jdbd/",
+      "utmUrl": "https://item.rakuten.co.jp/crecote-shop/ta009889-lp610jdbd/?utm_source=sagyou_navi&utm_medium=article&utm_campaign=one-person-leveling-rotary-laser-guide",
+      "imageFile": "ta009889-lp610jdbd.jpg",
+      "included": false,
+      "duplicateModel": true
+    },
+    {
+      "id": 6,
+      "modelCode": "224945",
+      "name": "オレンジブック トラスコ中山 ＭＹＺＯＸ 自動整準レーザーレベル 受光器ＭＪ−ＲＥ３×２台セット＜ＭＪ−６００／ＬＡＮ２−ＯＤ＞ 224945",
+      "url": "https://item.rakuten.co.jp/crecote-shop/ta021650-224945/",
+      "utmUrl": "https://item.rakuten.co.jp/crecote-shop/ta021650-224945/?utm_source=sagyou_navi&utm_medium=article&utm_campaign=one-person-leveling-rotary-laser-guide",
+      "imageFile": "ta021650-224945.jpg",
+      "included": true,
+      "duplicateModel": false,
+      "shortName": "MYZOX MJ-600 受光器MJ-RE3×2台セット",
+      "group": "rotary_horizontal",
+      "badge": "受光器2台",
+      "priority": 4,
+      "useCase": "2人が別地点で同時に高さ確認する外構・造成・基礎現場",
+      "feature": "受光器2台を活かして、複数測点や別作業班の同時進行をしやすい。",
+      "check": "一人作業が中心か複数人同時作業か、デジタル数値表示の要否を確認。",
+      "specs": {
+        "range": "直径600m",
+        "accuracy": "メーカー仕様確認",
+        "leveling": "自動整準",
+        "slope": "水平出し中心",
+        "receiver": "MJ-RE3×2台"
+      }
+    },
+    {
+      "id": 7,
+      "modelCode": "STSYL",
+      "name": "オレンジブック トラスコ中山 ＳＴＳ 測量用三脚 ＳＴＳ−ＹＬ平面５／８インチ STSYL",
+      "url": "https://item.rakuten.co.jp/crecote-shop/ta028037-stsyl/",
+      "utmUrl": "https://item.rakuten.co.jp/crecote-shop/ta028037-stsyl/?utm_source=sagyou_navi&utm_medium=article&utm_campaign=one-person-leveling-rotary-laser-guide",
+      "imageFile": "ta028037-stsyl.jpg",
+      "included": true,
+      "duplicateModel": false,
+      "shortName": "STS 測量用三脚 STS-YL 平面5/8インチ",
+      "group": "accessory",
+      "badge": "平面三脚",
+      "priority": 23,
+      "useCase": "5/8インチ平面取付のレーザー本体を安定設置する現場",
+      "feature": "本体の性能を活かすには、安定した三脚設置が前提。",
+      "check": "本体のねじ規格・平面/球面、全高、脚の固定状態を確認。",
+      "specs": {
+        "type": "5/8インチ平面三脚"
+      }
+    },
+    {
+      "id": 8,
+      "modelCode": "LL300N",
+      "name": "オレンジブック トラスコ中山 ＮＩＫＯＮ スペクトラ プレシジョン レーザーレベル LL300N",
+      "url": "https://item.rakuten.co.jp/crecote-shop/ta025670-ll300n/",
+      "utmUrl": "https://item.rakuten.co.jp/crecote-shop/ta025670-ll300n/?utm_source=sagyou_navi&utm_medium=article&utm_campaign=one-person-leveling-rotary-laser-guide",
+      "imageFile": "ta025670-ll300n.jpg",
+      "included": true,
+      "duplicateModel": false,
+      "shortName": "Nikon-Trimble Spectra Precision LL300N",
+      "group": "rotary_horizontal",
+      "badge": "堅牢・小規模現場",
+      "priority": 8,
+      "useCase": "基礎・型枠・小規模造成・小規模マシンコントロール",
+      "feature": "測定範囲直径500m、IP66、1m落下を想定した堅牢設計。HL450は位置をミリ単位表示。",
+      "check": "標準受光器の種類、勾配設定に別売リモコンが必要か、電源構成を確認。",
+      "specs": {
+        "range": "直径500m",
+        "accuracy": "±2.2mm/30m",
+        "leveling": "自動整準±5°",
+        "slope": "別売リモコンで1軸",
+        "receiver": "HL450"
+      }
+    },
+    {
+      "id": 9,
+      "modelCode": "STSH600",
+      "name": "オレンジブック トラスコ中山 ＳＴＳ 回転レーザレベル ＳＴＳ−Ｈ６００（三脚付） STSH600",
+      "url": "https://item.rakuten.co.jp/crecote-shop/ta028033-stsh600/",
+      "utmUrl": "https://item.rakuten.co.jp/crecote-shop/ta028033-stsh600/?utm_source=sagyou_navi&utm_medium=article&utm_campaign=one-person-leveling-rotary-laser-guide",
+      "imageFile": "ta028033-stsh600.jpg",
+      "included": true,
+      "duplicateModel": false,
+      "shortName": "STS STS-H600 三脚付",
+      "group": "rotary_horizontal",
+      "badge": "振動対応・三脚付",
+      "priority": 9,
+      "useCase": "重機や作業振動がある建設現場、広範囲の水平出し",
+      "feature": "直径約600m、高精度±0.38mm/10m、±5°自動整準。対振動モードと照射遮断機能を備える。",
+      "check": "振動環境でも基準点の再確認は必要。受光器・リモコン・三脚の付属を確認。",
+      "specs": {
+        "range": "直径約600m",
+        "accuracy": "±0.38mm/10m",
+        "leveling": "自動整準±5°",
+        "slope": "水平出し中心",
+        "receiver": "標準付属"
+      }
+    },
+    {
+      "id": 10,
+      "modelCode": "70806",
+      "name": "オレンジブック トラスコ中山 シンワ スピニングレーザー Ｈ−３ レッド 70806",
+      "url": "https://item.rakuten.co.jp/crecote-shop/ta022003-70806/",
+      "utmUrl": "https://item.rakuten.co.jp/crecote-shop/ta022003-70806/?utm_source=sagyou_navi&utm_medium=article&utm_campaign=one-person-leveling-rotary-laser-guide",
+      "imageFile": "ta022003-70806.jpg",
+      "included": true,
+      "duplicateModel": false,
+      "shortName": "シンワ スピニングレーザー H-3 レッド 70806",
+      "group": "rotary_horizontal",
+      "badge": "水平・赤色",
+      "priority": 10,
+      "useCase": "屋外の水平出しを受光器中心で行い、価格と基本機能を重視する現場",
+      "feature": "水平出し専用。受光器付で屋外使用に対応し、本体・受光器はIP66。",
+      "check": "鉛直出しが必要ならHV-3、見えるラインを重視するならグリーンと比較。",
+      "specs": {
+        "range": "商品仕様確認",
+        "accuracy": "商品仕様確認",
+        "leveling": "自動整準",
+        "slope": "水平専用",
+        "receiver": "付属"
+      }
+    },
+    {
+      "id": 11,
+      "modelCode": "71609",
+      "name": "オレンジブック トラスコ中山 シンワ レーザーロボ Ｘｌｉｎｅ−Ｅ レッド フルライン・地墨クロス 71609",
+      "url": "https://item.rakuten.co.jp/crecote-shop/ta022033-71609/",
+      "utmUrl": "https://item.rakuten.co.jp/crecote-shop/ta022033-71609/?utm_source=sagyou_navi&utm_medium=article&utm_campaign=one-person-leveling-rotary-laser-guide",
+      "imageFile": "ta022033-71609.jpg",
+      "included": false,
+      "duplicateModel": false
+    },
+    {
+      "id": 12,
+      "modelCode": "71610",
+      "name": "オレンジブック トラスコ中山 シンワ レーザーロボ Ｘｌｉｎｅ−Ｅ グリーン フルライン・地墨クロス 71610",
+      "url": "https://item.rakuten.co.jp/crecote-shop/ta022034-71610/",
+      "utmUrl": "https://item.rakuten.co.jp/crecote-shop/ta022034-71610/?utm_source=sagyou_navi&utm_medium=article&utm_campaign=one-person-leveling-rotary-laser-guide",
+      "imageFile": "ta022034-71610.jpg",
+      "included": false,
+      "duplicateModel": false
+    },
+    {
+      "id": 13,
+      "modelCode": "70807",
+      "name": "オレンジブック トラスコ中山 シンワ スピニングレーザー Ｈ−３ グリーン 70807",
+      "url": "https://item.rakuten.co.jp/crecote-shop/ta022004-70807/?variantId=TA022004",
+      "utmUrl": "https://item.rakuten.co.jp/crecote-shop/ta022004-70807/?variantId=TA022004&utm_source=sagyou_navi&utm_medium=article&utm_campaign=one-person-leveling-rotary-laser-guide",
+      "imageFile": "ta022004-70807.jpg",
+      "included": true,
+      "duplicateModel": false,
+      "shortName": "シンワ スピニングレーザー H-3 グリーン 70807",
+      "group": "rotary_horizontal",
+      "badge": "水平・グリーン",
+      "priority": 11,
+      "useCase": "屋内外をまたぎ、目視しやすさと受光器運用の両方を重視する現場",
+      "feature": "水平出し専用のグリーンモデル。屋外では受光器、屋内では視認性を活かしやすい。",
+      "check": "屋外長距離は色より受光器性能が重要。必要用途に対する費用差を確認。",
+      "specs": {
+        "range": "商品仕様確認",
+        "accuracy": "商品仕様確認",
+        "leveling": "自動整準",
+        "slope": "水平専用",
+        "receiver": "付属"
+      }
+    },
+    {
+      "id": 14,
+      "modelCode": "70817",
+      "name": "オレンジブック トラスコ中山 シンワ スピニングレーザー ＨＶ−３ グリーン 70817",
+      "url": "https://item.rakuten.co.jp/crecote-shop/ta022006-70817/?variantId=TA022006",
+      "utmUrl": "https://item.rakuten.co.jp/crecote-shop/ta022006-70817/?variantId=TA022006&utm_source=sagyou_navi&utm_medium=article&utm_campaign=one-person-leveling-rotary-laser-guide",
+      "imageFile": "ta022006-70817.jpg",
+      "included": true,
+      "duplicateModel": false,
+      "shortName": "シンワ スピニングレーザー HV-3 グリーン 70817",
+      "group": "rotary_hv",
+      "badge": "水平・鉛直",
+      "priority": 12,
+      "useCase": "水平出しに加え、鉛直・通り・壁面方向の基準も必要な建築・設備現場",
+      "feature": "水平・鉛直に対応。IP66、衝突検知、スキャン・ポイントモード、X/Y軸±5°手動傾斜。",
+      "check": "高さ出しだけならH-3で十分か、縦置き・鉛直機能を使う工程があるか確認。",
+      "specs": {
+        "range": "商品仕様確認",
+        "accuracy": "商品仕様確認",
+        "leveling": "自動整準",
+        "slope": "X/Y手動±5°",
+        "receiver": "付属"
+      }
+    },
+    {
+      "id": 15,
+      "modelCode": "70816",
+      "name": "オレンジブック トラスコ中山 シンワ スピニングレーザー ＨＶ−３ レッド 70816",
+      "url": "https://item.rakuten.co.jp/crecote-shop/ta022005-70816/?variantId=TA022005",
+      "utmUrl": "https://item.rakuten.co.jp/crecote-shop/ta022005-70816/?variantId=TA022005&utm_source=sagyou_navi&utm_medium=article&utm_campaign=one-person-leveling-rotary-laser-guide",
+      "imageFile": "ta022005-70816.jpg",
+      "included": true,
+      "duplicateModel": false,
+      "shortName": "シンワ スピニングレーザー HV-3 レッド 70816",
+      "group": "rotary_hv",
+      "badge": "水平・鉛直",
+      "priority": 13,
+      "useCase": "水平・鉛直機能を必要としつつ、受光器中心でコストを抑えたい現場",
+      "feature": "HV-3の赤色モデル。水平・鉛直・スキャン・ポイント照射を使い分けやすい。",
+      "check": "グリーンとの価格差、屋内目視頻度、受光器を使う距離を確認。",
+      "specs": {
+        "range": "商品仕様確認",
+        "accuracy": "商品仕様確認",
+        "leveling": "自動整準",
+        "slope": "X/Y手動±5°",
+        "receiver": "付属"
+      }
+    },
+    {
+      "id": 16,
+      "modelCode": "TRL315H",
+      "name": "オレンジブック トラスコ中山 タジマ タジマローテーティングレーザー３１５Ｈ／スタンダード受光器 TRL315H",
+      "url": "https://item.rakuten.co.jp/crecote-shop/ta028447-trl315h/?variantId=TA028447",
+      "utmUrl": "https://item.rakuten.co.jp/crecote-shop/ta028447-trl315h/?variantId=TA028447&utm_source=sagyou_navi&utm_medium=article&utm_campaign=one-person-leveling-rotary-laser-guide",
+      "imageFile": "ta028447-trl315h.jpg",
+      "included": true,
+      "duplicateModel": false,
+      "shortName": "タジマ TRL-315H スタンダード受光器セット",
+      "group": "rotary_horizontal",
+      "badge": "標準受光器",
+      "priority": 6,
+      "useCase": "外構・基礎・造成でシンプルなブザー・矢印受光を重視する現場",
+      "feature": "最大直径600m、IP66。標準受光器で操作を簡潔にまとめやすい。",
+      "check": "差分数値が必要ならデジタル受光器版と比較。校正・始業前点検の運用も確認。",
+      "specs": {
+        "range": "最大直径600m",
+        "accuracy": "メーカー仕様確認",
+        "leveling": "自動整準",
+        "slope": "水平出し中心",
+        "receiver": "スタンダード"
+      }
+    },
+    {
+      "id": 17,
+      "modelCode": "TRL315HD",
+      "name": "オレンジブック トラスコ中山 タジマ タジマローテティングレーザー３１５Ｈ／デジタル受光器 TRL315HD",
+      "url": "https://item.rakuten.co.jp/crecote-shop/ta028448-trl315hd/?variantId=TA028448",
+      "utmUrl": "https://item.rakuten.co.jp/crecote-shop/ta028448-trl315hd/?variantId=TA028448&utm_source=sagyou_navi&utm_medium=article&utm_campaign=one-person-leveling-rotary-laser-guide",
+      "imageFile": "ta028448-trl315hd.jpg",
+      "included": true,
+      "duplicateModel": false,
+      "shortName": "タジマ TRL-315HD デジタル受光器セット",
+      "group": "rotary_horizontal",
+      "badge": "デジタル受光器",
+      "priority": 7,
+      "useCase": "測点が多く、基準との差を数値で素早く判断したい外構・土木現場",
+      "feature": "最大直径600m、IP66。デジタル受光器でセンターとの差分を読み取りやすい。",
+      "check": "標準受光器版との価格差、数値表示範囲、予備受光器の互換性を確認。",
+      "specs": {
+        "range": "最大直径600m",
+        "accuracy": "メーカー仕様確認",
+        "leveling": "自動整準",
+        "slope": "水平出し中心",
+        "receiver": "デジタル"
+      }
+    },
+    {
+      "id": 18,
+      "modelCode": "222723",
+      "name": "オレンジブック トラスコ中山 ＭＹＺＯＸ リアルグリーンレーザー墨出器 受光器三脚セット＜Ｇ−４４０ＳＲ＞ 222723",
+      "url": "https://item.rakuten.co.jp/crecote-shop/ta021644-222723/?variantId=TA021644",
+      "utmUrl": "https://item.rakuten.co.jp/crecote-shop/ta021644-222723/?variantId=TA021644&utm_source=sagyou_navi&utm_medium=article&utm_campaign=one-person-leveling-rotary-laser-guide",
+      "imageFile": "ta021644-222723.jpg",
+      "included": true,
+      "duplicateModel": false,
+      "shortName": "MYZOX G-440SR リアルグリーン墨出器 受光器・三脚セット",
+      "group": "line_laser",
+      "badge": "屋内ライン・受光器付",
+      "priority": 14,
+      "useCase": "室内の水平・垂直ライン、設備・内装・短距離の屋外作業",
+      "feature": "ローテーティングレーザーではなくラインを見て施工する用途の比較候補。",
+      "check": "広い造成・基礎の高さ出しが主目的なら回転レーザーを優先。",
+      "specs": {
+        "range": "ラインレーザー",
+        "accuracy": "商品仕様確認",
+        "leveling": "自動整準",
+        "slope": "墨出し用途",
+        "receiver": "受光器・三脚セット"
+      }
+    },
+    {
+      "id": 19,
+      "modelCode": "71620",
+      "name": "オレンジブック トラスコ中山 シンワ レーザーロボ Ｘｌｉｎｅ−Ｅ グリーン 受光器・三脚セット 71620",
+      "url": "https://item.rakuten.co.jp/crecote-shop/ta022038-71620/?variantId=TA022038",
+      "utmUrl": "https://item.rakuten.co.jp/crecote-shop/ta022038-71620/?variantId=TA022038&utm_source=sagyou_navi&utm_medium=article&utm_campaign=one-person-leveling-rotary-laser-guide",
+      "imageFile": "ta022038-71620.jpg",
+      "included": true,
+      "duplicateModel": false,
+      "shortName": "シンワ Xline-E グリーン 受光器・三脚セット 71620",
+      "group": "line_laser",
+      "badge": "フルライン・グリーン",
+      "priority": 15,
+      "useCase": "内装・設備・天井・地墨クロスなど、見える線で施工したい現場",
+      "feature": "フルラインと地墨クロス。屋外の広範囲高さ管理より、室内の線出しに向く。",
+      "check": "水平面を広範囲で一人測定するなら回転レーザーとの差を理解して選ぶ。",
+      "specs": {
+        "range": "ラインレーザー",
+        "accuracy": "商品仕様確認",
+        "leveling": "自動整準",
+        "slope": "墨出し用途",
+        "receiver": "受光器・三脚セット"
+      }
+    },
+    {
+      "id": 20,
+      "modelCode": "71619",
+      "name": "オレンジブック トラスコ中山 シンワ レーザーロボ Ｘｌｉｎｅ−Ｅ レッド 受光器・三脚セット 71619",
+      "url": "https://item.rakuten.co.jp/crecote-shop/ta022037-71619/?variantId=TA022037",
+      "utmUrl": "https://item.rakuten.co.jp/crecote-shop/ta022037-71619/?variantId=TA022037&utm_source=sagyou_navi&utm_medium=article&utm_campaign=one-person-leveling-rotary-laser-guide",
+      "imageFile": "ta022037-71619.jpg",
+      "included": false,
+      "duplicateModel": false
+    },
+    {
+      "id": 21,
+      "modelCode": "STSH600",
+      "name": "オレンジブック トラスコ中山 ＳＴＳ 回転レーザレベル ＳＴＳ−Ｈ６００（三脚付） STS-H600",
+      "url": "https://item.rakuten.co.jp/crecote-shop/ta014675-stsh600/?variantId=TA014675",
+      "utmUrl": "https://item.rakuten.co.jp/crecote-shop/ta014675-stsh600/?variantId=TA014675&utm_source=sagyou_navi&utm_medium=article&utm_campaign=one-person-leveling-rotary-laser-guide",
+      "imageFile": "ta014675-stsh600.jpg",
+      "included": false,
+      "duplicateModel": true
+    },
+    {
+      "id": 22,
+      "modelCode": "LS100D",
+      "name": "オレンジブック トラスコ中山 ＴＯＰＣＯＮ デジタル受光器ＬＳ−１００Ｄ LS100D",
+      "url": "https://item.rakuten.co.jp/crecote-shop/ta025758-ls100d/",
+      "utmUrl": "https://item.rakuten.co.jp/crecote-shop/ta025758-ls100d/?utm_source=sagyou_navi&utm_medium=article&utm_campaign=one-person-leveling-rotary-laser-guide",
+      "imageFile": "ta025758-ls100d.jpg",
+      "included": true,
+      "duplicateModel": false,
+      "shortName": "TOPCON デジタル受光器 LS-100D",
+      "group": "accessory",
+      "badge": "デジタル受光器",
+      "priority": 20,
+      "useCase": "受光位置と基準との差を数値で確認したい反復測定",
+      "feature": "差分をデジタル表示し、受光器を上下させる時間を短縮しやすい。",
+      "check": "本体との互換性、ホルダーの付属、表示方向を確認。",
+      "specs": {
+        "type": "デジタル受光器"
+      }
+    },
+    {
+      "id": 23,
+      "modelCode": "RLH5ADB",
+      "name": "オレンジブック トラスコ中山 ＴＯＰＣＯＮ ローテーティングレーザーＲＬ−Ｈ５Ａ RLH5ADB",
+      "url": "https://item.rakuten.co.jp/crecote-shop/ta027483-rlh5adb/",
+      "utmUrl": "https://item.rakuten.co.jp/crecote-shop/ta027483-rlh5adb/?utm_source=sagyou_navi&utm_medium=article&utm_campaign=one-person-leveling-rotary-laser-guide",
+      "imageFile": "ta027483-rlh5adb.jpg",
+      "included": true,
+      "duplicateModel": false,
+      "shortName": "TOPCON RL-H5A ローテーティングレーザー",
+      "group": "rotary_horizontal",
+      "badge": "広範囲・高耐久",
+      "priority": 5,
+      "useCase": "戸建て基礎から大規模造成・圃場均平まで、広範囲で高さを管理する現場",
+      "feature": "水平精度±1.5mm/30m、測定範囲直径800m、1軸勾配設定、IP66。受光器の選択肢がある。",
+      "check": "LS-100D等の受光器・ホルダー・三脚がセットか、本体電源方式を確認。",
+      "specs": {
+        "range": "直径800m",
+        "accuracy": "±1.5mm/30m",
+        "leveling": "電子式自動整準",
+        "slope": "1軸対応",
+        "receiver": "別構成を確認"
+      }
+    },
+    {
+      "id": 24,
+      "modelCode": "HOLDER6",
+      "name": "オレンジブック トラスコ中山 ＴＯＰＣＯＮ 受光器ホルダー６型 HOLDER6",
+      "url": "https://item.rakuten.co.jp/crecote-shop/ta024005-holder6/",
+      "utmUrl": "https://item.rakuten.co.jp/crecote-shop/ta024005-holder6/?utm_source=sagyou_navi&utm_medium=article&utm_campaign=one-person-leveling-rotary-laser-guide",
+      "imageFile": "ta024005-holder6.jpg",
+      "included": false,
+      "duplicateModel": false
+    },
+    {
+      "id": 25,
+      "modelCode": "STDOD",
+      "name": "オレンジブック トラスコ中山 ＴＯＰＣＯＮ （タジマ）アルミ三脚（球面タイプ） STDOD",
+      "url": "https://item.rakuten.co.jp/crecote-shop/ta028029-stdod/",
+      "utmUrl": "https://item.rakuten.co.jp/crecote-shop/ta028029-stdod/?utm_source=sagyou_navi&utm_medium=article&utm_campaign=one-person-leveling-rotary-laser-guide",
+      "imageFile": "ta028029-stdod.jpg",
+      "included": true,
+      "duplicateModel": false,
+      "shortName": "TOPCON・タジマ アルミ三脚 球面タイプ STD-OD",
+      "group": "accessory",
+      "badge": "球面三脚",
+      "priority": 24,
+      "useCase": "球面タイプ対応のローテーティングレーザー・オートレベル",
+      "feature": "据付時の調整性と安定性を確保する付属機器。",
+      "check": "平面/球面の適合、取付ねじ、持ち運び頻度を確認。",
+      "specs": {
+        "type": "球面アルミ三脚"
+      }
+    },
+    {
+      "id": 26,
+      "modelCode": "TRLRCV",
+      "name": "オレンジブック トラスコ中山 タジマ ＴＲＬ用受光器スタンダードタイプ TRLRCV",
+      "url": "https://item.rakuten.co.jp/crecote-shop/ta028451-trlrcv/",
+      "utmUrl": "https://item.rakuten.co.jp/crecote-shop/ta028451-trlrcv/?utm_source=sagyou_navi&utm_medium=article&utm_campaign=one-person-leveling-rotary-laser-guide",
+      "imageFile": "ta028451-trlrcv.jpg",
+      "included": true,
+      "duplicateModel": false,
+      "shortName": "タジマ TRL用受光器 スタンダード TRL-RCV",
+      "group": "accessory",
+      "badge": "交換・追加受光器",
+      "priority": 22,
+      "useCase": "TRLシリーズで受光器を追加し、複数人・複数測点を同時進行する現場",
+      "feature": "予備・追加受光器として、作業停止リスクや待ち時間を減らしやすい。",
+      "check": "対応機種、クランプ、電池、受光精度切替を確認。",
+      "specs": {
+        "type": "TRL用標準受光器"
+      }
+    },
+    {
+      "id": 27,
+      "modelCode": "LS80X",
+      "name": "オレンジブック トラスコ中山 ＴＯＰＣＯＮ 受光器 ＬＳ−８０Ｘ LS80X",
+      "url": "https://item.rakuten.co.jp/crecote-shop/ta025768-ls80x/",
+      "utmUrl": "https://item.rakuten.co.jp/crecote-shop/ta025768-ls80x/?utm_source=sagyou_navi&utm_medium=article&utm_campaign=one-person-leveling-rotary-laser-guide",
+      "imageFile": "ta025768-ls80x.jpg",
+      "included": true,
+      "duplicateModel": false,
+      "shortName": "TOPCON 受光器 LS-80X",
+      "group": "accessory",
+      "badge": "標準受光器",
+      "priority": 21,
+      "useCase": "矢印・ブザー中心でシンプルに高さを合わせたい作業",
+      "feature": "ローテーティングレーザーの受光位置確認に使う標準的なアクセサリー。",
+      "check": "対応本体、必要な検出精度、ホルダー型式を確認。",
+      "specs": {
+        "type": "標準受光器"
+      }
+    },
+    {
+      "id": 28,
+      "modelCode": "HOLDER110",
+      "name": "オレンジブック トラスコ中山 ＴＯＰＣＯＮ 受光器ホルダー１１０型 HOLDER110",
+      "url": "https://item.rakuten.co.jp/crecote-shop/ta024004-holder110/",
+      "utmUrl": "https://item.rakuten.co.jp/crecote-shop/ta024004-holder110/?utm_source=sagyou_navi&utm_medium=article&utm_campaign=one-person-leveling-rotary-laser-guide",
+      "imageFile": "ta024004-holder110.jpg",
+      "included": true,
+      "duplicateModel": false,
+      "shortName": "TOPCON 受光器ホルダー110型",
+      "group": "accessory",
+      "badge": "受光器ホルダー",
+      "priority": 25,
+      "useCase": "受光器をスタッフへ確実に固定する測定",
+      "feature": "受光器の滑り・位置ずれを防ぎ、反復測定の精度を保つ。",
+      "check": "受光器型式との適合、クランプの締付状態を確認。",
+      "specs": {
+        "type": "受光器ホルダー"
+      }
+    },
+    {
+      "id": 29,
+      "modelCode": "STDOD",
+      "name": "オレンジブック トラスコ中山 ＴＯＰＣＯＮ （タジマ）アルミ三脚（球面タイプ） STD-OD",
+      "url": "https://item.rakuten.co.jp/crecote-shop/ta014635-stdod/",
+      "utmUrl": "https://item.rakuten.co.jp/crecote-shop/ta014635-stdod/?utm_source=sagyou_navi&utm_medium=article&utm_campaign=one-person-leveling-rotary-laser-guide",
+      "imageFile": "ta014635-stdod.jpg",
+      "included": false,
+      "duplicateModel": true
+    }
+  ],
+  "includedProducts": [
+    {
+      "id": 1,
+      "modelCode": "LP610JDBD",
+      "name": "オレンジブック トラスコ中山 ＳＯＫＫＩＡ ソキア自動整準レベルプレーナーＬＰ６１０ ＬＳ−１００Ｄ付 LP610JDBD",
+      "url": "https://item.rakuten.co.jp/crecote-shop/ta025726-lp610jdbd/",
+      "utmUrl": "https://item.rakuten.co.jp/crecote-shop/ta025726-lp610jdbd/?utm_source=sagyou_navi&utm_medium=article&utm_campaign=one-person-leveling-rotary-laser-guide",
+      "imageFile": "ta025726-lp610jdbd.jpg",
+      "included": true,
+      "duplicateModel": false,
+      "shortName": "SOKKIA LP610 LS-100Dデジタル受光器セット",
+      "group": "rotary_horizontal",
+      "badge": "デジタル受光器",
+      "priority": 1,
+      "useCase": "基礎天端・造成・土間・外構で、差分を数値確認しながら一人で高さ出ししたい現場",
+      "feature": "直径800m、水平精度±1.5mm/30m、1軸勾配設定、IP66。LS-100Dで基準との差を数値表示しやすい。",
+      "check": "高価でも測点数が多いか、数値差分表示が必要か、三脚・スタッフを含む構成か確認。",
+      "specs": {
+        "range": "直径800m",
+        "accuracy": "±1.5mm/30m",
+        "leveling": "自動整準±5°",
+        "slope": "1軸 ±8.7%",
+        "receiver": "LS-100D デジタル"
+      }
+    },
+    {
+      "id": 2,
+      "modelCode": "LP610JDB",
+      "name": "オレンジブック トラスコ中山 ＳＯＫＫＩＡ ソキア自動整準レベルプレーナーＬＰ６１０ ＬＲ３００付 LP610JDB",
+      "url": "https://item.rakuten.co.jp/crecote-shop/ta025725-lp610jdb/",
+      "utmUrl": "https://item.rakuten.co.jp/crecote-shop/ta025725-lp610jdb/?utm_source=sagyou_navi&utm_medium=article&utm_campaign=one-person-leveling-rotary-laser-guide",
+      "imageFile": "ta025725-lp610jdb.jpg",
+      "included": true,
+      "duplicateModel": false,
+      "shortName": "SOKKIA LP610 LR300受光器セット",
+      "group": "rotary_horizontal",
+      "badge": "標準受光器",
+      "priority": 2,
+      "useCase": "広い外構・造成・基礎工事で、矢印とブザー中心のシンプルな高さ出しを行う現場",
+      "feature": "本体性能はLP610共通。標準受光器で導入費と操作の分かりやすさを重視しやすい。",
+      "check": "数値差分表示が不要か、受光器を複数台運用するか、セット内容を確認。",
+      "specs": {
+        "range": "直径800m",
+        "accuracy": "±1.5mm/30m",
+        "leveling": "自動整準±5°",
+        "slope": "1軸 ±8.7%",
+        "receiver": "LR300系 標準"
+      }
+    },
+    {
+      "id": 4,
+      "modelCode": "224944",
+      "name": "オレンジブック トラスコ中山 ＭＹＺＯＸ 自動整準レーザーレベル デジタル受光器（Ｄ−ＲＥ２）セット＜ＭＪ−６００Ｓ／ＬＡＮ２−ＯＤ＞ 224944",
+      "url": "https://item.rakuten.co.jp/crecote-shop/ta021649-224944/",
+      "utmUrl": "https://item.rakuten.co.jp/crecote-shop/ta021649-224944/?utm_source=sagyou_navi&utm_medium=article&utm_campaign=one-person-leveling-rotary-laser-guide",
+      "imageFile": "ta021649-224944.jpg",
+      "included": true,
+      "duplicateModel": false,
+      "shortName": "MYZOX MJ-600S デジタル受光器D-RE2セット",
+      "group": "rotary_horizontal",
+      "badge": "デジタルセット",
+      "priority": 3,
+      "useCase": "造成・基礎天端・広範囲の水平出しで、受光位置を数値管理したい現場",
+      "feature": "測定範囲直径600m。デジタル受光器を使い、基準との差を判断しやすい構成。",
+      "check": "デジタル表示の必要性、三脚・ロッドクランプの付属、現場の最大距離を確認。",
+      "specs": {
+        "range": "直径600m",
+        "accuracy": "メーカー仕様確認",
+        "leveling": "自動整準",
+        "slope": "水平出し中心",
+        "receiver": "D-RE2 デジタル"
+      }
+    },
+    {
+      "id": 6,
+      "modelCode": "224945",
+      "name": "オレンジブック トラスコ中山 ＭＹＺＯＸ 自動整準レーザーレベル 受光器ＭＪ−ＲＥ３×２台セット＜ＭＪ−６００／ＬＡＮ２−ＯＤ＞ 224945",
+      "url": "https://item.rakuten.co.jp/crecote-shop/ta021650-224945/",
+      "utmUrl": "https://item.rakuten.co.jp/crecote-shop/ta021650-224945/?utm_source=sagyou_navi&utm_medium=article&utm_campaign=one-person-leveling-rotary-laser-guide",
+      "imageFile": "ta021650-224945.jpg",
+      "included": true,
+      "duplicateModel": false,
+      "shortName": "MYZOX MJ-600 受光器MJ-RE3×2台セット",
+      "group": "rotary_horizontal",
+      "badge": "受光器2台",
+      "priority": 4,
+      "useCase": "2人が別地点で同時に高さ確認する外構・造成・基礎現場",
+      "feature": "受光器2台を活かして、複数測点や別作業班の同時進行をしやすい。",
+      "check": "一人作業が中心か複数人同時作業か、デジタル数値表示の要否を確認。",
+      "specs": {
+        "range": "直径600m",
+        "accuracy": "メーカー仕様確認",
+        "leveling": "自動整準",
+        "slope": "水平出し中心",
+        "receiver": "MJ-RE3×2台"
+      }
+    },
+    {
+      "id": 23,
+      "modelCode": "RLH5ADB",
+      "name": "オレンジブック トラスコ中山 ＴＯＰＣＯＮ ローテーティングレーザーＲＬ−Ｈ５Ａ RLH5ADB",
+      "url": "https://item.rakuten.co.jp/crecote-shop/ta027483-rlh5adb/",
+      "utmUrl": "https://item.rakuten.co.jp/crecote-shop/ta027483-rlh5adb/?utm_source=sagyou_navi&utm_medium=article&utm_campaign=one-person-leveling-rotary-laser-guide",
+      "imageFile": "ta027483-rlh5adb.jpg",
+      "included": true,
+      "duplicateModel": false,
+      "shortName": "TOPCON RL-H5A ローテーティングレーザー",
+      "group": "rotary_horizontal",
+      "badge": "広範囲・高耐久",
+      "priority": 5,
+      "useCase": "戸建て基礎から大規模造成・圃場均平まで、広範囲で高さを管理する現場",
+      "feature": "水平精度±1.5mm/30m、測定範囲直径800m、1軸勾配設定、IP66。受光器の選択肢がある。",
+      "check": "LS-100D等の受光器・ホルダー・三脚がセットか、本体電源方式を確認。",
+      "specs": {
+        "range": "直径800m",
+        "accuracy": "±1.5mm/30m",
+        "leveling": "電子式自動整準",
+        "slope": "1軸対応",
+        "receiver": "別構成を確認"
+      }
+    },
+    {
+      "id": 16,
+      "modelCode": "TRL315H",
+      "name": "オレンジブック トラスコ中山 タジマ タジマローテーティングレーザー３１５Ｈ／スタンダード受光器 TRL315H",
+      "url": "https://item.rakuten.co.jp/crecote-shop/ta028447-trl315h/?variantId=TA028447",
+      "utmUrl": "https://item.rakuten.co.jp/crecote-shop/ta028447-trl315h/?variantId=TA028447&utm_source=sagyou_navi&utm_medium=article&utm_campaign=one-person-leveling-rotary-laser-guide",
+      "imageFile": "ta028447-trl315h.jpg",
+      "included": true,
+      "duplicateModel": false,
+      "shortName": "タジマ TRL-315H スタンダード受光器セット",
+      "group": "rotary_horizontal",
+      "badge": "標準受光器",
+      "priority": 6,
+      "useCase": "外構・基礎・造成でシンプルなブザー・矢印受光を重視する現場",
+      "feature": "最大直径600m、IP66。標準受光器で操作を簡潔にまとめやすい。",
+      "check": "差分数値が必要ならデジタル受光器版と比較。校正・始業前点検の運用も確認。",
+      "specs": {
+        "range": "最大直径600m",
+        "accuracy": "メーカー仕様確認",
+        "leveling": "自動整準",
+        "slope": "水平出し中心",
+        "receiver": "スタンダード"
+      }
+    },
+    {
+      "id": 17,
+      "modelCode": "TRL315HD",
+      "name": "オレンジブック トラスコ中山 タジマ タジマローテティングレーザー３１５Ｈ／デジタル受光器 TRL315HD",
+      "url": "https://item.rakuten.co.jp/crecote-shop/ta028448-trl315hd/?variantId=TA028448",
+      "utmUrl": "https://item.rakuten.co.jp/crecote-shop/ta028448-trl315hd/?variantId=TA028448&utm_source=sagyou_navi&utm_medium=article&utm_campaign=one-person-leveling-rotary-laser-guide",
+      "imageFile": "ta028448-trl315hd.jpg",
+      "included": true,
+      "duplicateModel": false,
+      "shortName": "タジマ TRL-315HD デジタル受光器セット",
+      "group": "rotary_horizontal",
+      "badge": "デジタル受光器",
+      "priority": 7,
+      "useCase": "測点が多く、基準との差を数値で素早く判断したい外構・土木現場",
+      "feature": "最大直径600m、IP66。デジタル受光器でセンターとの差分を読み取りやすい。",
+      "check": "標準受光器版との価格差、数値表示範囲、予備受光器の互換性を確認。",
+      "specs": {
+        "range": "最大直径600m",
+        "accuracy": "メーカー仕様確認",
+        "leveling": "自動整準",
+        "slope": "水平出し中心",
+        "receiver": "デジタル"
+      }
+    },
+    {
+      "id": 8,
+      "modelCode": "LL300N",
+      "name": "オレンジブック トラスコ中山 ＮＩＫＯＮ スペクトラ プレシジョン レーザーレベル LL300N",
+      "url": "https://item.rakuten.co.jp/crecote-shop/ta025670-ll300n/",
+      "utmUrl": "https://item.rakuten.co.jp/crecote-shop/ta025670-ll300n/?utm_source=sagyou_navi&utm_medium=article&utm_campaign=one-person-leveling-rotary-laser-guide",
+      "imageFile": "ta025670-ll300n.jpg",
+      "included": true,
+      "duplicateModel": false,
+      "shortName": "Nikon-Trimble Spectra Precision LL300N",
+      "group": "rotary_horizontal",
+      "badge": "堅牢・小規模現場",
+      "priority": 8,
+      "useCase": "基礎・型枠・小規模造成・小規模マシンコントロール",
+      "feature": "測定範囲直径500m、IP66、1m落下を想定した堅牢設計。HL450は位置をミリ単位表示。",
+      "check": "標準受光器の種類、勾配設定に別売リモコンが必要か、電源構成を確認。",
+      "specs": {
+        "range": "直径500m",
+        "accuracy": "±2.2mm/30m",
+        "leveling": "自動整準±5°",
+        "slope": "別売リモコンで1軸",
+        "receiver": "HL450"
+      }
+    },
+    {
+      "id": 9,
+      "modelCode": "STSH600",
+      "name": "オレンジブック トラスコ中山 ＳＴＳ 回転レーザレベル ＳＴＳ−Ｈ６００（三脚付） STSH600",
+      "url": "https://item.rakuten.co.jp/crecote-shop/ta028033-stsh600/",
+      "utmUrl": "https://item.rakuten.co.jp/crecote-shop/ta028033-stsh600/?utm_source=sagyou_navi&utm_medium=article&utm_campaign=one-person-leveling-rotary-laser-guide",
+      "imageFile": "ta028033-stsh600.jpg",
+      "included": true,
+      "duplicateModel": false,
+      "shortName": "STS STS-H600 三脚付",
+      "group": "rotary_horizontal",
+      "badge": "振動対応・三脚付",
+      "priority": 9,
+      "useCase": "重機や作業振動がある建設現場、広範囲の水平出し",
+      "feature": "直径約600m、高精度±0.38mm/10m、±5°自動整準。対振動モードと照射遮断機能を備える。",
+      "check": "振動環境でも基準点の再確認は必要。受光器・リモコン・三脚の付属を確認。",
+      "specs": {
+        "range": "直径約600m",
+        "accuracy": "±0.38mm/10m",
+        "leveling": "自動整準±5°",
+        "slope": "水平出し中心",
+        "receiver": "標準付属"
+      }
+    },
+    {
+      "id": 10,
+      "modelCode": "70806",
+      "name": "オレンジブック トラスコ中山 シンワ スピニングレーザー Ｈ−３ レッド 70806",
+      "url": "https://item.rakuten.co.jp/crecote-shop/ta022003-70806/",
+      "utmUrl": "https://item.rakuten.co.jp/crecote-shop/ta022003-70806/?utm_source=sagyou_navi&utm_medium=article&utm_campaign=one-person-leveling-rotary-laser-guide",
+      "imageFile": "ta022003-70806.jpg",
+      "included": true,
+      "duplicateModel": false,
+      "shortName": "シンワ スピニングレーザー H-3 レッド 70806",
+      "group": "rotary_horizontal",
+      "badge": "水平・赤色",
+      "priority": 10,
+      "useCase": "屋外の水平出しを受光器中心で行い、価格と基本機能を重視する現場",
+      "feature": "水平出し専用。受光器付で屋外使用に対応し、本体・受光器はIP66。",
+      "check": "鉛直出しが必要ならHV-3、見えるラインを重視するならグリーンと比較。",
+      "specs": {
+        "range": "商品仕様確認",
+        "accuracy": "商品仕様確認",
+        "leveling": "自動整準",
+        "slope": "水平専用",
+        "receiver": "付属"
+      }
+    },
+    {
+      "id": 13,
+      "modelCode": "70807",
+      "name": "オレンジブック トラスコ中山 シンワ スピニングレーザー Ｈ−３ グリーン 70807",
+      "url": "https://item.rakuten.co.jp/crecote-shop/ta022004-70807/?variantId=TA022004",
+      "utmUrl": "https://item.rakuten.co.jp/crecote-shop/ta022004-70807/?variantId=TA022004&utm_source=sagyou_navi&utm_medium=article&utm_campaign=one-person-leveling-rotary-laser-guide",
+      "imageFile": "ta022004-70807.jpg",
+      "included": true,
+      "duplicateModel": false,
+      "shortName": "シンワ スピニングレーザー H-3 グリーン 70807",
+      "group": "rotary_horizontal",
+      "badge": "水平・グリーン",
+      "priority": 11,
+      "useCase": "屋内外をまたぎ、目視しやすさと受光器運用の両方を重視する現場",
+      "feature": "水平出し専用のグリーンモデル。屋外では受光器、屋内では視認性を活かしやすい。",
+      "check": "屋外長距離は色より受光器性能が重要。必要用途に対する費用差を確認。",
+      "specs": {
+        "range": "商品仕様確認",
+        "accuracy": "商品仕様確認",
+        "leveling": "自動整準",
+        "slope": "水平専用",
+        "receiver": "付属"
+      }
+    },
+    {
+      "id": 14,
+      "modelCode": "70817",
+      "name": "オレンジブック トラスコ中山 シンワ スピニングレーザー ＨＶ−３ グリーン 70817",
+      "url": "https://item.rakuten.co.jp/crecote-shop/ta022006-70817/?variantId=TA022006",
+      "utmUrl": "https://item.rakuten.co.jp/crecote-shop/ta022006-70817/?variantId=TA022006&utm_source=sagyou_navi&utm_medium=article&utm_campaign=one-person-leveling-rotary-laser-guide",
+      "imageFile": "ta022006-70817.jpg",
+      "included": true,
+      "duplicateModel": false,
+      "shortName": "シンワ スピニングレーザー HV-3 グリーン 70817",
+      "group": "rotary_hv",
+      "badge": "水平・鉛直",
+      "priority": 12,
+      "useCase": "水平出しに加え、鉛直・通り・壁面方向の基準も必要な建築・設備現場",
+      "feature": "水平・鉛直に対応。IP66、衝突検知、スキャン・ポイントモード、X/Y軸±5°手動傾斜。",
+      "check": "高さ出しだけならH-3で十分か、縦置き・鉛直機能を使う工程があるか確認。",
+      "specs": {
+        "range": "商品仕様確認",
+        "accuracy": "商品仕様確認",
+        "leveling": "自動整準",
+        "slope": "X/Y手動±5°",
+        "receiver": "付属"
+      }
+    },
+    {
+      "id": 15,
+      "modelCode": "70816",
+      "name": "オレンジブック トラスコ中山 シンワ スピニングレーザー ＨＶ−３ レッド 70816",
+      "url": "https://item.rakuten.co.jp/crecote-shop/ta022005-70816/?variantId=TA022005",
+      "utmUrl": "https://item.rakuten.co.jp/crecote-shop/ta022005-70816/?variantId=TA022005&utm_source=sagyou_navi&utm_medium=article&utm_campaign=one-person-leveling-rotary-laser-guide",
+      "imageFile": "ta022005-70816.jpg",
+      "included": true,
+      "duplicateModel": false,
+      "shortName": "シンワ スピニングレーザー HV-3 レッド 70816",
+      "group": "rotary_hv",
+      "badge": "水平・鉛直",
+      "priority": 13,
+      "useCase": "水平・鉛直機能を必要としつつ、受光器中心でコストを抑えたい現場",
+      "feature": "HV-3の赤色モデル。水平・鉛直・スキャン・ポイント照射を使い分けやすい。",
+      "check": "グリーンとの価格差、屋内目視頻度、受光器を使う距離を確認。",
+      "specs": {
+        "range": "商品仕様確認",
+        "accuracy": "商品仕様確認",
+        "leveling": "自動整準",
+        "slope": "X/Y手動±5°",
+        "receiver": "付属"
+      }
+    },
+    {
+      "id": 18,
+      "modelCode": "222723",
+      "name": "オレンジブック トラスコ中山 ＭＹＺＯＸ リアルグリーンレーザー墨出器 受光器三脚セット＜Ｇ−４４０ＳＲ＞ 222723",
+      "url": "https://item.rakuten.co.jp/crecote-shop/ta021644-222723/?variantId=TA021644",
+      "utmUrl": "https://item.rakuten.co.jp/crecote-shop/ta021644-222723/?variantId=TA021644&utm_source=sagyou_navi&utm_medium=article&utm_campaign=one-person-leveling-rotary-laser-guide",
+      "imageFile": "ta021644-222723.jpg",
+      "included": true,
+      "duplicateModel": false,
+      "shortName": "MYZOX G-440SR リアルグリーン墨出器 受光器・三脚セット",
+      "group": "line_laser",
+      "badge": "屋内ライン・受光器付",
+      "priority": 14,
+      "useCase": "室内の水平・垂直ライン、設備・内装・短距離の屋外作業",
+      "feature": "ローテーティングレーザーではなくラインを見て施工する用途の比較候補。",
+      "check": "広い造成・基礎の高さ出しが主目的なら回転レーザーを優先。",
+      "specs": {
+        "range": "ラインレーザー",
+        "accuracy": "商品仕様確認",
+        "leveling": "自動整準",
+        "slope": "墨出し用途",
+        "receiver": "受光器・三脚セット"
+      }
+    },
+    {
+      "id": 19,
+      "modelCode": "71620",
+      "name": "オレンジブック トラスコ中山 シンワ レーザーロボ Ｘｌｉｎｅ−Ｅ グリーン 受光器・三脚セット 71620",
+      "url": "https://item.rakuten.co.jp/crecote-shop/ta022038-71620/?variantId=TA022038",
+      "utmUrl": "https://item.rakuten.co.jp/crecote-shop/ta022038-71620/?variantId=TA022038&utm_source=sagyou_navi&utm_medium=article&utm_campaign=one-person-leveling-rotary-laser-guide",
+      "imageFile": "ta022038-71620.jpg",
+      "included": true,
+      "duplicateModel": false,
+      "shortName": "シンワ Xline-E グリーン 受光器・三脚セット 71620",
+      "group": "line_laser",
+      "badge": "フルライン・グリーン",
+      "priority": 15,
+      "useCase": "内装・設備・天井・地墨クロスなど、見える線で施工したい現場",
+      "feature": "フルラインと地墨クロス。屋外の広範囲高さ管理より、室内の線出しに向く。",
+      "check": "水平面を広範囲で一人測定するなら回転レーザーとの差を理解して選ぶ。",
+      "specs": {
+        "range": "ラインレーザー",
+        "accuracy": "商品仕様確認",
+        "leveling": "自動整準",
+        "slope": "墨出し用途",
+        "receiver": "受光器・三脚セット"
+      }
+    },
+    {
+      "id": 22,
+      "modelCode": "LS100D",
+      "name": "オレンジブック トラスコ中山 ＴＯＰＣＯＮ デジタル受光器ＬＳ−１００Ｄ LS100D",
+      "url": "https://item.rakuten.co.jp/crecote-shop/ta025758-ls100d/",
+      "utmUrl": "https://item.rakuten.co.jp/crecote-shop/ta025758-ls100d/?utm_source=sagyou_navi&utm_medium=article&utm_campaign=one-person-leveling-rotary-laser-guide",
+      "imageFile": "ta025758-ls100d.jpg",
+      "included": true,
+      "duplicateModel": false,
+      "shortName": "TOPCON デジタル受光器 LS-100D",
+      "group": "accessory",
+      "badge": "デジタル受光器",
+      "priority": 20,
+      "useCase": "受光位置と基準との差を数値で確認したい反復測定",
+      "feature": "差分をデジタル表示し、受光器を上下させる時間を短縮しやすい。",
+      "check": "本体との互換性、ホルダーの付属、表示方向を確認。",
+      "specs": {
+        "type": "デジタル受光器"
+      }
+    },
+    {
+      "id": 27,
+      "modelCode": "LS80X",
+      "name": "オレンジブック トラスコ中山 ＴＯＰＣＯＮ 受光器 ＬＳ−８０Ｘ LS80X",
+      "url": "https://item.rakuten.co.jp/crecote-shop/ta025768-ls80x/",
+      "utmUrl": "https://item.rakuten.co.jp/crecote-shop/ta025768-ls80x/?utm_source=sagyou_navi&utm_medium=article&utm_campaign=one-person-leveling-rotary-laser-guide",
+      "imageFile": "ta025768-ls80x.jpg",
+      "included": true,
+      "duplicateModel": false,
+      "shortName": "TOPCON 受光器 LS-80X",
+      "group": "accessory",
+      "badge": "標準受光器",
+      "priority": 21,
+      "useCase": "矢印・ブザー中心でシンプルに高さを合わせたい作業",
+      "feature": "ローテーティングレーザーの受光位置確認に使う標準的なアクセサリー。",
+      "check": "対応本体、必要な検出精度、ホルダー型式を確認。",
+      "specs": {
+        "type": "標準受光器"
+      }
+    },
+    {
+      "id": 26,
+      "modelCode": "TRLRCV",
+      "name": "オレンジブック トラスコ中山 タジマ ＴＲＬ用受光器スタンダードタイプ TRLRCV",
+      "url": "https://item.rakuten.co.jp/crecote-shop/ta028451-trlrcv/",
+      "utmUrl": "https://item.rakuten.co.jp/crecote-shop/ta028451-trlrcv/?utm_source=sagyou_navi&utm_medium=article&utm_campaign=one-person-leveling-rotary-laser-guide",
+      "imageFile": "ta028451-trlrcv.jpg",
+      "included": true,
+      "duplicateModel": false,
+      "shortName": "タジマ TRL用受光器 スタンダード TRL-RCV",
+      "group": "accessory",
+      "badge": "交換・追加受光器",
+      "priority": 22,
+      "useCase": "TRLシリーズで受光器を追加し、複数人・複数測点を同時進行する現場",
+      "feature": "予備・追加受光器として、作業停止リスクや待ち時間を減らしやすい。",
+      "check": "対応機種、クランプ、電池、受光精度切替を確認。",
+      "specs": {
+        "type": "TRL用標準受光器"
+      }
+    },
+    {
+      "id": 7,
+      "modelCode": "STSYL",
+      "name": "オレンジブック トラスコ中山 ＳＴＳ 測量用三脚 ＳＴＳ−ＹＬ平面５／８インチ STSYL",
+      "url": "https://item.rakuten.co.jp/crecote-shop/ta028037-stsyl/",
+      "utmUrl": "https://item.rakuten.co.jp/crecote-shop/ta028037-stsyl/?utm_source=sagyou_navi&utm_medium=article&utm_campaign=one-person-leveling-rotary-laser-guide",
+      "imageFile": "ta028037-stsyl.jpg",
+      "included": true,
+      "duplicateModel": false,
+      "shortName": "STS 測量用三脚 STS-YL 平面5/8インチ",
+      "group": "accessory",
+      "badge": "平面三脚",
+      "priority": 23,
+      "useCase": "5/8インチ平面取付のレーザー本体を安定設置する現場",
+      "feature": "本体の性能を活かすには、安定した三脚設置が前提。",
+      "check": "本体のねじ規格・平面/球面、全高、脚の固定状態を確認。",
+      "specs": {
+        "type": "5/8インチ平面三脚"
+      }
+    },
+    {
+      "id": 25,
+      "modelCode": "STDOD",
+      "name": "オレンジブック トラスコ中山 ＴＯＰＣＯＮ （タジマ）アルミ三脚（球面タイプ） STDOD",
+      "url": "https://item.rakuten.co.jp/crecote-shop/ta028029-stdod/",
+      "utmUrl": "https://item.rakuten.co.jp/crecote-shop/ta028029-stdod/?utm_source=sagyou_navi&utm_medium=article&utm_campaign=one-person-leveling-rotary-laser-guide",
+      "imageFile": "ta028029-stdod.jpg",
+      "included": true,
+      "duplicateModel": false,
+      "shortName": "TOPCON・タジマ アルミ三脚 球面タイプ STD-OD",
+      "group": "accessory",
+      "badge": "球面三脚",
+      "priority": 24,
+      "useCase": "球面タイプ対応のローテーティングレーザー・オートレベル",
+      "feature": "据付時の調整性と安定性を確保する付属機器。",
+      "check": "平面/球面の適合、取付ねじ、持ち運び頻度を確認。",
+      "specs": {
+        "type": "球面アルミ三脚"
+      }
+    },
+    {
+      "id": 28,
+      "modelCode": "HOLDER110",
+      "name": "オレンジブック トラスコ中山 ＴＯＰＣＯＮ 受光器ホルダー１１０型 HOLDER110",
+      "url": "https://item.rakuten.co.jp/crecote-shop/ta024004-holder110/",
+      "utmUrl": "https://item.rakuten.co.jp/crecote-shop/ta024004-holder110/?utm_source=sagyou_navi&utm_medium=article&utm_campaign=one-person-leveling-rotary-laser-guide",
+      "imageFile": "ta024004-holder110.jpg",
+      "included": true,
+      "duplicateModel": false,
+      "shortName": "TOPCON 受光器ホルダー110型",
+      "group": "accessory",
+      "badge": "受光器ホルダー",
+      "priority": 25,
+      "useCase": "受光器をスタッフへ確実に固定する測定",
+      "feature": "受光器の滑り・位置ずれを防ぎ、反復測定の精度を保つ。",
+      "check": "受光器型式との適合、クランプの締付状態を確認。",
+      "specs": {
+        "type": "受光器ホルダー"
+      }
+    }
+  ],
+  "sources": [
+    {
+      "title": "TOPCON RL-H5A 公式製品情報",
+      "url": "https://www.topconpositioning.asia/jp/ja/products/brand/topcon/rl-h5a/"
+    },
+    {
+      "title": "タジマ TRL-315HD 公式製品情報",
+      "url": "https://jpn.tajimatool.co.jp/product/4975364142290"
+    },
+    {
+      "title": "シンワ スピニングレーザー HV-3 グリーン 公式製品情報",
+      "url": "https://www.shinwasokutei.co.jp/products/70817/"
+    },
+    {
+      "title": "シンワ スピニングレーザー H-3 レッド 公式製品情報",
+      "url": "https://www.shinwasokutei.co.jp/products/70806/"
+    },
+    {
+      "title": "MYZOX MJ-600 公式製品情報",
+      "url": "https://www.myzox.co.jp/data/products/article/1458"
+    },
+    {
+      "title": "STS STS-H600 公式製品情報",
+      "url": "https://www.sts-s.co.jp/product/detail/17"
+    },
+    {
+      "title": "Nikon-Trimble LL300N 公式製品情報",
+      "url": "https://www.nikon-trimble.co.jp/products/product_detail.html?tid=53"
+    },
+    {
+      "title": "SOKKIA LP610 製品仕様",
+      "url": "https://hoshin.co.jp/products/sokuryo/lp610.html"
+    },
+    {
+      "title": "一人でレベル出しの検索結果例：LP610",
+      "url": "https://sooki.co.jp/rental/product/detail/24333/"
+    },
+    {
+      "title": "ローテーティングレーザーと一人作業の検索結果例：RL-H5A",
+      "url": "https://sooki.co.jp/irental/allproduct/ct14/rl-h5a/"
+    }
+  ]
+}

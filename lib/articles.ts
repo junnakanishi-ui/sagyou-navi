@@ -14,6 +14,22 @@ export type Article = {
 
 export const ARTICLES: Article[] = [
   {
+    slug: "night-patrol-work-light-selection",
+    title:
+      "夜間巡回のライトはどう選ぶ？警備・設備点検・停電対応で使い分ける懐中電灯・ヘッドライト【2026年版】",
+    shortTitle: "夜間巡回のライトの選び方",
+    description:
+      "夜間巡回や暗所点検に使うライトを、懐中電灯・ヘッドライト・マグネット作業灯・警告灯・防爆ライトに分けて解説。明るさ、照射距離、点灯時間、充電方式も比較します。",
+    category: "howto",
+    categoryLabel: "使い方ガイド",
+    thumbnail:
+      "/images/articles/night-patrol-work-light-selection/night-patrol-work-light-hero.jpg",
+    date: "2026-08-05",
+    readTime: "約22分",
+    available: true,
+    path: "/articles/night-patrol-work-light-selection",
+  },
+  {
     slug: "machine-soundproof-box-acoustic-material-guide",
     title:
       "防音ボックスの吸音材はどう選ぶ？コンプレッサー・発電機・機械カバーの騒音対策とカームフレックス比較【2026年版】",

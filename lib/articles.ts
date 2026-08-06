@@ -14,6 +14,22 @@ export type Article = {
 
 export const ARTICLES: Article[] = [
   {
+    slug: "electrical-crimping-work-efficiency-guide",
+    title:
+      "電線の圧着作業を効率化するには？手動工具から充電式圧着器へ切り替える判断基準【2026年版】",
+    shortTitle: "圧着作業の効率化ガイド",
+    description:
+      "電線の圧着作業で手が疲れる、太い電線の端末処理に時間がかかる方へ。手動工具から充電式圧着器へ切り替える判断基準、小型端子・14〜60・14〜250・150〜325㎟の使い分けを解説します。",
+    category: "howto",
+    categoryLabel: "使い方ガイド",
+    thumbnail:
+      "/images/articles/electrical-crimping-work-efficiency-guide/electrical-crimping-efficiency-hero.jpg",
+    date: "2026-08-06",
+    readTime: "約24分",
+    available: true,
+    path: "/articles/electrical-crimping-work-efficiency-guide",
+  },
+  {
     slug: "night-patrol-work-light-selection",
     title:
       "夜間巡回のライトはどう選ぶ？警備・設備点検・停電対応で使い分ける懐中電灯・ヘッドライト【2026年版】",

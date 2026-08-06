@@ -1,0 +1,107 @@
+{
+  "slug": "battery-hydraulic-multifunction-tool-selection-guide",
+  "generatedAt": "2026-08-06",
+  "sourceExcel": "取得結果(20260806-013905).xlsx",
+  "sourceRowCount": 4,
+  "mainKeyword": "充電油圧式多機能工具 選び方",
+  "secondaryKeywords": [
+    "圧着 切断 打ち抜き 1台",
+    "電設工具 多機能",
+    "配電盤 打ち抜き 圧着 工具",
+    "油圧マルチ 工具 比較",
+    "泉 充電油圧式多機能工具 200タイプR",
+    "泉 充電油圧式多機能工具 250タイプR"
+  ],
+  "title": "充電油圧式多機能工具はどう選ぶ？圧着・切断・打ち抜きを1台にまとめる導入判断【2026年版】",
+  "featuredProductIds": [
+    1,
+    2,
+    3,
+    4
+  ],
+  "ctaLinks": [
+    {
+      "label": "充電油圧式多機能工具一覧",
+      "url": "https://search.rakuten.co.jp/search/mall/%E5%85%85%E9%9B%BB%E6%B2%B9%E5%9C%A7%E5%BC%8F%E5%A4%9A%E6%A9%9F%E8%83%BD%E5%B7%A5%E5%85%B7/?sid=426972&utm_source=sagyou_navi&utm_medium=article&utm_campaign=battery-hydraulic-multifunction-tool-selection-guide"
+    },
+    {
+      "label": "トラスコ中山掲載商品一覧",
+      "url": "https://item.rakuten.co.jp/crecote-shop/c/0000000043/?l-id=shoptop_shopmenu_categorypage_16&utm_source=sagyou_navi&utm_medium=article&utm_campaign=battery-hydraulic-multifunction-tool-selection-guide"
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "code": "ta039108-s7gm200r",
+      "model": "S7GM200R",
+      "name": "泉 充電油圧式多機能工具 ２００タイプＲ S7GM200R 1234",
+      "url": "https://item.rakuten.co.jp/crecote-shop/ta039108-s7gm200r/",
+      "utmUrl": "https://item.rakuten.co.jp/crecote-shop/ta039108-s7gm200r/?utm_source=sagyou_navi&utm_medium=article&utm_campaign=battery-hydraulic-multifunction-tool-selection-guide",
+      "imageFile": "ta039108-s7gm200r.jpg",
+      "category": "main_multitool",
+      "badge": "200タイプR",
+      "role": "圧着を中心に、切断や打ち抜きなど複数工程を一台へ集約したい現場向けの主力候補。",
+      "feature": "「200タイプR」というクラスで比較される充電油圧式多機能工具。大型すぎず小さすぎない中核機として、現場の標準機にしやすい。",
+      "check": "使いたいアタッチメントの種類、端子サイズ帯、ケース構成、バッテリー・充電器の付属有無を確認。",
+      "use": "標準化・多現場共用"
+    },
+    {
+      "id": 2,
+      "code": "ta039109-s7gm250r",
+      "model": "S7GM250R",
+      "name": "泉 充電油圧式多機能工具 ２５０タイプＲ S7GM250R 1234",
+      "url": "https://item.rakuten.co.jp/crecote-shop/ta039109-s7gm250r/",
+      "utmUrl": "https://item.rakuten.co.jp/crecote-shop/ta039109-s7gm250r/?utm_source=sagyou_navi&utm_medium=article&utm_campaign=battery-hydraulic-multifunction-tool-selection-guide",
+      "imageFile": "ta039109-s7gm250r.jpg",
+      "category": "main_multitool",
+      "badge": "250タイプR",
+      "role": "200タイプでは足りない工程や容量を見据え、一段上のクラスで一台集約を進めたい現場向け。",
+      "feature": "商品名からもわかるように250タイプRの上位クラス候補。重量と能力のバランスを見ながら、幹線寄りの施工や余裕のある能力を求める購買判断に向く。",
+      "check": "200タイプとの差を、必要能力・作業姿勢・重量・共通アタッチメント・予算で比較する。",
+      "use": "余裕を持った能力"
+    },
+    {
+      "id": 3,
+      "code": "ta038823-recli1460ms1",
+      "model": "RECLI1460MS1",
+      "name": "泉 充電油圧式多機能工具 RECLI1460MS1 1234",
+      "url": "https://item.rakuten.co.jp/crecote-shop/ta038823-recli1460ms1/",
+      "utmUrl": "https://item.rakuten.co.jp/crecote-shop/ta038823-recli1460ms1/?utm_source=sagyou_navi&utm_medium=article&utm_campaign=battery-hydraulic-multifunction-tool-selection-guide",
+      "imageFile": "ta038823-recli1460ms1.jpg",
+      "category": "compact_multitool",
+      "badge": "小型多機能候補",
+      "role": "大型マルチ機ほどの能力は不要だが、端末処理の効率化を進めたい現場向けの比較候補。",
+      "feature": "小回りや取り回しを重視した比較軸で置きやすいモデル。分岐盤・盤内周辺・中小規模の配線工事の文脈で紹介しやすい。",
+      "check": "対応サイズ帯と使用可能アタッチメントを必ず確認。大型幹線向け機の代替になるとは限らない。",
+      "use": "小回り重視"
+    },
+    {
+      "id": 4,
+      "code": "ta036150-ez46a4xb",
+      "model": "EZ46A4XB",
+      "name": "Ｐａｎａｓｏｎｉｃ 充電油圧マルチ本体のみ EZ46A4XB 5018",
+      "url": "https://item.rakuten.co.jp/crecote-shop/ta036150-ez46a4xb/",
+      "utmUrl": "https://item.rakuten.co.jp/crecote-shop/ta036150-ez46a4xb/?utm_source=sagyou_navi&utm_medium=article&utm_campaign=battery-hydraulic-multifunction-tool-selection-guide",
+      "imageFile": "ta036150-ez46a4xb.jpg",
+      "category": "comparison_multitool",
+      "badge": "Panasonic比較候補",
+      "role": "多機能油圧工具を検討する際の比較対象。国内で認知度が高く、比較軸づくりに使いやすい。",
+      "feature": "「本体のみ」という条件が明確で、周辺資産を持つ企業向けの比較に向く。泉の多機能工具と比較して、シリーズ統一や既存電池資産の観点を整理しやすい。",
+      "check": "本体のみのため、電池・充電器・アタッチメント・ケースの追加費用を含めて比較する。",
+      "use": "比較・既存資産活用"
+    }
+  ],
+  "supplementalImageCandidates": [
+    "/mnt/data/products/S7GM250R_1234__R1L.jpg",
+    "/mnt/data/products/S7GM250R_1234__R1L_01.png",
+    "/mnt/data/products/S7GM250R_1234__R1L_02.png",
+    "/mnt/data/S7GM250R_1234__R1L.jpg",
+    "/mnt/data/S7GM250R_1234__R1L_01.png",
+    "/mnt/data/S7GM250R_1234__R1L_02.png"
+  ],
+  "foundSupplementalImages": [
+    "/images/articles/battery-hydraulic-multifunction-tool-selection-guide/products/s7gm250r-extra-1.webp",
+    "/images/articles/battery-hydraulic-multifunction-tool-selection-guide/products/s7gm250r-extra-2.webp",
+    "/images/articles/battery-hydraulic-multifunction-tool-selection-guide/products/s7gm250r-extra-3.webp"
+  ]
+}

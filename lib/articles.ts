@@ -14,6 +14,22 @@ export type Article = {
 
 export const ARTICLES: Article[] = [
   {
+    slug: "battery-hydraulic-multifunction-tool-selection-guide",
+    title:
+      "充電油圧式多機能工具はどう選ぶ？圧着・切断・打ち抜きを1台にまとめる導入判断【2026年版】",
+    shortTitle: "充電油圧式多機能工具の選び方",
+    description:
+      "泉 S7GM200R・S7GM250R・RECLI1460MS1・Panasonic EZ46A4XBを例に、充電油圧式多機能工具の選び方を解説。圧着・切断・打ち抜きを1台にまとめる考え方や、本体のみと周辺資産の比較ポイントを整理します。",
+    category: "howto",
+    categoryLabel: "使い方ガイド",
+    thumbnail:
+      "/images/articles/battery-hydraulic-multifunction-tool-selection-guide/battery-hydraulic-multitool-hero.jpg",
+    date: "2026-08-06",
+    readTime: "約22分",
+    available: true,
+    path: "/articles/battery-hydraulic-multifunction-tool-selection-guide",
+  },
+  {
     slug: "electrical-crimping-work-efficiency-guide",
     title:
       "電線の圧着作業を効率化するには？手動工具から充電式圧着器へ切り替える判断基準【2026年版】",

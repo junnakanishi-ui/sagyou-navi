@@ -14,6 +14,22 @@ export type Article = {
 
 export const ARTICLES: Article[] = [
   {
+    slug: "factory-heating-not-effective-heater-guide",
+    title:
+      "工場・倉庫で暖房が効かない原因は？熱風・遠赤外線・ヒーターベストの寒さ対策【2026年版】",
+    shortTitle: "工場・倉庫で暖房が効かない原因と対策",
+    description:
+      "工場や倉庫で暖房を強くしても足元が寒い原因を、高天井・シャッター・広い空間・作業者移動から解説。熱風式・放射式・遠赤外線・屋外ガスヒーター・ヒーターベストを3層で使い分けます。",
+    category: "guide",
+    categoryLabel: "選び方ガイド",
+    thumbnail:
+      "/images/articles/factory-heating-not-effective-heater-guide/factory-warehouse-heating-not-effective-hero.jpg",
+    date: "2026-08-07",
+    readTime: "約28分",
+    available: true,
+    path: "/articles/factory-heating-not-effective-heater-guide",
+  },
+  {
     slug: "battery-hydraulic-multifunction-tool-selection-guide",
     title:
       "充電油圧式多機能工具はどう選ぶ？圧着・切断・打ち抜きを1台にまとめる導入判断【2026年版】",

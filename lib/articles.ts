@@ -14,6 +14,22 @@ export type Article = {
 
 export const ARTICLES: Article[] = [
   {
+    slug: "grinder-polishing-dust-control-mask-guide",
+    title:
+      "グラインダー・研磨作業の粉じん対策｜防じんマスクと集じんの選び方【2026年版】",
+    shortTitle: "グラインダー粉じん対策と防じんマスク",
+    description:
+      "グラインダー・サンダー・研磨・バリ取りで舞う粉じんをどう減らすかを、集じん・局所排気・防じんマスクの順に整理。DS2・RL3、使い捨て式と取替え式、排気弁、フィットテスト、交換管理まで2026年の厚労省情報をもとに解説します。",
+    category: "guide",
+    categoryLabel: "選び方ガイド",
+    thumbnail:
+      "/images/articles/grinder-polishing-dust-control-mask-guide/grinder-dust-control-hero.jpg",
+    date: "2026-08-07",
+    readTime: "約26分",
+    available: true,
+    path: "/articles/grinder-polishing-dust-control-mask-guide",
+  },
+  {
     slug: "cut-resistant-glove-level-selection-guide",
     title:
       "耐切創手袋はどう選ぶ？レベルC・D・手袋・腕カバー・下履きの使い分け【2026年版】",

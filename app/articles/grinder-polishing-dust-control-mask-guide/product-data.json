@@ -1,0 +1,194 @@
+{
+  "slug": "grinder-polishing-dust-control-mask-guide",
+  "generatedAt": "2026-08-07",
+  "sourceNote": "Current-turn Excel attachment was not available in the new conversation. Products were reconstructed from the user-provided Yahoo!/Rakuten category CTAs and checked against merchant/manufacturer information available on 2026-08-07. Reconcile with the original Excel before publication if it becomes available.",
+  "linkPolicy": {
+    "rel": "nofollow sponsored",
+    "target": "_blank",
+    "utmSource": "sagyou_navi",
+    "utmMedium": "article",
+    "utmCampaign": "grinder_polishing_dust_control"
+  },
+  "ctas": [
+    {
+      "id": "dust-mask-yahoo",
+      "label": "Yahoo!ショッピングで防じんマスクを比較する",
+      "type": "category",
+      "url": "https://store.shopping.yahoo.co.jp/signcity-yshop/search.html?p=%E9%98%B2%E3%81%98%E3%82%93%E3%83%9E%E3%82%B9%E3%82%AF&utm_source=sagyou_navi&utm_medium=article&utm_campaign=grinder_polishing_dust_control#CentSrchFilter1"
+    },
+    {
+      "id": "dust-mask-rakuten",
+      "label": "楽天市場で防じんマスクを比較する",
+      "type": "category",
+      "url": "https://search.rakuten.co.jp/search/mall/%E9%98%B2%E3%81%98%E3%82%93%E3%83%9E%E3%82%B9%E3%82%AF/?sid=426972&utm_source=sagyou_navi&utm_medium=article&utm_campaign=grinder_polishing_dust_control"
+    },
+    {
+      "id": "dust-collector-rakuten",
+      "label": "楽天市場で集塵機を比較する",
+      "type": "category",
+      "url": "https://search.rakuten.co.jp/search/mall/%E9%9B%86%E5%A1%B5/?sid=426972&utm_source=sagyou_navi&utm_medium=article&utm_campaign=grinder_polishing_dust_control"
+    }
+  ],
+  "products": [
+    {
+      "id": "3m-8205-ds2",
+      "maker": "3M",
+      "name": "3M 使い捨て式防じんマスク 8205-DS2",
+      "model": "8205-DS2",
+      "format": "使い捨て式",
+      "class": "DS2",
+      "particleEfficiency": "95%以上",
+      "exhalationValve": false,
+      "size": "標準",
+      "usageLimitHours": 9,
+      "assignedProtectionFactor": 10,
+      "useCases": [
+        "研磨作業",
+        "一般粉じん作業"
+      ],
+      "selectionRole": "使い捨て式DS2の標準比較候補",
+      "cautions": [
+        "現場の粉じん種類・濃度・法令・要求防護係数に基づき使用可否を判断する"
+      ],
+      "url": "https://item.rakuten.co.jp/crecote-shop/ta004102-8205ds210/?utm_source=sagyou_navi&utm_medium=article&utm_campaign=grinder_polishing_dust_control",
+      "imageLocalPath": "/images/articles/grinder-polishing-dust-control-mask-guide/products/3m-8205-ds2.jpg",
+      "imageSourcePage": "https://item.rakuten.co.jp/crecote-shop/ta004102-8205ds210/",
+      "publish": true
+    },
+    {
+      "id": "3m-8805-ds2",
+      "maker": "3M",
+      "name": "3M 使い捨て式防じんマスク 8805-DS2",
+      "model": "8805-DS2",
+      "format": "使い捨て式",
+      "class": "DS2",
+      "particleEfficiency": "95%以上",
+      "exhalationValve": true,
+      "size": "標準",
+      "usageLimitHours": 11,
+      "assignedProtectionFactor": 10,
+      "useCases": [
+        "研磨作業",
+        "切削作業",
+        "一般粉じん作業"
+      ],
+      "selectionRole": "排気弁付きDS2との比較候補",
+      "cautions": [
+        "排気弁は捕集効率を高める機能ではない",
+        "使用可否は現場条件に基づいて判断する"
+      ],
+      "url": "https://item.rakuten.co.jp/crecote-shop/ta004325-8805ds2/?utm_source=sagyou_navi&utm_medium=article&utm_campaign=grinder_polishing_dust_control",
+      "imageLocalPath": "/images/articles/grinder-polishing-dust-control-mask-guide/products/3m-8805-ds2.jpg",
+      "imageSourcePage": "https://item.rakuten.co.jp/crecote-shop/ta004325-8805ds2/",
+      "publish": true
+    },
+    {
+      "id": "trusco-td02v-s2",
+      "maker": "TRUSCO",
+      "name": "TRUSCO 使い捨て式防じんマスク TD02V-S2",
+      "model": "TD02V-S2",
+      "format": "使い捨て式・二つ折り",
+      "class": "DS2",
+      "particleEfficiency": "95%以上",
+      "exhalationValve": true,
+      "size": "フリー",
+      "usageLimitHours": 18,
+      "assignedProtectionFactor": null,
+      "useCases": [
+        "サンダー作業",
+        "グラインダー作業"
+      ],
+      "selectionRole": "折りたたみ・排気弁付きDS2の比較候補",
+      "cautions": [
+        "使用限度時間前でも息苦しさや著しい型くずれ等があれば交換する"
+      ],
+      "url": "https://item.rakuten.co.jp/crecote-shop/ta015912-td02vs2/?utm_source=sagyou_navi&utm_medium=article&utm_campaign=grinder_polishing_dust_control",
+      "imageLocalPath": "/images/articles/grinder-polishing-dust-control-mask-guide/products/trusco-td02v-s2.jpg",
+      "imageSourcePage": "https://item.rakuten.co.jp/crecote-shop/ta015912-td02vs2/",
+      "publish": true
+    },
+    {
+      "id": "trusco-tmk-01rt",
+      "maker": "TRUSCO",
+      "name": "TRUSCO 取替え式防じんマスク TMK-01RT",
+      "model": "TMK-01RT",
+      "format": "取替え式",
+      "class": "RL1",
+      "particleEfficiency": "82%以上",
+      "exhalationValve": true,
+      "size": "M",
+      "usageLimitHours": null,
+      "assignedProtectionFactor": null,
+      "useCases": [
+        "サンダー作業",
+        "グラインダー作業"
+      ],
+      "selectionRole": "小型・軽量な取替え式の比較候補",
+      "cautions": [
+        "RL1をDS2/RL2/RL3の代替として一律に扱わない",
+        "必要性能区分を先に確認する"
+      ],
+      "url": "https://item.rakuten.co.jp/crecote-shop/ta016990-tmk01rt/?utm_source=sagyou_navi&utm_medium=article&utm_campaign=grinder_polishing_dust_control",
+      "imageLocalPath": "/images/articles/grinder-polishing-dust-control-mask-guide/products/trusco-tmk-01rt.jpg",
+      "imageSourcePage": "https://item.rakuten.co.jp/crecote-shop/ta016990-tmk01rt/",
+      "publish": true
+    },
+    {
+      "id": "shigematsu-dr28su2w",
+      "maker": "シゲマツ",
+      "name": "シゲマツ 取替え式防じんマスク DR28SU2W",
+      "model": "DR28SU2W",
+      "format": "取替え式",
+      "class": "RL2",
+      "particleEfficiency": "96%以上",
+      "exhalationValve": true,
+      "size": "M",
+      "usageLimitHours": null,
+      "assignedProtectionFactor": 10,
+      "useCases": [
+        "溶接関連作業",
+        "粉じん作業"
+      ],
+      "selectionRole": "RL2・取替え式・臭気軽減仕様を比較する候補",
+      "cautions": [
+        "臭気軽減機能を防毒性能と同一視しない",
+        "有毒ガス・蒸気には適切な防毒機能を持つ保護具を選定する"
+      ],
+      "url": "https://item.rakuten.co.jp/crecote-shop/ta006600-dr28su2wm/?utm_source=sagyou_navi&utm_medium=article&utm_campaign=grinder_polishing_dust_control",
+      "imageLocalPath": "/images/articles/grinder-polishing-dust-control-mask-guide/products/shigematsu-dr28su2w.jpg",
+      "imageSourcePage": "https://item.rakuten.co.jp/crecote-shop/ta006600-dr28su2wm/",
+      "publish": true
+    },
+    {
+      "id": "3m-6000-2091-rl3",
+      "maker": "3M",
+      "name": "3M 取替え式防じんマスク 6000/2091-RL3",
+      "model": "6000/2091-RL3",
+      "format": "取替え式",
+      "class": "RL3",
+      "particleEfficiency": "99.9%以上",
+      "exhalationValve": true,
+      "size": "S / M / L",
+      "usageLimitHours": null,
+      "assignedProtectionFactor": 10,
+      "useCases": [
+        "高性能ろ過材を必要とする粉じん作業",
+        "サイズ選択が必要な現場"
+      ],
+      "selectionRole": "RL3・3サイズ展開の比較候補",
+      "cautions": [
+        "フィルター捕集効率だけで必要防護性能を判断しない",
+        "フィットテスト結果に基づき型式・サイズを選定する"
+      ],
+      "url": "https://item.rakuten.co.jp/crecote-shop/ta003265-60002091rl3m/?utm_source=sagyou_navi&utm_medium=article&utm_campaign=grinder_polishing_dust_control",
+      "variantUrls": {
+        "S": "https://item.rakuten.co.jp/crecote-shop/ta003266-60002091rl3s/?utm_source=sagyou_navi&utm_medium=article&utm_campaign=grinder_polishing_dust_control",
+        "M": "https://item.rakuten.co.jp/crecote-shop/ta003265-60002091rl3m/?utm_source=sagyou_navi&utm_medium=article&utm_campaign=grinder_polishing_dust_control",
+        "L": "https://item.rakuten.co.jp/crecote-shop/ta003264-60002091rl3l/?utm_source=sagyou_navi&utm_medium=article&utm_campaign=grinder_polishing_dust_control"
+      },
+      "imageLocalPath": "/images/articles/grinder-polishing-dust-control-mask-guide/products/3m-6000-2091-rl3.jpg",
+      "imageSourcePage": "https://item.rakuten.co.jp/crecote-shop/ta003265-60002091rl3m/",
+      "publish": true
+    }
+  ]
+}

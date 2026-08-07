@@ -1,41 +1,50 @@
 ---
-description: 作業用品ナビ自己完結型記事のタイトル・見出し・本文タイポグラフィ
+description: 記事の視認性・メリハリ（濃い本文・大きな見出し・太字/マーカー）と本文幅850px
 globs: app/articles/**/page.tsx
 alwaysApply: false
 ---
 
-# 記事タイポグラフィ（自己完結型 page.tsx）
+# 記事タイポグラフィ・メリハリ
 
-`SiteHeader` / `SiteFooter` + `<main className="mx-auto max-w-4xl px-4 py-8">` 方式の記事は、見出し・本文にインライン Tailwind を直書きせず `@/lib/article-typography` の `articleCls` を使う。
+新規・改修する記事は、タイトル＝黒／本文＝薄グレーの対比に頼らない。階層は**文字サイズ・字重・太字・マーカー**で付ける。
+
+共通クラスは `@/lib/article-typography` の `articleCls` を優先する。
 
 ```tsx
 import { articleCls as cls } from "@/lib/article-typography";
 
-<h1 className={cls.h1}>…</h1>
-<h2 className={cls.h2}>…</h2>
-<h3 className={cls.h3}>…</h3>
-<p className={cls.body}>…</p>
-<table className={cls.table}>…</table>
-<ul className={cls.list}>…</ul>
+<article className="mx-auto max-w-[850px] px-4 pb-16 sm:px-6">
+  <h1 className={cls.h1}>…</h1>
+  <h2 className={cls.h2}>…</h2>
+  <p className={cls.body}>…</p>
+  <th className={cls.th}>…</th>
+  <td className={cls.td}>…</td>
+  <mark className={cls.mark}>重要数値</mark>
+</article>
 ```
 
-## サイズ基準（参照: workwear-heat-protection-clothing）
+## 本文幅（必須）
 
-| 要素 | クラス | サイズ |
-|------|--------|--------|
-| H1 | `cls.h1` | `text-3xl sm:text-4xl` |
-| H2 | `cls.h2` | `text-2xl sm:text-3xl` + 黒左ボーダー |
-| H3 | `cls.h3` | `text-xl sm:text-2xl` |
-| 本文 | `cls.body` | `leading-[1.95] tracking-[0.04em]` |
-| 注意・FAQ回答 | `cls.bodySm` | 本文より小さめ |
-| FAQ質問 | `cls.faqQ` | `text-lg` |
-| CTA見出し | `cls.ctaH3` | `text-xl` |
+- 記事本文コンテナは **`max-w-[850px]`** で統一する
+- `max-w-[820px]` / `max-w-4xl` / `max-w-6xl` を新規記事に使わない
+- 左右パディングは `px-4 sm:px-6`（`lg:px-8` で実効幅を削りすぎない）
 
-## 禁止・非推奨
+## 必須方針
 
-- H1 に `text-2xl sm:text-3xl`（旧スタイル）
-- H2 に `text-xl`（旧スタイル）
-- H3 に `text-lg`（旧スタイル）
-- 本文に `leading-relaxed` のみ（tracking なし）
+1. **見出しは大きく・黒く**（H1 `text-5xl/6xl`・H2 `text-3xl/4xl`・H3 `text-2xl/3xl`・`font-black`）
+2. **本文・表セルは `text-gray-900`**（`text-gray-600` / `700` を本文・表に使わない）
+3. **重要語は太字**（袋数・厚さ・用途分岐・注意点など）
+4. **数値・結論・判断ラベルはアンバーマーカー**（`bg-amber-200` / `cls.mark`）
+5. メタ情報（公開日など）だけ `text-gray-800` 程度まで可。それ以外の薄グレー多用は禁止
 
-新規記事・既存記事の typography 修正時は必ず `lib/article-typography.ts` を参照・更新する。
+## 禁止
+
+- 本文・表に `text-gray-500`〜`text-gray-700` を多用して「薄い」印象にする
+- 見出しだけ黒・本文は薄いグレー、という色だけの階層づけ
+- H2 を `text-2xl` 未満のままにする
+- 記事本文を `max-w-[850px]` 以外にする
+
+## 参考実装
+
+`hardened-weed-control-sand-bags-installation` の `Mark` / `SectionTitle` / 濃色表セル。
+`lib/article-typography.ts` の `articleCls`。

@@ -384,7 +384,7 @@ export default function Page() {
       />
 
       <main className="bg-white text-slate-900">
-        <div className="mx-auto max-w-6xl px-4 py-8 md:px-6 md:py-12">
+        <div className="mx-auto max-w-[850px] px-4 py-8 md:px-6 md:py-12">
           <nav aria-label="パンくず" className="mb-6 text-sm text-slate-700">
             <ol className="flex flex-wrap items-center gap-2">
               <li>
@@ -403,7 +403,7 @@ export default function Page() {
             </ol>
           </nav>
 
-          <header className="mx-auto max-w-4xl">
+          <header className="mx-auto max-w-[850px]">
             <p className="mb-3 font-bold text-emerald-800">溶接用品・火花養生</p>
             <h1 className="text-3xl font-black leading-tight text-slate-950 md:text-5xl">
               溶接・グラインダーの火花養生方法
@@ -427,7 +427,7 @@ export default function Page() {
             />
           </div>
 
-          <div className="mx-auto mt-10 max-w-4xl text-[17px] leading-8 text-slate-900 md:text-lg md:leading-9">
+          <div className="mx-auto mt-10 max-w-[850px] text-[17px] leading-8 text-slate-900 md:text-lg md:leading-9">
             <p>
               溶接、溶断、グラインダーによる切断・研磨では、火花が作業者の足元だけに落ちるとは限りません。横へ飛び、設備の裏へ入り、床のすき間や開口部から階下へ落ちることがあります。床にスパッタシートを1枚敷いて終わりにすると、壁際、配管の裏、足場板のすき間、階下の断熱材などを見落とすおそれがあります。
             </p>
@@ -659,7 +659,7 @@ export default function Page() {
             </p>
           </div>
 
-          <section className="mx-auto mt-16 max-w-6xl">
+          <section className="mx-auto mt-16 max-w-[850px]">
             <h2 className="text-2xl font-black text-slate-950 md:text-3xl">
               用途別に選ぶ代表商品
             </h2>
@@ -678,7 +678,7 @@ export default function Page() {
             </div>
           </section>
 
-          <div className="mx-auto max-w-4xl text-[17px] leading-8 text-slate-900 md:text-lg md:leading-9">
+          <div className="mx-auto max-w-[850px] text-[17px] leading-8 text-slate-900 md:text-lg md:leading-9">
             <div className="relative my-10 aspect-[16/9] overflow-hidden rounded-2xl bg-slate-100">
               <Image
                 src="/images/articles/welding-spark-protection-sheet-selection/spatter-sheet-damage-inspection.webp"

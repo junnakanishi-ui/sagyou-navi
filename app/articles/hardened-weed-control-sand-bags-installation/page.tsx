@@ -413,7 +413,7 @@ function ArticleImage({file,alt}:{file:string;alt:string}) { return <figure clas
 
 export default function Page() {
   const main=products[0];
-  return <><SiteHeader /><main className="mx-auto max-w-4xl px-4 py-8 text-gray-900 sm:px-6">
+  return <><SiteHeader /><main className="mx-auto max-w-[850px] px-4 py-8 text-gray-900 sm:px-6">
     <script type="application/ld+json" dangerouslySetInnerHTML={{__html:JSON.stringify(articleSchema)}} />
     <script type="application/ld+json" dangerouslySetInnerHTML={{__html:JSON.stringify(breadcrumbSchema)}} />
     <nav aria-label="パンくず" className="mb-5 text-sm text-gray-800"><ol className="flex flex-wrap gap-2"><li><Link href="/" className="font-bold underline underline-offset-4">作業用品ナビ</Link></li><li>/</li><li><Link href="/articles" className="font-bold underline underline-offset-4">記事一覧</Link></li><li>/</li><li aria-current="page" className="font-bold">固まる防草砂</li></ol></nav>

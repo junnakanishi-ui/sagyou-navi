@@ -644,7 +644,7 @@ export default function Page() {
           dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
         />
 
-        <div className="mx-auto max-w-6xl px-4 py-8">
+        <div className="mx-auto max-w-[850px] px-4 py-8">
           <nav className={`mb-6 ${cls.meta}`}>
             <Link href="/" className="underline underline-offset-2">
               ホーム
@@ -657,7 +657,7 @@ export default function Page() {
             <span>カラーコーンの種類とサイズ</span>
           </nav>
 
-          <article className="mx-auto max-w-4xl">
+          <article className="mx-auto max-w-[850px]">
             <header>
               <div className="inline-flex rounded-full bg-gray-100 px-3 py-1 text-xs font-bold text-gray-900">
                 作業用品ナビ / 2026年8月更新

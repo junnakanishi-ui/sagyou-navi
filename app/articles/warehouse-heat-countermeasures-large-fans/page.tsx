@@ -565,7 +565,7 @@ export default function Page() {
             </div>
           </header>
 
-          <div className="mx-auto max-w-4xl px-4 py-10 sm:px-6 lg:px-8">
+          <div className="mx-auto max-w-[850px] px-4 py-10 sm:px-6">
             <SectionImage
               src={heroImage}
               alt="倉庫で大型扇風機を使って暑さ対策を行うイメージ"

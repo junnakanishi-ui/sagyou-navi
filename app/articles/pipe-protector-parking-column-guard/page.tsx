@@ -327,7 +327,7 @@ export default function Page() {
   return (
     <>
       <SiteHeader />
-      <article className="mx-auto max-w-4xl px-4 py-8 text-gray-900">
+      <article className="mx-auto max-w-[850px] px-4 py-8 text-gray-900">
         {/* パンくず */}
         <nav aria-label="パンくず" className="mb-4 text-xs text-gray-500">
           <Link href="/" className="hover:underline">

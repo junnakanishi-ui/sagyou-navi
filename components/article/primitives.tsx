@@ -92,7 +92,7 @@ export function ArticleFigure({ src, alt }: { src: string; alt: string }) {
         alt={alt}
         fill
         className="object-cover"
-        sizes="(max-width: 768px) 100vw, 1152px"
+        sizes="(max-width: 768px) 100vw, 850px"
       />
     </figure>
   );

@@ -251,7 +251,7 @@ function SectionImage({ src, alt }: { src: string; alt: string }) {
           alt={alt}
           fill
           className="object-cover"
-          sizes="(max-width: 1024px) 100vw, 820px"
+          sizes="(max-width: 1024px) 100vw, 850px"
         />
       </div>
     </figure>
@@ -471,7 +471,7 @@ export default function Page() {
           </nav>
         </div>
 
-        <article className="mx-auto max-w-[820px] px-4 pb-16 sm:px-6 lg:px-8">
+        <article className="mx-auto max-w-[850px] px-4 pb-16 sm:px-6">
           <header>
             <div className="inline-flex rounded-full bg-amber-100 px-3 py-1 text-sm font-bold text-amber-950">
               安全保護具・板金・ガラス・設備保全 / 2026年8月7日更新
@@ -498,7 +498,7 @@ export default function Page() {
                   fill
                   priority
                   className="object-cover"
-                  sizes="(max-width: 1024px) 100vw, 820px"
+                  sizes="(max-width: 1024px) 100vw, 850px"
                 />
               </div>
             </figure>

@@ -446,7 +446,7 @@ export default function ArticlePage() {
           dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
         />
 
-        <div className="mx-auto max-w-6xl px-4 py-6 md:px-6">
+        <div className="mx-auto max-w-[850px] px-4 py-6 md:px-6">
           <nav aria-label="Breadcrumb" className="mb-6 text-sm text-gray-800">
             <ol className="flex flex-wrap items-center gap-2">
               <li>

@@ -529,7 +529,7 @@ export default function Page() {
           </nav>
         </div>
 
-        <article className="mx-auto max-w-4xl px-4 pb-16 sm:px-6 lg:px-8">
+        <article className="mx-auto max-w-[850px] px-4 pb-16 sm:px-6">
           <header>
             <div className="inline-flex rounded-full bg-emerald-100 px-3 py-1 text-sm font-bold text-emerald-900">
               作業用品ナビ / 2026年8月4日更新

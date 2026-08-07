@@ -35,7 +35,7 @@ const CATEGORY_BADGE: Record<
 export function Breadcrumb({ current }: { current: string }) {
   return (
     <div className="border-b border-border bg-card py-3">
-      <div className="mx-auto max-w-6xl px-4 md:px-6">
+      <div className="mx-auto max-w-[850px] px-4 md:px-6">
         <nav
           className="flex flex-wrap items-center gap-2 text-sm text-muted-foreground"
           aria-label="パンくず"
@@ -70,7 +70,7 @@ export function ArticleHeader({
 
   return (
     <section className="bg-card py-12">
-      <div className="mx-auto max-w-6xl px-4 md:px-6">
+      <div className="mx-auto max-w-[850px] px-4 md:px-6">
         <div className="mb-4 flex items-center gap-3">
           <span
             className={`rounded-full px-3 py-1 text-sm font-bold ${badge.className}`}
@@ -94,7 +94,7 @@ export function ArticleHeader({
 export function HeroImage({ src, alt }: { src: string; alt: string }) {
   return (
     <section className="bg-card pb-10">
-      <div className="mx-auto max-w-6xl px-4 md:px-6">
+      <div className="mx-auto max-w-[850px] px-4 md:px-6">
         <div className="relative aspect-[16/9] overflow-hidden rounded-2xl bg-primary-light">
           <Image
             src={src}
@@ -102,7 +102,7 @@ export function HeroImage({ src, alt }: { src: string; alt: string }) {
             fill
             className="object-cover"
             priority
-            sizes="(max-width: 768px) 100vw, 1152px"
+            sizes="(max-width: 768px) 100vw, 850px"
           />
         </div>
       </div>
@@ -112,7 +112,7 @@ export function HeroImage({ src, alt }: { src: string; alt: string }) {
 
 export function ArticleContent({ children }: WithChildren) {
   return (
-    <article className="mx-auto max-w-6xl px-4 pb-16 md:px-6">
+    <article className="mx-auto max-w-[850px] px-4 pb-16 md:px-6">
       {children}
     </article>
   );

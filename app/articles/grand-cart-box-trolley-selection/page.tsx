@@ -443,7 +443,7 @@ export default function Page() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
       />
-      <main className="mx-auto max-w-4xl px-4 py-10">
+      <main className="mx-auto max-w-[850px] px-4 py-10">
         <nav className="mb-4 text-sm text-gray-500" aria-label="パンくず">
           <Link href="/" className="hover:underline">
             ホーム

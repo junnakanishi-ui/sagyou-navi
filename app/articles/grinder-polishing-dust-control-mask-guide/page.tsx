@@ -2,8 +2,6 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import type { ReactNode } from "react";
-import fs from "fs";
-import path from "path";
 import { SiteHeader } from "@/components/work/site-header";
 import { SiteFooter } from "@/components/work/site-footer";
 import { articleCls as cls } from "@/lib/article-typography";
@@ -199,15 +197,6 @@ const products: Product[] = [
 ];
 
 
-function productImageExists(imagePath: string) {
-  try {
-    const filePath = path.join(process.cwd(), "public", imagePath.replace(/^\//, ""));
-    return fs.existsSync(filePath) && fs.statSync(filePath).size > 500;
-  } catch {
-    return false;
-  }
-}
-
 const EXT_REL = "nofollow sponsored noopener noreferrer";
 
 const faqs = [
@@ -381,34 +370,17 @@ function CtaPair({ compact = false }: { compact?: boolean }) {
   );
 }
 
-function ImagePending({ name }: { name: string }) {
-  return (
-    <div
-      className="flex aspect-[4/3] items-center justify-center rounded-xl border border-dashed border-gray-300 bg-gray-50 p-4 text-center text-sm font-medium text-gray-800"
-      role="img"
-      aria-label={`${name}の画像準備中`}
-    >
-      画像準備中
-    </div>
-  );
-}
-
 function ProductCard({ product }: { product: Product }) {
-  const hasImage = productImageExists(product.image);
   return (
     <article className="flex flex-col overflow-hidden rounded-2xl border border-gray-300 bg-white shadow-sm">
       <div className="relative aspect-[4/3] bg-gray-50">
-        {hasImage ? (
-          <Image
-            src={product.image}
-            alt={`${product.name}の商品画像`}
-            fill
-            sizes="(max-width: 768px) 100vw, 400px"
-            className="object-contain p-4"
-          />
-        ) : (
-          <ImagePending name={product.name} />
-        )}
+        <Image
+          src={product.image}
+          alt={`${product.name}の商品画像`}
+          fill
+          sizes="(max-width: 768px) 100vw, 400px"
+          className="object-contain p-4"
+        />
       </div>
       <div className="flex flex-1 flex-col p-5">
         <div className="mb-2 flex flex-wrap gap-2 text-xs font-bold">
@@ -475,7 +447,6 @@ function ProductCard({ product }: { product: Product }) {
 }
 
 function ProductTableCell({ product }: { product: Product }) {
-  const hasImage = productImageExists(product.image);
   return (
     <a
       href={product.url}
@@ -484,19 +455,13 @@ function ProductTableCell({ product }: { product: Product }) {
       className="group flex min-w-[14rem] items-start gap-3 text-gray-900 no-underline"
     >
       <span className="relative h-20 w-20 shrink-0 overflow-hidden rounded-lg border border-gray-200 bg-white">
-        {hasImage ? (
-          <Image
-            src={product.image}
-            alt={`${product.name}の商品画像`}
-            fill
-            sizes="80px"
-            className="object-contain p-1.5"
-          />
-        ) : (
-          <span className="flex h-full w-full items-center justify-center text-[10px] text-gray-800">
-            準備中
-          </span>
-        )}
+        <Image
+          src={product.image}
+          alt={`${product.name}の商品画像`}
+          fill
+          sizes="80px"
+          className="object-contain p-1.5"
+        />
       </span>
       <span className="min-w-0">
         <span className="block font-black leading-6 group-hover:underline">

@@ -14,6 +14,22 @@ export type Article = {
 
 export const ARTICLES: Article[] = [
   {
+    slug: "cut-resistant-glove-level-selection-guide",
+    title:
+      "耐切創手袋はどう選ぶ？レベルC・D・手袋・腕カバー・下履きの使い分け【2026年版】",
+    shortTitle: "耐切創手袋のレベルと選び方",
+    description:
+      "耐切創手袋の選び方を、レベルC・D、PU・ニトリル・アラミド、下履き、腕カバー、前掛けまで含めて解説。板金・ガラス・金属バリ・開梱作業の切創対策に役立つ記事です。",
+    category: "guide",
+    categoryLabel: "選び方ガイド",
+    thumbnail:
+      "/images/articles/cut-resistant-glove-level-selection-guide/cut-resistant-glove-selection-hero.jpg",
+    date: "2026-08-07",
+    readTime: "約24分",
+    available: true,
+    path: "/articles/cut-resistant-glove-level-selection-guide",
+  },
+  {
     slug: "factory-heating-not-effective-heater-guide",
     title:
       "工場・倉庫で暖房が効かない原因は？熱風・遠赤外線・ヒーターベストの寒さ対策【2026年版】",

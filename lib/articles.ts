@@ -14,6 +14,22 @@ export type Article = {
 
 export const ARTICLES: Article[] = [
   {
+    slug: "factory-warehouse-flood-entry-protection-guide",
+    title:
+      "工場・倉庫の浸水対策｜シャッター・搬入口を守る止水板と土のう代替品の選び方【2026年版】",
+    shortTitle: "工場・倉庫の浸水対策（止水板・吸水土のう）",
+    description:
+      "工場・倉庫の浸水対策を、シャッター・搬入口・通用口など水の侵入口から解説。止水板・簡易パネル・吸水土のうを、幅、高さ、床条件、設置人数、保管性で比較し、選び方・備蓄・設置訓練まで実務的に整理します。",
+    category: "guide",
+    categoryLabel: "選び方ガイド",
+    thumbnail:
+      "/images/articles/factory-warehouse-flood-entry-protection-guide/factory-warehouse-flood-barrier-hero.webp",
+    date: "2026-08-09",
+    readTime: "約24分",
+    available: true,
+    path: "/articles/factory-warehouse-flood-entry-protection-guide",
+  },
+  {
     slug: "grinder-polishing-dust-control-mask-guide",
     title:
       "グラインダー・研磨作業の粉じん対策｜防じんマスクと集じんの選び方【2026年版】",

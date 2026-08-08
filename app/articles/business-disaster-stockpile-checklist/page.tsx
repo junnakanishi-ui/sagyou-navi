@@ -1188,6 +1188,18 @@ export default function Page() {
             ：保管場所と使い方を従業員に周知し、避難訓練とあわせて確認する
           </li>
         </ul>
+        <p className={cls.body}>
+          工場・倉庫では、備蓄品の保管場所を「浸水しにくい場所」にするだけでなく、シャッターや搬入口など
+          <strong>開口部からの浸水そのものを減らす備え</strong>
+          も重要です。止水板・水害防止パネル・吸水土のうの選び方は、
+          <a
+            href="/articles/factory-warehouse-flood-entry-protection-guide"
+            className="font-bold underline underline-offset-4"
+          >
+            工場・倉庫の開口部の浸水対策ガイド
+          </a>
+          で整理しています。
+        </p>
         <ArticleImage
           src="/articles/bosai/storage.jpg"
           alt="防災備蓄品を整理してリスト管理するオフィスのイメージ"

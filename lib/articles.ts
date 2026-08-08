@@ -14,6 +14,22 @@ export type Article = {
 
 export const ARTICLES: Article[] = [
   {
+    slug: "safety-glasses-single-vs-double-lens-selection-guide",
+    title:
+      "保護メガネは一眼型・二眼型どっち？違いと作業別の選び方【2026年版】",
+    shortTitle: "保護メガネは一眼型・二眼型どっち？",
+    description:
+      "一眼型と二眼型の保護メガネは何が違うのか。研磨・切削・草刈り・工場作業を想定し、飛来方向、粉じん、フィット、度付きメガネ併用、曇り、JIS規格から選び方を解説。オーバーグラスや特殊用途品も整理します。",
+    category: "guide",
+    categoryLabel: "選び方ガイド",
+    thumbnail:
+      "/images/articles/safety-glasses-single-vs-double-lens-selection-guide/safety-glasses-single-double-hero.jpg",
+    date: "2026-08-09",
+    readTime: "約28分",
+    available: true,
+    path: "/articles/safety-glasses-single-vs-double-lens-selection-guide",
+  },
+  {
     slug: "truck-bed-rain-protection-storage-sheet-guide",
     title:
       "トラック荷台の雨対策｜工具・資材を濡らさないアルミBOXとトラックシートの選び方【2026年版】",

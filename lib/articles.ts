@@ -14,6 +14,22 @@ export type Article = {
 
 export const ARTICLES: Article[] = [
   {
+    slug: "truck-bed-rain-protection-storage-sheet-guide",
+    title:
+      "トラック荷台の雨対策｜工具・資材を濡らさないアルミBOXとトラックシートの選び方【2026年版】",
+    shortTitle: "トラック荷台の雨対策（アルミBOX・シート）",
+    description:
+      "軽トラ・平ボディの荷台で工具や資材を雨から守る方法を解説。アルミ製BOX、トラックシート、ロープ、補修材の役割分担とサイズ選び、雨水がたまる失敗、法人車両での標準化まで実務目線で整理します。",
+    category: "guide",
+    categoryLabel: "選び方ガイド",
+    thumbnail:
+      "/images/articles/truck-bed-rain-protection-storage-sheet-guide/truck-bed-rain-protection-hero.jpg",
+    date: "2026-08-09",
+    readTime: "約22分",
+    available: true,
+    path: "/articles/truck-bed-rain-protection-storage-sheet-guide",
+  },
+  {
     slug: "factory-warehouse-flood-entry-protection-guide",
     title:
       "工場・倉庫の浸水対策｜シャッター・搬入口を守る止水板と土のう代替品の選び方【2026年版】",

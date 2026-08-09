@@ -14,6 +14,22 @@ export type Article = {
 
 export const ARTICLES: Article[] = [
   {
+    slug: "honey-heatstroke-prevention-guide",
+    title:
+      "はちみつは熱中症対策になる？はちみつ水・塩・レモンの考え方【2026年版】",
+    shortTitle: "はちみつは熱中症対策になる？",
+    description:
+      "はちみつは熱中症対策に使える？文部科学省の食品成分表をもとに、はちみつの糖質・ナトリウム量、はちみつ水や塩・レモンとの組み合わせ、市販の水分・塩分補給品との使い分けを解説。暑い現場でのプレクーリングや身体冷却も紹介します。",
+    category: "guide",
+    categoryLabel: "選び方ガイド",
+    thumbnail:
+      "/images/articles/honey-heatstroke-prevention-guide/honey-heatstroke-worksite-hero.jpg",
+    date: "2026-08-09",
+    readTime: "約18分",
+    available: true,
+    path: "/articles/honey-heatstroke-prevention-guide",
+  },
+  {
     slug: "work-helmet-sweat-hygiene-guide",
     title:
       "作業用ヘルメットの汗・蒸れ対策｜汗が目に入る・臭い・ベタつきを減らすインナーの選び方【2026年版】",

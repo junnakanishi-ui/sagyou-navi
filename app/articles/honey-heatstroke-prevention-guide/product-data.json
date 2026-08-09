@@ -1,0 +1,119 @@
+{
+  "slug": "honey-heatstroke-prevention-guide",
+  "generatedAt": "2026-08-09",
+  "campaign": "honey_heatstroke_2026",
+  "ctas": {
+    "hydration": {
+      "label": "水分・塩分補給用品を見る",
+      "url": "https://www.gc-select.com/collections/2026-hydration-salts?utm_source=heatstroke_navi&utm_medium=article&utm_campaign=honey_heatstroke_2026"
+    },
+    "precooling": {
+      "label": "プレクーリング用品を見る",
+      "url": "https://www.gc-select.com/collections/2026-pre-cooling?utm_source=heatstroke_navi&utm_medium=article&utm_campaign=honey_heatstroke_2026"
+    },
+    "heatGear": {
+      "label": "衣類・着用品を見る",
+      "url": "https://www.gc-select.com/collections/2026-heat-gear?utm_source=heatstroke_navi&utm_medium=article&utm_campaign=honey_heatstroke_2026"
+    },
+    "environment": {
+      "label": "環境管理用品を見る",
+      "url": "https://www.gc-select.com/collections/2026-environmental-management?utm_source=heatstroke_navi&utm_medium=article&utm_campaign=honey_heatstroke_2026"
+    },
+    "spotCooler": {
+      "label": "スポットクーラーを見る",
+      "url": "https://store.shopping.yahoo.co.jp/signcity-yshop/a5b9a5dda5.html?sc_i=shopping-pc-web-category-storeitm-cat_nrw-slctc&utm_source=heatstroke_navi&utm_medium=article&utm_campaign=honey_heatstroke_2026"
+    }
+  },
+  "products": [
+    {
+      "id": "1179030665",
+      "name": "O.R.Sタブレット レモン24TB L-24",
+      "imageFile": "1179030665.jpg",
+      "url": "https://www.gc-select.com/products/1179030665?utm_source=heatstroke_navi&utm_medium=article&utm_campaign=honey_heatstroke_2026",
+      "badge": "水分・塩分補給",
+      "role": "はちみつ水だけでは足りない電解質を、水に溶かして補う",
+      "fit": "休憩所・車両での標準支給、大量発汗が想定される作業",
+      "check": "溶解方法、1回量、ナトリウムなどの成分表示、賞味期限"
+    },
+    {
+      "id": "1179030522",
+      "name": "メダリスト塩ジェル 20本入 889996",
+      "imageFile": "1179030522.jpg",
+      "url": "https://www.gc-select.com/products/1179030522?utm_source=heatstroke_navi&utm_medium=article&utm_campaign=honey_heatstroke_2026",
+      "badge": "携帯塩分補給",
+      "role": "飲料以外の携帯しやすい塩分補給として、はちみつ単体の限界を補う",
+      "fit": "炎天下の屋外作業、長時間の荷役・警備など大量発汗時",
+      "check": "1袋の内容量、ナトリウム量、個包装の運用ルール"
+    },
+    {
+      "id": "1179030519",
+      "name": "熱中タブレットミックス スタンドパック",
+      "imageFile": "1179030519.jpg",
+      "url": "https://www.gc-select.com/products/1179030519?utm_source=heatstroke_navi&utm_medium=article&utm_campaign=honey_heatstroke_2026",
+      "badge": "タブレット",
+      "role": "自作はちみつ水に頼らず、休憩所で配布しやすい塩分補給の選択肢を増やす",
+      "fit": "個人配布・休憩所常備、味の好みが分かれる現場",
+      "check": "味のバリエーション、1日の目安量、保管条件"
+    },
+    {
+      "id": "1179030588",
+      "name": "種抜き干し梅（個包装）",
+      "imageFile": "1179030588.jpg",
+      "url": "https://www.gc-select.com/products/1179030588?utm_source=heatstroke_navi&utm_medium=article&utm_campaign=honey_heatstroke_2026",
+      "badge": "食べる補給",
+      "role": "甘いタブレットが苦手な人向けに、食品として塩分補給の選択肢を広げる",
+      "fit": "休憩所の常備、甘い補給品が苦手な作業者向け",
+      "check": "塩分量、アレルギー表示、個包装の衛生管理"
+    },
+    {
+      "id": "1179040216",
+      "name": "アイススラリー グレープフルーツ味 ジパック450g 12袋入",
+      "imageFile": "1179040216.jpg",
+      "url": "https://www.gc-select.com/products/1179040216?utm_source=heatstroke_navi&utm_medium=article&utm_campaign=honey_heatstroke_2026",
+      "badge": "プレクーリング",
+      "role": "飲む対策とは別に、作業前・休憩時に体を冷やす補助として使う",
+      "fit": "暑熱環境が厳しい屋外・高温作業の作業前プレクーリング",
+      "check": "冷蔵・冷凍保管条件、提供方法、1回の提供量"
+    },
+    {
+      "id": "1179031013",
+      "name": "飲むかき氷 国産マイヤーレモン 40個入",
+      "imageFile": "1179031013.jpg",
+      "url": "https://www.gc-select.com/products/1179031013?utm_source=heatstroke_navi&utm_medium=article&utm_campaign=honey_heatstroke_2026",
+      "badge": "プレクーリング",
+      "role": "はちみつ水とは別軸で、冷たい補給の選択肢を休憩時に用意する",
+      "fit": "暑い現場の休憩時、冷凍設備がある拠点",
+      "check": "冷凍便の取り扱い、解凍・提供ルール、保管設備"
+    },
+    {
+      "id": "1124801023",
+      "name": "PCMクールベストPRO",
+      "imageFile": "1124801023.jpg",
+      "url": "https://www.gc-select.com/products/1124801023?utm_source=heatstroke_navi&utm_medium=article&utm_campaign=honey_heatstroke_2026",
+      "badge": "身体冷却",
+      "role": "何を飲むかだけでは足りない熱負荷を、身体そのものを冷やして下げる",
+      "fit": "炎天下の屋外作業、高温環境でのクールダウン",
+      "check": "冷却時間の目安、サイズ、冷却材の準備・交換手順"
+    },
+    {
+      "id": "1179038027",
+      "name": "ICE ARMOR専用ビブス 特殊保冷剤500gセット",
+      "imageFile": "1179038027.jpg",
+      "url": "https://www.gc-select.com/products/1179038027?utm_source=heatstroke_navi&utm_medium=article&utm_campaign=honey_heatstroke_2026",
+      "badge": "身体冷却",
+      "role": "水分・塩分補給と分けて、保冷剤による身体冷却を準備する",
+      "fit": "保冷剤運用ができる休憩所・車両がある現場",
+      "check": "保冷剤の凍結時間、交換本数、着用時の作業性"
+    },
+    {
+      "id": "1153010301",
+      "name": "簡単テント 3000×3000mm（六角脚）",
+      "imageFile": "1153010301.jpg",
+      "url": "https://www.gc-select.com/products/1153010301?utm_source=heatstroke_navi&utm_medium=article&utm_campaign=honey_heatstroke_2026",
+      "badge": "環境管理",
+      "role": "飲み物だけでは追いつかない暑熱負荷を、日陰の休憩スペースで下げる",
+      "fit": "屋外現場で直射日光を避ける休憩所を確保したい場合",
+      "check": "設営スペース、風対策、床面条件、人数に対する広さ"
+    }
+  ]
+}

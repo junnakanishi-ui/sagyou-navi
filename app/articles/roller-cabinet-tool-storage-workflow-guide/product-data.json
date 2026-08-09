@@ -1,0 +1,289 @@
+{
+  "slug": "roller-cabinet-tool-storage-workflow-guide",
+  "generatedAt": "2026-08-09",
+  "campaign": "roller_cabinet_tool_storage",
+  "ctas": {
+    "rollerCabinet": {
+      "label": "トラスコ中山ローラーキャビネット一覧",
+      "url": "https://store.shopping.yahoo.co.jp/signcity-yshop/search.html?p=%E3%83%AD%E3%83%BC%E3%83%A9%E3%83%BC%E3%82%AD%E3%83%A3%E3%83%93%E3%83%8D%E3%83%83%E3%83%88&b=31&view=grid&utm_source=sagyou_navi"
+    },
+    "toolbox": {
+      "label": "工具箱一覧",
+      "url": "https://store.shopping.yahoo.co.jp/signcity-yshop/9129bf6abc8.html?utm_source=sagyou_navi"
+    },
+    "cart": {
+      "label": "運搬台車一覧",
+      "url": "https://store.shopping.yahoo.co.jp/signcity-yshop/b1bfc8c2c2.html?utm_source=sagyou_navi"
+    },
+    "workbench": {
+      "label": "作業台一覧",
+      "url": "https://store.shopping.yahoo.co.jp/signcity-yshop/e2ea8bb6c2c.html?utm_source=sagyou_navi"
+    },
+    "maintenanceTools": {
+      "label": "整備工具一覧",
+      "url": "https://item.rakuten.co.jp/crecote-shop/c/0000000043/?l-id=shoptop_shopmenu_categorypage_16&utm_source=sagyou_navi"
+    },
+    "handTools": {
+      "label": "手作業工具一覧",
+      "url": "https://item.rakuten.co.jp/crecote-shop/c/0000000185/?l-id=shoptop_shopmenu_categorypage_16_2ndlevel_3&utm_source=sagyou_navi"
+    },
+    "trusco": {
+      "label": "トラスコ中山掲載商品一覧",
+      "url": "https://item.rakuten.co.jp/crecote-shop/c/0000000043/?l-id=shoptop_shopmenu_categorypage_16&utm_source=sagyou_navi"
+    }
+  },
+  "products": [
+    {
+      "code": "TRC-121R",
+      "name": "TRUSCO ローラーキャビネット 引出4段 TRC-121R",
+      "short": "TRC-121R（4段）",
+      "url": "https://store.shopping.yahoo.co.jp/signcity-yshop/262429.html?utm_source=sagyou_navi",
+      "imageFile": "262429.jpg",
+      "category": "roller_cabinet",
+      "badge": "4段・基本",
+      "drawers": "50×1 / 100×2 / 150×1",
+      "use": "初めての導入や小規模の共用工具収納",
+      "fit": "小規模保全部門、個人に近い共用収納",
+      "reason": "4段の基本モデル。コンパクトに基本工具をまとめやすい",
+      "check": "収納工具の厚みと、設置スペース・搬入経路を確認"
+    },
+    {
+      "code": "TRC-121SR",
+      "name": "TRUSCO ローラーキャビネット 引出4段 仕切板付 TRC-121SR",
+      "short": "TRC-121SR（4段・仕切板付）",
+      "url": "https://store.shopping.yahoo.co.jp/signcity-yshop/262430.html?utm_source=sagyou_navi",
+      "imageFile": "262430.jpg",
+      "category": "roller_cabinet",
+      "badge": "4段・仕切板付",
+      "drawers": "50×1 / 100×2 / 150×1",
+      "use": "導入直後から整理精度を上げたい小規模運用",
+      "fit": "工具の混在を抑えたい小規模保全",
+      "reason": "4段基本構成に仕切板付き。最初から定位置を作りやすい",
+      "check": "仕切り位置と収納物のサイズが合うか確認"
+    },
+    {
+      "code": "TRC-042R",
+      "name": "TRUSCO ローラーキャビネット 引出6段 TRC-042R",
+      "short": "TRC-042R（6段）",
+      "url": "https://store.shopping.yahoo.co.jp/signcity-yshop/262421.html?utm_source=sagyou_navi",
+      "imageFile": "262421.jpg",
+      "category": "roller_cabinet",
+      "badge": "6段・バランス",
+      "drawers": "100×4 / 150×2",
+      "use": "中型工具まで整理したい工場保全・整備現場",
+      "fit": "一般的な工場保全、整備現場",
+      "reason": "6段で中型工具まで整理しやすいバランス型",
+      "check": "100高と150高の配分が工具厚みに合うか確認"
+    },
+    {
+      "code": "TRC-042SR",
+      "name": "TRUSCO ローラーキャビネット 引出6段 仕切板付 TRC-042SR",
+      "short": "TRC-042SR（6段・仕切板付）",
+      "url": "https://store.shopping.yahoo.co.jp/signcity-yshop/262422.html?utm_source=sagyou_navi",
+      "imageFile": "262422.jpg",
+      "category": "roller_cabinet",
+      "badge": "6段・仕切板付",
+      "drawers": "100×4 / 150×2",
+      "use": "中型工具の定位置管理を早く始めたい現場",
+      "fit": "共用工具が多く、整理精度を上げたい保全",
+      "reason": "6段バランス型に仕切板付き。混在を抑えやすい",
+      "check": "仕切り構成と棚卸しルールをセットで決める"
+    },
+    {
+      "code": "TRC-123R",
+      "name": "TRUSCO ローラーキャビネット 引出6段 TRC-123R",
+      "short": "TRC-123R（6段・混成）",
+      "url": "https://store.shopping.yahoo.co.jp/signcity-yshop/262433.html?utm_source=sagyou_navi",
+      "imageFile": "262433.jpg",
+      "category": "roller_cabinet",
+      "badge": "6段・混成",
+      "drawers": "50×1 / 100×2 / 150×3",
+      "use": "工具の厚み差が大きい現場",
+      "fit": "工具種類が幅広い現場",
+      "reason": "50・100・150の混成で厚み違いの工具をまとめやすい",
+      "check": "150高の段数が足りるか、薄物用50高が必要か確認"
+    },
+    {
+      "code": "TRC-232R",
+      "name": "TRUSCO ローラーキャビネット 引出7段 TRC-232R",
+      "short": "TRC-232R（7段）",
+      "url": "https://store.shopping.yahoo.co.jp/signcity-yshop/262444.html?utm_source=sagyou_navi",
+      "imageFile": "262444.jpg",
+      "category": "roller_cabinet",
+      "badge": "7段・細分類",
+      "drawers": "50×2 / 100×3 / 150×2",
+      "use": "分類を細かくしたい工具点数の多い現場",
+      "fit": "工具点数が多い現場",
+      "reason": "7段で分類を細かくしやすい混成構成",
+      "check": "段数増に伴う高さ・通路・引き出し運用ルールを確認"
+    },
+    {
+      "code": "TRC-232SR",
+      "name": "TRUSCO ローラーキャビネット 引出7段 仕切板付 TRC-232SR",
+      "short": "TRC-232SR（7段・仕切板付）",
+      "url": "https://store.shopping.yahoo.co.jp/signcity-yshop/262445.html?utm_source=sagyou_navi",
+      "imageFile": "262445.jpg",
+      "category": "roller_cabinet",
+      "badge": "7段・仕切板付",
+      "drawers": "50×2 / 100×3 / 150×2",
+      "use": "細分類と定位置管理を同時に進めたい現場",
+      "fit": "共用工具が多く、混在を嫌う保全・整備",
+      "reason": "7段細分類モデルの仕切板付き。5Sを進めやすい",
+      "check": "誰がどの引き出しを使うか、ラベル運用まで決める"
+    },
+    {
+      "code": "TRC-070R",
+      "name": "TRUSCO ローラーキャビネット 引出7段 TRC-070R",
+      "short": "TRC-070R（7段・100高）",
+      "url": "https://store.shopping.yahoo.co.jp/signcity-yshop/262425.html?utm_source=sagyou_navi",
+      "imageFile": "262425.jpg",
+      "category": "roller_cabinet",
+      "badge": "7段・均質",
+      "drawers": "100×7",
+      "use": "同サイズ帯の工具を均質に管理したい現場",
+      "fit": "同サイズ帯の工具が多い現場",
+      "reason": "100高中心の7段。サイズ帯を揃えたい現場に向く",
+      "check": "厚みのある工具が100高に収まるか事前計測"
+    },
+    {
+      "code": "TRC-070SR",
+      "name": "TRUSCO ローラーキャビネット 引出7段 仕切板付 TRC-070SR",
+      "short": "TRC-070SR（7段・100高・仕切板付）",
+      "url": "https://store.shopping.yahoo.co.jp/signcity-yshop/262426.html?utm_source=sagyou_navi",
+      "imageFile": "262426.jpg",
+      "category": "roller_cabinet",
+      "badge": "7段・仕切板付",
+      "drawers": "100×7",
+      "use": "均質な引き出しで分類精度を上げたい現場",
+      "fit": "同サイズ帯が多く、混在を抑えたい現場",
+      "reason": "100高×7段の仕切板付き。種類別管理がしやすい",
+      "check": "仕切り後の実効幅と工具長を確認"
+    },
+    {
+      "code": "TRC-341R",
+      "name": "TRUSCO ローラーキャビネット 引出8段 TRC-341R",
+      "short": "TRC-341R（8段）",
+      "url": "https://store.shopping.yahoo.co.jp/signcity-yshop/262452.html?utm_source=sagyou_navi",
+      "imageFile": "262452.jpg",
+      "category": "roller_cabinet",
+      "badge": "8段・定位置",
+      "drawers": "50×3 / 100×4 / 150×1",
+      "use": "細かな定位置管理を進めたい現場",
+      "fit": "5Sを強く進めたい現場",
+      "reason": "8段で細かな定位置管理に向く",
+      "check": "引き出し数と運用ルール、鍵管理をセットで設計"
+    },
+    {
+      "code": "TRC-341SR",
+      "name": "TRUSCO ローラーキャビネット 引出8段 仕切板付 TRC-341SR",
+      "short": "TRC-341SR（8段・仕切板付）",
+      "url": "https://store.shopping.yahoo.co.jp/signcity-yshop/262453.html?utm_source=sagyou_navi",
+      "imageFile": "262453.jpg",
+      "category": "roller_cabinet",
+      "badge": "8段・仕切板付",
+      "drawers": "50×3 / 100×4 / 150×1",
+      "use": "定位置管理と仕切り運用を同時に徹底したい現場",
+      "fit": "共有工具が多く、棚卸し精度を上げたい現場",
+      "reason": "8段＋仕切板で定位置管理の精度を上げやすい",
+      "check": "搬入・設置・鍵管理・ラベル運用まで事前確認"
+    },
+    {
+      "code": "TFRC-STM",
+      "name": "TRUSCO ローラーキャビネット用サイドテーブル 木製 TFRC-STM",
+      "short": "TFRC-STM（木製サイドテーブル）",
+      "url": "https://store.shopping.yahoo.co.jp/signcity-yshop/261620.html?utm_source=sagyou_navi",
+      "imageFile": "261620.jpg",
+      "category": "side_table",
+      "badge": "アクセサリー",
+      "drawers": "—",
+      "use": "部品や指示書の一時置き場を追加したいとき",
+      "fit": "作業台近くで補助面が欲しい現場",
+      "reason": "キャビネット横に補助作業面を追加できる木製テーブル",
+      "check": "通路幅を圧迫しないか、耐荷重と取付方法を確認"
+    },
+    {
+      "code": "TFRC-STS",
+      "name": "TRUSCO ローラーキャビネット用サイドテーブル スチール TFRC-STS",
+      "short": "TFRC-STS（スチールサイドテーブル）",
+      "url": "https://store.shopping.yahoo.co.jp/signcity-yshop/261621.html?utm_source=sagyou_navi",
+      "imageFile": "261621.jpg",
+      "category": "side_table",
+      "badge": "アクセサリー",
+      "drawers": "—",
+      "use": "清掃しやすさを重視した補助作業面",
+      "fit": "油汚れや粉じんが付きやすい整備現場",
+      "reason": "スチール製で清掃しやすい補助テーブル",
+      "check": "取付互換と通路幅を確認"
+    },
+    {
+      "code": "TFRC-SP",
+      "name": "TRUSCO ローラーキャビネット用サイドポケット TFRC-SP",
+      "short": "TFRC-SP（サイドポケット）",
+      "url": "https://store.shopping.yahoo.co.jp/signcity-yshop/261619.html?utm_source=sagyou_navi",
+      "imageFile": "261619.jpg",
+      "category": "side_pocket",
+      "badge": "アクセサリー",
+      "drawers": "—",
+      "use": "スプレー缶・ウエス・小物の外側収納",
+      "fit": "引き出しを工具専用に保ちたい現場",
+      "reason": "頻繁に出し入れする小物を外側へ逃がせる",
+      "check": "収納物のサイズと落下防止、通路干渉を確認"
+    },
+    {
+      "code": "TFRC-DB-H100X295",
+      "name": "TRUSCO ローラーキャビネット デバイダー H100用 L295",
+      "short": "デバイダー H100×L295",
+      "url": "https://store.shopping.yahoo.co.jp/signcity-yshop/261605.html?utm_source=sagyou_navi",
+      "imageFile": "261605.jpg",
+      "category": "divider",
+      "badge": "仕切り",
+      "drawers": "H100用",
+      "use": "引き出し内を幅方向・長さ方向で細かく分けたいとき",
+      "fit": "薄物工具や測定具の混在を防ぎたい現場",
+      "reason": "デバイダーで引き出し内の流れて混ざる状態を抑えやすい",
+      "check": "対象引き出し高さ（50/100/150）と長さが合うか確認"
+    },
+    {
+      "code": "ST-350-B",
+      "name": "TRUSCO 2段工具箱 ブルー ST-350-B",
+      "short": "ST-350-B（2段工具箱）",
+      "url": "https://item.rakuten.co.jp/crecote-shop/ta014591-st350b/?utm_source=sagyou_navi",
+      "imageFile": "ta014591-st350b.jpg",
+      "category": "related_tools",
+      "badge": "持ち運び",
+      "drawers": "—",
+      "use": "日常点検用の持ち出しセット",
+      "fit": "キャビネットを母艦にし、必要な工具だけ持ち出す運用",
+      "reason": "持ち運び中心の工具箱。ローラーキャビネットと役割分担しやすい",
+      "check": "持ち出す工具点数と重量を確認"
+    },
+    {
+      "code": "TBTBAG",
+      "name": "タジマ 工具バッグ セフツールバッグ TBTBAG",
+      "short": "TBTBAG（工具バッグ）",
+      "url": "https://item.rakuten.co.jp/crecote-shop/ta039818-tbtbag/?utm_source=sagyou_navi",
+      "imageFile": "ta039818-tbtbag.jpg",
+      "category": "related_tools",
+      "badge": "持ち運び",
+      "drawers": "—",
+      "use": "軽量な持ち出し・現場移動",
+      "fit": "工具箱より軽い持ち運びが必要な作業",
+      "reason": "バッグタイプで軽作業の持ち出しに向く",
+      "check": "収納上限と落下防止を確認"
+    },
+    {
+      "code": "SK3435S",
+      "name": "KTC 工具セット（片開きメタルケース）43点 SK3435S",
+      "short": "SK3435S（KTC 43点）",
+      "url": "https://item.rakuten.co.jp/crecote-shop/ta041717-sk3435s/?utm_source=sagyou_navi",
+      "imageFile": "ta041717-sk3435s.jpg",
+      "category": "related_tools",
+      "badge": "関連工具",
+      "drawers": "—",
+      "use": "整備用の基本セットをまとめて揃えたいとき",
+      "fit": "キャビネット導入と同時に工具標準化したい現場",
+      "reason": "セット導入で不足工具を一気に埋めやすい",
+      "check": "既保有工具との重複を確認"
+    }
+  ]
+}

@@ -14,6 +14,22 @@ export type Article = {
 
 export const ARTICLES: Article[] = [
   {
+    slug: "roller-cabinet-tool-storage-workflow-guide",
+    title:
+      "工具収納はローラーキャビネットで改善できる？工具箱・ワゴン・作業台との違いと選び方【2026年版】",
+    shortTitle: "工具収納はローラーキャビネットで改善できる？",
+    description:
+      "工具が片付かない工場・整備現場向けに、ローラーキャビネットの選び方を解説。工具箱・ワゴン・作業台との違い、引出し構成、仕切板・サイドテーブル・サイドポケットの活用、導入前チェックポイントまで整理します。",
+    category: "guide",
+    categoryLabel: "選び方ガイド",
+    thumbnail:
+      "/images/articles/roller-cabinet-tool-storage-workflow-guide/roller-cabinet-tool-storage-hero.jpg",
+    date: "2026-08-09",
+    readTime: "約24分",
+    available: true,
+    path: "/articles/roller-cabinet-tool-storage-workflow-guide",
+  },
+  {
     slug: "safety-glasses-single-vs-double-lens-selection-guide",
     title:
       "保護メガネは一眼型・二眼型どっち？違いと作業別の選び方【2026年版】",

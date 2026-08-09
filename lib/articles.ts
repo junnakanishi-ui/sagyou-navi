@@ -14,6 +14,22 @@ export type Article = {
 
 export const ARTICLES: Article[] = [
   {
+    slug: "work-helmet-sweat-hygiene-guide",
+    title:
+      "作業用ヘルメットの汗・蒸れ対策｜汗が目に入る・臭い・ベタつきを減らすインナーの選び方【2026年版】",
+    shortTitle: "作業用ヘルメットの汗・蒸れ対策",
+    description:
+      "作業用ヘルメットの汗・蒸れ・臭いが気になる現場向けに、汗取りバンド、吸汗速乾インナー、消臭タイプ、使い捨て衛生キャップ、冷感インナーの違いを解説。高通気ヘルメットへの切り替え判断や法人支給の選び方まで整理します。",
+    category: "guide",
+    categoryLabel: "選び方ガイド",
+    thumbnail:
+      "/images/articles/work-helmet-sweat-hygiene-guide/work-helmet-sweat-control-hero.jpg",
+    date: "2026-08-09",
+    readTime: "約26分",
+    available: true,
+    path: "/articles/work-helmet-sweat-hygiene-guide",
+  },
+  {
     slug: "roller-cabinet-tool-storage-workflow-guide",
     title:
       "工具収納はローラーキャビネットで改善できる？工具箱・ワゴン・作業台との違いと選び方【2026年版】",

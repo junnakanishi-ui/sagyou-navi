@@ -1,0 +1,261 @@
+{
+  "slug": "work-helmet-sweat-hygiene-guide",
+  "generatedAt": "2026-08-09",
+  "campaign": "work_helmet_sweat_hygiene",
+  "ctas": {
+    "innerList": {
+      "label": "ヘルメットインナー一覧を見る",
+      "url": "https://www.gc-select.com/pages/search-results-page?q=%E3%83%98%E3%83%AB%E3%83%A1%E3%83%83%E3%83%88%E3%82%A4%E3%83%B3%E3%83%8A%E3%83%BC&utm_source=sagyou_navi&utm_medium=referral&utm_campaign=work_helmet_sweat_hygiene"
+    },
+    "helmetList": {
+      "label": "作業用ヘルメット一覧を見る",
+      "url": "https://store.shopping.yahoo.co.jp/signcity-yshop/search.html?p=%E3%83%98%E3%83%AB%E3%83%A1%E3%83%83%E3%83%88&sc_i=shopping-pc-web-result-storesg-h_srch-srchbtn-sgstfrom-result-storesch-h_srch-srchbox&b=91&view=grid&utm_source=sagyou_navi&utm_medium=referral&utm_campaign=work_helmet_sweat_hygiene"
+    },
+    "fanWear": {
+      "label": "空調服一覧を見る",
+      "url": "https://store.shopping.yahoo.co.jp/signcity-yshop/search.html?aq=&oq=&storeid=signcity-yshop&strcid=b6f5c4b4c9&p=%E7%A9%BA%E8%AA%BF%E6%9C%8D&sc_i=shopping-pc-web-category-storesg-h_srch-srchbtn-sgstfrom-category-storeitm-h_srch-srchbox&utm_source=sagyou_navi&utm_medium=referral&utm_campaign=work_helmet_sweat_hygiene"
+    },
+    "coolingVest": {
+      "label": "冷却ベスト一覧を見る",
+      "url": "https://store.shopping.yahoo.co.jp/signcity-yshop/search.html?aq=&oq=&p=%E5%86%B7%E5%8D%B4%E3%83%99%E3%82%B9%E3%83%88&storeid=signcity-yshop&strcid=b6f5c4b4c9&sc_i=shopping-pc-web-result-storesg-h_srch-srchbtn-sgstfrom-result-storesch-h_srch-srchbox&utm_source=sagyou_navi&utm_medium=referral&utm_campaign=work_helmet_sweat_hygiene"
+    },
+    "coolGoods": {
+      "label": "冷感グッズ一覧を見る",
+      "url": "https://store.shopping.yahoo.co.jp/signcity-yshop/cee4b4d6a5.html?sc_i=shopping-pc-web-category-storeitm-cat_nrw-slctc&utm_source=sagyou_navi&utm_medium=referral&utm_campaign=work_helmet_sweat_hygiene"
+    },
+    "heatItems": {
+      "label": "熱中症対策アイテム一覧を見る",
+      "url": "https://store.shopping.yahoo.co.jp/signcity-yshop/eab32ec7ce6.html?X=3&sc_i=shopping-pc-web-category-storeitm-cat_nrw-slctc&prom=1&view=grid&utm_source=sagyou_navi&utm_medium=referral&utm_campaign=work_helmet_sweat_hygiene"
+    }
+  },
+  "products": [
+    {
+      "id": "SRSWB",
+      "name": "TRUSCO シリカクリン おでこ用汗取りバンド SRSWB",
+      "imageFile": "290094.jpg",
+      "url": "https://store.shopping.yahoo.co.jp/signcity-yshop/290094.html?utm_source=sagyou_navi&utm_medium=referral&utm_campaign=work_helmet_sweat_hygiene",
+      "role": "sweat_control",
+      "badge": "額の汗止め",
+      "problem": "額から汗が目に入る",
+      "fit": "高所・工具作業・誘導など、手を離したくない現場",
+      "reason": "額の汗を局所的に受け止める汗取りバンド。頭全体冷却より先に検討しやすい",
+      "check": "ヘルメットとの干渉、洗濯可否、交換タイミングを確認"
+    },
+    {
+      "id": "AP002",
+      "name": "バイリーン 汗とりパッド 帽子用 強粘着タイプ AP002",
+      "imageFile": "171967.jpg",
+      "url": "https://store.shopping.yahoo.co.jp/signcity-yshop/171967.html?utm_source=sagyou_navi&utm_medium=referral&utm_campaign=work_helmet_sweat_hygiene",
+      "role": "sweat_control",
+      "badge": "貼り付け式",
+      "problem": "ヘルメット側で額の汗を受けたい",
+      "fit": "ヘルメット内装へ貼って運用したい現場",
+      "reason": "ヘルメット側へ取り付ける使い方がしやすい汗取りパッド",
+      "check": "粘着面の貼付位置、剥がれ、内装への影響を確認"
+    },
+    {
+      "id": "THCA01",
+      "name": "TRUSCO ヘルメットインナーキャップ THCA01",
+      "imageFile": "172445.jpg",
+      "url": "https://store.shopping.yahoo.co.jp/signcity-yshop/172445.html?utm_source=sagyou_navi&utm_medium=referral&utm_campaign=work_helmet_sweat_hygiene",
+      "role": "sweat_control",
+      "badge": "基本インナー",
+      "problem": "額だけでなく頭全体の汗も受けたい",
+      "fit": "毎日かぶる個人支給の入門候補",
+      "reason": "汗取りバンドだけでは足りないときに、頭全体へ広げるベーシックなインナー",
+      "check": "保護帽への適合、厚み、洗濯方法を確認"
+    },
+    {
+      "id": "QUICKDRY",
+      "name": "吸汗速乾ヘルメットインナー",
+      "imageFile": "1121810128.jpg",
+      "url": "https://www.gc-select.com/products/1121810128?utm_source=sagyou_navi&utm_medium=referral&utm_campaign=work_helmet_sweat_hygiene",
+      "role": "sweat_control",
+      "badge": "吸汗速乾",
+      "problem": "頭全体が蒸れてベタつく",
+      "fit": "建設・倉庫・設備など長時間着用の現場",
+      "reason": "汗を広く吸って乾きやすくするタイプ。毎日使う人向き",
+      "check": "装着後のフィット、洗い替え枚数、乾きやすさを確認"
+    },
+    {
+      "id": "G235",
+      "name": "ニオイクリア 消臭ヘルメットインナー G-235",
+      "imageFile": "1121810120.jpg",
+      "url": "https://www.gc-select.com/products/1121810120?utm_source=sagyou_navi&utm_medium=referral&utm_campaign=work_helmet_sweat_hygiene",
+      "role": "sweat_control",
+      "badge": "消臭",
+      "problem": "臭い・皮脂汚れが気になる",
+      "fit": "個人支給で毎日同じヘルメットを使う現場",
+      "reason": "臭い対策を前面に置いた消臭インナー。洗濯・乾燥運用とセットで使う",
+      "check": "洗濯表示、交換時期、ヘルメット内装の汚れも併せて確認"
+    },
+    {
+      "id": "HALF",
+      "name": "ペンギンエース ヘルインナー ハーフキャップ用 CP-3-1-BK",
+      "imageFile": "289871.jpg",
+      "url": "https://store.shopping.yahoo.co.jp/signcity-yshop/289871.html?utm_source=sagyou_navi&utm_medium=referral&utm_campaign=work_helmet_sweat_hygiene",
+      "role": "general_inner",
+      "badge": "ハーフキャップ",
+      "problem": "頭全体を覆いすぎず汗を受けたい",
+      "fit": "覆いすぎ感を抑えたい個人用",
+      "reason": "ハーフキャップ形状で、全面覆いより軽めに使いたいときの候補",
+      "check": "対応ヘルメット、着用状態の変化がないかを確認"
+    },
+    {
+      "id": "INNERCAP",
+      "name": "TRUSCO ヘルメットインナーキャップ",
+      "imageFile": "1121810114.jpg",
+      "url": "https://www.gc-select.com/products/1121810114?utm_source=sagyou_navi&utm_medium=referral&utm_campaign=work_helmet_sweat_hygiene",
+      "role": "general_inner",
+      "badge": "定番",
+      "problem": "まず基本のインナーから試したい",
+      "fit": "汗・皮脂対策の標準支給候補",
+      "reason": "汗・皮脂対策の基本となるヘルメットインナーキャップ",
+      "check": "保護帽適合、洗い替え運用の有無を確認"
+    },
+    {
+      "id": "ALLSEASON",
+      "name": "オールシーズンインナー帽子",
+      "imageFile": "6300072213.jpg",
+      "url": "https://www.gc-select.com/products/6300072213?utm_source=sagyou_navi&utm_medium=referral&utm_campaign=work_helmet_sweat_hygiene",
+      "role": "general_inner",
+      "badge": "通年",
+      "problem": "季節をまたいで使える洗い替えが欲しい",
+      "fit": "通年着用・洗い替え運用の現場",
+      "reason": "季節をまたいで使える洗い替え候補として扱いやすい",
+      "check": "洗濯可否、厚み、ヘルメット適合を確認"
+    },
+    {
+      "id": "IPH-B100",
+      "name": "TRUSCO ヘルメット用インナー帽子 不織布 ブルー IPH-B100",
+      "imageFile": "158819.jpg",
+      "url": "https://store.shopping.yahoo.co.jp/signcity-yshop/158819.html?utm_source=sagyou_navi&utm_medium=referral&utm_campaign=work_helmet_sweat_hygiene",
+      "role": "hygiene_disposable",
+      "badge": "使い捨て衛生",
+      "problem": "共用・来客用ヘルメットを清潔に使いたい",
+      "fit": "来客・工場見学・短期入場者向け",
+      "reason": "100枚入りの不織布インナー。冷却ではなく衛生管理用",
+      "check": "廃棄ルール、在庫切れ運用、個人用と分けて管理する"
+    },
+    {
+      "id": "THDC-120",
+      "name": "TRUSCO ヘルメット用インナー帽子 不織布 白 THDC-120",
+      "imageFile": "158817.jpg",
+      "url": "https://store.shopping.yahoo.co.jp/signcity-yshop/158817.html?utm_source=sagyou_navi&utm_medium=referral&utm_campaign=work_helmet_sweat_hygiene",
+      "role": "hygiene_disposable",
+      "badge": "使い捨て衛生",
+      "problem": "共用備品の衛生を簡単にしたい",
+      "fit": "複数人で共用するヘルメット備品",
+      "reason": "120枚入りの不織布タイプ。共用品の接触面を分けやすい",
+      "check": "使用後の廃棄、補充タイミングを決めておく"
+    },
+    {
+      "id": "THIK-120",
+      "name": "TRUSCO ヘルメット用丸型紙帽子 白 THIK-120",
+      "imageFile": "158818.jpg",
+      "url": "https://store.shopping.yahoo.co.jp/signcity-yshop/158818.html?utm_source=sagyou_navi&utm_medium=referral&utm_campaign=work_helmet_sweat_hygiene",
+      "role": "hygiene_disposable",
+      "badge": "紙帽子",
+      "problem": "短時間の共用利用を衛生的にしたい",
+      "fit": "見学者・来客・短時間作業",
+      "reason": "紙タイプの使い捨てインナー。洗濯設備が不要な運用向き",
+      "check": "湿潤時の破れやすさ、廃棄方法を確認"
+    },
+    {
+      "id": "RADICOOL",
+      "name": "ラディクール放射冷却ヘルメットインナー",
+      "imageFile": "1121810113.jpg",
+      "url": "https://www.gc-select.com/products/1121810113?utm_source=sagyou_navi&utm_medium=referral&utm_campaign=work_helmet_sweat_hygiene",
+      "role": "cooling_comfort",
+      "badge": "放射冷却",
+      "problem": "夏場の着用不快感を和らげたい",
+      "fit": "直射日光下の屋外作業",
+      "reason": "放射冷却・遮熱系の冷感インナー。汗取りとは役割が異なる",
+      "check": "汗が目に入る悩みが主なら汗取り用品を優先検討"
+    },
+    {
+      "id": "COOLCORE",
+      "name": "coolcore アイスヘルメットインナー FT-5821",
+      "imageFile": "1124700010.jpg",
+      "url": "https://www.gc-select.com/products/1124700010?utm_source=sagyou_navi&utm_medium=referral&utm_campaign=work_helmet_sweat_hygiene",
+      "role": "cooling_comfort",
+      "badge": "気化冷却",
+      "problem": "濡らして冷感を得たい",
+      "fit": "水分を使える運用が可能な現場",
+      "reason": "濡らして使うタイプ。再湿潤と乾燥場所の運用が前提",
+      "check": "湿ったままの不快感、交換・乾燥場所を用意できるか確認"
+    },
+    {
+      "id": "ATAMANZOKU",
+      "name": "ミズケイ アイスジェルヘルメットインナー「あたまんぞく」",
+      "imageFile": "1121910323.jpg",
+      "url": "https://www.gc-select.com/products/1121910323?utm_source=sagyou_navi&utm_medium=referral&utm_campaign=work_helmet_sweat_hygiene",
+      "role": "cooling_comfort",
+      "badge": "ジェル保冷",
+      "problem": "短時間で強い冷感が欲しい",
+      "fit": "休憩前後に冷たさを感じたい場面",
+      "reason": "ジェル・保冷系。効果の持続時間と交換運用を考えて使う",
+      "check": "持続時間、保管方法、ヘルメット適合を確認"
+    },
+    {
+      "id": "TITAN",
+      "name": "チタン涼感フラップ",
+      "imageFile": "6300072219.jpg",
+      "url": "https://www.gc-select.com/products/6300072219?utm_source=sagyou_navi&utm_medium=referral&utm_campaign=work_helmet_sweat_hygiene",
+      "role": "cooling_comfort",
+      "badge": "遮熱フラップ",
+      "problem": "日差しによる暑さ・不快感を抑えたい",
+      "fit": "屋外で首元・後頭部の日差し対策もしたい現場",
+      "reason": "放射冷却・遮熱系の補助として検討しやすいフラップ",
+      "check": "作業内容との干渉、視界・安全への影響を確認"
+    },
+    {
+      "id": "AQUA",
+      "name": "アクアウォーターキャップ",
+      "imageFile": "6300070472.jpg",
+      "url": "https://www.gc-select.com/products/6300070472?utm_source=sagyou_navi&utm_medium=referral&utm_campaign=work_helmet_sweat_hygiene",
+      "role": "cooling_comfort",
+      "badge": "水冷系",
+      "problem": "水分を使った冷感を補いたい",
+      "fit": "水場があり再湿潤できる現場",
+      "reason": "濡らして使う冷感インナーの候補",
+      "check": "湿潤運用、乾かし方、ヘルメット適合を確認"
+    },
+    {
+      "id": "DPM1820",
+      "name": "TRUSCO 高通気タイプ ヘルメット DPM-1820W",
+      "imageFile": "158772.jpg",
+      "url": "https://store.shopping.yahoo.co.jp/signcity-yshop/158772.html?utm_source=sagyou_navi&utm_medium=referral&utm_campaign=work_helmet_sweat_hygiene",
+      "role": "ventilated_helmet",
+      "badge": "高通気",
+      "problem": "インナーを替えても内部が蒸れる",
+      "fit": "従来型で蒸れが強い現場の見直し候補",
+      "reason": "通気を意識したヘルメット本体。インナー買い足しより改善しやすいケースがある",
+      "check": "必要な保護性能・型式検定・現場規定への適合を確認"
+    },
+    {
+      "id": "WINDY",
+      "name": "トーヨーセーフティ 送風機内蔵ヘルメット WindyHelmet NO.395F-S",
+      "imageFile": "289996.jpg",
+      "url": "https://store.shopping.yahoo.co.jp/signcity-yshop/289996.html?utm_source=sagyou_navi&utm_medium=referral&utm_campaign=work_helmet_sweat_hygiene",
+      "role": "ventilated_helmet",
+      "badge": "送風内蔵",
+      "problem": "長時間着用で空気がこもる",
+      "fit": "熱こもりが強く、送風タイプを検討したい現場",
+      "reason": "送風機内蔵で内部の空気のこもりを抑えるタイプ",
+      "check": "電源・稼働時間・騒音・保護性能・現場ルールを確認"
+    },
+    {
+      "id": "RYOBO",
+      "name": "TRUSCO 遮熱 涼帽 通気孔付 TD-HB-FV-KP-W",
+      "imageFile": "158791.jpg",
+      "url": "https://store.shopping.yahoo.co.jp/signcity-yshop/158791.html?utm_source=sagyou_navi&utm_medium=referral&utm_campaign=work_helmet_sweat_hygiene",
+      "role": "ventilated_helmet",
+      "badge": "遮熱・通気孔",
+      "problem": "屋外でヘルメット自体の暑さが気になる",
+      "fit": "日差し下の屋外作業",
+      "reason": "遮熱と通気孔付きで、本体側から暑さ・蒸れを見直す候補",
+      "check": "通気孔の使用可否を含む現場規定・適合を確認"
+    }
+  ]
+}

@@ -14,6 +14,22 @@ export type Article = {
 
 export const ARTICLES: Article[] = [
   {
+    slug: "manual-press-fit-work-efficiency-guide",
+    title:
+      "圧入の手作業を効率化するには？ハンドプレスの選び方とラックピニオン・トグルの違い【2026年版】",
+    shortTitle: "圧入の手作業を効率化するには？ハンドプレスの選び方",
+    description:
+      "ベアリング・シャフト・ピンなどの圧入や、カシメ・打抜きの手作業を効率化したい方向けに、ハンドプレスの選び方を解説。ラックピニオン式とトグル式の違い、推力・ストローク・ワークハイトの見方、仲精機の代表モデル、治具と作業台の考え方まで整理します。",
+    category: "guide",
+    categoryLabel: "選び方ガイド",
+    thumbnail:
+      "/images/articles/manual-press-fit-work-efficiency-guide/manual-press-fit-work-efficiency-hero.jpg",
+    date: "2026-08-12",
+    readTime: "約24分",
+    available: true,
+    path: "/articles/manual-press-fit-work-efficiency-guide",
+  },
+  {
     slug: "honey-heatstroke-prevention-guide",
     title:
       "はちみつは熱中症対策になる？はちみつ水・塩・レモンの考え方【2026年版】",

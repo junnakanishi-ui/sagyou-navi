@@ -1,0 +1,607 @@
+{
+  "slug": "ratchet-narrow-space-fastening-zyklop-guide",
+  "source_file": "取得結果(20260812-014358).xlsx",
+  "raw_rows": 53,
+  "unique_skus_or_urls": 46,
+  "duplicate_skus": {
+    "003550": 2,
+    "003500": 2,
+    "004076": 2,
+    "003533": 2,
+    "003594": 2,
+    "004201": 2,
+    "003881": 2
+  },
+  "family_counts": {
+    "標準単品": 5,
+    "リペア": 2,
+    "Mini": 1,
+    "Metal単品": 5,
+    "廃番": 2,
+    "標準セット": 6,
+    "Hybrid単品": 1,
+    "Hybridセット": 2,
+    "Speedセット": 5,
+    "Metalセット": 8,
+    "アダプター": 3,
+    "自転車セット": 1,
+    "エクステンション": 1,
+    "ビットソケット": 6,
+    "ソケット/ベルト": 5
+  },
+  "cta_links": [
+    {
+      "label": "Wera サイクロップラチェット一覧",
+      "url": "https://search.rakuten.co.jp/search/mall/Wera+%E3%82%B5%E3%82%A4%E3%82%AF%E3%83%AD%E3%83%83%E3%83%97%E3%83%A9%E3%83%81%E3%82%A7%E3%83%83%E3%83%88/?sid=426972"
+    },
+    {
+      "label": "手作業工具一覧",
+      "url": "https://item.rakuten.co.jp/crecote-shop/c/0000000185/"
+    },
+    {
+      "label": "工具箱一覧",
+      "url": "https://store.shopping.yahoo.co.jp/signcity-yshop/9129bf6abc8.html"
+    },
+    {
+      "label": "運搬台車一覧",
+      "url": "https://store.shopping.yahoo.co.jp/signcity-yshop/b1bfc8c2c2.html"
+    },
+    {
+      "label": "作業台一覧",
+      "url": "https://store.shopping.yahoo.co.jp/signcity-yshop/e2ea8bb6c2c.html"
+    },
+    {
+      "label": "トラスコ中山掲載商品一覧",
+      "url": "https://item.rakuten.co.jp/crecote-shop/c/0000000043/?l-id=shoptop_shopmenu_categorypage_16"
+    }
+  ],
+  "featured_products": [
+    {
+      "sku": "003500",
+      "title": "Ｗｅｒａ サイクロップラチェット１／４ 003500",
+      "url": "https://item.rakuten.co.jp/crecote-shop/ta029794-003500/",
+      "image": "ta029794-003500.jpg",
+      "family": "標準単品"
+    },
+    {
+      "sku": "003550",
+      "title": "Ｗｅｒａ サイクロップラチェット３／８ 003550",
+      "url": "https://item.rakuten.co.jp/crecote-shop/ta029798-003550/",
+      "image": "ta029798-003550.jpg",
+      "family": "標準単品"
+    },
+    {
+      "sku": "003600",
+      "title": "Ｗｅｒａ サイクロップラチェット１／２ 003600",
+      "url": "https://item.rakuten.co.jp/crecote-shop/ta029801-003600/",
+      "image": "ta029801-003600.jpg",
+      "family": "標準単品"
+    },
+    {
+      "sku": "003793",
+      "title": "Ｗｅｒａ ８００８Ａ サイクロップラチェット「ミニ」 １／４ 003793",
+      "url": "https://item.rakuten.co.jp/crecote-shop/ta029810-003793/",
+      "image": "ta029810-003793.jpg",
+      "family": "Mini"
+    },
+    {
+      "sku": "004003",
+      "title": "Ｗｅｒａ ８００３Ａ サイクロップラチェット「メタル」 １／４ 004003",
+      "url": "https://item.rakuten.co.jp/crecote-shop/ta029815-004003/",
+      "image": "ta029815-004003.jpg",
+      "family": "Metal単品"
+    },
+    {
+      "sku": "004004",
+      "title": "Ｗｅｒａ ８００４Ａ サイクロップラチェット「メタル」 １／４ チェンジレバー 004004",
+      "url": "https://item.rakuten.co.jp/crecote-shop/ta029816-004004/",
+      "image": "ta029816-004004.jpg",
+      "family": "Metal単品"
+    },
+    {
+      "sku": "004033",
+      "title": "Ｗｅｒａ ８００３Ｂ サイクロップラチェット「メタル」 ３／８ 004033",
+      "url": "https://item.rakuten.co.jp/crecote-shop/ta029825-004033/",
+      "image": "ta029825-004033.jpg",
+      "family": "Metal単品"
+    },
+    {
+      "sku": "004063",
+      "title": "Ｗｅｒａ ８００３Ｃ サイクロップラチェット「メタル」 １／２ 004063",
+      "url": "https://item.rakuten.co.jp/crecote-shop/ta029833-004063/",
+      "image": "ta029833-004063.jpg",
+      "family": "Metal単品"
+    },
+    {
+      "sku": "003780",
+      "title": "Ｗｅｒａ ８００６Ｃ サイクロップラチェット「ハイブリッド」 １／２ 003780",
+      "url": "https://item.rakuten.co.jp/crecote-shop/ta029808-003780/",
+      "image": "ta029808-003780.jpg",
+      "family": "Hybrid単品"
+    },
+    {
+      "sku": "004095",
+      "title": "Ｗｅｒａ ８００６Ｃ サイクロップラチェット「ハイブリッド」 １／２ セット 004095",
+      "url": "https://item.rakuten.co.jp/crecote-shop/ta029842-004095/",
+      "image": "ta029842-004095.jpg",
+      "family": "Hybridセット"
+    },
+    {
+      "sku": "004016",
+      "title": "Ｗｅｒａ ８１００ＳＡ６ サイクロップラチェット「スピード」セット １／４ 004016",
+      "url": "https://item.rakuten.co.jp/crecote-shop/ta029817-004016/",
+      "image": "ta029817-004016.jpg",
+      "family": "Speedセット"
+    },
+    {
+      "sku": "004046",
+      "title": "Ｗｅｒａ ８１００ＳＢ６ サイクロップラチェット「スピード」セット ３／８ 004046",
+      "url": "https://item.rakuten.co.jp/crecote-shop/ta000099-004046/",
+      "image": "ta000099-004046.jpg",
+      "family": "Speedセット"
+    },
+    {
+      "sku": "004076",
+      "title": "Ｗｅｒａ ８１００ＳＣ６ サイクロップラチェット「スピード」セット １／２ 004076",
+      "url": "https://item.rakuten.co.jp/crecote-shop/ta029835-004076/",
+      "image": "ta029835-004076.jpg",
+      "family": "Speedセット"
+    },
+    {
+      "sku": "004017",
+      "title": "Ｗｅｒａ ８１００ＳＡ７ サイクロップラチェット「メタル」セット １／４ 004017",
+      "url": "https://item.rakuten.co.jp/crecote-shop/ta029818-004017/",
+      "image": "ta029818-004017.jpg",
+      "family": "Metalセット"
+    },
+    {
+      "sku": "004047",
+      "title": "Ｗｅｒａ ８１００ＳＢ７ サイクロップラチェット「メタル」セット ３／８ 004047",
+      "url": "https://item.rakuten.co.jp/crecote-shop/ta029828-004047/",
+      "image": "ta029828-004047.jpg",
+      "family": "Metalセット"
+    },
+    {
+      "sku": "004077",
+      "title": "Ｗｅｒａ ８１００ＳＣ７ サイクロップラチェット「メタル」セット １／２ 004077",
+      "url": "https://item.rakuten.co.jp/crecote-shop/ta029836-004077/",
+      "image": "ta029836-004077.jpg",
+      "family": "Metalセット"
+    },
+    {
+      "sku": "003529",
+      "title": "Ｗｅｒａ ８７８４Ａ１ サイクロップアダプター １／４ 003529",
+      "url": "https://item.rakuten.co.jp/crecote-shop/ta000065-003529/",
+      "image": "ta000065-003529.jpg",
+      "family": "アダプター"
+    },
+    {
+      "sku": "003590",
+      "title": "Ｗｅｒａ ８７８４Ｂ１ サイクロップアダプター ３／８ 003590",
+      "url": "https://item.rakuten.co.jp/crecote-shop/ta000068-003590/",
+      "image": "ta000068-003590.jpg",
+      "family": "アダプター"
+    },
+    {
+      "sku": "003641",
+      "title": "Ｗｅｒａ ８７８４Ｃ１ サイクロップアダプター １／２ 003641",
+      "url": "https://item.rakuten.co.jp/crecote-shop/ta000072-003641/",
+      "image": "ta000072-003641.jpg",
+      "family": "アダプター"
+    },
+    {
+      "sku": "003781",
+      "title": "Ｗｅｒａ ８００６Ｃ エクステンションバー 003781",
+      "url": "https://item.rakuten.co.jp/crecote-shop/ta029809-003781/",
+      "image": "ta029809-003781.jpg",
+      "family": "エクステンション"
+    },
+    {
+      "sku": "003970",
+      "title": "Ｗｅｒａ ＨＦ ベルトソケットセット ３／８ 003970",
+      "url": "https://item.rakuten.co.jp/crecote-shop/ta029814-003970/",
+      "image": "ta029814-003970.jpg",
+      "family": "ソケット/ベルト"
+    },
+    {
+      "sku": "003880",
+      "title": "Ｗｅｒａ ＢＥＬＴ １ ８７９０ ＨＭＡ ＨＦ ベルトソケットセット １／４ 003880",
+      "url": "https://item.rakuten.co.jp/crecote-shop/ta000092-003880/",
+      "image": "ta000092-003880.jpg",
+      "family": "ソケット/ベルト"
+    },
+    {
+      "sku": "003881",
+      "title": "Ｗｅｒａ ＢＥＬＴ ２ ８７４０Ａ Ｈｅｘ−Ｐｌｕｓ ＨＦ ベルトソケットセット １／４ 003881",
+      "url": "https://item.rakuten.co.jp/crecote-shop/ta029812-003881/",
+      "image": "ta029812-003881.jpg",
+      "family": "ソケット/ベルト"
+    },
+    {
+      "sku": "003882",
+      "title": "Ｗｅｒａ ＢＥＬＴ ３ ８７６７Ａ ＴＸ ＨＦ ベルトソケットセット １／４ 003882",
+      "url": "https://item.rakuten.co.jp/crecote-shop/ta029813-003882/",
+      "image": "ta029813-003882.jpg",
+      "family": "ソケット/ベルト"
+    }
+  ],
+  "all_products": [
+    {
+      "sku": "003550",
+      "title": "Ｗｅｒａ サイクロップラチェット３／８ 003550",
+      "url": "https://item.rakuten.co.jp/crecote-shop/ta029798-003550/",
+      "image": "ta029798-003550.jpg",
+      "family": "標準単品"
+    },
+    {
+      "sku": "003600",
+      "title": "Ｗｅｒａ サイクロップラチェット１／２ 003600",
+      "url": "https://item.rakuten.co.jp/crecote-shop/ta029801-003600/",
+      "image": "ta029801-003600.jpg",
+      "family": "標準単品"
+    },
+    {
+      "sku": "003500",
+      "title": "Ｗｅｒａ サイクロップラチェット１／４ 003500",
+      "url": "https://item.rakuten.co.jp/crecote-shop/ta029794-003500/",
+      "image": "ta029794-003500.jpg",
+      "family": "標準単品"
+    },
+    {
+      "sku": "003550",
+      "title": "Ｗｅｒａ サイクロップラチェット３／８ 003550",
+      "url": "https://item.rakuten.co.jp/crecote-shop/ta000067-003550/",
+      "image": "ta000067-003550.jpg",
+      "family": "標準単品"
+    },
+    {
+      "sku": "003648",
+      "title": "Ｗｅｒａ サイクロップラチェット１／４用リペアキット 003648",
+      "url": "https://item.rakuten.co.jp/crecote-shop/ta029803-003648/",
+      "image": "ta029803-003648.jpg",
+      "family": "リペア"
+    },
+    {
+      "sku": "003597",
+      "title": "Ｗｅｒａ サイクロップラチェット３／８用リペアキット 003597",
+      "url": "https://item.rakuten.co.jp/crecote-shop/ta029800-003597/",
+      "image": "ta029800-003597.jpg",
+      "family": "リペア"
+    },
+    {
+      "sku": "003500",
+      "title": "Ｗｅｒａ サイクロップラチェット１／４ 003500",
+      "url": "https://item.rakuten.co.jp/crecote-shop/ta000064-003500/",
+      "image": "ta000064-003500.jpg",
+      "family": "標準単品"
+    },
+    {
+      "sku": "003793",
+      "title": "Ｗｅｒａ ８００８Ａ サイクロップラチェット「ミニ」 １／４ 003793",
+      "url": "https://item.rakuten.co.jp/crecote-shop/ta029810-003793/",
+      "image": "ta029810-003793.jpg",
+      "family": "Mini"
+    },
+    {
+      "sku": "004033",
+      "title": "Ｗｅｒａ ８００３Ｂ サイクロップラチェット「メタル」 ３／８ 004033",
+      "url": "https://item.rakuten.co.jp/crecote-shop/ta029825-004033/",
+      "image": "ta029825-004033.jpg",
+      "family": "Metal単品"
+    },
+    {
+      "sku": "004080",
+      "title": "Ｗｅｒａ 【売切廃番】８１００ＳＣ１０ サイクロップラチェット「メタル」セット １／２ 004080",
+      "url": "https://item.rakuten.co.jp/crecote-shop/ta029839-004080/",
+      "image": "ta029839-004080.jpg",
+      "family": "廃番"
+    },
+    {
+      "sku": "004004",
+      "title": "Ｗｅｒａ ８００４Ａ サイクロップラチェット「メタル」 １／４ チェンジレバー 004004",
+      "url": "https://item.rakuten.co.jp/crecote-shop/ta029816-004004/",
+      "image": "ta029816-004004.jpg",
+      "family": "Metal単品"
+    },
+    {
+      "sku": "004003",
+      "title": "Ｗｅｒａ ８００３Ａ サイクロップラチェット「メタル」 １／４ 004003",
+      "url": "https://item.rakuten.co.jp/crecote-shop/ta029815-004003/",
+      "image": "ta029815-004003.jpg",
+      "family": "Metal単品"
+    },
+    {
+      "sku": "004079",
+      "title": "Ｗｅｒａ 【売切廃番】８１００ＳＣ９ サイクロップラチェット「スピード」セット １／２ 004079",
+      "url": "https://item.rakuten.co.jp/crecote-shop/ta029838-004079/",
+      "image": "ta029838-004079.jpg",
+      "family": "廃番"
+    },
+    {
+      "sku": "004063",
+      "title": "Ｗｅｒａ ８００３Ｃ サイクロップラチェット「メタル」 １／２ 004063",
+      "url": "https://item.rakuten.co.jp/crecote-shop/ta029833-004063/",
+      "image": "ta029833-004063.jpg",
+      "family": "Metal単品"
+    },
+    {
+      "sku": "051045",
+      "title": "Ｗｅｒａ サイクロップラチェットセット（ソフトケースタイプ） 051045",
+      "url": "https://item.rakuten.co.jp/crecote-shop/ta030269-051045/",
+      "image": "ta030269-051045.jpg",
+      "family": "標準セット"
+    },
+    {
+      "sku": "004064",
+      "title": "Ｗｅｒａ ８００４Ｃ サイクロップラチェット「メタル」 １／２ チェンジレバー 004064",
+      "url": "https://item.rakuten.co.jp/crecote-shop/ta029834-004064/",
+      "image": "ta029834-004064.jpg",
+      "family": "Metal単品"
+    },
+    {
+      "sku": "003780",
+      "title": "Ｗｅｒａ ８００６Ｃ サイクロップラチェット「ハイブリッド」 １／２ 003780",
+      "url": "https://item.rakuten.co.jp/crecote-shop/ta029808-003780/",
+      "image": "ta029808-003780.jpg",
+      "family": "Hybrid単品"
+    },
+    {
+      "sku": "004095",
+      "title": "Ｗｅｒａ ８００６Ｃ サイクロップラチェット「ハイブリッド」 １／２ セット 004095",
+      "url": "https://item.rakuten.co.jp/crecote-shop/ta029842-004095/",
+      "image": "ta029842-004095.jpg",
+      "family": "Hybridセット"
+    },
+    {
+      "sku": "004090",
+      "title": "Ｗｅｒａ ８００６ ＳＣ１ サイクロップラチェット「ハイブリッド」セット １／２ 004090",
+      "url": "https://item.rakuten.co.jp/crecote-shop/ta029841-004090/",
+      "image": "ta029841-004090.jpg",
+      "family": "Hybridセット"
+    },
+    {
+      "sku": "004076",
+      "title": "Ｗｅｒａ ８１００ＳＣ６ サイクロップラチェット「スピード」セット １／２ 004076",
+      "url": "https://item.rakuten.co.jp/crecote-shop/ta029835-004076/",
+      "image": "ta029835-004076.jpg",
+      "family": "Speedセット"
+    },
+    {
+      "sku": "004051",
+      "title": "Ｗｅｒａ ソケットレンチセット ８１００ＳＢ１１ サイクロップラチェット「メタル」セット ３／８ インチサイズ 004051",
+      "url": "https://item.rakuten.co.jp/crecote-shop/ta029832-004051/",
+      "image": "ta029832-004051.jpg",
+      "family": "Metalセット"
+    },
+    {
+      "sku": "004020",
+      "title": "Ｗｅｒａ ８１００ＳＡ１０ サイクロップラチェット「メタル」セット １／４ 004020",
+      "url": "https://item.rakuten.co.jp/crecote-shop/ta029821-004020/",
+      "image": "ta029821-004020.jpg",
+      "family": "Metalセット"
+    },
+    {
+      "sku": "003529",
+      "title": "Ｗｅｒａ ８７８４Ａ１ サイクロップアダプター １／４ 003529",
+      "url": "https://item.rakuten.co.jp/crecote-shop/ta000065-003529/",
+      "image": "ta000065-003529.jpg",
+      "family": "アダプター"
+    },
+    {
+      "sku": "004016",
+      "title": "Ｗｅｒａ ８１００ＳＡ６ サイクロップラチェット「スピード」セット １／４ 004016",
+      "url": "https://item.rakuten.co.jp/crecote-shop/ta029817-004016/",
+      "image": "ta029817-004016.jpg",
+      "family": "Speedセット"
+    },
+    {
+      "sku": "004017",
+      "title": "Ｗｅｒａ ８１００ＳＡ７ サイクロップラチェット「メタル」セット １／４ 004017",
+      "url": "https://item.rakuten.co.jp/crecote-shop/ta029818-004017/",
+      "image": "ta029818-004017.jpg",
+      "family": "Metalセット"
+    },
+    {
+      "sku": "004047",
+      "title": "Ｗｅｒａ ８１００ＳＢ７ サイクロップラチェット「メタル」セット ３／８ 004047",
+      "url": "https://item.rakuten.co.jp/crecote-shop/ta029828-004047/",
+      "image": "ta029828-004047.jpg",
+      "family": "Metalセット"
+    },
+    {
+      "sku": "004019",
+      "title": "Ｗｅｒａ ８１００ＳＡ９ サイクロップラチェット「スピード」セット １／４ 004019",
+      "url": "https://item.rakuten.co.jp/crecote-shop/ta029820-004019/",
+      "image": "ta029820-004019.jpg",
+      "family": "Speedセット"
+    },
+    {
+      "sku": "003641",
+      "title": "Ｗｅｒａ ８７８４Ｃ１ サイクロップアダプター １／２ 003641",
+      "url": "https://item.rakuten.co.jp/crecote-shop/ta000072-003641/",
+      "image": "ta000072-003641.jpg",
+      "family": "アダプター"
+    },
+    {
+      "sku": "004081",
+      "title": "Ｗｅｒａ ソケットレンチセット ８１００ＳＣ１１ サイクロップラチェット「メタル」セット １／２ インチサイズ 004081",
+      "url": "https://item.rakuten.co.jp/crecote-shop/ta029840-004081/",
+      "image": "ta029840-004081.jpg",
+      "family": "Metalセット"
+    },
+    {
+      "sku": "003590",
+      "title": "Ｗｅｒａ ８７８４Ｂ１ サイクロップアダプター ３／８ 003590",
+      "url": "https://item.rakuten.co.jp/crecote-shop/ta000068-003590/",
+      "image": "ta000068-003590.jpg",
+      "family": "アダプター"
+    },
+    {
+      "sku": "004077",
+      "title": "Ｗｅｒａ ８１００ＳＣ７ サイクロップラチェット「メタル」セット １／２ 004077",
+      "url": "https://item.rakuten.co.jp/crecote-shop/ta029836-004077/",
+      "image": "ta029836-004077.jpg",
+      "family": "Metalセット"
+    },
+    {
+      "sku": "004076",
+      "title": "Ｗｅｒａ ８１００ＳＣ６ サイクロップラチェット「スピード」セット １／２ 004076",
+      "url": "https://item.rakuten.co.jp/crecote-shop/ta000100-004076/",
+      "image": "ta000100-004076.jpg",
+      "family": "Speedセット"
+    },
+    {
+      "sku": "004048",
+      "title": "Ｗｅｒａ ソケットレンチセット ８１００ＳＢ８ サイクロップラチェット「メタル」セット ３／８ 004048",
+      "url": "https://item.rakuten.co.jp/crecote-shop/ta029829-004048/",
+      "image": "ta029829-004048.jpg",
+      "family": "Metalセット"
+    },
+    {
+      "sku": "004018",
+      "title": "Ｗｅｒａ ソケットレンチセット ８１００ＳＡ８ サイクロップラチェット「メタル」セット １／４ 004018",
+      "url": "https://item.rakuten.co.jp/crecote-shop/ta029819-004018/",
+      "image": "ta029819-004018.jpg",
+      "family": "Metalセット"
+    },
+    {
+      "sku": "004170",
+      "title": "Ｗｅｒａ 自転車セット １ 004170",
+      "url": "https://item.rakuten.co.jp/crecote-shop/ta029843-004170/",
+      "image": "ta029843-004170.jpg",
+      "family": "自転車セット"
+    },
+    {
+      "sku": "003533",
+      "title": "Ｗｅｒａ ８１００ＳＡ２ サイクロップラチェットセット １／４ 003533",
+      "url": "https://item.rakuten.co.jp/crecote-shop/ta029796-003533/",
+      "image": "ta029796-003533.jpg",
+      "family": "標準セット"
+    },
+    {
+      "sku": "004046",
+      "title": "Ｗｅｒａ ８１００ＳＢ６ サイクロップラチェット「スピード」セット ３／８ 004046",
+      "url": "https://item.rakuten.co.jp/crecote-shop/ta000099-004046/",
+      "image": "ta000099-004046.jpg",
+      "family": "Speedセット"
+    },
+    {
+      "sku": "003781",
+      "title": "Ｗｅｒａ ８００６Ｃ エクステンションバー 003781",
+      "url": "https://item.rakuten.co.jp/crecote-shop/ta029809-003781/",
+      "image": "ta029809-003781.jpg",
+      "family": "エクステンション"
+    },
+    {
+      "sku": "003645",
+      "title": "Ｗｅｒａ ８１００ＳＣ２ サイクロップラチェットセット １／２ 003645",
+      "url": "https://item.rakuten.co.jp/crecote-shop/ta040492-003645/",
+      "image": "ta040492-003645.jpg",
+      "family": "標準セット"
+    },
+    {
+      "sku": "003594",
+      "title": "Ｗｅｒａ ８１００ＳＢ２ サイクロップラチェットセット ３／８ 003594",
+      "url": "https://item.rakuten.co.jp/crecote-shop/ta000069-003594/",
+      "image": "ta000069-003594.jpg",
+      "family": "標準セット"
+    },
+    {
+      "sku": "003533",
+      "title": "Ｗｅｒａ ８１００ＳＡ２ サイクロップラチェットセット １／４ 003533",
+      "url": "https://item.rakuten.co.jp/crecote-shop/ta000066-003533/",
+      "image": "ta000066-003533.jpg",
+      "family": "標準セット"
+    },
+    {
+      "sku": "003594",
+      "title": "Ｗｅｒａ ８１００ＳＢ２ サイクロップラチェットセット ３／８ 003594",
+      "url": "https://item.rakuten.co.jp/crecote-shop/ta029799-003594/",
+      "image": "ta029799-003594.jpg",
+      "family": "標準セット"
+    },
+    {
+      "sku": "003822",
+      "title": "Ｗｅｒａ ８７４０ Ｃ ＨＦ １／２ ６．０ｍｍ 003822",
+      "url": "https://item.rakuten.co.jp/crecote-shop/ta000078-003822/",
+      "image": "ta000078-003822.jpg",
+      "family": "ビットソケット"
+    },
+    {
+      "sku": "003842",
+      "title": "Ｗｅｒａ ８７４０ Ｃ ＨＦ １／２ ６．０ ｘ １４０ ｍｍ 003842",
+      "url": "https://item.rakuten.co.jp/crecote-shop/ta000088-003842/",
+      "image": "ta000088-003842.jpg",
+      "family": "ビットソケット"
+    },
+    {
+      "sku": "003970",
+      "title": "Ｗｅｒａ ＨＦ ベルトソケットセット ３／８ 003970",
+      "url": "https://item.rakuten.co.jp/crecote-shop/ta029814-003970/",
+      "image": "ta029814-003970.jpg",
+      "family": "ソケット/ベルト"
+    },
+    {
+      "sku": "004201",
+      "title": "Ｗｅｒａ ８７４０ Ｃ ＨＦ １／２ ９点セット 004201",
+      "url": "https://item.rakuten.co.jp/crecote-shop/ta029849-004201/",
+      "image": "ta029849-004201.jpg",
+      "family": "ビットソケット"
+    },
+    {
+      "sku": "004202",
+      "title": "Ｗｅｒａ ８７６７ Ｃ ＨＦ １／２ ９点セット 004202",
+      "url": "https://item.rakuten.co.jp/crecote-shop/ta029850-004202/",
+      "image": "ta029850-004202.jpg",
+      "family": "ビットソケット"
+    },
+    {
+      "sku": "003881",
+      "title": "Ｗｅｒａ ＢＥＬＴ ２ ８７４０Ａ Ｈｅｘ−Ｐｌｕｓ ＨＦ ベルトソケットセット １／４ 003881",
+      "url": "https://item.rakuten.co.jp/crecote-shop/ta029812-003881/",
+      "image": "ta029812-003881.jpg",
+      "family": "ソケット/ベルト"
+    },
+    {
+      "sku": "003880",
+      "title": "Ｗｅｒａ ＢＥＬＴ １ ８７９０ ＨＭＡ ＨＦ ベルトソケットセット １／４ 003880",
+      "url": "https://item.rakuten.co.jp/crecote-shop/ta000092-003880/",
+      "image": "ta000092-003880.jpg",
+      "family": "ソケット/ベルト"
+    },
+    {
+      "sku": "004210",
+      "title": "Ｗｅｒａ ８７４０ Ｃ ＨＦ １／２ ヘックス６点セット 004210",
+      "url": "https://item.rakuten.co.jp/crecote-shop/ta029852-004210/",
+      "image": "ta029852-004210.jpg",
+      "family": "ビットソケット"
+    },
+    {
+      "sku": "003882",
+      "title": "Ｗｅｒａ ＢＥＬＴ ３ ８７６７Ａ ＴＸ ＨＦ ベルトソケットセット １／４ 003882",
+      "url": "https://item.rakuten.co.jp/crecote-shop/ta029813-003882/",
+      "image": "ta029813-003882.jpg",
+      "family": "ソケット/ベルト"
+    },
+    {
+      "sku": "004201",
+      "title": "Ｗｅｒａ ８７４０ Ｃ ＨＦ １／２ ９点セット 004201",
+      "url": "https://item.rakuten.co.jp/crecote-shop/ta000102-004201/",
+      "image": "ta000102-004201.jpg",
+      "family": "ビットソケット"
+    },
+    {
+      "sku": "003881",
+      "title": "Ｗｅｒａ ＢＥＬＴ ２ ８７４０Ａ Ｈｅｘ−Ｐｌｕｓ ＨＦ ベルトソケットセット １／４ 003881",
+      "url": "https://item.rakuten.co.jp/crecote-shop/ta000093-003881/",
+      "image": "ta000093-003881.jpg",
+      "family": "ソケット/ベルト"
+    }
+  ],
+  "implementation_notes": {
+    "external_links_rel": "nofollow sponsored",
+    "utm_source": "sagyou_navi",
+    "article_policy": "Do not list every SKU. Use representative products as examples inside the selection framework; send users to the category CTA for the full lineup.",
+    "discontinued_policy": "Products marked 売切廃番 in the Excel should not be recommended as current purchase targets."
+  }
+}

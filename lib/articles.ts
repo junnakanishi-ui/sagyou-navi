@@ -14,6 +14,22 @@ export type Article = {
 
 export const ARTICLES: Article[] = [
   {
+    slug: "ratchet-narrow-space-fastening-zyklop-guide",
+    title:
+      "狭い場所のボルト締めを速くするには？首振り・早回しラチェットの選び方とWeraサイクロップ比較【2026年版】",
+    shortTitle: "狭い場所のボルト締めを速くするには？",
+    description:
+      "狭い場所でラチェットを振れない、ボルト締めに時間がかかる現場向けに、首振り・薄型・早回しラチェットの選び方を解説。WeraサイクロップのSpeed・Metal・Hybrid・Miniの違い、1/4・3/8・1/2の使い分け、セット選びまで実務目線で整理します。",
+    category: "guide",
+    categoryLabel: "選び方ガイド",
+    thumbnail:
+      "/images/articles/ratchet-narrow-space-fastening-zyklop-guide/narrow-space-ratchet-work-hero.jpg",
+    date: "2026-08-12",
+    readTime: "約26分",
+    available: true,
+    path: "/articles/ratchet-narrow-space-fastening-zyklop-guide",
+  },
+  {
     slug: "manual-press-fit-work-efficiency-guide",
     title:
       "圧入の手作業を効率化するには？ハンドプレスの選び方とラックピニオン・トグルの違い【2026年版】",

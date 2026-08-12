@@ -14,6 +14,22 @@ export type Article = {
 
 export const ARTICLES: Article[] = [
   {
+    slug: "cart-handle-hand-pinch-prevention-guide",
+    title:
+      "台車で手を挟む事故を防ぐには？ハンドルまわりの安全対策と用途別台車の選び方【2026年版】",
+    shortTitle: "台車で手を挟む事故を防ぐには？",
+    description:
+      "台車やカゴ台車で手を挟むヒヤリハットを減らしたい方向けに、ハンドルまわりの安全対策をわかりやすく解説。台車用緩衝材「おててまもるくん」の特長・取り付け方・適した現場に加え、樹脂製台車、折りたたみ台車、平台車、金網台車など用途別の選び方も紹介します。",
+    category: "guide",
+    categoryLabel: "選び方ガイド",
+    thumbnail:
+      "/images/articles/cart-handle-hand-pinch-prevention-guide/cart-handle-safety-hero.jpg",
+    date: "2026-08-12",
+    readTime: "約22分",
+    available: true,
+    path: "/articles/cart-handle-hand-pinch-prevention-guide",
+  },
+  {
     slug: "ratchet-narrow-space-fastening-zyklop-guide",
     title:
       "狭い場所のボルト締めを速くするには？首振り・早回しラチェットの選び方とWeraサイクロップ比較【2026年版】",

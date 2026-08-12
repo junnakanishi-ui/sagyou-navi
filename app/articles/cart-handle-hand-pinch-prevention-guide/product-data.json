@@ -1,0 +1,140 @@
+{
+  "slug": "cart-handle-hand-pinch-prevention-guide",
+  "site": "作業用品ナビ",
+  "mainKeyword": "台車 手 挟む 防止",
+  "title": "台車で手を挟む事故を防ぐには？ハンドルまわりの安全対策と用途別台車の選び方【2026年版】",
+  "description": "台車やカゴ台車で手を挟むヒヤリハットを減らしたい方向けに、ハンドルまわりの安全対策をわかりやすく解説。台車用緩衝材「おててまもるくん」の特長・取り付け方・適した現場に加え、樹脂製台車、折りたたみ台車、平台車、金網台車など用途別の選び方も紹介します。",
+  "published": "2026-08-12",
+  "mainProduct": {
+    "code": "6300065108",
+    "name": "台車用緩衝材 おててまもるくん 20t トラ柄10個セット",
+    "url": "https://www.gc-select.com/products/6300065108",
+    "imageFile": "6300065108.jpg",
+    "features": [
+      "台車・カゴ台車のハンドル部に取り付ける安全対策品",
+      "握り手と壁・柱との空間を確保しやすい",
+      "発泡ポリエチレン＋PVC表皮のやわらかい緩衝材",
+      "外径φ63mm / 内径φ23mm / 長さ95mm / 10個セット"
+    ]
+  },
+  "representativeProducts": [
+    {
+      "code": "167468",
+      "name": "カルティオ 新型 ブラック MPK-780-BK",
+      "url": "https://store.shopping.yahoo.co.jp/signcity-yshop/167468.html?sc_i=shopping-pc-web-category-storeitm-rsltlst-img&ea=",
+      "type": "樹脂製台車",
+      "useCase": "倉庫・店舗・施設の標準搬送",
+      "forWhom": "屋内の日常搬送をまず整えたい担当者"
+    },
+    {
+      "code": "190479",
+      "name": "カルティオ 新型 ブルー MPK-780-B",
+      "url": "https://store.shopping.yahoo.co.jp/signcity-yshop/190479.html?sc_i=shopping-pc-web-category-storeitm-rsltlst-img&ea=",
+      "type": "樹脂製台車",
+      "useCase": "色分け運用・複数拠点配備",
+      "forWhom": "拠点や用途ごとに台車を見分けたい担当者"
+    },
+    {
+      "code": "190475",
+      "name": "カルティオ 新型 ブラック スチールストッパー付 MPK780BKSS",
+      "url": "https://store.shopping.yahoo.co.jp/signcity-yshop/190475.html?sc_i=shopping-pc-web-category-storeitm-rsltlst-img&ea=",
+      "type": "ストッパー付き台車",
+      "useCase": "停止の多い搬送",
+      "forWhom": "積み下ろしや仮置きが多い現場の担当者"
+    },
+    {
+      "code": "159749",
+      "name": "カルティオビッグ 固定ハンドルタイプ ブラック MPK-900-BK",
+      "url": "https://store.shopping.yahoo.co.jp/signcity-yshop/159749.html?sc_i=shopping-pc-web-category-storeitm-rsltlst-img&ea=",
+      "type": "大型樹脂製台車",
+      "useCase": "荷量が多い現場",
+      "forWhom": "大箱やまとめ搬送が多い物流担当者"
+    },
+    {
+      "code": "159751",
+      "name": "カルティオビッグ 固定ハンドルタイプ オリーブ MPK-900-OG",
+      "url": "https://store.shopping.yahoo.co.jp/signcity-yshop/159751.html?sc_i=shopping-pc-web-category-storeitm-rsltlst-img&ea=",
+      "type": "大型樹脂製台車",
+      "useCase": "色分けした大型搬送",
+      "forWhom": "大型台車を拠点別に管理したい担当者"
+    },
+    {
+      "code": "228337",
+      "name": "こまわり君（新型）600X390 樹脂ストッパー付 アーセナルグレー",
+      "url": "https://store.shopping.yahoo.co.jp/signcity-yshop/228337.html?sc_i=shopping-pc-web-category-storeitm-rsltlst-img&ea=",
+      "type": "小型台車",
+      "useCase": "狭い通路・施設内",
+      "forWhom": "通路幅が狭く小回りを優先したい担当者"
+    },
+    {
+      "code": "160346",
+      "name": "ルートバン 2段式 グリーン MPB-502-GN",
+      "url": "https://store.shopping.yahoo.co.jp/signcity-yshop/160346.html?sc_i=shopping-pc-web-category-storeitm-rsltlst-img&ea=",
+      "type": "多段台車",
+      "useCase": "部材や箱の仕分け運搬",
+      "forWhom": "仕分け・ピッキングを効率化ししたい担当者"
+    },
+    {
+      "code": "159933",
+      "name": "ドンキカート 折畳ハンドル 101N",
+      "url": "https://store.shopping.yahoo.co.jp/signcity-yshop/159933.html?sc_i=shopping-pc-web-category-storeitm-rsltlst-img&ea=",
+      "type": "折りたたみ台車",
+      "useCase": "保管スペースが限られる現場",
+      "forWhom": "使わない時間の保管面積を減らしたい担当者"
+    },
+    {
+      "code": "159790",
+      "name": "グランカート 折りたたみハンドル TP-701",
+      "url": "https://store.shopping.yahoo.co.jp/signcity-yshop/159790.html?sc_i=shopping-pc-web-category-storeitm-rsltlst-img&ea=",
+      "type": "折りたたみ台車",
+      "useCase": "多拠点共有・省スペース保管",
+      "forWhom": "保管と共有運用を両立したい担当者"
+    },
+    {
+      "code": "159802",
+      "name": "アミーゴカーゴ ストッパー付 AMG-2S / MKP金網付両袖タイプ",
+      "url": "https://store.shopping.yahoo.co.jp/signcity-yshop/159802.html?sc_i=shopping-pc-web-category-storeitm-rsltlst-img&ea=",
+      "type": "金網台車",
+      "useCase": "荷崩れしやすい荷物の搬送",
+      "forWhom": "段ボール多段積みや仕分け搬送を行う現場"
+    }
+  ],
+  "categoryCtas": [
+    {
+      "name": "台車用緩衝材一覧",
+      "url": "https://www.gc-select.com/pages/search-results-page?q=%E5%8F%B0%E8%BB%8A%E7%94%A8%E7%B7%A9%E8%A1%9D%E6%9D%90"
+    },
+    {
+      "name": "樹脂製台車一覧",
+      "url": "https://store.shopping.yahoo.co.jp/signcity-yshop/bcf9bbe9c0.html?view=grid&prom=1&sc_i=shopping-pc-web-category-storeitm-cat_nrw-slctc"
+    },
+    {
+      "name": "折りたたみ台車一覧",
+      "url": "https://store.shopping.yahoo.co.jp/signcity-yshop/c0dea4eaa4.html?view=grid&prom=1&sc_i=shopping-pc-web-category-storeitm-cat_nrw-slctc"
+    },
+    {
+      "name": "平台車一覧",
+      "url": "https://store.shopping.yahoo.co.jp/signcity-yshop/cabfc2e6bc.html?view=grid&prom=1&sc_i=shopping-pc-web-category-storeitm-cat_nrw-slctc"
+    },
+    {
+      "name": "鋼鉄製台車一覧",
+      "url": "https://store.shopping.yahoo.co.jp/signcity-yshop/b9ddc5b4c0.html?view=grid&prom=1&sc_i=shopping-pc-web-category-storeitm-cat_nrw-slctc"
+    },
+    {
+      "name": "ストッパー付き台車一覧",
+      "url": "https://store.shopping.yahoo.co.jp/signcity-yshop/a5b9a5c8a5.html?view=grid&prom=1&sc_i=shopping-pc-web-category-storeitm-cat_nrw-slctc"
+    },
+    {
+      "name": "金網台車一覧",
+      "url": "https://store.shopping.yahoo.co.jp/signcity-yshop/b6e2ccd6c2.html?view=grid&prom=1&sc_i=shopping-pc-web-category-storeitm-cat_nrw-slctc"
+    },
+    {
+      "name": "コンテナ台車一覧",
+      "url": "https://store.shopping.yahoo.co.jp/signcity-yshop/25a53a5fa3b.html?view=grid&prom=1&sc_i=shopping-pc-web-category-storeitm-cat_nrw-slctc"
+    },
+    {
+      "name": "キャスター・オプション一覧",
+      "url": "https://store.shopping.yahoo.co.jp/signcity-yshop/3aa25e5a5da.html?view=grid&prom=1&sc_i=shopping-pc-web-category-storeitm-cat_nrw-slctc"
+    }
+  ]
+}

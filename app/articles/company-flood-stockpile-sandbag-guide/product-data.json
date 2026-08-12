@@ -1,0 +1,171 @@
+{
+  "slug": "company-flood-stockpile-sandbag-guide",
+  "utm": {
+    "source": "sagyou_navi",
+    "medium": "article",
+    "campaign": "company-flood-stockpile-sandbag-guide"
+  },
+  "categoryCtas": [
+    {
+      "label": "土のう一覧を見る",
+      "url": "https://www.gc-select.com/search?q=%E5%9C%9F%E3%81%AE%E3%81%86&options%5Bprefix%5D=product&utm_source=sagyou_navi&utm_medium=article&utm_campaign=company-flood-stockpile-sandbag-guide",
+      "placement": ["upper", "middle", "final"]
+    },
+    {
+      "label": "簡易トイレ一覧を見る",
+      "url": "https://www.gc-select.com/pages/search-results-page?q=%E3%83%88%E3%82%A4%E3%83%AC&utm_source=sagyou_navi&utm_medium=article&utm_campaign=company-flood-stockpile-sandbag-guide",
+      "placement": ["bcp", "final"]
+    },
+    {
+      "label": "災害対策アイテム一覧を見る",
+      "url": "https://www.gc-select.com/collections/%E5%AE%89%E5%85%A8%E6%A9%9F%E6%9D%90%E7%94%A8%E5%93%81-%E7%81%BD%E5%AE%B3%E5%AF%BE%E7%AD%96?utm_source=sagyou_navi&utm_medium=article&utm_campaign=company-flood-stockpile-sandbag-guide",
+      "placement": ["bcp", "final"]
+    }
+  ],
+  "products": [
+    {
+      "id": "1137010104",
+      "name": "スーパー土のう 50枚入り",
+      "url": "https://www.gc-select.com/products/1137010104?utm_source=sagyou_navi&utm_medium=article&utm_campaign=company-flood-stockpile-sandbag-guide",
+      "image": "/images/articles/company-flood-stockpile-sandbag-guide/products/1137010104.jpg",
+      "role": "upper-primary",
+      "problem": "土砂を確保できる拠点で、汎用的な水害用土のうを備えたい",
+      "fit": "工場、資材置場、建設会社、複数人で充填・搬送できる事業所",
+      "difference": "620×480mm。商品ページで約1年の短期使用を想定し、約25kg充填位置のブラックラインを案内",
+      "notFit": "土砂を常備できない、少人数で短時間に大量展開したい施設",
+      "check": "土砂・スコップ・充填場所・搬送人員・保管条件"
+    },
+    {
+      "id": "1137010702",
+      "name": "吸水土のう 水ピタH型 海水・真水用",
+      "url": "https://www.gc-select.com/products/1137010702?utm_source=sagyou_navi&utm_medium=article&utm_campaign=company-flood-stockpile-sandbag-guide",
+      "image": "/images/articles/company-flood-stockpile-sandbag-guide/products/1137010702.jpg",
+      "role": "upper-primary",
+      "problem": "土砂を置けない施設で省スペース備蓄したい",
+      "fit": "店舗、事務所、車庫、地下入口等",
+      "difference": "海水・真水両用。商品ページでは吸水後約10kg、海水約3分・真水約1分と案内",
+      "notFit": "吸水条件を満たせない場所、高い水圧や長時間の浸水を土のう単独で受ける想定",
+      "check": "吸水方法、吸水後重量、保管、使用後処理"
+    },
+    {
+      "id": "1137010800",
+      "name": "吸水式土のう 土NO袋#722（箱型）10枚入り",
+      "url": "https://www.gc-select.com/products/1137010800?utm_source=sagyou_navi&utm_medium=article&utm_campaign=company-flood-stockpile-sandbag-guide",
+      "image": "/images/articles/company-flood-stockpile-sandbag-guide/products/1137010800.jpg",
+      "role": "middle-comparison",
+      "problem": "吸水式で積載時の安定性も重視したい",
+      "fit": "家屋、店舗、車庫、学校、病院、駅ビル、地下道入口等",
+      "difference": "箱型、両面天然ゴムすべり止め、四隅連結紐。吸水時約23kg",
+      "notFit": "吸水条件・吸水後重量が現場運用に合わない場合",
+      "check": "吸水条件、処理方法、搬送人員"
+    },
+    {
+      "id": "1137010803",
+      "name": "スーパーダッシュバック 10枚入り",
+      "url": "https://www.gc-select.com/products/1137010803?utm_source=sagyou_navi&utm_medium=article&utm_campaign=company-flood-stockpile-sandbag-guide",
+      "image": "/images/articles/company-flood-stockpile-sandbag-guide/products/1137010803.jpg",
+      "role": "middle-comparison",
+      "problem": "複数入口へコンパクトに分散備蓄したい",
+      "fit": "事業所、店舗、倉庫の小〜中規模開口部",
+      "difference": "商品ページで2分間の吸水で20kgまで膨張、取っ手・すべり止めあり",
+      "notFit": "製品仕様を超える水位・流れを想定する場所",
+      "check": "吸水方法、使用後処理、想定設置場所"
+    },
+    {
+      "id": "1137010201",
+      "name": "まくら土のう 900×250 50枚入り",
+      "url": "https://www.gc-select.com/products/1137010201?utm_source=sagyou_navi&utm_medium=article&utm_campaign=company-flood-stockpile-sandbag-guide",
+      "image": "/images/articles/company-flood-stockpile-sandbag-guide/products/1137010201.jpg",
+      "role": "middle-niche",
+      "problem": "細長い場所・仮排水路・重しに使いたい",
+      "fit": "工事・作業所、細い配置が必要な場所",
+      "difference": "900×250mmの細長い形状",
+      "notFit": "建物入口の全面的な水防をこれだけで完結させたい場合",
+      "check": "用途、充填材、必要本数"
+    },
+    {
+      "id": "1137010202",
+      "name": "耐候性黒まくら土のう 880×270 50枚入り",
+      "url": "https://www.gc-select.com/products/1137010202?utm_source=sagyou_navi&utm_medium=article&utm_campaign=company-flood-stockpile-sandbag-guide",
+      "image": "/images/articles/company-flood-stockpile-sandbag-guide/products/1137010202.jpg",
+      "role": "middle-niche",
+      "problem": "細長い土のうを一定期間屋外で使う可能性がある",
+      "fit": "工事現場、重し用途、耐候性を確認したい場所",
+      "difference": "商品ページで耐候性1年と案内",
+      "notFit": "3年クラスの長期設置を要求する用途",
+      "check": "実際の設置期間、保管・交換条件"
+    },
+    {
+      "id": "6300049036",
+      "name": "土のうつく～る",
+      "url": "https://www.gc-select.com/products/6300049036?utm_source=sagyou_navi&utm_medium=article&utm_campaign=company-flood-stockpile-sandbag-guide",
+      "image": "/images/articles/company-flood-stockpile-sandbag-guide/products/6300049036.jpg",
+      "role": "production-efficiency",
+      "problem": "普通土のうの充填作業を少人数化・標準化したい",
+      "fit": "大量の普通土のうを平時・緊急時に作る事業所",
+      "difference": "土のう袋の自立用。折りたたみ式。商品ページでは二人一組の作業を一人で行いやすくする設計と案内",
+      "notFit": "吸水式だけを備蓄する施設",
+      "check": "保管場所、想定製作数量、作業手順"
+    },
+    {
+      "id": "1137019021",
+      "name": "ビービーワーカー4型（普通土のう4袋製作／回）",
+      "url": "https://www.gc-select.com/products/1137019021?utm_source=sagyou_navi&utm_medium=article&utm_campaign=company-flood-stockpile-sandbag-guide",
+      "image": "/images/articles/company-flood-stockpile-sandbag-guide/products/1137019021.jpg",
+      "role": "production-efficiency",
+      "problem": "複数袋をまとめて製作したい",
+      "fit": "土木・建設、水防備蓄を大量に作る拠点",
+      "difference": "4袋製作/回、540×540×280mm、5kg",
+      "notFit": "少量しか作らない拠点",
+      "check": "必要能力、設置スペース、人員"
+    },
+    {
+      "id": "1137019022",
+      "name": "ビービーワーカー16型（普通土のう16袋製作／回）",
+      "url": "https://www.gc-select.com/products/1137019022?utm_source=sagyou_navi&utm_medium=article&utm_campaign=company-flood-stockpile-sandbag-guide",
+      "image": "/images/articles/company-flood-stockpile-sandbag-guide/products/1137019022.jpg",
+      "role": "production-efficiency",
+      "problem": "より大量の普通土のうをまとめて製作したい",
+      "fit": "土木・建設、複数拠点へ供給する水防拠点",
+      "difference": "16袋製作/回。4型より高能力寄りの製作補助具",
+      "notFit": "少量しか作らない拠点",
+      "check": "必要能力、設置スペース、人員、保管場所"
+    },
+    {
+      "id": "6300050950",
+      "name": "耐候性大型土のう ツートンバッグ 1年対応 5袋セット",
+      "url": "https://www.gc-select.com/products/6300050950?utm_source=sagyou_navi&utm_medium=article&utm_campaign=company-flood-stockpile-sandbag-guide",
+      "image": "/images/articles/company-flood-stockpile-sandbag-guide/products/6300050950.jpg",
+      "role": "large-civil",
+      "problem": "災害復旧・仮設土工で大型土のうが必要",
+      "fit": "河川、道路、仮締切、仮護岸等",
+      "difference": "1m3、最大充填質量2t（20kN）、1年対応",
+      "notFit": "人力で建物入口へ並べる一般水防",
+      "check": "施工計画、吊り具、安全管理、対応年数"
+    },
+    {
+      "id": "6300050951",
+      "name": "耐候性大型土のう ツートンバッグ 3年対応 5袋セット",
+      "url": "https://www.gc-select.com/products/6300050951?utm_source=sagyou_navi&utm_medium=article&utm_campaign=company-flood-stockpile-sandbag-guide",
+      "image": "/images/articles/company-flood-stockpile-sandbag-guide/products/6300050951.jpg",
+      "role": "large-civil",
+      "problem": "より長い仮設期間を想定した大型土のうが必要",
+      "fit": "河川、道路、災害復旧等",
+      "difference": "同シリーズの3年対応タイプ",
+      "notFit": "人力で建物入口へ並べる一般水防",
+      "check": "設置期間、要求仕様、施工計画"
+    },
+    {
+      "id": "1137019003",
+      "name": "大型土のうスタンド 土のうポン",
+      "url": "https://www.gc-select.com/products/1137019003?utm_source=sagyou_navi&utm_medium=article&utm_campaign=company-flood-stockpile-sandbag-guide",
+      "image": "/images/articles/company-flood-stockpile-sandbag-guide/products/1137019003.jpg",
+      "role": "large-production-efficiency",
+      "problem": "大型土のうの製作工程を効率化したい",
+      "fit": "大型土のうを継続的に製作する土木・復旧現場",
+      "difference": "直径1100mm、分解保管可能、16kg、NETIS KK-240017-A",
+      "notFit": "普通土のうだけを製作する拠点",
+      "check": "対応する袋・重機・作業動線・安全手順"
+    }
+  ]
+}

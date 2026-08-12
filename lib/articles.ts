@@ -14,6 +14,22 @@ export type Article = {
 
 export const ARTICLES: Article[] = [
   {
+    slug: "company-flood-stockpile-sandbag-guide",
+    title:
+      "会社・工場の水害対策で何を備蓄する？土のう・吸水土のうの選び方と配置・運用【2026年版】",
+    shortTitle: "会社・工場の水害対策備蓄と土のう",
+    description:
+      "会社・工場・倉庫の水害対策で、土のうは何を何袋備えるべきか。普通土のう・吸水土のう・耐候性土のう・大型土のうの違いを、保管場所、設置人員、初動手順まで含めて実務目線で整理します。",
+    category: "guide",
+    categoryLabel: "選び方ガイド",
+    thumbnail:
+      "/images/articles/company-flood-stockpile-sandbag-guide/company-flood-preparation-sandbags-hero.jpg",
+    date: "2026-08-12",
+    readTime: "約28分",
+    available: true,
+    path: "/articles/company-flood-stockpile-sandbag-guide",
+  },
+  {
     slug: "cart-handle-hand-pinch-prevention-guide",
     title:
       "台車で手を挟む事故を防ぐには？ハンドルまわりの安全対策と用途別台車の選び方【2026年版】",

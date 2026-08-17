@@ -545,7 +545,11 @@ export default function Page() {
             <Link href="/articles/cable-cutter-cutting-capacity" className="mx-1 font-bold underline">
               ケーブルカッターの切断能力の見方
             </Link>
-            で解説しています。
+            で解説しています。反復切断の負担や作業時間を減らしたい場合は、
+            <Link href="/articles/wire-cutting-work-efficiency-guide" className="mx-1 font-bold underline">
+              電線の切断作業を効率化するには？
+            </Link>
+            も参照してください。
           </p>
           <h3 className="mt-8 mb-3 text-xl font-bold">sqは導体断面積、φは外径・口径の確認に使う</h3>
           <p className="mb-4">sqは導体の断面積、φは口径・外径の目安です。両方を確認しないと、断面積は合っても外径が大きく工具に入らないことがあります。</p>

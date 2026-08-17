@@ -62,6 +62,22 @@ export const ARTICLES: Article[] = [
     path: "/articles/ratchet-narrow-space-fastening-zyklop-guide",
   },
   {
+    slug: "wire-cutting-work-efficiency-guide",
+    title:
+      "電線の切断作業を効率化するには？太いケーブルで手が疲れる原因と工具の見直し方【2026年版】",
+    shortTitle: "電線の切断作業を効率化するには？",
+    description:
+      "太い電線やケーブルの切断で手が疲れる、時間がかかる、工具の持ち替えが多い現場向けに、手動・長柄・ラチェット・充電式・コード式をどう使い分けるかを解説。切断回数、線種・サイズ、作業姿勢、電源・バッテリ管理から省力化の判断基準を整理します。",
+    category: "guide",
+    categoryLabel: "選び方ガイド",
+    thumbnail:
+      "/images/articles/wire-cutting-work-efficiency-guide/wire-cutting-efficiency-hero.jpg",
+    date: "2026-08-17",
+    readTime: "約22分",
+    available: true,
+    path: "/articles/wire-cutting-work-efficiency-guide",
+  },
+  {
     slug: "manual-press-fit-work-efficiency-guide",
     title:
       "圧入の手作業を効率化するには？ハンドプレスの選び方とラックピニオン・トグルの違い【2026年版】",

@@ -1271,7 +1271,11 @@ export default function Page() {
           <a href="/articles/cable-cutter-selection" className="mx-1 font-bold underline">
             ケーブルカッターの選び方
           </a>
-          で詳しく解説しています。新記事では内容を重複させず、能力表の読み違い防止に重点を置きます。
+          で詳しく解説しています。本記事では内容を重複させず、能力表の読み違い防止に重点を置きます。反復回数・疲労・段取りまで含めた工程改善は
+          <a href="/articles/wire-cutting-work-efficiency-guide" className="mx-1 font-bold underline">
+            電線の切断作業を効率化するには？
+          </a>
+          を参照してください。
         </p>
         <div className="my-6 overflow-x-auto">
           <table className="w-full border-collapse">

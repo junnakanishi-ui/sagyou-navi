@@ -1,0 +1,631 @@
+{
+  "slug": "wire-cutting-work-efficiency-guide",
+  "generated_at": "2026-08-17",
+  "excel_summary": {
+    "rows": 41,
+    "unique_product_urls": 40,
+    "duplicate_rows": 1,
+    "duplicate_urls": [
+      "https://item.rakuten.co.jp/crecote-shop/ta036313-frc32a/"
+    ]
+  },
+  "cta": {
+    "hand_press": {
+      "url": "https://search.rakuten.co.jp/search/mall/%E3%83%8F%E3%83%B3%E3%83%89%E3%83%97%E3%83%AC%E3%82%B9/?sid=426972",
+      "tracked_url": "https://search.rakuten.co.jp/search/mall/%E3%83%8F%E3%83%B3%E3%83%89%E3%83%97%E3%83%AC%E3%82%B9/?sid=426972&utm_source=sagyou_navi&utm_medium=article&utm_campaign=wire_cutting_work_efficiency"
+    },
+    "hand_tools": {
+      "url": "https://item.rakuten.co.jp/crecote-shop/c/0000000185/",
+      "tracked_url": "https://item.rakuten.co.jp/crecote-shop/c/0000000185/?utm_source=sagyou_navi&utm_medium=article&utm_campaign=wire_cutting_work_efficiency"
+    },
+    "toolbox": {
+      "url": "https://store.shopping.yahoo.co.jp/signcity-yshop/9129bf6abc8.html",
+      "tracked_url": "https://store.shopping.yahoo.co.jp/signcity-yshop/9129bf6abc8.html?utm_source=sagyou_navi&utm_medium=article&utm_campaign=wire_cutting_work_efficiency"
+    },
+    "cart": {
+      "url": "https://store.shopping.yahoo.co.jp/signcity-yshop/b1bfc8c2c2.html",
+      "tracked_url": "https://store.shopping.yahoo.co.jp/signcity-yshop/b1bfc8c2c2.html?utm_source=sagyou_navi&utm_medium=article&utm_campaign=wire_cutting_work_efficiency"
+    },
+    "workbench": {
+      "url": "https://store.shopping.yahoo.co.jp/signcity-yshop/e2ea8bb6c2c.html",
+      "tracked_url": "https://store.shopping.yahoo.co.jp/signcity-yshop/e2ea8bb6c2c.html?utm_source=sagyou_navi&utm_medium=article&utm_campaign=wire_cutting_work_efficiency"
+    },
+    "trusco": {
+      "url": "https://item.rakuten.co.jp/crecote-shop/c/0000000043/?l-id=shoptop_shopmenu_categorypage_16",
+      "tracked_url": "https://item.rakuten.co.jp/crecote-shop/c/0000000043/?l-id=shoptop_shopmenu_categorypage_16&utm_source=sagyou_navi&utm_medium=article&utm_campaign=wire_cutting_work_efficiency"
+    }
+  },
+  "featured_product_keys": [
+    "9512165",
+    "600500",
+    "frc32a",
+    "s7k50m",
+    "ez45a7xb",
+    "hpc65b"
+  ],
+  "products": [
+    {
+      "id": 1,
+      "name_raw": "ＣＡＣＴＵＳ　ケーブルカッターアタッチメント CCH460A",
+      "product_url": "https://item.rakuten.co.jp/crecote-shop/ta035409-cch460a/",
+      "image_file": "ta035409-cch460a.jpg",
+      "category": "attachment",
+      "source": "Excel添付データ（商品名・URL・画像ファイル名）",
+      "spec_note": "商品タイトルから性能値を推測せず、本文で数値を使う場合はメーカー公式等で確認する。",
+      "article_role": "比較表・関連商品候補",
+      "featured": false,
+      "verified": null,
+      "tracked_url": "https://item.rakuten.co.jp/crecote-shop/ta035409-cch460a/?utm_source=sagyou_navi&utm_medium=article&utm_campaign=wire_cutting_work_efficiency"
+    },
+    {
+      "id": 2,
+      "name_raw": "ＣＡＣＴＵＳ　手動式ケーブルカッター CC325",
+      "product_url": "https://item.rakuten.co.jp/crecote-shop/ta035404-cc325/",
+      "image_file": "ta035404-cc325.jpg",
+      "category": "manual_cutter",
+      "source": "Excel添付データ（商品名・URL・画像ファイル名）",
+      "spec_note": "商品タイトルから性能値を推測せず、本文で数値を使う場合はメーカー公式等で確認する。",
+      "article_role": "比較表・関連商品候補",
+      "featured": false,
+      "verified": null,
+      "tracked_url": "https://item.rakuten.co.jp/crecote-shop/ta035404-cc325/?utm_source=sagyou_navi&utm_medium=article&utm_campaign=wire_cutting_work_efficiency"
+    },
+    {
+      "id": 3,
+      "name_raw": "ＦＥＬＣＯ　ケーブルカッター　Ｃ７　１９０ＭＭ　切断能力７ｍｍ FELCOC7",
+      "product_url": "https://item.rakuten.co.jp/crecote-shop/ta036261-felcoc7/",
+      "image_file": "ta036261-felcoc7.jpg",
+      "category": "manual_cutter",
+      "source": "Excel添付データ（商品名・URL・画像ファイル名）",
+      "spec_note": "商品タイトルから性能値を推測せず、本文で数値を使う場合はメーカー公式等で確認する。",
+      "article_role": "比較表・関連商品候補",
+      "featured": false,
+      "verified": null,
+      "tracked_url": "https://item.rakuten.co.jp/crecote-shop/ta036261-felcoc7/?utm_source=sagyou_navi&utm_medium=article&utm_campaign=wire_cutting_work_efficiency"
+    },
+    {
+      "id": 4,
+      "name_raw": "ＡＲＭ　ケーブルカッター４５０ｍｍ KC450",
+      "product_url": "https://item.rakuten.co.jp/crecote-shop/ta037317-kc450/",
+      "image_file": "ta037317-kc450.jpg",
+      "category": "manual_cutter",
+      "source": "Excel添付データ（商品名・URL・画像ファイル名）",
+      "spec_note": "商品タイトルから性能値を推測せず、本文で数値を使う場合はメーカー公式等で確認する。",
+      "article_role": "比較表・関連商品候補",
+      "featured": false,
+      "verified": null,
+      "tracked_url": "https://item.rakuten.co.jp/crecote-shop/ta037317-kc450/?utm_source=sagyou_navi&utm_medium=article&utm_campaign=wire_cutting_work_efficiency"
+    },
+    {
+      "id": 5,
+      "name_raw": "ＩＤＥＡＬ　ケーブルカッター UPB76",
+      "product_url": "https://item.rakuten.co.jp/crecote-shop/ta040251-upb76/",
+      "image_file": "ta040251-upb76.jpg",
+      "category": "manual_cutter",
+      "source": "Excel添付データ（商品名・URL・画像ファイル名）",
+      "spec_note": "商品タイトルから性能値を推測せず、本文で数値を使う場合はメーカー公式等で確認する。",
+      "article_role": "比較表・関連商品候補",
+      "featured": false,
+      "verified": null,
+      "tracked_url": "https://item.rakuten.co.jp/crecote-shop/ta040251-upb76/?utm_source=sagyou_navi&utm_medium=article&utm_campaign=wire_cutting_work_efficiency"
+    },
+    {
+      "id": 6,
+      "name_raw": "ＩＤＥＡＬ　ケーブルカッター UPB41",
+      "product_url": "https://item.rakuten.co.jp/crecote-shop/ta040250-upb41/",
+      "image_file": "ta040250-upb41.jpg",
+      "category": "manual_cutter",
+      "source": "Excel添付データ（商品名・URL・画像ファイル名）",
+      "spec_note": "商品タイトルから性能値を推測せず、本文で数値を使う場合はメーカー公式等で確認する。",
+      "article_role": "比較表・関連商品候補",
+      "featured": false,
+      "verified": null,
+      "tracked_url": "https://item.rakuten.co.jp/crecote-shop/ta040250-upb41/?utm_source=sagyou_navi&utm_medium=article&utm_campaign=wire_cutting_work_efficiency"
+    },
+    {
+      "id": 7,
+      "name_raw": "ＫＬＥＩＮ　ケーブルカッター　コンフォートハンドル　２５０ｍｍ J63050",
+      "product_url": "https://item.rakuten.co.jp/crecote-shop/ta036974-j63050/",
+      "image_file": "ta036974-j63050.jpg",
+      "category": "manual_cutter",
+      "source": "Excel添付データ（商品名・URL・画像ファイル名）",
+      "spec_note": "商品タイトルから性能値を推測せず、本文で数値を使う場合はメーカー公式等で確認する。",
+      "article_role": "比較表・関連商品候補",
+      "featured": false,
+      "verified": null,
+      "tracked_url": "https://item.rakuten.co.jp/crecote-shop/ta036974-j63050/?utm_source=sagyou_navi&utm_medium=article&utm_campaign=wire_cutting_work_efficiency"
+    },
+    {
+      "id": 8,
+      "name_raw": "ワイドミュラー　ケーブルカッター　ＫＴ　８ 9002650000",
+      "product_url": "https://item.rakuten.co.jp/crecote-shop/ta033837-9002650000/",
+      "image_file": "ta033837-9002650000.jpg",
+      "category": "manual_cutter",
+      "source": "Excel添付データ（商品名・URL・画像ファイル名）",
+      "spec_note": "商品タイトルから性能値を推測せず、本文で数値を使う場合はメーカー公式等で確認する。",
+      "article_role": "比較表・関連商品候補",
+      "featured": false,
+      "verified": null,
+      "tracked_url": "https://item.rakuten.co.jp/crecote-shop/ta033837-9002650000/?utm_source=sagyou_navi&utm_medium=article&utm_campaign=wire_cutting_work_efficiency"
+    },
+    {
+      "id": 9,
+      "name_raw": "フジ矢　アルミケーブルカッター 600500",
+      "product_url": "https://item.rakuten.co.jp/crecote-shop/ta032767-600500/",
+      "image_file": "ta032767-600500.jpg",
+      "category": "manual_cutter",
+      "source": "Excel添付データ（商品名・URL・画像ファイル名）",
+      "spec_note": "商品タイトルから性能値を推測せず、本文で数値を使う場合はメーカー公式等で確認する。",
+      "article_role": "長いハンドルで太めの線を手動切断",
+      "featured": true,
+      "verified": {
+        "role": "長いハンドルで太めの線を手動切断",
+        "verified_specs": [
+          "フジ矢公式で全長500mm",
+          "IV線250mm²（φ26）、VVR線単芯100mm²（φ20）の切断能力を案内",
+          "アルミパイプハンドルを採用"
+        ],
+        "official_source": "フジ矢公式 600-500",
+        "official_url": "https://www.fujiya-kk.com/products_fujiya/600-500/",
+        "fit": "電源を使わず、長柄のてこを活かせる作業スペースがある現場",
+        "avoid": "狭所や、長柄の取り回しが難しい場所"
+      },
+      "tracked_url": "https://item.rakuten.co.jp/crecote-shop/ta032767-600500/?utm_source=sagyou_navi&utm_medium=article&utm_campaign=wire_cutting_work_efficiency"
+    },
+    {
+      "id": 10,
+      "name_raw": "ＨＩＴ　ケーブルカッターショートハンドル SC250SH",
+      "product_url": "https://item.rakuten.co.jp/crecote-shop/ta039152-sc250sh/",
+      "image_file": "ta039152-sc250sh.jpg",
+      "category": "manual_cutter",
+      "source": "Excel添付データ（商品名・URL・画像ファイル名）",
+      "spec_note": "商品タイトルから性能値を推測せず、本文で数値を使う場合はメーカー公式等で確認する。",
+      "article_role": "比較表・関連商品候補",
+      "featured": false,
+      "verified": null,
+      "tracked_url": "https://item.rakuten.co.jp/crecote-shop/ta039152-sc250sh/?utm_source=sagyou_navi&utm_medium=article&utm_campaign=wire_cutting_work_efficiency"
+    },
+    {
+      "id": 11,
+      "name_raw": "エビ　ケーブルカッター CK150",
+      "product_url": "https://item.rakuten.co.jp/crecote-shop/ta035429-ck150/",
+      "image_file": "ta035429-ck150.jpg",
+      "category": "manual_cutter",
+      "source": "Excel添付データ（商品名・URL・画像ファイル名）",
+      "spec_note": "商品タイトルから性能値を推測せず、本文で数値を使う場合はメーカー公式等で確認する。",
+      "article_role": "比較表・関連商品候補",
+      "featured": false,
+      "verified": null,
+      "tracked_url": "https://item.rakuten.co.jp/crecote-shop/ta035429-ck150/?utm_source=sagyou_navi&utm_medium=article&utm_campaign=wire_cutting_work_efficiency"
+    },
+    {
+      "id": 12,
+      "name_raw": "ＫＮＩＰＥＸ　ケーブルカッター　コンフォートハンドル　１６５ｍｍ 9512165",
+      "product_url": "https://item.rakuten.co.jp/crecote-shop/ta034000-9512165/",
+      "image_file": "ta034000-9512165.jpg",
+      "category": "manual_cutter",
+      "source": "Excel添付データ（商品名・URL・画像ファイル名）",
+      "spec_note": "商品タイトルから性能値を推測せず、本文で数値を使う場合はメーカー公式等で確認する。",
+      "article_role": "小径〜中径を手早く処理するコンパクト手動",
+      "featured": true,
+      "verified": {
+        "role": "小径〜中径を手早く処理するコンパクト手動",
+        "verified_specs": [
+          "メーカー公式で全長165mm",
+          "より線の銅・アルミケーブルは直径15mmまで、50mm²までと案内"
+        ],
+        "official_source": "KNIPEX公式製品ページ（9512165）",
+        "official_url": "https://www.knipex.com/products/cable-and-wire-rope-shears/cable-shears/cable-shears/9512165",
+        "fit": "携帯性を重視し、対象線が能力範囲内で切断本数も多すぎない作業",
+        "avoid": "太物を高頻度で連続切断する工程"
+      },
+      "tracked_url": "https://item.rakuten.co.jp/crecote-shop/ta034000-9512165/?utm_source=sagyou_navi&utm_medium=article&utm_campaign=wire_cutting_work_efficiency"
+    },
+    {
+      "id": 13,
+      "name_raw": "ワイドミュラー　ケーブルカッター　ＫＴ　５５ 9202060000",
+      "product_url": "https://item.rakuten.co.jp/crecote-shop/ta033908-9202060000/",
+      "image_file": "ta033908-9202060000.jpg",
+      "category": "manual_cutter",
+      "source": "Excel添付データ（商品名・URL・画像ファイル名）",
+      "spec_note": "商品タイトルから性能値を推測せず、本文で数値を使う場合はメーカー公式等で確認する。",
+      "article_role": "比較表・関連商品候補",
+      "featured": false,
+      "verified": null,
+      "tracked_url": "https://item.rakuten.co.jp/crecote-shop/ta033908-9202060000/?utm_source=sagyou_navi&utm_medium=article&utm_campaign=wire_cutting_work_efficiency"
+    },
+    {
+      "id": 14,
+      "name_raw": "ＷＡＧＯ　ケーブルカッター及びストリッパ 2061125PK",
+      "product_url": "https://item.rakuten.co.jp/crecote-shop/ta031338-2061125pk/",
+      "image_file": "ta031338-2061125pk.jpg",
+      "category": "stripper_combination",
+      "source": "Excel添付データ（商品名・URL・画像ファイル名）",
+      "spec_note": "商品タイトルから性能値を推測せず、本文で数値を使う場合はメーカー公式等で確認する。",
+      "article_role": "比較表・関連商品候補",
+      "featured": false,
+      "verified": null,
+      "tracked_url": "https://item.rakuten.co.jp/crecote-shop/ta031338-2061125pk/?utm_source=sagyou_navi&utm_medium=article&utm_campaign=wire_cutting_work_efficiency"
+    },
+    {
+      "id": 15,
+      "name_raw": "ＨＩＴ　ケーブルカッター替刃 SCC250R",
+      "product_url": "https://item.rakuten.co.jp/crecote-shop/ta039155-scc250r/",
+      "image_file": "ta039155-scc250r.jpg",
+      "category": "replacement_blade",
+      "source": "Excel添付データ（商品名・URL・画像ファイル名）",
+      "spec_note": "商品タイトルから性能値を推測せず、本文で数値を使う場合はメーカー公式等で確認する。",
+      "article_role": "比較表・関連商品候補",
+      "featured": false,
+      "verified": null,
+      "tracked_url": "https://item.rakuten.co.jp/crecote-shop/ta039155-scc250r/?utm_source=sagyou_navi&utm_medium=article&utm_campaign=wire_cutting_work_efficiency"
+    },
+    {
+      "id": 16,
+      "name_raw": "フジ矢　ケーブルカッターラチェットタイプ FRC32A",
+      "product_url": "https://item.rakuten.co.jp/crecote-shop/ta036313-frc32a/",
+      "image_file": "ta036313-frc32a.jpg",
+      "category": "ratchet_cutter",
+      "source": "Excel添付データ（商品名・URL・画像ファイル名）",
+      "spec_note": "商品タイトルから性能値を推測せず、本文で数値を使う場合はメーカー公式等で確認する。",
+      "article_role": "ラチェット機構で太物を手動切断",
+      "featured": true,
+      "verified": {
+        "role": "ラチェット機構で太物を手動切断",
+        "verified_specs": [
+          "フジ矢公式で全長260mm",
+          "IV線325mm²（φ29）、CV線単芯250mm²（φ28）などの能力を案内",
+          "途中解除用のストッパーを備える"
+        ],
+        "official_source": "フジ矢公式 FRCシリーズ",
+        "official_url": "https://www.fujiya-kk.com/products_fujiya/frc/",
+        "fit": "長柄ほど大きな振り幅を取りづらいが、手動で太いケーブルを処理したい場面",
+        "avoid": "切断回数が非常に多く、反復負担自体を減らしたい工程"
+      },
+      "tracked_url": "https://item.rakuten.co.jp/crecote-shop/ta036313-frc32a/?utm_source=sagyou_navi&utm_medium=article&utm_campaign=wire_cutting_work_efficiency"
+    },
+    {
+      "id": 17,
+      "name_raw": "ＦＥＬＣＯ　ケーブルカッター　Ｃ１６　５９０ＭＭ FELCOC16",
+      "product_url": "https://item.rakuten.co.jp/crecote-shop/ta036259-felcoc16/",
+      "image_file": "ta036259-felcoc16.jpg",
+      "category": "manual_cutter",
+      "source": "Excel添付データ（商品名・URL・画像ファイル名）",
+      "spec_note": "商品タイトルから性能値を推測せず、本文で数値を使う場合はメーカー公式等で確認する。",
+      "article_role": "比較表・関連商品候補",
+      "featured": false,
+      "verified": null,
+      "tracked_url": "https://item.rakuten.co.jp/crecote-shop/ta036259-felcoc16/?utm_source=sagyou_navi&utm_medium=article&utm_campaign=wire_cutting_work_efficiency"
+    },
+    {
+      "id": 18,
+      "name_raw": "ＩＤＥＡＬ　ケーブルカッター UPB240",
+      "product_url": "https://item.rakuten.co.jp/crecote-shop/ta040249-upb240/",
+      "image_file": "ta040249-upb240.jpg",
+      "category": "manual_cutter",
+      "source": "Excel添付データ（商品名・URL・画像ファイル名）",
+      "spec_note": "商品タイトルから性能値を推測せず、本文で数値を使う場合はメーカー公式等で確認する。",
+      "article_role": "比較表・関連商品候補",
+      "featured": false,
+      "verified": null,
+      "tracked_url": "https://item.rakuten.co.jp/crecote-shop/ta040249-upb240/?utm_source=sagyou_navi&utm_medium=article&utm_campaign=wire_cutting_work_efficiency"
+    },
+    {
+      "id": 19,
+      "name_raw": "ＷＡＧＯ　ワゴ　２０６−１１８　ケーブルカッター 206118PK",
+      "product_url": "https://item.rakuten.co.jp/crecote-shop/ta031339-206118pk/",
+      "image_file": "ta031339-206118pk.jpg",
+      "category": "manual_cutter",
+      "source": "Excel添付データ（商品名・URL・画像ファイル名）",
+      "spec_note": "商品タイトルから性能値を推測せず、本文で数値を使う場合はメーカー公式等で確認する。",
+      "article_role": "比較表・関連商品候補",
+      "featured": false,
+      "verified": null,
+      "tracked_url": "https://item.rakuten.co.jp/crecote-shop/ta031339-206118pk/?utm_source=sagyou_navi&utm_medium=article&utm_campaign=wire_cutting_work_efficiency"
+    },
+    {
+      "id": 20,
+      "name_raw": "泉　充電式ケーブルカッター S7K50M",
+      "product_url": "https://item.rakuten.co.jp/crecote-shop/ta039111-s7k50m/",
+      "image_file": "ta039111-s7k50m.jpg",
+      "category": "powered_cutter",
+      "source": "Excel添付データ（商品名・URL・画像ファイル名）",
+      "spec_note": "商品タイトルから性能値を推測せず、本文で数値を使う場合はメーカー公式等で確認する。",
+      "article_role": "反復切断の戻し操作まで含めて省力化する充電式",
+      "featured": true,
+      "verified": {
+        "role": "反復切断の戻し操作まで含めて省力化する充電式",
+        "verified_specs": [
+          "マクセルイズミ公式で口開き50mm",
+          "切断完了時のオートリバース機能",
+          "切断ケーブル径に合わせた戻り量調整機構",
+          "18V Makitaバッテリ仕様、バッテリ込み質量2.9kg"
+        ],
+        "official_source": "マクセルイズミ公式 S7-K50M",
+        "official_url": "https://www.izumi.maxell.co.jp/kougu/products/S7-K50M/",
+        "fit": "太物の切断を繰り返し、1回ごとの戻し操作や握力負担も削減したい現場",
+        "avoid": "少量・小径だけで、充電工具を持ち込むメリットが小さい作業"
+      },
+      "tracked_url": "https://item.rakuten.co.jp/crecote-shop/ta039111-s7k50m/?utm_source=sagyou_navi&utm_medium=article&utm_campaign=wire_cutting_work_efficiency"
+    },
+    {
+      "id": 21,
+      "name_raw": "ＤＡＩＡ　ケーブルカッター　ＡＣ１００Ｖコード式 HPC65B",
+      "product_url": "https://item.rakuten.co.jp/crecote-shop/ta041396-hpc65b/",
+      "image_file": "ta041396-hpc65b.jpg",
+      "category": "powered_cutter",
+      "source": "Excel添付データ（商品名・URL・画像ファイル名）",
+      "spec_note": "商品タイトルから性能値を推測せず、本文で数値を使う場合はメーカー公式等で確認する。",
+      "article_role": "定置・電源確保環境でコード式を検討する候補",
+      "featured": true,
+      "verified": {
+        "role": "定置・電源確保環境でコード式を検討する候補",
+        "verified_specs": [
+          "添付Excelの商品名でAC100Vコード式として確認",
+          "具体的な切断能力は導入前にメーカー公式・取扱説明書で要確認"
+        ],
+        "official_source": "DAIA公式HPCシリーズ／購入前に型番HPC65B仕様確認",
+        "official_url": "https://www.daia.co.jp/",
+        "fit": "電源を確保できる定置作業や、バッテリ残量管理を避けたい環境",
+        "avoid": "移動が多い現場、コード取り回しが支障になる場所"
+      },
+      "tracked_url": "https://item.rakuten.co.jp/crecote-shop/ta041396-hpc65b/?utm_source=sagyou_navi&utm_medium=article&utm_campaign=wire_cutting_work_efficiency"
+    },
+    {
+      "id": 22,
+      "name_raw": "泉　充電式ケーブルカッター S7K50",
+      "product_url": "https://item.rakuten.co.jp/crecote-shop/ta039110-s7k50/",
+      "image_file": "ta039110-s7k50.jpg",
+      "category": "powered_cutter",
+      "source": "Excel添付データ（商品名・URL・画像ファイル名）",
+      "spec_note": "商品タイトルから性能値を推測せず、本文で数値を使う場合はメーカー公式等で確認する。",
+      "article_role": "比較表・関連商品候補",
+      "featured": false,
+      "verified": null,
+      "tracked_url": "https://item.rakuten.co.jp/crecote-shop/ta039110-s7k50/?utm_source=sagyou_navi&utm_medium=article&utm_campaign=wire_cutting_work_efficiency"
+    },
+    {
+      "id": 23,
+      "name_raw": "ＣＡＣＴＵＳ　コードレス電動油圧式圧着工具 EV250DL",
+      "product_url": "https://item.rakuten.co.jp/crecote-shop/ta041259-ev250dl/",
+      "image_file": "ta041259-ev250dl.jpg",
+      "category": "crimping_related",
+      "source": "Excel添付データ（商品名・URL・画像ファイル名）",
+      "spec_note": "商品タイトルから性能値を推測せず、本文で数値を使う場合はメーカー公式等で確認する。",
+      "article_role": "比較表・関連商品候補",
+      "featured": false,
+      "verified": null,
+      "tracked_url": "https://item.rakuten.co.jp/crecote-shop/ta041259-ev250dl/?utm_source=sagyou_navi&utm_medium=article&utm_campaign=wire_cutting_work_efficiency"
+    },
+    {
+      "id": 24,
+      "name_raw": "ＦＥＬＣＯ　ケーブルカッター　Ｃ１１２　７３０ＭＭ FELCOC112",
+      "product_url": "https://item.rakuten.co.jp/crecote-shop/ta036257-felcoc112/",
+      "image_file": "ta036257-felcoc112.jpg",
+      "category": "manual_cutter",
+      "source": "Excel添付データ（商品名・URL・画像ファイル名）",
+      "spec_note": "商品タイトルから性能値を推測せず、本文で数値を使う場合はメーカー公式等で確認する。",
+      "article_role": "比較表・関連商品候補",
+      "featured": false,
+      "verified": null,
+      "tracked_url": "https://item.rakuten.co.jp/crecote-shop/ta036257-felcoc112/?utm_source=sagyou_navi&utm_medium=article&utm_campaign=wire_cutting_work_efficiency"
+    },
+    {
+      "id": 25,
+      "name_raw": "ＨＯＺＡＮ　電気工事士技能試験　工具セット DK11",
+      "product_url": "https://item.rakuten.co.jp/crecote-shop/ta035763-dk11/",
+      "image_file": "ta035763-dk11.jpg",
+      "category": "tool_set",
+      "source": "Excel添付データ（商品名・URL・画像ファイル名）",
+      "spec_note": "商品タイトルから性能値を推測せず、本文で数値を使う場合はメーカー公式等で確認する。",
+      "article_role": "比較表・関連商品候補",
+      "featured": false,
+      "verified": null,
+      "tracked_url": "https://item.rakuten.co.jp/crecote-shop/ta035763-dk11/?utm_source=sagyou_navi&utm_medium=article&utm_campaign=wire_cutting_work_efficiency"
+    },
+    {
+      "id": 26,
+      "name_raw": "ｍｉｌｗａｕｋｅｅ　（本体のみ）　Ｍ１２　３２ｍｍ　ケーブルカッター（本体のみ） M12CC0APJ",
+      "product_url": "https://item.rakuten.co.jp/crecote-shop/ta037547-m12cc0apj/",
+      "image_file": "ta037547-m12cc0apj.jpg",
+      "category": "manual_cutter",
+      "source": "Excel添付データ（商品名・URL・画像ファイル名）",
+      "spec_note": "商品タイトルから性能値を推測せず、本文で数値を使う場合はメーカー公式等で確認する。",
+      "article_role": "比較表・関連商品候補",
+      "featured": false,
+      "verified": null,
+      "tracked_url": "https://item.rakuten.co.jp/crecote-shop/ta037547-m12cc0apj/?utm_source=sagyou_navi&utm_medium=article&utm_campaign=wire_cutting_work_efficiency"
+    },
+    {
+      "id": 27,
+      "name_raw": "Ｐａｎａｓｏｎｉｃ　デュアル　充電ケーブルカッター EZ45A7XB",
+      "product_url": "https://item.rakuten.co.jp/crecote-shop/ta036145-ez45a7xb/",
+      "image_file": "ta036145-ez45a7xb.jpg",
+      "category": "powered_cutter",
+      "source": "Excel添付データ（商品名・URL・画像ファイル名）",
+      "spec_note": "商品タイトルから性能値を推測せず、本文で数値を使う場合はメーカー公式等で確認する。",
+      "article_role": "複数線種を扱う現場の充電式候補",
+      "featured": true,
+      "verified": {
+        "role": "複数線種を扱う現場の充電式候補",
+        "verified_specs": [
+          "Panasonic公式FAQでCV線250mm²（φ28）、CVT線60mm²（φ32）、IV線325mm²（φ29）、VVR線3心38mm²（φ30）の最大切断能力を案内"
+        ],
+        "official_source": "Panasonic公式FAQ EZ45A7",
+        "official_url": "https://jpn.faq.panasonic.com/app/answers/detail/a_id/106288/",
+        "fit": "対応線種・サイズを公式仕様と照合したうえで、充電式による省力化を図りたい現場",
+        "avoid": "対象ケーブルが最大能力外、または既存バッテリ運用と合わない場合"
+      },
+      "tracked_url": "https://item.rakuten.co.jp/crecote-shop/ta036145-ez45a7xb/?utm_source=sagyou_navi&utm_medium=article&utm_campaign=wire_cutting_work_efficiency"
+    },
+    {
+      "id": 28,
+      "name_raw": "ＫＮＩＰＥＸ　伸縮式ケーブルカッター　全長５７０ｍｍ 9532038",
+      "product_url": "https://item.rakuten.co.jp/crecote-shop/ta034021-9532038/",
+      "image_file": "ta034021-9532038.jpg",
+      "category": "manual_cutter",
+      "source": "Excel添付データ（商品名・URL・画像ファイル名）",
+      "spec_note": "商品タイトルから性能値を推測せず、本文で数値を使う場合はメーカー公式等で確認する。",
+      "article_role": "比較表・関連商品候補",
+      "featured": false,
+      "verified": null,
+      "tracked_url": "https://item.rakuten.co.jp/crecote-shop/ta034021-9532038/?utm_source=sagyou_navi&utm_medium=article&utm_campaign=wire_cutting_work_efficiency"
+    },
+    {
+      "id": 29,
+      "name_raw": "ＥＸＥＮＡ　充電圧着器　黒 EZ1W31F10SB",
+      "product_url": "https://item.rakuten.co.jp/crecote-shop/ta036141-ez1w31f10sb/",
+      "image_file": "ta036141-ez1w31f10sb.jpg",
+      "category": "crimping_related",
+      "source": "Excel添付データ（商品名・URL・画像ファイル名）",
+      "spec_note": "商品タイトルから性能値を推測せず、本文で数値を使う場合はメーカー公式等で確認する。",
+      "article_role": "比較表・関連商品候補",
+      "featured": false,
+      "verified": null,
+      "tracked_url": "https://item.rakuten.co.jp/crecote-shop/ta036141-ez1w31f10sb/?utm_source=sagyou_navi&utm_medium=article&utm_campaign=wire_cutting_work_efficiency"
+    },
+    {
+      "id": 30,
+      "name_raw": "ＫＮＩＰＥＸ　絶縁ケーブルカッター　１０００Ｖ絶縁ハンドル（バネ付き）　１６５ｍｍ 9526165",
+      "product_url": "https://item.rakuten.co.jp/crecote-shop/ta034018-9526165/",
+      "image_file": "ta034018-9526165.jpg",
+      "category": "insulated_manual_cutter",
+      "source": "Excel添付データ（商品名・URL・画像ファイル名）",
+      "spec_note": "商品タイトルから性能値を推測せず、本文で数値を使う場合はメーカー公式等で確認する。",
+      "article_role": "比較表・関連商品候補",
+      "featured": false,
+      "verified": null,
+      "tracked_url": "https://item.rakuten.co.jp/crecote-shop/ta034018-9526165/?utm_source=sagyou_navi&utm_medium=article&utm_campaign=wire_cutting_work_efficiency"
+    },
+    {
+      "id": 31,
+      "name_raw": "ＫＬＥＩＮ　通信ケーブルカッター　６５０ｍｍ 63041",
+      "product_url": "https://item.rakuten.co.jp/crecote-shop/ta032996-63041/",
+      "image_file": "ta032996-63041.jpg",
+      "category": "manual_cutter",
+      "source": "Excel添付データ（商品名・URL・画像ファイル名）",
+      "spec_note": "商品タイトルから性能値を推測せず、本文で数値を使う場合はメーカー公式等で確認する。",
+      "article_role": "比較表・関連商品候補",
+      "featured": false,
+      "verified": null,
+      "tracked_url": "https://item.rakuten.co.jp/crecote-shop/ta032996-63041/?utm_source=sagyou_navi&utm_medium=article&utm_campaign=wire_cutting_work_efficiency"
+    },
+    {
+      "id": 32,
+      "name_raw": "ＫＮＩＰＥＸ　絶縁ケーブルカッター　１０００Ｖ 9506230",
+      "product_url": "https://item.rakuten.co.jp/crecote-shop/ta033996-9506230/",
+      "image_file": "ta033996-9506230.jpg",
+      "category": "insulated_manual_cutter",
+      "source": "Excel添付データ（商品名・URL・画像ファイル名）",
+      "spec_note": "商品タイトルから性能値を推測せず、本文で数値を使う場合はメーカー公式等で確認する。",
+      "article_role": "比較表・関連商品候補",
+      "featured": false,
+      "verified": null,
+      "tracked_url": "https://item.rakuten.co.jp/crecote-shop/ta033996-9506230/?utm_source=sagyou_navi&utm_medium=article&utm_campaign=wire_cutting_work_efficiency"
+    },
+    {
+      "id": 33,
+      "name_raw": "ＫＮＩＰＥＸ　プライヤーレンチ＋ケーブルカッターセット　航空機仕様 001972V01",
+      "product_url": "https://item.rakuten.co.jp/crecote-shop/ta029735-001972v01/",
+      "image_file": "ta029735-001972v01.jpg",
+      "category": "tool_set",
+      "source": "Excel添付データ（商品名・URL・画像ファイル名）",
+      "spec_note": "商品タイトルから性能値を推測せず、本文で数値を使う場合はメーカー公式等で確認する。",
+      "article_role": "比較表・関連商品候補",
+      "featured": false,
+      "verified": null,
+      "tracked_url": "https://item.rakuten.co.jp/crecote-shop/ta029735-001972v01/?utm_source=sagyou_navi&utm_medium=article&utm_campaign=wire_cutting_work_efficiency"
+    },
+    {
+      "id": 34,
+      "name_raw": "ＫＮＩＰＥＸ　絶縁工具３点セット（ニッパー２種類、ケーブルカッター） 003130BKV02",
+      "product_url": "https://item.rakuten.co.jp/crecote-shop/ta029790-003130bkv02/",
+      "image_file": "ta029790-003130bkv02.jpg",
+      "category": "tool_set",
+      "source": "Excel添付データ（商品名・URL・画像ファイル名）",
+      "spec_note": "商品タイトルから性能値を推測せず、本文で数値を使う場合はメーカー公式等で確認する。",
+      "article_role": "比較表・関連商品候補",
+      "featured": false,
+      "verified": null,
+      "tracked_url": "https://item.rakuten.co.jp/crecote-shop/ta029790-003130bkv02/?utm_source=sagyou_navi&utm_medium=article&utm_campaign=wire_cutting_work_efficiency"
+    },
+    {
+      "id": 35,
+      "name_raw": "ＫＮＩＰＥＸ　９５３２−０６０　ラチェット式ケーブルカッター　ハンドル伸縮幅６００−８１０ｍｍ 9532060",
+      "product_url": "https://item.rakuten.co.jp/crecote-shop/ta034022-9532060/",
+      "image_file": "ta034022-9532060.jpg",
+      "category": "ratchet_cutter",
+      "source": "Excel添付データ（商品名・URL・画像ファイル名）",
+      "spec_note": "商品タイトルから性能値を推測せず、本文で数値を使う場合はメーカー公式等で確認する。",
+      "article_role": "比較表・関連商品候補",
+      "featured": false,
+      "verified": null,
+      "tracked_url": "https://item.rakuten.co.jp/crecote-shop/ta034022-9532060/?utm_source=sagyou_navi&utm_medium=article&utm_campaign=wire_cutting_work_efficiency"
+    },
+    {
+      "id": 36,
+      "name_raw": "ＫＮＩＰＥＸ　ケーブルカッター　４４５ｍｍ 9571445",
+      "product_url": "https://item.rakuten.co.jp/crecote-shop/ta034038-9571445/",
+      "image_file": "ta034038-9571445.jpg",
+      "category": "manual_cutter",
+      "source": "Excel添付データ（商品名・URL・画像ファイル名）",
+      "spec_note": "商品タイトルから性能値を推測せず、本文で数値を使う場合はメーカー公式等で確認する。",
+      "article_role": "比較表・関連商品候補",
+      "featured": false,
+      "verified": null,
+      "tracked_url": "https://item.rakuten.co.jp/crecote-shop/ta034038-9571445/?utm_source=sagyou_navi&utm_medium=article&utm_campaign=wire_cutting_work_efficiency"
+    },
+    {
+      "id": 37,
+      "name_raw": "ＫＮＩＰＥＸ　ラチェット式ケーブルカッター　ハンドル伸縮幅６５０−８６０ｍｍ 9532100",
+      "product_url": "https://item.rakuten.co.jp/crecote-shop/ta034023-9532100/",
+      "image_file": "ta034023-9532100.jpg",
+      "category": "ratchet_cutter",
+      "source": "Excel添付データ（商品名・URL・画像ファイル名）",
+      "spec_note": "商品タイトルから性能値を推測せず、本文で数値を使う場合はメーカー公式等で確認する。",
+      "article_role": "比較表・関連商品候補",
+      "featured": false,
+      "verified": null,
+      "tracked_url": "https://item.rakuten.co.jp/crecote-shop/ta034023-9532100/?utm_source=sagyou_navi&utm_medium=article&utm_campaign=wire_cutting_work_efficiency"
+    },
+    {
+      "id": 38,
+      "name_raw": "ＫＮＩＰＥＸ　絶縁ケーブルカッター　５００ｍｍ 9517500",
+      "product_url": "https://item.rakuten.co.jp/crecote-shop/ta034009-9517500/",
+      "image_file": "ta034009-9517500.jpg",
+      "category": "insulated_manual_cutter",
+      "source": "Excel添付データ（商品名・URL・画像ファイル名）",
+      "spec_note": "商品タイトルから性能値を推測せず、本文で数値を使う場合はメーカー公式等で確認する。",
+      "article_role": "比較表・関連商品候補",
+      "featured": false,
+      "verified": null,
+      "tracked_url": "https://item.rakuten.co.jp/crecote-shop/ta034009-9517500/?utm_source=sagyou_navi&utm_medium=article&utm_campaign=wire_cutting_work_efficiency"
+    },
+    {
+      "id": 39,
+      "name_raw": "ＫＮＩＰＥＸ　絶縁ケーブルカッター　１０００Ｖ（ラチェット式）　２８０ｍｍ 9536280",
+      "product_url": "https://item.rakuten.co.jp/crecote-shop/ta034028-9536280/",
+      "image_file": "ta034028-9536280.jpg",
+      "category": "ratchet_cutter",
+      "source": "Excel添付データ（商品名・URL・画像ファイル名）",
+      "spec_note": "商品タイトルから性能値を推測せず、本文で数値を使う場合はメーカー公式等で確認する。",
+      "article_role": "比較表・関連商品候補",
+      "featured": false,
+      "verified": null,
+      "tracked_url": "https://item.rakuten.co.jp/crecote-shop/ta034028-9536280/?utm_source=sagyou_navi&utm_medium=article&utm_campaign=wire_cutting_work_efficiency"
+    },
+    {
+      "id": 40,
+      "name_raw": "Ｐａｎａｓｏｎｉｃ　充電ケーブルカッター EZ45A6KB",
+      "product_url": "https://item.rakuten.co.jp/crecote-shop/ta041267-ez45a6kb/",
+      "image_file": "ta041267-ez45a6kb.jpg",
+      "category": "powered_cutter",
+      "source": "Excel添付データ（商品名・URL・画像ファイル名）",
+      "spec_note": "商品タイトルから性能値を推測せず、本文で数値を使う場合はメーカー公式等で確認する。",
+      "article_role": "比較表・関連商品候補",
+      "featured": false,
+      "verified": null,
+      "tracked_url": "https://item.rakuten.co.jp/crecote-shop/ta041267-ez45a6kb/?utm_source=sagyou_navi&utm_medium=article&utm_campaign=wire_cutting_work_efficiency"
+    }
+  ]
+}

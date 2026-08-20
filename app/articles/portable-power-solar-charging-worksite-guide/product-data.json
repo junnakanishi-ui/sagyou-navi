@@ -1,0 +1,78 @@
+{
+  "slug": "portable-power-solar-charging-worksite-guide",
+  "updatedAt": "2026-08-20",
+  "mainKeyword": "ポータブル電源 充電切れ 対策",
+  "products": [
+    {
+      "id": "sfm-200",
+      "name": "蓄電丸専用200Wソーラーパネル",
+      "role": "main",
+      "sourceUrl": "https://item.rakuten.co.jp/crecote-shop/sfm-200/",
+      "articleUrl": "https://item.rakuten.co.jp/crecote-shop/sfm-200/?utm_source=sagyou_navi&utm_medium=article&utm_campaign=portable-power-solar-charging-worksite-guide",
+      "image": "/images/articles/portable-power-solar-charging-worksite-guide/products/sfm-200.webp",
+      "imagePolicy": "実商品画像を使用。AI生成禁止。",
+      "summary": "蓄電丸KPS-0202を電源のない屋外で日中補助充電したい現場向け。",
+      "specs": {
+        "nominalOutput": "商品名・説明上200W",
+        "size": "1170×780×35mm",
+        "weight": "9.5kg",
+        "operatingVoltage": "18V",
+        "operatingCurrent": "11.11A",
+        "shortCircuitCurrent": "12.22A",
+        "compatible": "蓄電丸 KPS-0202",
+        "standaloneUse": "不可"
+      },
+      "fits": [
+        "KPS-0202使用中",
+        "日中に屋外設置できる",
+        "数日運用",
+        "停電時の補助充電"
+      ],
+      "notFits": [
+        "他社電源へ流用",
+        "単体給電",
+        "日照がほぼない",
+        "設置スペースがない"
+      ],
+      "dataQualityNote": "商品DBの『出力マックス2000Wh』はパネル出力として使わない。"
+    },
+    {
+      "id": "kps-0202",
+      "name": "ポータブル電源 蓄電丸 KPS-0202",
+      "role": "compatible-battery",
+      "sourceUrl": "https://item.rakuten.co.jp/crecote-shop/kps-0202/",
+      "articleUrl": "https://item.rakuten.co.jp/crecote-shop/kps-0202/?utm_source=sagyou_navi&utm_medium=article&utm_campaign=portable-power-solar-charging-worksite-guide",
+      "image": "/images/articles/portable-power-solar-charging-worksite-guide/products/kps-0202.webp",
+      "imagePolicy": "実商品画像を使用。AI生成禁止。",
+      "specs": {
+        "capacity": "2000Wh",
+        "ratedOutput": "2000W",
+        "battery": "リン酸鉄リチウムイオン",
+        "protection": "IP65 / IK09（販売ページ記載）",
+        "acChargeTime": "約3時間（販売ページ記載）"
+      }
+    }
+  ],
+  "ctas": [
+    {
+      "id": "sfm200",
+      "label": "蓄電丸専用200Wソーラーパネル",
+      "url": "https://item.rakuten.co.jp/crecote-shop/sfm-200/?utm_source=sagyou_navi&utm_medium=article&utm_campaign=portable-power-solar-charging-worksite-guide"
+    },
+    {
+      "id": "solarList",
+      "label": "ソーラーパネル一覧",
+      "url": "https://search.rakuten.co.jp/search/mall/%E3%82%BD%E3%83%BC%E3%83%A9%E3%83%BC%E3%83%91%E3%83%8D%E3%83%AB/?sid=426972&utm_source=sagyou_navi&utm_medium=article&utm_campaign=portable-power-solar-charging-worksite-guide"
+    },
+    {
+      "id": "trusco",
+      "label": "トラスコ中山掲載商品一覧",
+      "url": "https://item.rakuten.co.jp/crecote-shop/c/0000000043/?l-id=shoptop_shopmenu_categorypage_16&utm_source=sagyou_navi&utm_medium=article&utm_campaign=portable-power-solar-charging-worksite-guide"
+    },
+    {
+      "id": "kps0202",
+      "label": "ポータブル電源 蓄電丸",
+      "url": "https://item.rakuten.co.jp/crecote-shop/kps-0202/?utm_source=sagyou_navi&utm_medium=article&utm_campaign=portable-power-solar-charging-worksite-guide"
+    }
+  ]
+}

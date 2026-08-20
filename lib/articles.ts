@@ -14,6 +14,22 @@ export type Article = {
 
 export const ARTICLES: Article[] = [
   {
+    slug: "portable-power-solar-charging-worksite-guide",
+    title:
+      "屋外現場でポータブル電源を長く使うには？充電切れ対策と200Wソーラーパネルの運用【2026年版】",
+    shortTitle: "ポータブル電源の充電切れ対策",
+    description:
+      "工事現場・屋外イベントなど、コンセントが取れない場所でポータブル電源を長く使うための考え方を解説。消費Whとソーラーで補えるWhの計算、200Wパネル、互換性、設置・安全面まで法人向けに整理します。",
+    category: "guide",
+    categoryLabel: "選び方ガイド",
+    thumbnail:
+      "/images/articles/portable-power-solar-charging-worksite-guide/worksite-portable-power-solar-charging-hero.webp",
+    date: "2026-08-20",
+    readTime: "約22分",
+    available: true,
+    path: "/articles/portable-power-solar-charging-worksite-guide",
+  },
+  {
     slug: "company-flood-stockpile-sandbag-guide",
     title:
       "会社・工場の水害対策で何を備蓄する？土のう・吸水土のうの選び方と配置・運用【2026年版】",

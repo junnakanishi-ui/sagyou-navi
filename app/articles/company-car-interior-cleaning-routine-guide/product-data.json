@@ -1,0 +1,84 @@
+{
+  "slug": "company-car-interior-cleaning-routine-guide",
+  "updatedAt": "2026-08-20",
+  "mainKeyword": "社用車 車内清掃",
+  "mainProduct": {
+    "name": "Compact Vacuum Cleaner(Q8)",
+    "url": "https://item.rakuten.co.jp/crecote-shop/q8/?utm_source=sagyou_navi&utm_medium=article&utm_campaign=company-car-interior-cleaning-routine-guide",
+    "image": "/images/articles/company-car-interior-cleaning-routine-guide/products/q8.webp",
+    "specs": {
+      "size": "169×56×196mm",
+      "charge": "USB充電（約4時間）",
+      "battery": "4000mAh",
+      "dustBox": "120ml",
+      "weight": "345g"
+    }
+  },
+  "comparisonProducts": [
+    {
+      "id": "q8",
+      "short": "Compact Vacuum Cleaner(Q8)",
+      "model": "Q8",
+      "img": "/images/articles/company-car-interior-cleaning-routine-guide/products/q8.webp",
+      "url": "https://item.rakuten.co.jp/crecote-shop/q8/?utm_source=sagyou_navi&utm_medium=article&utm_campaign=company-car-interior-cleaning-routine-guide",
+      "power": "折り畳み・USB充電",
+      "sizeWeight": "169×56×196mm / 345g（販売ページ）",
+      "use": "車内へ常備して日常のちょっと掃除"
+    },
+    {
+      "id": "288g",
+      "short": "288gコードレスハンディ",
+      "model": "288gハンディ",
+      "img": "/images/articles/company-car-interior-cleaning-routine-guide/products/288g-handy.webp",
+      "url": "https://www.gc-select.com/products/6300094316?utm_source=sagyou_navi&utm_medium=article&utm_campaign=company-car-interior-cleaning-routine-guide",
+      "power": "USB、低/高2モード、200ml",
+      "sizeWeight": "57×57×250mm / 288g",
+      "use": "軽さ重視、長めの連続使用"
+    },
+    {
+      "id": "lb-068",
+      "short": "HELLO LEIBOO LB-068",
+      "model": "LB-068",
+      "img": "/images/articles/company-car-interior-cleaning-routine-guide/products/lb-068.webp",
+      "url": "https://item.rakuten.co.jp/crecote-shop/lb-068/?utm_source=sagyou_navi&utm_medium=article&utm_campaign=company-car-interior-cleaning-routine-guide",
+      "power": "コードレス、0.5L、複数ノズル",
+      "sizeWeight": "85×350×80mm / 550g",
+      "use": "容量・ノズルを重視"
+    },
+    {
+      "id": "hdl-sk5834",
+      "short": "HDL-SK5834",
+      "model": "HDL-SK5834",
+      "img": "/images/articles/company-car-interior-cleaning-routine-guide/products/hdl-sk5834.webp",
+      "url": "https://www.gc-select.com/products/6300059699?utm_source=sagyou_navi&utm_medium=article&utm_campaign=company-car-interior-cleaning-routine-guide",
+      "power": "DC12V、コード2.5m",
+      "sizeWeight": "280×90×115mm / 490g",
+      "use": "充電切れを避けて車内専用"
+    },
+    {
+      "id": "ib-213",
+      "short": "IB-213",
+      "model": "IB-213",
+      "img": "/images/articles/company-car-interior-cleaning-routine-guide/products/ib-213.webp",
+      "url": "https://www.gc-select.com/products/6300051375?utm_source=sagyou_navi&utm_medium=article&utm_campaign=company-car-interior-cleaning-routine-guide",
+      "power": "USB、吸引＋送風",
+      "sizeWeight": "165×60×150mm / 300g",
+      "use": "隙間・吹き出し口"
+    },
+    {
+      "id": "lt-137",
+      "short": "Multifunction VACUUM CLEANER LT-137",
+      "model": "LT-137",
+      "img": "/images/articles/company-car-interior-cleaning-routine-guide/products/lt-137.webp",
+      "url": "https://item.rakuten.co.jp/crecote-shop/lt-137/?utm_source=sagyou_navi&utm_medium=article&utm_campaign=company-car-interior-cleaning-routine-guide",
+      "power": "吸引＋吹き出し、120ml",
+      "sizeWeight": "235×70×160mm",
+      "use": "車内の多用途清掃"
+    }
+  ],
+  "ctas": {
+    "q8": "https://item.rakuten.co.jp/crecote-shop/q8/?utm_source=sagyou_navi&utm_medium=article&utm_campaign=company-car-interior-cleaning-routine-guide",
+    "vacuumList": "https://search.rakuten.co.jp/search/mall/%E6%8E%83%E9%99%A4%E6%A9%9F/?sid=426972&utm_source=sagyou_navi&utm_medium=article&utm_campaign=company-car-interior-cleaning-routine-guide",
+    "trusco": "https://item.rakuten.co.jp/crecote-shop/c/0000000043/?l-id=shoptop_shopmenu_categorypage_16&utm_source=sagyou_navi&utm_medium=article&utm_campaign=company-car-interior-cleaning-routine-guide"
+  }
+}

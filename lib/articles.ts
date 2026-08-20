@@ -14,6 +14,22 @@ export type Article = {
 
 export const ARTICLES: Article[] = [
   {
+    slug: "company-car-interior-cleaning-routine-guide",
+    title:
+      "社用車の車内清掃を短時間で続けるには？営業車・作業車の砂・ホコリ対策と掃除ルール【2026年版】",
+    shortTitle: "社用車の車内清掃",
+    description:
+      "社用車・営業車・作業車の車内清掃を短時間で続ける方法を解説。利用後1〜3分のリセット、週次・月次の清掃範囲、砂・土・シート隙間の掃除、各車両に常備する小型掃除機の選び方まで法人向けに整理します。",
+    category: "guide",
+    categoryLabel: "選び方ガイド",
+    thumbnail:
+      "/images/articles/company-car-interior-cleaning-routine-guide/company-car-interior-quick-cleaning-hero.webp",
+    date: "2026-08-20",
+    readTime: "約18分",
+    available: true,
+    path: "/articles/company-car-interior-cleaning-routine-guide",
+  },
+  {
     slug: "portable-power-solar-charging-worksite-guide",
     title:
       "屋外現場でポータブル電源を長く使うには？充電切れ対策と200Wソーラーパネルの運用【2026年版】",

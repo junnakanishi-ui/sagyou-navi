@@ -14,6 +14,22 @@ export type Article = {
 
 export const ARTICLES: Article[] = [
   {
+    slug: "workwear-rainwear-water-repellent-restoration-guide",
+    title:
+      "作業着・レインウェアの撥水を復活させるには？生地用撥水スプレーの選び方と長持ちさせるコツ【2026年版】",
+    shortTitle: "作業着・レインウェアの撥水復活",
+    description:
+      "レインウェアや作業着の撥水が弱くなった時に、洗濯・熱処理・生地用撥水スプレーでどう復活させるかを解説。TU-100/TU-300 生地用超撥水剤 HAJIKU の違い、サイズ選び、繊維素材への使い方の考え方まで分かりやすく整理します。",
+    category: "guide",
+    categoryLabel: "選び方ガイド",
+    thumbnail:
+      "/images/articles/workwear-rainwear-water-repellent-restoration-guide/workwear-rainwear-water-repellent-hero.webp",
+    date: "2026-08-21",
+    readTime: "約16分",
+    available: true,
+    path: "/articles/workwear-rainwear-water-repellent-restoration-guide",
+  },
+  {
     slug: "company-car-interior-cleaning-routine-guide",
     title:
       "社用車の車内清掃を短時間で続けるには？営業車・作業車の砂・ホコリ対策と掃除ルール【2026年版】",

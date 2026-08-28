@@ -1,0 +1,140 @@
+{
+  "slug": "cable-rack-cutting-hydraulic-tool-guide",
+  "updatedAt": "2026-08-28",
+  "mainKeyword": "ケーブルラック 切断 工具",
+  "mainProducts": [
+    {
+      "id": "rac-100",
+      "name": "CACTUS RAC-100 ケーブルラックカッター",
+      "manufacturerUrl": "https://www.ccts.co.jp/products/multi-tools/rac-100/",
+      "salesUrl": "https://search.rakuten.co.jp/search/mall/%E3%82%B1%E3%83%BC%E3%83%96%E3%83%AB%E3%82%AB%E3%83%83%E3%82%BF%E3%83%BC/?sid=426972&utm_source=sagyou_navi&utm_medium=article&utm_campaign=cable-rack-cutting-hydraulic-tool-guide",
+      "imageFile": "rac-100.webp",
+      "badge": "QR / SD-QR 標準",
+      "specs": {
+        "standardTarget": "QR / SD-QR",
+        "optionalTarget": "SR / SD-SR（オプション刃）",
+        "width": "100mm / 70mm",
+        "weight": "6.7kg",
+        "size": "W200×D66×H257mm",
+        "compatibleTools": ["EV-250DL", "EV-250Hi", "SH-250M"]
+      }
+    },
+    {
+      "id": "crc-70",
+      "name": "CACTUS CRC-70 ケーブルラックカッター",
+      "manufacturerUrl": "https://www.ccts.co.jp/products/multi-tools/crc-70/",
+      "salesUrl": "https://search.rakuten.co.jp/search/mall/%E3%82%B1%E3%83%BC%E3%83%96%E3%83%AB%E3%82%AB%E3%83%83%E3%82%BF%E3%83%BC/?sid=426972&utm_source=sagyou_navi&utm_medium=article&utm_campaign=cable-rack-cutting-hydraulic-tool-guide",
+      "imageFile": "crc-70.webp",
+      "badge": "SRタイプ向け",
+      "specs": {
+        "target": "ネグロスSRタイプ",
+        "weight": "3.9kg",
+        "compatibleTools": ["EV-250DL", "EV-250Hi"]
+      }
+    },
+    {
+      "id": "ev-250dl",
+      "name": "CACTUS EV-250DL コードレス電動油圧式圧着工具",
+      "manufacturerUrl": "https://www.ccts.co.jp/products/crimping-tool/ev-250dl/",
+      "salesUrl": "https://search.rakuten.co.jp/search/mall/%E3%82%B3%E3%83%BC%E3%83%89%E3%83%AC%E3%82%B9%E9%9B%BB%E5%8B%95%E6%B2%B9%E5%9C%A7%E5%BC%8F%E5%9C%A7%E7%9D%80%E5%B7%A5%E5%85%B7/?sid=426972&utm_source=sagyou_navi&utm_medium=article&utm_campaign=cable-rack-cutting-hydraulic-tool-guide",
+      "imageFile": "ev-250dl.webp",
+      "badge": "14〜250mm²",
+      "specs": {
+        "crimpRange": "14〜250mm²",
+        "motorVoltage": "DC18V / 14.4V",
+        "output": "125kN",
+        "weight": "4.3kg（電池パック・ダイス含む）",
+        "crimpTime250": "約12秒",
+        "workCount250": "約130回（18V 5.0Ah時の目安）",
+        "head": "360度回転"
+      }
+    }
+  ],
+  "relatedProducts": [
+    {
+      "name": "TRUSCO 大型車載用工具箱 棚1段付 FT9000",
+      "url": "https://item.rakuten.co.jp/crecote-shop/ta041329-ft9000/?utm_source=sagyou_navi&utm_medium=article&utm_campaign=cable-rack-cutting-hydraulic-tool-guide",
+      "imageFile": "ta041329-ft9000.webp",
+      "role": "重量のある電設工具・アタッチメントを車載保管"
+    },
+    {
+      "name": "BOSCH L-BOXX ボックスM LBOXX136N",
+      "url": "https://item.rakuten.co.jp/crecote-shop/ta037494-lboxx136n/?utm_source=sagyou_navi&utm_medium=article&utm_campaign=cable-rack-cutting-hydraulic-tool-guide",
+      "imageFile": "ta037494-lboxx136n.webp",
+      "role": "ダイス・小物・周辺工具の整理"
+    },
+    {
+      "name": "BOSCH L-BOXX ボックスL LBOXX238N",
+      "url": "https://item.rakuten.co.jp/crecote-shop/ta037495-lboxx238n/?utm_source=sagyou_navi&utm_medium=article&utm_campaign=cable-rack-cutting-hydraulic-tool-guide",
+      "imageFile": "ta037495-lboxx238n.webp",
+      "role": "工具・付属品の現場搬入"
+    },
+    {
+      "name": "TRUSCO 建築・土木現場用バックパック KENdoSEL",
+      "url": "https://item.rakuten.co.jp/crecote-shop/ta009270-kdsbpbk/?utm_source=sagyou_navi&utm_medium=article&utm_campaign=cable-rack-cutting-hydraulic-tool-guide",
+      "imageFile": "ta009270-kdsbpbk.webp",
+      "role": "両手を空けて小物・測定具を搬入"
+    },
+    {
+      "name": "KNIPEX ツールバッグ 400×200×340mm",
+      "url": "https://item.rakuten.co.jp/crecote-shop/ta029774-002110le/?utm_source=sagyou_navi&utm_medium=article&utm_campaign=cable-rack-cutting-hydraulic-tool-guide",
+      "imageFile": "ta029774-002110le.webp",
+      "role": "電設工具・手工具のまとめ持ち"
+    }
+  ],
+  "ctas": {
+    "primary": [
+      {
+        "label": "コードレス電動油圧式圧着工具一覧",
+        "url": "https://search.rakuten.co.jp/search/mall/%E3%82%B3%E3%83%BC%E3%83%89%E3%83%AC%E3%82%B9%E9%9B%BB%E5%8B%95%E6%B2%B9%E5%9C%A7%E5%BC%8F%E5%9C%A7%E7%9D%80%E5%B7%A5%E5%85%B7/?sid=426972&utm_source=sagyou_navi&utm_medium=article&utm_campaign=cable-rack-cutting-hydraulic-tool-guide"
+      },
+      {
+        "label": "ケーブルカッター一覧",
+        "url": "https://search.rakuten.co.jp/search/mall/%E3%82%B1%E3%83%BC%E3%83%96%E3%83%AB%E3%82%AB%E3%83%83%E3%82%BF%E3%83%BC/?sid=426972&utm_source=sagyou_navi&utm_medium=article&utm_campaign=cable-rack-cutting-hydraulic-tool-guide"
+      }
+    ],
+    "secondary": [
+      {
+        "label": "耐切創手袋一覧",
+        "url": "https://search.rakuten.co.jp/search/mall/%E8%80%90%E5%88%87%E5%89%B5/?sid=426972&utm_source=sagyou_navi&utm_medium=article&utm_campaign=cable-rack-cutting-hydraulic-tool-guide"
+      },
+      {
+        "label": "急速充電器一覧",
+        "url": "https://search.rakuten.co.jp/search/mall/%E6%80%A5%E9%80%9F%E5%85%85%E9%9B%BB%E5%99%A8/?sid=426972&utm_source=sagyou_navi&utm_medium=article&utm_campaign=cable-rack-cutting-hydraulic-tool-guide",
+        "note": "使用工具・電池パックへの適合をメーカー仕様で確認してください"
+      },
+      {
+        "label": "工事・照明用品一覧",
+        "url": "https://item.rakuten.co.jp/crecote-shop/c/0000000465/?l-id=shoptop_shopmenu_categorypage_16_2ndlevel_6&utm_source=sagyou_navi&utm_medium=article&utm_campaign=cable-rack-cutting-hydraulic-tool-guide"
+      },
+      {
+        "label": "切削工具一覧",
+        "url": "https://item.rakuten.co.jp/crecote-shop/c/0000007130/?l-id=shoptop_shopmenu_categorypage_16_2ndlevel_17&utm_source=sagyou_navi&utm_medium=article&utm_campaign=cable-rack-cutting-hydraulic-tool-guide"
+      },
+      {
+        "label": "物流・保管用品一覧",
+        "url": "https://item.rakuten.co.jp/crecote-shop/c/0000000574/?l-id=shoptop_shopmenu_categorypage_16_2ndlevel_7&utm_source=sagyou_navi&utm_medium=article&utm_campaign=cable-rack-cutting-hydraulic-tool-guide"
+      },
+      {
+        "label": "搬送機器一覧",
+        "url": "https://item.rakuten.co.jp/crecote-shop/c/0000000676/?l-id=shoptop_shopmenu_categorypage_16_2ndlevel_10&utm_source=sagyou_navi&utm_medium=article&utm_campaign=cable-rack-cutting-hydraulic-tool-guide"
+      },
+      {
+        "label": "ハンドリフター一覧",
+        "url": "https://store.shopping.yahoo.co.jp/signcity-yshop/search.html?p=%E3%83%8F%E3%83%B3%E3%83%89%E3%83%AA%E3%83%95%E3%82%BF%E3%83%BC#CentSrchFilter1&utm_source=sagyou_navi&utm_medium=article&utm_campaign=cable-rack-cutting-hydraulic-tool-guide"
+      },
+      {
+        "label": "安全靴一覧",
+        "url": "https://store.shopping.yahoo.co.jp/signcity-yshop/search.html?p=%E5%AE%89%E5%85%A8%E9%9D%B4&b=151&view=grid&utm_source=sagyou_navi&utm_medium=article&utm_campaign=cable-rack-cutting-hydraulic-tool-guide"
+      },
+      {
+        "label": "運搬台車一覧",
+        "url": "https://store.shopping.yahoo.co.jp/signcity-yshop/b1bfc8c2c2.html?sc_i=shopping-pc-web-category-storeitm-cat_nrw-slctc&utm_source=sagyou_navi&utm_medium=article&utm_campaign=cable-rack-cutting-hydraulic-tool-guide"
+      },
+      {
+        "label": "トラスコ中山商品一覧",
+        "url": "https://item.rakuten.co.jp/crecote-shop/c/0000000043/?l-id=shoptop_shopmenu_categorypage_16&utm_source=sagyou_navi&utm_medium=article&utm_campaign=cable-rack-cutting-hydraulic-tool-guide"
+      }
+    ]
+  }
+}

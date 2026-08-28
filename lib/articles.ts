@@ -14,6 +14,22 @@ export type Article = {
 
 export const ARTICLES: Article[] = [
   {
+    slug: "cable-rack-cutting-hydraulic-tool-guide",
+    title:
+      "ケーブルラックの切断を効率化するには？専用カッターとコードレス電動油圧式圧着工具の選び方【2026年版】",
+    shortTitle: "ケーブルラック切断工具の選び方",
+    description:
+      "ケーブルラックの親桁を現場で切断するとき、バンドソー・切削工具・専用ラックカッターをどう使い分けるかを解説。QR/SR、バリ・切り粉、コードレス電動油圧式圧着工具とアタッチメントの組み合わせまで電気工事向けに整理します。",
+    category: "howto",
+    categoryLabel: "使い方ガイド",
+    thumbnail:
+      "/images/articles/cable-rack-cutting-hydraulic-tool-guide/cable-rack-cutting-electrical-work-hero.webp",
+    date: "2026-08-28",
+    readTime: "約20分",
+    available: true,
+    path: "/articles/cable-rack-cutting-hydraulic-tool-guide",
+  },
+  {
     slug: "workwear-rainwear-water-repellent-restoration-guide",
     title:
       "作業着・レインウェアの撥水を復活させるには？生地用撥水スプレーの選び方と長持ちさせるコツ【2026年版】",

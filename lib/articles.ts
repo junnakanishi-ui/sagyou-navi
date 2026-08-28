@@ -14,6 +14,22 @@ export type Article = {
 
 export const ARTICLES: Article[] = [
   {
+    slug: "bear-spray-environment-ministry-requirements-guide",
+    title:
+      "環境省のクマ撃退スプレー推奨要件とは？6項目と選び方・性能比較【2026年版】",
+    shortTitle: "クマ撃退スプレーの環境省推奨要件",
+    description:
+      "2026年8月に環境省が公表したクマ撃退スプレーの推奨要件を、CRC濃度1.0〜2.0％程度、噴射距離7.5m程度以上、噴射時間6秒程度以上、霧状噴射、安全装置・携行ケース、使用期限まで分かりやすく解説。熊よけスプレーを価格だけで選ばないための比較ポイントを整理します。",
+    category: "guide",
+    categoryLabel: "選び方ガイド",
+    thumbnail:
+      "/images/articles/bear-spray-environment-ministry-requirements-guide/bear-spray-environment-requirements-hero.webp",
+    date: "2026-08-28",
+    readTime: "約18分",
+    available: true,
+    path: "/articles/bear-spray-environment-ministry-requirements-guide",
+  },
+  {
     slug: "cable-rack-cutting-hydraulic-tool-guide",
     title:
       "ケーブルラックの切断を効率化するには？専用カッターとコードレス電動油圧式圧着工具の選び方【2026年版】",

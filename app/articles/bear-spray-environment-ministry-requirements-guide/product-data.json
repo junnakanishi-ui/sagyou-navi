@@ -1,0 +1,116 @@
+{
+  "slug": "bear-spray-environment-ministry-requirements-guide",
+  "updatedAt": "2026-08-28",
+  "mainKeyword": "クマ撃退スプレー 環境省 推奨要件",
+  "comparisonProduct": {
+    "name": "GC熊よけスプレー AJ-260",
+    "sku": "1179060612",
+    "url": "https://www.gc-select.com/products/1179060612?utm_source=sagyou_navi&utm_medium=article&utm_campaign=bear-spray-environment-ministry-requirements-guide",
+    "imageFile": "1179060612.jpg"
+  },
+  "blockedProduct": {
+    "name": "GC熊よけスプレー（ユーザー指定）",
+    "sku": "1179060611",
+    "publishStatus": "BLOCKED_PENDING_PRODUCT_MASTER_CORRECTION",
+    "note": "公開ページの数値（約6m・約5秒）と対人使用可表記が環境省推奨要件と整合しないため、記事では全要件クリア品として扱わない"
+  },
+  "relatedBearProducts": [
+    {
+      "name": "熊スプレー専用ホルスター",
+      "sku": "6300060760",
+      "url": "https://www.gc-select.com/products/6300060760?utm_source=sagyou_navi&utm_medium=article&utm_campaign=bear-spray-environment-ministry-requirements-guide",
+      "imageFile": "6300060760.jpg",
+      "role": "すぐ取り出せる携行"
+    },
+    {
+      "name": "熊撃退 練習用スプレー 日本製 JKS-RE",
+      "sku": "6300076715",
+      "url": "https://www.gc-select.com/products/6300076715?utm_source=sagyou_navi&utm_medium=article&utm_campaign=bear-spray-environment-ministry-requirements-guide",
+      "imageFile": "6300076715.jpg",
+      "role": "事前の操作練習"
+    },
+    {
+      "name": "大音量 熊よけアラーム BEXX",
+      "sku": "6300098346",
+      "url": "https://www.gc-select.com/products/6300098346?utm_source=sagyou_navi&utm_medium=article&utm_campaign=bear-spray-environment-ministry-requirements-guide",
+      "imageFile": "6300098346.jpg",
+      "role": "遭遇予防の音対策"
+    },
+    {
+      "name": "クマ対策 ピットナル3 電子ホイッスル",
+      "sku": "1179060608",
+      "url": "https://www.gc-select.com/products/1179060608?utm_source=sagyou_navi&utm_medium=article&utm_campaign=bear-spray-environment-ministry-requirements-guide",
+      "imageFile": "1179060608.jpg",
+      "role": "遭遇予防の音対策"
+    },
+    {
+      "name": "GC熊よけの鈴",
+      "sku": "6300058373",
+      "url": "https://www.gc-select.com/products/6300058373?utm_source=sagyou_navi&utm_medium=article&utm_campaign=bear-spray-environment-ministry-requirements-guide",
+      "imageFile": "6300058373.jpg",
+      "role": "山間部での存在通知"
+    },
+    {
+      "name": "熊よけスプレー CA290 カウンターアソルト ストロンガー",
+      "sku": "1179060601",
+      "url": "https://www.gc-select.com/products/1179060601?utm_source=sagyou_navi&utm_medium=article&utm_campaign=bear-spray-environment-ministry-requirements-guide",
+      "imageFile": "1179060601.jpg",
+      "role": "比較候補。環境省6項目を個別確認して選ぶ"
+    },
+    {
+      "name": "熊撃退スプレー 日本製 JKS-240",
+      "sku": "6300076714",
+      "url": "https://www.gc-select.com/products/6300076714?utm_source=sagyou_navi&utm_medium=article&utm_campaign=bear-spray-environment-ministry-requirements-guide",
+      "imageFile": "6300076714.jpg",
+      "role": "比較候補。環境省6項目を個別確認して選ぶ"
+    },
+    {
+      "name": "熊撃退スプレー ベアアタック 250ml",
+      "sku": "6300093066",
+      "url": "https://www.gc-select.com/products/6300093066?utm_source=sagyou_navi&utm_medium=article&utm_campaign=bear-spray-environment-ministry-requirements-guide",
+      "imageFile": "6300093066.jpg",
+      "role": "比較候補。環境省6項目を個別確認して選ぶ"
+    }
+  ],
+  "relatedPestProducts": [
+    {
+      "name": "アニマルフェンス 1×20m 支柱付セット",
+      "sku": "6300095048",
+      "url": "https://www.gc-select.com/products/6300095048?utm_source=sagyou_navi&utm_medium=article&utm_campaign=bear-spray-environment-ministry-requirements-guide",
+      "imageFile": "6300095048.jpg",
+      "role": "敷地・施設の侵入対策"
+    },
+    {
+      "name": "獣害対策金網 1.5×30m",
+      "sku": "6300095044",
+      "url": "https://www.gc-select.com/products/6300095044?utm_source=sagyou_navi&utm_medium=article&utm_campaign=bear-spray-environment-ministry-requirements-guide",
+      "imageFile": "6300095044.jpg",
+      "role": "敷地・農地の防獣"
+    },
+    {
+      "name": "防獣ネット 黒透 2×50m",
+      "sku": "6300095042",
+      "url": "https://www.gc-select.com/products/6300095042?utm_source=sagyou_navi&utm_medium=article&utm_campaign=bear-spray-environment-ministry-requirements-guide",
+      "imageFile": "6300095042.jpg",
+      "role": "害獣侵入対策"
+    },
+    {
+      "name": "ゴミ被せネット 3×4m",
+      "sku": "1138350202",
+      "url": "https://www.gc-select.com/products/1138350202?utm_source=sagyou_navi&utm_medium=article&utm_campaign=bear-spray-environment-ministry-requirements-guide",
+      "imageFile": "1138350202.jpg",
+      "role": "生ゴミ飛散・動物対策"
+    },
+    {
+      "name": "充電式 ソーラーパネル 動物撃退器",
+      "sku": "6300092910",
+      "url": "https://www.gc-select.com/products/6300092910?utm_source=sagyou_navi&utm_medium=article&utm_campaign=bear-spray-environment-ministry-requirements-guide",
+      "imageFile": "6300092910.jpg",
+      "role": "敷地周辺の害獣対策"
+    }
+  ],
+  "ctas": {
+    "bear": "https://www.gc-select.com/pages/bear-countermeasures?utm_source=sagyou_navi&utm_medium=article&utm_campaign=bear-spray-environment-ministry-requirements-guide",
+    "pest": "https://www.gc-select.com/pages/gaijyu?utm_source=sagyou_navi&utm_medium=article&utm_campaign=bear-spray-environment-ministry-requirements-guide"
+  }
+}

@@ -286,6 +286,22 @@ export const ARTICLES: Article[] = [
     path: "/articles/factory-heating-not-effective-heater-guide",
   },
   {
+    slug: "factory-spot-heating-far-infrared-electric-heater-guide",
+    title:
+      "工場のスポット暖房｜高天井・倉庫で使う遠赤外線電気ヒーターの選び方【2026年】",
+    shortTitle: "工場のスポット暖房｜遠赤外線電気ヒーターの選び方",
+    description:
+      "工場・倉庫で暖房をつけても寒い原因と、作業者がいる場所だけを暖めるスポット暖房の考え方を解説。遠赤外線電気ヒーターの特徴、100V・単相200V・3相200V、床置き・天吊りの違いを法人向けに比較します。",
+    category: "guide",
+    categoryLabel: "選び方ガイド",
+    thumbnail:
+      "/images/articles/factory-spot-heating-far-infrared-electric-heater-guide/factory-spot-heating-far-infrared-hero.webp",
+    date: "2026-08-28",
+    readTime: "約18分",
+    available: true,
+    path: "/articles/factory-spot-heating-far-infrared-electric-heater-guide",
+  },
+  {
     slug: "battery-hydraulic-multifunction-tool-selection-guide",
     title:
       "充電油圧式多機能工具はどう選ぶ？圧着・切断・打ち抜きを1台にまとめる導入判断【2026年版】",

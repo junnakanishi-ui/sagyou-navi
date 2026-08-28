@@ -1,0 +1,176 @@
+{
+  "slug": "factory-spot-heating-far-infrared-electric-heater-guide",
+  "updatedAt": "2026-08-28",
+  "sourceExcel": "取得結果(20260828-003221).xlsx",
+  "productCount": 6,
+  "mainKeyword": "工場 スポット暖房",
+  "products": [
+    {
+      "id": "wps20s",
+      "name": "静岡製機 遠赤外線電気ヒーター WPS-20s",
+      "url": "https://item.rakuten.co.jp/crecote-shop/ta054478-wps20s/?utm_source=sagyou_navi&utm_medium=article&utm_campaign=factory-spot-heating-far-infrared-electric-heater-guide",
+      "sourceUrl": "https://item.rakuten.co.jp/crecote-shop/ta054478-wps20s/",
+      "image": "/images/articles/factory-spot-heating-far-infrared-electric-heater-guide/products/ta054478-wps20s.webp",
+      "imageSourceFilename": "ta054478-wps20s.jpg",
+      "imagePolicy": "Excel保存画像または実商品画像。AI生成禁止。",
+      "category": "工場向け可搬型",
+      "power": "単相200V",
+      "consumption": "1.0/2.0kW",
+      "weight": "14.5kg",
+      "coverage": "メーカー図示：前方2m・左右各1.5m",
+      "bestFor": [
+        "1〜2人",
+        "検査台",
+        "狭めの固定作業"
+      ],
+      "notes": [
+        "防爆仕様ではない",
+        "プラグなし",
+        "使用環境温度-10〜+20℃"
+      ]
+    },
+    {
+      "id": "wps30as",
+      "name": "静岡製機 遠赤外線電気ヒーター WPS-30As",
+      "url": "https://item.rakuten.co.jp/crecote-shop/ta054480-wps30as/?utm_source=sagyou_navi&utm_medium=article&utm_campaign=factory-spot-heating-far-infrared-electric-heater-guide",
+      "sourceUrl": "https://item.rakuten.co.jp/crecote-shop/ta054480-wps30as/",
+      "image": "/images/articles/factory-spot-heating-far-infrared-electric-heater-guide/products/ta054480-wps30as.webp",
+      "imageSourceFilename": "ta054480-wps30as.jpg",
+      "imagePolicy": "Excel保存画像または実商品画像。AI生成禁止。",
+      "category": "工場向け可搬型",
+      "power": "単相200V",
+      "consumption": "1.5〜3.0kW（4段階）",
+      "weight": "25.6kg",
+      "coverage": "メーカー図示：前方3m・左右各2m",
+      "bestFor": [
+        "複数人",
+        "広めの固定工程",
+        "単相200V環境"
+      ],
+      "notes": [
+        "防爆仕様ではない",
+        "プラグなし",
+        "使用環境温度-10〜+20℃"
+      ]
+    },
+    {
+      "id": "wps30a",
+      "name": "静岡製機 遠赤外線電気ヒーター WPS-30A",
+      "url": "https://item.rakuten.co.jp/crecote-shop/ta054479-wps30a/?utm_source=sagyou_navi&utm_medium=article&utm_campaign=factory-spot-heating-far-infrared-electric-heater-guide",
+      "sourceUrl": "https://item.rakuten.co.jp/crecote-shop/ta054479-wps30a/",
+      "image": "/images/articles/factory-spot-heating-far-infrared-electric-heater-guide/products/ta054479-wps30a.webp",
+      "imageSourceFilename": "ta054479-wps30a.jpg",
+      "imagePolicy": "Excel保存画像または実商品画像。AI生成禁止。",
+      "category": "工場向け可搬型",
+      "power": "3相200V",
+      "consumption": "1.5〜3.0kW（4段階）",
+      "weight": "25.6kg",
+      "coverage": "メーカー図示：前方3m・左右各2m",
+      "bestFor": [
+        "3相200V設備の工場",
+        "複数人",
+        "広めの固定工程"
+      ],
+      "notes": [
+        "防爆仕様ではない",
+        "プラグなし",
+        "使用環境温度-10〜+20℃"
+      ]
+    },
+    {
+      "id": "wps30t",
+      "name": "静岡製機 遠赤外線電気ヒーター WPS-30T",
+      "url": "https://item.rakuten.co.jp/crecote-shop/ta054481-wps30t/?utm_source=sagyou_navi&utm_medium=article&utm_campaign=factory-spot-heating-far-infrared-electric-heater-guide",
+      "sourceUrl": "https://item.rakuten.co.jp/crecote-shop/ta054481-wps30t/",
+      "image": "/images/articles/factory-spot-heating-far-infrared-electric-heater-guide/products/ta054481-wps30t.webp",
+      "imageSourceFilename": "ta054481-wps30t.jpg",
+      "imagePolicy": "Excel保存画像または実商品画像。AI生成禁止。",
+      "category": "工場向け天吊り・壁掛け",
+      "power": "3相200V",
+      "consumption": "1.5〜3.0kW（4段階）",
+      "weight": "25kg",
+      "coverage": "天吊り・壁掛け、左右各45度可変",
+      "bestFor": [
+        "台車動線を空けたい",
+        "ライン脇",
+        "床置き不可"
+      ],
+      "notes": [
+        "防爆仕様ではない",
+        "プラグなし",
+        "有線リモコン",
+        "使用環境温度-10〜+20℃"
+      ]
+    },
+    {
+      "id": "toyotomi",
+      "name": "TOYOTOMI 速暖遠赤外線電気ヒーター EWH-CS100P(W)系",
+      "url": "https://item.rakuten.co.jp/crecote-shop/ta052597-ewhcs100pw/?utm_source=sagyou_navi&utm_medium=article&utm_campaign=factory-spot-heating-far-infrared-electric-heater-guide",
+      "sourceUrl": "https://item.rakuten.co.jp/crecote-shop/ta052597-ewhcs100pw/",
+      "image": "/images/articles/factory-spot-heating-far-infrared-electric-heater-guide/products/ta052597-ewhcs100pw.webp",
+      "imageSourceFilename": "ta052597-ewhcs100pw.jpg",
+      "imagePolicy": "Excel保存画像または実商品画像。AI生成禁止。",
+      "category": "小型スポット",
+      "power": "AC100V",
+      "consumption": "強1000W / 弱500W",
+      "coverage": "局所暖房",
+      "bestFor": [
+        "休憩所",
+        "詰所",
+        "1人の小規模スポット"
+      ],
+      "notes": [
+        "工場200V機とは用途を分ける"
+      ]
+    },
+    {
+      "id": "panel",
+      "name": "GREEN CROSS-select 遠赤外線電気パネルヒーター",
+      "url": "https://www.gc-select.com/products/1179055017?_pos=1&_sid=e27027c3a&_ss=r&utm_source=sagyou_navi&utm_medium=article&utm_campaign=factory-spot-heating-far-infrared-electric-heater-guide",
+      "sourceUrl": "https://www.gc-select.com/products/1179055017?_pos=1&_sid=e27027c3a&_ss=r",
+      "image": "/images/articles/factory-spot-heating-far-infrared-electric-heater-guide/products/1179055017.webp",
+      "imageSourceFilename": "1179055017.jpg",
+      "imagePolicy": "Excel保存画像または実商品画像。AI生成禁止。",
+      "category": "室内・休憩所向け",
+      "power": "電気式",
+      "consumption": "商品ページ最新仕様を参照",
+      "weight": "7.8kg",
+      "coverage": "木造5畳 / コンクリート8畳（商品ページ）",
+      "bestFor": [
+        "休憩室",
+        "談話室",
+        "詰所"
+      ],
+      "notes": [
+        "工場床面用200V機と同列にしない"
+      ]
+    }
+  ],
+  "ctas": [
+    {
+      "label": "遠赤外線電気ヒーター一覧",
+      "url": "https://search.rakuten.co.jp/search/mall/%E9%81%A0%E8%B5%A4%E5%A4%96%E7%B7%9A%E9%9B%BB%E6%B0%97%E3%83%92%E3%83%BC%E3%82%BF%E3%83%BC/?sid=426972&utm_source=sagyou_navi&utm_medium=article&utm_campaign=factory-spot-heating-far-infrared-electric-heater-guide",
+      "priority": "primary"
+    },
+    {
+      "label": "ハンドリフター一覧",
+      "url": "https://store.shopping.yahoo.co.jp/signcity-yshop/search.html?p=%E3%83%8F%E3%83%B3%E3%83%89%E3%83%AA%E3%83%95%E3%82%BF%E3%83%BC#CentSrchFilter1&utm_source=sagyou_navi&utm_medium=article&utm_campaign=factory-spot-heating-far-infrared-electric-heater-guide",
+      "priority": "related"
+    },
+    {
+      "label": "安全靴一覧",
+      "url": "https://store.shopping.yahoo.co.jp/signcity-yshop/search.html?p=%E5%AE%89%E5%85%A8%E9%9D%B4&b=151&view=grid&utm_source=sagyou_navi&utm_medium=article&utm_campaign=factory-spot-heating-far-infrared-electric-heater-guide",
+      "priority": "related"
+    },
+    {
+      "label": "運搬台車一覧",
+      "url": "https://store.shopping.yahoo.co.jp/signcity-yshop/b1bfc8c2c2.html?sc_i=shopping-pc-web-category-storeitm-cat_nrw-slctc&utm_source=sagyou_navi&utm_medium=article&utm_campaign=factory-spot-heating-far-infrared-electric-heater-guide",
+      "priority": "related"
+    },
+    {
+      "label": "トラスコ中山商品一覧",
+      "url": "https://item.rakuten.co.jp/crecote-shop/c/0000000043/?l-id=shoptop_shopmenu_categorypage_16&utm_source=sagyou_navi&utm_medium=article&utm_campaign=factory-spot-heating-far-infrared-electric-heater-guide",
+      "priority": "related"
+    }
+  ]
+}

@@ -14,6 +14,22 @@ export type Article = {
 
 export const ARTICLES: Article[] = [
   {
+    slug: "pipe-welding-alignment-clamp-guide",
+    title:
+      "パイプ溶接の芯出し方法｜配管の固定・開先・仮付けを安定させる治具の選び方【2026年版】",
+    shortTitle: "パイプ溶接の芯出し方法",
+    description:
+      "パイプ溶接の芯出しは、溶接前の支持・固定・開先間隔・仮付けまでセットで考えることが重要です。国土交通省の管溶接仕様を踏まえ、WOC6/12、ISK-PC170E、WV6B、CPA60/120など芯出し治具の違いを適応径・作業性で比較。開先加工機やフランジ直角確認まで実務向けに整理します。",
+    category: "guide",
+    categoryLabel: "選び方ガイド",
+    thumbnail:
+      "/images/articles/pipe-welding-alignment-clamp-guide/pipe-welding-alignment-clamp-hero.webp",
+    date: "2026-08-31",
+    readTime: "約20分",
+    available: true,
+    path: "/articles/pipe-welding-alignment-clamp-guide",
+  },
+  {
     slug: "car-emergency-kit-disaster-preparedness-guide",
     title:
       "車の防災グッズは何を常備する？地震・大雪・立ち往生に備える車載リストと「置きっぱなしNG」品【2026年版】",

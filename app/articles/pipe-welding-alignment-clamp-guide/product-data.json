@@ -1,0 +1,185 @@
+{
+  "slug": "pipe-welding-alignment-clamp-guide",
+  "updatedAt": "2026-08-31",
+  "sourceExcel": "取得結果(20260831-090600).xlsx",
+  "excelProductCount": 33,
+  "mainKeyword": "パイプ溶接 芯出し",
+  "heroProducts": [
+    {
+      "id": "woc6",
+      "name": "スーパー パイプ溶接用外面クランプ ブリッジ WOC6",
+      "short": "WOC6",
+      "image": "ta042000-woc6.jpg",
+      "badge": "主役・小〜中径",
+      "role": "1～6Bの配管固定・芯出しを素早く行う主役商品",
+      "pipeNominal": "1～6B",
+      "pipeOd": "φ34～170mm",
+      "features": ["固定・芯出し", "早送り機構", "鉄・ステンレス配管", "ピース使用の仮付け溶接不要", "グラインダー仕上げ不要"],
+      "url": "https://item.rakuten.co.jp/crecote-shop/ta042000-woc6/?utm_source=sagyou_navi&utm_medium=article&utm_campaign=pipe-welding-alignment-clamp-guide"
+    },
+    {
+      "id": "woc12",
+      "name": "スーパー パイプ溶接用外面クランプ ブリッジ WOC12",
+      "short": "WOC12",
+      "image": "ta041999-woc12.jpg",
+      "badge": "主役・中〜大径",
+      "role": "4～12Bの中～大径配管の固定・芯出し",
+      "pipeNominal": "4～12B",
+      "pipeOd": "φ110～320mm",
+      "features": ["固定・芯出し", "早送り機構", "鉄・ステンレス配管", "ピース使用の仮付け溶接不要", "グラインダー仕上げ不要"],
+      "url": "https://item.rakuten.co.jp/crecote-shop/ta041999-woc12/?utm_source=sagyou_navi&utm_medium=article&utm_campaign=pipe-welding-alignment-clamp-guide"
+    }
+  ],
+  "comparisonProducts": [
+    {
+      "id": "isk",
+      "name": "育良 溶接用パイプクランプ ISK-PC170E",
+      "short": "ISK-PC170E",
+      "image": "ta041458-iskpc170e.jpg",
+      "badge": "隙間管理・微調整",
+      "role": "芯出し・微調整と開先隙間の管理",
+      "range": "32～150A",
+      "extra": "隙間ゲージ 2mm / 4mm",
+      "url": "https://item.rakuten.co.jp/crecote-shop/ta041458-iskpc170e/?utm_source=sagyou_navi&utm_medium=article&utm_campaign=pipe-welding-alignment-clamp-guide"
+    },
+    {
+      "id": "wv6b",
+      "name": "HIT パイプウェルディングバイス WV6B",
+      "short": "WV6B",
+      "image": "ta040391-wv6b.jpg",
+      "badge": "出張修理・携行",
+      "role": "出張修理・現場持ち込みに向くコンパクトな芯出し・仮付け保持具",
+      "range": "25～150A / φ34～165mm",
+      "extra": "重量 2.3kg",
+      "url": "https://item.rakuten.co.jp/crecote-shop/ta040391-wv6b/?utm_source=sagyou_navi&utm_medium=article&utm_campaign=pipe-welding-alignment-clamp-guide"
+    },
+    {
+      "id": "cpa60",
+      "name": "SHT パイプ溶接用外面クランプ CPA60",
+      "short": "CPA60",
+      "image": "ta041154-cpa60.jpg",
+      "badge": "着脱性・小〜中径",
+      "role": "50～150mmクラスの配管固定、溶接後の抜き差しをしやすくする",
+      "range": "φ50～150mm",
+      "extra": "最大口開き 150mm",
+      "url": "https://item.rakuten.co.jp/crecote-shop/ta041154-cpa60/?utm_source=sagyou_navi&utm_medium=article&utm_campaign=pipe-welding-alignment-clamp-guide"
+    },
+    {
+      "id": "cpa120",
+      "name": "SHT パイプ溶接用外面クランプ CPA120",
+      "short": "CPA120",
+      "image": "ta041153-cpa120.jpg",
+      "badge": "着脱性・中〜大径",
+      "role": "115～305mmクラスの配管固定",
+      "range": "φ115～305mm",
+      "extra": "最大口開き 305mm",
+      "url": "https://item.rakuten.co.jp/crecote-shop/ta041153-cpa120/?utm_source=sagyou_navi&utm_medium=article&utm_campaign=pipe-welding-alignment-clamp-guide"
+    }
+  ],
+  "upstreamProducts": [
+    {
+      "id": "fbm80",
+      "name": "不二 エアパイプ開先加工機 FBM-80A-6",
+      "short": "FBM-80A-6",
+      "image": "ta041301-fbm80a6.jpg",
+      "badge": "開先加工・小〜中径",
+      "role": "小～中径パイプの溶接前開先加工",
+      "range": "内径 20～80mm",
+      "url": "https://item.rakuten.co.jp/crecote-shop/ta041301-fbm80a6/?utm_source=sagyou_navi&utm_medium=article&utm_campaign=pipe-welding-alignment-clamp-guide"
+    },
+    {
+      "id": "fbm300",
+      "name": "不二 エアパイプ開先加工機 FBM-300-4",
+      "short": "FBM-300-4",
+      "image": "ta041295-fbm3004.jpg",
+      "badge": "開先加工・中〜大径",
+      "role": "中～大径パイプの溶接前開先加工",
+      "range": "内径 80～240mm",
+      "url": "https://item.rakuten.co.jp/crecote-shop/ta041295-fbm3004/?utm_source=sagyou_navi&utm_medium=article&utm_campaign=pipe-welding-alignment-clamp-guide"
+    }
+  ],
+  "inspectionProducts": [
+    {
+      "id": "ufs400",
+      "name": "ユニ フランジスコヤー UFS400",
+      "short": "UFS400",
+      "image": "ta028547-ufs400.jpg",
+      "badge": "直角確認",
+      "role": "フランジ溶接後の直角精度確認",
+      "range": "400×300mm / 精度2級",
+      "url": "https://item.rakuten.co.jp/crecote-shop/ta028547-ufs400/?utm_source=sagyou_navi&utm_medium=article&utm_campaign=pipe-welding-alignment-clamp-guide"
+    },
+    {
+      "id": "ufs500",
+      "name": "ユニ フランジスコヤー UFS500",
+      "short": "UFS500",
+      "image": "ta028548-ufs500.jpg",
+      "badge": "直角確認",
+      "role": "フランジ溶接後の直角精度確認",
+      "range": "500×400mm / 精度2級",
+      "url": "https://item.rakuten.co.jp/crecote-shop/ta028548-ufs500/?utm_source=sagyou_navi&utm_medium=article&utm_campaign=pipe-welding-alignment-clamp-guide"
+    },
+    {
+      "id": "ufs600",
+      "name": "ユニ フランジスコヤー UFS600",
+      "short": "UFS600",
+      "image": "ta028549-ufs600.jpg",
+      "badge": "直角確認・大型",
+      "role": "大型フランジの直角精度確認",
+      "range": "600×500mm / 精度2級",
+      "url": "https://item.rakuten.co.jp/crecote-shop/ta028549-ufs600/?utm_source=sagyou_navi&utm_medium=article&utm_campaign=pipe-welding-alignment-clamp-guide"
+    }
+  ],
+  "manufacturerPrimary": "https://www.supertool.co.jp/products/products.php?eid=00597",
+  "officialSources": [
+    {
+      "label": "国土交通省 管溶接関連仕様（PDF）",
+      "url": "https://www.mlit.go.jp/common/001472793.pdf"
+    },
+    {
+      "label": "日本溶接協会 パイプ溶接の周辺技術",
+      "url": "https://www-it.jwes.or.jp/we-com/bn/vol_7/sec_5/5-1.pdf"
+    },
+    {
+      "label": "日本溶接協会 Q&A（開先）",
+      "url": "https://www-it.jwes.or.jp/qa/details.jsp?pg_no=0010020060"
+    }
+  ],
+  "ctas": {
+    "pipe_welding": {
+      "label": "パイプ溶接アイテム一覧を見る",
+      "url": "https://search.rakuten.co.jp/search/mall/%E3%83%91%E3%82%A4%E3%83%97%E6%BA%B6%E6%8E%A5/?sid=426972&utm_source=sagyou_navi&utm_medium=article&utm_campaign=pipe-welding-alignment-clamp-guide"
+    },
+    "secondary": [
+      {
+        "label": "工事・照明用品",
+        "url": "https://item.rakuten.co.jp/crecote-shop/c/0000000465/?l-id=shoptop_shopmenu_categorypage_16_2ndlevel_6&utm_source=sagyou_navi&utm_medium=article&utm_campaign=pipe-welding-alignment-clamp-guide"
+      },
+      {
+        "label": "切削工具",
+        "url": "https://item.rakuten.co.jp/crecote-shop/c/0000007130/?l-id=shoptop_shopmenu_categorypage_16_2ndlevel_17&utm_source=sagyou_navi&utm_medium=article&utm_campaign=pipe-welding-alignment-clamp-guide",
+        "note": "開先加工まわり"
+      },
+      {
+        "label": "物流・保管用品",
+        "url": "https://item.rakuten.co.jp/crecote-shop/c/0000000574/?l-id=shoptop_shopmenu_categorypage_16_2ndlevel_7&utm_source=sagyou_navi&utm_medium=article&utm_campaign=pipe-welding-alignment-clamp-guide"
+      },
+      {
+        "label": "搬送機器",
+        "url": "https://item.rakuten.co.jp/crecote-shop/c/0000000676/?l-id=shoptop_shopmenu_categorypage_16_2ndlevel_10&utm_source=sagyou_navi&utm_medium=article&utm_campaign=pipe-welding-alignment-clamp-guide"
+      },
+      {
+        "label": "安全靴",
+        "url": "https://store.shopping.yahoo.co.jp/signcity-yshop/search.html?p=%E5%AE%89%E5%85%A8%E9%9D%B4&b=151&view=grid&utm_source=sagyou_navi&utm_medium=article&utm_campaign=pipe-welding-alignment-clamp-guide"
+      },
+      {
+        "label": "運搬台車",
+        "url": "https://store.shopping.yahoo.co.jp/signcity-yshop/b1bfc8c2c2.html?sc_i=shopping-pc-web-category-storeitm-cat_nrw-slctc&utm_source=sagyou_navi&utm_medium=article&utm_campaign=pipe-welding-alignment-clamp-guide"
+      },
+      {
+        "label": "トラスコ中山商品",
+        "url": "https://item.rakuten.co.jp/crecote-shop/c/0000000043/?l-id=shoptop_shopmenu_categorypage_16&utm_source=sagyou_navi&utm_medium=article&utm_campaign=pipe-welding-alignment-clamp-guide"
+      }
+    ]
+  }
+}

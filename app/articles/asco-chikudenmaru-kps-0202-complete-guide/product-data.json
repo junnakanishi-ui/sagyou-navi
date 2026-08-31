@@ -1,0 +1,75 @@
+{
+  "slug": "asco-chikudenmaru-kps-0202-complete-guide",
+  "updatedAt": "2026-08-31",
+  "mainKeyword": "蓄電丸 アスコ",
+  "secondaryKeywords": [
+    "アスコ 蓄電丸",
+    "蓄電丸 KPS-0202",
+    "KPS-0202",
+    "蓄電丸 仕様",
+    "蓄電丸 防水",
+    "蓄電丸 価格",
+    "蓄電丸 ソーラーパネル",
+    "蓄電丸 UPS",
+    "蓄電丸 Wi-Fi"
+  ],
+  "misspellingKeyword": "畜電丸 アスコ",
+  "mainProduct": {
+    "name": "PORTABLE POWER SUPPLY 蓄電丸 KPS-0202",
+    "brand": "株式会社アスコ",
+    "model": "KPS-0202",
+    "url": "https://item.rakuten.co.jp/crecote-shop/kps-0202/?utm_source=sagyou_navi&utm_medium=article&utm_campaign=asco-chikudenmaru-kps-0202-complete-guide",
+    "sourceUrl": "https://item.rakuten.co.jp/crecote-shop/kps-0202/",
+    "image": "/images/articles/asco-chikudenmaru-kps-0202-complete-guide/products/kps-0202.jpg",
+    "imagePolicy": "Excelの商品実画像を使用。AI生成禁止。",
+    "specs": {
+      "ratedCapacity": "2160Wh",
+      "marketingCapacity": "2000Whクラス",
+      "ratedOutput": "2000W (0～45℃)",
+      "lowTempOutput": "1000W以下 (-20～0℃)",
+      "maxEfficiency": "95%以上",
+      "chargeTime": "約3時間 (25℃)",
+      "battery": "リン酸鉄リチウムイオン (LFP)",
+      "cycles": "2000回後80%以上 (25℃)",
+      "ip": "IP65",
+      "ik": "IK09",
+      "ups": "10ms以下",
+      "ac": "AC100V×2",
+      "usb": "USB-A×1 / USB-C×1 最大18W",
+      "pv": "12～60V / 15A以下 / 最大800W",
+      "parallel": "最大5台",
+      "weight": "約41kg",
+      "size": "L649×W431×H452mm",
+      "fireSuppression": "エアゾール式2個 / 酸素遮断 / 内部180℃",
+      "wifi": "KPS-0202ローカルWi-Fi接続"
+    }
+  },
+  "supportProduct": {
+    "name": "蓄電丸向け200Wソーラーパネル",
+    "url": "https://item.rakuten.co.jp/crecote-shop/sfm-200/?utm_source=sagyou_navi&utm_medium=article&utm_campaign=asco-chikudenmaru-kps-0202-complete-guide",
+    "sourceUrl": "https://item.rakuten.co.jp/crecote-shop/sfm-200/",
+    "image": "/images/articles/asco-chikudenmaru-kps-0202-complete-guide/products/sfm-200.jpg",
+    "imagePolicy": "Excelの商品実画像を使用。AI生成禁止。",
+    "role": "ソーラー充電章のみ",
+    "specs": {
+      "output": "200W",
+      "size": "1170×780×35mm",
+      "weight": "9.5kg",
+      "operatingVoltage": "18V",
+      "operatingCurrent": "11.11A"
+    }
+  },
+  "excludedGroups": [
+    "他社ポータブル蓄電池",
+    "ポータブル冷蔵庫",
+    "ポータブルトランス",
+    "その他ポータブル商品"
+  ],
+  "primarySources": [
+    "https://ascoosk.co.jp/service/portable_powersupply/",
+    "https://winslab.sakura.ne.jp/wp/wp-content/uploads/2025/01/M_KPS-0202_JP20250107.pdf",
+    "https://winslab.sakura.ne.jp/wp/wp-content/uploads/2025/01/%E8%93%84%E9%9B%BB%E4%B8%B8%E4%BB%95%E6%A7%98.pdf",
+    "https://www.gc-select.com/products/1135910220",
+    "https://www.atpress.ne.jp/news/445538"
+  ]
+}

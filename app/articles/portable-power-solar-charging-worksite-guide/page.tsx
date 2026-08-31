@@ -132,6 +132,10 @@ const faqs = [
 
 const relatedArticles = [
   {
+    href: "/articles/asco-chikudenmaru-kps-0202-complete-guide",
+    label: "蓄電丸 KPS-0202の仕様・使い方",
+  },
+  {
     href: "/articles/construction-portable-power-selection",
     label:
       "工事現場のポータブル電源の選び方｜容量・出力・用途別の目安",
@@ -819,15 +823,28 @@ export default function Page() {
             </div>
             <div>
               <p className="text-[16px] leading-8 text-gray-900">
-                蓄電丸は2000Whのリン酸鉄リチウムイオンバッテリーを搭載したポータブル電源です。販売ページでは、2000Wh・2000W・IP65/IK09・充電時間約3時間などが案内されています。
+                蓄電丸は2000Whクラス（定格2160Wh）のリン酸鉄リチウムイオンバッテリーを搭載したポータブル電源です。販売ページでは、2000Wh・2000W・IP65/IK09・充電時間約3時間などが案内されています。
               </p>
               <p className="mt-3 text-[16px] leading-8 text-gray-900">
-                ソーラー充電を使う場合も、まず本体容量と使用機器を確認したうえで「1日どれくらい使い、どれくらい戻すか」を決めます。
+                ソーラー充電を使う場合も、まず本体容量と使用機器を確認したうえで「1日どれくらい使い、どれくらい戻すか」を決めます。仕様・使い方の詳細は
+                <Link
+                  href="/articles/asco-chikudenmaru-kps-0202-complete-guide"
+                  className="font-bold underline underline-offset-4"
+                >
+                  蓄電丸 KPS-0202の仕様・使い方
+                </Link>
+                も参照してください。
               </p>
-              <div className="mt-4">
+              <div className="mt-4 flex flex-wrap gap-3">
                 <ExtButton href={CTA.kps0202.url}>
                   蓄電丸の商品ページを見る →
                 </ExtButton>
+                <Link
+                  href="/articles/asco-chikudenmaru-kps-0202-complete-guide"
+                  className="inline-flex min-h-12 items-center justify-center rounded-xl border-2 border-slate-900 bg-white px-5 py-3 text-center text-[15px] font-extrabold text-slate-900 transition hover:bg-slate-50"
+                >
+                  仕様・使い方ガイド →
+                </Link>
               </div>
             </div>
           </div>

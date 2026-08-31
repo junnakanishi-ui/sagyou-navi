@@ -14,6 +14,22 @@ export type Article = {
 
 export const ARTICLES: Article[] = [
   {
+    slug: "asco-chikudenmaru-kps-0202-complete-guide",
+    title:
+      "アスコの蓄電丸 KPS-0202とは？IP65・2160Wh・使い方・ソーラー充電まで徹底解説【2026年版】",
+    shortTitle: "アスコの蓄電丸 KPS-0202徹底解説",
+    description:
+      "アスコのポータブル電源「蓄電丸 KPS-0202」を徹底解説。定格2160Wh・2000W、使用中IP65、IK09、UPS、最大5台並列、ソーラー最大800W、Wi-Fi、低温時の制限、充電しながら使用する際の1500W制限、長期保管方法まで取扱説明書をもとに網羅します。",
+    category: "guide",
+    categoryLabel: "選び方ガイド",
+    thumbnail:
+      "/images/articles/asco-chikudenmaru-kps-0202-complete-guide/chikudenmaru-worksite-power-concept.webp",
+    date: "2026-08-31",
+    readTime: "約25分",
+    available: true,
+    path: "/articles/asco-chikudenmaru-kps-0202-complete-guide",
+  },
+  {
     slug: "pipe-welding-alignment-clamp-guide",
     title:
       "パイプ溶接の芯出し方法｜配管の固定・開先・仮付けを安定させる治具の選び方【2026年版】",

@@ -1,0 +1,149 @@
+{
+  "slug": "car-emergency-kit-disaster-preparedness-guide",
+  "updatedAt": "2026-08-31",
+  "sourceExcel": "取得結果(20260831-005823).xlsx",
+  "excelRows": 28,
+  "mainKeyword": "車 防災グッズ 必要なもの",
+  "mainProducts": [
+    {
+      "id": "abo-990",
+      "name": "ABO-990 車載用防災4点セット",
+      "short": "ABO-990",
+      "url": "https://www.gc-select.com/products/6300062686?utm_source=sagyou_navi&utm_medium=article&utm_campaign=car-emergency-kit-disaster-preparedness-guide",
+      "image": "/images/articles/car-emergency-kit-disaster-preparedness-guide/products/abo-990.webp",
+      "role": "車内待機＋脱出",
+      "escape": "◎ ハンマー",
+      "toilet": "◎ 10回",
+      "signal": "—",
+      "warmth": "◎ ブランケット＋エアマット",
+      "hygiene": "△",
+      "specs": {
+        "contents": [
+          "リバーシブルアルミブランケット",
+          "抗菌消臭緊急トイレ10回分",
+          "エアマット180cm",
+          "車脱出用ハンマー",
+          "巾着ポーチ"
+        ],
+        "weight": "930g",
+        "note": "防災士監修品"
+      }
+    },
+    {
+      "id": "abo-95",
+      "name": "ABO-95 ドライブ緊急セット10点",
+      "short": "ABO-95",
+      "url": "https://www.gc-select.com/products/6300062684?utm_source=sagyou_navi&utm_medium=article&utm_campaign=car-emergency-kit-disaster-preparedness-guide",
+      "image": "/images/articles/car-emergency-kit-disaster-preparedness-guide/products/abo-95.webp",
+      "role": "合図＋トイレ＋給水補助",
+      "escape": "—",
+      "toilet": "○ 4回",
+      "signal": "◎ LED＋ホイッスル",
+      "warmth": "—",
+      "hygiene": "○",
+      "specs": {
+        "contents": [
+          "マグネット付LED信号灯",
+          "携帯トイレ2回分×2",
+          "3Lポリバケツ",
+          "アルミ製ホイッスル",
+          "タオル",
+          "不織布マスク×2",
+          "ゴミ袋",
+          "コップ",
+          "ポケットティッシュ×2",
+          "点灯確認用電池×3"
+        ],
+        "size": "305×245×115mm",
+        "weight": "920g"
+      }
+    },
+    {
+      "id": "abo-98",
+      "name": "ABO-98 ドライブ緊急セット13点",
+      "short": "ABO-98",
+      "url": "https://www.gc-select.com/products/6300062685?utm_source=sagyou_navi&utm_medium=article&utm_campaign=car-emergency-kit-disaster-preparedness-guide",
+      "image": "/images/articles/car-emergency-kit-disaster-preparedness-guide/products/abo-98.webp",
+      "role": "脱出＋合図＋トイレを広くカバー",
+      "escape": "◎ ハンマー",
+      "toilet": "◎ 8回",
+      "signal": "◎ LED＋ホイッスル",
+      "warmth": "—",
+      "hygiene": "◎",
+      "specs": {
+        "contents": [
+          "マグネット付LED信号灯",
+          "車脱出用ハンマー",
+          "携帯トイレ8回分",
+          "3Lポリバケツ",
+          "アルミ製ホイッスル",
+          "救急絆創膏",
+          "タオル",
+          "不織布マスク×2",
+          "ゴミ袋",
+          "コップ×2",
+          "万能ナイフ",
+          "ポケットティッシュ×4",
+          "点灯確認用電池×3"
+        ],
+        "size": "305×245×115mm",
+        "weight": "1.41kg"
+      }
+    },
+    {
+      "id": "millet",
+      "name": "保存用ミレービスケット100g【車載用】12缶入",
+      "short": "車載用ミレービスケット",
+      "url": "https://www.gc-select.com/products/6300056916?utm_source=sagyou_navi&utm_medium=article&utm_campaign=car-emergency-kit-disaster-preparedness-guide",
+      "image": "/images/articles/car-emergency-kit-disaster-preparedness-guide/products/car-millet-biscuits.webp",
+      "role": "車載非常食",
+      "specs": {
+        "unit": "100g",
+        "count": "12缶",
+        "shelfLife": "製造から5年",
+        "energy": "437kcal/100g",
+        "listedVehicleTemperature": "最高80℃～最低-30℃まで車内保存可能と商品ページに記載",
+        "allergens": "小麦・大豆"
+      },
+      "dataQualityNote": "同商品ページ注意欄に『直射日光、高温多湿を避けて保存』とも記載。最新のメーカー/商品ページの保管指示を優先する。"
+    }
+  ],
+  "relatedProducts": [
+    {
+      "id": "water",
+      "name": "秩父の天然水 10年保存水 500ml 24本セット",
+      "short": "10年保存水",
+      "url": "https://www.gc-select.com/products/6300029514?utm_source=sagyou_navi&utm_medium=article&utm_campaign=car-emergency-kit-disaster-preparedness-guide",
+      "image": "/images/articles/car-emergency-kit-disaster-preparedness-guide/products/6300029514.webp",
+      "role": "車載セットに水が含まれない場合の追加候補。車内長期保管可否は最新の商品条件を確認する。"
+    },
+    {
+      "id": "toilet-stool",
+      "name": "折り畳みトイレスツール楕円 MATONG",
+      "short": "折り畳みトイレスツール",
+      "url": "https://www.gc-select.com/products/6300061722?utm_source=sagyou_navi&utm_medium=article&utm_campaign=car-emergency-kit-disaster-preparedness-guide",
+      "image": "/images/articles/car-emergency-kit-disaster-preparedness-guide/products/6300061722.webp",
+      "role": "車内待機・避難時のトイレ環境を補助する関連商品。"
+    },
+    {
+      "id": "lantern",
+      "name": "スーパーランタン",
+      "short": "スーパーランタン",
+      "url": "https://www.gc-select.com/products/6300062198?utm_source=sagyou_navi&utm_medium=article&utm_campaign=car-emergency-kit-disaster-preparedness-guide",
+      "image": "/images/articles/car-emergency-kit-disaster-preparedness-guide/products/6300062198.webp",
+      "role": "夜間・停電時の照明候補。電池や保管条件は最新仕様を確認。"
+    },
+    {
+      "id": "backpack",
+      "name": "折り畳み防水リュック 519",
+      "short": "折り畳み防水リュック",
+      "url": "https://item.rakuten.co.jp/crecote-shop/519/?utm_source=sagyou_navi&utm_medium=article&utm_campaign=car-emergency-kit-disaster-preparedness-guide",
+      "image": "/images/articles/car-emergency-kit-disaster-preparedness-guide/products/519.webp",
+      "role": "車を離れて避難する必要がある場合の持ち出し用バッグ候補。"
+    }
+  ],
+  "ctas": {
+    "disaster": "https://www.gc-select.com/collections/%E5%AE%89%E5%85%A8%E6%A9%9F%E6%9D%90%E7%94%A8%E5%93%81-%E7%81%BD%E5%AE%B3%E5%AF%BE%E7%AD%96?utm_source=sagyou_navi&utm_medium=article&utm_campaign=car-emergency-kit-disaster-preparedness-guide",
+    "security": "https://www.gc-select.com/collections/%E5%AE%89%E5%85%A8%E6%A9%9F%E6%9D%90%E7%94%A8%E5%93%81-%E9%98%B2%E7%8A%AF?utm_source=sagyou_navi&utm_medium=article&utm_campaign=car-emergency-kit-disaster-preparedness-guide"
+  }
+}

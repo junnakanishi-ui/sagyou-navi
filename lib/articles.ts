@@ -14,6 +14,22 @@ export type Article = {
 
 export const ARTICLES: Article[] = [
   {
+    slug: "car-emergency-kit-disaster-preparedness-guide",
+    title:
+      "車の防災グッズは何を常備する？地震・大雪・立ち往生に備える車載リストと「置きっぱなしNG」品【2026年版】",
+    shortTitle: "車の防災グッズで必要なもの",
+    description:
+      "車に常備する防災グッズは何が必要？地震・大雪・立ち往生・水没など4つの場面から、脱出ハンマー、簡易トイレ、ブランケット、非常食などを整理。車載防災セット3種の違い、真夏の車内へ置きっぱなしにしない物、社用車の備えまで解説します。",
+    category: "guide",
+    categoryLabel: "選び方ガイド",
+    thumbnail:
+      "/images/articles/car-emergency-kit-disaster-preparedness-guide/car-disaster-emergency-kit-hero.webp",
+    date: "2026-08-31",
+    readTime: "約22分",
+    available: true,
+    path: "/articles/car-emergency-kit-disaster-preparedness-guide",
+  },
+  {
     slug: "bear-spray-environment-ministry-requirements-guide",
     title:
       "環境省のクマ撃退スプレー推奨要件とは？6項目と選び方・性能比較【2026年版】",

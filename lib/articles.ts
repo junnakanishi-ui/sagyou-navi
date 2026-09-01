@@ -14,6 +14,22 @@ export type Article = {
 
 export const ARTICLES: Article[] = [
   {
+    slug: "duct-cutter-types-selection-guide",
+    title:
+      "ダクトカッターとは？エアコン・配線ダクトの種類と選び方｜おすすめ8機種を用途別比較【2026年版】",
+    shortTitle: "ダクトカッターの種類と選び方",
+    description:
+      "ダクトカッターは、エアコン配管化粧カバー用、配線ダクト・モール用、電線引出口加工用で選ぶ工具が異なます。TOP DC-100M/DC-120PJ、MCC ADC-101、Victor VD2100/2200、Merry LDC110/SX25、篠原電機DCF-80を用途・対応ダクト・切断能力で比較。使い方、冬の割れ対策、替刃の選び方まで解説します。",
+    category: "guide",
+    categoryLabel: "選び方ガイド",
+    thumbnail:
+      "/images/articles/duct-cutter-types-selection-guide/duct-cutter-guide-hero.webp",
+    date: "2026-09-01",
+    readTime: "約24分",
+    available: true,
+    path: "/articles/duct-cutter-types-selection-guide",
+  },
+  {
     slug: "air-riveter-how-to-choose-guide",
     title:
       "エアリベッターとは？使い方・仕組み・選び方｜ロブスターR2A1/R2A2など用途別に比較【2026年版】",

@@ -1,0 +1,173 @@
+{
+  "slug": "duct-cutter-types-selection-guide",
+  "updatedAt": "2026-09-01",
+  "sourceExcel": "取得結果(20260901-110557).xlsx",
+  "mainKeyword": "ダクトカッター",
+  "mainProducts": [
+    {
+      "id": "dc100m",
+      "short": "DC-100M",
+      "badge": "エアコン定番",
+      "name": "TOP エアコン用ダクトカッター DC-100M",
+      "image": "ta035728-dc100m.jpg",
+      "type": "エアコン配管化粧カバー横断切断",
+      "feature": "INABA等定番型番・2枚重ね",
+      "url": "https://item.rakuten.co.jp/crecote-shop/ta035728-dc100m/?utm_source=sagyou_navi&utm_medium=article&utm_campaign=duct-cutter-types-selection-guide",
+      "role": "INABAスリムダクトMD/LD/SDなど定番エアコンダクトを2枚重ねで切りたい現場向け",
+      "specs": {
+        "length": "312mm",
+        "weight": "670g",
+        "blade": "SUS440",
+        "feature": "底部・フタ部を2枚重ねで切断。返りバリを抑えた切断面"
+      }
+    },
+    {
+      "id": "dc120pj",
+      "short": "DC-120PJ",
+      "badge": "PD/JD専用",
+      "name": "TOP PD・JD用ダクトカッター DC-120PJ",
+      "image": "ta035729-dc120pj.jpg",
+      "type": "INABA PD/JD向けエアコンダクト切断",
+      "feature": "PD-90/120・JDシリーズ",
+      "url": "https://item.rakuten.co.jp/crecote-shop/ta035729-dc120pj/?utm_source=sagyou_navi&utm_medium=article&utm_campaign=duct-cutter-types-selection-guide",
+      "role": "因幡電工PD-90/120、JD-13/20/25を使うリフォーム・新設現場向け",
+      "specs": {
+        "length": "329mm",
+        "weight": "730g",
+        "feature": "PD-90・PD-120は2枚重ね切断。JD-13/20/25にも対応"
+      }
+    },
+    {
+      "id": "adc101",
+      "short": "ADC-101",
+      "badge": "多メーカー対応",
+      "name": "MCC エアコンダクトカッタ ADC-101",
+      "image": "ta046225-adc101.jpg",
+      "type": "多メーカー対応エアコンダクト切断",
+      "feature": "ラチェット・ワンタッチ",
+      "url": "https://item.rakuten.co.jp/crecote-shop/ta046225-adc101/?utm_source=sagyou_navi&utm_medium=article&utm_campaign=duct-cutter-types-selection-guide",
+      "role": "INABA、Panasonic、INOAC、オーケー器材など複数メーカーのダクトを1丁で扱う現場向け",
+      "specs": {
+        "length": "305mm",
+        "weight": "0.606kg",
+        "feature": "独自溝・割れ防止刃・ワンタッチオープン・ラチェット"
+      }
+    },
+    {
+      "id": "vd2100",
+      "short": "VD2100",
+      "badge": "Victor・適応図確認",
+      "name": "Victor エアコンダクトカッター VD2100",
+      "image": "ta040291-vd2100.jpg",
+      "type": "多メーカー対応エアコンダクト切断",
+      "feature": "国内約90%対応訴求",
+      "url": "https://item.rakuten.co.jp/crecote-shop/ta040291-vd2100/?utm_source=sagyou_navi&utm_medium=article&utm_campaign=duct-cutter-types-selection-guide",
+      "role": "Victorブランドで幅広いエアコンダクトをカバーしたい現場向け",
+      "specs": {
+        "length": "300mm",
+        "weight": "570g",
+        "replacement": "VD021",
+        "feature": "公式ワーク適応図で型番確認"
+      }
+    },
+    {
+      "id": "vd2200",
+      "short": "VD2200",
+      "badge": "Victor・VD2100同系",
+      "name": "Victor エアコンダクトカッター VD2200",
+      "image": "ta040292-vd2200.jpg",
+      "type": "多メーカー対応エアコンダクト切断",
+      "feature": "適応図で型番確認",
+      "url": "https://item.rakuten.co.jp/crecote-shop/ta040292-vd2200/?utm_source=sagyou_navi&utm_medium=article&utm_campaign=duct-cutter-types-selection-guide",
+      "role": "VD2100と同シリーズ。使うダクト型番が適応図のどちらに入るかで選ぶ",
+      "specs": {
+        "length": "300mm",
+        "weight": "570g",
+        "replacement": "VD021",
+        "feature": "VD2100と同シリーズ。適応図で型番確認"
+      }
+    },
+    {
+      "id": "ldc110",
+      "short": "LDC110",
+      "badge": "配線ダクト・モール",
+      "name": "メリー ロングダクトカッタ LDC110",
+      "image": "ta037503-ldc110.jpg",
+      "type": "配線ダクト・床配線モールの横断/角度切断",
+      "feature": "直角100mm・45°60mm",
+      "url": "https://item.rakuten.co.jp/crecote-shop/ta037503-ldc110/?utm_source=sagyou_navi&utm_medium=article&utm_campaign=duct-cutter-types-selection-guide",
+      "role": "配線ダクトや床配線モールを直角・45°で切る電気工事向け",
+      "specs": {
+        "length": "322mm",
+        "weight": "700g",
+        "replacement": "LD110",
+        "feature": "配線ダクト直角100mm幅、床モール90mm幅、45°は60mm幅まで"
+      }
+    },
+    {
+      "id": "sx25",
+      "short": "SX25",
+      "badge": "幅広・ロング刃",
+      "name": "メリー ロングブレードダクトカッタ SX25",
+      "image": "ta039552-sx25.jpg",
+      "type": "幅広配線ダクト・ケーブルプロテクター切断",
+      "feature": "刃長110mm",
+      "url": "https://item.rakuten.co.jp/crecote-shop/ta039552-sx25/?utm_source=sagyou_navi&utm_medium=article&utm_campaign=duct-cutter-types-selection-guide",
+      "role": "幅広で薄い樹脂製品やケーブルプロテクターを切りたい現場向け",
+      "specs": {
+        "length": "285mm",
+        "weight": "685g",
+        "bladeLength": "110mm",
+        "opening": "60mm",
+        "replacement": "X25",
+        "feature": "少し硬く薄い幅広樹脂製品に向く。アタッチメントで角度切りも可"
+      }
+    },
+    {
+      "id": "dcf80",
+      "short": "DCF-80",
+      "badge": "引出口専用",
+      "name": "SHINOHARA 配線ダクトカッター DCF-80",
+      "image": "ta035743-dcf80.jpg",
+      "type": "配線ダクトの電線引出口切断",
+      "feature": "横断切断ではない",
+      "url": "https://item.rakuten.co.jp/crecote-shop/ta035743-dcf80/?utm_source=sagyou_navi&utm_medium=article&utm_campaign=duct-cutter-types-selection-guide",
+      "role": "塩ビ配線ダクトの電線引出口をワンパンチで加工する専用工具",
+      "specs": {
+        "length": "260mm",
+        "weight": "475g",
+        "bladeWidth": "23mm",
+        "feature": "高さ80mmまでのダクト底部切断。引出口加工専用"
+      }
+    }
+  ],
+  "replacementBlade": {
+    "x25": {
+      "short": "X25",
+      "name": "メリー ロングブレードダクトカッタ替刃 SX25用 X25",
+      "image": "ta020425-x25.jpg",
+      "url": "https://item.rakuten.co.jp/crecote-shop/ta020425-x25/?utm_source=sagyou_navi&utm_medium=article&utm_campaign=duct-cutter-types-selection-guide",
+      "feature": "SX25用の交換刃。切れ味が落ちた際の補修候補"
+    }
+  },
+  "ctas": {
+    "primary": {
+      "label": "ダクトカッター一覧",
+      "url": "https://search.rakuten.co.jp/search/mall/%E3%83%80%E3%82%AF%E3%83%88%E3%82%AB%E3%83%83%E3%82%BF/?sid=426972&utm_source=sagyou_navi&utm_medium=article&utm_campaign=duct-cutter-types-selection-guide"
+    },
+    "secondary": [
+      {
+        "label": "関連カッター一覧",
+        "url": "https://search.rakuten.co.jp/search/mall/%E3%82%AB%E3%83%83%E3%82%BF/?sid=426972&utm_source=sagyou_navi&utm_medium=article&utm_campaign=duct-cutter-types-selection-guide"
+      },
+      {
+        "label": "作業用手袋一覧",
+        "url": "https://www.gc-select.com/pages/search-results-page?q=%E4%BD%9C%E6%A5%AD%E7%94%A8%E6%89%8B%E8%A2%8B&utm_source=sagyou_navi&utm_medium=article&utm_campaign=duct-cutter-types-selection-guide"
+      },
+      {
+        "label": "TRUSCO中山商品一覧",
+        "url": "https://item.rakuten.co.jp/crecote-shop/c/0000000043/?l-id=shoptop_shopmenu_categorypage_16&utm_source=sagyou_navi&utm_medium=article&utm_campaign=duct-cutter-types-selection-guide"
+      }
+    ]
+  }
+}

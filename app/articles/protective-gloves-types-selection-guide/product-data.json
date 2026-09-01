@@ -1,0 +1,153 @@
+{
+  "slug": "protective-gloves-types-selection-guide",
+  "updatedAt": "2026-09-01",
+  "mainKeyword": "保護手袋の種類",
+  "categoryCtas": [
+    {
+      "label": "作業用手袋一覧",
+      "url": "https://www.gc-select.com/pages/search-results-page?q=%E4%BD%9C%E6%A5%AD%E7%94%A8%E6%89%8B%E8%A2%8B&utm_source=sagyou_navi&utm_medium=article&utm_campaign=protective-gloves-types-selection-guide"
+    },
+    {
+      "label": "耐切創手袋一覧",
+      "url": "https://www.gc-select.com/pages/search-results-page?q=%E8%80%90%E5%88%87%E5%89%B5%E6%89%8B%E8%A2%8B&utm_source=sagyou_navi&utm_medium=article&utm_campaign=protective-gloves-types-selection-guide"
+    },
+    {
+      "label": "耐熱手袋一覧",
+      "url": "https://www.gc-select.com/pages/search-results-page?q=%E8%80%90%E7%86%B1%E6%89%8B%E8%A2%8B&utm_source=sagyou_navi&utm_medium=article&utm_campaign=protective-gloves-types-selection-guide"
+    },
+    {
+      "label": "防振手袋一覧",
+      "url": "https://www.gc-select.com/pages/search-results-page?q=%E9%98%B2%E6%8C%AF%E6%89%8B%E8%A2%8B&utm_source=sagyou_navi&utm_medium=article&utm_campaign=protective-gloves-types-selection-guide"
+    },
+    {
+      "label": "使い捨て手袋一覧",
+      "url": "https://www.gc-select.com/pages/search-results-page?q=%E4%BD%BF%E3%81%84%E6%8D%A8%E3%81%A6%E6%89%8B%E8%A2%8B&utm_source=sagyou_navi&utm_medium=article&utm_campaign=protective-gloves-types-selection-guide"
+    }
+  ],
+  "products": {
+    "general": [
+      {
+        "name": "純綿カフス軍手 120双入り 800g",
+        "code": "6300098055",
+        "image": "6300098055.jpg",
+        "url": "https://www.gc-select.com/products/6300098055?utm_source=sagyou_navi&utm_medium=article&utm_campaign=protective-gloves-types-selection-guide",
+        "role": "軽作業・運搬・汚れ防止など一般作業用の代表例",
+        "badge": "一般作業用",
+        "use": "運搬・梱包・軽作業"
+      },
+      {
+        "name": "ニトリル手袋 綿植毛付 Mサイズ 10双セット",
+        "code": "6300056305",
+        "image": "6300056305.jpg",
+        "url": "https://www.gc-select.com/products/6300056305?utm_source=sagyou_navi&utm_medium=article&utm_campaign=protective-gloves-types-selection-guide",
+        "role": "ニトリル系の厚手作業手袋。一般作業・油を伴う作業の候補",
+        "badge": "ニトリルコート",
+        "use": "機械周辺・油汚れ作業"
+      }
+    ],
+    "cut": [
+      {
+        "name": "川西工業 耐切創手袋（レベルC）GM640",
+        "code": "6300095399",
+        "image": "6300095399.jpg",
+        "url": "https://www.gc-select.com/products/6300095399?utm_source=sagyou_navi&utm_medium=article&utm_campaign=protective-gloves-types-selection-guide",
+        "role": "EN388 4X42C。金属加工などの耐切創手袋入門～中程度の比較軸",
+        "badge": "耐切創レベルC",
+        "use": "板金・金属加工"
+      },
+      {
+        "name": "川西工業 耐切創手袋（レベルD）GM787",
+        "code": "6300095402",
+        "image": "6300095402.jpg",
+        "url": "https://www.gc-select.com/products/6300095402?utm_source=sagyou_navi&utm_medium=article&utm_campaign=protective-gloves-types-selection-guide",
+        "role": "EN388 4X42D。GM640より高い耐切創性能を必要とする作業の比較候補",
+        "badge": "耐切創レベルD",
+        "use": "板金・金属バリ"
+      },
+      {
+        "name": "HexArmor Helix 2062",
+        "code": "6300028881",
+        "image": "6300028881.jpg",
+        "url": "https://www.gc-select.com/products/6300028881?utm_source=sagyou_navi&utm_medium=article&utm_campaign=protective-gloves-types-selection-guide",
+        "role": "高い耐切創・耐突刺・耐摩耗性能を重視する作業向けの上位候補",
+        "badge": "高耐切創",
+        "use": "高リスク切創作業"
+      }
+    ],
+    "heat": [
+      {
+        "name": "床溶接5本指 50T",
+        "code": "6300028857",
+        "image": "6300028857.jpg",
+        "url": "https://www.gc-select.com/products/6300028857?utm_source=sagyou_navi&utm_medium=article&utm_campaign=protective-gloves-types-selection-guide",
+        "role": "牛床革のロング溶接手袋。溶接・ワイヤー作業等の代表例",
+        "badge": "溶接用革手袋",
+        "use": "溶接・重機操作"
+      },
+      {
+        "name": "背縫い革手（耐熱糸仕様）103YK",
+        "code": "6300028790",
+        "image": "6300028790.jpg",
+        "url": "https://www.gc-select.com/products/6300028790?utm_source=sagyou_navi&utm_medium=article&utm_campaign=protective-gloves-types-selection-guide",
+        "role": "耐熱糸を使用した革手袋。溶接・建築・土木・造船等の候補",
+        "badge": "耐熱糸仕様",
+        "use": "溶接・建築・土木"
+      },
+      {
+        "name": "耐熱グローブ（1双組）",
+        "code": "6300029704",
+        "image": "6300029704.jpg",
+        "url": "https://www.gc-select.com/products/6300029704?utm_source=sagyou_navi&utm_medium=article&utm_campaign=protective-gloves-types-selection-guide",
+        "role": "耐熱カテゴリの比較用。温度条件は製品仕様を確認して選ぶ",
+        "badge": "耐熱グローブ",
+        "use": "高温物取扱"
+      }
+    ],
+    "vibration": [
+      {
+        "name": "防振手袋 V-1000",
+        "code": "6300028817",
+        "image": "6300028817.jpg",
+        "url": "https://www.gc-select.com/products/6300028817?utm_source=sagyou_navi&utm_medium=article&utm_campaign=protective-gloves-types-selection-guide",
+        "role": "牛床革+表革、内側ウレタンスポンジ。建築・土木等の振動工具作業に",
+        "badge": "防振手袋",
+        "use": "振動工具・建築"
+      },
+      {
+        "name": "ブルックラー（防振手袋）211",
+        "code": "6300028818",
+        "image": "6300028818.jpg",
+        "url": "https://www.gc-select.com/products/6300028818?utm_source=sagyou_navi&utm_medium=article&utm_campaign=protective-gloves-types-selection-guide",
+        "role": "牛表革とクッション素材でグラインダー・チェーンソー等の振動軽減を狙う",
+        "badge": "防振手袋",
+        "use": "グラインダー・チェーンソー"
+      },
+      {
+        "name": "手袋・防振（チェーンソー作業用）L/248mm",
+        "code": "6300060209",
+        "image": "6300060209.jpg",
+        "url": "https://www.gc-select.com/products/6300060209?utm_source=sagyou_navi&utm_medium=article&utm_campaign=protective-gloves-types-selection-guide",
+        "role": "チェーンソー作業を想定し、振動吸収に加えて耐切創要素も持つ複合型",
+        "badge": "防振+耐切創",
+        "use": "チェーンソー作業"
+      }
+    ],
+    "supplement": [
+      {
+        "name": "ツヌーガアームカバー",
+        "code": "1124300404",
+        "image": "1124300404.jpg",
+        "url": "https://www.gc-select.com/products/1124300404?utm_source=sagyou_navi&utm_medium=article&utm_campaign=protective-gloves-types-selection-guide",
+        "role": "切創リスクが手首～前腕まで及ぶ作業で補助的に検討",
+        "badge": "アームカバー",
+        "use": "前腕保護"
+      }
+    ]
+  },
+  "internalLinks": [
+    {
+      "label": "耐切創手袋のレベル・選び方",
+      "href": "/articles/cut-resistant-glove-level-selection-guide"
+    }
+  ]
+}

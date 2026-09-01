@@ -381,6 +381,22 @@ export const ARTICLES: Article[] = [
     path: "/articles/cut-resistant-glove-level-selection-guide",
   },
   {
+    slug: "protective-gloves-types-selection-guide",
+    title:
+      "保護手袋の種類を用途別に解説｜耐切創・耐熱・防振・使い捨ての違いと選び方【2026年版】",
+    shortTitle: "保護手袋の種類と選び方",
+    description:
+      "保護手袋の種類を危険源から逆引きで解説。一般作業用、耐切創、耐熱・溶接、防振、化学防護、使い捨て、電気絶縁用の違いと選び方を整理し、GC-select掲載商品も比較。ボール盤など手袋を着用してはいけない作業も紹介します。",
+    category: "guide",
+    categoryLabel: "選び方ガイド",
+    thumbnail:
+      "/images/articles/protective-gloves-types-selection-guide/protective-gloves-types-hero.webp",
+    date: "2026-09-01",
+    readTime: "約26分",
+    available: true,
+    path: "/articles/protective-gloves-types-selection-guide",
+  },
+  {
     slug: "factory-heating-not-effective-heater-guide",
     title:
       "工場・倉庫で暖房が効かない原因は？熱風・遠赤外線・ヒーターベストの寒さ対策【2026年版】",

@@ -14,6 +14,22 @@ export type Article = {
 
 export const ARTICLES: Article[] = [
   {
+    slug: "air-riveter-how-to-choose-guide",
+    title:
+      "エアリベッターとは？使い方・仕組み・選び方｜ロブスターR2A1/R2A2など用途別に比較【2026年版】",
+    shortTitle: "エアリベッターとは？使い方・仕組み・選び方",
+    description:
+      "エアリベッターとは何か、ブラインドリベットが締結される仕組み、基本の使い方、コンプレッサー条件、リベット径・材質による選び方を解説。ロブテックスR2A1/R2A2、TRUSCO TAR-270、アストロプロダクツを比較し、「切れない」「マンドレルが詰まる」ときの確認点、コードレスとの違いまで整理します。",
+    category: "guide",
+    categoryLabel: "選び方ガイド",
+    thumbnail:
+      "/images/articles/air-riveter-how-to-choose-guide/air-riveter-blind-rivet-workshop-hero.webp",
+    date: "2026-09-01",
+    readTime: "約24分",
+    available: true,
+    path: "/articles/air-riveter-how-to-choose-guide",
+  },
+  {
     slug: "asco-chikudenmaru-kps-0202-complete-guide",
     title:
       "アスコの蓄電丸 KPS-0202とは？IP65・2160Wh・使い方・ソーラー充電まで徹底解説【2026年版】",

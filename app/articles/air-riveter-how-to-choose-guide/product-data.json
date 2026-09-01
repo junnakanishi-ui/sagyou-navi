@@ -1,0 +1,158 @@
+{
+  "slug": "air-riveter-how-to-choose-guide",
+  "updatedAt": "2026-09-01",
+  "sourceExcel": "取得結果(20260901-015901).xlsx",
+  "excelProductCount": 14,
+  "mainKeyword": "エアリベッター",
+  "mainProducts": [
+    {
+      "id": "r2a1",
+      "short": "R2A1",
+      "badge": "主力・軽量",
+      "name": "ロブテックス エアーリベッター R2A1",
+      "url_raw": "https://item.rakuten.co.jp/crecote-shop/ta063491-r2a1/",
+      "image": "ta063491-r2a1.jpg",
+      "role": "φ2.4～4.8mmを中心に連続締結するプロ向け主力モデル",
+      "feature": "軽量・現行ロブスター主力",
+      "url": "https://item.rakuten.co.jp/crecote-shop/ta063491-r2a1/?utm_source=sagyou_navi&utm_medium=article&utm_campaign=air-riveter-how-to-choose-guide",
+      "manufacturerUrl": "https://www.lobtex.co.jp/products/tabid/140/pdid/R2A1/Default.aspx",
+      "specs": {
+        "rivetDiameter": "φ2.4 / 3.2 / 4.0 / 4.8mm",
+        "weight": "1.25kg",
+        "stroke": "19mm",
+        "airPressure": "0.5～0.6MPa",
+        "traction": "9.0kN",
+        "airConsumption": "82L/min以下",
+        "noise": "75dB以下"
+      }
+    },
+    {
+      "id": "r2a2",
+      "short": "R2A2",
+      "badge": "太径・高出力",
+      "name": "ロブテックス エアーリベッター R2A2",
+      "url_raw": "https://item.rakuten.co.jp/crecote-shop/ta063492-r2a2/",
+      "image": "ta063492-r2a2.jpg",
+      "role": "φ4.8・6.4mmの太径リベットや高出力が必要な作業向け",
+      "feature": "18.5kN・太径",
+      "url": "https://item.rakuten.co.jp/crecote-shop/ta063492-r2a2/?utm_source=sagyou_navi&utm_medium=article&utm_campaign=air-riveter-how-to-choose-guide",
+      "specs": {
+        "rivetDiameter": "φ4.8 / 6.4mm",
+        "weight": "2.0kg",
+        "stroke": "25mm",
+        "airPressure": "0.5～0.6MPa",
+        "traction": "18.5kN",
+        "airConsumption": "105L/min以下",
+        "noise": "80dB以下"
+      }
+    },
+    {
+      "id": "tar270",
+      "short": "TAR-270",
+      "badge": "バキューム・片手",
+      "name": "TRUSCO エアリベッター TAR-270",
+      "url_raw": "https://item.rakuten.co.jp/crecote-shop/ta064110-tar270/",
+      "image": "ta064110-tar270.jpg",
+      "role": "バキューム吸引・片手作業を重視する汎用モデル",
+      "feature": "バキューム・片手作業",
+      "url": "https://item.rakuten.co.jp/crecote-shop/ta064110-tar270/?utm_source=sagyou_navi&utm_medium=article&utm_campaign=air-riveter-how-to-choose-guide",
+      "orangeBookUrl": "https://www.orange-book.com/ja/c/products/index.html?itemCd=TAR270++++++++++++++++++++++++3100",
+      "specs": {
+        "rivetDiameter": "φ2.4 / 3.2 / 4.0 / 4.8mm",
+        "weight": "1.7kg",
+        "airPressure": "0.54～0.59MPa",
+        "hose": "内径6mm",
+        "materials": "Al/Al・Al/鉄・鉄/鉄・SUS/SUS",
+        "note": "2026-09-01 Orange Bookに後継品あり表示"
+      }
+    },
+    {
+      "id": "astro",
+      "short": "Astro",
+      "badge": "導入しやすい汎用",
+      "name": "アストロプロダクツ エアリベッター 2004000008989",
+      "url_raw": "https://item.rakuten.co.jp/crecote-shop/ta061253-2004000008989/",
+      "image": "ta061253-2004000008989.jpg",
+      "role": "導入しやすい価格帯の汎用ブラインドリベット用エアリベッター",
+      "feature": "導入しやすい汎用機",
+      "url": "https://item.rakuten.co.jp/crecote-shop/ta061253-2004000008989/?utm_source=sagyou_navi&utm_medium=article&utm_campaign=air-riveter-how-to-choose-guide",
+      "manufacturerUrl": "https://www.astro-p.co.jp/i/2004000008989",
+      "specs": {
+        "rivetDiameter": "φ2.4 / 3.2 / 4.0 / 4.8mm",
+        "weight": "1.3kg",
+        "stroke": "18mm",
+        "airPressure": "0.5～0.7MPa",
+        "airConsumption": "1.5L/リベット1本",
+        "recommendedHose": "φ6.5mm",
+        "note": "材質対応は流通コピーに差異があるため購入時の最新メーカー仕様を確認"
+      }
+    }
+  ],
+  "cordlessComparison": [
+    {
+      "id": "r2b1",
+      "short": "R2B1",
+      "badge": "コードレス・中径",
+      "name": "ロブテックス コードレスリベッター R2B1",
+      "url_raw": "https://item.rakuten.co.jp/crecote-shop/ta063493-r2b1/",
+      "image": "ta063493-r2b1.jpg",
+      "role": "コンプレッサー・エアホースなしでφ2.4～4.8mmを締結したい現場向け比較候補",
+      "url": "https://item.rakuten.co.jp/crecote-shop/ta063493-r2b1/?utm_source=sagyou_navi&utm_medium=article&utm_campaign=air-riveter-how-to-choose-guide",
+      "specs": {
+        "rivetDiameter": "φ2.4～4.8mm",
+        "weight": "1.7kg",
+        "traction": "10.5kN",
+        "voltage": "18V"
+      }
+    },
+    {
+      "id": "r2b2",
+      "short": "R2B2",
+      "badge": "コードレス・太径",
+      "name": "ロブテックス コードレスリベッター R2B2",
+      "url_raw": "https://item.rakuten.co.jp/crecote-shop/ta063494-r2b2/",
+      "image": "ta063494-r2b2.jpg",
+      "role": "コードレスでφ4.8・6.4mmを扱う比較候補",
+      "url": "https://item.rakuten.co.jp/crecote-shop/ta063494-r2b2/?utm_source=sagyou_navi&utm_medium=article&utm_campaign=air-riveter-how-to-choose-guide",
+      "specs": {
+        "rivetDiameter": "φ4.8 / 6.4mm",
+        "weight": "2.3kg",
+        "traction": "19.6kN",
+        "voltage": "18V"
+      }
+    }
+  ],
+  "excludedDifferentMechanism": [
+    {
+      "name": "ATI ATC4X",
+      "url": "https://item.rakuten.co.jp/crecote-shop/ta062128-atiatc4x/",
+      "reason": "航空機MRO等でソリッドリベットを打撃するリベットハンマー系。ブラインドリベットを引き抜くエアリベッターと機構・用途が異なる。"
+    },
+    {
+      "name": "ATI ATC3X",
+      "url": "https://item.rakuten.co.jp/crecote-shop/ta062127-atiatc3x/",
+      "reason": "航空産業向けの打撃式リベットガン。別記事向き。"
+    },
+    {
+      "name": "IR AVCシリーズ",
+      "url": "",
+      "reason": "Ingersoll RandのIndustrial Aerospace Riveter。打撃式のソリッドリベット用途で、今回のブラインドリベット検索意図とは分ける。"
+    }
+  ],
+  "ctas": {
+    "primary": {
+      "label": "エアリベッター一覧",
+      "url": "https://search.rakuten.co.jp/search/mall/%E3%82%A8%E3%82%A2%E3%83%AA%E3%83%99%E3%83%83%E3%82%BF%E3%83%BC/?sid=426972&utm_source=sagyou_navi&utm_medium=article&utm_campaign=air-riveter-how-to-choose-guide"
+    },
+    "secondary": [
+      {
+        "label": "切削工具一覧",
+        "url": "https://item.rakuten.co.jp/crecote-shop/c/0000007130/?l-id=shoptop_shopmenu_categorypage_16_2ndlevel_17&utm_source=sagyou_navi&utm_medium=article&utm_campaign=air-riveter-how-to-choose-guide"
+      },
+      {
+        "label": "TRUSCO中山商品一覧",
+        "url": "https://item.rakuten.co.jp/crecote-shop/c/0000000043/?l-id=shoptop_shopmenu_categorypage_16&utm_source=sagyou_navi&utm_medium=article&utm_campaign=air-riveter-how-to-choose-guide"
+      }
+    ]
+  }
+}

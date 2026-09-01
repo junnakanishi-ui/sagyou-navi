@@ -78,6 +78,21 @@ export const ARTICLES: Article[] = [
     path: "/articles/car-emergency-kit-disaster-preparedness-guide",
   },
   {
+    slug: "corporate-disaster-stockpile-list-guide",
+    title:
+      "企業・施設の防災備蓄品リスト完全版｜蓄電池・簡易トイレ・非常食・防災セットまで総合解説【2026年版】",
+    shortTitle: "企業・施設の防災備蓄品リスト",
+    description:
+      "企業・施設・事務所の防災備蓄品を何から揃えるべきか迷う方向けに、蓄電池、テント・間仕切り、防災マット、防災毛布、非常食、防災セット、簡易トイレ、防災グッズの選び方を総合解説。GC-select掲載商品もカテゴリ別に紹介します。",
+    category: "guide",
+    categoryLabel: "選び方ガイド",
+    thumbnail: "/articles/bosai/hero.jpg",
+    date: "2026-09-01",
+    readTime: "約24分",
+    available: true,
+    path: "/articles/corporate-disaster-stockpile-list-guide",
+  },
+  {
     slug: "bear-spray-environment-ministry-requirements-guide",
     title:
       "環境省のクマ撃退スプレー推奨要件とは？6項目と選び方・性能比較【2026年版】",

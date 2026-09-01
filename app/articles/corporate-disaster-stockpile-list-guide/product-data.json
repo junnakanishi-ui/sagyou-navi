@@ -1,0 +1,309 @@
+{
+  "slug": "corporate-disaster-stockpile-list-guide",
+  "title": "企業・施設の防災備蓄品リスト完全版｜蓄電池・簡易トイレ・非常食・防災セットまで総合解説【2026年版】",
+  "main_keyword": "企業 防災備蓄品 リスト",
+  "secondary_keywords": [
+    "防災備蓄品 リスト",
+    "防災備蓄品 一覧",
+    "法人 防災備蓄",
+    "防災グッズ 一覧",
+    "非常食 保存食 防災",
+    "簡易トイレ 防災",
+    "蓄電池 防災",
+    "防災セット 企業"
+  ],
+  "category_ctas": [
+    {
+      "label": "蓄電池一覧",
+      "url": "https://www.gc-select.com/collections/battely",
+      "url_with_utm": "https://www.gc-select.com/collections/battely?utm_source=sagyou_navi&utm_medium=article&utm_campaign=corporate-disaster-stockpile-list-guide"
+    },
+    {
+      "label": "テント・間仕切り一覧",
+      "url": "https://www.gc-select.com/collections/tent-separate",
+      "url_with_utm": "https://www.gc-select.com/collections/tent-separate?utm_source=sagyou_navi&utm_medium=article&utm_campaign=corporate-disaster-stockpile-list-guide"
+    },
+    {
+      "label": "防災マット一覧",
+      "url": "https://www.gc-select.com/collections/disaster-prevention-matt",
+      "url_with_utm": "https://www.gc-select.com/collections/disaster-prevention-matt?utm_source=sagyou_navi&utm_medium=article&utm_campaign=corporate-disaster-stockpile-list-guide"
+    },
+    {
+      "label": "防災毛布一覧",
+      "url": "https://www.gc-select.com/collections/disaster-prevention-blanket",
+      "url_with_utm": "https://www.gc-select.com/collections/disaster-prevention-blanket?utm_source=sagyou_navi&utm_medium=article&utm_campaign=corporate-disaster-stockpile-list-guide"
+    },
+    {
+      "label": "非常食・保存食一覧",
+      "url": "https://www.gc-select.com/collections/emergency-rations",
+      "url_with_utm": "https://www.gc-select.com/collections/emergency-rations?utm_source=sagyou_navi&utm_medium=article&utm_campaign=corporate-disaster-stockpile-list-guide"
+    },
+    {
+      "label": "防災セット用品一覧",
+      "url": "https://www.gc-select.com/collections/disaster-prevention-set",
+      "url_with_utm": "https://www.gc-select.com/collections/disaster-prevention-set?utm_source=sagyou_navi&utm_medium=article&utm_campaign=corporate-disaster-stockpile-list-guide"
+    },
+    {
+      "label": "簡易トイレ一覧",
+      "url": "https://www.gc-select.com/collections/right-toilet",
+      "url_with_utm": "https://www.gc-select.com/collections/right-toilet?utm_source=sagyou_navi&utm_medium=article&utm_campaign=corporate-disaster-stockpile-list-guide"
+    },
+    {
+      "label": "防災グッズ一覧",
+      "url": "https://www.gc-select.com/collections/disaster-prevention-goods",
+      "url_with_utm": "https://www.gc-select.com/collections/disaster-prevention-goods?utm_source=sagyou_navi&utm_medium=article&utm_campaign=corporate-disaster-stockpile-list-guide"
+    }
+  ],
+  "categories": [
+    {
+      "id": "battery",
+      "name": "蓄電池",
+      "sectionTitle": "1. 蓄電池・ソーラーパネル｜停電時に通信と明かりを止めない",
+      "cta_label": "蓄電池一覧を見る",
+      "cta_url_with_utm": "https://www.gc-select.com/collections/battely?utm_source=sagyou_navi&utm_medium=article&utm_campaign=corporate-disaster-stockpile-list-guide",
+      "image": "disaster-battery-power-station.jpg",
+      "imageAlt": "停電に備えて蓄電池とソーラーパネルを準備するイメージ",
+      "products": [
+        {
+          "name": "ポータブル蓄電池 蓄電丸 KPS-0202",
+          "url_with_utm": "https://www.gc-select.com/products/1135910220?utm_source=sagyou_navi&utm_medium=article&utm_campaign=corporate-disaster-stockpile-list-guide",
+          "productId": "1135910220",
+          "note": "停電時の基本電源を確保したい拠点向け。"
+        },
+        {
+          "name": "防水防塵ポータブル蓄電池 NEX2500TW",
+          "url_with_utm": "https://www.gc-select.com/products/1135910210?utm_source=sagyou_navi&utm_medium=article&utm_campaign=corporate-disaster-stockpile-list-guide",
+          "productId": "1135910210",
+          "note": "屋外利用や厳しい環境を意識した候補。"
+        },
+        {
+          "name": "TogoPower ADVANCE75 ソーラーモバイルバッテリー",
+          "url_with_utm": "https://www.gc-select.com/products/6300056704?utm_source=sagyou_navi&utm_medium=article&utm_campaign=corporate-disaster-stockpile-list-guide",
+          "productId": "6300056704",
+          "note": "スマホや小型通信機器のバックアップ用。"
+        },
+        {
+          "name": "TogoPower ADVANCE100W ソーラーパネル",
+          "url_with_utm": "https://www.gc-select.com/products/6300056700?utm_source=sagyou_navi&utm_medium=article&utm_campaign=corporate-disaster-stockpile-list-guide",
+          "productId": "6300056700",
+          "note": "日中の充電補助に使いやすい。"
+        }
+      ]
+    },
+    {
+      "id": "tent",
+      "name": "テント・間仕切り",
+      "sectionTitle": "2. テント・間仕切り｜避難生活のストレスを下げる",
+      "cta_label": "テント・間仕切り一覧を見る",
+      "cta_url_with_utm": "https://www.gc-select.com/collections/tent-separate?utm_source=sagyou_navi&utm_medium=article&utm_campaign=corporate-disaster-stockpile-list-guide",
+      "image": "disaster-privacy-tent-shelter.jpg",
+      "imageAlt": "避難所でテントや間仕切りを使ってプライバシーを確保するイメージ",
+      "products": [
+        {
+          "name": "避難用プライベートテント ワンタッチ簡単設置 大型3～4人用",
+          "url_with_utm": "https://www.gc-select.com/products/6300051804?utm_source=sagyou_navi&utm_medium=article&utm_campaign=corporate-disaster-stockpile-list-guide",
+          "productId": "6300051804",
+          "note": "更衣・授乳・休憩などのプライバシー確保に。"
+        },
+        {
+          "name": "避難所用プライベートルームテント シングル CSB-2121",
+          "url_with_utm": "https://www.gc-select.com/products/6300005263?utm_source=sagyou_navi&utm_medium=article&utm_campaign=corporate-disaster-stockpile-list-guide",
+          "productId": "6300005263",
+          "note": "避難所や施設内の簡易個室づくりに。"
+        },
+        {
+          "name": "ポップアップ着替えテント オリーブ",
+          "url_with_utm": "https://www.gc-select.com/products/6300098331?utm_source=sagyou_navi&utm_medium=article&utm_campaign=corporate-disaster-stockpile-list-guide",
+          "productId": "6300098331",
+          "note": "設営の速さを重視する場面に。"
+        }
+      ]
+    },
+    {
+      "id": "mat",
+      "name": "防災マット",
+      "sectionTitle": "3. 防災マット｜「眠れない避難」を防ぐための基本備蓄",
+      "cta_label": "防災マット一覧を見る",
+      "cta_url_with_utm": "https://www.gc-select.com/collections/disaster-prevention-matt?utm_source=sagyou_navi&utm_medium=article&utm_campaign=corporate-disaster-stockpile-list-guide",
+      "image": "disaster-mat-blanket-sleeping-area.jpg",
+      "imageAlt": "防災マットと毛布で避難時の就寝環境を整えるイメージ",
+      "products": [
+        {
+          "name": "快適エアマットPLUS",
+          "url_with_utm": "https://www.gc-select.com/products/6300033129?utm_source=sagyou_navi&utm_medium=article&utm_campaign=corporate-disaster-stockpile-list-guide",
+          "productId": "6300033129",
+          "note": "床の硬さ・冷え対策に。"
+        },
+        {
+          "name": "アルミマットM",
+          "url_with_utm": "https://www.gc-select.com/products/6300056717?utm_source=sagyou_navi&utm_medium=article&utm_campaign=corporate-disaster-stockpile-list-guide",
+          "productId": "6300056717",
+          "note": "軽量で配布しやすい断熱系マット。"
+        },
+        {
+          "name": "防災用エアマット W185×D70×H5cm",
+          "url_with_utm": "https://www.gc-select.com/products/6300088250?utm_source=sagyou_navi&utm_medium=article&utm_campaign=corporate-disaster-stockpile-list-guide",
+          "productId": "6300088250",
+          "note": "備蓄性と就寝快適性の両立を狙いやすい。"
+        }
+      ]
+    },
+    {
+      "id": "blanket",
+      "name": "防災毛布",
+      "sectionTitle": "4. 防災毛布｜保温と安心感を確保する",
+      "cta_label": "防災毛布一覧を見る",
+      "cta_url_with_utm": "https://www.gc-select.com/collections/disaster-prevention-blanket?utm_source=sagyou_navi&utm_medium=article&utm_campaign=corporate-disaster-stockpile-list-guide",
+      "image": null,
+      "imageAlt": null,
+      "products": [
+        {
+          "name": "災害備蓄用不織布毛布 もしもうふ",
+          "url_with_utm": "https://www.gc-select.com/products/6300056722?utm_source=sagyou_navi&utm_medium=article&utm_campaign=corporate-disaster-stockpile-list-guide",
+          "productId": "6300056722",
+          "note": "備蓄しやすい定番候補。"
+        },
+        {
+          "name": "非常用圧縮毛布 EB-201",
+          "url_with_utm": "https://www.gc-select.com/products/6300030134?utm_source=sagyou_navi&utm_medium=article&utm_campaign=corporate-disaster-stockpile-list-guide",
+          "productId": "6300030134",
+          "note": "省スペース備蓄を重視したい拠点向け。"
+        },
+        {
+          "name": "災害備蓄用 難燃コンパクトフリース",
+          "url_with_utm": "https://www.gc-select.com/products/6300037041?utm_source=sagyou_navi&utm_medium=article&utm_campaign=corporate-disaster-stockpile-list-guide",
+          "productId": "6300037041",
+          "note": "難燃性を意識した選択肢。"
+        }
+      ]
+    },
+    {
+      "id": "food",
+      "name": "非常食・保存食",
+      "sectionTitle": "5. 非常食・保存食｜「食べられる備え」を現実的に作る",
+      "cta_label": "非常食・保存食一覧を見る",
+      "cta_url_with_utm": "https://www.gc-select.com/collections/emergency-rations?utm_source=sagyou_navi&utm_medium=article&utm_campaign=corporate-disaster-stockpile-list-guide",
+      "image": "emergency-food-water-stock.jpg",
+      "imageAlt": "非常食と保存水を備蓄するイメージ",
+      "products": [
+        {
+          "name": "防災食 醤油らーめん缶 250g 24缶セット",
+          "url_with_utm": "https://www.gc-select.com/products/1179060311?utm_source=sagyou_navi&utm_medium=article&utm_campaign=corporate-disaster-stockpile-list-guide",
+          "productId": "1179060311",
+          "note": "主食系の選択肢を増やしたい備蓄向け。"
+        },
+        {
+          "name": "開けてそのまま「防災おにぎり」 わかめ 50個セット",
+          "url_with_utm": "https://www.gc-select.com/products/1179060302?utm_source=sagyou_navi&utm_medium=article&utm_campaign=corporate-disaster-stockpile-list-guide",
+          "productId": "1179060302",
+          "note": "配布しやすく、調理の手間を抑えやすい。"
+        },
+        {
+          "name": "秩父の天然水 10年保存水 500ml 24本セット",
+          "url_with_utm": "https://www.gc-select.com/products/6300029514?utm_source=sagyou_navi&utm_medium=article&utm_campaign=corporate-disaster-stockpile-list-guide",
+          "productId": "6300029514",
+          "note": "保存水を押さえておきたい拠点向け。"
+        },
+        {
+          "name": "ブルボン 缶入りクラッカー 24缶入",
+          "url_with_utm": "https://www.gc-select.com/products/6300056911?utm_source=sagyou_navi&utm_medium=article&utm_campaign=corporate-disaster-stockpile-list-guide",
+          "productId": "6300056911",
+          "note": "定番非常食として揃えやすい。"
+        }
+      ]
+    },
+    {
+      "id": "set",
+      "name": "防災セット用品",
+      "sectionTitle": "6. 防災セット用品｜初動備蓄をまとめて整えたいときに便利",
+      "cta_label": "防災セット用品一覧を見る",
+      "cta_url_with_utm": "https://www.gc-select.com/collections/disaster-prevention-set?utm_source=sagyou_navi&utm_medium=article&utm_campaign=corporate-disaster-stockpile-list-guide",
+      "image": "disaster-kit-ready-boxes.jpg",
+      "imageAlt": "防災セットを個人配布用・共用備蓄用として準備するイメージ",
+      "products": [
+        {
+          "name": "地震対策30点避難セット",
+          "url_with_utm": "https://www.gc-select.com/products/6300039934?utm_source=sagyou_navi&utm_medium=article&utm_campaign=corporate-disaster-stockpile-list-guide",
+          "productId": "6300039934",
+          "note": "何から揃えるか迷う人が最初に押さえやすい総合セット。"
+        },
+        {
+          "name": "A4ボックス非常用持出袋12点防災セット",
+          "url_with_utm": "https://www.gc-select.com/products/6300054635?utm_source=sagyou_navi&utm_medium=article&utm_campaign=corporate-disaster-stockpile-list-guide",
+          "productId": "6300054635",
+          "note": "省スペース保管を重視するオフィス向け。"
+        },
+        {
+          "name": "シェアする防災セット ベーシック30人分",
+          "url_with_utm": "https://www.gc-select.com/products/6300046024?utm_source=sagyou_navi&utm_medium=article&utm_campaign=corporate-disaster-stockpile-list-guide",
+          "productId": "6300046024",
+          "note": "職場・施設単位での共用備蓄を意識した構成。"
+        }
+      ]
+    },
+    {
+      "id": "toilet",
+      "name": "簡易トイレ",
+      "sectionTitle": "7. 簡易トイレ｜実は最優先クラスの備蓄",
+      "cta_label": "簡易トイレ一覧を見る",
+      "cta_url_with_utm": "https://www.gc-select.com/collections/right-toilet?utm_source=sagyou_navi&utm_medium=article&utm_campaign=corporate-disaster-stockpile-list-guide",
+      "image": "portable-toilet-emergency-preparedness.jpg",
+      "imageAlt": "断水に備えて簡易トイレを準備するイメージ",
+      "products": [
+        {
+          "name": "どこでもトイレⅡ",
+          "url_with_utm": "https://www.gc-select.com/products/6300054868?utm_source=sagyou_navi&utm_medium=article&utm_campaign=corporate-disaster-stockpile-list-guide",
+          "productId": "6300054868",
+          "note": "水が使えない場面で優先度の高い備蓄。"
+        },
+        {
+          "name": "災害時水不要 緊急簡易トイレ",
+          "url_with_utm": "https://www.gc-select.com/products/6300056720?utm_source=sagyou_navi&utm_medium=article&utm_campaign=corporate-disaster-stockpile-list-guide",
+          "productId": "6300056720",
+          "note": "停水時の衛生確保に欠かせない。"
+        },
+        {
+          "name": "災害用トイレセット エコレット100",
+          "url_with_utm": "https://www.gc-select.com/products/6300054867?utm_source=sagyou_navi&utm_medium=article&utm_campaign=corporate-disaster-stockpile-list-guide",
+          "productId": "6300054867",
+          "note": "まとまった数量で確保したい拠点向け。"
+        }
+      ]
+    },
+    {
+      "id": "goods",
+      "name": "防災グッズ",
+      "sectionTitle": "8. 防災グッズ｜最後に差がつく補助用品",
+      "cta_label": "防災グッズ一覧を見る",
+      "cta_url_with_utm": "https://www.gc-select.com/collections/disaster-prevention-goods?utm_source=sagyou_navi&utm_medium=article&utm_campaign=corporate-disaster-stockpile-list-guide",
+      "image": "disaster-support-items-light-stretcher.jpg",
+      "imageAlt": "ライトや担架など補助的な防災グッズを備えるイメージ",
+      "products": [
+        {
+          "name": "防炎ターポリン幕【SOS 要救護者が人います】",
+          "url_with_utm": "https://www.gc-select.com/products/6300093127?utm_source=sagyou_navi&utm_medium=article&utm_campaign=corporate-disaster-stockpile-list-guide",
+          "productId": "6300093127",
+          "note": "救助要請を外部へ伝えたい場面で有効。"
+        },
+        {
+          "name": "フィリップス ワークライト Xperion3000",
+          "url_with_utm": "https://www.gc-select.com/products/1135650201?utm_source=sagyou_navi&utm_medium=article&utm_campaign=corporate-disaster-stockpile-list-guide",
+          "productId": "1135650201",
+          "note": "停電時や夜間の作業・移動に役立つ。"
+        },
+        {
+          "name": "折りたたみ担架",
+          "url_with_utm": "https://www.gc-select.com/products/1134030102?utm_source=sagyou_navi&utm_medium=article&utm_campaign=corporate-disaster-stockpile-list-guide",
+          "productId": "1134030102",
+          "note": "救護・搬送体制を整えたい場合に。"
+        },
+        {
+          "name": "防災用簡易ライト 3本入",
+          "url_with_utm": "https://www.gc-select.com/products/6300088190?utm_source=sagyou_navi&utm_medium=article&utm_campaign=corporate-disaster-stockpile-list-guide",
+          "productId": "6300088190",
+          "note": "配布しやすい照明確保用アイテム。"
+        }
+      ]
+    }
+  ]
+}

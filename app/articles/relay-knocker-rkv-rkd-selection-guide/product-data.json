@@ -1,0 +1,228 @@
+{
+  "slug": "relay-knocker-rkv-rkd-selection-guide",
+  "updatedAt": "2026-09-02",
+  "sourceExcel": "取得結果(20260902-045715).xlsx",
+  "excelProductCount": 12,
+  "mainKeyword": "リレーノッカー",
+  "secondaryKeywords": [
+    "リレーノッカー 選定",
+    "RKV RKD 違い",
+    "エアーノッカー",
+    "ホッパー ノッカー",
+    "粉体 ノッカー",
+    "リレーノッカー 取付",
+    "ホッパー 粉体 付着",
+    "ホッパー 閉塞 対策"
+  ],
+  "products": [
+    {
+      "model": "RKV30PB",
+      "type": "バイブタイプ",
+      "rawUrl": "https://item.rakuten.co.jp/crecote-shop/ta048757-rkv30pb/",
+      "url": "https://item.rakuten.co.jp/crecote-shop/ta048757-rkv30pb/?utm_source=sagyou_navi&utm_medium=article&utm_campaign=relay-knocker-rkv-rkd-selection-guide",
+      "image": "ta048757-rkv30pb.jpg",
+      "role": "平面・小～中規模の基本候補",
+      "specs": {
+        "energy": "5.5～13.1 N・m",
+        "weight": "1.0kg",
+        "air": "0.05～0.13 L/回(ANR)"
+      },
+      "imagePath": "/images/articles/relay-knocker-rkv-rkd-selection-guide/products/ta048757-rkv30pb.jpg",
+      "imagePolicy": "Excelの実商品画像を使用。AI生成禁止。"
+    },
+    {
+      "model": "RKV20P",
+      "type": "バイブタイプ",
+      "rawUrl": "https://item.rakuten.co.jp/crecote-shop/ta048756-rkv20p/",
+      "url": "https://item.rakuten.co.jp/crecote-shop/ta048756-rkv20p/?utm_source=sagyou_navi&utm_medium=article&utm_campaign=relay-knocker-rkv-rkd-selection-guide",
+      "image": "ta048756-rkv20p.jpg",
+      "role": "0.8kgの小型。小型容器・シュート候補",
+      "specs": {
+        "energy": "4.3～8.3 N・m",
+        "weight": "0.8kg",
+        "air": "0.04～0.10 L/回(ANR)"
+      },
+      "imagePath": "/images/articles/relay-knocker-rkv-rkd-selection-guide/products/ta048756-rkv20p.jpg",
+      "imagePolicy": "Excelの実商品画像を使用。AI生成禁止。"
+    },
+    {
+      "model": "RKV40PB",
+      "type": "バイブタイプ",
+      "rawUrl": "https://item.rakuten.co.jp/crecote-shop/ta048758-rkv40pb/",
+      "url": "https://item.rakuten.co.jp/crecote-shop/ta048758-rkv40pb/?utm_source=sagyou_navi&utm_medium=article&utm_campaign=relay-knocker-rkv-rkd-selection-guide",
+      "image": "ta048758-rkv40pb.jpg",
+      "role": "RKV30PBより強い打撃域が必要な場合",
+      "specs": {
+        "energy": "9.2～22.3 N・m",
+        "weight": "2.5kg",
+        "air": "0.15～0.37 L/回(ANR)"
+      },
+      "imagePath": "/images/articles/relay-knocker-rkv-rkd-selection-guide/products/ta048758-rkv40pb.jpg",
+      "imagePolicy": "Excelの実商品画像を使用。AI生成禁止。"
+    },
+    {
+      "model": "RKV60PBR",
+      "type": "バイブ・曲面取付",
+      "rawUrl": "https://item.rakuten.co.jp/crecote-shop/ta050488-rkv60pbr/",
+      "url": "https://item.rakuten.co.jp/crecote-shop/ta050488-rkv60pbr/?utm_source=sagyou_navi&utm_medium=article&utm_campaign=relay-knocker-rkv-rkd-selection-guide",
+      "image": "ta050488-rkv60pbr.jpg",
+      "role": "丸型ホッパーなど曲面取付向け",
+      "specs": {
+        "energy": "20.6～49.0 N・m",
+        "weight": "7.1kg",
+        "air": "0.33～0.77 L/回(ANR)"
+      },
+      "imagePath": "/images/articles/relay-knocker-rkv-rkd-selection-guide/products/ta050488-rkv60pbr.jpg",
+      "imagePolicy": "Excelの実商品画像を使用。AI生成禁止。"
+    },
+    {
+      "model": "RKV80PAR",
+      "type": "バイブ・曲面取付",
+      "rawUrl": "https://item.rakuten.co.jp/crecote-shop/ta050490-rkv80par/",
+      "url": "https://item.rakuten.co.jp/crecote-shop/ta050490-rkv80par/?utm_source=sagyou_navi&utm_medium=article&utm_campaign=relay-knocker-rkv-rkd-selection-guide",
+      "image": "ta050490-rkv80par.jpg",
+      "role": "より大きな打撃域＋曲面取付",
+      "specs": {
+        "energy": "45.1～109 N・m",
+        "weight": "14.6kg",
+        "air": "0.60～1.40 L/回(ANR)"
+      },
+      "imagePath": "/images/articles/relay-knocker-rkv-rkd-selection-guide/products/ta050490-rkv80par.jpg",
+      "imagePolicy": "Excelの実商品画像を使用。AI生成禁止。"
+    },
+    {
+      "model": "RKD60PB",
+      "type": "ダイレクトタイプ",
+      "rawUrl": "https://item.rakuten.co.jp/crecote-shop/ta050485-rkd60pb/",
+      "url": "https://item.rakuten.co.jp/crecote-shop/ta050485-rkd60pb/?utm_source=sagyou_navi&utm_medium=article&utm_campaign=relay-knocker-rkv-rkd-selection-guide",
+      "image": "ta050485-rkd60pb.jpg",
+      "role": "直接打撃・中～大型側の候補",
+      "specs": {
+        "energy": "20.6～49.0 N・m",
+        "weight": "10.7kg",
+        "air": "0.33～0.77 L/回(ANR)"
+      },
+      "imagePath": "/images/articles/relay-knocker-rkv-rkd-selection-guide/products/ta050485-rkd60pb.jpg",
+      "imagePolicy": "Excelの実商品画像を使用。AI生成禁止。"
+    },
+    {
+      "model": "RKD30PB",
+      "type": "ダイレクトタイプ",
+      "rawUrl": "https://item.rakuten.co.jp/crecote-shop/ta048754-rkd30pb/",
+      "url": "https://item.rakuten.co.jp/crecote-shop/ta048754-rkd30pb/?utm_source=sagyou_navi&utm_medium=article&utm_campaign=relay-knocker-rkv-rkd-selection-guide",
+      "image": "ta048754-rkd30pb.jpg",
+      "role": "直接打撃の小型側",
+      "specs": {
+        "energy": "5.5～13.1 N・m",
+        "weight": "1.7kg",
+        "air": "0.05～0.13 L/回(ANR)"
+      },
+      "imagePath": "/images/articles/relay-knocker-rkv-rkd-selection-guide/products/ta048754-rkd30pb.jpg",
+      "imagePolicy": "Excelの実商品画像を使用。AI生成禁止。"
+    },
+    {
+      "model": "RKD40PB",
+      "type": "ダイレクトタイプ",
+      "rawUrl": "https://item.rakuten.co.jp/crecote-shop/ta048755-rkd40pb/",
+      "url": "https://item.rakuten.co.jp/crecote-shop/ta048755-rkd40pb/?utm_source=sagyou_navi&utm_medium=article&utm_campaign=relay-knocker-rkv-rkd-selection-guide",
+      "image": "ta048755-rkd40pb.jpg",
+      "role": "直接打撃・中間クラス",
+      "specs": {
+        "energy": "9.2～22.3 N・m",
+        "weight": "4.8kg",
+        "air": "0.15～0.37 L/回(ANR)"
+      },
+      "imagePath": "/images/articles/relay-knocker-rkv-rkd-selection-guide/products/ta048755-rkd40pb.jpg",
+      "imagePolicy": "Excelの実商品画像を使用。AI生成禁止。"
+    },
+    {
+      "model": "RKV60PB",
+      "type": "バイブ・平面取付",
+      "rawUrl": "https://item.rakuten.co.jp/crecote-shop/ta050487-rkv60pb/",
+      "url": "https://item.rakuten.co.jp/crecote-shop/ta050487-rkv60pb/?utm_source=sagyou_navi&utm_medium=article&utm_campaign=relay-knocker-rkv-rkd-selection-guide",
+      "image": "ta050487-rkv60pb.jpg",
+      "role": "平面取付・中～大型側",
+      "specs": {
+        "energy": "20.6～49.0 N・m",
+        "weight": "7.0kg",
+        "air": "0.33～0.77 L/回(ANR)"
+      },
+      "imagePath": "/images/articles/relay-knocker-rkv-rkd-selection-guide/products/ta050487-rkv60pb.jpg",
+      "imagePolicy": "Excelの実商品画像を使用。AI生成禁止。"
+    },
+    {
+      "model": "RKV80PA",
+      "type": "バイブ・平面取付",
+      "rawUrl": "https://item.rakuten.co.jp/crecote-shop/ta050489-rkv80pa/",
+      "url": "https://item.rakuten.co.jp/crecote-shop/ta050489-rkv80pa/?utm_source=sagyou_navi&utm_medium=article&utm_campaign=relay-knocker-rkv-rkd-selection-guide",
+      "image": "ta050489-rkv80pa.jpg",
+      "role": "平面取付・大きな打撃域",
+      "specs": {
+        "energy": "45.1～109 N・m",
+        "weight": "14.5kg",
+        "air": "0.60～1.40 L/回(ANR)"
+      },
+      "imagePath": "/images/articles/relay-knocker-rkv-rkd-selection-guide/products/ta050489-rkv80pa.jpg",
+      "imagePolicy": "Excelの実商品画像を使用。AI生成禁止。"
+    },
+    {
+      "model": "RKD80PA",
+      "type": "ダイレクトタイプ",
+      "rawUrl": "https://item.rakuten.co.jp/crecote-shop/ta050486-rkd80pa/",
+      "url": "https://item.rakuten.co.jp/crecote-shop/ta050486-rkd80pa/?utm_source=sagyou_navi&utm_medium=article&utm_campaign=relay-knocker-rkv-rkd-selection-guide",
+      "image": "ta050486-rkd80pa.jpg",
+      "role": "直接打撃・大型側",
+      "specs": {
+        "energy": "45.1～109 N・m",
+        "weight": "18.4kg",
+        "air": "0.60～1.40 L/回(ANR)"
+      },
+      "imagePath": "/images/articles/relay-knocker-rkv-rkd-selection-guide/products/ta050486-rkd80pa.jpg",
+      "imagePolicy": "Excelの実商品画像を使用。AI生成禁止。"
+    },
+    {
+      "model": "AOC-1B",
+      "type": "エアオペコントローラー",
+      "rawUrl": "https://item.rakuten.co.jp/crecote-shop/ta047058-aoc1b/",
+      "url": "https://item.rakuten.co.jp/crecote-shop/ta047058-aoc1b/?utm_source=sagyou_navi&utm_medium=article&utm_campaign=relay-knocker-rkv-rkd-selection-guide",
+      "image": "ta047058-aoc1b.jpg",
+      "role": "電源不要でリレーノッカーを空気制御",
+      "specs": {
+        "workingPressure": "0.3～0.7MPa",
+        "cycles": "12～60回/min",
+        "weight": "1.4kg",
+        "control": "通常1台、リレー配管で最大3台",
+        "power": "電源不要"
+      },
+      "imagePath": "/images/articles/relay-knocker-rkv-rkd-selection-guide/products/ta047058-aoc1b.jpg",
+      "imagePolicy": "Excelの実商品画像を使用。AI生成禁止。"
+    }
+  ],
+  "cta": {
+    "main": {
+      "label": "リレーノッカー一覧",
+      "url": "https://search.rakuten.co.jp/search/mall/%E3%83%AA%E3%83%AC%E3%83%BC%E3%83%8E%E3%83%83%E3%82%AB%E3%83%BC/?sid=426972&utm_source=sagyou_navi&utm_medium=article&utm_campaign=relay-knocker-rkv-rkd-selection-guide"
+    },
+    "secondary": [
+      {
+        "label": "作業用手袋一覧",
+        "url": "https://www.gc-select.com/pages/search-results-page?q=%E4%BD%9C%E6%A5%AD%E7%94%A8%E6%89%8B%E8%A2%8B&utm_source=sagyou_navi&utm_medium=article&utm_campaign=relay-knocker-rkv-rkd-selection-guide"
+      },
+      {
+        "label": "ツールバッグ一覧",
+        "url": "https://search.rakuten.co.jp/search/mall/%E3%83%84%E3%83%BC%E3%83%AB%E3%83%90%E3%83%83%E3%82%B0/?sid=426972&utm_source=sagyou_navi&utm_medium=article&utm_campaign=relay-knocker-rkv-rkd-selection-guide"
+      },
+      {
+        "label": "TRUSCO中山商品一覧",
+        "url": "https://item.rakuten.co.jp/crecote-shop/c/0000000043/?l-id=shoptop_shopmenu_categorypage_16&utm_source=sagyou_navi&utm_medium=article&utm_campaign=relay-knocker-rkv-rkd-selection-guide"
+      }
+    ],
+    "notUsed": [
+      {
+        "label": "運搬台車一覧",
+        "url": "https://store.shopping.yahoo.co.jp/signcity-yshop/b1bfc8c2c2.html?sc_i=shopping-pc-web-category-storeitm-cat_nrw-slctc",
+        "reason": "リレーノッカーの選定・取付検索意図との関連が弱い"
+      }
+    ]
+  }
+}

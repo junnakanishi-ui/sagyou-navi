@@ -14,6 +14,22 @@ export type Article = {
 
 export const ARTICLES: Article[] = [
   {
+    slug: "relay-knocker-rkv-rkd-selection-guide",
+    title:
+      "リレーノッカーとは？ホッパーの粉体付着・閉塞に使うRKV/RKDの違いと選び方【2026年版】",
+    shortTitle: "リレーノッカーとは？RKV/RKDの違いと選び方",
+    description:
+      "リレーノッカーとは何か、ホッパー・サイロ・シュートの粉体付着や閉塞にどう使うかを解説。EXENのRKVバイブタイプとRKDダイレクトタイプの違い、平面/曲面取付、RKV20P・RKV30PB・RKV60PB・RKD60PBなどの打撃エネルギーを比較し、AOC-1Bによる制御まで購入前に整理します。",
+    category: "guide",
+    categoryLabel: "選び方ガイド",
+    thumbnail:
+      "/images/articles/relay-knocker-rkv-rkd-selection-guide/relay-knocker-powder-hopper-hero.webp",
+    date: "2026-09-02",
+    readTime: "約26分",
+    available: true,
+    path: "/articles/relay-knocker-rkv-rkd-selection-guide",
+  },
+  {
     slug: "compact-thermal-camera-flir-c5-c3x-guide",
     title:
       "コンパクトサーモグラフィカメラの選び方｜FLIR C5・C3-Xの違いと設備点検での使い分け【2026年版】",

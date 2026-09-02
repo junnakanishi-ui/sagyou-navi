@@ -14,6 +14,22 @@ export type Article = {
 
 export const ARTICLES: Article[] = [
   {
+    slug: "compact-thermal-camera-flir-c5-c3x-guide",
+    title:
+      "コンパクトサーモグラフィカメラの選び方｜FLIR C5・C3-Xの違いと設備点検での使い分け【2026年版】",
+    shortTitle: "コンパクトサーモグラフィカメラの選び方",
+    description:
+      "コンパクトサーモグラフィカメラを設備点検・電気点検・建物診断に使いたい方向けに、FLIR C5（89401-0202）とC3-X（90501-0201）を徹底比較。160×120と128×96の違い、400℃/300℃、MSX、Wi-Fi、FLIR Ignite、1-Touch Level/Span、IP54、放射率の注意点まで購入前に知りたい情報を整理します。",
+    category: "compare",
+    categoryLabel: "比較・違い",
+    thumbnail:
+      "/images/articles/compact-thermal-camera-flir-c5-c3x-guide/compact-thermal-camera-facility-inspection.webp",
+    date: "2026-09-02",
+    readTime: "約22分",
+    available: true,
+    path: "/articles/compact-thermal-camera-flir-c5-c3x-guide",
+  },
+  {
     slug: "duct-cutter-types-selection-guide",
     title:
       "ダクトカッターとは？エアコン・配線ダクトの種類と選び方｜おすすめ8機種を用途別比較【2026年版】",

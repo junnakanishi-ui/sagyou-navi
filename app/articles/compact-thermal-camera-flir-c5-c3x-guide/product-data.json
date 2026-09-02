@@ -1,0 +1,51 @@
+{
+  "slug": "compact-thermal-camera-flir-c5-c3x-guide",
+  "updatedAt": "2026-09-02",
+  "mainKeyword": "コンパクトサーモグラフィカメラ",
+  "c5Primary": {
+    "short": "FLIR C5",
+    "name": "FLIR C5（Wi-Fi）",
+    "manufacturerPartNumber": "89401-0202",
+    "image": "ta022221-894010202.jpg",
+    "url": "https://item.rakuten.co.jp/crecote-shop/ta022221-894010202/?utm_source=sagyou_navi&utm_medium=article&utm_campaign=compact-thermal-camera-flir-c5-c3x-guide",
+    "badge": "160×120 / 400℃ / 1-Touch",
+    "role": "端子やヒューズなど細かな温度分布を見たい日常点検向け。解像度・400℃・表示調整機能まで求める場合の候補。"
+  },
+  "c5Alt": {
+    "short": "FLIR C5（別掲載）",
+    "name": "FLIR C5（Wi-Fi）同型式別掲載",
+    "manufacturerPartNumber": "89401-0202",
+    "image": "ta004353-894010202.jpg",
+    "url": "https://item.rakuten.co.jp/crecote-shop/ta004353-894010202/?utm_source=sagyou_navi&utm_medium=article&utm_campaign=compact-thermal-camera-flir-c5-c3x-guide",
+    "note": "同一メーカー型式89401-0202の別販売ページ。"
+  },
+  "c3x": {
+    "short": "FLIR C3-X",
+    "name": "FLIR C3-X（Wi-Fi）",
+    "manufacturerPartNumber": "90501-0201",
+    "image": "ta022229-905010201.jpg",
+    "url": "https://item.rakuten.co.jp/crecote-shop/ta022229-905010201/?utm_source=sagyou_navi&utm_medium=article&utm_campaign=compact-thermal-camera-flir-c5-c3x-guide",
+    "badge": "128×96 / 300℃ / 基本点検",
+    "role": "300℃以内の電気・機械・建物の基本点検をポケットサイズで効率化するモデル。"
+  },
+  "ctas": {
+    "main": {
+      "label": "サーモグラフィカメラ一覧を見る",
+      "url": "https://search.rakuten.co.jp/search/mall/%E3%82%B5%E3%83%BC%E3%83%A2%E3%82%B0%E3%83%A9%E3%83%95%E3%82%A3/?sid=426972&utm_source=sagyou_navi&utm_medium=article&utm_campaign=compact-thermal-camera-flir-c5-c3x-guide"
+    },
+    "secondary": [
+      {
+        "label": "ツールバッグ一覧を見る",
+        "url": "https://search.rakuten.co.jp/search/mall/%E3%83%84%E3%83%BC%E3%83%AB%E3%83%90%E3%83%83%E3%82%B0/?sid=426972&utm_source=sagyou_navi&utm_medium=article&utm_campaign=compact-thermal-camera-flir-c5-c3x-guide"
+      },
+      {
+        "label": "作業用手袋一覧を見る",
+        "url": "https://www.gc-select.com/pages/search-results-page?q=%E4%BD%9C%E6%A5%AD%E7%94%A8%E6%89%8B%E8%A2%8B&utm_source=sagyou_navi&utm_medium=article&utm_campaign=compact-thermal-camera-flir-c5-c3x-guide"
+      },
+      {
+        "label": "TRUSCO中山商品一覧を見る",
+        "url": "https://item.rakuten.co.jp/crecote-shop/c/0000000043/?l-id=shoptop_shopmenu_categorypage_16&utm_source=sagyou_navi&utm_medium=article&utm_campaign=compact-thermal-camera-flir-c5-c3x-guide"
+      }
+    ]
+  }
+}

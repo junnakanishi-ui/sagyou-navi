@@ -14,6 +14,22 @@ export type Article = {
 
 export const ARTICLES: Article[] = [
   {
+    slug: "farm-machinery-battery-charger-selection-guide",
+    title:
+      "農機のバッテリー充電器の選び方｜トラクター・コンバインの12V/24V・Ah・セルスタート【2026年版】",
+    shortTitle: "農機のバッテリー充電器の選び方",
+    description:
+      "トラクター・コンバイン・田植機など農機のバッテリー充電器をどう選ぶか解説。12V/24V、バッテリー容量Ah、急速充電、セルスタート、長期保管の違いを整理し、日動工業NB-40・NB-50・NB-60・NB-120・NB-200を農機サイズ別に紹介します。",
+    category: "guide",
+    categoryLabel: "選び方ガイド",
+    thumbnail:
+      "/images/articles/farm-machinery-battery-charger-selection-guide/farm-machine-season-start-battery-check.webp",
+    date: "2026-09-03",
+    readTime: "約22分",
+    available: true,
+    path: "/articles/farm-machinery-battery-charger-selection-guide",
+  },
+  {
     slug: "nichido-super-booster-battery-charger-guide",
     title:
       "スーパーブースターとは？日動工業NB-40・50・60・120・200を12V/24V・セルスタート電流で比較【2026年版】",

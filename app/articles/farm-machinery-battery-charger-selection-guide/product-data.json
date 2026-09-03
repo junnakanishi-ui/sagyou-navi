@@ -1,0 +1,148 @@
+{
+  "slug": "farm-machinery-battery-charger-selection-guide",
+  "updatedAt": "2026-09-03",
+  "sourceExcel": "取得結果(20260903-090519).xlsx",
+  "excelRows": 6,
+  "uniqueModels": 5,
+  "mainKeyword": "農機 バッテリー充電器",
+  "secondaryKeywords": [
+    "農機 バッテリー充電器 選び方",
+    "トラクター バッテリー 充電器",
+    "農機 バッテリー 12V 24V 充電器",
+    "農機 バッテリー上がり 充電器",
+    "農機 セルスタート 充電器",
+    "農機 急速充電器",
+    "農機 バッテリー 長期保管",
+    "コンバイン バッテリー 充電器"
+  ],
+  "featuredModels": [
+    {
+      "model": "NB-40",
+      "farmRole": "小型農機・普通乗用車",
+      "badge": "12V・軽量4.5kg",
+      "specs": {
+        "voltage": "DC12V",
+        "battery": "26～60Ah",
+        "continuousCharge": "6A",
+        "maxCharge": "8A",
+        "cellStart": "40A（10秒MAX）",
+        "timer": "なし",
+        "weight": "4.5kg"
+      },
+      "url": "https://item.rakuten.co.jp/crecote-shop/ta011446-nb40/?utm_source=sagyou_navi&utm_medium=article&utm_campaign=farm-machinery-battery-charger-selection-guide",
+      "image": "ta011446-nb40.jpg",
+      "note": "日動工業は普通乗用車や小型農機などの充電・セルスタート用途を案内。搭載バッテリーが26～60Ahなら候補。",
+      "check": "電圧は必ず実機仕様で確認。農機が大きいからといって24Vと決めない。",
+      "alternateListing": {
+        "url": "https://item.rakuten.co.jp/crecote-shop/ta037900-nb40/?utm_source=sagyou_navi&utm_medium=article&utm_campaign=farm-machinery-battery-charger-selection-guide",
+        "image": "ta037900-nb40.jpg",
+        "note": "同一NB-40。別モデルとして比較しない。"
+      }
+    },
+    {
+      "model": "NB-50",
+      "farmRole": "小型農機・普通乗用車",
+      "badge": "12V・26～80Ah",
+      "specs": {
+        "voltage": "DC12V",
+        "battery": "26～80Ah",
+        "continuousCharge": "10A",
+        "maxCharge": "15A",
+        "cellStart": "50A（10秒MAX）",
+        "timer": "なし",
+        "weight": "6.2kg"
+      },
+      "url": "https://item.rakuten.co.jp/crecote-shop/ta041539-nb50/?utm_source=sagyou_navi&utm_medium=article&utm_campaign=farm-machinery-battery-charger-selection-guide",
+      "image": "ta041539-nb50.jpg",
+      "note": "NB-40より適合容量と充電電流が広く、複数の小型農機を扱う整備現場でも比較しやすい。",
+      "check": "60Ah超～80Ahの12Vバッテリーがあるなら、NB-40ではなくこちらを確認。"
+    },
+    {
+      "model": "NB-60",
+      "farmRole": "小型農機・普通乗用車",
+      "badge": "12V・タイマー付",
+      "specs": {
+        "voltage": "DC12V",
+        "battery": "26～80Ah",
+        "continuousCharge": "12A",
+        "maxCharge": "17A",
+        "cellStart": "60A（10秒MAX）",
+        "timer": "12時間",
+        "weight": "6.4kg"
+      },
+      "url": "https://item.rakuten.co.jp/crecote-shop/ta041540-nb60/?utm_source=sagyou_navi&utm_medium=article&utm_campaign=farm-machinery-battery-charger-selection-guide",
+      "image": "ta041540-nb60.jpg",
+      "note": "適合AhはNB-50と同じだが、充電電流・セルスタート電流が高く、12時間タイマー付き。",
+      "check": "シーズン前の作業量が多い整備現場で、12V中心だが一段余裕がほしい場合に比較。"
+    },
+    {
+      "model": "NB-120",
+      "farmRole": "大型農機・大型車",
+      "badge": "12/24V・35～120Ah",
+      "specs": {
+        "voltage": "DC12V / DC24V",
+        "battery": "35～120Ah",
+        "continuousCharge": "12V:20A / 24V:10A",
+        "maxCharge": "12V:30A / 24V:15A",
+        "cellStart": "120A（10秒MAX）",
+        "timer": "なし",
+        "weight": "11.5kg"
+      },
+      "url": "https://item.rakuten.co.jp/crecote-shop/ta041536-nb120/?utm_source=sagyou_navi&utm_medium=article&utm_campaign=farm-machinery-battery-charger-selection-guide",
+      "image": "ta041536-nb120.jpg",
+      "note": "大型ガソリン車・大型農機の充電・セルスタート用途。12V/24Vが混在する整備場向け。",
+      "check": "24Vの大型農機を扱う可能性があるなら、NB-40/50/60だけでは不足。"
+    },
+    {
+      "model": "NB-200",
+      "farmRole": "大型農機・重機・10tトラック",
+      "badge": "12/24V・50～200Ah",
+      "specs": {
+        "voltage": "DC12V / DC24V",
+        "battery": "50～200Ah",
+        "continuousCharge": "12V:30A / 24V:25A",
+        "maxCharge": "12V:50A / 24V:40A",
+        "cellStart": "200A（10秒MAX）",
+        "timer": "12時間",
+        "weight": "21.7kg"
+      },
+      "url": "https://item.rakuten.co.jp/crecote-shop/ta041538-nb200/?utm_source=sagyou_navi&utm_medium=article&utm_campaign=farm-machinery-battery-charger-selection-guide",
+      "image": "ta041538-nb200.jpg",
+      "note": "オレンジブックでは10tトラック・重機まで用途例。大容量と始動補助が必要な場合の候補。",
+      "check": "21.7kgあるため、一番大きい＝安心ではなく、実Ahと移動方法を確認。"
+    }
+  ],
+  "cta": {
+    "main": {
+      "label": "スーパーブースター一覧を見る",
+      "url": "https://search.rakuten.co.jp/search/mall/%E3%82%B9%E3%83%BC%E3%83%91%E3%83%BC%E3%83%96%E3%83%BC%E3%82%B9%E3%82%BF%E3%83%BC/?sid=426972&utm_source=sagyou_navi&utm_medium=article&utm_campaign=farm-machinery-battery-charger-selection-guide"
+    },
+    "secondary": [
+      {
+        "label": "工具一覧",
+        "url": "https://search.rakuten.co.jp/search/mall/%E5%B7%A5%E5%85%B7/?sid=426972&utm_source=sagyou_navi&utm_medium=article&utm_campaign=farm-machinery-battery-charger-selection-guide",
+        "context": "農機整備で使う工具"
+      },
+      {
+        "label": "作業用手袋一覧",
+        "url": "https://www.gc-select.com/pages/search-results-page?q=%E4%BD%9C%E6%A5%AD%E7%94%A8%E6%89%8B%E8%A2%8B&utm_source=sagyou_navi&utm_medium=article&utm_campaign=farm-machinery-battery-charger-selection-guide",
+        "context": "一般整備・搬送時の手保護"
+      },
+      {
+        "label": "運搬台車一覧",
+        "url": "https://store.shopping.yahoo.co.jp/signcity-yshop/b1bfc8c2c2.html?sc_i=shopping-pc-web-category-storeitm-cat_nrw-slctc&utm_source=sagyou_navi&utm_medium=article&utm_campaign=farm-machinery-battery-charger-selection-guide",
+        "context": "NB-120やNB-200の整備場内移動"
+      },
+      {
+        "label": "ツールバッグ一覧",
+        "url": "https://search.rakuten.co.jp/search/mall/%E3%83%84%E3%83%BC%E3%83%AB%E3%83%90%E3%83%83%E3%82%B0/?sid=426972&utm_source=sagyou_navi&utm_medium=article&utm_campaign=farm-machinery-battery-charger-selection-guide",
+        "context": "テスター・小物工具・ケーブルの携行"
+      },
+      {
+        "label": "トラスコ中山商品一覧",
+        "url": "https://item.rakuten.co.jp/crecote-shop/c/0000000043/?l-id=shoptop_shopmenu_categorypage_16&utm_source=sagyou_navi&utm_medium=article&utm_campaign=farm-machinery-battery-charger-selection-guide",
+        "context": "TRUSCO掲載商品"
+      }
+    ]
+  }
+}

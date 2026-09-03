@@ -14,6 +14,22 @@ export type Article = {
 
 export const ARTICLES: Article[] = [
   {
+    slug: "power-tool-voltage-drop-portable-transformer-guide",
+    title:
+      "電動工具の電圧降下対策｜200Vしかない現場で100V工具を使う方法とTRUSCO TPT-30BD【2026年版】",
+    shortTitle: "電動工具の電圧降下対策とTPT-30BD",
+    description:
+      "100V電動工具のパワー不足や長い延長コードでの電圧降下、200Vしかない工事現場で100V工具を使う方法を解説。TRUSCO TPT-30BD（764-4639）の3kVA・30A、100V/115V出力、個別コンセント上限、昇圧・降圧の意味まで購入前に整理します。",
+    category: "guide",
+    categoryLabel: "選び方ガイド",
+    thumbnail:
+      "/images/articles/power-tool-voltage-drop-portable-transformer-guide/power-tool-voltage-drop-worksite-hero.webp",
+    date: "2026-09-02",
+    readTime: "約18分",
+    available: true,
+    path: "/articles/power-tool-voltage-drop-portable-transformer-guide",
+  },
+  {
     slug: "relay-knocker-rkv-rkd-selection-guide",
     title:
       "リレーノッカーとは？ホッパーの粉体付着・閉塞に使うRKV/RKDの違いと選び方【2026年版】",

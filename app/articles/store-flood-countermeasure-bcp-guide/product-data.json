@@ -1,0 +1,201 @@
+{
+  "slug": "store-flood-countermeasure-bcp-guide",
+  "updatedAt": "2026-09-03",
+  "sourceExcel": "取得結果(20260903-110739).xlsx",
+  "excelRows": 31,
+  "uniqueUrls": 30,
+  "mainKeyword": "店舗 浸水対策",
+  "secondaryKeywords": [
+    "店舗 水害対策",
+    "店舗入口 浸水対策",
+    "店舗 シャッター 浸水対策",
+    "路面店 浸水対策",
+    "店舗 台風対策",
+    "店舗 BCP 水害",
+    "店舗 止水板",
+    "店舗 吸水土のう"
+  ],
+  "featuredProducts": [
+    {
+      "model": "004954",
+      "name": "ワニ印 水害防止パネル 備えあれ板 3枚",
+      "role": "正面入口・自動ドア等の簡易水防",
+      "specs": [
+        "700×400×500mm/枚",
+        "約2.3kg/枚",
+        "3枚セット",
+        "工具不要ジョイント"
+      ],
+      "criticalNote": "初期の軽度浸水向け。平坦な床面等の使用条件を確認。津波・高潮時は設置しない。",
+      "listingUrl": "https://item.rakuten.co.jp/crecote-shop/ta046427-004954/?utm_source=sagyou_navi&utm_medium=article&utm_campaign=store-flood-countermeasure-bcp-guide",
+      "rawUrl": "https://item.rakuten.co.jp/crecote-shop/ta046427-004954/",
+      "image": "/images/articles/store-flood-countermeasure-bcp-guide/products/ta046427-004954.jpg",
+      "imagePolicy": "Excelの実商品画像を使用。AI生成禁止。",
+      "alternateListing": {
+        "url": "https://item.rakuten.co.jp/crecote-shop/ta053757-004954/?utm_source=sagyou_navi&utm_medium=article&utm_campaign=store-flood-countermeasure-bcp-guide",
+        "rawUrl": "https://item.rakuten.co.jp/crecote-shop/ta053757-004954/",
+        "note": "同一商品004954の別掲載URL。別モデルとして比較しない。"
+      }
+    },
+    {
+      "model": "004959",
+      "name": "ワニ印 備えあれ板 コーナーパーツ",
+      "role": "建物角・L字水防ライン",
+      "specs": [
+        "本体専用コーナーパーツ",
+        "幅最大700mm",
+        "高さ500mm",
+        "約2kg"
+      ],
+      "criticalNote": "単体使用ではなく備えあれ板本体と組み合わせる。",
+      "listingUrl": "https://item.rakuten.co.jp/crecote-shop/ta051919-004959/?utm_source=sagyou_navi&utm_medium=article&utm_campaign=store-flood-countermeasure-bcp-guide",
+      "rawUrl": "https://item.rakuten.co.jp/crecote-shop/ta051919-004959/",
+      "image": "/images/articles/store-flood-countermeasure-bcp-guide/products/ta051919-004959.jpg",
+      "imagePolicy": "Excelの実商品画像を使用。AI生成禁止。"
+    },
+    {
+      "model": "ESEAT",
+      "name": "SANWA 三和製軽量シャッター専用 簡易防水シート eシート",
+      "role": "三和製指定軽量シャッター",
+      "specs": [
+        "設置目安 約5～10分",
+        "浸水高さ30cmまで",
+        "簡易防水シート"
+      ],
+      "criticalNote": "指定シャッター専用。完全防水ではない。適合条件を必ず確認。",
+      "listingUrl": "https://item.rakuten.co.jp/crecote-shop/ta053963-eseat/?utm_source=sagyou_navi&utm_medium=article&utm_campaign=store-flood-countermeasure-bcp-guide",
+      "rawUrl": "https://item.rakuten.co.jp/crecote-shop/ta053963-eseat/",
+      "image": "/images/articles/store-flood-countermeasure-bcp-guide/products/ta053963-eseat.jpg",
+      "imagePolicy": "Excelの実商品画像を使用。AI生成禁止。"
+    },
+    {
+      "model": "QB125330",
+      "name": "橋本クロス クイック防水堤 QB125330 20枚",
+      "role": "通用口・店内側の漏水補完",
+      "specs": [
+        "1250×330mm",
+        "20枚",
+        "吸水約5分",
+        "吸水後約20kg"
+      ],
+      "criticalNote": "海水不可。使用後の回収方法まで準備。",
+      "listingUrl": "https://item.rakuten.co.jp/crecote-shop/ta054232-qb125330/?utm_source=sagyou_navi&utm_medium=article&utm_campaign=store-flood-countermeasure-bcp-guide",
+      "rawUrl": "https://item.rakuten.co.jp/crecote-shop/ta054232-qb125330/",
+      "image": "/images/articles/store-flood-countermeasure-bcp-guide/products/ta054232-qb125330.jpg",
+      "imagePolicy": "Excelの実商品画像を使用。AI生成禁止。"
+    },
+    {
+      "model": "722T20",
+      "name": "丸和ケミカル 土No袋 箱型水槽付20枚セット",
+      "role": "コンパクトな吸水土のう備蓄",
+      "specs": [
+        "箱型20枚",
+        "専用水槽",
+        "脱水剤",
+        "吸水約3分",
+        "吸水後約23kg/枚"
+      ],
+      "criticalNote": "海水不可。吸水後は重量物。",
+      "listingUrl": "https://item.rakuten.co.jp/crecote-shop/ta053814-722t20/?utm_source=sagyou_navi&utm_medium=article&utm_campaign=store-flood-countermeasure-bcp-guide",
+      "rawUrl": "https://item.rakuten.co.jp/crecote-shop/ta053814-722t20/",
+      "image": "/images/articles/store-flood-countermeasure-bcp-guide/products/ta053814-722t20.jpg",
+      "imagePolicy": "Excelの実商品画像を使用。AI生成禁止。"
+    },
+    {
+      "model": "MZTR001",
+      "name": "UACJ アルミ止水板 水用心 脱着式 MZTR001",
+      "role": "繰り返し守る固定入口",
+      "specs": [
+        "幅2m",
+        "高さ550mm",
+        "14kg",
+        "JIS A 4716 Ws-3等級相当"
+      ],
+      "criticalNote": "完全止水ではない。設置環境・事前部材の適合確認が必要。",
+      "listingUrl": "https://item.rakuten.co.jp/crecote-shop/ta054165-mztr001/?utm_source=sagyou_navi&utm_medium=article&utm_campaign=store-flood-countermeasure-bcp-guide",
+      "rawUrl": "https://item.rakuten.co.jp/crecote-shop/ta054165-mztr001/",
+      "image": "/images/articles/store-flood-countermeasure-bcp-guide/products/ta054165-mztr001.jpg",
+      "imagePolicy": "Excelの実商品画像を使用。AI生成禁止。"
+    },
+    {
+      "model": "2017",
+      "name": "エーコー 耐火・防水プロテクターバッグ 2017",
+      "role": "重要書類保護",
+      "specs": [
+        "A4紙収納",
+        "水深20cm/8時間防水試験",
+        "30分耐火",
+        "5.75L"
+      ],
+      "criticalNote": "性能は規定試験条件。店舗全体の浸水を保証するものではない。",
+      "listingUrl": "https://item.rakuten.co.jp/crecote-shop/ta053783-2017/?utm_source=sagyou_navi&utm_medium=article&utm_campaign=store-flood-countermeasure-bcp-guide",
+      "rawUrl": "https://item.rakuten.co.jp/crecote-shop/ta053783-2017/",
+      "image": "/images/articles/store-flood-countermeasure-bcp-guide/products/ta053783-2017.jpg",
+      "imagePolicy": "Excelの実商品画像を使用。AI生成禁止。"
+    },
+    {
+      "model": "TWP7000-3654",
+      "name": "TRUSCO 耐水UVシート #7000 3.6m×5.4m",
+      "role": "商品・資材の応急養生",
+      "specs": [
+        "3.6m×5.4m",
+        "耐水UVシート"
+      ],
+      "criticalNote": "止水用品ではない。入口浸水を止める用途と混同しない。",
+      "listingUrl": "https://item.rakuten.co.jp/crecote-shop/ta019253-twp70003654/?utm_source=sagyou_navi&utm_medium=article&utm_campaign=store-flood-countermeasure-bcp-guide",
+      "rawUrl": "https://item.rakuten.co.jp/crecote-shop/ta019253-twp70003654/",
+      "image": "/images/articles/store-flood-countermeasure-bcp-guide/products/ta019253-twp70003654.jpg",
+      "imagePolicy": "Excelの実商品画像を使用。AI生成禁止。"
+    }
+  ],
+  "internalLinks": [
+    {
+      "label": "工場・倉庫の浸水対策",
+      "url": "https://www.sagyou-navi.com/articles/factory-warehouse-flood-entry-protection-guide"
+    },
+    {
+      "label": "事業所の防災備蓄チェックリスト",
+      "url": "https://www.sagyou-navi.com/articles/business-disaster-stockpile-checklist"
+    }
+  ],
+  "cta": {
+    "main": {
+      "label": "水害対策アイテム一覧",
+      "url": "https://search.rakuten.co.jp/search/mall/%E6%B0%B4%E5%AE%B3/?sid=426972&utm_source=sagyou_navi&utm_medium=article&utm_campaign=store-flood-countermeasure-bcp-guide"
+    },
+    "secondary": [
+      {
+        "label": "蓄電池一覧",
+        "url": "https://www.gc-select.com/collections/battely?utm_source=sagyou_navi&utm_medium=article&utm_campaign=store-flood-countermeasure-bcp-guide"
+      },
+      {
+        "label": "テント・間仕切り一覧",
+        "url": "https://www.gc-select.com/collections/tent-separate?utm_source=sagyou_navi&utm_medium=article&utm_campaign=store-flood-countermeasure-bcp-guide"
+      },
+      {
+        "label": "防災マット一覧",
+        "url": "https://www.gc-select.com/collections/disaster-prevention-matt?utm_source=sagyou_navi&utm_medium=article&utm_campaign=store-flood-countermeasure-bcp-guide"
+      },
+      {
+        "label": "防災毛布一覧",
+        "url": "https://www.gc-select.com/collections/disaster-prevention-blanket?utm_source=sagyou_navi&utm_medium=article&utm_campaign=store-flood-countermeasure-bcp-guide"
+      },
+      {
+        "label": "非常食・保存食一覧",
+        "url": "https://www.gc-select.com/collections/emergency-rations?utm_source=sagyou_navi&utm_medium=article&utm_campaign=store-flood-countermeasure-bcp-guide"
+      },
+      {
+        "label": "防災セット用品一覧",
+        "url": "https://www.gc-select.com/collections/disaster-prevention-set?utm_source=sagyou_navi&utm_medium=article&utm_campaign=store-flood-countermeasure-bcp-guide"
+      },
+      {
+        "label": "簡易トイレ一覧",
+        "url": "https://www.gc-select.com/collections/right-toilet?utm_source=sagyou_navi&utm_medium=article&utm_campaign=store-flood-countermeasure-bcp-guide"
+      },
+      {
+        "label": "防災グッズ一覧",
+        "url": "https://www.gc-select.com/collections/disaster-prevention-goods?utm_source=sagyou_navi&utm_medium=article&utm_campaign=store-flood-countermeasure-bcp-guide"
+      }
+    ]
+  }
+}

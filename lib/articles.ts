@@ -14,6 +14,22 @@ export type Article = {
 
 export const ARTICLES: Article[] = [
   {
+    slug: "store-flood-countermeasure-bcp-guide",
+    title:
+      "店舗の浸水対策｜入口・シャッターを守る水害対策と営業再開までの備え【2026年版】",
+    shortTitle: "店舗の浸水対策と水害BCP",
+    description:
+      "店舗の浸水対策を、平時・大雨前・浸水リスク上昇時・営業再開の4フェーズで解説。自動ドア・シャッター・通用口への止水板、吸水土のう、防水書類保管、在庫移動まで、路面店・小売店・飲食店が事前に準備したい水害対策を整理します。",
+    category: "guide",
+    categoryLabel: "選び方ガイド",
+    thumbnail:
+      "/images/articles/store-flood-countermeasure-bcp-guide/store-flood-preparation-entrance.webp",
+    date: "2026-09-03",
+    readTime: "約24分",
+    available: true,
+    path: "/articles/store-flood-countermeasure-bcp-guide",
+  },
+  {
     slug: "farm-machinery-battery-charger-selection-guide",
     title:
       "農機のバッテリー充電器の選び方｜トラクター・コンバインの12V/24V・Ah・セルスタート【2026年版】",

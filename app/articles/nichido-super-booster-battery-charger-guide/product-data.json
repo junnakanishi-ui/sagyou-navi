@@ -1,0 +1,144 @@
+{
+  "slug": "nichido-super-booster-battery-charger-guide",
+  "updatedAt": "2026-09-03",
+  "sourceExcel": "取得結果(20260903-090519).xlsx",
+  "excelRows": 6,
+  "uniqueModels": 5,
+  "mainKeyword": "スーパーブースター",
+  "secondaryKeywords": [
+    "日動 スーパーブースター",
+    "スーパーブースター 急速充電器",
+    "スーパーブースター 12V 24V",
+    "スーパーブースター セルスタート",
+    "急速充電器 セルスターター付",
+    "バッテリー充電器 セルスタート",
+    "農機 バッテリー 充電器",
+    "大型農機 バッテリー 24V 充電器",
+    "NB-40",
+    "NB-50",
+    "NB-60",
+    "NB-120",
+    "NB-200"
+  ],
+  "models": [
+    {
+      "model": "NB-40",
+      "specs": {
+        "voltage": "DC12V",
+        "battery": "26～60Ah",
+        "continuousCharge": "6A",
+        "maxCharge": "8A",
+        "cellStart": "40A（10秒MAX）",
+        "timer": "なし",
+        "weight": "4.5kg",
+        "target": "普通乗用車・小型農機"
+      },
+      "listingUrl": "https://item.rakuten.co.jp/crecote-shop/ta011446-nb40/?utm_source=sagyou_navi&utm_medium=article&utm_campaign=nichido-super-booster-battery-charger-guide",
+      "rawUrl": "https://item.rakuten.co.jp/crecote-shop/ta011446-nb40/",
+      "image": "/images/articles/nichido-super-booster-battery-charger-guide/products/ta011446-nb40.jpg",
+      "imagePolicy": "Excelの実商品画像を使用。AI生成禁止。",
+      "alternateListing": {
+        "url": "https://item.rakuten.co.jp/crecote-shop/ta037900-nb40/?utm_source=sagyou_navi&utm_medium=article&utm_campaign=nichido-super-booster-battery-charger-guide",
+        "rawUrl": "https://item.rakuten.co.jp/crecote-shop/ta037900-nb40/",
+        "image": "/images/articles/nichido-super-booster-battery-charger-guide/products/ta037900-nb40.jpg",
+        "note": "同一NB-40。別機種として比較しない。"
+      }
+    },
+    {
+      "model": "NB-50",
+      "specs": {
+        "voltage": "DC12V",
+        "battery": "26～80Ah",
+        "continuousCharge": "10A",
+        "maxCharge": "15A",
+        "cellStart": "50A（10秒MAX）",
+        "timer": "なし",
+        "weight": "6.2kg",
+        "target": "普通乗用車・小型農機"
+      },
+      "listingUrl": "https://item.rakuten.co.jp/crecote-shop/ta041539-nb50/?utm_source=sagyou_navi&utm_medium=article&utm_campaign=nichido-super-booster-battery-charger-guide",
+      "rawUrl": "https://item.rakuten.co.jp/crecote-shop/ta041539-nb50/",
+      "image": "/images/articles/nichido-super-booster-battery-charger-guide/products/ta041539-nb50.jpg",
+      "imagePolicy": "Excelの実商品画像を使用。AI生成禁止。"
+    },
+    {
+      "model": "NB-60",
+      "specs": {
+        "voltage": "DC12V",
+        "battery": "26～80Ah",
+        "continuousCharge": "12A",
+        "maxCharge": "17A",
+        "cellStart": "60A（10秒MAX）",
+        "timer": "12時間",
+        "weight": "6.4kg",
+        "target": "普通乗用車・小型農機"
+      },
+      "listingUrl": "https://item.rakuten.co.jp/crecote-shop/ta041540-nb60/?utm_source=sagyou_navi&utm_medium=article&utm_campaign=nichido-super-booster-battery-charger-guide",
+      "rawUrl": "https://item.rakuten.co.jp/crecote-shop/ta041540-nb60/",
+      "image": "/images/articles/nichido-super-booster-battery-charger-guide/products/ta041540-nb60.jpg",
+      "imagePolicy": "Excelの実商品画像を使用。AI生成禁止。"
+    },
+    {
+      "model": "NB-120",
+      "specs": {
+        "voltage": "DC12V / DC24V",
+        "battery": "35～120Ah",
+        "continuousCharge": "12V:20A / 24V:10A",
+        "maxCharge": "12V:30A / 24V:15A",
+        "cellStart": "120A（10秒MAX）",
+        "timer": "なし",
+        "weight": "11.5kg",
+        "target": "大型車・大型農機"
+      },
+      "listingUrl": "https://item.rakuten.co.jp/crecote-shop/ta041536-nb120/?utm_source=sagyou_navi&utm_medium=article&utm_campaign=nichido-super-booster-battery-charger-guide",
+      "rawUrl": "https://item.rakuten.co.jp/crecote-shop/ta041536-nb120/",
+      "image": "/images/articles/nichido-super-booster-battery-charger-guide/products/ta041536-nb120.jpg",
+      "imagePolicy": "Excelの実商品画像を使用。AI生成禁止。"
+    },
+    {
+      "model": "NB-200",
+      "specs": {
+        "voltage": "DC12V / DC24V",
+        "battery": "50～200Ah",
+        "continuousCharge": "12V:30A / 24V:25A",
+        "maxCharge": "12V:50A / 24V:40A",
+        "cellStart": "200A（10秒MAX）",
+        "timer": "12時間",
+        "weight": "21.7kg",
+        "target": "10tトラック・重機・大型農機"
+      },
+      "listingUrl": "https://item.rakuten.co.jp/crecote-shop/ta041538-nb200/?utm_source=sagyou_navi&utm_medium=article&utm_campaign=nichido-super-booster-battery-charger-guide",
+      "rawUrl": "https://item.rakuten.co.jp/crecote-shop/ta041538-nb200/",
+      "image": "/images/articles/nichido-super-booster-battery-charger-guide/products/ta041538-nb200.jpg",
+      "imagePolicy": "Excelの実商品画像を使用。AI生成禁止。"
+    }
+  ],
+  "cta": {
+    "main": {
+      "label": "スーパーブースター一覧",
+      "url": "https://search.rakuten.co.jp/search/mall/%E3%82%B9%E3%83%BC%E3%83%91%E3%83%BC%E3%83%96%E3%83%BC%E3%82%B9%E3%82%BF%E3%83%BC/?sid=426972&utm_source=sagyou_navi&utm_medium=article&utm_campaign=nichido-super-booster-battery-charger-guide"
+    },
+    "secondary": [
+      {
+        "label": "工具一覧",
+        "url": "https://search.rakuten.co.jp/search/mall/%E5%B7%A5%E5%85%B7/?sid=426972&utm_source=sagyou_navi&utm_medium=article&utm_campaign=nichido-super-booster-battery-charger-guide"
+      },
+      {
+        "label": "作業用手袋一覧",
+        "url": "https://www.gc-select.com/pages/search-results-page?q=%E4%BD%9C%E6%A5%AD%E7%94%A8%E6%89%8B%E8%A2%8B&utm_source=sagyou_navi&utm_medium=article&utm_campaign=nichido-super-booster-battery-charger-guide"
+      },
+      {
+        "label": "運搬台車一覧",
+        "url": "https://store.shopping.yahoo.co.jp/signcity-yshop/b1bfc8c2c2.html?sc_i=shopping-pc-web-category-storeitm-cat_nrw-slctc&utm_source=sagyou_navi&utm_medium=article&utm_campaign=nichido-super-booster-battery-charger-guide"
+      },
+      {
+        "label": "ツールバッグ一覧",
+        "url": "https://search.rakuten.co.jp/search/mall/%E3%83%84%E3%83%BC%E3%83%AB%E3%83%90%E3%83%83%E3%82%B0/?sid=426972&utm_source=sagyou_navi&utm_medium=article&utm_campaign=nichido-super-booster-battery-charger-guide"
+      },
+      {
+        "label": "トラスコ中山商品一覧",
+        "url": "https://item.rakuten.co.jp/crecote-shop/c/0000000043/?l-id=shoptop_shopmenu_categorypage_16&utm_source=sagyou_navi&utm_medium=article&utm_campaign=nichido-super-booster-battery-charger-guide"
+      }
+    ]
+  }
+}

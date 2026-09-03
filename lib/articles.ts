@@ -14,6 +14,22 @@ export type Article = {
 
 export const ARTICLES: Article[] = [
   {
+    slug: "nichido-super-booster-battery-charger-guide",
+    title:
+      "スーパーブースターとは？日動工業NB-40・50・60・120・200を12V/24V・セルスタート電流で比較【2026年版】",
+    shortTitle: "スーパーブースター NBシリーズ比較",
+    description:
+      "日動工業の急速充電器「スーパーブースター」を比較。NB-40・NB-50・NB-60・NB-120・NB-200について、12V/24V、適合バッテリー容量、充電電流、セルスタート電流、タイマー、重量の違いを整理。普通車・農機・大型農機・トラック・重機でどの型式を選ぶかを解説します。",
+    category: "compare",
+    categoryLabel: "比較・違い",
+    thumbnail:
+      "/images/articles/nichido-super-booster-battery-charger-guide/super-booster-battery-charger-workshop.webp",
+    date: "2026-09-03",
+    readTime: "約22分",
+    available: true,
+    path: "/articles/nichido-super-booster-battery-charger-guide",
+  },
+  {
     slug: "power-tool-voltage-drop-portable-transformer-guide",
     title:
       "電動工具の電圧降下対策｜200Vしかない現場で100V工具を使う方法とTRUSCO TPT-30BD【2026年版】",

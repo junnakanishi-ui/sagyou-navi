@@ -14,6 +14,22 @@ export type Article = {
 
 export const ARTICLES: Article[] = [
   {
+    slug: "clamping-kit-t-slot-selection-guide",
+    title:
+      "クランピングキットの選び方｜T溝サイズ・ねじ径・フライス盤への適合を失敗しない比較ガイド【2026年版】",
+    shortTitle: "クランピングキットの選び方｜T溝サイズ比較",
+    description:
+      "クランピングキットの選び方を、T溝サイズ・ねじ径・フライス盤への適合で解説。TRUSCOのCK-8、CK-10、CK-12A、CK-14、CK-16を比較し、どのサイズを選べばよいか分かりやすく整理します。",
+    category: "guide",
+    categoryLabel: "選び方ガイド",
+    thumbnail:
+      "/images/articles/clamping-kit-t-slot-selection-guide/clamping-kit-hero.webp",
+    date: "2026-09-16",
+    readTime: "約20分",
+    available: true,
+    path: "/articles/clamping-kit-t-slot-selection-guide",
+  },
+  {
     slug: "hydraulic-jack-tonnage-selection-guide",
     title:
       "油圧ジャッキの選び方｜何トンを選ぶ？2t・5t・10t・20t・30tの違いと用途を解説【2026年版】",

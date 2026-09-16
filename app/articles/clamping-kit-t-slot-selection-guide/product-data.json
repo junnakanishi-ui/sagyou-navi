@@ -1,0 +1,114 @@
+{
+  "site": "作業用品ナビ",
+  "slug": "clamping-kit-t-slot-selection-guide",
+  "updatedAt": "2026-09-16",
+  "sourceExcel": "取得結果(20260916-074829).xlsx",
+  "mainKeyword": "クランピングキット 選び方",
+  "secondaryKeywords": [
+    "クランピングキット T溝",
+    "フライス盤 クランピングキット",
+    "T溝 クランピングキット",
+    "クランピングキット M12",
+    "クランピングキット 工作機械"
+  ],
+  "cta": {
+    "main": {
+      "label": "クランピングキット一覧を見る",
+      "url": "https://store.shopping.yahoo.co.jp/signcity-yshop/search.html?p=%E3%82%AF%E3%83%A9%E3%83%B3%E3%83%94%E3%83%B3%E3%82%B0%E3%82%AD%E3%83%83%E3%83%88&utm_source=sagyou_navi&utm_medium=article&utm_campaign=clamping-kit-t-slot-selection-guide#CentSrchFilter1"
+    },
+    "secondary": [
+      {
+        "label": "工具一覧",
+        "url": "https://store.shopping.yahoo.co.jp/signcity-yshop/search.html?aq=&oq=&p=%E5%B7%A5%E5%85%B7&storeid=signcity-yshop&sc_i=shopping-pc-web-result-storesg-h_srch-srchbtn-sgstfrom-result-storesch-h_srch-srchbox&utm_source=sagyou_navi&utm_medium=article&utm_campaign=clamping-kit-t-slot-selection-guide"
+      },
+      {
+        "label": "工具箱一覧",
+        "url": "https://store.shopping.yahoo.co.jp/signcity-yshop/9129bf6abc8.html?utm_source=sagyou_navi&utm_medium=article&utm_campaign=clamping-kit-t-slot-selection-guide"
+      },
+      {
+        "label": "ハンドリフト一覧",
+        "url": "https://store.shopping.yahoo.co.jp/signcity-yshop/search.html?p=%E3%83%8F%E3%83%B3%E3%83%89%E3%83%AA%E3%83%95%E3%83%88&sc_i=shopping-pc-web-result-storesg-h_srch-srchbtn-sgstfrom-result-storesch-h_srch-srchbox&prom=1&view=grid&utm_source=sagyou_navi&utm_medium=article&utm_campaign=clamping-kit-t-slot-selection-guide"
+      },
+      {
+        "label": "運搬台車一覧",
+        "url": "https://store.shopping.yahoo.co.jp/signcity-yshop/b1bfc8c2c2.html?utm_source=sagyou_navi&utm_medium=article&utm_campaign=clamping-kit-t-slot-selection-guide"
+      },
+      {
+        "label": "手作業工具一覧",
+        "url": "https://store.shopping.yahoo.co.jp/signcity-yshop/bceabaeeb6.html?utm_source=sagyou_navi&utm_medium=article&utm_campaign=clamping-kit-t-slot-selection-guide"
+      }
+    ]
+  },
+  "featuredProducts": [
+    {
+      "model": "CK-8",
+      "short": "CK-8",
+      "name": "TRUSCO クランピングキット M8 T溝10mm CK-8",
+      "productCode": "240380",
+      "thread": "M8",
+      "tSlot": "10mm",
+      "price": "26,059円",
+      "badge": "小型機向け",
+      "focus": "小型フライス盤・小さめT溝向け",
+      "bestFor": "小型機・小さめテーブル",
+      "url": "https://store.shopping.yahoo.co.jp/signcity-yshop/240380.html?utm_source=sagyou_navi&utm_medium=article&utm_campaign=clamping-kit-t-slot-selection-guide",
+      "image": "240380.jpg"
+    },
+    {
+      "model": "CK-10",
+      "short": "CK-10",
+      "name": "TRUSCO クランピングキット M10 T溝12mm CK-10",
+      "productCode": "240376",
+      "thread": "M10",
+      "tSlot": "12mm",
+      "price": "26,059円",
+      "badge": "汎用の基準機",
+      "focus": "汎用サイズの基準機",
+      "bestFor": "汎用機の標準帯",
+      "url": "https://store.shopping.yahoo.co.jp/signcity-yshop/240376.html?utm_source=sagyou_navi&utm_medium=article&utm_campaign=clamping-kit-t-slot-selection-guide",
+      "image": "240376.jpg"
+    },
+    {
+      "model": "CK-12A",
+      "short": "CK-12A",
+      "name": "TRUSCO クランピングキット M12 T溝14mm CK-12A",
+      "productCode": "240377",
+      "thread": "M12",
+      "tSlot": "14mm",
+      "price": "27,830円",
+      "badge": "中型機の定番",
+      "focus": "中型機の基準サイズ",
+      "bestFor": "中型フライス盤",
+      "url": "https://store.shopping.yahoo.co.jp/signcity-yshop/240377.html?utm_source=sagyou_navi&utm_medium=article&utm_campaign=clamping-kit-t-slot-selection-guide",
+      "image": "240377.jpg"
+    },
+    {
+      "model": "CK-14",
+      "short": "CK-14",
+      "name": "TRUSCO クランピングキット M14 T溝16mm CK-14",
+      "productCode": "240378",
+      "thread": "M14",
+      "tSlot": "16mm",
+      "price": "32,846円",
+      "badge": "やや大型向け",
+      "focus": "やや大型テーブル向け",
+      "bestFor": "やや大型の工作機械",
+      "url": "https://store.shopping.yahoo.co.jp/signcity-yshop/240378.html?utm_source=sagyou_navi&utm_medium=article&utm_campaign=clamping-kit-t-slot-selection-guide",
+      "image": "240378.jpg"
+    },
+    {
+      "model": "CK-16",
+      "short": "CK-16",
+      "name": "TRUSCO クランピングキット M16 T溝18mm CK-16",
+      "productCode": "240379",
+      "thread": "M16",
+      "tSlot": "18mm",
+      "price": "35,717円",
+      "badge": "大型機向け",
+      "focus": "大型フライス・マシニング向け",
+      "bestFor": "大型フライス・MC",
+      "url": "https://store.shopping.yahoo.co.jp/signcity-yshop/240379.html?utm_source=sagyou_navi&utm_medium=article&utm_campaign=clamping-kit-t-slot-selection-guide",
+      "image": "240379.jpg"
+    }
+  ]
+}

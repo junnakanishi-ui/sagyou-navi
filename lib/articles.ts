@@ -14,6 +14,22 @@ export type Article = {
 
 export const ARTICLES: Article[] = [
   {
+    slug: "hydraulic-jack-tonnage-selection-guide",
+    title:
+      "油圧ジャッキの選び方｜何トンを選ぶ？2t・5t・10t・20t・30tの違いと用途を解説【2026年版】",
+    shortTitle: "油圧ジャッキの選び方｜何トンを選ぶ？",
+    description:
+      "油圧ジャッキは何トンを選べばいい？作業用品ナビが、2t・5t・10t・20t・30tの違い、最低高さ、ストローク、ボトルジャッキ・油圧シザースジャッキ・ポンプ式油圧ジャッキセットの選び方を解説します。",
+    category: "guide",
+    categoryLabel: "選び方ガイド",
+    thumbnail:
+      "/images/articles/hydraulic-jack-tonnage-selection-guide/hydraulic-jack-selection-hero.webp",
+    date: "2026-09-16",
+    readTime: "約22分",
+    available: true,
+    path: "/articles/hydraulic-jack-tonnage-selection-guide",
+  },
+  {
     slug: "store-flood-countermeasure-bcp-guide",
     title:
       "店舗の浸水対策｜入口・シャッターを守る水害対策と営業再開までの備え【2026年版】",

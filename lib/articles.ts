@@ -14,6 +14,22 @@ export type Article = {
 
 export const ARTICLES: Article[] = [
   {
+    slug: "store-torrential-rain-countermeasure-guide",
+    title:
+      "店舗の豪雨対策｜浸水・休業リスクを減らす事前準備と入口対策チェックリスト【2026年版】",
+    shortTitle: "店舗の豪雨対策チェックリスト",
+    description:
+      "店舗 豪雨対策をテーマに、浸水・休業リスクを減らす事前準備、入口・シャッター別の止水対策、吸水補助、浸水後の足元装備まで整理。危険時は避難優先の運用ルールとチェックリスト付き。",
+    category: "guide",
+    categoryLabel: "選び方ガイド",
+    thumbnail:
+      "/images/articles/store-torrential-rain-countermeasure-guide/store-torrential-rain-countermeasure-guide-main.webp",
+    date: "2026-09-18",
+    readTime: "約20分",
+    available: true,
+    path: "/articles/store-torrential-rain-countermeasure-guide",
+  },
+  {
     slug: "kerosene-tank-selection-guide",
     title:
       "灯油タンクの選び方｜室内用・屋外用の違い、25L・50L・90Lの目安とホームタンクの選定ポイント【2026年版】",

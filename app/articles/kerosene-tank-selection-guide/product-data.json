@@ -1,0 +1,108 @@
+{
+  "slug": "kerosene-tank-selection-guide",
+  "updatedAt": "2026-09-18",
+  "mainKeyword": "室内用 灯油タンク 選び方",
+  "main_cta": {
+    "label": "灯油タンク一覧を見る",
+    "url": "https://search.rakuten.co.jp/search/mall/%E7%81%AF%E6%B2%B9%E3%82%BF%E3%83%B3%E3%82%AF/?sid=426972&utm_source=sagyou_navi&utm_medium=article&utm_campaign=kerosene-tank-selection-guide"
+  },
+  "sub_ctas": [
+    {
+      "label": "ストーブ一覧を見る",
+      "url": "https://search.rakuten.co.jp/search/mall/%E3%82%B9%E3%83%88%E3%83%BC%E3%83%96/?sid=426972&utm_source=sagyou_navi&utm_medium=article&utm_campaign=kerosene-tank-selection-guide"
+    },
+    {
+      "label": "草焼バーナー一覧を見る",
+      "url": "https://search.rakuten.co.jp/search/mall/%E8%8D%89%E7%84%BC%E3%83%90%E3%83%BC%E3%83%8A%E3%83%BC/?sid=426972&utm_source=sagyou_navi&utm_medium=article&utm_campaign=kerosene-tank-selection-guide"
+    }
+  ],
+  "products": [
+    {
+      "id": "dk25s",
+      "name": "DAIKEN 室内用角型灯油タンク ホームタンク25型 DK25S",
+      "short": "DK25S",
+      "type": "室内用角型灯油タンク",
+      "capacity": "25型",
+      "place": "室内",
+      "shape": "角型",
+      "feature": "省スペースの室内最小クラス",
+      "bestFor": "小規模事務所・バックヤード・スポット利用",
+      "url": "https://item.rakuten.co.jp/crecote-shop/ta053915-dk25s/?utm_source=sagyou_navi&utm_medium=article&utm_campaign=kerosene-tank-selection-guide",
+      "image": "/images/articles/kerosene-tank-selection-guide/products/ta053915-dk25s.webp",
+      "group": "indoor"
+    },
+    {
+      "id": "dk50st",
+      "name": "DAIKEN 室内用角型灯油タンク ホームタンク50型 DK50ST",
+      "short": "DK50ST",
+      "type": "室内用角型灯油タンク",
+      "capacity": "50型",
+      "place": "室内",
+      "shape": "角型",
+      "feature": "給油回数と設置性のバランス",
+      "bestFor": "25型では少ないが90型は大きすぎる現場",
+      "url": "https://item.rakuten.co.jp/crecote-shop/ta053916-dk50st/?utm_source=sagyou_navi&utm_medium=article&utm_campaign=kerosene-tank-selection-guide",
+      "image": "/images/articles/kerosene-tank-selection-guide/products/ta053916-dk50st.webp",
+      "group": "indoor"
+    },
+    {
+      "id": "dk90st",
+      "name": "DAIKEN 室内用角型灯油タンク ホームタンク90型 DK90ST",
+      "short": "DK90ST",
+      "type": "室内用角型灯油タンク",
+      "capacity": "90型",
+      "place": "室内",
+      "shape": "角型",
+      "feature": "室内でもしっかり容量確保",
+      "bestFor": "室内運用で補充回数を減らしたい現場",
+      "url": "https://item.rakuten.co.jp/crecote-shop/ta053917-dk90st/?utm_source=sagyou_navi&utm_medium=article&utm_campaign=kerosene-tank-selection-guide",
+      "image": "/images/articles/kerosene-tank-selection-guide/products/ta053917-dk90st.webp",
+      "group": "indoor"
+    },
+    {
+      "id": "ot95s12b",
+      "name": "オーティ・マットー 灯油タンク 壁ピタタイプ 89L OT95S12B",
+      "short": "OT95S12B",
+      "type": "屋外用 壁ピタタイプ",
+      "capacity": "89L",
+      "place": "屋外",
+      "shape": "壁ピタ",
+      "feature": "ボールバルブ仕様（同系にストレーナ／フレアあり）",
+      "bestFor": "壁際へ省スペース設置したい倉庫・事務所外壁沿い",
+      "url": "https://item.rakuten.co.jp/crecote-shop/ta054202-ot95s12b/?utm_source=sagyou_navi&utm_medium=article&utm_campaign=kerosene-tank-selection-guide",
+      "image": "/images/articles/kerosene-tank-selection-guide/products/ta054202-ot95s12b.webp",
+      "group": "wall-pita",
+      "relatedModels": "OT95SVB / OT95S14B"
+    },
+    {
+      "id": "ot95sw14b",
+      "name": "オーティ・マットー 灯油タンク レギュラータイプ 88L OT95SW14B",
+      "short": "OT95SW14B",
+      "type": "屋外用 レギュラータイプ",
+      "capacity": "88L",
+      "place": "屋外",
+      "shape": "レギュラー",
+      "feature": "標準形状で比較しやすい（同系にOT95SWVB）",
+      "bestFor": "壁ピタにこだわらず標準形で選びたい現場",
+      "url": "https://item.rakuten.co.jp/crecote-shop/ta054205-ot95sw14b/?utm_source=sagyou_navi&utm_medium=article&utm_campaign=kerosene-tank-selection-guide",
+      "image": "/images/articles/kerosene-tank-selection-guide/products/ta054205-ot95sw14b.webp",
+      "group": "regular",
+      "relatedModels": "OT95SWVB"
+    },
+    {
+      "id": "ht95ns",
+      "name": "DAIKEN 屋外用ホームタンク95型 HT95NS",
+      "short": "HT95NS",
+      "type": "屋外用ホームタンク",
+      "capacity": "95型",
+      "place": "屋外",
+      "shape": "ホームタンク95型",
+      "feature": "2ウェイストレーナー付き（同系にNV／NVG）",
+      "bestFor": "屋外95型を基本仕様から比較したい現場",
+      "url": "https://item.rakuten.co.jp/crecote-shop/ta054063-ht95ns/?utm_source=sagyou_navi&utm_medium=article&utm_campaign=kerosene-tank-selection-guide",
+      "image": "/images/articles/kerosene-tank-selection-guide/products/ta054063-ht95ns.webp",
+      "group": "ht95",
+      "relatedModels": "HT95NV（水抜きジョイント・ボールバルブ） / HT95NVG（小出しガン・ホース付き）"
+    }
+  ]
+}

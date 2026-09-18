@@ -14,6 +14,22 @@ export type Article = {
 
 export const ARTICLES: Article[] = [
   {
+    slug: "kerosene-tank-selection-guide",
+    title:
+      "灯油タンクの選び方｜室内用・屋外用の違い、25L・50L・90Lの目安とホームタンクの選定ポイント【2026年版】",
+    shortTitle: "灯油タンクの選び方｜室内用・屋外用と容量目安",
+    description:
+      "灯油タンクの選び方を、室内用・屋外用の違い、25L・50L・90Lの容量目安、壁ピタ・レギュラー・ホームタンクの違いまで分かりやすく解説。設置場所から順に決めると失敗しにくいです。",
+    category: "guide",
+    categoryLabel: "選び方ガイド",
+    thumbnail:
+      "/images/articles/kerosene-tank-selection-guide/kerosene-tank-selection-hero.webp",
+    date: "2026-09-18",
+    readTime: "約18分",
+    available: true,
+    path: "/articles/kerosene-tank-selection-guide",
+  },
+  {
     slug: "clamping-kit-t-slot-selection-guide",
     title:
       "クランピングキットの選び方｜T溝サイズ・ねじ径・フライス盤への適合を失敗しない比較ガイド【2026年版】",

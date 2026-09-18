@@ -1,0 +1,185 @@
+{
+  "slug": "store-torrential-rain-countermeasure-guide",
+  "mainKeyword": "店舗 豪雨対策",
+  "h1": "店舗の豪雨対策｜浸水・休業リスクを減らす事前準備と入口対策チェックリスト【2026年版】",
+  "updatedAt": "2026-09-18",
+  "cta": {
+    "rakutenStopBoard": {
+      "label": "止水板一覧（楽天）を見る",
+      "url": "https://search.rakuten.co.jp/search/mall/%E6%AD%A2%E6%B0%B4%E6%9D%BF/?sid=426972&utm_source=sagyou_navi&utm_medium=article&utm_campaign=store-torrential-rain-countermeasure-guide"
+    },
+    "gcStopBoard": {
+      "label": "止水板一覧（自社EC）を見る",
+      "url": "https://www.gc-select.com/search?q=%E6%AD%A2%E6%B0%B4%E6%9D%BF&options%5Bprefix%5D=product&utm_source=sagyou_navi&utm_medium=article&utm_campaign=store-torrential-rain-countermeasure-guide"
+    },
+    "disasterItems": {
+      "label": "災害対策アイテム一覧を見る",
+      "url": "https://www.gc-select.com/pages/bosai?utm_source=sagyou_navi&utm_medium=article&utm_campaign=store-torrential-rain-countermeasure-guide"
+    }
+  },
+  "products": [
+    {
+      "id": "004954",
+      "name": "水害防止パネル 備えあれ板 3枚セット（止水板）",
+      "short": "備えあれ板 3枚セット",
+      "role": "正面入口の基本対策",
+      "url": "https://item.rakuten.co.jp/crecote-shop/ta046427-004954/?utm_source=sagyou_navi&utm_medium=article&utm_campaign=store-torrential-rain-countermeasure-guide",
+      "image": "/images/articles/store-torrential-rain-countermeasure-guide/products/ta046427-004954.jpg",
+      "channel": "rakuten"
+    },
+    {
+      "id": "6300099082",
+      "name": "アイリスオーヤマ 止水板 ストレートタイプ",
+      "short": "止水板 ストレート",
+      "role": "直線開口部向け",
+      "url": "https://www.gc-select.com/products/6300099082?utm_source=sagyou_navi&utm_medium=article&utm_campaign=store-torrential-rain-countermeasure-guide",
+      "image": "/images/articles/store-torrential-rain-countermeasure-guide/products/6300099082.jpg",
+      "channel": "gc"
+    },
+    {
+      "id": "6300099083",
+      "name": "アイリスオーヤマ 止水板 内カーブタイプ",
+      "short": "止水板 内カーブ",
+      "role": "内カーブ開口部向け",
+      "url": "https://www.gc-select.com/products/6300099083?utm_source=sagyou_navi&utm_medium=article&utm_campaign=store-torrential-rain-countermeasure-guide",
+      "image": "/images/articles/store-torrential-rain-countermeasure-guide/products/6300099083.jpg",
+      "channel": "gc"
+    },
+    {
+      "id": "6300099084",
+      "name": "アイリスオーヤマ 止水板 外カーブタイプ",
+      "short": "止水板 外カーブ",
+      "role": "外カーブ開口部向け",
+      "url": "https://www.gc-select.com/products/6300099084?utm_source=sagyou_navi&utm_medium=article&utm_campaign=store-torrential-rain-countermeasure-guide",
+      "image": "/images/articles/store-torrential-rain-countermeasure-guide/products/6300099084.jpg",
+      "channel": "gc"
+    },
+    {
+      "id": "6300027727",
+      "name": "ボックスウォール BW52",
+      "short": "ボックスウォール BW52",
+      "role": "長尺・仮設バリア",
+      "url": "https://www.gc-select.com/products/6300027727?utm_source=sagyou_navi&utm_medium=article&utm_campaign=store-torrential-rain-countermeasure-guide",
+      "image": "/images/articles/store-torrential-rain-countermeasure-guide/products/6300027727.jpg",
+      "channel": "gc"
+    },
+    {
+      "id": "6300027728",
+      "name": "ボックスウォール BW52用 アウトコーナー",
+      "short": "BW52 アウトコーナー",
+      "role": "コーナー調整",
+      "url": "https://www.gc-select.com/products/6300027728?utm_source=sagyou_navi&utm_medium=article&utm_campaign=store-torrential-rain-countermeasure-guide",
+      "image": "/images/articles/store-torrential-rain-countermeasure-guide/products/6300027728.jpg",
+      "channel": "gc"
+    },
+    {
+      "id": "6300027730",
+      "name": "ボックスウォール BW52用 サイドアタッチメント",
+      "short": "BW52 サイド",
+      "role": "段差・幅調整",
+      "url": "https://www.gc-select.com/products/6300027730?utm_source=sagyou_navi&utm_medium=article&utm_campaign=store-torrential-rain-countermeasure-guide",
+      "image": "/images/articles/store-torrential-rain-countermeasure-guide/products/6300027730.jpg",
+      "channel": "gc"
+    },
+    {
+      "id": "spbbs",
+      "name": "積水 簡易止水板 プラバリア 基本セット",
+      "short": "プラバリア 基本セット",
+      "role": "長い間口向け",
+      "url": "https://item.rakuten.co.jp/crecote-shop/ta054367-spbbs/?utm_source=sagyou_navi&utm_medium=article&utm_campaign=store-torrential-rain-countermeasure-guide",
+      "image": "/images/articles/store-torrential-rain-countermeasure-guide/products/ta054367-spbbs.jpg",
+      "channel": "rakuten"
+    },
+    {
+      "id": "spbes",
+      "name": "積水 簡易止水板 プラバリア 延長セット",
+      "short": "プラバリア 延長セット",
+      "role": "開口延長向け",
+      "url": "https://item.rakuten.co.jp/crecote-shop/ta046513-spbes/?utm_source=sagyou_navi&utm_medium=article&utm_campaign=store-torrential-rain-countermeasure-guide",
+      "image": "/images/articles/store-torrential-rain-countermeasure-guide/products/ta046513-spbes.jpg",
+      "channel": "rakuten"
+    },
+    {
+      "id": "eseat",
+      "name": "SANWA 三和製軽量シャッター専用 簡易防水シート Eシート",
+      "short": "Eシート",
+      "role": "シャッター前対策",
+      "url": "https://item.rakuten.co.jp/crecote-shop/ta053963-eseat/?utm_source=sagyou_navi&utm_medium=article&utm_campaign=store-torrential-rain-countermeasure-guide",
+      "image": "/images/articles/store-torrential-rain-countermeasure-guide/products/ta053963-eseat.jpg",
+      "channel": "rakuten"
+    },
+    {
+      "id": "wbp7s",
+      "name": "ウォーターバスタープラス 7枚セット",
+      "short": "WBP 7枚",
+      "role": "吸水補助対策",
+      "url": "https://item.rakuten.co.jp/crecote-shop/ta053578-wbp7s/?utm_source=sagyou_navi&utm_medium=article&utm_campaign=store-torrential-rain-countermeasure-guide",
+      "image": "/images/articles/store-torrential-rain-countermeasure-guide/products/ta053578-wbp7s.jpg",
+      "channel": "rakuten"
+    },
+    {
+      "id": "wbp14s",
+      "name": "ウォーターバスタープラス 14枚セット",
+      "short": "WBP 14枚",
+      "role": "吸水補助対策",
+      "url": "https://item.rakuten.co.jp/crecote-shop/ta053576-wbp14s/?utm_source=sagyou_navi&utm_medium=article&utm_campaign=store-torrential-rain-countermeasure-guide",
+      "image": "/images/articles/store-torrential-rain-countermeasure-guide/products/ta053576-wbp14s.jpg",
+      "channel": "rakuten"
+    },
+    {
+      "id": "wbp21s",
+      "name": "ウォーターバスタープラス 21枚セット",
+      "short": "WBP 21枚",
+      "role": "吸水補助対策",
+      "url": "https://item.rakuten.co.jp/crecote-shop/ta053577-wbp21s/?utm_source=sagyou_navi&utm_medium=article&utm_campaign=store-torrential-rain-countermeasure-guide",
+      "image": "/images/articles/store-torrential-rain-countermeasure-guide/products/ta053577-wbp21s.jpg",
+      "channel": "rakuten"
+    },
+    {
+      "id": "ar3831",
+      "name": "波止めジョニー",
+      "short": "波止めジョニー",
+      "role": "簡易補助資材",
+      "url": "https://item.rakuten.co.jp/crecote-shop/ta064920-ar3831/?utm_source=sagyou_navi&utm_medium=article&utm_campaign=store-torrential-rain-countermeasure-guide",
+      "image": "/images/articles/store-torrential-rain-countermeasure-guide/products/ta064920-ar3831.jpg",
+      "channel": "rakuten"
+    },
+    {
+      "id": "tdn200p",
+      "name": "土のう袋 200枚入り",
+      "short": "土のう袋",
+      "role": "簡易補助資材",
+      "url": "https://item.rakuten.co.jp/crecote-shop/ta015991-tdn200p/?utm_source=sagyou_navi&utm_medium=article&utm_campaign=store-torrential-rain-countermeasure-guide",
+      "image": "/images/articles/store-torrential-rain-countermeasure-guide/products/ta015991-tdn200p.jpg",
+      "channel": "rakuten"
+    },
+    {
+      "id": "1123611001",
+      "name": "多機能ブーツ",
+      "short": "多機能ブーツ",
+      "role": "浸水後の足元保護",
+      "url": "https://www.gc-select.com/products/1123611001?utm_source=sagyou_navi&utm_medium=article&utm_campaign=store-torrential-rain-countermeasure-guide",
+      "image": "/images/articles/store-torrential-rain-countermeasure-guide/products/1123611001.jpg",
+      "channel": "gc"
+    },
+    {
+      "id": "1123785002m",
+      "name": "PVC胴付長靴",
+      "short": "PVC胴付長靴",
+      "role": "浸水作業用",
+      "url": "https://www.gc-select.com/products/1123785002m?utm_source=sagyou_navi&utm_medium=article&utm_campaign=store-torrential-rain-countermeasure-guide",
+      "image": "/images/articles/store-torrential-rain-countermeasure-guide/products/1123785002m.jpg",
+      "channel": "gc"
+    },
+    {
+      "id": "6300062021",
+      "name": "ナイロンウェーダー",
+      "short": "ナイロンウェーダー",
+      "role": "浸水作業用",
+      "url": "https://www.gc-select.com/products/6300062021?utm_source=sagyou_navi&utm_medium=article&utm_campaign=store-torrential-rain-countermeasure-guide",
+      "image": "/images/articles/store-torrential-rain-countermeasure-guide/products/6300062021.jpg",
+      "channel": "gc"
+    }
+  ],
+  "instagramPermalink": "https://www.instagram.com/reel/DdVpQyvTkm6/?utm_source=ig_embed&utm_campaign=loading"
+}

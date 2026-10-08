@@ -14,6 +14,22 @@ export type Article = {
 
 export const ARTICLES: Article[] = [
   {
+    slug: "saigai-bichiku-rack-trusco",
+    title:
+      "TRUSCO災害備蓄ラックの選び方｜M1.5・M2・M3型の違いとサイズ早見表【人数から台数を逆算】",
+    shortTitle: "TRUSCO災害備蓄ラックの選び方",
+    description:
+      "トラスコ中山の災害備蓄ラックをM1.5型・M2型・M3型の耐荷重、間口・奥行・高さ、単体と連結の組み合わせで比較。従業員数から必要な台数を逆算する早見表、棚割りの例、固定と点検の注意点まで、防災担当者向けにまとめました。",
+    category: "guide",
+    categoryLabel: "選び方ガイド",
+    thumbnail:
+      "/images/articles/saigai-bichiku-rack-trusco/eyecatch.webp",
+    date: "2026-10-08",
+    readTime: "約22分",
+    available: true,
+    path: "/articles/saigai-bichiku-rack-trusco",
+  },
+  {
     slug: "store-torrential-rain-countermeasure-guide",
     title:
       "店舗の豪雨対策｜浸水・休業リスクを減らす事前準備と入口対策チェックリスト【2026年版】",

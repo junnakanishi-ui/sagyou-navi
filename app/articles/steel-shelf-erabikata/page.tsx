@@ -245,6 +245,11 @@ const articleJsonLd = {
 
 const RELATED: RelatedArticle[] = [
   {
+    href: "/articles/saigai-bichiku-rack-trusco",
+    label:
+      "TRUSCO災害備蓄ラックの選び方｜M1.5・M2・M3型の違いとサイズ早見表",
+  },
+  {
     href: "/articles/workbench-erabikata",
     label: "軽量作業台と重量作業台の違い｜耐荷重と天板素材で選ぶ",
   },

@@ -688,6 +688,14 @@ export default function Page() {
         <ul className="my-4 list-disc space-y-2 pl-6 text-gray-800">
           <li>
             <Link
+              href="/articles/saigai-bichiku-rack-trusco"
+              className="text-gray-900 underline hover:no-underline"
+            >
+              TRUSCO災害備蓄ラックの選び方｜M1.5・M2・M3型の違いとサイズ早見表
+            </Link>
+          </li>
+          <li>
+            <Link
               href="/articles/simple-toilet-stock-quantity"
               className="text-gray-900 underline hover:no-underline"
             >

@@ -179,6 +179,10 @@ const tocItems = [
 
 const relatedArticles = [
   {
+    href: "/articles/saigai-bichiku-rack-trusco",
+    label: "TRUSCO災害備蓄ラックの選び方｜M1.5・M2・M3型と台数の逆算",
+  },
+  {
     href: "/articles/business-disaster-stockpile-checklist",
     label: "事業所の防災備蓄チェックリスト｜BCP・帰宅困難者対策",
   },

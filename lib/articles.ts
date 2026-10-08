@@ -14,6 +14,21 @@ export type Article = {
 
 export const ARTICLES: Article[] = [
   {
+    slug: "roller-cabinet-trusco",
+    title:
+      "TRUSCOローラーキャビネットの選び方｜TFRC・TRC型番の違いと引出し構成の早見表【全31モデル】",
+    shortTitle: "TRUSCOローラーキャビネットの選び方",
+    description:
+      "トラスコ中山のローラーキャビネットを、型番の読み方（TFRC＝ブラック/オレンジ、TRC-R＝レッド、S＝仕切板付）、引出し4〜8段の構成、50・100・150mmの引出しに入る工具、デバイダーなどのオプション、搬入時の注意点まで解説。全31モデルの早見表付き。",
+    category: "guide",
+    categoryLabel: "選び方ガイド",
+    thumbnail: "/images/articles/roller-cabinet-trusco/eyecatch.webp",
+    date: "2026-10-08",
+    readTime: "約24分",
+    available: true,
+    path: "/articles/roller-cabinet-trusco",
+  },
+  {
     slug: "saigai-bichiku-rack-trusco",
     title:
       "TRUSCO災害備蓄ラックの選び方｜M1.5・M2・M3型の違いとサイズ早見表【人数から台数を逆算】",

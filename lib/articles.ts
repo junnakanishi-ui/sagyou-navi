@@ -14,6 +14,21 @@ export type Article = {
 
 export const ARTICLES: Article[] = [
   {
+    slug: "kigyo-bousai-bichiku-gimu",
+    title:
+      "企業の防災備蓄は義務？法律・条例の結論と必要量【2026年版】",
+    shortTitle: "企業の防災備蓄は義務？",
+    description:
+      "企業の防災備蓄に全国一律の法的義務はありませんが、東京都条例の努力義務と労働契約法の安全配慮義務から、実務上は備えが求められます。2026年1月改定の内閣府ガイドライン、2026年3月公表の実態調査、11月発足の防災庁まで踏まえ、1人あたりの必要量、人数別の早見表、トイレ・電源・救護用品の選び方を解説します。",
+    category: "guide",
+    categoryLabel: "選び方ガイド",
+    thumbnail: "/products/6300046023.jpg",
+    date: "2026-10-09",
+    readTime: "約30分",
+    available: true,
+    path: "/articles/kigyo-bousai-bichiku-gimu",
+  },
+  {
     slug: "kigyo-suigai-taisaku-goods",
     title:
       "企業の水害対策グッズ｜止水板・土のうの必要数と選び方【2026年版】",

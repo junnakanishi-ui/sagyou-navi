@@ -14,6 +14,21 @@ export type Article = {
 
 export const ARTICLES: Article[] = [
   {
+    slug: "khk-worm-wheel-guide",
+    title:
+      "KHKウォームホイールの選び方｜型番の見方・AG/BG/CGの違い・相手ウォームと交換のポイント【トラスコ中山取扱い】",
+    shortTitle: "KHKウォームホイールの選び方",
+    description:
+      "小原歯車工業（KHK）のウォームホイールを、型番の読み方（AG2-30R1＝モジュール2・歯数30・右ねじれ1条）、AG・AGF・AGDL・BG・CGの材質と精度の違い、相手ウォームの組み合わせ、減速比の計算、摩耗時の交換手順まで解説。トラスコ中山（オレンジブック）取扱いの36型番早見表付き。",
+    category: "guide",
+    categoryLabel: "選び方ガイド",
+    thumbnail: "/images/articles/khk-worm-wheel-guide/eyecatch.webp",
+    date: "2026-10-08",
+    readTime: "約22分",
+    available: true,
+    path: "/articles/khk-worm-wheel-guide",
+  },
+  {
     slug: "roller-cabinet-trusco",
     title:
       "TRUSCOローラーキャビネットの選び方｜TFRC・TRC型番の違いと引出し構成の早見表【全31モデル】",

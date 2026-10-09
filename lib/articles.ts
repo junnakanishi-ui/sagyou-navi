@@ -14,6 +14,21 @@ export type Article = {
 
 export const ARTICLES: Article[] = [
   {
+    slug: "kigyo-suigai-taisaku-goods",
+    title:
+      "企業の水害対策グッズ｜止水板・土のうの必要数と選び方【2026年版】",
+    shortTitle: "企業の水害対策グッズ",
+    description:
+      "工場・倉庫・店舗・事務所の水害対策グッズを「止める・逃がす・続ける・戻す」の4層で整理。入口幅と想定浸水深から止水板・土のうの必要数を出す計算例、2026年5月開始の新しい防災気象情報に合わせた社内タイムライン、蓄電池の容量計算までまとめました。",
+    category: "guide",
+    categoryLabel: "選び方ガイド",
+    thumbnail: "/products/6300027727.jpg",
+    date: "2026-10-09",
+    readTime: "約28分",
+    available: true,
+    path: "/articles/kigyo-suigai-taisaku-goods",
+  },
+  {
     slug: "khk-worm-wheel-guide",
     title:
       "KHKウォームホイールの選び方｜型番の見方・AG/BG/CGの違い・相手ウォームと交換のポイント【トラスコ中山取扱い】",

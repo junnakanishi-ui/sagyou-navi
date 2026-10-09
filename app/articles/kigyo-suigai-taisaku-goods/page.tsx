@@ -148,6 +148,7 @@ const CTA = {
 /* ---------- 内部リンク・姉妹サイト ---------- */
 const HEAT = "https://www.heatstroke-navi.com/articles";
 const RELATED: { title: string; href: string; site: "sagyou" | "heat" }[] = [
+  { title: "企業の防災備蓄は義務？法律・条例の結論と必要量", href: "/articles/kigyo-bousai-bichiku-gimu", site: "sagyou" },
   { title: "災害備蓄ラックの選び方（トラスコ）", href: "/articles/saigai-bichiku-rack-trusco", site: "sagyou" },
   { title: "TRUSCOスチール製運搬台車の選び方", href: "/articles/trusco-steel-cart-selection-guide", site: "sagyou" },
   { title: "スチール棚の選び方", href: "/articles/steel-shelf-erabikata", site: "sagyou" },

@@ -14,6 +14,21 @@ export type Article = {
 
 export const ARTICLES: Article[] = [
   {
+    slug: "grease-gun-pump-guide",
+    title:
+      "グリースガンとグリースポンプの違いと選び方｜詰め方・エア抜きも解説【2026年版】",
+    shortTitle: "グリースガンとグリースポンプの選び方",
+    description:
+      "グリースガンとグリースポンプの違いから、手動・エア式・電動の選び方、ペール缶・ドラム缶用ポンプ、充填ポンプによる詰め替え、ニップルとノズルの合わせ方、グリースが出ないときのエア抜きまでを整備・保全の現場目線で解説。メーカー公表値をもとにした比較表つきです。",
+    category: "guide",
+    categoryLabel: "選び方ガイド",
+    thumbnail: "/products/ta009288-kh500s.jpg",
+    date: "2026-10-09",
+    readTime: "約28分",
+    available: true,
+    path: "/articles/grease-gun-pump-guide",
+  },
+  {
     slug: "kigyo-bousai-bichiku-gimu",
     title:
       "企業の防災備蓄は義務？法律・条例の結論と必要量【2026年版】",

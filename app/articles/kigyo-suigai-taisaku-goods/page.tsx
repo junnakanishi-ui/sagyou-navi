@@ -648,7 +648,7 @@ export default function Page() {
       <header className="overflow-hidden rounded-2xl bg-gray-900 text-white">
         <div className="p-6 sm:p-8">
           <p className="inline-block rounded bg-white px-2 py-0.5 text-xs font-bold text-gray-900">防災・水害対策</p>
-          <h1 className="mt-3 text-3xl font-black leading-snug tracking-wide sm:text-4xl">{TITLE}</h1>
+          <h1 className="mt-3 text-3xl font-black leading-snug tracking-wide sm:text-5xl">{TITLE}</h1>
           <div className="mt-4 flex flex-wrap gap-2">
             {["総務・施設管理向け", "止水板9製品を比較", "土のう必要数の計算例", "2026年の新・防災気象情報に対応"].map(
               (c) => (
@@ -692,7 +692,7 @@ export default function Page() {
           <span className="rounded bg-gray-900 px-2 py-0.5 text-xs text-white">結論</span>
           先に答え：会社の水害対策グッズはこの順でそろえる
         </h2>
-        <ol className="mt-4 space-y-3 text-[15px] leading-relaxed">
+        <ol className="mt-4 space-y-3 text-[17px] leading-relaxed">
           {[
             "最初にそろえるのは入口の止水。想定浸水深30cm程度までなら、工事不要の止水板と土のうで浸水を遅らせ、排水や移動の時間を稼げる。",
             "数量は計算で出す。止水板は「入口幅÷1枚の有効幅」、土のうは「段ごとの袋数の合計＋予備2割」。幅2.7m・3段なら約22袋。",
@@ -843,7 +843,7 @@ export default function Page() {
               </span>
               <span>
                 <span className="block font-bold text-gray-900">{s.t}</span>
-                <span className="mt-1 block text-[15px] leading-relaxed text-gray-700">{s.d}</span>
+                <span className="mt-1 block text-[17px] leading-relaxed text-gray-700">{s.d}</span>
               </span>
             </li>
           ))}
@@ -1732,7 +1732,7 @@ export default function Page() {
                 </span>
                 <span>{f.q}</span>
               </p>
-              <p className="mt-3 flex gap-3 text-[15px] leading-relaxed text-gray-700">
+              <p className="mt-3 flex gap-3 text-[17px] leading-relaxed text-gray-700">
                 <span className="inline-flex h-7 w-7 shrink-0 items-center justify-center rounded-full border-2 border-gray-900 text-xs font-bold text-gray-900">
                   A
                 </span>
@@ -1756,7 +1756,7 @@ export default function Page() {
             "「レベル3警報で止水完了と重要品の移動、レベル4危険警報で全員避難」を社内ルールにする",
             "停電・トイレ・従業員3日分の備えと、片付けの装備までそろえる",
           ].map((t, i) => (
-            <li key={t} className="flex gap-3 rounded-xl border border-gray-200 bg-white p-4 text-[15px] leading-relaxed">
+            <li key={t} className="flex gap-3 rounded-xl border border-gray-200 bg-white p-4 text-[17px] leading-relaxed">
               <span className="inline-flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-gray-900 text-sm font-bold text-white">
                 {i + 1}
               </span>

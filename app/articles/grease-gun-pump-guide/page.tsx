@@ -510,7 +510,7 @@ export default function Page() {
       <header className="overflow-hidden rounded-2xl bg-gray-900 text-white">
         <div className="p-6 sm:p-8">
           <p className="inline-block rounded bg-white px-2 py-0.5 text-xs font-bold text-gray-900">給脂・潤滑機器</p>
-          <h1 className="mt-3 text-2xl font-bold leading-snug sm:text-3xl">{TITLE}</h1>
+          <h1 className="mt-3 text-3xl font-black leading-snug sm:text-4xl">{TITLE}</h1>
           <div className="mt-4 flex flex-wrap gap-2">
             {["整備・設備保全向け", "手動／エア／電動を比較", "ペール缶・ドラム缶ポンプ", "エア抜きの手順"].map((c) => (
               <span key={c} className="rounded-full border border-gray-500 px-3 py-1 text-xs font-medium text-gray-100">
@@ -525,7 +525,7 @@ export default function Page() {
         </div>
       </header>
 
-      <section className="mt-8 space-y-4 text-[16px] leading-[1.95]">
+      <section className="mt-8 space-y-4 text-[17px] leading-[1.95] tracking-[0.02em]">
         <p>
           「グリースガンを買い替えたい」「ペール缶のグリースをもっと楽に使いたい」。そう思って調べ始めると、グリースガン、グリスポンプ、ルブリケーター、充填ポンプと似た名前の道具が並び、どれが自分の現場に合うのか分かりにくくなります。
         </p>
@@ -549,7 +549,7 @@ export default function Page() {
           <span className="rounded bg-gray-900 px-2 py-0.5 text-xs text-white">結論</span>
           給脂の「量」と現場の「動力」で選ぶ
         </h2>
-        <ol className="mt-4 space-y-3 text-[15px] leading-relaxed">
+        <ol className="mt-4 space-y-3 text-[17px] leading-relaxed">
           {[
             "グリースガンはニップルへ注入する手持ち工具、グリースポンプは缶から直接くみ上げて送る装置。通販では手動ガンを「グリスポンプ」と呼ぶ例もあるので、容量と取り付け方で見分ける。",
             "給脂箇所が少ないなら手動ガン、多いならエア式・電動式、工場で大量に使うならペール缶・ドラム缶用のグリースポンプが基本の選び方。",
@@ -587,7 +587,7 @@ export default function Page() {
         </ol>
       </nav>
 
-      <article className="text-[16px] leading-[1.95]">
+      <article className="text-[17px] leading-[1.95] tracking-[0.02em]">
         {/* ================= 01 ================= */}
         <H2 id="sec1" num="01">
           グリースガンとグリースポンプの違い
@@ -1032,7 +1032,7 @@ export default function Page() {
               </span>
               <span>
                 <span className="block font-bold text-gray-900">{s.t}</span>
-                <span className="mt-1 block text-[15px] leading-relaxed text-gray-700">{s.d}</span>
+                <span className="mt-1 block text-[17px] leading-relaxed text-gray-700">{s.d}</span>
               </span>
             </li>
           ))}
@@ -1166,7 +1166,7 @@ export default function Page() {
               </span>
               <span>
                 <span className="block font-bold text-gray-900">{s.t}</span>
-                <span className="mt-1 block text-[15px] leading-relaxed text-gray-700">{s.d}</span>
+                <span className="mt-1 block text-[17px] leading-relaxed text-gray-700">{s.d}</span>
               </span>
             </li>
           ))}
@@ -1198,7 +1198,7 @@ export default function Page() {
                 </span>
                 <span>{f.q}</span>
               </p>
-              <p className="mt-3 flex gap-3 text-[15px] leading-relaxed text-gray-700">
+              <p className="mt-3 flex gap-3 text-[17px] leading-relaxed text-gray-700">
                 <span className="inline-flex h-7 w-7 shrink-0 items-center justify-center rounded-full border-2 border-gray-900 text-xs font-bold text-gray-900">
                   A
                 </span>
@@ -1223,7 +1223,7 @@ export default function Page() {
             "ニップルの種類に合うノズルを選び、ホースの使用圧力も確かめる",
             "エア抜きの手順と保護具の着用を、作業者全員で共有する",
           ].map((t, i) => (
-            <li key={t} className="flex gap-3 rounded-xl border border-gray-200 bg-white p-4 text-[15px] leading-relaxed">
+            <li key={t} className="flex gap-3 rounded-xl border border-gray-200 bg-white p-4 text-[17px] leading-relaxed">
               <span className="inline-flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-gray-900 text-sm font-bold text-white">
                 {i + 1}
               </span>

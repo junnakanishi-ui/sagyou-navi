@@ -210,7 +210,7 @@ function H2({ id, no, children }: { id: string; no: number; children: ReactNode 
   return (
     <h2
       id={id}
-      className="mt-16 flex scroll-mt-24 items-start gap-3 border-l-4 border-gray-900 pl-3 text-xl font-bold leading-snug text-gray-900 md:text-2xl"
+      className="mt-16 flex scroll-mt-24 items-start gap-3 border-l-[6px] border-gray-900 pl-4 text-2xl font-black leading-snug text-gray-900 sm:text-3xl"
     >
       <span className="mt-0.5 inline-flex h-7 min-w-[1.75rem] shrink-0 items-center justify-center rounded bg-gray-900 text-sm font-bold text-white">
         {no}
@@ -222,7 +222,7 @@ function H2({ id, no, children }: { id: string; no: number; children: ReactNode 
 
 function H3({ children }: { children: ReactNode }) {
   return (
-    <h3 className="mt-10 border-b-2 border-gray-200 pb-2 text-lg font-bold text-gray-900">
+    <h3 className="mt-10 border-b-2 border-gray-900 pb-2 text-xl font-black text-gray-900 sm:text-2xl">
       <span className="mr-2 text-gray-400">■</span>
       {children}
     </h3>
@@ -230,7 +230,7 @@ function H3({ children }: { children: ReactNode }) {
 }
 
 function P({ children }: { children: ReactNode }) {
-  return <p className="mt-4 leading-8 text-gray-800">{children}</p>;
+  return <p className="mt-4 text-[17px] leading-[1.95] text-gray-900">{children}</p>;
 }
 
 /** グレーのマーカー強調 */
@@ -244,7 +244,7 @@ function Point({ title = "ポイント", children }: { title?: string; children:
   return (
     <div className="my-6 rounded-xl border-l-4 border-gray-900 bg-gray-50 p-5">
       <p className="text-sm font-bold text-gray-900">✓ {title}</p>
-      <div className="mt-2 text-sm leading-7 text-gray-800">{children}</div>
+      <div className="mt-2 text-[17px] leading-relaxed text-gray-900">{children}</div>
     </div>
   );
 }
@@ -253,7 +253,7 @@ function Caution({ children }: { children: ReactNode }) {
   return (
     <div className="my-6 rounded-xl border-2 border-gray-300 bg-white p-5">
       <p className="text-sm font-bold text-gray-900">⚠ 注意</p>
-      <div className="mt-2 text-sm leading-7 text-gray-800">{children}</div>
+      <div className="mt-2 text-[17px] leading-relaxed text-gray-900">{children}</div>
     </div>
   );
 }
@@ -662,9 +662,9 @@ export default function Page() {
       {/* ===================== ヘッダー ===================== */}
       <header className="mt-4 rounded-2xl bg-gray-900 p-6 text-white md:p-8">
         <p className="text-xs font-bold tracking-widest text-gray-400">TOOL STORAGE GUIDE</p>
-        <h1 className="mt-2 text-2xl font-bold leading-snug md:text-3xl">
+        <h1 className="mt-2 text-3xl font-black leading-snug sm:text-4xl">
           TRUSCOローラーキャビネットの選び方
-          <span className="mt-2 block text-base font-bold text-gray-300 md:text-lg">
+          <span className="mt-2 block text-lg font-bold leading-snug text-gray-100 sm:text-xl">
             TFRC・TRC型番の違いと引出し構成の早見表【全31モデル】
           </span>
         </h1>
@@ -702,8 +702,8 @@ export default function Page() {
       </P>
 
       <section aria-label="この記事の結論" className="mt-8 rounded-2xl border-2 border-gray-900 bg-gray-50 p-5 md:p-6">
-        <p className="text-base font-bold text-gray-900">結論：3つの質問で型番が決まる</p>
-        <ol className="mt-3 space-y-3 text-sm leading-7 text-gray-800">
+        <p className="text-xl font-black text-gray-900 sm:text-2xl">結論：3つの質問で型番が決まる</p>
+        <ol className="mt-3 space-y-3 text-[17px] leading-relaxed text-gray-900">
           <li className="flex gap-3">
             <span className="inline-flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-gray-900 text-xs font-bold text-white">1</span>
             <span>
@@ -766,7 +766,7 @@ export default function Page() {
         ].map(([t, d]) => (
           <div key={t} className="rounded-xl border border-gray-200 bg-white p-4">
             <p className="font-bold text-gray-900">{t}</p>
-            <p className="mt-1 text-sm leading-6 text-gray-700">{d}</p>
+            <p className="mt-1 text-[17px] leading-relaxed text-gray-900">{d}</p>
           </div>
         ))}
       </div>
@@ -808,7 +808,7 @@ export default function Page() {
           <span className="rounded bg-gray-400 px-2 py-1 text-white">S</span>
           <span className="rounded bg-gray-600 px-2 py-1 text-white">R</span>
         </div>
-        <ul className="mt-4 grid grid-cols-1 gap-2 text-sm text-gray-800 sm:grid-cols-2">
+        <ul className="mt-4 grid grid-cols-1 gap-2 text-[17px] leading-relaxed text-gray-900 sm:grid-cols-2">
           <li>
             <strong>TFRC- / TRC-</strong>：シリーズ。TFRCはブラック/オレンジ
           </li>
@@ -886,7 +886,7 @@ export default function Page() {
       </Caution>
 
       <H3>手持ちの工具から段数を見積もる4ステップ</H3>
-      <ol className="mt-4 space-y-3 text-sm leading-7 text-gray-800">
+      <ol className="mt-4 space-y-3 text-[17px] leading-relaxed text-gray-900">
         {[
           ["工具を全部並べる", "キャビネットに入れる予定の工具を床や作業台に出す。電動工具やケースも含める。"],
           ["寝かせた高さで3つに分ける", "高さ50mm以下・100mm以下・それ以上の3グループに分ける。迷った物は大きいほうへ。"],
@@ -1121,7 +1121,7 @@ export default function Page() {
               <span className="mr-2 text-gray-500">Q.</span>
               {f.q}
             </summary>
-            <p className="mt-3 leading-7 text-gray-800">
+            <p className="mt-3 text-[17px] leading-relaxed text-gray-900">
               <span className="mr-2 font-bold text-gray-500">A.</span>
               {f.a}
             </p>
@@ -1132,7 +1132,7 @@ export default function Page() {
       {/* ===================== まとめCTA ===================== */}
       <section aria-label="まとめ" className="mt-16 rounded-2xl border-2 border-gray-900 p-6 md:p-8">
         <p className="text-lg font-bold text-gray-900">選び方のおさらい</p>
-        <ul className="mt-3 space-y-2 text-sm leading-7 text-gray-800">
+        <ul className="mt-3 space-y-2 text-[17px] leading-relaxed text-gray-900">
           <li>色で選ぶ：TFRC＝ブラック/オレンジ、TRC-○○○R＝レッド。</li>
           <li>構成で選ぶ：3桁は50・100・150mm引出しの段数。手工具なら341、電動工具なら123、迷ったら232。</li>
           <li>仕切りで選ぶ：小物が多いならS／SR。少ないなら仕切りなし＋オプション。</li>

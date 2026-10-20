@@ -865,7 +865,7 @@ export default function Page() {
       </ul>
 
       <H3>型番がわからないときの確認手順</H3>
-      <ol className="mt-4 space-y-3 text-sm leading-7 text-gray-800">
+      <ol className="mt-4 space-y-3 text-[17px] leading-relaxed text-gray-900">
         {[
           ["図面・部品表を確認", "装置の図面や保全台帳に型番が残っていれば、それが最も確実。"],
           ["現品の刻印を確認", "ハブ側面などに型番が刻印されていることがある。油汚れを落として確認する。"],

@@ -395,7 +395,7 @@ function PointBox({ title, children }: { title: string; children: ReactNode }) {
         <span className="rounded bg-gray-900 px-2 py-0.5 text-[11px] text-white">POINT</span>
         {title}
       </p>
-      <div className="space-y-2 text-[15px] leading-relaxed text-gray-800">{children}</div>
+      <div className="space-y-2 text-[17px] leading-relaxed text-gray-900">{children}</div>
     </div>
   );
 }
@@ -409,7 +409,7 @@ function CautionBox({ title, children }: { title: string; children: ReactNode })
         </span>
         {title}
       </p>
-      <div className="space-y-2 text-[15px] leading-relaxed text-gray-800">{children}</div>
+      <div className="space-y-2 text-[17px] leading-relaxed text-gray-900">{children}</div>
     </div>
   );
 }
@@ -429,11 +429,11 @@ function TableWrap({ caption, children }: { caption: string; children: ReactNode
 }
 
 const TH = "border-b border-gray-200 bg-gray-900 px-3 py-2 text-xs font-bold text-white";
-const TD = "border-b border-gray-100 px-3 py-2.5 align-top text-[13px] leading-relaxed text-gray-800";
+const TD = "border-b border-gray-200 px-3 py-3 align-top text-[16px] leading-7 text-gray-900";
 
 function H2({ id, num, children }: { id: string; num: string; children: ReactNode }) {
   return (
-    <h2 id={id} className="mt-16 flex scroll-mt-20 items-center gap-3 border-l-4 border-gray-900 pl-3 text-xl font-bold leading-snug text-gray-900 sm:text-2xl">
+    <h2 id={id} className="mt-16 flex scroll-mt-24 items-start gap-3 border-l-[6px] border-gray-900 pl-4 text-2xl font-black leading-snug text-gray-900 sm:text-3xl">
       <span className="inline-flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-gray-900 text-sm font-bold text-white">{num}</span>
       <span>{children}</span>
     </h2>
@@ -441,7 +441,7 @@ function H2({ id, num, children }: { id: string; num: string; children: ReactNod
 }
 
 function H3({ children }: { children: ReactNode }) {
-  return <h3 className="mt-10 border-b-2 border-gray-200 pb-1 text-lg font-bold text-gray-900">{children}</h3>;
+  return <h3 className="mt-10 border-b-2 border-gray-900 pb-2 text-xl font-black text-gray-900 sm:text-2xl">{children}</h3>;
 }
 
 function M({ children }: { children: ReactNode }) {
@@ -609,9 +609,9 @@ export default function Page() {
         {/* ------------------------------------------------ ヘッダー */}
         <header className="overflow-hidden rounded-2xl bg-gray-900 px-5 py-8 text-white sm:px-8 sm:py-10">
           <p className="text-xs font-bold tracking-widest text-gray-400">WINTER SITE GUIDE 2026</p>
-          <h1 className="mt-2 text-2xl font-bold leading-snug sm:text-3xl">
+          <h1 className="mt-2 text-3xl font-black leading-snug sm:text-4xl">
             現場の防寒対策ガイド
-            <span className="mt-1 block text-base font-bold text-gray-300 sm:text-lg">
+            <span className="mt-2 block text-lg font-bold leading-snug text-gray-100 sm:text-xl">
               冬の建設現場の服装・電熱グッズ・詰所暖房と経費の扱い【2026年版】
             </span>
           </h1>
@@ -627,17 +627,17 @@ export default function Page() {
           </p>
         </header>
 
-        <p className="mt-6 text-[15px] leading-loose text-gray-800">
+        <p className="mt-6 text-[17px] leading-[1.9] text-gray-900">
           朝礼の15分で指先がかじかみ、昼休みの詰所が寒くて午後まで体が戻らない。冬の現場で聞く悩みの多くは、服装だけでは片づきません。この記事では、現場の防寒対策を「人・場所・現場」の3層に分け、そろえるべき装備と設備、公共工事での費用の扱いまでを一つにまとめました。商品はGC-selectと楽天CRECOTEの取扱品から、用途ごとに選んでいます。
         </p>
 
         {/* ------------------------------------------------ 結論 */}
         <section aria-labelledby="conclusion" className="mt-8 rounded-2xl border-2 border-gray-900 bg-white p-5 sm:p-6">
-          <h2 id="conclusion" className="flex items-center gap-2 text-lg font-bold text-gray-900">
+          <h2 id="conclusion" className="flex items-center gap-2 text-2xl font-black text-gray-900 sm:text-3xl">
             <span className="rounded bg-gray-900 px-2 py-0.5 text-xs text-white">結論</span>
             冬の現場の防寒は、この4点で組み立てる
           </h2>
-          <ol className="mt-4 space-y-3 text-[15px] leading-relaxed text-gray-800">
+          <ol className="mt-4 space-y-3 text-[17px] leading-relaxed text-gray-900">
             <li className="flex gap-3">
               <span className="mt-0.5 inline-flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-gray-900 text-xs font-bold text-white">1</span>
               <span>
@@ -689,7 +689,7 @@ export default function Page() {
           <H2 id="risk" num="1">
             寒さが現場にもたらす3つのリスク
           </H2>
-          <p className="mt-5 text-[15px] leading-loose text-gray-800">
+          <p className="mt-5 text-[17px] leading-[1.9] text-gray-900">
             冬の現場で起きる問題は「寒くてつらい」だけではありません。体温が下がること、手元と足元の動きが鈍ること、そして暖を取る道具そのものが事故の原因になること。この3つを分けて考えると、そろえるべき物がはっきりします。
           </p>
 
@@ -731,7 +731,7 @@ export default function Page() {
           </TableWrap>
 
           <H3>体感温度は「風」で大きく変わる</H3>
-          <p className="mt-4 text-[15px] leading-loose text-gray-800">
+          <p className="mt-4 text-[17px] leading-[1.9] text-gray-900">
             寒さを左右するのは気温だけではない。「風速が1m増すごとに体感温度は1℃下がる」と言われ、風速5mなら実際より5℃寒く感じる計算です（名古屋市科学館の展示解説）。高所・橋梁・湾岸の現場で、まず防風から固めるのはこのため。
           </p>
           <figure className="my-6 rounded-xl border border-gray-200 bg-white p-5">
@@ -755,10 +755,10 @@ export default function Page() {
           </figure>
 
           <H3>現場の声：困りごとの1位は「体温調整」</H3>
-          <p className="mt-4 text-[15px] leading-loose text-gray-800">
+          <p className="mt-4 text-[17px] leading-[1.9] text-gray-900">
             建設現場で働く506人への調査（ウィルオブ・コンストラクション、2023年12月実施）では、外勤者の<M>87.7%</M>が冬場に防寒対策をしていると回答しました。身につけている物は機能性インナー64.8%、作業用手袋44.2%、機能性タイツ43.7%の順。一方、困りごとの1位は<M>「体温調整が難しい」43.2%</M>、2位は「防寒アイテムの購入費用」36.0%でした。
           </p>
-          <p className="mt-4 text-[15px] leading-loose text-gray-800">
+          <p className="mt-4 text-[17px] leading-[1.9] text-gray-900">
             動いて汗をかき、止まって冷える。この繰り返しにどう付き合うかが、現場の防寒の本題です。厚い一枚より、脱ぎ着しやすい重ね着と、温度を変えられる電熱ウェアが効く理由もここにあります。
           </p>
           <div className="my-6 grid grid-cols-1 gap-3 sm:grid-cols-2">
@@ -772,7 +772,7 @@ export default function Page() {
           <H2 id="three-layers" num="2">
             防寒対策は「人・場所・現場」の3層で組む
           </H2>
-          <p className="mt-5 text-[15px] leading-loose text-gray-800">
+          <p className="mt-5 text-[17px] leading-[1.9] text-gray-900">
             服装を手厚くしても、昼休みに冷えた詰所で過ごせば午後の作業はつらくなる。詰所を暖めても、凍った通路で転べば意味がない。防寒対策は、誰が・どこで・何をするかで3つの層に分けて準備します。
           </p>
           <div className="my-6 grid gap-3 sm:grid-cols-3">
@@ -898,10 +898,10 @@ export default function Page() {
           <H2 id="cost" num="3">
             公共工事の防寒対策費は積み上げ計上できる（2026年度）
           </H2>
-          <p className="mt-5 text-[15px] leading-loose text-gray-800">
+          <p className="mt-5 text-[17px] leading-[1.9] text-gray-900">
             「現場 防寒対策」で調べると、自治体の積算資料が上位に並びます。公共工事では、防寒対策の費用をどの経費で見るかがルール化されているため。発注者と協議する前に、押さえたいポイントを整理しました。
           </p>
-          <ul className="mt-4 list-disc space-y-2 pl-5 text-[15px] leading-relaxed text-gray-800">
+          <ul className="mt-4 list-disc space-y-2 pl-5 text-[17px] leading-relaxed text-gray-900">
             <li>
               国土交通省の「土木請負工事における現場環境改善費の積算要領」（2026年2月27日付、4月1日適用）は、<M>主に現場の施設や設備に対する熱中症対策・防寒対策の費用</M>について、率分ではなく、対策の妥当性を確認したうえで積み上げ計上するとしている。
             </li>
@@ -944,7 +944,7 @@ export default function Page() {
           </TableWrap>
 
           <H3>購入品とリース品で、積み上がる額が違う</H3>
-          <p className="mt-4 text-[15px] leading-loose text-gray-800">
+          <p className="mt-4 text-[17px] leading-[1.9] text-gray-900">
             国交省の留意事項（2025年2月28日）では、リース品は設置期間分のリース費用、購入品は設置期間分の減価償却費を計上します。広島県の運用では、購入品は「購入価格×設置日数÷（耐用年数×365）」で計算し、千円未満は切り捨て。ジェットヒーターの耐用年数は6年（暖房用機器）として例示されています。
           </p>
           <div className="my-6 rounded-xl border border-gray-300 bg-white p-5">
@@ -965,7 +965,7 @@ export default function Page() {
             </div>
             <p className="mt-3 text-xs leading-relaxed text-gray-600">30,000×90÷（6×365）＝1,232円 → 1,000円。価格と日数は仮の数字で、実際の計上は発注者の基準と協議によります。</p>
           </div>
-          <p className="text-[15px] leading-loose text-gray-800">
+          <p className="text-[17px] leading-[1.9] text-gray-900">
             購入品は1つの工事で積み上がる額が小さい。高額な暖房設備はリースで工事に計上し、手頃な足元ヒーターや屋外用ストーブは会社の備品として複数の現場で回す。この使い分けが現実的です。手続きは、着手前に工事打合せ簿で品目・規模・設置期間・概算費用を協議し、作業終了までに実施内容と実費を見積書などとあわせて提出する流れ（広島県）。
           </p>
           <CautionBox title="上限や適用時期は発注者ごとに違う">
@@ -980,7 +980,7 @@ export default function Page() {
           <H2 id="criteria" num="4">
             現場用防寒着を選ぶ6つの基準
           </H2>
-          <p className="mt-5 text-[15px] leading-loose text-gray-800">
+          <p className="mt-5 text-[17px] leading-[1.9] text-gray-900">
             作業服メーカーの防寒着は「動いて、汚れて、洗って、また着る」前提で作られています。街着との違いが出るのは、次の6つの基準。支給品を決めるときのチェック表として使ってください。
           </p>
           <TableWrap caption="現場用防寒着のチェック表">
@@ -1044,7 +1044,7 @@ export default function Page() {
           </PointBox>
 
           <H3>高所作業はハーネスとの相性を確認</H3>
-          <p className="mt-4 text-[15px] leading-loose text-gray-800">
+          <p className="mt-4 text-[17px] leading-[1.9] text-gray-900">
             高さ6.75mを超える箇所では、墜落制止用器具はフルハーネス型が原則です（厚生労働省、2019年2月施行の新規格）。厚手の防寒着の上からハーネスを締めると、ベルトの位置がずれたり締め付けが甘くなったりしがち。防寒着を着たうえでハーネスを装着し直すか、背中にランヤード用のスリットがあるハーネス対応の防寒着を選ぶと扱いやすくなります。
           </p>
 
@@ -1060,12 +1060,12 @@ export default function Page() {
           <H2 id="workwear" num="5">
             作業服メーカーの防寒ブルゾン・ジャケット10モデル
           </H2>
-          <p className="mt-5 text-[15px] leading-loose text-gray-800">
+          <p className="mt-5 text-[17px] leading-[1.9] text-gray-900">
             ここからは作業服メーカーの防寒着を用途別に紹介します。楽天のCRECOTEで扱うTRUSCO取扱品の9モデルと、GC-selectのBURTLE防水防寒1モデル。色・サイズ違いは、カードの中から直接選べます。
           </p>
 
           <H3>定番の防寒ブルゾン：まず全員分をそろえる</H3>
-          <p className="mt-4 text-[15px] leading-loose text-gray-800">
+          <p className="mt-4 text-[17px] leading-[1.9] text-gray-900">
             支給品の一着目は、防風と保温がしっかりしていて、サイズと色の選択肢が多いものが向いています。AZ-8476は5色展開で、協力会社や職種ごとの色分けがしやすい。XEBEC 222は襟に収めるインフードと袖・裾のリブで、冷気を入れない定番型です。
           </p>
           <Grid>
@@ -1074,7 +1074,7 @@ export default function Page() {
           </Grid>
 
           <H3>防水・防風を重視：雨・雪・海沿いの現場</H3>
-          <p className="mt-4 text-[15px] leading-loose text-gray-800">
+          <p className="mt-4 text-[17px] leading-[1.9] text-gray-900">
             濡れは体温を一気に奪います。雨や雪の中で作業する現場なら、撥水ではなく防水を選びたい。BURTLE 7610は耐水圧10,000mmでシームテープと反射材付き、5030は表地にTPUラミネートを重ねた防水防寒です。
           </p>
           <Grid>
@@ -1083,7 +1083,7 @@ export default function Page() {
           </Grid>
 
           <H3>動きやすさ・高所作業：ストレッチ、ハーネス対応、ベスト</H3>
-          <p className="mt-4 text-[15px] leading-loose text-gray-800">
+          <p className="mt-4 text-[17px] leading-[1.9] text-gray-900">
             ミドリ安全のベルデクセルは、ストレッチニットと防風フィルム、フリースを貼り合わせた素材。中綿で膨らませないので着ぶくれしにくく、表裏の導電繊維で帯電も防ぎます。上衣・下衣・ハーネス対応の3型を職種に合わせて組み合わせられるのが強み。腕を大きく使うなら、5030と同じ生地のBURTLE 5034（ベスト）という選択肢もあります。
           </p>
           <Grid>
@@ -1097,7 +1097,7 @@ export default function Page() {
           </p>
 
           <H3>軽く羽織る1枚：秋口〜初冬、運転や倉庫作業に</H3>
-          <p className="mt-4 text-[15px] leading-loose text-gray-800">
+          <p className="mt-4 text-[17px] leading-[1.9] text-gray-900">
             真冬用の防寒着は、11月の日中には暑すぎることがあります。BURTLE 7420のような軽防寒を1枚持っておくと、季節の変わり目や、電熱ベストを中に着る日のアウターとして使えるもの。ボア裏のPJ07は軽く羽織れるパイロット型で、車の運転や倉庫・資材置き場の作業にも使い回せます。
           </p>
           <Grid>
@@ -1203,7 +1203,7 @@ export default function Page() {
           <H2 id="heated" num="6">
             電熱ウェア・充電式グッズの選び方
           </H2>
-          <p className="mt-5 text-[15px] leading-loose text-gray-800">
+          <p className="mt-5 text-[17px] leading-[1.9] text-gray-900">
             電熱ウェアは「着る暖房」。動き始めて汗ばんだら温度を下げ、手を止めたら上げる。服を脱ぎ着するより細かく体温を調整できるのが、普通の防寒着にない利点です。体幹を温めるベストを基本に、手先の冷えが強い人はグローブを足す、という組み方がわかりやすいでしょう。
           </p>
           <FeaturedCard p={P.heatVest} label="電熱の基本はベストから" />
@@ -1246,7 +1246,7 @@ export default function Page() {
           </TableWrap>
 
           <H3>選ぶときに見る4つのポイント</H3>
-          <ol className="mt-4 list-decimal space-y-2 pl-5 text-[15px] leading-relaxed text-gray-800">
+          <ol className="mt-4 list-decimal space-y-2 pl-5 text-[17px] leading-relaxed text-gray-900">
             <li>温める場所：背中と腰を広く温めるベストが基本。手先の冷えには電熱グローブか充電カイロを足す。</li>
             <li>稼働時間：8時間の作業日なら、弱〜中で昼休みまで持つか、予備バッテリーと交換するかを決めておく。</li>
             <li>洗濯：ヒーターやバッテリーを外して洗えるか。汗をかく現場では洗えない物はすぐ不衛生になる。</li>
@@ -1276,7 +1276,7 @@ export default function Page() {
           <H2 id="extremities" num="7">
             頭・首・手・足の「末端」を守る小物
           </H2>
-          <p className="mt-5 text-[15px] leading-loose text-gray-800">
+          <p className="mt-5 text-[17px] leading-[1.9] text-gray-900">
             体幹を温めても、むき出しの首やヘルメットの下、長靴の中のつま先から冷えは入ってきます。小物は比較的手頃で、作業員ごとに好みも分かれるもの。会社の支給品と、本人が選ぶ物を分けて考えるのも一つの方法です。
           </p>
           <TableWrap caption="部位別・ありがちな失敗と対策">
@@ -1333,7 +1333,7 @@ export default function Page() {
           <div className="my-4 grid grid-cols-1 gap-3 sm:grid-cols-2">
             <MiniRow p={P.socks} />
           </div>
-          <p className="text-[15px] leading-loose text-gray-800">
+          <p className="text-[17px] leading-[1.9] text-gray-900">
             マフラーやストールは、回転する機械への巻き込まれや、足場での引っかかりの原因になります。現場では端の出ない筒形を選び、ヘルメットの下に着ける物は、装着後にヘルメットがぐらつかないかを必ず確認してください。
           </p>
         </section>
@@ -1343,7 +1343,7 @@ export default function Page() {
           <H2 id="supervisor" num="8">
             監督・巡回・通勤向けの防寒ジャケット
           </H2>
-          <p className="mt-5 text-[15px] leading-loose text-gray-800">
+          <p className="mt-5 text-[17px] leading-[1.9] text-gray-900">
             現場代理人や施工管理は、屋外の巡回、事務所での書類仕事、車での移動を1日に何度も行き来します。作業員ほど汚れない代わりに、着脱のしやすさと蒸れにくさが欲しい。アウトドアブランドのジャケットが監督に選ばれるのはこのためです。
           </p>
           <Grid>
@@ -1388,7 +1388,7 @@ export default function Page() {
               </tr>
             </tbody>
           </TableWrap>
-          <p className="text-[15px] leading-loose text-gray-800">
+          <p className="text-[17px] leading-[1.9] text-gray-900">
             選び方の軸は、雨の日も巡回するならGORE-TEXのような防水、車移動が多いなら脱ぎやすい軽さ。女性の技術者や監督には、メンズの小さいサイズより女性用の型のほうが肩と袖が合いやすくなります。溶接や溶断の立ち会いでは、4章の注意どおり火の粉の届く距離に近づかないようにしてください。
           </p>
 
@@ -1400,7 +1400,7 @@ export default function Page() {
           <H2 id="rest-area" num="9">
             詰所・現場事務所の暖房と休憩環境
           </H2>
-          <p className="mt-5 text-[15px] leading-loose text-gray-800">
+          <p className="mt-5 text-[17px] leading-[1.9] text-gray-900">
             休憩で体温を戻せるかどうかで、午後の作業の動きが変わります。屋外の寒さについては、職場の熱中症対策のような数値の基準が法令にありません。だからこそ、休む場所を暖めることが、現場側でできる確実な対策になります。
           </p>
           <TableWrap caption="暖房・室温に関係する主な決まり">
@@ -1431,7 +1431,7 @@ export default function Page() {
           </TableWrap>
 
           <H3>電気式の足元暖房と屋外用ストーブ</H3>
-          <p className="mt-4 text-[15px] leading-loose text-gray-800">
+          <p className="mt-4 text-[17px] leading-[1.9] text-gray-900">
             仮設の詰所は電源が限られます。100Vのコンセントは1か所あたり15A、つまり1,500Wが上限。足元のパネルヒーターは160〜200Wなので複数台でも収まりますが、屋外用の電気ストーブは最大1,500Wで1か所を使い切るため、ほかの機器とは分けてつなぎます。
           </p>
           <Grid>
@@ -1467,7 +1467,7 @@ export default function Page() {
           </figure>
 
           <H3>休憩の質を上げる小物</H3>
-          <p className="mt-4 text-[15px] leading-loose text-gray-800">
+          <p className="mt-4 text-[17px] leading-[1.9] text-gray-900">
             冬は汗が目立たないぶん、水分補給がおろそかになりがち。冷たい飲み物を敬遠する人には、ボトルを温めておける保温グッズが効きます。車内での待機や、停電時の備えにはブランケットを1枚。体温を反射する多層シートなら、たたんで小さく保管できます。
           </p>
           <Grid>
@@ -1487,17 +1487,17 @@ export default function Page() {
           <H2 id="site" num="10">
             凍結・積雪・寒中コンクリートの冬対策
           </H2>
-          <p className="mt-5 text-[15px] leading-loose text-gray-800">
+          <p className="mt-5 text-[17px] leading-[1.9] text-gray-900">
             最後は、人ではなく現場そのものの冬対策です。通路の凍結、出入口の積雪、そして打設したコンクリートの凍害。どれも放置すると、転倒や品質不良として表に出てきます。
           </p>
 
           <H3>通路・スロープ・仮設階段の凍結</H3>
-          <p className="mt-4 text-[15px] leading-loose text-gray-800">
+          <p className="mt-4 text-[17px] leading-[1.9] text-gray-900">
             朝いちばんに滑りやすいのは、日陰の通路、鉄板の上、仮設階段の踏み板。凍結防止剤は前日の夕方か、冷え込む前にまいておくと効きが違います。塩化物系の薬剤は金属を錆びさせやすく、防錆剤を混ぜないと腐食は防げないとされています（北陸地方整備局の掲載資料）。足場材や車両、重機の近くでは量を控えめにしましょう。
           </p>
 
           <H3>詰所・事務所の出入口の積雪</H3>
-          <p className="mt-4 text-[15px] leading-loose text-gray-800">
+          <p className="mt-4 text-[17px] leading-[1.9] text-gray-900">
             人の出入りが多い出入口は、踏み固められた雪が氷になりやすい場所です。電気式の融雪マットなら、降り始めから雪を融かして凍結を防げます。メーカーは表面温度の目安を「外気温＋約20℃」と案内しており、車両の乗り入れや、落雪のような大量の雪には向かないとのこと。750Wを10時間使った場合の電気代は、前章の試算で1日約233円です。
           </p>
           <Grid>
@@ -1506,7 +1506,7 @@ export default function Page() {
           </Grid>
 
           <H3>寒中コンクリートの給熱養生</H3>
-          <p className="mt-4 text-[15px] leading-loose text-gray-800">
+          <p className="mt-4 text-[17px] leading-[1.9] text-gray-900">
             日平均気温が4℃以下になると予想されるときは、寒中コンクリートとして施工します（北海道開発局の技術資料）。標準は、初期凍害を防げる強度が出るまでコンクリートの温度を5℃以上に保ち、さらに2日間は0℃以上に保つこと。シートで囲って給熱する方法の一つが、練炭コンロによる養生です。
           </p>
           <ol className="relative my-6 space-y-4 border-l-2 border-gray-900 pl-6">
@@ -1544,11 +1544,11 @@ export default function Page() {
           <dl className="mt-6 space-y-4">
             {FAQS.map((f) => (
               <div key={f.q} className="rounded-xl border border-gray-200 bg-white p-5">
-                <dt className="flex gap-2 text-[15px] font-bold leading-snug text-gray-900">
+                <dt className="flex gap-2 text-[17px] font-bold leading-snug text-gray-900">
                   <span className="shrink-0 rounded bg-gray-900 px-1.5 text-xs leading-6 text-white">Q</span>
                   {f.q}
                 </dt>
-                <dd className="mt-3 flex gap-2 text-[15px] leading-relaxed text-gray-800">
+                <dd className="mt-3 flex gap-2 text-[17px] leading-relaxed text-gray-900">
                   <span className="shrink-0 rounded border border-gray-900 px-1.5 text-xs font-bold leading-6 text-gray-900">A</span>
                   <span>{f.a}</span>
                 </dd>
@@ -1562,12 +1562,12 @@ export default function Page() {
           <H2 id="summary" num="12">
             まとめ
           </H2>
-          <p className="mt-5 text-[15px] leading-loose text-gray-800">
+          <p className="mt-5 text-[17px] leading-[1.9] text-gray-900">
             冬の現場の防寒は、作業員の服装、休む場所の暖房、現場の凍結と養生という3つの層をそろえて初めて回ります。公共工事なら、施設・設備の防寒対策は積み上げ計上の協議ができる。燃焼する道具を使う場面では、一酸化炭素への備えを忘れずに。冬の現場に入る前に、次のチェックリストで準備の抜けを確かめてください。
           </p>
           <div className="my-6 rounded-2xl border-2 border-gray-900 bg-white p-5">
             <p className="text-sm font-bold text-gray-900">冬の現場入り前チェックリスト</p>
-            <ul className="mt-3 space-y-2 text-[15px] leading-relaxed text-gray-800">
+            <ul className="mt-3 space-y-2 text-[17px] leading-relaxed text-gray-900">
               {[
                 "作業員の防風アウターとサイズを確認した",
                 "汗冷え対策のミドル（ベスト・電熱ベスト）を用意した",

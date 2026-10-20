@@ -647,7 +647,7 @@ export default function Page() {
       <header className="overflow-hidden rounded-2xl bg-gray-900 text-white">
         <div className="p-6 sm:p-8">
           <p className="inline-block rounded bg-white px-2 py-0.5 text-xs font-bold text-gray-900">防災備蓄・BCP</p>
-          <h1 className="mt-3 text-2xl font-bold leading-snug sm:text-3xl">{TITLE}</h1>
+          <h1 className="mt-3 text-3xl font-black leading-snug sm:text-4xl">{TITLE}</h1>
           <div className="mt-4 flex flex-wrap gap-2">
             {["総務・BCP担当向け", "防災庁11月発足", "2026年改定ガイドライン", "人数別の必要量早見表"].map((c) => (
               <span key={c} className="rounded-full border border-gray-500 px-3 py-1 text-xs font-medium text-gray-100">
@@ -662,7 +662,7 @@ export default function Page() {
         </div>
       </header>
 
-      <section className="mt-8 space-y-4 text-[16px] leading-[1.95]">
+      <section className="mt-8 space-y-4 text-[17px] leading-[1.95] tracking-[0.02em]">
         <p>
           「うちの会社も、防災備蓄をしないといけないのか」。総務やBCPの担当になると、まずこの疑問にぶつかります。調べると「義務」「努力義務」「推奨」と書き方がばらばらで、社内でどう説明すればいいか迷う方も多いはずです。
         </p>
@@ -686,7 +686,7 @@ export default function Page() {
           <span className="rounded bg-gray-900 px-2 py-0.5 text-xs text-white">結論</span>
           企業の防災備蓄は「努力義務＋安全配慮義務」で、実質的に必要
         </h2>
-        <ol className="mt-4 space-y-3 text-[15px] leading-relaxed">
+        <ol className="mt-4 space-y-3 text-[17px] leading-relaxed">
           {[
             "全国一律に備蓄を義務づけた法律はない。東京都帰宅困難者対策条例の「3日分の備蓄」は努力義務で、罰則もない。",
             "ただし労働契約法第5条の安全配慮義務は、従業員を1人でも雇えば発生する法的義務。災害への備えもその判断材料になり得る。",
@@ -724,7 +724,7 @@ export default function Page() {
         </ol>
       </nav>
 
-      <article className="text-[16px] leading-[1.95]">
+      <article className="text-[17px] leading-[1.95] tracking-[0.02em]">
         {/* ================= 01 ================= */}
         <H2 id="sec1" num="01">
           結論：企業の防災備蓄は「義務」なのか
@@ -794,7 +794,7 @@ export default function Page() {
             <li key={t.date} className="relative">
               <span aria-hidden="true" className="absolute -left-[34px] top-1.5 h-4 w-4 rounded-full border-4 border-white bg-gray-900 ring-2 ring-gray-900" />
               <p className="text-sm font-bold text-gray-900">{t.date}</p>
-              <p className="mt-1 text-[15px] leading-relaxed text-gray-700">{t.text}</p>
+              <p className="mt-1 text-[17px] leading-relaxed text-gray-700">{t.text}</p>
             </li>
           ))}
         </ol>
@@ -1387,7 +1387,7 @@ export default function Page() {
               </span>
               <span>
                 <span className="block font-bold text-gray-900">{s.t}</span>
-                <span className="mt-1 block text-[15px] leading-relaxed text-gray-700">{s.d}</span>
+                <span className="mt-1 block text-[17px] leading-relaxed text-gray-700">{s.d}</span>
               </span>
             </li>
           ))}
@@ -1438,7 +1438,7 @@ export default function Page() {
                 </span>
                 <span>{f.q}</span>
               </p>
-              <p className="mt-3 flex gap-3 text-[15px] leading-relaxed text-gray-700">
+              <p className="mt-3 flex gap-3 text-[17px] leading-relaxed text-gray-700">
                 <span className="inline-flex h-7 w-7 shrink-0 items-center justify-center rounded-full border-2 border-gray-900 text-xs font-bold text-gray-900">
                   A
                 </span>
@@ -1462,7 +1462,7 @@ export default function Page() {
             "不足しやすいトイレと毛布から先に埋め、電源・ラジオ・救護用品で待機の3日間を支える",
             "分散保管・管理担当・訓練での入れ替えを決め、浸水しない場所に置く",
           ].map((t, i) => (
-            <li key={t} className="flex gap-3 rounded-xl border border-gray-200 bg-white p-4 text-[15px] leading-relaxed">
+            <li key={t} className="flex gap-3 rounded-xl border border-gray-200 bg-white p-4 text-[17px] leading-relaxed">
               <span className="inline-flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-gray-900 text-sm font-bold text-white">
                 {i + 1}
               </span>

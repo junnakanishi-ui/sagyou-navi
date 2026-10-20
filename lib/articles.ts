@@ -14,6 +14,21 @@ export type Article = {
 
 export const ARTICLES: Article[] = [
   {
+    slug: "genba-boukan-taisaku",
+    title:
+      "現場の防寒対策ガイド｜冬の建設現場の服装・電熱グッズ・詰所暖房と経費の扱い【2026年版】",
+    shortTitle: "現場の防寒対策ガイド",
+    description:
+      "冬の建設現場の防寒対策を「人・場所・現場」の3層で整理。作業服メーカーの防寒ブルゾン10モデル比較、電熱ベストや手袋の選び方、詰所ヒーターの電気代試算、寒中コンクリート養生の一酸化炭素対策、2026年度の現場環境改善費（防寒対策の積み上げ上限100%）まで解説します。",
+    category: "guide",
+    categoryLabel: "選び方ガイド",
+    thumbnail: "/products/1124850038.jpg",
+    date: "2026-10-16",
+    readTime: "約24分",
+    available: true,
+    path: "/articles/genba-boukan-taisaku",
+  },
+  {
     slug: "grease-gun-pump-guide",
     title:
       "グリースガンとグリースポンプの違いと選び方｜詰め方・エア抜きも解説【2026年版】",

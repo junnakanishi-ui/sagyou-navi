@@ -401,6 +401,10 @@ const faqs = [
 
 const relatedArticles = [
   {
+    href: "/articles/safety-supplies-rental-guide",
+    label: "短期だけ使うなら？安全用品レンタルの料金・購入比較と見積もり準備",
+  },
+  {
     href: "/articles/color-cone-selection",
     label:
       "カラーコーンの選び方｜駐車場・工事現場・イベントで使うコーン・バー・チェーンの使い分け",

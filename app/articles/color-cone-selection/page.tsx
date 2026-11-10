@@ -146,6 +146,10 @@ const smallRelatedProducts = [
 
 const RELATED: RelatedArticle[] = [
   {
+    href: "/articles/safety-supplies-rental-guide",
+    label: "短期だけ使うなら？安全用品レンタルの料金・購入比較と見積もり準備",
+  },
+  {
     href: "/articles/color-cone-types-sizes",
     label:
       "カラーコーンの種類とサイズを徹底解説｜700mm・反射・伸縮式・ヘビーの違いと選び方【2026年版】",

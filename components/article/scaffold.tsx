@@ -102,7 +102,7 @@ export function HeroImage({ src, alt }: { src: string; alt: string }) {
             fill
             className="object-cover"
             priority
-            sizes="(max-width: 768px) 100vw, 850px"
+            sizes="(max-width: 1200px) 100vw, 1152px"
           />
         </div>
       </div>

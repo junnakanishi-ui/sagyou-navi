@@ -1,0 +1,141 @@
+.rental-guide { max-width: 1200px; margin: auto; padding: 24px 24px 80px; color: #182523; }
+.rental-guide * { box-sizing: border-box; }
+.rental-guide a { text-underline-offset: 4px; }
+.rental-guide :is(section, aside)[id] { scroll-margin-top: 100px; }
+.rental-breadcrumb { display: flex; flex-wrap: wrap; gap: 10px; font-size: 13px; color: #586460; margin-bottom: 28px; }
+.rental-hero { display: grid; grid-template-columns: 1.08fr 1fr; overflow: hidden; border-radius: 24px; background: #f2f5ed; }
+.rental-hero-copy { padding: 46px 32px; }
+.rental-eyebrow { font-size: 12px; font-weight: 700; letter-spacing: .12em; color: #32624e; }
+.rental-hero h1 { font-size: clamp(30px, 3.2vw, 44px); font-weight: 900; line-height: 1.45; letter-spacing: -.035em; margin: 20px 0; }
+.rental-hero h1 span { display: block; font-size: .66em; line-height: 1.6; margin-top: 16px; letter-spacing: 0; }
+.rental-hero-lead { font-size: 16px; line-height: 1.9; color: #42534b; margin-bottom: 24px; }
+.rental-hero-photo { position: relative; min-height: 440px; margin: 0; }
+.rental-hero-photo img { object-fit: cover; }
+.rental-hero-photo figcaption { position: absolute; bottom: 0; left: 0; right: 0; padding: 24px 16px 14px; color: #fff; font-size: 11px; background: linear-gradient(transparent, #10261fe0); }
+.rental-button { display: inline-flex; align-items: center; justify-content: center; gap: 16px; min-height: 54px; padding: 15px 22px; border: 0; border-radius: 9px; background: #facc15; color: #17251f; font-size: 15px; line-height: 1.6; font-weight: 700; text-decoration: none; cursor: pointer; transition: background .15s; }
+.rental-button:hover { background: #eab308; }
+.rental-button-dark { background: #173e30; color: #fff; }
+.rental-button-dark:hover { background: #245c48; }
+.rental-meta { font-size: 12px; line-height: 1.9; color: #586460; margin-top: 24px; }
+.rental-disclosure { font-size: 12px; line-height: 1.8; color: #606a65; padding: 16px 0; border-bottom: 1px solid #e0e7e1; }
+.rental-intro { max-width: 720px; margin: 36px 0; font-size: 18px; line-height: 1.95; }
+.rental-intro p + p { margin-top: 20px; }
+.rental-answer { padding: 28px 32px; margin: 32px 0; border: 1px solid #d8e4d9; border-left: 5px solid #295640; border-radius: 0 14px 14px 0; background: #f5f8f2; }
+.rental-answer ol { list-style: decimal; padding-left: 24px; margin-top: 16px; display: grid; gap: 14px; font-size: 17px; line-height: 1.9; }
+.rental-cta { display: flex; align-items: center; justify-content: space-between; gap: 28px; border-radius: 16px; background: #173e30; color: white; padding: 32px; margin: 36px 0; }
+.rental-cta .rental-eyebrow { color: #c2d9bc; }
+.rental-cta h2 { font-size: 23px; line-height: 1.6; font-weight: 700; margin: 10px 0; }
+.rental-cta p:not(.rental-eyebrow) { max-width: 38em; font-size: 15px; line-height: 1.9; color: #e0e9e3; }
+.rental-cta > a { flex-shrink: 0; }
+.rental-toc { margin: 48px 0 64px; padding: 28px 32px; border: 1px solid #dce3de; border-radius: 16px; }
+.rental-toc > p { font-weight: 700; font-size: 18px; margin-bottom: 16px; }
+.rental-toc ol { display: grid; grid-template-columns: 1fr 1fr; gap: 0 32px; }
+.rental-toc a { display: flex; align-items: center; gap: 12px; padding: 15px 0; border-top: 1px solid #e5ebe6; font-size: 15px; }
+.rental-toc a:hover { color: #047857; }
+.rental-toc a span:first-child { font-size: 12px; color: #647c6d; }
+.rental-toc a span:last-child { margin-left: auto; }
+.rental-section { margin-top: 80px; }
+.rental-section > h2 { margin: 14px 0 28px; font-size: clamp(25px, 2.8vw, 34px); line-height: 1.6; font-weight: 900; letter-spacing: -.025em; }
+.rental-section > p:not(.rental-eyebrow):not(.rental-note) { max-width: 40em; margin: 20px 0; font-size: 18px; line-height: 1.95; }
+.rental-section > h3 { font-size: 23px; font-weight: 700; margin: 36px 0 16px; line-height: 1.6; }
+.rental-section > p a, .rental-sources a, .rental-note a { color: #056343; text-decoration: underline; }
+.rental-list { max-width: 720px; list-style: disc; padding-left: 24px; font-size: 17px; line-height: 1.95; margin: 24px 0; }
+.rental-list li + li { margin-top: 12px; }
+.rental-product-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px; margin-top: 32px; }
+.rental-product { display: flex; flex-direction: column; border: 1px solid #dbe3dc; border-radius: 16px; overflow: hidden; background: white; }
+.rental-product-image { position: relative; display: block; aspect-ratio: 1.15; background: #f8faf7; border-bottom: 1px solid #e7ece6; }
+.rental-product-image img { object-fit: contain; padding: 20px; transition: transform .2s; }
+.rental-product-image:hover img { transform: scale(1.03); }
+.rental-product-copy { padding: 24px; display: flex; flex: 1; flex-direction: column; }
+.rental-product-tag { align-self: flex-start; border-radius: 4px; background: #edf3e9; color: #35533e; font-size: 11px; font-weight: 700; padding: 5px 9px; }
+.rental-product h3 { font-size: 20px; font-weight: 700; line-height: 1.65; margin: 12px 0; }
+.rental-product p { font-size: 15px; line-height: 1.9; }
+.rental-product-check { margin: 18px 0 24px; padding-top: 16px; border-top: 1px dashed #dbe3dc; color: #4b5c51; }
+.rental-product-check strong { display: block; margin-bottom: 5px; color: #1c3829; }
+.rental-product-link { display: flex; justify-content: space-between; align-items: center; min-height: 48px; margin-top: auto; font-weight: 700; font-size: 14px; color: #145839; border-top: 1px solid #dbe3dc; padding-top: 16px; }
+.rental-product-link:hover { text-decoration: underline; }
+.rental-note-box { padding: 28px 32px; background: #f5f6f2; border-radius: 12px; margin: 28px 0; }
+.rental-note-box h3 { font-size: 20px; font-weight: 700; margin-bottom: 12px; line-height: 1.6; }
+.rental-note-box p { max-width: 40em; font-size: 16px; line-height: 1.95; }
+.rental-note-box p + p { margin-top: 12px; }
+.rental-guide .rental-note { font-size: 13px; line-height: 1.85; color: #59685e; margin: 20px 0; }
+.rental-formula { border: 1px solid #dce6d7; border-radius: 16px; background: #f2f6ee; padding: 32px; margin: 28px 0; }
+.rental-formula > span { font-size: 13px; font-weight: 700; color: #42614b; }
+.rental-formula p { font-size: clamp(18px, 2.2vw, 25px); font-weight: 700; line-height: 1.9; margin: 16px 0; }
+.rental-formula b { color: #73946b; }
+.rental-formula small { font-size: 13px; line-height: 1.8; display: block; }
+.rental-table-scroll { overflow-x: auto; margin: 32px 0; border: 1px solid #dbe3dc; border-radius: 12px; }
+.rental-table-scroll table { width: 100%; min-width: 650px; border-collapse: collapse; font-size: 15px; line-height: 1.8; text-align: left; }
+.rental-table-scroll caption { text-align: left; padding: 18px 22px; font-weight: 700; background: #f7f9f5; }
+.rental-table-scroll :is(th, td) { padding: 18px 22px; border-top: 1px solid #e2e8e1; vertical-align: top; }
+.rental-table-scroll thead { background: #203c2e; color: #fff; }
+.rental-table-scroll tbody th { min-width: 145px; }
+.rental-table-scroll tbody tr:nth-child(even) { background: #f8faf6; }
+.rental-compare { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin: 28px 0; }
+.rental-compare > div { border: 1px solid #dae4d9; border-radius: 16px; padding: 32px; background: #f2f6ee; }
+.rental-compare > div + div { background: #faf8ef; border-color: #e8e3cd; }
+.rental-compare span { font-size: 13px; font-weight: 700; color: #42614b; }
+.rental-compare h3 { font-size: 24px; font-weight: 700; margin: 12px 0 20px; }
+.rental-compare ul { list-style: disc; padding-left: 20px; font-size: 16px; line-height: 1.9; }
+.rental-compare li + li { margin-top: 10px; }
+.rental-scenes { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px; }
+.rental-scenes > div { padding: 24px; border-top: 3px solid #456b50; background: #f6f8f3; }
+.rental-scenes span { font-size: 12px; letter-spacing: .12em; color: #58705c; }
+.rental-scenes h3 { font-size: 20px; line-height: 1.65; font-weight: 700; margin: 14px 0; }
+.rental-scenes p { font-size: 15px; line-height: 1.95; margin-top: 12px; }
+.rental-template { padding: 32px; background: #f5f7f2; border-radius: 16px; border: 1px solid #dfe7db; margin: 28px 0; }
+.rental-template label { display: block; font-weight: 700; font-size: 16px; margin-bottom: 16px; }
+.rental-template textarea { display: block; width: 100%; resize: vertical; min-height: 300px; padding: 20px; background: white; border: 1px solid #bdcbbb; border-radius: 8px; color: #273a2c; font: inherit; font-size: 16px; line-height: 1.9; }
+.rental-template-actions { display: flex; align-items: center; gap: 20px; flex-wrap: wrap; margin-top: 20px; }
+.rental-template-actions span { font-size: 14px; line-height: 1.8; }
+.rental-steps { list-style: decimal; padding-left: 28px; max-width: 720px; }
+.rental-steps li { padding: 12px 0 12px 8px; font-size: 17px; line-height: 1.9; }
+.rental-steps span { display: block; color: #546459; font-size: 16px; margin-top: 6px; }
+.rental-faq details { border-bottom: 1px solid #dce3dc; }
+.rental-faq summary { cursor: pointer; display: flex; justify-content: space-between; gap: 24px; padding: 24px 0; font-size: 18px; line-height: 1.8; font-weight: 700; list-style: none; }
+.rental-faq summary::-webkit-details-marker { display: none; }
+.rental-faq summary span { flex-shrink: 0; color: #346749; }
+.rental-faq details[open] summary span { transform: rotate(45deg); }
+.rental-faq details p { max-width: 40em; padding-bottom: 24px; font-size: 17px; line-height: 1.95; }
+.rental-summary { padding: 32px; background: #f0f5e9; border-radius: 16px; }
+.rental-related { margin-top: 56px; }
+.rental-related h2 { font-size: 22px; font-weight: 700; margin-bottom: 20px; }
+.rental-related a { display: flex; justify-content: space-between; gap: 16px; padding: 20px 0; border-bottom: 1px solid #dfe6de; color: #155735; font-size: 16px; line-height: 1.8; }
+.rental-related a:hover { text-decoration: underline; }
+.rental-sources { margin-top: 48px; font-size: 13px; line-height: 1.95; color: #59675c; max-width: 800px; }
+.rental-sources h2 { font-weight: 700; margin-bottom: 12px; font-size: 15px; }
+.rental-sources p { margin-bottom: 16px; }
+@media (max-width: 1023px) {
+  .rental-product-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .rental-cta { align-items: flex-start; flex-direction: column; }
+  .rental-scenes { grid-template-columns: 1fr; }
+  .rental-hero-copy { padding: 32px 24px; }
+}
+@media (max-width: 767px) {
+  .rental-guide { padding: 20px 20px 56px; }
+  .rental-hero { grid-template-columns: 1fr; border-radius: 16px; }
+  .rental-hero-copy { padding: 30px 24px; }
+  .rental-hero h1 { font-size: 31px; }
+  .rental-hero h1 span { font-size: 22px; }
+  .rental-hero-photo { min-height: 0; aspect-ratio: 16 / 10; }
+  .rental-desktop-break { display: none; }
+  .rental-intro { font-size: 17px; }
+  .rental-toc ol, .rental-compare { grid-template-columns: 1fr; }
+  .rental-section { margin-top: 56px; }
+  .rental-section > p:not(.rental-eyebrow):not(.rental-note) { font-size: 17px; }
+  .rental-section > h2 { font-size: 26px; }
+  .rental-answer, .rental-cta, .rental-toc, .rental-note-box, .rental-formula, .rental-template, .rental-summary, .rental-compare > div { padding: 24px; }
+  .rental-cta h2 { font-size: 21px; }
+  .rental-template textarea { padding: 12px; }
+  .rental-faq summary { font-size: 17px; }
+}
+@media (max-width: 639px) {
+  .rental-product-grid { grid-template-columns: 1fr; gap: 24px; }
+  .rental-product-image { aspect-ratio: 1.25; }
+}
+@media (max-width: 359px) {
+  .rental-guide { padding-inline: 16px; }
+  .rental-hero-copy { padding-inline: 20px; }
+  .rental-hero h1 { font-size: 27px; }
+  .rental-button { padding-inline: 16px; font-size: 14px; }
+}

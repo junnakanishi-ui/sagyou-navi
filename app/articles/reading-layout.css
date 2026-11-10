@@ -1,0 +1,33 @@
+/* Legacy pages have their own 800/850px shells. Scope the migration to
+   article routes, leaving cards, site navigation, and the home page alone. */
+.article-route :is(main, article, section > div, div.mx-auto)[class~="max-w-[850px]"],
+.article-route :is(main, article, section > div, div.mx-auto)[class~="max-w-[800px]"],
+.article-route main[class~="max-w-4xl"],
+.article-route .article-shell {
+  max-width: 1200px;
+}
+
+.article-route :is(main, article) :is(h2, h3)[id] {
+  scroll-margin-top: 6rem;
+}
+
+/* Long prose remains readable while product grids and tables use the shell. */
+.article-route :is(main, article):not(.rental-guide, .rental-guide *) > p:not([class*="text-xs"]):not([class*="text-sm"]),
+.article-route :is(main, article):not(.rental-guide, .rental-guide *) > section > p:not([class*="text-xs"]):not([class*="text-sm"]) {
+  max-width: 40em;
+  font-size: 1.0625rem;
+  line-height: 1.95;
+  overflow-wrap: anywhere;
+}
+
+@media (min-width: 768px) {
+  .article-route :is(main, article):not(.rental-guide, .rental-guide *) > p:not([class*="text-xs"]):not([class*="text-sm"]),
+  .article-route :is(main, article):not(.rental-guide, .rental-guide *) > section > p:not([class*="text-xs"]):not([class*="text-sm"]) {
+    font-size: 1.125rem;
+  }
+}
+
+.article-route :is(a, button, summary, input, textarea):focus-visible {
+  outline: 3px solid #047857;
+  outline-offset: 4px;
+}

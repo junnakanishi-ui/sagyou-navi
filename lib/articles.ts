@@ -14,6 +14,19 @@ export type Article = {
 
 export const ARTICLES: Article[] = [
   {
+    slug: "safety-supplies-rental-guide",
+    title: "安全用品レンタルは短期でも使える？料金・購入比較と見積もりの準備",
+    shortTitle: "安全用品レンタルの料金・短期利用ガイド",
+    description: "工事・イベント向け安全用品レンタルの選び方。カラーコーン・バリケード・工事看板などの付属品、配送回収を含む費用比較、購入との使い分けを解説。見積もり依頼テンプレート付き。",
+    category: "guide",
+    categoryLabel: "選び方ガイド",
+    thumbnail: "/images/articles/safety-supplies-rental-guide/rental-yard.webp",
+    date: "2026-11-10",
+    readTime: "約10分",
+    available: true,
+    path: "/articles/safety-supplies-rental-guide",
+  },
+  {
     slug: "genba-boukan-taisaku",
     title:
       "現場の防寒対策ガイド｜冬の建設現場の服装・電熱グッズ・詰所暖房と経費の扱い【2026年版】",

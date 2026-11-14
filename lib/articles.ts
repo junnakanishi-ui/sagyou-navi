@@ -14,6 +14,19 @@ export type Article = {
 
 export const ARTICLES: Article[] = [
   {
+    slug: "marathon-event-safety-equipment",
+    title: "マラソン大会の運営備品チェックリスト｜コーン・フェンス・案内看板の準備",
+    shortTitle: "マラソン大会の運営備品チェックリスト",
+    description: "大会主催者・運営担当者向けに、場所別の安全保安用品、コーンとフェンスの使い分け、案内看板の原稿、必要数の確認、レンタル・納品・撤去の準備を解説します。",
+    category: "guide",
+    categoryLabel: "選び方ガイド",
+    thumbnail: "/images/articles/marathon-event-safety-equipment/course-crossing.webp",
+    date: "2026-11-14",
+    readTime: "約10分",
+    available: true,
+    path: "/articles/marathon-event-safety-equipment",
+  },
+  {
     slug: "safety-supplies-rental-guide",
     title: "安全用品レンタルは短期でも使える？料金・購入比較と見積もりの準備",
     shortTitle: "安全用品レンタルの料金・短期利用ガイド",

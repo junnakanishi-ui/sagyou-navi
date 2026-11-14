@@ -1,0 +1,23 @@
+.marathon-guide .rental-hero h1 { font-size: clamp(28px, 2.7vw, 38px); }
+.marathon-guide .marathon-hero-image { background: #eef3e8; }
+.marathon-guide .marathon-hero-image img { object-fit: contain; padding: 20px 12px 42px; }
+.marathon-figure { margin: 32px 0; }
+.marathon-figure img { display: block; width: 100%; height: auto; max-height: 650px; object-fit: contain; border-radius: 16px; background: #f5f8f1; }
+.marathon-figure figcaption { margin-top: 12px; font-size: 13px; line-height: 1.85; color: #59685e; max-width: 60em; }
+.marathon-checklist { padding: 28px; border: 1px solid #dce6d7; border-radius: 16px; background: #f5f8f1; }
+.marathon-checklist ul { margin: 20px 0 24px; }
+.marathon-checklist li { border-top: 1px solid #dce6d7; }
+.marathon-checklist label { display: flex; align-items: flex-start; gap: 14px; padding: 16px 0; cursor: pointer; font-size: 17px; line-height: 1.85; }
+.marathon-checklist input { width: 20px; height: 20px; flex-shrink: 0; margin-top: 6px; accent-color: #173e30; }
+.marathon-source-list { list-style: disc; padding-left: 20px; margin-bottom: 20px; }
+.marathon-source-list li + li { margin-top: 12px; }
+.marathon-guide .rental-note-box a { text-decoration: underline; text-underline-offset: 4px; }
+@media (max-width: 767px) {
+  .marathon-guide .rental-hero h1 { font-size: 28px; }
+  .marathon-guide .marathon-hero-image { aspect-ratio: 4 / 3; }
+  .marathon-checklist { padding: 20px; }
+}
+@media print {
+  .marathon-guide .rental-cta, .marathon-guide .rental-button { display: none; }
+  .marathon-checklist { break-inside: avoid; }
+}

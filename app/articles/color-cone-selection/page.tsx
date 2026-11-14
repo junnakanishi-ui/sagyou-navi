@@ -147,6 +147,10 @@ const smallRelatedProducts = [
 
 const RELATED: RelatedArticle[] = [
   {
+    href: "/articles/marathon-event-safety-equipment",
+    label: "マラソン大会の運営備品チェックリスト｜コーン・フェンス・案内看板の準備",
+  },
+  {
     href: "/articles/safety-supplies-rental-guide",
     label: "短期だけ使うなら？安全用品レンタルの料金・購入比較と見積もり準備",
   },

@@ -3,7 +3,7 @@
 .marathon-guide .marathon-hero-image img { object-fit: contain; padding: 20px 12px 42px; }
 .marathon-figure { margin: 32px 0; }
 .marathon-figure img { display: block; width: 100%; height: auto; max-height: 650px; object-fit: contain; border-radius: 16px; background: #f5f8f1; }
-.marathon-figure figcaption { margin-top: 12px; font-size: 13px; line-height: 1.85; color: #59685e; max-width: 60em; }
+.marathon-figure figcaption { margin-top: 12px; font-size: 13px; line-height: 1.85; color: #59685e; }
 .marathon-checklist { padding: 28px; border: 1px solid #dce6d7; border-radius: 16px; background: #f5f8f1; }
 .marathon-checklist ul { margin: 20px 0 24px; }
 .marathon-checklist li { border-top: 1px solid #dce6d7; }

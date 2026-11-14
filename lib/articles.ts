@@ -14,6 +14,19 @@ export type Article = {
 
 export const ARTICLES: Article[] = [
   {
+    slug: "construction-safety-banner-guide",
+    title: "工事現場の横幕・たれ幕の選び方｜安全標語・サイズ・取付方法",
+    shortTitle: "工事現場の横幕・たれ幕の選び方",
+    description: "安全第一の横幕、縦長のたれ幕、単管標識を掲示場所・文言・サイズ・素材で比較。GCセレクトの6商品から、取付方法とひもの付属有無まで確認できます。",
+    category: "guide",
+    categoryLabel: "選び方ガイド",
+    thumbnail: "/images/articles/construction-safety-banner-guide/1148010208.jpg",
+    date: "2026-11-14",
+    readTime: "約9分",
+    available: true,
+    path: "/articles/construction-safety-banner-guide",
+  },
+  {
     slug: "marathon-event-safety-equipment",
     title: "マラソン大会の運営備品チェックリスト｜コーン・フェンス・案内看板の準備",
     shortTitle: "マラソン大会の運営備品チェックリスト",

@@ -12,6 +12,8 @@ import { RentalLink } from "@/components/article/rental-link";
 import { RENTAL_PATH } from "@/lib/rental-links";
 import { MarathonLink } from "@/components/article/marathon-link";
 import { MARATHON_PATH } from "@/lib/marathon-links";
+import { SafetyBannerLink } from "@/components/article/safety-banner-link";
+import { SAFETY_BANNER_PATH } from "@/lib/safety-banner-links";
 
 interface ShopLink {
   key: string;
@@ -55,6 +57,16 @@ const SHOPS: ShopLink[] = [
 
 export function StickyShopBar() {
   const pathname = usePathname();
+  if (pathname === SAFETY_BANNER_PATH) {
+    return (
+      <nav aria-label="横幕・たれ幕の商品一覧" className="fixed inset-x-0 bottom-0 z-50 border-t border-emerald-800 bg-[#173e30] text-white shadow-lg" style={{ paddingBottom: "env(safe-area-inset-bottom)" }}>
+        <div className="mx-auto flex max-w-[1200px] items-center justify-between gap-4 px-5 py-3 sm:px-6 sm:py-4">
+          <div className="hidden sm:block"><p className="text-base font-bold">現場に合う、安全標語・注意喚起の幕を。</p><p className="mt-1 text-xs text-emerald-100">GCセレクトで文言・サイズ・取付仕様を確認</p></div>
+          <SafetyBannerLink placement="sticky" className="flex min-h-12 w-full items-center justify-center gap-3 rounded-lg bg-yellow-400 px-5 py-3 text-sm font-bold text-gray-950 hover:bg-yellow-300 sm:w-auto">横幕・たれ幕の商品一覧を見る ↗</SafetyBannerLink>
+        </div>
+      </nav>
+    );
+  }
   if (pathname === MARATHON_PATH) {
     return (
       <nav aria-label="マラソン大会の用品相談" className="fixed inset-x-0 bottom-0 z-50 border-t border-emerald-800 bg-[#173e30] text-white shadow-lg" style={{ paddingBottom: "env(safe-area-inset-bottom)" }}>

@@ -38,6 +38,7 @@ const SAFETY_LIST_URL =
   "https://store.shopping.yahoo.co.jp/signcity-yshop/b0c2c1b4cd.html?b=61&view=grid";
 const TRUSCO_LIST_URL =
   "https://store.shopping.yahoo.co.jp/signcity-yshop/a5c8a5e9a5.html";
+const RENTAL_URL = "https://gc-anzen.com/rental";
 const HEATSTROKE_LIST_URL =
   "https://www.gc-select.com/pages/2026_prevent-heatstroke";
 
@@ -272,6 +273,27 @@ function SafetyListLink({
       className={className}
     >
       安全用品一覧へ
+    </a>
+  );
+}
+
+function RentalCtaLink({
+  utmContent,
+  children,
+  className,
+}: {
+  utmContent: string;
+  children: string;
+  className: string;
+}) {
+  return (
+    <a
+      href={buildUrl(RENTAL_URL, utmContent)}
+      target="_blank"
+      rel="noopener noreferrer sponsored"
+      className={className}
+    >
+      {children}
     </a>
   );
 }
@@ -536,6 +558,36 @@ export default function ColorConeSelectionPage() {
           </Lead>
         </ArticleSection>
 
+        <aside
+          className="my-10 rounded-2xl border border-[#173e30]/15 bg-[#f4f7f2] p-6 md:p-8"
+          aria-label="グリーンクロスの安全用品レンタル"
+        >
+          <p className="text-xs font-bold tracking-[0.14em] text-[#32624e]">
+            グリーンクロスのレンタル
+          </p>
+          <h2 className="mt-3 text-2xl font-black leading-snug text-gray-900">
+            期間が限られる現場・イベントは、レンタルもご相談ください
+          </h2>
+          <p className="mt-4 text-base leading-relaxed text-gray-900">
+            作業用品ナビの親会社・
+            <strong>グリーンクロス</strong>
+            は、安全コーンをはじめとする安全保安用品の
+            <strong>販売とレンタル</strong>
+            を行っています。全国に拠点と物流網を持ち、
+            <strong>現場への納品までワンストップ</strong>
+            で対応します。
+          </p>
+          <p className="mt-3 text-base leading-relaxed text-gray-900">
+            建築・土木の現場で使う安全保安用品はもちろん、イベント時の安全コーンのレンタルもお気軽にご相談ください。必要な期間だけ使いたい、数量が現場ごとに変わる、保管場所を持ちたくない、といった場合に向いています。
+          </p>
+          <RentalCtaLink
+            utmContent="inline_rental"
+            className="mt-6 inline-flex items-center gap-2 rounded-xl bg-[#173e30] px-6 py-3 text-sm font-bold text-white transition hover:bg-[#245c48]"
+          >
+            安全用品のレンタルを相談する
+          </RentalCtaLink>
+        </aside>
+
         <ArticleSection>
           <H2>カラーコーンの色はどう選ぶ？</H2>
           <ConclusionBox>
@@ -786,6 +838,26 @@ export default function ColorConeSelectionPage() {
               トラスコ中山一覧
             </a>
           </div>
+        </section>
+
+        <section className="mt-6 rounded-2xl bg-[#173e30] p-8 text-white md:p-10">
+          <p className="text-xs font-bold tracking-[0.14em] text-[#c2d9bc]">
+            購入とは別に、借りてそろえる
+          </p>
+          <h2 className="mt-3 text-2xl font-black leading-snug text-white">
+            レンタルなら、
+            <br className="sm:hidden" />
+            グリーンクロスへ
+          </h2>
+          <p className="mt-4 text-base leading-relaxed text-white/90">
+            短期の工事や単発のイベントで、安全コーンや安全保安用品を必要な期間だけ使いたい場合は、親会社グリーンクロスのレンタルをご利用ください。全国の拠点と物流網から、現場への納品までまとめて相談できます。
+          </p>
+          <RentalCtaLink
+            utmContent="footer_rental"
+            className="mt-6 inline-flex items-center gap-2 rounded-xl bg-[#facc15] px-6 py-3 text-sm font-bold text-[#17251f] transition hover:bg-[#eab308]"
+          >
+            レンタルならこちら
+          </RentalCtaLink>
         </section>
 
         <RelatedArticles items={RELATED} />

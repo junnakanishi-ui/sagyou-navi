@@ -18,7 +18,7 @@
 .rental-button-dark:hover { background: #245c48; }
 .rental-meta { font-size: 12px; line-height: 1.9; color: #586460; margin-top: 24px; }
 .rental-disclosure { font-size: 12px; line-height: 1.8; color: #606a65; padding: 16px 0; border-bottom: 1px solid #e0e7e1; }
-.rental-intro { max-width: 720px; margin: 36px 0; font-size: 18px; line-height: 1.95; }
+.rental-intro { margin: 36px 0; font-size: 18px; line-height: 1.95; }
 .rental-intro p + p { margin-top: 20px; }
 .rental-answer { padding: 28px 32px; margin: 32px 0; border: 1px solid #d8e4d9; border-left: 5px solid #295640; border-radius: 0 14px 14px 0; background: #f5f8f2; }
 .rental-answer ol { list-style: decimal; padding-left: 24px; margin-top: 16px; display: grid; gap: 14px; font-size: 17px; line-height: 1.9; }
@@ -36,10 +36,10 @@
 .rental-toc a span:last-child { margin-left: auto; }
 .rental-section { margin-top: 80px; }
 .rental-section > h2 { margin: 14px 0 28px; font-size: clamp(25px, 2.8vw, 34px); line-height: 1.6; font-weight: 900; letter-spacing: -.025em; }
-.rental-section > p:not(.rental-eyebrow):not(.rental-note) { max-width: 40em; margin: 20px 0; font-size: 18px; line-height: 1.95; }
+.rental-section > p:not(.rental-eyebrow):not(.rental-note) { margin: 20px 0; font-size: 18px; line-height: 1.95; }
 .rental-section > h3 { font-size: 23px; font-weight: 700; margin: 36px 0 16px; line-height: 1.6; }
 .rental-section > p a, .rental-sources a, .rental-note a { color: #056343; text-decoration: underline; }
-.rental-list { max-width: 720px; list-style: disc; padding-left: 24px; font-size: 17px; line-height: 1.95; margin: 24px 0; }
+.rental-list { list-style: disc; padding-left: 24px; font-size: 17px; line-height: 1.95; margin: 24px 0; }
 .rental-list li + li { margin-top: 12px; }
 .rental-product-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px; margin-top: 32px; }
 .rental-product { display: flex; flex-direction: column; border: 1px solid #dbe3dc; border-radius: 16px; overflow: hidden; background: white; }
@@ -56,7 +56,7 @@
 .rental-product-link:hover { text-decoration: underline; }
 .rental-note-box { padding: 28px 32px; background: #f5f6f2; border-radius: 12px; margin: 28px 0; }
 .rental-note-box h3 { font-size: 20px; font-weight: 700; margin-bottom: 12px; line-height: 1.6; }
-.rental-note-box p { max-width: 40em; font-size: 16px; line-height: 1.95; }
+.rental-note-box p { font-size: 16px; line-height: 1.95; }
 .rental-note-box p + p { margin-top: 12px; }
 .rental-guide .rental-note { font-size: 13px; line-height: 1.85; color: #59685e; margin: 20px 0; }
 .rental-formula { border: 1px solid #dce6d7; border-radius: 16px; background: #f2f6ee; padding: 32px; margin: 28px 0; }
@@ -88,7 +88,7 @@
 .rental-template textarea { display: block; width: 100%; resize: vertical; min-height: 300px; padding: 20px; background: white; border: 1px solid #bdcbbb; border-radius: 8px; color: #273a2c; font: inherit; font-size: 16px; line-height: 1.9; }
 .rental-template-actions { display: flex; align-items: center; gap: 20px; flex-wrap: wrap; margin-top: 20px; }
 .rental-template-actions span { font-size: 14px; line-height: 1.8; }
-.rental-steps { list-style: decimal; padding-left: 28px; max-width: 720px; }
+.rental-steps { list-style: decimal; padding-left: 28px; }
 .rental-steps li { padding: 12px 0 12px 8px; font-size: 17px; line-height: 1.9; }
 .rental-steps span { display: block; color: #546459; font-size: 16px; margin-top: 6px; }
 .rental-faq details { border-bottom: 1px solid #dce3dc; }
@@ -96,13 +96,13 @@
 .rental-faq summary::-webkit-details-marker { display: none; }
 .rental-faq summary span { flex-shrink: 0; color: #346749; }
 .rental-faq details[open] summary span { transform: rotate(45deg); }
-.rental-faq details p { max-width: 40em; padding-bottom: 24px; font-size: 17px; line-height: 1.95; }
+.rental-faq details p { padding-bottom: 24px; font-size: 17px; line-height: 1.95; }
 .rental-summary { padding: 32px; background: #f0f5e9; border-radius: 16px; }
 .rental-related { margin-top: 56px; }
 .rental-related h2 { font-size: 22px; font-weight: 700; margin-bottom: 20px; }
 .rental-related a { display: flex; justify-content: space-between; gap: 16px; padding: 20px 0; border-bottom: 1px solid #dfe6de; color: #155735; font-size: 16px; line-height: 1.8; }
 .rental-related a:hover { text-decoration: underline; }
-.rental-sources { margin-top: 48px; font-size: 13px; line-height: 1.95; color: #59675c; max-width: 800px; }
+.rental-sources { margin-top: 48px; font-size: 13px; line-height: 1.95; color: #59675c; }
 .rental-sources h2 { font-weight: 700; margin-bottom: 12px; font-size: 15px; }
 .rental-sources p { margin-bottom: 16px; }
 @media (max-width: 1023px) {

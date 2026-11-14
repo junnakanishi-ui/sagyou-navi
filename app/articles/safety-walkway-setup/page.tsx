@@ -208,6 +208,10 @@ const FAQ_ITEMS = [
 
 const RELATED = [
   {
+    href: "/articles/construction-safety-banner-guide",
+    label: "横幕・たれ幕の選び方｜安全標語・立入禁止の表示をサイズと取付方法で比較",
+  },
+  {
     href: "/articles/safety-supplies-rental-guide",
     label: "短期だけ使うなら？安全用品レンタルの料金・購入比較と見積もり準備",
   },

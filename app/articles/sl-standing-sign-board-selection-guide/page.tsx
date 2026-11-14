@@ -612,6 +612,12 @@ export default function Page() {
           <ShopButton href={CTA_HELMET} label="ヘルメット 一覧" />
         </div>
 
+        <aside className="my-10 rounded-xl border border-gray-200 bg-gray-50 p-6">
+          <h2 className="text-xl font-bold">フェンスや単管に掲示する表示を探している方へ</h2>
+          <p className="mt-3 leading-8">置き型の看板に加え、安全標語や立入禁止を幕で表示したい場合は、横幕・たれ幕も候補になります。</p>
+          <Link href="/articles/construction-safety-banner-guide" className="mt-3 inline-block font-bold text-emerald-800 underline underline-offset-4">工事現場の横幕・たれ幕の選び方を見る →</Link>
+        </aside>
+
         {/* H2: FAQ */}
         <h2 className="text-xl font-bold text-gray-900 border-l-4 border-gray-900 pl-3 mt-10 mb-4">
           よくある質問（FAQ）

@@ -28,6 +28,7 @@ export default function Page() {
       { q: "購入とレンタルを混ぜて手配してもよいですか？", a: "同じ現場でも品目ごとに使い分けられます。保管や繰り返し使用を考えて購入する品と、一定期間だけ必要な品を分けて相談してください。実際の取扱い・貸出可否・在庫・配送条件は品目ごとに確認します。" },
     ]}
     related={[
+      { href: "/articles/office-emergency-blanket-selection", title: "購入する備蓄毛布・アルミシートを写真と収納寸法で選ぶ" },
       { title: "短期レンタルの料金と購入との比較", href: "/articles/safety-supplies-rental-guide" },
       { title: "マラソン大会の運営備品チェックリスト", href: "/articles/marathon-event-safety-equipment" },
       { title: "カラーコーンの種類・サイズを調べる", href: "/articles/color-cone-types-sizes" },

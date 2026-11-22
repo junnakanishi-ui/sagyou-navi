@@ -16,6 +16,8 @@ import { SafetyBannerLink } from "@/components/article/safety-banner-link";
 import { SAFETY_BANNER_PATH } from "@/lib/safety-banner-links";
 import { SAFETY_GUIDES } from "@/lib/safety-guides";
 import { SafetyGuideLink } from "@/components/article/safety-guide-link";
+import { EC_GUIDES, type EcGuideKey } from "@/lib/ec-guides";
+import { EcGuideLink } from "@/components/article/ec-guide-link";
 
 interface ShopLink {
   key: string;
@@ -59,6 +61,17 @@ const SHOPS: ShopLink[] = [
 
 export function StickyShopBar() {
   const pathname = usePathname();
+  const ecGuideKey = (Object.keys(EC_GUIDES) as EcGuideKey[]).find(key => pathname === `/articles/${EC_GUIDES[key].slug}`);
+  if (ecGuideKey) {
+    const guide = EC_GUIDES[ecGuideKey];
+    return <nav aria-label="GCセレクトの商品案内" className="fixed inset-x-0 bottom-0 z-50 border-t border-emerald-800 bg-[#173e30] text-white shadow-lg" style={{ paddingBottom: "env(safe-area-inset-bottom)" }}>
+      <div className="mx-auto flex max-w-[1200px] items-center justify-between gap-3 px-4 py-3 sm:px-6 sm:py-4">
+        <div className="hidden md:block"><p className="text-base font-bold">{guide.shortTitle}</p><p className="mt-1 text-xs text-emerald-100">仕様・価格・在庫はGCセレクトで確認</p></div>
+        <a href="#products" className="flex min-h-12 items-center justify-center rounded-lg border border-emerald-200 px-3 py-2 text-xs font-bold sm:text-sm">写真で比較 ↓</a>
+        <EcGuideLink guideKey={ecGuideKey} placement="sticky_collection" className="flex min-h-12 flex-1 items-center justify-center rounded-lg bg-yellow-400 px-3 py-3 text-xs font-bold text-gray-950 hover:bg-yellow-300 sm:text-sm md:flex-none md:px-6">{guide.collectionLabel} ↗</EcGuideLink>
+      </div>
+    </nav>;
+  }
   const safetyGuide = pathname === "/" || pathname === "/articles"
     ? SAFETY_GUIDES.hub
     : Object.values(SAFETY_GUIDES).find((guide) => pathname === `/articles/${guide.slug}`);

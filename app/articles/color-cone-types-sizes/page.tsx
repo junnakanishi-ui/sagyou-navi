@@ -401,6 +401,10 @@ const faqs = [
 
 const relatedArticles = [
   {
+    href: "/articles/cone-sign-installation-guide",
+    label: "コーンに看板を付けるには？表示板・カバー・専用キャップを写真で比較",
+  },
+  {
     href: "/articles/safety-supplies-rental-guide",
     label: "短期だけ使うなら？安全用品レンタルの料金・購入比較と見積もり準備",
   },

@@ -1,4 +1,5 @@
 import { SAFETY_GUIDES, SAFETY_GUIDE_DATE } from "@/lib/safety-guides";
+import { EC_GUIDES, EC_GUIDE_DATE } from "@/lib/ec-guides";
 
 export type Article = {
   slug: string;
@@ -15,6 +16,19 @@ export type Article = {
 };
 
 export const ARTICLES: Article[] = [
+  ...Object.values(EC_GUIDES).map((guide): Article => ({
+    slug: guide.slug,
+    title: guide.title,
+    shortTitle: guide.shortTitle,
+    description: guide.description,
+    category: "guide",
+    categoryLabel: "商品比較ガイド",
+    thumbnail: guide.image,
+    date: EC_GUIDE_DATE,
+    readTime: guide.readTime,
+    available: true,
+    path: `/articles/${guide.slug}`,
+  })),
   ...Object.values(SAFETY_GUIDES).map((guide): Article => ({
     slug: guide.slug,
     title: guide.title,

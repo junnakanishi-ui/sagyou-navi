@@ -21,6 +21,7 @@ export default function Page() {
       { q: "コーンやバーで車の侵入を防げますか？", a: "一般的なコーン・バーは境界や進行方向を示す用品で、車両の突入を止める設備ではありません。車両の進入リスクへの対策が必要な場所は、会場・警備担当と必要な設備や運用を別途確認してください。" },
     ]}
     related={[
+      { href: "/articles/cone-sign-installation-guide", title: "コーンに取り付ける看板・カバー・専用部品を写真で比較する" },
       { title: "入場待機列と受付の案内を準備する", href: "/articles/event-queue-guidance-equipment" },
       { title: "通路・会場を区切るフェンスを選ぶ", href: "/articles/event-fence-rental-planning" },
       { title: "カラーコーンの種類・高さ・反射仕様を確認する", href: "/articles/color-cone-types-sizes" },

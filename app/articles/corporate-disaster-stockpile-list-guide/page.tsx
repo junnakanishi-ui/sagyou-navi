@@ -179,6 +179,10 @@ const tocItems = [
 
 const relatedArticles = [
   {
+    href: "/articles/office-emergency-blanket-selection",
+    label: "会社の備蓄毛布の選び方｜圧縮毛布・アルミシートと収納サイズを比較",
+  },
+  {
     href: "/articles/saigai-bichiku-rack-trusco",
     label: "TRUSCO災害備蓄ラックの選び方｜M1.5・M2・M3型と台数の逆算",
   },

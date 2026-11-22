@@ -618,6 +618,12 @@ export default function Page() {
           <Link href="/articles/construction-safety-banner-guide" className="mt-3 inline-block font-bold text-emerald-800 underline underline-offset-4">工事現場の横幕・たれ幕の選び方を見る →</Link>
         </aside>
 
+        <aside className="my-10 rounded-xl border border-emerald-200 bg-emerald-50 p-6">
+          <h2 className="text-xl font-bold">工事名・会社名・案内図を入れたい場合</h2>
+          <p className="mt-3 leading-8">既製品の表示では合わないときは、特注や名入れの相談へ。原稿・設置写真・板面と枠の寸法を整理する方法をまとめました。</p>
+          <Link href="/articles/custom-construction-sign-order-guide" className="mt-3 inline-block font-bold text-emerald-800 underline underline-offset-4">工事看板の特注・名入れの頼み方を見る →</Link>
+        </aside>
+
         {/* H2: FAQ */}
         <h2 className="text-xl font-bold text-gray-900 border-l-4 border-gray-900 pl-3 mt-10 mb-4">
           よくある質問（FAQ）

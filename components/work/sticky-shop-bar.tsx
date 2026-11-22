@@ -14,6 +14,8 @@ import { MarathonLink } from "@/components/article/marathon-link";
 import { MARATHON_PATH } from "@/lib/marathon-links";
 import { SafetyBannerLink } from "@/components/article/safety-banner-link";
 import { SAFETY_BANNER_PATH } from "@/lib/safety-banner-links";
+import { SAFETY_GUIDES } from "@/lib/safety-guides";
+import { SafetyGuideLink } from "@/components/article/safety-guide-link";
 
 interface ShopLink {
   key: string;
@@ -57,6 +59,19 @@ const SHOPS: ShopLink[] = [
 
 export function StickyShopBar() {
   const pathname = usePathname();
+  const safetyGuide = pathname === "/" || pathname === "/articles"
+    ? SAFETY_GUIDES.hub
+    : Object.values(SAFETY_GUIDES).find((guide) => pathname === `/articles/${guide.slug}`);
+  if (safetyGuide) {
+    return (
+      <nav aria-label="安全保安用品の相談先" className="fixed inset-x-0 bottom-0 z-50 border-t border-emerald-800 bg-[#173e30] text-white shadow-lg" style={{ paddingBottom: "env(safe-area-inset-bottom)" }}>
+        <div className="mx-auto flex max-w-[1200px] items-center justify-between gap-4 px-5 py-3 sm:px-6 sm:py-4">
+          <div className="hidden sm:block"><p className="text-base font-bold">{safetyGuide.shortTitle}</p><p className="mt-1 text-xs text-emerald-100">品名・数量が未定でも、用途と日程から相談</p></div>
+          <SafetyGuideLink destination={safetyGuide.destination} article={safetyGuide.slug} placement={pathname === "/" ? "home-sticky" : pathname === "/articles" ? "index-sticky" : "sticky"} className="flex min-h-12 w-full shrink-0 items-center justify-center gap-2 rounded-lg bg-yellow-400 px-4 py-3 text-center text-sm font-bold text-gray-950 hover:bg-yellow-300 sm:w-auto">{safetyGuide.cta} <span aria-hidden="true">↗</span></SafetyGuideLink>
+        </div>
+      </nav>
+    );
+  }
   if (pathname === SAFETY_BANNER_PATH) {
     return (
       <nav aria-label="横幕・たれ幕の商品一覧" className="fixed inset-x-0 bottom-0 z-50 border-t border-emerald-800 bg-[#173e30] text-white shadow-lg" style={{ paddingBottom: "env(safe-area-inset-bottom)" }}>

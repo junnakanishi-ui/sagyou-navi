@@ -1,3 +1,5 @@
+import { SAFETY_GUIDES, SAFETY_GUIDE_DATE } from "@/lib/safety-guides";
+
 export type Article = {
   slug: string;
   title: string;
@@ -13,6 +15,19 @@ export type Article = {
 };
 
 export const ARTICLES: Article[] = [
+  ...Object.values(SAFETY_GUIDES).map((guide): Article => ({
+    slug: guide.slug,
+    title: guide.title,
+    shortTitle: guide.shortTitle,
+    description: guide.description,
+    category: "guide",
+    categoryLabel: "手配ガイド",
+    thumbnail: guide.image,
+    date: SAFETY_GUIDE_DATE,
+    readTime: guide.readTime,
+    available: true,
+    path: `/articles/${guide.slug}`,
+  })),
   {
     slug: "construction-safety-banner-guide",
     title: "工事現場の横幕・たれ幕の選び方｜安全標語・サイズ・取付方法",

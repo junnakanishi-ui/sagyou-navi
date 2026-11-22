@@ -1,0 +1,48 @@
+.safety-guide .rental-hero h1 { font-size: clamp(29px, 3vw, 40px); text-wrap: balance; }
+.safety-guide .rental-hero h1 span { text-wrap: balance; }
+.safety-guide .rental-hero h1 .safety-guide-phrase { display: inline-block; max-width: 100%; margin: 0; font-size: inherit; line-height: inherit; letter-spacing: inherit; }
+.safety-guide .rental-hero-copy { padding: 36px 30px; }
+.safety-guide .rental-hero-photo { min-height: 460px; }
+.safety-guide-fence .rental-hero-photo, .safety-guide-signs .rental-hero-photo { background: #fff; }
+.safety-guide-fence .rental-hero-photo img, .safety-guide-signs .rental-hero-photo img { object-fit: contain; padding: 28px 20px 90px; }
+.safety-guide-fence .rental-hero-photo figcaption, .safety-guide-signs .rental-hero-photo figcaption { color: #536358; background: #f3f6ef; }
+.safety-guide .rental-section > h2 { text-wrap: pretty; }
+.safety-guide .rental-table-scroll { scrollbar-gutter: stable; }
+.safety-guide .rental-table-scroll a { text-decoration: underline; color: #155735; }
+.safety-guide .rental-cta > div { min-width: 0; }
+.safety-guide .rental-cta > a { flex-shrink: 1; min-width: 260px; max-width: 370px; }
+.safety-guide-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px; margin: 28px 0; }
+.safety-guide-card { display: flex; flex-direction: column; padding: 28px; border: 1px solid #d7e3d9; border-radius: 14px; background: #f7f9f4; }
+.safety-guide-card > span { font-size: 12px; color: #466b52; font-weight: 700; }
+.safety-guide-card h3 { font-size: 22px; font-weight: 700; line-height: 1.6; margin: 12px 0; }
+.safety-guide-card p { font-size: 16px; line-height: 1.9; margin-bottom: 20px; }
+.safety-guide-card a { margin-top: auto; font-weight: 700; color: #155735; text-decoration: underline; line-height: 1.8; }
+.safety-guide-example { border-left: 4px solid #bd9524; background: #fffcf1; padding: 24px 28px; margin: 28px 0; }
+.safety-guide-example h3 { font-size: 20px; font-weight: 700; margin-bottom: 12px; }
+.safety-guide-example p { font-size: 17px; line-height: 1.95; }
+.safety-guide-example p + p { margin-top: 14px; }
+.safety-guide-flow { list-style: none; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 14px; margin: 28px 0; }
+.safety-guide-flow li { background: #edf3e8; border-top: 3px solid #31583e; padding: 20px; font-size: 15px; line-height: 1.8; }
+.safety-guide-flow strong { display: block; font-size: 18px; margin-bottom: 10px; }
+.safety-guide .rental-product-image { background: #fff; }
+.safety-guide .rental-product-image img { padding: 20px; }
+.safety-guide .rental-product-image a { display: block; height: 100%; }
+.safety-guide-fence .rental-product-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.safety-guide-fence .rental-product-image { aspect-ratio: 1.7; }
+.safety-guide .rental-sources li + li { margin-top: 8px; }
+@media (max-width: 767px) {
+  .safety-guide .rental-hero-copy { padding: 28px 22px; }
+  .safety-guide .rental-hero h1 { font-size: clamp(23px, 7.3vw, 29px); }
+  .safety-guide .rental-hero h1 .safety-guide-subhead { font-size: clamp(18px, 5.5vw, 22px); }
+  .safety-guide .rental-hero-photo { min-height: 0; aspect-ratio: 4 / 3; }
+  .safety-guide .rental-hero-photo figcaption { font-size: 11px; line-height: 1.7; }
+  .safety-guide-grid { grid-template-columns: 1fr; }
+  .safety-guide-card { padding: 24px; }
+  .safety-guide-flow { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .safety-guide .rental-cta > a { min-width: 0; max-width: 100%; width: 100%; }
+  .safety-guide-example { padding: 22px; }
+}
+@media (max-width: 639px) {
+  .safety-guide-fence .rental-product-grid { grid-template-columns: 1fr; }
+  .safety-guide-fence .rental-product-image { aspect-ratio: 1.25; }
+}

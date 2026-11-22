@@ -8,7 +8,7 @@ const navItems = [
   { label: "カテゴリ", href: "/#categories" },
   { label: "記事一覧", href: "/articles" },
   { label: "作業用品ナビとは", href: "/#about" },
-  { label: "FAQ", href: "/#faq" },
+  { label: "安全用品の手配", href: "/articles/safety-equipment-planning" },
   { label: "運営者情報", href: "/about" },
 ];
 

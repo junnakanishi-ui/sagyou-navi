@@ -19,6 +19,8 @@ import {
   categoryImagePath,
 } from "@/lib/categories";
 import { buildUrl, STORE_LINKS } from "@/lib/product-links";
+import { SAFETY_GUIDES } from "@/lib/safety-guides";
+import { SafetyGuideLink } from "@/components/article/safety-guide-link";
 
 const siteFeatures = [
   {
@@ -82,7 +84,7 @@ const topFaqItems = [
   },
   {
     q: "法人・大量購入の相談はできますか？",
-    a: "GCセレクトや各モール店舗を通じてご購入いただけます。大口・法人向けのご相談については、運営会社である株式会社トレード（trade-sign.jp）までお問い合わせください。",
+    a: "工事・イベントの安全保安用品の一括手配、購入・レンタル・看板製作の相談はグリーンクロスへご案内しています。仕様や数量が決まった作業着・防災用品などはGCセレクトの商品ページで購入条件を確認できます。用途別の進め方は「安全用品の手配」ガイドをご覧ください。",
   },
   {
     q: "カテゴリページの商品はすべて在庫がありますか？",
@@ -225,6 +227,22 @@ export default function HomePage() {
             </div>
           </div>
           <div className="h-1 bg-stripe-caution" aria-hidden />
+        </section>
+
+        <section className="bg-[#173e30] py-14 text-white md:py-20" aria-labelledby="safety-planning-title">
+          <div className="mx-auto max-w-6xl px-4 md:px-6">
+            <p className="text-xs font-bold tracking-widest text-emerald-200">工事・イベントの担当者へ</p>
+            <h2 id="safety-planning-title" className="mt-4 text-2xl font-black leading-relaxed md:text-3xl">安全保安用品を、現場まるごと考える。</h2>
+            <p className="mt-4 text-base leading-8 text-emerald-50">着工前の一式手配、会場のフェンス、待機列、臨時駐車場、特注看板。使う場所から必要な条件を整理し、グリーンクロスの相談窓口へ進めます。</p>
+            <div className="mt-7 flex flex-wrap gap-4">
+              <Link href="/articles/safety-equipment-planning" className="rounded-lg bg-yellow-400 px-6 py-4 text-sm font-bold text-gray-950 hover:bg-yellow-300">用途別の手配ガイドを見る →</Link>
+              <SafetyGuideLink destination="https://gc-anzen.com/" article={SAFETY_GUIDES.hub.slug} placement="home-feature" className="rounded-lg border border-emerald-200 px-6 py-4 text-sm font-bold hover:bg-white/10">グリーンクロスのサービスを見る ↗</SafetyGuideLink>
+            </div>
+            <div className="mt-8 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+              {[SAFETY_GUIDES.construction, SAFETY_GUIDES.fence, SAFETY_GUIDES.queue, SAFETY_GUIDES.parking, SAFETY_GUIDES.signs].map(guide => <Link key={guide.slug} href={`/articles/${guide.slug}`} className="rounded-xl border border-white/20 bg-white/5 px-5 py-4 text-sm font-bold leading-7 hover:bg-white/10">{guide.shortTitle} →</Link>)}
+              <Link href="/articles/safety-equipment-planning#buy" className="rounded-xl border border-white/20 bg-white/5 px-5 py-4 text-sm font-bold leading-7 hover:bg-white/10">作業着・防災用品など、購入する品を探す →</Link>
+            </div>
+          </div>
         </section>
 
         {/* ② Problems */}

@@ -231,7 +231,7 @@ export default function MarathonEventSafetyEquipment() {
 
         <section id="faq" className="rental-section"><h2>よくある質問</h2><div className="rental-faq">{FAQ.map(({ q, a }) => <details key={q}><summary>{q}<span aria-hidden="true">＋</span></summary><p>{a}</p></details>)}</div></section>
         <section className="rental-section rental-summary"><h2>まずは会場図に、必要な場所を書き込むところから</h2><p>安全保安用品の手配は、商品名を並べるだけでは進めにくいものです。会場を場所ごとに分け、人が通る・並ぶ・立ち止まる位置を整理すると、必要な用品と相談したいことが見えてきます。数量や機種が未定でも、図面と用途から相談を始められます。</p><MarathonLink placement="summary" className="rental-button rental-button-dark">マラソン大会の用品・手配を相談する ↗</MarathonLink></section>
-        <aside className="rental-related" aria-label="関連記事"><h2>用品選びを詳しく調べる</h2><Link href="/articles/safety-supplies-rental-guide">安全用品レンタルの料金・短期利用の確認点 →</Link><Link href="/articles/color-cone-types-sizes">カラーコーンの種類・サイズの違い →</Link><Link href="/articles/plastic-chain-vs-cone-bar">プラチェーンとコーンバーの違い →</Link></aside>
+        <aside className="rental-related" aria-label="関連記事"><h2>用品選びを詳しく調べる</h2><Link href="/articles/event-fence-rental-planning">イベント用フェンスの種類・枚数を確認する →</Link><Link href="/articles/event-queue-guidance-equipment">受付・物販の待機列と最後尾案内を準備する →</Link><Link href="/articles/temporary-parking-guidance-signs">臨時駐車場の入口・満車・歩行者案内を整理する →</Link><Link href="/articles/safety-supplies-rental-guide">安全用品レンタルの料金・短期利用の確認点 →</Link><Link href="/articles/color-cone-types-sizes">カラーコーンの種類・サイズの違い →</Link><Link href="/articles/plastic-chain-vs-cone-bar">プラチェーンとコーンバーの違い →</Link></aside>
         <footer className="rental-sources"><h2>出典・編集方針</h2>
           <ul className="marathon-source-list">
             <li><MarathonLink placement="source">グリーンクロス「マラソン・スポーツ大会の用品レンタル・サイン製作」</MarathonLink>：取扱用品、商品写真・使用イメージ、看板製作、納品回収・設営相談の範囲を確認。</li>

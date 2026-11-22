@@ -322,6 +322,7 @@ const faqs = [
 ];
 
 const relatedArticles = [
+  { href: "/articles/construction-safety-supplies-order-checklist", label: "着工前に保安用品を一式手配する準備リスト" },
   {
     href: "/articles/helmet-heatstroke-risk",
     label: "ヘルメットと熱中症リスクの関係",
